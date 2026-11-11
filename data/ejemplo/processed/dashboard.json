@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "dataset": "ejemplo",
+    "ficticio": true,
+    "origen": "ejemplo-manual",
+    "generadoEn": "2026-11-10T15:00:00-05:00"
+  },
+  "causa": {
+    "fuente": {
+      "portal": "DATOS FICTICIOS DE EJEMPLO",
+      "url": "https://procesosjudiciales.funcionjudicial.gob.ec/busqueda-filtros",
+      "capturadoEn": "2026-11-10T15:00:00-05:00",
+      "metodo": "Redactado a mano para probar el flujo. No proviene del portal."
+    },
+    "numero": "00000-2025-00001",
+    "instancias": [
+      {
+        "id": "inst-1",
+        "dependencia": "Unidad Judicial Civil de Ejemplo",
+        "ciudad": "Ciudad Ficticia",
+        "fechaIngreso": "2025-03-03",
+        "materia": "Civil",
+        "tipoAccion": "Procedimiento ejecutivo",
+        "asunto": "Cobro de pagaré a la orden",
+        "actores": [
+          "Comercial Ejemplo S.A. (ficticia)"
+        ],
+        "demandados": [
+          "Persona Demandada Ficticia"
+        ],
+        "totalActuaciones": 7
+      },
+      {
+        "id": "inst-2",
+        "dependencia": "Sala Especializada de lo Civil de la Corte Provincial de Ejemplo",
+        "ciudad": "Ciudad Ficticia",
+        "fechaIngreso": "2024-08-12",
+        "materia": "Civil",
+        "tipoAccion": "Procedimiento ejecutivo",
+        "asunto": "Recurso de apelación (proceso anterior entre las mismas partes)",
+        "actores": [
+          "Comercial Ejemplo S.A. (ficticia)"
+        ],
+        "demandados": [
+          "Persona Demandada Ficticia"
+        ],
+        "totalActuaciones": 1
+      }
+    ],
+    "seleccion": {
+      "instanciaId": "inst-1",
+      "justificacion": "La dependencia coincide con la que espera el abogado y es la única carpeta con actividad en 2025.",
+      "confianza": "alta",
+      "otras": [
+        {
+          "instanciaId": "inst-2",
+          "relacion": "Apelación de un proceso anterior entre las mismas partes, ya resuelta en 2024."
+        }
+      ]
+    },
+    "actuaciones": [
+      {
+        "id": "a7",
+        "fecha": "2025-06-24",
+        "tipo": "PROVIDENCIA GENERAL",
+        "texto": "Agréguese al proceso el escrito de contestación. Con las excepciones propuestas córrase traslado a la parte actora. Se convoca a las partes a la audiencia única para el día 22 de julio de 2025, a las 10h00, en la sala 3 de esta Unidad Judicial. Las partes comparecerán con todas sus pruebas.",
+        "documentos": [
+          {
+            "nombre": "Providencia",
+            "disponible": true
+          }
+        ],
+        "analisis": {
+          "categoria": "convocatoria_audiencia",
+          "resumen": "Se corre traslado de las excepciones a la parte actora y se convoca a audiencia única.",
+          "disposiciones": [
+            "Traslado de las excepciones a la parte actora.",
+            "Las partes deben comparecer a la audiencia con todas sus pruebas."
+          ],
+          "fechasClave": [
+            {
+              "fecha": "2025-07-22",
+              "concepto": "Audiencia única, 10h00, sala 3"
+            }
+          ],
+          "requiereAccion": true,
+          "accionSugerida": "Preparar la audiencia única y la prueba sobre el saldo adeudado."
+        }
+      },
+      {
+        "id": "a6",
+        "fecha": "2025-06-09",
+        "tipo": "ESCRITO",
+        "texto": "La parte demandada comparece, señala casillero judicial y propone la excepción de pago parcial de la obligación, adjuntando dos comprobantes de transferencia.",
+        "documentos": [
+          {
+            "nombre": "Contestación y excepciones",
+            "disponible": true
+          },
+          {
+            "nombre": "Anexos: comprobantes",
+            "disponible": false
+          }
+        ],
+        "analisis": {
+          "categoria": "escrito_de_parte",
+          "resumen": "La demandada comparece y propone la excepción de pago parcial, con dos comprobantes de transferencia.",
+          "disposiciones": [],
+          "fechasClave": [],
+          "requiereAccion": true,
+          "accionSugerida": "Revisar los comprobantes y preparar la respuesta a la excepción de pago parcial."
+        }
+      },
+      {
+        "id": "a5",
+        "fecha": "2025-05-19",
+        "tipo": "RAZÓN DE CITACIÓN",
+        "texto": "RAZÓN: Siento por tal que la parte demandada fue citada mediante tres boletas dejadas en el nuevo domicilio señalado, los días 14, 15 y 16 de mayo de 2025.",
+        "documentos": [
+          {
+            "nombre": "Razón de citación",
+            "disponible": true
+          }
+        ],
+        "analisis": {
+          "categoria": "citacion",
+          "resumen": "La demandada quedó citada mediante tres boletas dejadas en el nuevo domicilio.",
+          "disposiciones": [],
+          "fechasClave": [
+            {
+              "fecha": "2025-05-16",
+              "concepto": "Última boleta de citación"
+            }
+          ],
+          "requiereAccion": false,
+          "accionSugerida": ""
+        }
+      },
+      {
+        "id": "a4",
+        "fecha": "2025-04-21",
+        "tipo": "ESCRITO",
+        "texto": "La parte actora señala nuevo domicilio de la parte demandada y solicita se practique la citación en dicha dirección.",
+        "documentos": [
+          {
+            "nombre": "Escrito de la parte actora",
+            "disponible": true
+          }
+        ],
+        "analisis": {
+          "categoria": "escrito_de_parte",
+          "resumen": "La parte actora señala un nuevo domicilio de la demandada y pide citarla allí.",
+          "disposiciones": [],
+          "fechasClave": [],
+          "requiereAccion": false,
+          "accionSugerida": ""
+        }
+      },
+      {
+        "id": "a3",
+        "fecha": "2025-04-02",
+        "tipo": "RAZÓN DE CITACIÓN",
+        "texto": "RAZÓN: Siento por tal que no fue posible citar a la parte demandada en la dirección señalada, por cuanto en el inmueble informan que ya no reside en el lugar.",
+        "documentos": [
+          {
+            "nombre": "Razón de citación",
+            "disponible": false
+          }
+        ],
+        "analisis": {
+          "categoria": "citacion",
+          "resumen": "La citación falló: en la dirección señalada informan que la demandada ya no reside allí.",
+          "disposiciones": [],
+          "fechasClave": [],
+          "requiereAccion": true,
+          "accionSugerida": "Señalar un nuevo domicilio de la demandada para practicar la citación."
+        }
+      },
+      {
+        "id": "a2",
+        "fecha": "2025-03-10",
+        "tipo": "AUTO DE CALIFICACIÓN",
+        "texto": "VISTOS: La demanda es clara y reúne los requisitos de los artículos 142 y 143 del COGEP. El pagaré acompañado constituye título ejecutivo conforme el artículo 347 del COGEP. Se la admite a trámite en procedimiento ejecutivo. Cítese a la parte demandada en el domicilio señalado, para que en el término de quince días pague o proponga excepciones.",
+        "documentos": [
+          {
+            "nombre": "Auto de calificación",
+            "disponible": true
+          }
+        ],
+        "analisis": {
+          "categoria": "auto_sustanciacion",
+          "resumen": "El juez califica la demanda, reconoce el pagaré como título ejecutivo y la admite a trámite en procedimiento ejecutivo.",
+          "disposiciones": [
+            "Citar a la parte demandada en el domicilio señalado.",
+            "La demandada tiene quince días para pagar o proponer excepciones."
+          ],
+          "fechasClave": [],
+          "requiereAccion": false,
+          "accionSugerida": ""
+        }
+      },
+      {
+        "id": "a1",
+        "fecha": "2025-03-03",
+        "tipo": "ACTA DE SORTEO",
+        "texto": "Recibida la demanda ejecutiva presentada por Comercial Ejemplo S.A. contra Persona Demandada Ficticia, por sorteo de ley la competencia se radica en esta Unidad Judicial.",
+        "documentos": [
+          {
+            "nombre": "Acta de sorteo",
+            "disponible": true
+          }
+        ],
+        "analisis": {
+          "categoria": "otro",
+          "resumen": "La demanda ejecutiva fue sorteada y la competencia quedó radicada en la Unidad Judicial Civil de Ejemplo.",
+          "disposiciones": [],
+          "fechasClave": [],
+          "requiereAccion": false,
+          "accionSugerida": ""
+        }
+      }
+    ],
+    "reporte": {
+      "resumenEjecutivo": "Proceso ejecutivo por cobro de un pagaré. La demanda fue admitida, la demandada quedó citada al segundo intento y propuso la excepción de pago parcial. El juez convocó a audiencia única para el 22 de julio de 2025.",
+      "etapaProcesal": "Convocatoria a audiencia única",
+      "estadoActual": "Trabada la litis. Pendiente la audiencia única, donde se resolverá la excepción de pago parcial.",
+      "ultimaActuacion": {
+        "actuacionId": "a7",
+        "resumen": "Providencia que corre traslado de las excepciones y convoca a audiencia única el 22 de julio de 2025 a las 10h00, sala 3.",
+        "implicaciones": "El estudio debe llegar a la audiencia con toda la prueba del saldo adeudado, porque las partes comparecen con todas sus pruebas."
+      },
+      "hitos": [
+        {
+          "fecha": "2025-03-10",
+          "hito": "Demanda admitida en procedimiento ejecutivo",
+          "actuacionId": "a2"
+        },
+        {
+          "fecha": "2025-05-19",
+          "hito": "Demandada citada por boletas",
+          "actuacionId": "a5"
+        },
+        {
+          "fecha": "2025-06-09",
+          "hito": "Excepción de pago parcial",
+          "actuacionId": "a6"
+        },
+        {
+          "fecha": "2025-06-24",
+          "hito": "Convocatoria a audiencia única",
+          "actuacionId": "a7"
+        }
+      ],
+      "plazos": [
+        {
+          "descripcion": "Audiencia única",
+          "fechaLimite": "2025-07-22",
+          "base": "Fijada en la providencia de 24 de junio de 2025.",
+          "actuacionId": "a7"
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "alta",
+          "texto": "La excepción de pago parcial puede reducir el monto ejecutable. Hay que contrastar los comprobantes con la contabilidad del cliente antes de la audiencia.",
+          "actuacionId": "a6"
+        },
+        {
+          "nivel": "media",
+          "texto": "Los anexos de la contestación no están disponibles en el portal. Conviene pedirlos en la Unidad Judicial.",
+          "actuacionId": "a6"
+        }
+      ],
+      "proximosPasos": [
+        "Solicitar a la Unidad Judicial copia de los comprobantes adjuntos a la contestación.",
+        "Conciliar los pagos alegados con el cliente.",
+        "Preparar la prueba y la intervención para la audiencia única."
+      ],
+      "documentosNoDisponibles": [
+        "Razón de citación de 2 de abril de 2025",
+        "Anexos: comprobantes de la contestación"
+      ]
+    }
+  },
+  "juez": {
+    "fuente": {
+      "portal": "DATOS FICTICIOS DE EJEMPLO",
+      "url": "https://procesosjudiciales.funcionjudicial.gob.ec/busqueda-por-juez",
+      "capturadoEn": "2026-11-10T15:00:00-05:00",
+      "metodo": "Redactado a mano para probar el flujo. No proviene del portal."
+    },
+    "juez": {
+      "nombre": "Jueza Ficticia de Ejemplo"
+    },
+    "filtros": {
+      "materia": "Constitucional",
+      "tipoAccion": "Acción de protección",
+      "desde": "2025-01-01",
+      "hasta": "2025-12-31"
+    },
+    "procesos": [
+      {
+        "numero": "00000-2025-00104",
+        "dependencia": "Unidad Judicial de Ejemplo",
+        "materia": "Constitucional",
+        "tipoAccion": "Acción de protección",
+        "asunto": "Terminación de contrato de servicios ocasionales de persona con discapacidad",
+        "fechaResolucion": "2025-11-12",
+        "partes": "Accionante Ficticio D c. Entidad Pública Ficticia",
+        "ficha": {
+          "decision": "inadmite",
+          "normativa": [
+            {
+              "norma": "Constitución de la República",
+              "articulos": [
+                "35"
+              ]
+            },
+            {
+              "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+              "articulos": [
+                "42 numeral 4"
+              ]
+            }
+          ],
+          "jurisprudencia": [],
+          "argumentacion": "Reconoce la pertenencia a un grupo de atención prioritaria, pero atribuye la terminación al vencimiento del plazo contractual.",
+          "pruebas": [
+            "Carné de discapacidad"
+          ],
+          "motivacion": "El vencimiento del plazo es cuestión de legalidad propia de la vía contencioso administrativa.",
+          "criterioResolucion": "La pertenencia a un grupo de atención prioritaria no basta si la terminación obedece al vencimiento del plazo.",
+          "citaTextual": "Si bien pertenece a un grupo de atención prioritaria, artículo 35 de la Constitución, esta juzgadora considera que la terminación obedeció al vencimiento del plazo contractual"
+        }
+      },
+      {
+        "numero": "00000-2025-00103",
+        "dependencia": "Unidad Judicial de Ejemplo",
+        "materia": "Constitucional",
+        "tipoAccion": "Acción de protección",
+        "asunto": "Terminación de nombramiento provisional",
+        "fechaResolucion": "2025-08-27",
+        "partes": "Accionante Ficticio C c. Entidad Pública Ficticia",
+        "ficha": {
+          "decision": "inadmite",
+          "normativa": [
+            {
+              "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+              "articulos": [
+                "42 numeral 1",
+                "42 numeral 4"
+              ]
+            }
+          ],
+          "jurisprudencia": [],
+          "argumentacion": "Identifica la controversia como aplicación de normas infraconstitucionales de servicio público.",
+          "pruebas": [],
+          "motivacion": "De los hechos no se desprende una violación de derechos constitucionales y existe otra vía.",
+          "criterioResolucion": "La terminación de un nombramiento provisional es asunto de mera legalidad.",
+          "citaTextual": "La controversia versa sobre la aplicación de normas infraconstitucionales de servicio público, asunto de mera legalidad"
+        }
+      },
+      {
+        "numero": "00000-2025-00102",
+        "dependencia": "Unidad Judicial de Ejemplo",
+        "materia": "Constitucional",
+        "tipoAccion": "Acción de protección",
+        "asunto": "Desvinculación de servidora en estado de gestación",
+        "fechaResolucion": "2025-05-06",
+        "partes": "Accionante Ficticia B c. Entidad Pública Ficticia",
+        "ficha": {
+          "decision": "acepta",
+          "normativa": [
+            {
+              "norma": "Constitución de la República",
+              "articulos": [
+                "35",
+                "43",
+                "332"
+              ]
+            }
+          ],
+          "jurisprudencia": [],
+          "argumentacion": "Parte de la pertenencia de la accionante a un grupo de atención prioritaria y de ahí deriva que la vía ordinaria no es eficaz.",
+          "pruebas": [
+            "Certificado médico de gestación"
+          ],
+          "motivacion": "La protección reforzada de la mujer embarazada exige tutela urgente.",
+          "criterioResolucion": "La pertenencia a un grupo de atención prioritaria vuelve ineficaz la vía ordinaria.",
+          "citaTextual": "Tratándose de una persona perteneciente a un grupo de atención prioritaria, artículo 35 de la Constitución, la vía ordinaria no resulta adecuada ni eficaz"
+        }
+      },
+      {
+        "numero": "00000-2025-00101",
+        "dependencia": "Unidad Judicial de Ejemplo",
+        "materia": "Constitucional",
+        "tipoAccion": "Acción de protección",
+        "asunto": "Terminación de contrato de servicios ocasionales",
+        "fechaResolucion": "2025-02-18",
+        "partes": "Accionante Ficticio A c. Entidad Pública Ficticia",
+        "ficha": {
+          "decision": "inadmite",
+          "normativa": [
+            {
+              "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+              "articulos": [
+                "42 numeral 4"
+              ]
+            }
+          ],
+          "jurisprudencia": [],
+          "argumentacion": "Califica la pretensión como discusión de legalidad de un acto administrativo y concluye que existe vía contencioso administrativa.",
+          "pruebas": [],
+          "motivacion": "El accionante no demostró que la vía judicial ordinaria fuera inadecuada o ineficaz.",
+          "criterioResolucion": "Sin prueba de que la vía ordinaria es ineficaz, la terminación de un contrato ocasional es asunto de legalidad.",
+          "citaTextual": "la acción de protección es improcedente cuando el acto puede ser impugnado en la vía judicial, salvo que se demuestre que esta no es adecuada ni eficaz"
+        }
+      }
+    ],
+    "estadisticas": {
+      "total": 4,
+      "porDecision": [
+        {
+          "decision": "inadmite",
+          "n": 3
+        },
+        {
+          "decision": "acepta",
+          "n": 1
+        }
+      ],
+      "normasMasCitadas": [
+        {
+          "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+          "n": 3
+        },
+        {
+          "norma": "Constitución de la República",
+          "n": 2
+        }
+      ]
+    },
+    "patrones": {
+      "resumenEjecutivo": "En desvinculaciones del sector público, la jueza declara improcedente la acción de protección cuando ve una discusión de legalidad, apoyada en el artículo 42 numeral 4 de la LOGJCC. Su tratamiento de los grupos de atención prioritaria no es uniforme.",
+      "criteriosReiterados": [
+        {
+          "criterio": "La terminación de contratos ocasionales o nombramientos provisionales es asunto de legalidad con vía contencioso administrativa, salvo prueba de que esa vía es ineficaz.",
+          "procesos": [
+            "00000-2025-00101",
+            "00000-2025-00103",
+            "00000-2025-00104"
+          ],
+          "solidez": "alta"
+        }
+      ],
+      "cambiosDeInterpretacion": [
+        {
+          "tema": "Grupos de atención prioritaria y eficacia de la vía ordinaria",
+          "antes": "En mayo de 2025 la sola pertenencia a un grupo de atención prioritaria volvía ineficaz la vía ordinaria.",
+          "despues": "En noviembre de 2025 esa pertenencia no bastó frente al vencimiento del plazo contractual.",
+          "procesos": [
+            "00000-2025-00102",
+            "00000-2025-00104"
+          ]
+        }
+      ],
+      "diferenciasEntreCasosSimilares": [
+        {
+          "descripcion": "Dos accionantes de grupos de atención prioritaria desvinculados de una entidad pública obtuvieron resultados opuestos. La resolución de noviembre no explica por qué se aparta del criterio de mayo.",
+          "procesos": [
+            "00000-2025-00102",
+            "00000-2025-00104"
+          ],
+          "utilidadEstrategica": "Permite invocar ante la jueza su propio precedente de mayo y exigir que motive el trato distinto."
+        }
+      ],
+      "recomendaciones": [
+        "Probar desde la demanda por qué la vía contencioso administrativa no es eficaz en el caso concreto.",
+        "Si el cliente pertenece a un grupo de atención prioritaria, citar el proceso 00000-2025-00102."
+      ],
+      "limitaciones": [
+        "La muestra tiene cuatro resoluciones de un solo año.",
+        "Ninguna resolución cita jurisprudencia, así que no se puede evaluar cómo usa los precedentes."
+      ]
+    }
+  },
+  "costos": {
+    "porAgente": [],
+    "totalUsd": 0
+  }
+}

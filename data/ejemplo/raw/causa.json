@@ -1,0 +1,41 @@
+{
+  "fuente": { "portal": "DATOS FICTICIOS DE EJEMPLO", "url": "https://procesosjudiciales.funcionjudicial.gob.ec/busqueda-filtros", "capturadoEn": "2026-11-10T15:00:00-05:00", "metodo": "Redactado a mano para probar el flujo. No proviene del portal." },
+  "numero": "00000-2025-00001",
+  "criterio": { "dependenciaEsperada": "Unidad Judicial Civil de Ejemplo", "parte": "Comercial Ejemplo S.A.", "nota": "El estudio patrocina a la parte actora en primera instancia." },
+  "instancias": [
+    {
+      "id": "inst-1",
+      "dependencia": "Unidad Judicial Civil de Ejemplo",
+      "ciudad": "Ciudad Ficticia",
+      "fechaIngreso": "2025-03-03",
+      "materia": "Civil",
+      "tipoAccion": "Procedimiento ejecutivo",
+      "asunto": "Cobro de pagaré a la orden",
+      "actores": ["Comercial Ejemplo S.A. (ficticia)"],
+      "demandados": ["Persona Demandada Ficticia"],
+      "actuaciones": [
+        { "id": "a1", "fecha": "2025-03-03", "tipo": "ACTA DE SORTEO", "texto": "Recibida la demanda ejecutiva presentada por Comercial Ejemplo S.A. contra Persona Demandada Ficticia, por sorteo de ley la competencia se radica en esta Unidad Judicial.", "documentos": [{ "nombre": "Acta de sorteo", "disponible": true }] },
+        { "id": "a2", "fecha": "2025-03-10", "tipo": "AUTO DE CALIFICACIÓN", "texto": "VISTOS: La demanda es clara y reúne los requisitos de los artículos 142 y 143 del COGEP. El pagaré acompañado constituye título ejecutivo conforme el artículo 347 del COGEP. Se la admite a trámite en procedimiento ejecutivo. Cítese a la parte demandada en el domicilio señalado, para que en el término de quince días pague o proponga excepciones.", "documentos": [{ "nombre": "Auto de calificación", "disponible": true }] },
+        { "id": "a3", "fecha": "2025-04-02", "tipo": "RAZÓN DE CITACIÓN", "texto": "RAZÓN: Siento por tal que no fue posible citar a la parte demandada en la dirección señalada, por cuanto en el inmueble informan que ya no reside en el lugar.", "documentos": [{ "nombre": "Razón de citación", "disponible": false }] },
+        { "id": "a4", "fecha": "2025-04-21", "tipo": "ESCRITO", "texto": "La parte actora señala nuevo domicilio de la parte demandada y solicita se practique la citación en dicha dirección.", "documentos": [{ "nombre": "Escrito de la parte actora", "disponible": true }] },
+        { "id": "a5", "fecha": "2025-05-19", "tipo": "RAZÓN DE CITACIÓN", "texto": "RAZÓN: Siento por tal que la parte demandada fue citada mediante tres boletas dejadas en el nuevo domicilio señalado, los días 14, 15 y 16 de mayo de 2025.", "documentos": [{ "nombre": "Razón de citación", "disponible": true }] },
+        { "id": "a6", "fecha": "2025-06-09", "tipo": "ESCRITO", "texto": "La parte demandada comparece, señala casillero judicial y propone la excepción de pago parcial de la obligación, adjuntando dos comprobantes de transferencia.", "documentos": [{ "nombre": "Contestación y excepciones", "disponible": true }, { "nombre": "Anexos: comprobantes", "disponible": false }] },
+        { "id": "a7", "fecha": "2025-06-24", "tipo": "PROVIDENCIA GENERAL", "texto": "Agréguese al proceso el escrito de contestación. Con las excepciones propuestas córrase traslado a la parte actora. Se convoca a las partes a la audiencia única para el día 22 de julio de 2025, a las 10h00, en la sala 3 de esta Unidad Judicial. Las partes comparecerán con todas sus pruebas.", "documentos": [{ "nombre": "Providencia", "disponible": true }] }
+      ]
+    },
+    {
+      "id": "inst-2",
+      "dependencia": "Sala Especializada de lo Civil de la Corte Provincial de Ejemplo",
+      "ciudad": "Ciudad Ficticia",
+      "fechaIngreso": "2024-08-12",
+      "materia": "Civil",
+      "tipoAccion": "Procedimiento ejecutivo",
+      "asunto": "Recurso de apelación (proceso anterior entre las mismas partes)",
+      "actores": ["Comercial Ejemplo S.A. (ficticia)"],
+      "demandados": ["Persona Demandada Ficticia"],
+      "actuaciones": [
+        { "id": "b1", "fecha": "2024-11-05", "tipo": "SENTENCIA", "texto": "Se rechaza el recurso de apelación y se confirma el auto de inadmisión subido en grado.", "documentos": [] }
+      ]
+    }
+  ]
+}

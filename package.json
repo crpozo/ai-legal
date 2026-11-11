@@ -1,0 +1,23 @@
+{
+  "name": "ai-legal",
+  "private": true,
+  "type": "module",
+  "description": "Demo Estudio Jurídico Maya: agentes de IA para seguimiento de causas e historial de jueces",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "agentes": "tsx src/pipeline.ts",
+    "validar": "tsx src/validate.ts",
+    "typecheck": "tsc --noEmit",
+    "dashboard": "node dashboard/server.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^1.1.2",
+    "@anthropic-ai/sdk": "^1.8.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^7.0.2"
+  }
+}

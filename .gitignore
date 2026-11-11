@@ -1,0 +1,5 @@
+node_modules/
+.env
+.DS_Store
+# Los PDF del expediente real no van al repositorio (el repo es público).
+data/real/raw/documentos/
