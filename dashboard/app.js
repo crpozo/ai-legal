@@ -12,6 +12,8 @@ const cifra = (etiqueta, valor) => `<div class="cifra"><span>${esc(etiqueta)}</s
 const ref = (id) => `<span class="ref">Actuación ${esc(id)}</span>`;
 const procs = (ns) => `<span class="ref">${ns.map(esc).join(" · ")}</span>`;
 
+const corto = (xs) => (xs.length > 1 ? `${xs[0]} y ${xs.length - 1} más` : xs[0] ?? "");
+
 function vistaCausa({ causa }) {
   const r = causa.reporte;
   const elegida = causa.instancias.find((i) => i.id === causa.seleccion.instanciaId);
@@ -19,7 +21,8 @@ function vistaCausa({ causa }) {
   return `
     <section class="tarjeta">
       <p class="dato">Proceso <b>${esc(causa.numero)}</b> · ${esc(elegida.materia)} · ${esc(elegida.tipoAccion)}</p>
-      <h2>${esc(elegida.actores.join(", "))} c. ${esc(elegida.demandados.join(", "))}</h2>
+      <h2>${esc(corto(elegida.actores))} c. ${esc(corto(elegida.demandados))}</h2>
+      <p class="dato"><b>Actores:</b> ${esc(elegida.actores.join(" · "))}<br><b>Demandados:</b> ${esc(elegida.demandados.join(" · "))}</p>
       <p class="dato">${esc(elegida.dependencia)} · ingreso ${fecha(elegida.fechaIngreso)} · ${esc(elegida.asunto)}</p>
       <p class="destacado" style="margin-top:12px">${esc(r.resumenEjecutivo)}</p>
     </section>
