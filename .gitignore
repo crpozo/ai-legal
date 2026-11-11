@@ -3,3 +3,5 @@ node_modules/
 .DS_Store
 # Los PDF del expediente real no van al repositorio (el repo es público).
 data/real/raw/documentos/
+# Volcado intermedio de la captura; lo que se usa es raw/causa.json y raw/juez.json.
+data/real/raw/captura/

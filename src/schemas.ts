@@ -193,7 +193,7 @@ export const Dashboard = z.object({
     seleccion: SeleccionInstancia,
     actuaciones: z.array(Actuacion.extend({ analisis: ActuacionAnalizada.omit({ id: true }) })),
     reporte: ReporteCausa,
-  }),
+  }).optional(),
   juez: z.object({
     fuente: Fuente,
     juez: JuezRaw.shape.juez,
@@ -205,7 +205,7 @@ export const Dashboard = z.object({
       normasMasCitadas: z.array(z.object({ norma: z.string(), n: z.number() })),
     }),
     patrones: PatronesJuez,
-  }),
+  }).optional(),
   costos: z.object({ porAgente: z.array(UsoAgente), totalUsd: z.number() }),
 });
 

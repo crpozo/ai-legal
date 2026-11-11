@@ -120,11 +120,12 @@ function vistaAgentes({ costos, meta, causa, juez }) {
       <p class="dato" style="margin-top:10px">Se paga una sola vez: cada respuesta queda en caché en disco y el dashboard es un archivo estático. Volver a abrirlo o volver a correr los agentes sobre los mismos datos no cuesta nada.</p>`
       : `<p class="dato">Esta maqueta se escribió a mano para mostrar el formato. Los agentes todavía no han corrido, así que no hay costo que reportar.</p>`)}
     ${tarjeta("Fuentes", `<ul class="lista">
-      <li><b>Causa ${esc(causa.numero)}</b> · ${esc(causa.fuente.portal)} · capturado ${fecha(causa.fuente.capturadoEn)}<br><span class="dato">${esc(causa.fuente.metodo)}</span></li>
-      <li><b>${esc(juez.juez.nombre)}</b> · ${esc(juez.fuente.portal)} · capturado ${fecha(juez.fuente.capturadoEn)}<br><span class="dato">${esc(juez.fuente.metodo)}</span></li></ul>`)}`;
+      ${causa ? `<li><b>Causa ${esc(causa.numero)}</b> · ${esc(causa.fuente.portal)} · capturado ${fecha(causa.fuente.capturadoEn)}<br><span class="dato">${esc(causa.fuente.metodo)}</span></li>` : ""}
+      ${juez ? `<li><b>${esc(juez.juez.nombre)}</b> · ${esc(juez.fuente.portal)} · capturado ${fecha(juez.fuente.capturadoEn)}<br><span class="dato">${esc(juez.fuente.metodo)}</span></li>` : ""}</ul>`)}`;
 }
 
-const VISTAS = [["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["agentes", "Agentes y costos", vistaAgentes]];
+const TODAS = [["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["agentes", "Agentes y costos", vistaAgentes]];
+let VISTAS = TODAS;
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -140,7 +141,11 @@ const datos = await cargar();
 if (!datos) {
   $("#contenido").innerHTML = `<p class="vacio">No hay datos procesados. Corre <code>npm run agentes</code>.</p>`;
 } else {
+  // Cada flujo aparece cuando ya tiene datos procesados.
+  VISTAS = TODAS.filter(([id]) => id === "agentes" || datos[id]);
   const avisos = [];
+  if (!datos.causa) avisos.push("Todavía no hay datos procesados para la causa.");
+  if (!datos.juez) avisos.push("Todavía no hay datos procesados para el juez.");
   if (datos.meta.ficticio) avisos.push("Datos ficticios de ejemplo: las partes, el juez y los procesos no existen.");
   if (datos.meta.origen === "ejemplo-manual") avisos.push("Los análisis de esta vista son una maqueta escrita a mano, no resultados de los agentes.");
   $("#aviso").innerHTML = avisos.length ? `<p class="aviso" role="status">${avisos.map(esc).join(" ")}</p>` : "";
@@ -153,5 +158,5 @@ if (!datos) {
   };
   $("#pestanas").innerHTML = VISTAS.map(([id, nombre]) => `<button role="tab" data-vista="${id}">${nombre}</button>`).join("");
   $("#pestanas").addEventListener("click", (e) => e.target.dataset.vista && mostrar(e.target.dataset.vista));
-  mostrar(VISTAS.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : "causa");
+  mostrar(VISTAS.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : VISTAS[0][0]);
 }
