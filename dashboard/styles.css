@@ -66,6 +66,25 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .flujo { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch; }
 .paso { flex: 1 1 170px; border: 1px solid var(--linea); border-radius: 8px; padding: 10px 12px; background: var(--fondo); font-size: 13px; }
 .paso b { display: block; font-size: 14px; margin-bottom: 2px; }
+.buscador { max-width: 760px; width: 100%; margin: 6vh auto 0; padding: 28px; display: grid; gap: 14px; }
+.buscador h2 { font-size: 22px; }
+#form-buscar { display: flex; gap: 8px; flex-wrap: wrap; }
+#q { flex: 1 1 260px; min-width: 0; font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid var(--linea); border-radius: 8px; background: var(--fondo); color: var(--tinta); }
+#q:focus-visible, .buscador button:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+#form-buscar button { font: inherit; font-weight: 600; padding: 12px 22px; border: 0; border-radius: 8px; background: var(--acento); color: var(--panel); cursor: pointer; }
+.sugerencia { font: inherit; font-size: 13px; font-weight: 500; margin: 4px 4px 0 0; padding: 4px 12px; border: 1px solid var(--linea); border-radius: 99px; background: var(--acento-suave); color: var(--acento); cursor: pointer; }
+.pasos { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 12px; }
+.pasos li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; margin: 0; }
+.pasos li div { display: grid; }
+.pasos li[data-estado="pendiente"] { opacity: .4; }
+.marca-paso { width: 18px; height: 18px; margin-top: 2px; border-radius: 50%; border: 2px solid var(--linea); }
+li[data-estado="activo"] .marca-paso { border-color: var(--acento-suave); border-top-color: var(--acento); animation: girar .8s linear infinite; }
+li[data-estado="hecho"] .marca-paso { border-color: var(--baja); background: var(--baja); position: relative; }
+li[data-estado="hecho"] .marca-paso::after { content: ""; position: absolute; left: 4px; top: 1px; width: 4px; height: 8px; border: solid var(--panel); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+@keyframes girar { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { li[data-estado="activo"] .marca-paso { animation: none; } }
+.sin-resultado { padding: 10px 14px; border-radius: 8px; background: var(--media-suave); color: var(--media); }
+.nota { border-top: 1px solid var(--linea); padding-top: 12px; }
 .vacio { color: var(--tenue); padding: 40px 0; text-align: center; }
 .pie { padding-bottom: 32px; color: var(--tenue); font-size: 12px; display: grid; gap: 6px; }
 @media (max-width: 640px) {

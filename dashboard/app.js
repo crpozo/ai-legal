@@ -124,7 +124,64 @@ function vistaAgentes({ costos, meta, causa, juez }) {
       ${juez ? `<li><b>${esc(juez.juez.nombre)}</b> · ${esc(juez.fuente.portal)} · capturado ${fecha(juez.fuente.capturadoEn)}<br><span class="dato">${esc(juez.fuente.metodo)}</span></li>` : ""}</ul>`)}`;
 }
 
-const TODAS = [["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["agentes", "Agentes y costos", vistaAgentes]];
+const plano = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const digitos = (s) => String(s ?? "").replace(/\D/g, "");
+
+/** Qué flujo responde a la consulta: la causa por número o por parte, el juez por nombre. */
+function resolver(datos, consulta) {
+  const q = plano(consulta).trim();
+  const palabras = q.split(/[^a-z0-9]+/).filter((p) => p.length > 2);
+  const contiene = (texto) => palabras.length > 0 && palabras.every((p) => plano(texto).includes(p));
+  if (datos.causa) {
+    const elegida = datos.causa.instancias.find((i) => i.id === datos.causa.seleccion.instanciaId);
+    if (digitos(q).length >= 8 && digitos(q) === digitos(datos.causa.numero)) return "causa";
+    if (contiene([...elegida.actores, ...elegida.demandados].join(" "))) return "causa";
+  }
+  if (datos.juez && contiene(datos.juez.juez.nombre)) return "juez";
+  return null;
+}
+
+/** Pasos que el agente recorre, con los datos reales de la corrida guardada. */
+function pasosDe(datos, flujo) {
+  if (flujo === "causa") {
+    const c = datos.causa;
+    const elegida = c.instancias.find((i) => i.id === c.seleccion.instanciaId);
+    return [
+      ["Abriendo el portal E-SATJE", "Consulta de procesos judiciales"],
+      [`Buscando el proceso ${c.numero}`, `${c.instancias.length} carpeta${c.instancias.length === 1 ? "" : "s"} con ese número`],
+      ["Eligiendo la carpeta correcta", `${elegida.dependencia} · confianza ${c.seleccion.confianza}`],
+      [`Leyendo ${c.actuaciones.length} actuaciones`, `${c.actuaciones.filter((a) => a.analisis.requiereAccion).length} requieren acción del estudio`],
+      ["Redactando el reporte integral", `Etapa: ${c.reporte.etapaProcesal}`],
+    ];
+  }
+  const j = datos.juez;
+  return [
+    ["Abriendo el portal E-SATJE", "Procesos resueltos por juez"],
+    [`Buscando a ${j.juez.nombre}`, `${j.procesos.length} procesos resueltos con los filtros`],
+    [`Fichando ${j.procesos.length} resoluciones`, "Normativa, jurisprudencia, pruebas y motivación"],
+    ["Calculando estadísticas", `${j.estadisticas.normasMasCitadas.length} normas citadas`],
+    ["Comparando criterios entre resoluciones", `${j.patrones.criteriosReiterados.length} criterios reiterados`],
+  ];
+}
+
+function vistaBuscar(datos) {
+  const sugerencias = [];
+  if (datos.causa) sugerencias.push([datos.causa.numero, `Causa ${datos.causa.numero}`]);
+  if (datos.juez) sugerencias.push([datos.juez.juez.nombre, `Juez ${datos.juez.juez.nombre}`]);
+  return `
+    <section class="tarjeta buscador">
+      <h2>¿Qué causa o juez quieres revisar?</h2>
+      <form id="form-buscar" role="search">
+        <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
+        <button type="submit">Buscar</button>
+      </form>
+      <p class="dato">Disponible en esta demo: ${sugerencias.map(([q, texto]) => `<button type="button" class="sugerencia" data-q="${esc(q)}">${esc(texto)}</button>`).join(" ")}</p>
+      <div id="progreso" aria-live="polite"></div>
+      <p class="dato nota">Demo: el agente reproduce la corrida guardada. No vuelve a consultar el portal ni al modelo, así que buscar no cuesta nada.</p>
+    </section>`;
+}
+
+const TODAS = [["buscar", "Buscar", vistaBuscar], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["agentes", "Agentes y costos", vistaAgentes]];
 let VISTAS = TODAS;
 
 async function cargar() {
@@ -142,7 +199,39 @@ if (!datos) {
   $("#contenido").innerHTML = `<p class="vacio">No hay datos procesados. Corre <code>npm run agentes</code>.</p>`;
 } else {
   // Cada flujo aparece cuando ya tiene datos procesados.
-  VISTAS = TODAS.filter(([id]) => id === "agentes" || datos[id]);
+  // Causa y Juez aparecen cuando el agente ya los "encontró" (o si se llega por enlace directo).
+  const disponibles = TODAS.filter(([id]) => id === "buscar" || id === "agentes" || datos[id]);
+  const encontrados = new Set([location.hash.slice(1)]);
+  const pintarPestanas = () => {
+    VISTAS = disponibles.filter(([id]) => id === "buscar" || id === "agentes" || encontrados.has(id));
+    $("#pestanas").innerHTML = VISTAS.map(([id, nombre]) => `<button role="tab" data-vista="${id}">${nombre}</button>`).join("");
+  };
+  const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
+  let corrida = 0;
+  const buscar = async (consulta) => {
+    const turno = ++corrida;
+    const flujo = resolver(datos, consulta);
+    const caja = $("#progreso");
+    if (!flujo) {
+      caja.innerHTML = `<p class="sin-resultado">No hay una corrida guardada para «${esc(consulta)}». Esta demo trabaja sobre datos capturados una sola vez: prueba con una de las búsquedas disponibles.</p>`;
+      return;
+    }
+    const pasos = pasosDe(datos, flujo);
+    caja.innerHTML = `<ol class="pasos">${pasos.map(([titulo]) => `<li data-estado="pendiente"><span class="marca-paso"></span><div><b>${esc(titulo)}</b><span class="dato"></span></div></li>`).join("")}</ol>`;
+    const items = [...caja.querySelectorAll("li")];
+    for (const [i, [, resultado]] of pasos.entries()) {
+      items[i].dataset.estado = "activo";
+      await espera(650 + 250 * (i % 3));
+      if (turno !== corrida || !items[i].isConnected) return;
+      items[i].dataset.estado = "hecho";
+      items[i].querySelector(".dato").textContent = resultado;
+    }
+    await espera(500);
+    if (turno !== corrida || !items[0].isConnected) return;
+    encontrados.add(flujo);
+    pintarPestanas();
+    mostrar(flujo);
+  };
   const avisos = [];
   if (!datos.causa) avisos.push("Todavía no hay datos procesados para la causa.");
   if (!datos.juez) avisos.push("Todavía no hay datos procesados para el juez.");
@@ -155,8 +244,16 @@ if (!datos) {
     $("#contenido").innerHTML = vista(datos);
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
     history.replaceState(null, "", `#${id}`);
+    if (id === "buscar") {
+      corrida++;
+      $("#form-buscar").addEventListener("submit", (e) => { e.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
+      for (const b of document.querySelectorAll(".sugerencia")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
+      $("#q").focus();
+    } else {
+      window.scrollTo(0, 0);
+    }
   };
-  $("#pestanas").innerHTML = VISTAS.map(([id, nombre]) => `<button role="tab" data-vista="${id}">${nombre}</button>`).join("");
+  pintarPestanas();
   $("#pestanas").addEventListener("click", (e) => e.target.dataset.vista && mostrar(e.target.dataset.vista));
   mostrar(VISTAS.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : VISTAS[0][0]);
 }
