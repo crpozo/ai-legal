@@ -11,7 +11,8 @@ const PUBLICO = ["/dashboard/", "/data/"];
 
 createServer(async (req, res) => {
   let ruta = decodeURIComponent(new URL(req.url, "http://x").pathname);
-  if (ruta === "/") ruta = "/dashboard/index.html";
+  if (ruta === "/") return res.writeHead(302, { location: "/dashboard/" }).end();
+  if (ruta === "/dashboard/") ruta = "/dashboard/index.html";
   const archivo = path.join(raiz, ruta);
   if (!archivo.startsWith(raiz) || !PUBLICO.some((p) => ruta.startsWith(p)) || ruta.includes("/cache/")) {
     res.writeHead(404).end("No encontrado");

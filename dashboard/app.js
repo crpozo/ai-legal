@@ -130,7 +130,7 @@ async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
   for (const dataset of pedido ? [pedido] : ["real", "ejemplo"]) {
     if (!/^[\w-]+$/.test(dataset)) continue;
-    const r = await fetch(`/data/${dataset}/processed/dashboard.json`);
+    const r = await fetch(`../data/${dataset}/processed/dashboard.json`);
     if (r.ok) return r.json();
   }
   return null;
