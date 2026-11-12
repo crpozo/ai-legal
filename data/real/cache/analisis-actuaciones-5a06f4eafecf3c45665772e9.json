@@ -1,0 +1,255 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8011,
+    "tokensSalida": 7605
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-344",
+        "categoria": "otro",
+        "resumen": "Registro de un escrito u oficio presentado electrónicamente el 2024-06-10, con anexos. El texto disponible solo indica el tipo ('ANEXOS, Oficio, FePresentacion') y no identifica quién lo presentó ni su contenido. Hay que revisar el documento original en el expediente para saber su alcance.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-343",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio presentado electrónicamente el 2024-05-31, sin anexos según el texto. El contenido no consta en el texto disponible, por lo que no es posible determinar su alcance.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-342",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 2024-05-29. El texto no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-341",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 2024-05-29, a las 15:15. El texto no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-340",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 2024-05-27, a las 11:02, que certifica la notificación por boletas judiciales del auto de sustanciación de las 10:18 a Fernando Egas Iturralde, en el casillero electrónico indicado, con copia a la Dra. Bunces Tipantasig María Augusta. La lista de casilleros está omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-339",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación del 2024-05-27 que agrega escritos y contestaciones a oficios. Da por conocidas las respuestas de NETLIFE, SRI y Empresa Eléctrica Quito, toma nota de las publicaciones del actor sobre Santiago Efraín Iturralde Vasconez y de la fe de recepción de nueve oficios. Condiciona la citación por la prensa de Eduardo Fernando Iturralde Vasconez a que se presente previamente la fe de recepción del oficio dirigido al Registro Civil.",
+        "disposiciones": [
+          "Poner en conocimiento del ejecutante las contestaciones a oficio remitidas por NETLIFE, SRI y EMPRESA ELÉCTRICA QUITO, para los fines de ley pertinentes.",
+          "Considerar las publicaciones agregadas por la parte accionante, realizadas el 20, 21 y 22 de mayo de 2024, respecto del demandado Iturralde Vasconez Santiago Efraín.",
+          "Tener en cuenta la fe de recepción de los diferentes oficios remitidos (9) y presentados por la parte actora.",
+          "Respecto de la petición de citación por la prensa del demandado Iturralde Vasconez Eduardo Fernando, previo a proveer, se presente la fe de recepción del oficio remitido al Registro Civil, porque la contestación de DINARP menciona 'Registro Civil' sin que conste respuesta de esa entidad."
+        ],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar la fe de recepción del oficio remitido al Registro Civil, requisito previo para que la judicatura resuelva la citación por la prensa de Eduardo Fernando Iturralde Vasconez. El auto no fija plazo para hacerlo."
+      },
+      {
+        "id": "quito-2020-10-26-338",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 2024-05-22. El texto no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-337",
+        "categoria": "otro",
+        "resumen": "Oficio presentado electrónicamente el 2024-05-22, a las 13:59. El contenido no consta en el texto disponible.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-336",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 2024-05-20. El texto no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-335",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 2024-05-17, a las 15:30. El texto no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-334",
+        "categoria": "otro",
+        "resumen": "Oficio presentado electrónicamente el 2024-05-17, a las 08:47. El contenido no consta en el texto disponible.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-333",
+        "categoria": "escrito_de_parte",
+        "resumen": "Presentación electrónica del 2024-05-16, a las 16:03, que el texto describe como 'Escrito' aunque su tipo figura como OFICIO. El contenido no consta en el texto disponible.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-332",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Secretaría del 2024-05-07 que certifica la elaboración de los oficios ordenados en el auto anterior y su remisión a la casilla judicial 5318. Advierte que, antes de usarlos, hay que verificar los oficios para que la Secretaría corrija cualquier inconsistencia.",
+        "disposiciones": [
+          "Verificar los oficios elaborados antes de su utilización, para que la Secretaría corrija cualquier inconsistencia."
+        ],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar en la casilla judicial 5318 los oficios remitidos el 2024-05-07 antes de utilizarlos. Si hay inconsistencias, comunicarlas a la Secretaría para su corrección."
+      },
+      {
+        "id": "quito-2020-10-26-331",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 2024-05-07, a las 13:38, que ordena oficiar a varias instituciones, con base en la sentencia constitucional 2791-17-EP/23 y los artículos 30 y 130 del COFJ. Pide informar sobre cualquier domicilio o lugar de trabajo de la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001), con calle, nomenclatura, provincia, cantón, parroquia y sector si lo hay. El término es de 5 días, pero el texto no indica desde cuándo se cuenta.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001).",
+          "Si la respuesta es afirmativa, detallar nombre de calle principal, calle secundaria, nomenclatura actualizada, provincia, cantón, parroquia y sector."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-330",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-329",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-328",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-327",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-326",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-325",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del auto del 2024-05-07 (13:38) que ordena oficiar a varias instituciones para ubicar domicilio o lugar de trabajo de Feritubaz Agroganadera S.A. El término de 5 días no tiene fecha de inicio en el texto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito.",
+          "Informar a la Judicatura, en un término de 5 días, sobre cualquier dirección de domicilio o lugar de trabajo relacionado con la compañía Feritubaz Agroganadera S.A. (RUC 1792646863001)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto que ordena los oficios. El plazo de 5 días para responder no tiene fecha de inicio en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

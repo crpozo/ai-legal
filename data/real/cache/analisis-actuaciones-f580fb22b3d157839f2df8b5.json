@@ -1,0 +1,332 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10811,
+    "tokensSalida": 8313
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-224",
+        "categoria": "otro",
+        "resumen": "Razón de la secretaría que certifica el envío del despacho legal a la Oficina de Citaciones para citar o notificar. El texto está incompleto: no identifica a la persona a citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-10-11",
+            "concepto": "Fecha de la razón de remisión a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-223",
+        "categoria": "otro",
+        "resumen": "Providencia de generación de documentación para citaciones respecto de la Compañía Feritubaz Agroganaderia S.A. El texto no contiene una orden nueva del juez.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-10-11",
+            "concepto": "Fecha de la providencia de envío a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-222",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a Fernando Egas Iturralde en su casillero electrónico y correo. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-09-07",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-221",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que ordena citar a la Compañía Feritubaz Agroganaderia S.A. con el extracto de la demanda y el auto de calificación en la dirección indicada en el escrito del 5 de septiembre de 2023. Pide a la parte actora entregar copias para las boletas en 5 días.",
+        "disposiciones": [
+          "Citar a la Compañía Feritubaz Agroganaderia S.A. con el extracto de la demanda y el auto de calificación inicial en la dirección del escrito de 5 de septiembre de 2023",
+          "Solicitar a la parte actora, en 5 días y según el principio dispositivo (art. 19 COFJ), las copias necesarias para las boletas"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-09-05",
+            "concepto": "Fecha del escrito que indica la dirección de citación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar las copias necesarias para la citación dentro de 5 días. El texto no fija la fecha de inicio del término; confirmar desde qué notificación corre."
+      },
+      {
+        "id": "quito-2020-10-26-220",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente. El texto solo indica 'ANEXOS, Escrito', por lo que no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-09-05",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-219",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a Fernando Egas Iturralde en su casillero electrónico y correo. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-09-01",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-218",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que incorpora el deprecatorio devuelto por Sigchos con las actas de citación a Egas Varea y a Iturralde Vasconez Ryna. Rechaza lo alegado por Fernando Egas por considerar que las citaciones fueron válidas. Informa que la Compañía no fue citada y ordena a la actora precisar la dirección exacta bajo prevención de archivo.",
+        "disposiciones": [
+          "Incorporar al proceso el deprecatorio devuelto por la Unidad Judicial Multicompetente de Sigchos",
+          "Considerar citados en debida forma a Egas Varea Fernando José Leopoldo e Iturralde Vasconez Ryna Mercedes y declarar sin lugar lo alegado en el escrito de Fernando Egas del 17 de agosto de 2023",
+          "Poner en conocimiento de la parte actora el acta de no citación de la Compañía Feritubaz Agroganaderia S.A.",
+          "Ordenar a la parte actora, en 5 días y bajo prevenciones de archivo, determinar con claridad la dirección exacta de la parte demandada (calles, nomenclatura, provincia, cantón, parroquia, sector y referencias)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-25",
+            "concepto": "Citación mediante boleta fijada a los demandados según el deprecatorio"
+          },
+          {
+            "fecha": "2023-07-26",
+            "concepto": "Citación mediante boleta fijada a los demandados según el deprecatorio"
+          },
+          {
+            "fecha": "2023-07-27",
+            "concepto": "Citación mediante boleta fijada a los demandados según el deprecatorio"
+          },
+          {
+            "fecha": "2023-08-22",
+            "concepto": "Auto de sustanciación que concedió traslado de un escrito a la parte actora"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Precisar en 5 días la dirección exacta para citar a la Compañía Feritubaz Agroganaderia S.A., bajo apercibimiento de archivo. El texto no fija la fecha de inicio del término; confirmar desde qué notificación corre."
+      },
+      {
+        "id": "quito-2020-10-26-217",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente. El texto solo indica 'ANEXOS, Escrito', por lo que no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-29",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-216",
+        "categoria": "otro",
+        "resumen": "Registro de la gestión de envío a citaciones con razón de no citación en la dirección principal de la Compañía Feritubaz Agroganaderia S.A. El texto de la providencia cita la fecha del 14 de junio de 2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-28",
+            "concepto": "Registro de la razón de no citación en dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-215",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada a la Compañía Feritubaz Agroganaderia S.A. por dirección insuficiente.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-28",
+            "concepto": "Fecha del acta de citación no realizada"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Corregir la dirección de citación de la Compañía según lo ordenado en el auto del 1 de septiembre de 2023 (actuación 218)."
+      },
+      {
+        "id": "quito-2020-10-26-214",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a Daniela Iturralde Varea y José Miguel Iturralde Varea en el casillero No. 5318. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-22",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-213",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que tiene en cuenta la devolución de las boletas presentadas por Fernando Egas y corre traslado a la parte actora del escrito que se acompañó. El texto no aclara la fecha del escrito de Egas, pues menciona tanto el 16 como el 17 de agosto de 2023.",
+        "disposiciones": [
+          "Tener en cuenta la devolución de las boletas presentadas por el señor Fernando Egas",
+          "Correr traslado a la parte actora con el escrito presentado para que se pronuncie en 5 días"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-22",
+            "concepto": "Fecha del auto que corre traslado a la parte actora"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Pronunciarse sobre el escrito de Fernando Egas en 5 días desde la notificación del traslado. El texto no fija la fecha de inicio del término."
+      },
+      {
+        "id": "quito-2020-10-26-212",
+        "categoria": "otro",
+        "resumen": "Certificación de la secretaría de que la documentación escaneada corresponde a los originales, conforme al Memorando circular-CJ-DNGP-2018-0121-MC. Los originales están en el repositorio de la unidad.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-21",
+            "concepto": "Fecha de la certificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-211",
+        "categoria": "otro",
+        "resumen": "Oficio con deprecatorio a la Unidad Judicial Civil de Latacunga para citar a Eduardo Fernando Iturralde Vásconez. Incluye el auto de admisión de 29 de octubre de 2020 (procedimiento ordinario, 30 días para contestar) y el auto de 11 de julio de 2023 que ordenó la citación. El auto de 2023 también pide copias a la actora en 5 días y tiene en cuenta la credencial del defensor de Enrique Alcides Iturralde Vasconez.",
+        "disposiciones": [
+          "Deprecar a una unidad judicial civil de Latacunga la citación de Eduardo Fernando Iturralde Vásconez con la demanda y el auto",
+          "Solicitar a la parte actora, en 5 días, un juego de copias de las piezas procesales",
+          "Tener en cuenta la copia de la credencial del defensor técnico de Enrique Alcides Iturralde Vasconez"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2020-10-29",
+            "concepto": "Auto de calificación y admisión a trámite ORDINARIO"
+          },
+          {
+            "fecha": "2023-06-30",
+            "concepto": "Escrito que indica el lugar de citación de Eduardo Fernando Iturralde Vásconez"
+          },
+          {
+            "fecha": "2023-07-11",
+            "concepto": "Auto que ordenó la citación de Eduardo Fernando Iturralde Vásconez"
+          },
+          {
+            "fecha": "2023-08-21",
+            "concepto": "Fecha del oficio de deprecatorio"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento al deprecatorio ante Latacunga y entregar las copias pedidas en 5 días. El texto no fija la fecha de inicio de los términos. El plazo de 30 días para contestar depende de la citación, que no consta."
+      },
+      {
+        "id": "quito-2020-10-26-210",
+        "categoria": "otro",
+        "resumen": "Razón de envío a citaciones que registra que el proceso fue asignado a un citador. La fecha del texto reproduce la providencia del 14 de junio de 2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-21",
+            "concepto": "Asignación del proceso a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-209",
+        "categoria": "otro",
+        "resumen": "Registro de asignación del proceso a un citador con fecha 18 de julio de 2023. El texto reproduce la providencia del 14 de junio de 2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-18",
+            "concepto": "Asignación del proceso a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-208",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente. El texto solo indica 'ANEXOS, Escrito', por lo que no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-17",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-207",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a Daniela Iturralde Varea y José Miguel Iturralde Varea en el casillero No. 5318. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-17",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-206",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que ordena remitir de inmediato el deprecatorio, por cuanto la parte actora cumplió lo ordenado en el auto anterior. Indica que las copias anexadas no se agregan al proceso por haberse ejecutado la diligencia.",
+        "disposiciones": [
+          "Remitir de inmediato por secretaría el deprecatorio correspondiente para continuar la tramitación"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-08-17",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-205",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente. El texto solo indica 'ANEXOS, Escrito', por lo que no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-27",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

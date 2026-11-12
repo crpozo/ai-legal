@@ -1,0 +1,316 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 13281,
+    "tokensSalida": 8070
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-324",
+        "categoria": "providencia",
+        "resumen": "Auto de sustanciación del 7 de mayo de 2024, que agrega a los autos un escrito con anexos (contenido no transcrito) y, con base en la sentencia constitucional 2791-17-EP/23 y los artículos 30 y 130 del COFJ, ordena oficiar al SRI, Registro de la Propiedad, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito para que, en 5 días, informen si tienen una dirección de domicilio o lugar de trabajo de la compañía demandada Feriteuvaz Agroganadera S.A. (RUC 1792646863001). Duplicado del auto 321.",
+        "disposiciones": [
+          "Oficiar a SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito para que informen en 5 días sobre domicilio o lugar de trabajo de Compañía Feriteuvaz Agroganadera S.A., con detalle de calle principal, calle secundaria, nomenclatura, provincia, cantón, parroquia y sector si la respuesta es afirmativa"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto. El plazo de 5 días corre desde una notificación que no consta en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-323",
+        "categoria": "providencia",
+        "resumen": "Duplicado del auto de sustanciación del 7 de mayo de 2024 (id 321) que ordena oficiar a varias entidades para ubicar domicilio o lugar de trabajo de Compañía Feriteuvaz Agroganadera S.A. en 5 días.",
+        "disposiciones": [
+          "Oficiar a SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito para que informen en 5 días sobre domicilio o lugar de trabajo de Compañía Feriteuvaz Agroganadera S.A."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto. El plazo de 5 días corre desde una notificación que no consta en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-322",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 7 de mayo de 2024 a las 13h40, por boletas judiciales, del auto de sustanciación 321 a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Notificación por boletas del auto de sustanciación 321"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-321",
+        "categoria": "providencia",
+        "resumen": "Auto de sustanciación del 7 de mayo de 2024 que agrega un escrito con anexos y ordena oficiar a varias entidades (SRI, Registro de la Propiedad, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito) para que informen en 5 días sobre domicilio o lugar de trabajo de Compañía Feriteuvaz Agroganadera S.A.",
+        "disposiciones": [
+          "Oficiar a SRI, Dirección Nacional de Registros Públicos, CNT, CONECEL, NETLIFE, EPMAPS, Superintendencia de Compañías y Empresa Eléctrica Quito para que informen en 5 días sobre domicilio o lugar de trabajo de Compañía Feriteuvaz Agroganadera S.A., con detalle de la ubicación si la respuesta es afirmativa"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-07",
+            "concepto": "Fecha del auto. El plazo de 5 días corre desde una notificación que no consta en el texto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-320",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 2 de mayo de 2024 con anexos. El texto solo registra 'ANEXOS, Escrito, FePresentacion'; no consta quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-05-02",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-319",
+        "categoria": "otro",
+        "resumen": "Razón de la secretaría del 30 de abril de 2024 que certifica la elaboración del extracto ordenado en auto anterior, remitido a la casilla judicial 5318. Pide a Secretaría verificar el extracto antes de usarlo para corregir inconsistencias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-30",
+            "concepto": "Elaboración y remisión del extracto a la casilla 5318"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el extracto remitido a la casilla 5318 y confirmar que incorpora la reforma de la demanda, según lo pedido en el auto de 30 de abril de 2024 (id 316)."
+      },
+      {
+        "id": "quito-2020-10-26-318",
+        "categoria": "citacion",
+        "resumen": "Extracto de citación/notificación a Iturralde Vasconez Santiago Efrain en el juicio 17230-2020-11399, que incluye el auto de calificación de 29 de octubre de 2020 (con término de 30 días para contestar, según el auto) y el auto del 17 de abril de 2024 que ordena citarlo por la prensa.",
+        "disposiciones": [
+          "Citar a Iturralde Vasconez Santiago Efrain por la prensa mediante tres publicaciones en un diario de amplia circulación local, o en su defecto en un periódico de la capital de provincia o de circulación nacional",
+          "La parte actora debe presentar en la Unidad Judicial las publicaciones respectivas en el término de 15 días desde la entrega del extracto",
+          "Prevenir a las partes la obligación de señalar casilla judicial en Quito"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Auto que ordena la citación por la prensa"
+          },
+          {
+            "fecha": "2024-04-30",
+            "concepto": "Fecha del extracto (16h19)"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Gestionar las tres publicaciones del extracto por la prensa y presentarlas en la Unidad Judicial en 15 días desde la entrega del extracto. El texto no fija la fecha de entrega, así que el vencimiento no se puede calcular."
+      },
+      {
+        "id": "quito-2020-10-26-317",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 30 de abril de 2024 a las 14h41, por boletas, del auto de sustanciación 316 a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-30",
+            "concepto": "Notificación por boletas del auto 316"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-316",
+        "categoria": "providencia",
+        "resumen": "Auto de sustanciación del 30 de abril de 2024 que, a petición de la parte actora, ordena reenviar el extracto porque el ya emitido no incorpora la reforma de la demanda.",
+        "disposiciones": [
+          "Remitir nuevamente, por secretaría, el extracto ordenado en legal y debida forma, con la reforma de la demanda"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-30",
+            "concepto": "Fecha del auto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-315",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 25 de abril de 2024. El texto solo dice 'Escrito, FePresentacion'; no consta quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-25",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-314",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 25 de abril de 2024 a las 10h57, por boletas, del auto de sustanciación 313 a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-25",
+            "concepto": "Notificación por boletas del auto 313"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-313",
+        "categoria": "providencia",
+        "resumen": "Auto de sustanciación del 25 de abril de 2024 que pone en conocimiento de la parte actora el acta de no citación de Compañía Feriteuvaz Agroganadera S.A. y le da 5 días, bajo prevención de archivo, para indicar dirección completa (calle principal, calle secundaria, nomenclatura, casa o departamento, provincia, cantón, parroquia, sector y referencias) que permita citar a la entidad.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte actora el acta de no citación de Compañía Feriteuvaz Agroganadera S.A., legalmente representada por Hilda Rosa Paredes Escobar",
+          "Ordenar que, en 5 días, bajo prevenciones de archivo, la parte actora indique la dirección completa de la entidad demandada para la diligencia de citación"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-25",
+            "concepto": "Fecha del auto que concede 5 días bajo prevención de archivo"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Indicar en 5 días la dirección completa de Compañía Feriteuvaz Agroganadera S.A. (calle principal, calle secundaria, nomenclatura, casa o departamento, provincia, cantón, parroquia, sector y referencias). El texto no dice desde cuándo corre el plazo, pero sí la prevención de archivo."
+      },
+      {
+        "id": "quito-2020-10-26-312",
+        "categoria": "otro",
+        "resumen": "Razón de secretaría del 24 de abril de 2024 que certifica la elaboración del extracto dispuesto en auto anterior, remitido a la casilla judicial 5318, con la indicación de verificarlo antes de usarlo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Elaboración del extracto y remisión a la casilla 5318"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-311",
+        "categoria": "citacion",
+        "resumen": "Extracto de citación/notificación del 24 de abril de 2024 dirigido a Iturralde Vasconez Santiago Efrain y otros. Incluye el auto de 29 de octubre de 2020 y el auto de 17 de abril de 2024 que ordena citarlo por la prensa. Es anterior al extracto del 30 de abril (id 318).",
+        "disposiciones": [
+          "Citar a Iturralde Vasconez Santiago Efrain por la prensa mediante tres publicaciones en un diario de amplia circulación local, con las alternativas previstas en el auto"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Auto que ordena la citación por la prensa"
+          },
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Fecha del extracto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-310",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones del 24 de abril de 2024 a las 15h46 sobre Compañía Feriteuvaz Agroganadera S.A.: consta gestión con razón de no citación en la dirección principal. El texto repetido no detalla el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Gestión de citación con razón de no citación en dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-309",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada a Compañía Feriteuvaz Agroganadera S.A. por dirección insuficiente, registrada el 24 de abril de 2024 a las 15h46. El texto solo dice 'Acta de citación'.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Registro de citación no realizada por dirección insuficiente"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Atender la prevención del auto de 25 de abril de 2024 (id 313) y aportar la dirección completa de la entidad demandada."
+      },
+      {
+        "id": "quito-2020-10-26-308",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones con fecha de registro 24 de abril de 2024 a las 11h25, que indica que el proceso fue asignado a un citador. El texto repite la fecha 16 de abril de 2024 y no es consistente con el título.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Proceso asignado a un citador (registro)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-307",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones con fecha de registro 17 de abril de 2024 a las 11h57 (el título indica el 24 de abril a las 11h25), que indica que el proceso fue asignado a un citador. Es un registro administrativo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Proceso asignado a un citador (registro)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-306",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones con fecha de registro 17 de abril de 2024 a las 11h57, que indica que el proceso fue asignado a un citador. Es un registro administrativo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Proceso asignado a un citador (registro)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-305",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 17 de abril de 2024 a las 9h35, por boletas, de un auto de sustanciación a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto está truncado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Notificación por boletas de un auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

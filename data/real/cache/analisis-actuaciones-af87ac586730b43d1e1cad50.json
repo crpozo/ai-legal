@@ -1,0 +1,330 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12074,
+    "tokensSalida": 5653
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-384",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juzgado ordena citar a la demandada Ferituvaz Agroganadera S.A. por medio de su gerente general, en la dirección indicada por el actor el 6 de junio de 2025, mediante deprecatorio a la Unidad Judicial Civil de Latacunga. Pide a la parte actora entregar copias en el término de 5 días.",
+        "disposiciones": [
+          "Citar a Ferituvaz Agroganadera S.A. con el extracto de la demanda y el auto, por intermedio de su gerente general Iturralde Vasconez Mario Emiliano, en la dirección indicada por el actor el 6 de junio de 2025 16:07.",
+          "Depreca la diligencia a la Unidad Judicial Civil del cantón Latacunga, provincia de Cotopaxi.",
+          "Solicitar a la parte actora que proporcione las copias necesarias dentro del término de 5 días."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-06-06",
+            "concepto": "Dirección indicada por el actor para la citación de Ferituvaz Agroganadera S.A. (escrito de 16:07)."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar las copias necesarias dentro de 5 días para el deprecatorio a Latacunga. El término de 5 días se cuenta desde la notificación del auto, cuya fecha no consta en el texto recibido."
+      },
+      {
+        "id": "quito-2020-10-26-383",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente el 6 de junio de 2025. El texto recibido solo indica 'Escrito, FePresentacion' y no permite conocer su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-06-06",
+            "concepto": "Presentación del escrito (16:07)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-382",
+        "categoria": "otro",
+        "resumen": "Razón de la secretaría que certifica que la documentación escaneada del expediente coincide con los originales, conforme al Memorando circular-CJ-DNGP-2018-0121-MC. Los originales están en el repositorio de la Unidad Judicial Civil de Iñaquito.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-06-06",
+            "concepto": "Fecha de la certificación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-381",
+        "categoria": "otro",
+        "resumen": "Oficio/deprecatorio del juez Wilmer Zambrano Ortiz a la Unidad Judicial Multicompetente de Sigchos para que oficie al citador Ney Bladimir Porras Salazar y aclare, en 5 días, las actas de citación de Egas Varea Fernando José Leopoldo e Iturralde Vasconez Ryna Mercedes, y agregue fotografías de la puerta del domicilio de los días 25, 26 y 27 de julio de 2023. Deja sin efecto los numerales 2 a 6 del auto de 1 de septiembre de 2023. Tiene por registrada la casilla de Iturralde Vasconez Eduardo Fernando y advierte que no consta la citación de los demás demandados.",
+        "disposiciones": [
+          "Oficiar al citador de la Unidad Judicial Multicompetente de Sigchos, Sr. Porras Salazar Ney Bladimir, para que aclare en 5 días las actas de citación de Egas Varea Fernando José Leopoldo e Iturralde Vasconez Ryna Mercedes.",
+          "Incorporar las fotografías fijadas en la puerta del domicilio de los demandados de los días 25, 26 y 27 de julio de 2023.",
+          "Dejar sin efecto el análisis de los numerales 2 a 6 del auto de 1 de septiembre de 2023, las 14h41.",
+          "La parte interesada proporcionará las fotocopias necesarias en formato pdf."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-25",
+            "concepto": "Inicio de la fijación de boletas de citación (25, 26 y 27 de julio de 2023)."
+          },
+          {
+            "fecha": "2023-09-01",
+            "concepto": "Auto cuyos numerales 2 a 6 quedan sin efecto."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Proporcionar en pdf las fotocopias necesarias para el oficio a Sigchos. El plazo de 5 días para el citador se cuenta desde la ejecutoria del auto, fecha que no consta en el texto."
+      },
+      {
+        "id": "quito-2020-10-26-380",
+        "categoria": "otro",
+        "resumen": "Razón de secretaría que indica que no se pudo efectuar el deprecatorio porque no hay dirección del demandado a citar. El proceso se devuelve al archivo para revisión del requirente.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-05-28",
+            "concepto": "Fecha de la razón."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el proceso en archivo y resolver la falta de dirección del demandado a citar por deprecatorio."
+      },
+      {
+        "id": "quito-2020-10-26-379",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 27 de mayo de 2025 a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-05-27",
+            "concepto": "Notificación del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-378",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registra en e-satje las casillas 5029 y 4928 y los correos de la defensa de la parte actora, y declara relevados a los abogados Samuel Valarezo y Patricio Lara. Acredita el CD del escrito del 22 de mayo de 2025 y sortea el deprecatorio. Antes de resolver lo pedido, exige a la parte actora aclarar si intentó citar a Ferituvaz Agroganaderia S.A. en la dirección de folio 883, y pronunciarse sobre el acta de no citación del 24 de abril de 2024, que indica que la dirección no es precisa.",
+        "disposiciones": [
+          "Registrar en e-satje las casillas judiciales 5029 y 4928 y los correos señalados por Iturralde Varea José Miguel como procurador común de la parte actora.",
+          "Tener por relevados de la defensa a los abogados Samuel Valarezo y Patricio Lara Aguilar.",
+          "Acreditar el CD adjunto al escrito del 22 de mayo de 2025 y sortear el deprecatorio ordenado.",
+          "Previo a proveer, la parte actora debe indicar si intentó citar a Ferituvaz Agroganaderia S.A. en la dirección de folio 883 y pronunciarse sobre el acta de no citación del 24 de abril de 2024, y aportar referencias, croquis, nomenclatura y fotografía actualizada del inmueble."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-24",
+            "concepto": "Acta de no citación de la demandada Ferituvaz Agroganaderia S.A."
+          },
+          {
+            "fecha": "2025-05-22",
+            "concepto": "Escritos de la parte actora (9:58 y 14:21)."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Responder a la providencia: aclarar si se intentó citar a Ferituvaz en el folio 883, pronunciarse sobre el acta de no citación de 24 de abril de 2024 y aportar referencias, croquis, nomenclatura y fotografía actualizada del inmueble. No consta plazo fijado para esta respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-377",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente el 22 de mayo de 2025 a las 14:21. El texto recibido solo indica 'Escrito, FePresentacion' y no permite conocer su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-05-22",
+            "concepto": "Presentación del escrito (14:21)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-376",
+        "categoria": "escrito_de_parte",
+        "resumen": "Anexos y escrito presentados electrónicamente el 22 de mayo de 2025 a las 9:58, incluido el CD mencionado en el auto de 27 de mayo de 2025. El texto recibido no detalla el contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-05-22",
+            "concepto": "Presentación de anexos y escrito (9:58)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-375",
+        "categoria": "escrito_de_parte",
+        "resumen": "Anexos y escrito presentados electrónicamente el 16 de mayo de 2025. El texto recibido no detalla el contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-05-16",
+            "concepto": "Presentación de anexos y escrito (9:58)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-374",
+        "categoria": "otro",
+        "resumen": "Razón de secretaría que indica que no se pudo efectuar el deprecatorio porque faltan piezas procesales necesarias (expediente incompleto). El proceso se devuelve al archivo para revisión del requirente.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-03-05",
+            "concepto": "Fecha de la razón."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-373",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 5 de marzo de 2025 a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-03-05",
+            "concepto": "Notificación del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-372",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Agrega al proceso un escrito y dispone que, cumplido lo ordenado en la providencia anterior, el actuario remita de inmediato el deprecatorio.",
+        "disposiciones": [
+          "Cumplido lo ordenado en la providencia anterior, el actuario remitirá de manera inmediata el deprecatorio dispuesto."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-03-05",
+            "concepto": "Fecha del auto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-371",
+        "categoria": "escrito_de_parte",
+        "resumen": "Anexos y escrito presentados electrónicamente el 18 de febrero de 2025. El texto recibido no detalla el contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-02-18",
+            "concepto": "Presentación de anexos y escrito (8:47)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-370",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 27 de enero de 2025 a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-01-27",
+            "concepto": "Notificación del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-369",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registra la casilla y correo de Iturralde Vasconez Eduardo Fernando, cuya contestación a la demanda y reconvención se atenderá oportunamente. Señala que no consta la citación de los demás demandados. Ordena oficiar al citador de Sigchos para aclarar en 5 días las actas de citación de Egas Varea y de Iturralde Vasconez Ryna Mercedes, y agregar fotografías. Deja sin efecto los numerales 2 a 6 del auto de 1 de septiembre de 2023.",
+        "disposiciones": [
+          "Registrar en e-satje la casilla judicial y correo de Iturralde Vasconez Eduardo Fernando.",
+          "La contestación a la demanda y reconvención se atenderá oportunamente, de ser procedente, conforme al Art. 77 del COGEP.",
+          "Oficiar al citador de Sigchos, Sr. Porras Salazar Ney Bladimir, para aclarar en 5 días las actas de citación de Egas Varea Fernando José Leopoldo e Iturralde Vasconez Ryna Mercedes e incorporar fotografías de los días 25, 26 y 27 de julio de 2023.",
+          "Dejar sin efecto el análisis de los numerales 2 a 6 del auto de 1 de septiembre de 2023, las 14h41."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-01-07",
+            "concepto": "Escrito de Iturralde Vasconez Eduardo Fernando (15:23)."
+          },
+          {
+            "fecha": "2023-07-25",
+            "concepto": "Inicio de la fijación de boletas de citación (25, 26 y 27 de julio de 2023)."
+          },
+          {
+            "fecha": "2023-09-01",
+            "concepto": "Auto cuyos numerales 2 a 6 quedan sin efecto."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-368",
+        "categoria": "escrito_de_parte",
+        "resumen": "Anexos y escrito presentados electrónicamente el 7 de enero de 2025 a las 15:23, que incluyen la contestación a la demanda y reconvención de Iturralde Vasconez Eduardo Fernando. El texto recibido no detalla el contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-01-07",
+            "concepto": "Presentación de escrito (15:23)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-367",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 3 de diciembre de 2024 a Fernando Egas Iturralde y a otros sujetos procesales. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-12-03",
+            "concepto": "Notificación del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-366",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Agrega las publicaciones en el diario El Expreso de la citación del demandado Iturralde Vasconez Eduardo Fernando, realizadas los días 5, 6 y 7 de noviembre de 2024, y las pone en conocimiento de las partes.",
+        "disposiciones": [
+          "Poner en conocimiento de las partes las publicaciones de citación de Iturralde Vasconez Eduardo Fernando en El Expreso."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-11-05",
+            "concepto": "Primera publicación de citación en El Expreso (la serie es 5, 6 y 7 de noviembre de 2024)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-365",
+        "categoria": "escrito_de_parte",
+        "resumen": "Anexos y escrito presentados electrónicamente el 14 de noviembre de 2024. El texto recibido no detalla el contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-11-14",
+            "concepto": "Presentación de anexos y escrito (10:43)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

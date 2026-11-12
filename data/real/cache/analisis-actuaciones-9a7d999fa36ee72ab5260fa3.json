@@ -1,0 +1,321 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10462,
+    "tokensSalida": 5484
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-204",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones de la providencia dirigida a la compañía Ferituvaz Agroganadera S.A. (representada por Hilda Rosa Paredes Escobar). Se indica que el proceso fue asignado a un citador. La fecha de la providencia que se menciona en el texto (catorce de junio de 2023) coincide con la de otras razones del mismo tipo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-18",
+            "concepto": "Asignación del proceso a un citador (registro de la razón)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-203",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a los actores Daniela Iturralde Varea y José Miguel Iturralde Varea (casillero 5318 y correo electrónico). La lista de casilleros está truncada en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-11",
+            "concepto": "Notificación por boletas del auto de sustanciación de 2023-07-11 12:07"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-202",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que ordena citar a Eduardo Fernando Iturralde Vásconez con el extracto de la demanda y el auto, mediante comisión a Latacunga. Pide a la parte actora un juego de copias en cinco días, y agrega la copia de la credencial del defensor de Enrique Alcides Iturralde Vásconez.",
+        "disposiciones": [
+          "Citar a Eduardo Fernando Iturralde Vásconez con el extracto de la demanda y el auto en el lugar indicado en el escrito de 30 de junio de 2023, mediante deprecatorio a un juez de la Unidad Judicial Civil de Latacunga.",
+          "Solicitar a la parte actora, en el término de 5 días, un juego de copias de las piezas procesales.",
+          "Tener en cuenta la fotocopia de la credencial del defensor de Enrique Alcides Iturralde Vásconez."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-30",
+            "concepto": "Fecha del escrito en el que se indica el lugar de citación de Eduardo Fernando Iturralde Vásconez"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar en el término de 5 días un juego de copias de las piezas procesales para el deprecatorio. El texto no fija la fecha de inicio del término; confirmar desde cuándo corre con la notificación del auto."
+      },
+      {
+        "id": "quito-2020-10-26-201",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente por una de las partes, con anexos. El texto recibido no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-200",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido no indica quién lo presentó ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-199",
+        "categoria": "razon_notificacion",
+        "resumen": "Certificación de la secretaría de que la documentación escaneada del expediente coincide con los originales, que se encuentran en el repositorio de la unidad judicial.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-30",
+            "concepto": "Fecha de la certificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-198",
+        "categoria": "otro",
+        "resumen": "Oficio de deprecatorio dirigido a un juez de la Unidad Judicial Multicompetente de Sigchos para citar a Egas Varea Fernando José Leopoldo y a Iturralde Vásconez Ryna Mercedes. Reproduce la providencia de 29 de marzo de 2022 (admisión de la demanda por procedimiento ordinario y citación) y las providencias de 7 de junio y 29 de junio de 2023. El texto contiene fechas de 2022 y 2023 que no son coherentes entre sí, y el oficio no indica claramente en qué orden se dictaron las providencias.",
+        "disposiciones": [
+          "Admitir a trámite la reforma a la demanda por procedimiento ordinario (providencia de 29 de marzo de 2022, según el texto).",
+          "Ordenar la citación de la compañía Ferituvaz Agroganadera S.A., Eduardo Fernando Iturralde Vásconez, Ryna Mercedes Iturralde Vásconez, Santiago Efraín Iturralde Vásconez, Enrique Alcides Iturralde Vásconez y Fernando José Leopoldo Egas Varea.",
+          "Conceder a los demandados el término de treinta días para contestar la demanda (artículo 291 del COGEP, según el texto).",
+          "Tener a José Miguel Iturralde Varea como procurador común de los accionantes.",
+          "Depreciar a Sigchos la citación de Egas Varea y de Iturralde Vásconez Ryna Mercedes (providencia de 7 de junio de 2023, subsanada el 29 de junio de 2023)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-29",
+            "concepto": "Providencia de admisión de la reforma a la demanda, con término de treinta días para contestar (según el texto)"
+          },
+          {
+            "fecha": "2023-06-07",
+            "concepto": "Providencia que ordena citar a Egas Varea y a Iturralde Vásconez Ryna Mercedes mediante deprecatorio"
+          },
+          {
+            "fecha": "2023-06-29",
+            "concepto": "Providencia que subsana la de 7 de junio de 2023 en cuanto al deprecatorio"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-197",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 29 de junio de 2023 a los actores Daniela y José Miguel Iturralde Varea.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-29",
+            "concepto": "Notificación por boletas del auto de sustanciación de la misma fecha"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-196",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que subsana la providencia de 7 de junio de 2023 y ordena citar por deprecatorio a Egas Varea y a Iturralde Vásconez Ryna Mercedes, en el domicilio indicado en el escrito de 17 de mayo de 2023.",
+        "disposiciones": [
+          "Subsanar la providencia de 7 de junio de 2023 (11h28) en la parte pertinente.",
+          "Citar con el extracto de la demanda y el auto a Egas Varea Fernando José Leopoldo e Iturralde Vásconez Ryna Mercedes, en la dirección del escrito de 17 de mayo de 2023, mediante deprecatorio a Sigchos."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-29",
+            "concepto": "Fecha del auto de subsanación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-195",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación a los actores Daniela y José Miguel Iturralde Varea. El título la identifica como cambio de defensor o casillero.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-28",
+            "concepto": "Notificación por boletas del auto de 28 de junio de 2023"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-194",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que registra en e-satje los correos del demandado Enrique Alcides Iturralde Vásconez y advierte a su defensor sobre la obligación de adjuntar la copia de la credencial (artículos 326 y 327 del COFJ). Corre traslado a la actora, por tres días, del escrito de 14 de junio de 2023. Ordena que el actuario sortee el deprecatorio y no anexa las fotocopias presentadas por la actora el 26 de junio de 2023.",
+        "disposiciones": [
+          "Registrar en e-satje los correos electrónicos señalados por Enrique Alcides Iturralde Vásconez.",
+          "Recordar al defensor la obligación de adjuntar la copia de la credencial de abogado (artículos 326 y 327 del COFJ).",
+          "Correr traslado a la parte actora con el escrito de 14 de junio de 2023, para que se pronuncie en el término de 3 días.",
+          "Ordenar al actuario verificar el CD de la actora y sortear el deprecatorio ordenado el 7 de junio de 2023.",
+          "No anexar las fotocopias simples presentadas por la actora el 26 de junio de 2023, por ser similares a las del CD."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-14",
+            "concepto": "Fecha del escrito de Enrique Alcides Iturralde Vásconez sobre el que se corre traslado"
+          },
+          {
+            "fecha": "2023-06-26",
+            "concepto": "Fecha del escrito de la actora con fotocopias no anexadas"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Pronunciarse sobre el escrito de 14 de junio de 2023 de Enrique Alcides Iturralde Vásconez, dentro de 3 días desde la notificación del auto. El texto no consta con fecha de notificación, por lo que el vencimiento no se puede determinar."
+      },
+      {
+        "id": "quito-2020-10-26-193",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido no indica quién lo presentó ni su contenido. Por la providencia de 28 de junio de 2023 consta que la actora presentó fotocopias el 26 de junio de 2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-26",
+            "concepto": "Fecha de presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-192",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones de la providencia dirigida a la compañía Ferituvaz Agroganadera S.A. Se indica que las boletas fueron recibidas por la oficina de citaciones.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-14",
+            "concepto": "Recepción de boletas por la oficina de citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-191",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de que se remitió despacho legal a las oficinas de citaciones. El texto no identifica a los destinatarios (el campo aparece vacío).",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-14",
+            "concepto": "Remisión del despacho a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-190",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones de la providencia dirigida a la compañía Ferituvaz Agroganadera S.A.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-14",
+            "concepto": "Envío a citaciones de la providencia"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-189",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido no indica quién lo presentó ni su contenido. Es probablemente el escrito de 14 de junio de 2023 mencionado en la providencia de 28 de junio, pero el texto no lo confirma.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-14",
+            "concepto": "Fecha de presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-188",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación de 7 de junio de 2023 a los actores Daniela y José Miguel Iturralde Varea.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-06-07",
+            "concepto": "Notificación por boletas del auto de 7 de junio de 2023"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-187",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que pone en conocimiento de la actora las actas de citación de Eduardo Fernando Iturralde Vásconez y Enrique Alcides Iturralde Vásconez, citados por boleta fijada los días 22, 23 y 24 de mayo de 2023. Ordena citar por deprecatorio a Egas Varea y a Iturralde Vásconez Ryna Mercedes, y que el actuario remita la documentación a citaciones para citar a la compañía Ferituvaz.",
+        "disposiciones": [
+          "Poner en conocimiento de la actora las actas de citación de Eduardo Fernando Iturralde Vásconez y Enrique Alcides Iturralde Vásconez.",
+          "Citar con el extracto de la demanda y el auto a Egas Varea y a Iturralde Vásconez Ryna Mercedes, en la dirección del escrito de 17 de mayo de 2023, mediante deprecatorio a Sigchos.",
+          "Solicitar a la actora un juego de copias de las piezas procesales para sortear el deprecatorio.",
+          "Ordenar al actuario remitir de inmediato las copias a citaciones para citar a la compañía Ferituvaz."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-22",
+            "concepto": "Inicio de la fecha de citación por boleta fijada (22, 23 y 24 de mayo de 2023)"
+          },
+          {
+            "fecha": "2023-05-17",
+            "concepto": "Fecha del escrito que indica la dirección de citación de Egas Varea y de Iturralde Vásconez Ryna Mercedes"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar a la secretaría las copias de las piezas procesales solicitadas para el deprecatorio a Sigchos y para la citación de Ferituvaz."
+      },
+      {
+        "id": "quito-2020-10-26-186",
+        "categoria": "otro",
+        "resumen": "Acta de citación por boleta fijada registrada en el sistema. El texto no contiene el contenido del acta ni identifica al citado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Registro de la citación por boleta fijada"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-185",
+        "categoria": "otro",
+        "resumen": "Acta de citación por boleta fijada registrada en el sistema. El texto no contiene el contenido del acta ni identifica al citado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Registro de la citación por boleta fijada"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

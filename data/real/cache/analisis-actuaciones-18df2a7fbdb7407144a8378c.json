@@ -1,0 +1,309 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 7949,
+    "tokensSalida": 5274
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-084",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Iturralde Vasconez Eduardo Fernando, dentro del juicio 17230202011399. El texto no contiene el contenido de la citación ni fecha de comparecencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Iturralde Vasconez Eduardo Fernando"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar en el expediente físico o en la boleta la citación efectivamente practicada a Iturralde Vasconez Eduardo Fernando y el plazo de contestación que corresponda; el texto no lo consta."
+      },
+      {
+        "id": "quito-2020-10-26-083",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Iturralde Vasconez Ryna Mercedes, dentro del juicio 17230202011399. El texto no contiene el contenido de la citación ni fecha de comparecencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Iturralde Vasconez Ryna Mercedes"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la citación efectivamente practicada a Iturralde Vasconez Ryna Mercedes y el plazo de contestación; el texto no lo consta."
+      },
+      {
+        "id": "quito-2020-10-26-082",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Egas Varea Fernando Jose Leopoldo, dentro del juicio 17230202011399. El texto no contiene el contenido de la citación ni fecha de comparecencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Egas Varea Fernando Jose Leopoldo"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la citación efectivamente practicada a Egas Varea Fernando Jose Leopoldo y el plazo de contestación; el texto no lo consta."
+      },
+      {
+        "id": "quito-2020-10-26-081",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Iturralde Varea Maria Fernanda, dentro del juicio 17230202011399. Se trata de una parte actora.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Iturralde Varea Maria Fernanda"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-080",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Iturralde Vasconez Santiago Efrain, dentro del juicio 17230202011399. El texto no contiene el contenido de la citación ni fecha de comparecencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Iturralde Vasconez Santiago Efrain"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la citación efectivamente practicada a Iturralde Vasconez Santiago Efrain y el plazo de contestación; el texto no lo consta."
+      },
+      {
+        "id": "quito-2020-10-26-079",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones, con fecha 21 de julio de 2022, de la documentación para citar a Feituvaz Agroganadera S.A., en la persona de su gerente general Eduardo Fernando Iturralde Vásconez, dentro del juicio 17230202011399. El texto no contiene el contenido de la citación.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-21",
+            "concepto": "Envío de documentación a la Oficina de Citaciones para citar a Ferituvaz Agroganadera S.A."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la citación efectivamente practicada a la compañía Ferituvaz Agroganadera S.A. y el plazo de contestación; el texto no lo consta. Revisar también que la razón indique correctamente al representante legal, pues el nombre del gerente general consta en distintas formas en el proceso."
+      },
+      {
+        "id": "quito-2020-10-26-078",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 15 de julio de 2022 con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion' y no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-07-15",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito y sus anexos en el expediente, ya que el texto recibido no permite saber su contenido ni si requiere respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-077",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación, del 15 de junio de 2022, por boletas judiciales del auto de sustanciación de 15 de junio de 2022 a Iturralde Varea Daniela, Iturralde Varea Jose Miguel y otros casilleros. La lista de casilleros está omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-06-15",
+            "concepto": "Notificación del auto de sustanciación por boletas judiciales"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-076",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juez agrega escritos y anexos de la parte accionante. Niega por improcedente la solicitud de la parte accionante porque no consta la inscripción de la demanda ni la devolución del deprecatorio enviado a Latacunga, y porque la reforma de la demanda introdujo un hecho nuevo que debe conocerse por todos los demandados. Invoca los artículos 82, 172 y 76 de la Constitución.",
+        "disposiciones": [
+          "Se niega por improcedente la solicitud de la parte accionante relacionada con el escrito de 26 de mayo de 2022.",
+          "Se notifique."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-06-15",
+            "concepto": "Fecha del auto de sustanciación que niega la solicitud"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Evaluar la negativa del juez a la solicitud de la parte actora (hecho nuevo en la reforma a la demanda) y decidir si conviene recurrir o pedir aclaración en el plazo que fije la ley; el texto no indica el plazo de impugnación."
+      },
+      {
+        "id": "quito-2020-10-26-075",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 26 de mayo de 2022 con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion' y no consta su contenido. El auto de 15 de junio de 2022 lo menciona como solicitud de la parte accionante.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-05-26",
+            "concepto": "Presentación de escrito con anexos por la parte accionante"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-074",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 17 de mayo de 2022 con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion' y no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-05-17",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-073",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 10 de mayo de 2022 con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion' y no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-05-10",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-072",
+        "categoria": "otro",
+        "resumen": "Oficio dirigido a un juez de la Unidad Judicial Civil de Latacunga (deprecatorio) para la inscripción de la demanda, ya que el bien inmueble está en Latacunga. Ordena que el oficio al Registrador de la Propiedad del cantón Latacunga se remita, y que el actuario cumpla lo dispuesto. Firma el juez Wilmer Zambrano Ortiz.",
+        "disposiciones": [
+          "Remitir el oficio para la inscripción de la demanda al Registrador de la Propiedad del cantón Latacunga.",
+          "El actuario debe cumplir lo dispuesto en el auto."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-04-26",
+            "concepto": "Fecha del oficio deprecatorio"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento a la inscripción de la demanda en el Registro de la Propiedad de Latacunga y a la devolución del deprecatorio, que el texto indica como pendientes."
+      },
+      {
+        "id": "quito-2020-10-26-071",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación, del 19 de abril de 2022, por boletas judiciales del auto de sustanciación de 19 de abril de 2022 a Iturralde Varea Daniela, Iturralde Varea Jose Miguel y otros casilleros. La lista de casilleros está omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-04-19",
+            "concepto": "Notificación del auto de sustanciación por boletas judiciales"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-070",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juez agrega el escrito y, para la inscripción de la demanda, determina que el oficio se remita al Registrador de la Propiedad de Latacunga porque el inmueble está allí.",
+        "disposiciones": [
+          "Agregar el escrito al proceso.",
+          "Remitir el oficio para la inscripción de la demanda al Registrador de la Propiedad del cantón Latacunga.",
+          "El actuario debe cumplir lo dispuesto en el auto."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-04-19",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento a la remisión del oficio de inscripción al Registrador de la Propiedad de Latacunga."
+      },
+      {
+        "id": "quito-2020-10-26-069",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 5 de abril de 2022. El texto recibido solo indica 'Escrito, FePresentacion' y no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-04-05",
+            "concepto": "Presentación de escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-068",
+        "categoria": "otro",
+        "resumen": "Razón del secretario de 4 de abril de 2022 que certifica el envío del oficio ordenado en auto anterior a la casilla judicial 5318 de la parte demandante.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-04-04",
+            "concepto": "Remisión del oficio a la casilla 5318 de la parte demandante"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-067",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de convalidación que corrige un error involuntario de un auto anterior. Ordena inscribir en el Registro de la Propiedad del Distrito Metropolitano de Quito la reforma a la demanda presentada por la parte accionante, con base en el artículo 146 inciso séptimo del COGEP.",
+        "disposiciones": [
+          "Inscribir la reforma a la demanda en el Registro de la Propiedad del Distrito Metropolitano de Quito.",
+          "Por secretaría librar el oficio correspondiente.",
+          "En lo demás, las partes estarán a lo dispuesto en el auto anterior."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-31",
+            "concepto": "Fecha de la convalidación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar que se libró y se cumplió el oficio de inscripción de la reforma a la demanda en el Registro de la Propiedad de Quito."
+      },
+      {
+        "id": "quito-2020-10-26-066",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación, del 31 de marzo de 2022, por boletas judiciales del auto de sustanciación de convalidación a Iturralde Varea Daniela, Iturralde Varea Jose Miguel y otros casilleros. La lista de casilleros está omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-31",
+            "concepto": "Notificación del auto de convalidación por boletas judiciales"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-065",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de convalidación que corrige un error involuntario de un auto anterior. Ordena inscribir en el Registro de la Propiedad del Distrito Metropolitano de Quito la reforma a la demanda presentada por la parte accionante, con base en el artículo 146 inciso séptimo del COGEP.",
+        "disposiciones": [
+          "Inscribir la reforma a la demanda en el Registro de la Propiedad del Distrito Metropolitano de Quito.",
+          "Por secretaría librar el oficio correspondiente.",
+          "En lo demás, las partes estarán a lo dispuesto en el auto anterior."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-31",
+            "concepto": "Fecha de la convalidación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar que se libró y se cumplió el oficio de inscripción de la reforma a la demanda en el Registro de la Propiedad de Quito."
+      }
+    ]
+  }
+}

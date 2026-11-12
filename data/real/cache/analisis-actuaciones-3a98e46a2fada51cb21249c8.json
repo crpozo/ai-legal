@@ -1,0 +1,300 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 6775,
+    "tokensSalida": 4347
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-024",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones de la providencia 173337225 dirigida a Iturralde Vasconez Enrique Alcides. Consta que las boletas fueron recibidas por la oficina de citaciones el 22/06/2021 a las 17:24. El texto no detalla el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-22",
+            "concepto": "Boletas recibidas por la oficina de citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-023",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón del secretario que certifica el envío del despacho a la oficina de citaciones para citar/notificar a Iturralde Vasconez Enrique Alcides y a Ferituvaz Agroganadera S.A. (gerente general Eduardo Fernando Iturralde Vásconez).",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-20",
+            "concepto": "Remisión del despacho a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-022",
+        "categoria": "razon_notificacion",
+        "resumen": "Providencia 173337226 de envío a citaciones dirigida a Ferituvaz Agroganadera S.A. a través de su gerente general Eduardo Fernando Iturralde Vásconez. El texto disponible es el encabezado de la providencia; no consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-20",
+            "concepto": "Envío de la providencia 173337226 a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-021",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones de la providencia 173337225 dirigida a Iturralde Vasconez Enrique Alcides. El texto disponible es el encabezado de la providencia; no consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-20",
+            "concepto": "Envío de la providencia 173337225 a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-020",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion'; no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-15",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-019",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación a varias partes actoras y casilleros, en el casillero 5318 de Iturralde Varea Daniela. La lista completa de casilleros fue omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-08",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-018",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que agrega el escrito y las actas de no citación. Pone en conocimiento del actor las actas de no citación a Ferituvaz Agroganadera S.A. y a Iturralde Vasconez Enrique Alcides por dirección insuficiente, y ordena nueva citación en la dirección aportada por el actor.",
+        "disposiciones": [
+          "Poner en conocimiento del ejecutante las actas de no citación a Ferituvaz Agroganadera S.A. (gerente general Eduardo Fernando Iturralde Vasconez) e Iturralde Vasconez Enrique Alcides por dirección insuficiente.",
+          "Citar nuevamente a Ferituvaz Agroganadera S.A. y a Iturralde Vasconez Enrique Alcides en la dirección indicada en el escrito, mediante despacho a la oficina de citaciones.",
+          "Solicitar a la parte actora copias necesarias para las boletas de citación en el término de cinco días."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-08",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar en cinco días las copias necesarias para elaborar las boletas de citación, según lo ordenado. El término de cinco días no tiene fecha de inicio consignada en el texto; verificar la fecha de notificación del auto antes de computarlo."
+      },
+      {
+        "id": "quito-2020-10-26-017",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion'; no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-05-13",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-016",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada por dirección insuficiente. El texto recibido solo contiene la frase 'Acta de citación'; no consta a quién se intentó citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-05-04",
+            "concepto": "Acta de citación no realizada (dirección insuficiente)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-015",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación a varias partes actoras, en el casillero 5318 de Iturralde Varea Daniela. La lista completa de casilleros fue omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-04-14",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-014",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que agrega el escrito y anexos. Advierte que los documentos son copias simples y exige que la parte accionante justifique en legal y debida forma su requerimiento. Conmina a la parte a observar buena fe y lealtad procesal por direcciones no proporcionadas para citar.",
+        "disposiciones": [
+          "Justificar en legal y debida forma el requerimiento, por tratarse de copias simples.",
+          "Observar los principios de buena fe y lealtad procesal respecto de direcciones no proporcionadas para citar."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-04-14",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Justificar en legal y debida forma el requerimiento, dado que los documentos adjuntos son copias simples. El texto no fija plazo para ello."
+      },
+      {
+        "id": "quito-2020-10-26-013",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El texto recibido solo indica 'ANEXOS, Escrito, FePresentacion'; no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-03-23",
+            "concepto": "Presentación de escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-012",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación a varias partes actoras, en el casillero 5318 de Iturralde Varea Daniela. La lista de casilleros fue omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-03-18",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-011",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que agrega el acta de no citación y constata la falta de citación a Iturralde Vasconez Santiago Efrain, Iturralde Vasconez Ryna Mercedes y Egas Varea Fernando Jose Leopoldo, por lo que no se ha configurado la contienda. Concede tres días para indicar la dirección exacta de citación con los datos especificados.",
+        "disposiciones": [
+          "Conceder a la parte interesada el término de tres días para consignar el lugar exacto donde debe citarse a los demandados Iturralde Vasconez Santiago Efrain, Iturralde Vasconez Ryna Mercedes y Egas Varea Fernando Jose Leopoldo, con calle principal, calle secundaria, nomenclatura, provincia, cantón, parroquia, sector y referencias."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-03-18",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Consignar en tres días la dirección exacta de citación de los tres demandados indicados. El texto no consta la fecha de notificación del auto, por lo que el término no puede fijarse con certeza; verificarla antes de computar el plazo."
+      },
+      {
+        "id": "quito-2020-10-26-010",
+        "categoria": "otro",
+        "resumen": "Razón del secretario que anexa al proceso el acta de no citación/notificación con firma electrónica remitida por la oficina de citaciones. El texto no detalla los demandados afectados.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-03-02",
+            "concepto": "Anexo del acta de no citación/notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-009",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada por causa desconocida. El texto recibido solo contiene la frase 'Acta de citación'; no consta a quién se intentó citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-02-19",
+            "concepto": "Acta de citación no realizada (desconocido)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-008",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada por causa desconocida. El texto recibido solo contiene la frase 'Acta de citación'; no consta a quién se intentó citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-02-19",
+            "concepto": "Acta de citación no realizada (desconocido)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-007",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada por causa desconocida. El texto recibido solo contiene la frase 'Acta de citación'; no consta a quién se intentó citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-02-19",
+            "concepto": "Acta de citación no realizada (desconocido)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-006",
+        "categoria": "otro",
+        "resumen": "Razón del secretario que anexa al proceso el acta de no citación/notificación con firma electrónica remitida por la oficina de citaciones. El texto no detalla los demandados afectados.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-02-11",
+            "concepto": "Anexo del acta de no citación/notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-005",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada por cambio de dirección. El texto recibido solo contiene la frase 'Acta de citación'; no consta a quién se intentó citar.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-01-31",
+            "concepto": "Acta de citación no realizada (cambio de dirección)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

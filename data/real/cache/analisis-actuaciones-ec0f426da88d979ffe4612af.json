@@ -1,0 +1,296 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8465,
+    "tokensSalida": 3978
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-124",
+        "categoria": "citacion",
+        "resumen": "Acta de citación con resultado 'No realizada - dirección insuficiente'. El texto recibido solo contiene el título del acta, sin detalle de a quién iba dirigida ni de la dirección indicada.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-28",
+            "concepto": "Acta de citación no realizada por dirección insuficiente"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el acta completa para identificar el demandado afectado y el motivo exacto de la insuficiencia de dirección, y valorar aportar una dirección más precisa o pedir nuevas diligencias de citación."
+      },
+      {
+        "id": "quito-2020-10-26-123",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón del envío a citaciones respecto de Feritufaz Agroganadera S.A. (gerente general Eduardo Fernando Iturralde Vásconez): la gestión se realizó con razón de no citación en la dirección principal. El texto reproduce la providencia de la Unidad Judicial Civil de Iñaquito, cuya fecha en el texto (21 de julio de 2022) no coincide con la fecha de la razón (28 de septiembre de 2022).",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-28",
+            "concepto": "Gestión de citación con razón de no citación (dirección principal)"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar el resultado de la gestión de citación a la compañía demandada y evaluar si corresponde pedir nueva citación en otra dirección."
+      },
+      {
+        "id": "quito-2020-10-26-122",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: el proceso fue asignado a un citador para citar a Feritufaz Agroganadera S.A. (gerente general Eduardo Fernando Iturralde Vásconez). El texto reproduce una providencia que no detalla más acciones.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-26",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-121",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: el proceso fue asignado a un citador para citar a María Fernanda Iturralde Varea. El texto no contiene otros datos relevantes.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-26",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-120",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Feritufaz Agroganadera S.A. (Eduardo Fernando Iturralde Vásconez): la fecha de la asignación al citador que consta en el título es 11/08/2022, mientras que la fecha de registro de la actuación es 26/09/2022.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-11",
+            "concepto": "Proceso asignado a un citador (según el título de la razón)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-119",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a María Fernanda Iturralde Varea. La fecha del título es 11/08/2022 y la del registro es 26/09/2022.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-11",
+            "concepto": "Proceso asignado a un citador (según el título de la razón)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-118",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Eduardo Fernando Iturralde Vásconez. El título indica 18/08/2022 y el registro 23/09/2022.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-18",
+            "concepto": "Proceso asignado a un citador (según el título de la razón)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-117",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Eduardo Fernando Iturralde Vásconez, con fecha 23/09/2022 en el título y en el registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-23",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-116",
+        "categoria": "citacion",
+        "resumen": "Acta de citación realizada mediante boleta. El texto recibido solo contiene el título, sin identificar al citado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-02",
+            "concepto": "Citación realizada por boleta"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-115",
+        "categoria": "citacion",
+        "resumen": "Acta de citación realizada mediante boleta. El texto recibido solo contiene el título, sin identificar al citado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-02",
+            "concepto": "Citación realizada por boleta"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-114",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Ryna Mercedes Iturralde Vásconez.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-31",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-113",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Fernando José Leopoldo Egas Varea.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-31",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-112",
+        "categoria": "razon_notificacion",
+        "resumen": "Tercera gestión del citador para citar a Fernando José Leopoldo Egas Varea, mediante boleta 3 en dirección principal. El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-31",
+            "concepto": "Tercera gestión de citación (boleta 3, dirección principal)"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Confirmar el resultado de la tercera boleta dirigida a Fernando José Leopoldo Egas Varea, que el texto no permite determinar."
+      },
+      {
+        "id": "quito-2020-10-26-111",
+        "categoria": "razon_notificacion",
+        "resumen": "Tercera gestión del citador para citar a Ryna Mercedes Iturralde Vásconez, mediante boleta 3 en dirección principal. El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-31",
+            "concepto": "Tercera gestión de citación (boleta 3, dirección principal)"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Confirmar el resultado de la tercera boleta dirigida a Ryna Mercedes Iturralde Vásconez, que el texto no permite determinar."
+      },
+      {
+        "id": "quito-2020-10-26-110",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del auto de sustanciación a Daniela Iturralde Varea, José Miguel Iturralde Varea y otros, mediante boletas en casillero 5318 y correo electrónico. La lista completa de casilleros fue omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-29",
+            "concepto": "Notificación del auto de sustanciación mediante boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-109",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que agrega al proceso un escrito y un deprecatorio. Tiene en cuenta la inscripción de la demanda en el Registro de la Propiedad de Latacunga y pone en conocimiento del ejecutante lo ordenado por el juez deprecante el 23 de agosto de 2022. Declara atendido lo solicitado porque ya se remitió despacho suficiente a citaciones.",
+        "disposiciones": [
+          "Agregar al proceso el escrito y la devolución del deprecatorio",
+          "Tener en cuenta la inscripción de la demanda en el Registro de la Propiedad de Latacunga",
+          "Poner en conocimiento del ejecutante lo ordenado por el juez deprecante el 23/08/2022",
+          "Dar por atendido lo solicitado por haberse remitido despacho a citaciones"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-23",
+            "concepto": "Auto del juez deprecante puesto en conocimiento del ejecutante"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-108",
+        "categoria": "razon_notificacion",
+        "resumen": "Segunda gestión del citador para citar a Ryna Mercedes Iturralde Vásconez, mediante boleta 2 en dirección principal. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-24",
+            "concepto": "Segunda gestión de citación (boleta 2, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-107",
+        "categoria": "razon_notificacion",
+        "resumen": "Segunda gestión del citador para citar a Fernando José Leopoldo Egas Varea, mediante boleta 2 en dirección principal. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-24",
+            "concepto": "Segunda gestión de citación (boleta 2, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-106",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Ryna Mercedes Iturralde Vásconez.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-24",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-105",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones: asignación a un citador para citar a Fernando José Leopoldo Egas Varea.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-24",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

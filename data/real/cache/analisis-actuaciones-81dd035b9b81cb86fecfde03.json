@@ -1,0 +1,301 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9699,
+    "tokensSalida": 4036
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-164",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juzgado, invocando precedentes de la Corte Constitucional y del Tribunal de Alzada sobre impulso procesal y archivo, constata que no se ha citado a Iturralde Vasconez Ryna Mercedes ni a Egas Varea Fernando Jose Leopoldo. Concede a la parte actora un término de cinco días para indicar el lugar exacto de citación de la parte demandada, bajo prevención de archivo.",
+        "disposiciones": [
+          "Conceder a la parte interesada el término de 5 días para que consigne el lugar en que debe citarse a la parte demandada, con dirección completa (calles, nomenclatura, provincia, cantón, parroquia, sector y referencias).",
+          "Advertencia: bajo prevenciones de archivo si no se cumple."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-19",
+            "concepto": "Fecha de la actuación (notificación del auto); el término de 5 días se cuenta desde su notificación, fecha que no consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar dentro de 5 días el lugar exacto de citación de Ryna Mercedes Iturralde Vasconez y Fernando José Leopoldo Egas Varea. Verificar la fecha de notificación del auto en el sistema, porque el plazo corre desde ella y el texto no la indica."
+      },
+      {
+        "id": "quito-2020-10-26-163",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de la secretaría que deja constancia del envío del proceso a la Oficina de Citaciones para que se asigne un citador a Iturralde Vasconez Eduardo Fernando.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-17",
+            "concepto": "Envío a Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-162",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones para Iturralde Vasconez Enrique Alcides; el proceso queda asignado a un citador.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-17",
+            "concepto": "Envío a Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-161",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Citaciones: gestión realizada con razón de no citación en dirección principal para Iturralde Vasconez Ryna Mercedes.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-31",
+            "concepto": "Razón de no citación en dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-160",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada respecto de Iturralde Vasconez Ryna Mercedes; el destinatario figura como desconocido. El texto del acta es solo el título, sin detalle.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-31",
+            "concepto": "Acta de no citación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-159",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Citaciones: gestión con razón de no citación en dirección principal para Egas Varea Fernando Jose Leopoldo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-31",
+            "concepto": "Razón de no citación en dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-158",
+        "categoria": "citacion",
+        "resumen": "Acta de citación no realizada respecto de Egas Varea Fernando Jose Leopoldo; el destinatario figura como desconocido. El texto del acta es solo el título, sin detalle.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-31",
+            "concepto": "Acta de no citación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-157",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Egas Varea Fernando Jose Leopoldo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-30",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-156",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Iturralde Vasconez Ryna Mercedes.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-30",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-155",
+        "categoria": "razon_notificacion",
+        "resumen": "Registro en Citaciones de asignación a citador para Iturralde Vasconez Ryna Mercedes con fecha de gestión 24/02/2023, cargado el 30/03/2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-24",
+            "concepto": "Asignación a citador (fecha de gestión)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-154",
+        "categoria": "razon_notificacion",
+        "resumen": "Registro en Citaciones de asignación a citador para Egas Varea Fernando Jose Leopoldo con fecha de gestión 24/02/2023, cargado el 30/03/2023.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-24",
+            "concepto": "Asignación a citador (fecha de gestión)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-153",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Iturralde Vasconez Enrique Alcides.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-03-02",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-152",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Egas Varea Fernando Jose Leopoldo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-24",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-151",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Iturralde Vasconez Ryna Mercedes.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-24",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-150",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a Citaciones: proceso asignado a un citador para Iturralde Vasconez Eduardo Fernando.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-24",
+            "concepto": "Asignación a citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-149",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación a varios actores (Iturralde Varea Daniela, Iturralde Varea Jose Miguel), en casillero y correo. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-25",
+            "concepto": "Notificación del auto de sustanciación de 25/01/2023"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-148",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juzgado constata que el sistema registra cuatro razones de envío a citaciones y tiene por atendidas las peticiones I y III. Conmina a la parte actora a entregar copias para las boletas de Feritutvaz Agroganadera S.A. y cita a la parte actora para el 15 de febrero de 2023 a rendir juramento de imposibilidad de ubicar el domicilio de Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Conminar a la parte actora a proporcionar las copias necesarias para la elaboración de boletas de Feritutvaz Agroganadera S.A., en el término de cinco días.",
+          "Convocar a la parte actora, con abogado o procurador con cláusula especial para juramentar, para el 15 de febrero de 2023 a las 08h30, para rendir juramento de imposibilidad de determinar el domicilio de Iturralde Vasconez Santiago Efrain (art. 56 COGEP)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-02-15",
+            "concepto": "Diligencia de juramento de imposibilidad de domicilio de Iturralde Vasconez Santiago Efrain, 08h30, quinto piso del Complejo Judicial Norte"
+          },
+          {
+            "fecha": "2022-11-01",
+            "concepto": "Auto que ya ordenó la citación de Feritutvaz Agroganadera S.A. (numeral 4), según el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Asistir el 15/02/2023 a las 08h30 con abogado o procurador con cláusula para juramentar. Entregar las copias para las boletas de Feritutvaz Agroganadera. El plazo de cinco días depende de la fecha de notificación de este auto, que no consta en el texto; ya es posterior a la fecha de la diligencia fijada, por lo que conviene verificar si la diligencia se realizó o fue reprogramada."
+      },
+      {
+        "id": "quito-2020-10-26-147",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Citaciones: boletas recibidas por la oficina de citaciones para Egas Varea Fernando Jose Leopoldo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-20",
+            "concepto": "Recepción de boletas en Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-146",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Citaciones: boletas recibidas por la oficina de citaciones para Iturralde Vasconez Enrique Alcides.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-20",
+            "concepto": "Recepción de boletas en Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-145",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Citaciones: boletas recibidas por la oficina de citaciones para Iturralde Vasconez Ryna Mercedes.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-20",
+            "concepto": "Recepción de boletas en Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10741,
+    "tokensSalida": 7454
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-304",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se ordena citar por la prensa al demandado Santiago Efraín Iturralde Vasconez, mediante tres publicaciones en un diario de amplia circulación local, o subsidiariamente en un periódico de la capital de provincia o de circulación nacional. Se fundamenta en el Art. 56 del COGEP, con base en el juramento rendido y el certificado del Ministerio de Relaciones Exteriores (fs. 816).",
+        "disposiciones": [
+          "Citar por la prensa a ITURRALDE VASCONEZ SANTIAGO EFRAIN mediante tres publicaciones en diario de amplia circulación local; subsidiariamente, en periódico de la capital de provincia o de circulación nacional.",
+          "Una vez entregado el extracto, la parte actora debe presentar en la Unidad Judicial las publicaciones respectivas en el término de 15 días."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-17",
+            "concepto": "Fecha del auto de sustanciación que ordena la citación por la prensa."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Gestionar las tres publicaciones del extracto de citación y presentarlas en la Unidad Judicial dentro de 15 días. El texto no indica desde cuándo corre ese término (depende de la entrega del extracto), así que confirmar la fecha de inicio en el expediente antes de calcularlo."
+      },
+      {
+        "id": "quito-2020-10-26-303",
+        "categoria": "otro",
+        "resumen": "Razón de la Unidad Judicial de envío a la Oficina de Citaciones de la documentación para la compañía Ferituvaz Agroganadería S.A., representada por Hilda Rosa Paredes Escobar. Consta el recibo de boletas por la Oficina de Citaciones el 16/04/2024.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-16",
+            "concepto": "Recepción de boletas por la Oficina de Citaciones (16/04/2024 16:13)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-302",
+        "categoria": "otro",
+        "resumen": "Razón duplicada de envío a Citaciones para la compañía Ferituvaz Agroganadería S.A., con el mismo texto que la actuación 303 y con marca de hora distinta (12:12).",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-16",
+            "concepto": "Generación de documentación para citaciones (12h12)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-301",
+        "categoria": "otro",
+        "resumen": "Acta de juramento de desconocimiento de domicilio rendida por José Miguel Iturralde Varea, como procurador común, ante el Juez Wilmer Zambrano Ortiz. Declara que es imposible determinar el domicilio de Santiago Efraín Iturralde Vasconez y pide autorizar la citación por la prensa. Se cumple así la comparecencia ordenada en la actuación 296.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-15",
+            "concepto": "Comparecencia y juramento de desconocimiento de domicilio (08h30)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-300",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación a Fernando Egas Iturralde en el casillero electrónico 1710574540. Consta la notificación a la misma parte en otras razones posteriores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-11",
+            "concepto": "Notificación por boletas del auto de sustanciación (13h49)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-299",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega al expediente un oficio y se pone en conocimiento de la parte interesada la contestación presentada por la Dinarp, para los fines de ley.",
+        "disposiciones": [
+          "Agregar a los autos el oficio que antecede.",
+          "Poner en conocimiento de la parte interesada el contenido de la contestación de la Dinarp."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-11",
+            "concepto": "Fecha del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-298",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente (FePresentacion). El texto disponible no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-09",
+            "concepto": "Presentación del escrito."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-297",
+        "categoria": "razon_notificacion",
+        "resumen": "Convalidación de la razón de notificación por boletas del auto de sustanciación a Fernando Egas Iturralde en el casillero electrónico 1710574540.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-04",
+            "concepto": "Notificación por boletas (15h07)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-296",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega un escrito de la parte actora y se niega la reforma solicitada en su escrito del 1 de abril de 2024. Se subsana el auto del 1 de abril de 2024 (10h51) y se fija comparecencia de la parte actora para expresar con juramento la imposibilidad de determinar el domicilio del demandado Santiago Efraín Iturralde Vasconez.",
+        "disposiciones": [
+          "No ha lugar a la reforma solicitada por la parte actora en su escrito del 1 de abril de 2024 (16h00).",
+          "Subsanar el auto del 1 de abril de 2024 (10h51) en la parte pertinente.",
+          "La parte actora debe comparecer el 15 de abril de 2024, a las 08h30, piso quinto, a rendir juramento sobre la imposibilidad de determinar el domicilio del demandado y sobre las diligencias realizadas."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-15",
+            "concepto": "Comparecencia de la parte actora para juramento de desconocimiento de domicilio (08h30, piso quinto)."
+          },
+          {
+            "fecha": "2024-04-04",
+            "concepto": "Fecha del auto de sustanciación."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-295",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente el 1 de abril de 2024. Según la actuación 296, la parte actora pidió una reforma que fue negada. El texto disponible no describe su contenido completo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-01",
+            "concepto": "Presentación del escrito (16h00)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-294",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación del 1 de abril de 2024 a Fernando Egas Iturralde en el casillero electrónico 1710574540.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-01",
+            "concepto": "Notificación por boletas (10h59)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-293",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Tras analizar el requerimiento de citar por la prensa al demandado Santiago Efraín Iturralde Vasconez, el juzgador concluye que la parte actora cumplió los requisitos del Art. 56 del COGEP. Antes de citar por la prensa, ordena que la parte actora comparezca el 15 de abril de 2024 a rendir juramento sobre la imposibilidad de determinar el domicilio. El texto nombra como demandado a José Miguel Iturralde Varea, aunque el demandado en cuestión es Santiago Efraín Iturralde Vasconez.",
+        "disposiciones": [
+          "Agregar a los autos el escrito que antecede.",
+          "Fijar comparecencia de la parte actora el 15 de abril de 2024, a las 08h30, piso quinto, para rendir juramento sobre la imposibilidad de determinar el domicilio y sobre las diligencias realizadas."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-04-15",
+            "concepto": "Comparecencia para juramento (08h30, piso quinto, Complejo Judicial Norte)."
+          },
+          {
+            "fecha": "2024-04-01",
+            "concepto": "Fecha del auto de sustanciación (10h51)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-292",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 27 de marzo de 2024 por la parte actora. Según la actuación 293, señala que en la dirección proporcionada por la CNT solo hay locales comerciales y edificios, y que nadie dio razón del demandado. El texto disponible no contiene el escrito completo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-27",
+            "concepto": "Presentación del escrito (13h14)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-291",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación del 22 de marzo de 2024 a Fernando Egas Iturralde en el casillero electrónico 1710574540.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-22",
+            "concepto": "Notificación por boletas (11h51)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-290",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega al proceso la contestación de la Dinarp al oficio remitido y se pone en conocimiento de la parte ejecutante para los fines de ley.",
+        "disposiciones": [
+          "Agregar al proceso la contestación al oficio de la Dinarp.",
+          "Poner en conocimiento del ejecutante la contestación, para los fines de ley."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-22",
+            "concepto": "Fecha del auto de sustanciación (11h47)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-289",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente el 21 de marzo de 2024. El texto disponible no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-21",
+            "concepto": "Presentación del escrito con anexos (10h38)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-288",
+        "categoria": "otro",
+        "resumen": "Razón de la Secretaría de que se elaboraron los oficios ordenados en el auto anterior y se remitieron a la casilla judicial 5318. Se exige verificar los oficios antes de usarlos para corregir inconsistencias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-20",
+            "concepto": "Elaboración y remisión de oficios (16h14)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-287",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega el escrito y anexos de la parte actora. Se ordena oficiar al Registro Civil y a la Dinarp, reiterando lo pedido en auto del 25 de enero de 2024. Se rechaza la citación por la prensa por ahora: se considera que la dirección proporcionada por la CNT, aunque no cumple las resoluciones del Consejo de la Judicatura, sugiere un posible lugar de citación, y se da a la parte actora cinco días para cumplir lo ordenado sobre esa dirección.",
+        "disposiciones": [
+          "Agregar al proceso el escrito y anexos de la parte actora.",
+          "Tener en cuenta la fe de recepción de los oficios remitidos al Registro Civil y a la Dinarp.",
+          "Remitir por secretaría oficio al Registro Civil y a la Dinarp para que cumplan lo solicitado en el auto del 25 de enero de 2024 (11h53).",
+          "En cinco días, la parte actora debe cumplir lo ordenado en el auto anterior sobre la posible dirección del demandado."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-20",
+            "concepto": "Fecha del auto (11h51)."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la posible dirección del demandado (in situ) y cumplir la orden de los cinco días. El texto no indica desde cuándo corre ese plazo (desde la notificación o la fecha del auto), así que confirmar la fecha de notificación del auto antes de calcularlo."
+      },
+      {
+        "id": "quito-2020-10-26-286",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Duplicado del auto de 20 de marzo de 2024 (11h51), con el mismo contenido que la actuación 287 y marca de hora distinta (16h12). Ordena oficiar al Registro Civil y a la Dinarp y da cinco días a la parte actora para cumplir lo ordenado sobre la posible dirección del demandado.",
+        "disposiciones": [
+          "Agregar al proceso el escrito y anexos de la parte actora.",
+          "Remitir por secretaría oficio al Registro Civil y a la Dinarp para que cumplan lo solicitado en el auto del 25 de enero de 2024.",
+          "En cinco días, la parte actora debe cumplir lo ordenado sobre la posible dirección del demandado."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-20",
+            "concepto": "Fecha del auto (11h51), registrado nuevamente a las 16h12."
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Igual que en la actuación 287: verificar la posible dirección y cumplir en cinco días. El plazo no tiene fecha de inicio en el texto; confirmar la notificación antes de calcularlo."
+      },
+      {
+        "id": "quito-2020-10-26-285",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas del auto de sustanciación del 20 de marzo de 2024 a Fernando Egas Iturralde en el casillero electrónico 1710574540.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-03-20",
+            "concepto": "Notificación por boletas (12h49)."
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

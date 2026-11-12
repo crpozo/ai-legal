@@ -1,0 +1,300 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9541,
+    "tokensSalida": 5322
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-144",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando. Consta que la documentación se generó para su recepción y validación por la Oficina de Citaciones, con boletas recibidas el 20/01/2023 a las 11:40.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-20",
+            "concepto": "Boletas recibidas por la Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-143",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado con anexos, registrado el 20/01/2023 a las 10:27. El texto disponible solo indica 'ANEXOS, Escrito, FePresentacion'; no consta el contenido ni la parte que lo presenta.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito y sus anexos en el expediente físico o electrónico, porque el contenido no consta en el texto recibido."
+      },
+      {
+        "id": "quito-2020-10-26-142",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón del 19/01/2023 a las 17:19 en la que consta que se remitió despacho legal suficiente a las oficinas de citaciones para citar o notificar. El texto no identifica a la persona destinataria, pues el nombre aparece en blanco.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-19",
+            "concepto": "Remisión de despacho a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-141",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando. Consta que se generó la documentación para recepción y validación por la Oficina de Citaciones el 19/01/2023 a las 17:19.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-19",
+            "concepto": "Envío a Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-140",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Enrique Alcides. Consta que se generó la documentación para recepción y validación por la Oficina de Citaciones el 19/01/2023 a las 17:18.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-19",
+            "concepto": "Envío a Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-139",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Ryna Mercedes. Consta que se generó la documentación para recepción y validación por la Oficina de Citaciones el 19/01/2023 a las 17:18.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-19",
+            "concepto": "Envío a Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-138",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Egas Varea Fernando Jose Leopoldo. Consta que se generó la documentación para recepción y validación por la Oficina de Citaciones el 19/01/2023 a las 17:18.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-19",
+            "concepto": "Envío a Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-137",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 09/01/2023 a las 13:51 por boletas judiciales del auto de sustanciación a Iturralde Varea Daniela, Iturralde Varea Jose Miguel y otros, con casilleros y correo electrónico indicados. La lista completa de casilleros fue omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-01-09",
+            "concepto": "Notificación del auto de sustanciación por boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-136",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que convalida un error en un auto anterior: el acta de citación no tomada en cuenta es la de Iturralde Varea Maria Fernanda. Niega por improcedente la solicitud de citar en actos separados (art. 55 COGEP). Ordena citar a Iturralde Vasconez Enrique Alcides e Iturralde Vasconez Eduardo Fernando, y pide a la parte al Santiago Efrain Iturralde Vasconez indicar una dirección precisa. El texto no fija fecha de notificación del auto, por lo que los plazos de cinco días no pueden calcularse con certeza.",
+        "disposiciones": [
+          "Convalidar el auto anterior en cuanto a que el acta no tomada en cuenta es la de Iturralde Varea Maria Fernanda",
+          "Negar por improcedente la solicitud de citar a los demandados en actos diferentes y por separado",
+          "Cumplir lo ordenado en el término de cinco días, proporcionando copias para las boletas",
+          "Citar a Iturralde Vasconez Enrique Alcides e Iturralde Vasconez Eduardo Fernando en la dirección del escrito de 19/10/2022 a las 16h15, con copias proporcionadas por el interesado en cinco días",
+          "Poner en conocimiento del ejecutante el acta de no citación a Iturralde Vasconez Santiago Efrain por cambio de dirección y conceder cinco días para indicar el lugar de citación con datos precisos",
+          "Notificar en las casillas electrónicas de las partes (art. 66 COGEP)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-10-19",
+            "concepto": "Fecha del escrito cuya dirección se usa para citar a Enrique Alcides y Eduardo Fernando Iturralde Vasconez"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Proporcionar copias para las boletas y, en cinco días desde la notificación del auto (fecha de notificación no consta), indicar la dirección exacta para citar a Iturralde Vasconez Santiago Efrain. Verificar en el expediente la fecha de notificación para calcular el plazo."
+      },
+      {
+        "id": "quito-2020-10-26-135",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Santiago Efrain. Consta gestión con razón de no citación por dirección principal, registrada el 28/11/2022 a las 12:57. El texto muestra una fecha de providencia (21/07/2022) que no coincide con la fecha de registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-28",
+            "concepto": "Gestión con razón de no citación (dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-134",
+        "categoria": "otro",
+        "resumen": "Acta de citación no realizada a Iturralde Vasconez Santiago Efrain por cambio de dirección, registrada el 28/11/2022 a las 12:57. El texto recibido solo muestra la expresión 'Acta de citación'; el contenido completo del acta no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-28",
+            "concepto": "Acta de no citación por cambio de dirección"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar el acta en el expediente, dado que la providencia de 01/11/2022 ya ordenó poner en conocimiento esta acta y conceder plazo para indicar la dirección."
+      },
+      {
+        "id": "quito-2020-10-26-133",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Santiago Efrain: proceso asignado a un citador, registrada el 22/11/2022 a las 11:16. El texto incluye una fecha de providencia (21/07/2022) que no es coherente con la fecha del registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-22",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-132",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Santiago Efrain: proceso asignado a un citador. El texto menciona 11/08/2022 12:52 y un registro del 22/11/2022 11:16, sin que sea claro cuál es la fecha del acto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-08-11",
+            "concepto": "Asignación a citador según el encabezado del registro"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-131",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 14/11/2022 a las 12:32. El texto disponible solo indica 'Escrito, FePresentacion'; no consta el contenido ni la parte que lo presenta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-14",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito en el expediente, porque el contenido no consta en el texto recibido."
+      },
+      {
+        "id": "quito-2020-10-26-130",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 01/11/2022 a las 12:38 por boletas judiciales del auto de sustanciación a Iturralde Varea Daniela, Iturralde Varea Jose Miguel y otros, con casilleros y correo electrónico indicados. La lista completa de casilleros fue omitida en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-01",
+            "concepto": "Notificación del auto de sustanciación por boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-129",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que ordena modificar en el sistema el nombre del representante legal de la compañía demandada y dispone citar a Ferituvaz Agroganadera S.A. en la nueva dirección dada por la actora. Declara la nulidad de las actas de citación a Iturralde Vasconez Ryna Mercedes y Egas Varea Fernando Jose Leopoldo por no cumplir el art. 55 COGEP (boleta 2 entregada a una empleada) y ordena nuevas boletas. No convoca a Iturralde Vasconez Enrique Alcides por falta de acta registrada.",
+        "disposiciones": [
+          "Modificar en el sistema E-SATJE el nombre del representante legal de la compañía demandada",
+          "Poner en conocimiento del ejecutante las actas de no citación a Ferituvaz Agroganadera S.A. (dirección insuficiente) e Iturralde Vasconez Eduardo Fernando (desconocido), sin tomar en cuenta el acta de Iturralde Varea Luis Felipe",
+          "Declarar la nulidad de las actas de citación a Iturralde Vasconez Ryna Mercedes y Egas Varea Fernando Jose Leopoldo",
+          "Ordenar que la parte accionante proporcione copias en cinco días para citar nuevamente a dichos demandados",
+          "Citar a Ferituvaz Agroganadera S.A. en la persona de su gerente general Hilda Rosa Paredes Escobar, en la dirección del escrito, con copias en cinco días",
+          "No ha lugar la solicitud de citación a Iturralde Vasconez Enrique Alcides por estar pendiente la respuesta de citaciones"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-11-01",
+            "concepto": "Fecha de la providencia en el encabezado de la notificación (el texto del auto no fija otra fecha)"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Proporcionar copias para las boletas de Ryna Mercedes Iturralde Vasconez, Fernando Jose Leopoldo Egas Varea y Ferituvaz Agroganadera S.A., dentro de cinco días desde la notificación del auto (fecha de notificación no consta en el texto). Verificar la modificación del representante legal en E-SATJE."
+      },
+      {
+        "id": "quito-2020-10-26-128",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando: gestión con razón de no citación por dirección principal, registrada el 31/10/2022 a las 14:52.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-10-31",
+            "concepto": "Gestión con razón de no citación (dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-127",
+        "categoria": "otro",
+        "resumen": "Acta de citación no realizada a Iturralde Vasconez Eduardo Fernando, por causa 'DESCONOCIDO', registrada el 31/10/2022 a las 14:52. El texto recibido solo muestra la expresión 'Acta de citación'.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-10-31",
+            "concepto": "Acta de no citación (desconocido)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-126",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado el 19/10/2022 a las 16:15. El texto disponible solo indica 'ANEXOS, Escrito, FePresentacion'; no consta su contenido. Su fecha es citada en el auto del 01/11/2022 como base de la dirección para citar a Iturralde Vasconez Enrique Alcides y Eduardo Fernando.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-10-19",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-125",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Varea Maria Fernanda: gestión con razón de no citación por dirección principal, registrada el 28/09/2022 a las 15:59. El texto muestra una fecha de providencia (21/07/2022) que no coincide con la fecha de registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-09-28",
+            "concepto": "Gestión con razón de no citación (dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

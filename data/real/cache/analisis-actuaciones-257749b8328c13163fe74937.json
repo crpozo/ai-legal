@@ -1,0 +1,64 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 4252,
+    "tokensSalida": 1253
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-004",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del auto de sustanciación de calificación de la demanda, practicada el 29 de octubre de 2020 mediante boletas judiciales a Daniela Iturralde Varea en su casillero y correo electrónico. El texto está truncado y la lista completa de notificados no consta en lo recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2020-10-29",
+            "concepto": "Notificación por boletas del auto de sustanciación de calificación de la demanda"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-003",
+        "categoria": "auto_sustanciacion",
+        "resumen": "La Unidad Judicial Civil de Quito avoca conocimiento, califica y admite a trámite la demanda por acciones colusorias en procedimiento ordinario. Ordena citar a los demandados, concede treinta días para contestar y designa procurador común de los actores a José Miguel Iturralde Varea.",
+        "disposiciones": [
+          "Calificar y admitir la demanda a trámite por procedimiento ordinario, por cumplir los artículos 142 y 143 del COGEP",
+          "Ordenar la citación de la Compañía Ferituvaz Agroganadera S.A., representada por Eduardo Fernando Iturralde Vásconez, y de Eduardo Fernando Iturralde Vásconez, Ryna Mercedes Iturralde Vásconez, Enrique Alcides Iturralde Vasconez y Fernando José Leopoldo Egas Varea, remitiendo la documentación a Citaciones",
+          "Imponer a la parte actora la obligación de proporcionar las copias en el término de tres días desde que el auto quede ejecutoriado",
+          "Conceder a la parte demandada el término de treinta días para contestar la demanda conforme a los artículos 151 y siguientes del COGEP, con anuncio de medios probatorios según el artículo 152",
+          "Tener por procurador común de los accionantes a José Miguel Iturralde Varea",
+          "Agregar la documentación adjunta a la demanda y tener en cuenta el casillero judicial y correo electrónico señalados"
+        ],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la notificación de los demandados. El término de treinta días para contestar corre desde la citación, cuya fecha no consta en el texto recibido; calcular el vencimiento solo cuando conste la fecha de citación. Verificar también que la parte actora presente las copias dentro de tres días desde la ejecutoria del auto."
+      },
+      {
+        "id": "quito-2020-10-26-002",
+        "categoria": "otro",
+        "resumen": "Acta de sorteo que radica la competencia del proceso en la Unidad Judicial Civil con sede en Iñaquito, Distrito Metropolitano de Quito, con juez Wilmer Ismael Zambrano Ortiz y secretario Guido Efraín Guaman Sagñay. Se registra el ingreso de la demanda con 12 fojas y la lista de documentos adjuntos.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2020-10-26",
+            "concepto": "Recepción y sorteo del proceso 17230-2020-11399"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-001",
+        "categoria": "otro",
+        "resumen": "Carátula del expediente sin contenido sustantivo en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

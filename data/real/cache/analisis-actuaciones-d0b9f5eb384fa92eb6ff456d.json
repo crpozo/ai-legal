@@ -1,0 +1,290 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8907,
+    "tokensSalida": 3782
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-044",
+        "categoria": "escrito_de_parte",
+        "resumen": "Consta un escrito presentado electrónicamente (FePresentacion) el 2021-08-20. El texto disponible no indica su contenido ni quién lo presenta.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito completo en E-SATJE para identificar su contenido, autor y si exige respuesta o trámite."
+      },
+      {
+        "id": "quito-2020-10-26-043",
+        "categoria": "razon_notificacion",
+        "resumen": "La secretaría certifica el 19 de agosto de 2021 que se incorporó al proceso el acta de citación/notificación con firma electrónica remitida por la Oficina de Citaciones, conforme a la directriz del Memorando circular-CJ-DNGP-2020-0249-MC.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-08-19",
+            "concepto": "Razón de incorporación del acta de citación/notificación al proceso"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-042",
+        "categoria": "citacion",
+        "resumen": "Consta el acta de citación con resultado 'Realizada - Boleta fijada'. El texto disponible no identifica al citado ni detalla la diligencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-22",
+            "concepto": "Registro de la citación realizada con boleta fijada"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar en el acta quién fue citado y si la boleta fue fijada válidamente; el texto no permite confirmarlo."
+      },
+      {
+        "id": "quito-2020-10-26-041",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A. (gerente general Eduardo Fernando Iturralde Vásconez): tercera gestión del citador, boleta 3 en dirección principal, el 21 de julio de 2021. El texto es una providencia que solo registra la generación de documentación para la Oficina de Citaciones; no indica el resultado de la diligencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-21",
+            "concepto": "Tercera gestión del citador, boleta 3, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-040",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: tercera gestión del citador, boleta 3 en dirección principal, el 21 de julio de 2021. El texto no indica el resultado de la diligencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-21",
+            "concepto": "Tercera gestión del citador, boleta 3, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-039",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: el proceso fue asignado a un citador el 21 de julio de 2021. El texto repite la misma providencia sin datos adicionales.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-21",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-038",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: el proceso fue asignado a un citador el 21 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-21",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-037",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: el proceso fue asignado a un citador el 16 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-16",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-036",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: el proceso fue asignado a un citador el 16 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-16",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-035",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: segunda gestión del citador, boleta 2 en dirección principal, el 16 de julio de 2021. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-16",
+            "concepto": "Segunda gestión del citador, boleta 2, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-034",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: segunda gestión del citador, boleta 2 en dirección principal, el 16 de julio de 2021. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-16",
+            "concepto": "Segunda gestión del citador, boleta 2, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-033",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: primera gestión del citador, boleta 1 en dirección principal, el 15 de julio de 2021. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-15",
+            "concepto": "Primera gestión del citador, boleta 1, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-032",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: primera gestión del citador, boleta 1 en dirección principal, el 15 de julio de 2021. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-15",
+            "concepto": "Primera gestión del citador, boleta 1, dirección principal"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-031",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: el proceso fue asignado a un citador el 15 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-15",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-030",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: el proceso fue asignado a un citador el 15 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-15",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-029",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: el proceso fue asignado a un citador el 7 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-07",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-028",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Enrique Alcides Iturralde Vásconez: el proceso fue asignado a un citador el 7 de julio de 2021.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-07-07",
+            "concepto": "Proceso asignado a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-027",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación, mediante boletas judiciales el 30 de junio de 2021, del auto de sustanciación a los actores, entre ellos Daniela Iturralde Varea y José Miguel Iturralde Varea. El texto está truncado en la lista de casilleros y no permite verificar a todos los destinatarios.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-30",
+            "concepto": "Notificación del auto de sustanciación mediante boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-026",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El juzgado provee un escrito del accionante y no da lugar a lo pedido, porque ya consta una razón de envío a Citaciones del 20 de junio de 2021 y lo solicitado se considera atendido.",
+        "disposiciones": [
+          "Agregar al proceso el escrito presentado",
+          "No ha lugar a lo solicitado por el accionante, por estar atendido con la razón de envío a citaciones del 20 de junio de 2021",
+          "Notifíquese"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-20",
+            "concepto": "Razón de envío a citaciones que el auto considera cumplida la petición"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-025",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones respecto de Feritusvaz Agroganadera S.A.: registro de boletas recibidas por la Oficina de Citaciones el 22 de junio de 2021. El texto no indica el resultado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-06-22",
+            "concepto": "Boletas recibidas por la Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

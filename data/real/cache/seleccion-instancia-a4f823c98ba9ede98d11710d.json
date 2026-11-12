@@ -1,0 +1,42 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 5145,
+    "tokensSalida": 1767
+  },
+  "salida": {
+    "instanciaId": "quito-2020-10-26",
+    "justificacion": "Se elige la carpeta de la Unidad Judicial Civil con sede en la parroquia Iñaquito, Quito (ingreso 2020-10-26), porque es la de mayor actividad: 424 actuaciones y la última registrada el 2026-11-09T15:57, que es también la más reciente de todas las carpetas. El abogado no indicó dependencia esperada, y el texto no dice cuál es el proceso principal, así que la elección se basa en esos dos criterios de actividad. La confianza es media, no alta, por dos motivos: el nombre con el que el estudio identifica la causa, «Iturralde Vásconez Fernando», no aparece literalmente como parte en ninguna carpeta (solo constan «Iturralde Vasconez Eduardo Fernando» y «Egas Varea Fernando Jose Leopoldo»), y el portal no indica si las carpetas están vinculadas entre sí. No consta ningún plazo, por lo que no se calcula ninguno. Las demás carpetas tienen el mismo número de proceso, el mismo asunto (Acciones Colusorias) y los mismos actores, pero no consta que la plataforma las presente como acumuladas.",
+    "confianza": "media",
+    "otras": [
+      {
+        "instanciaId": "latacunga-2025-07-09",
+        "relacion": "Misma materia, asunto y actores, en Latacunga. Ingreso 2025-07-09, 22 actuaciones, última 2026-05-18. Es la segunda carpeta más reciente tras la de Quito; el portal no indica si es continuación o acumulación."
+      },
+      {
+        "instanciaId": "latacunga-2025-12-18",
+        "relacion": "Misma causa en Latacunga. Ingreso 2025-12-18, 11 actuaciones, última 2026-02-26."
+      },
+      {
+        "instanciaId": "latacunga-2023-08-21",
+        "relacion": "Misma causa en Latacunga. Ingreso 2023-08-21, 17 actuaciones, última 2024-01-18."
+      },
+      {
+        "instanciaId": "latacunga-2022-04-26",
+        "relacion": "Misma causa en Latacunga. Ingreso 2022-04-26, 8 actuaciones, última 2022-08-23."
+      },
+      {
+        "instanciaId": "latacunga-2021-09-28",
+        "relacion": "Misma causa en Latacunga. Ingreso 2021-09-28, 21 actuaciones, última 2021-12-09."
+      },
+      {
+        "instanciaId": "sigchos-2023-06-30",
+        "relacion": "Misma causa en Sigchos (Unidad Multicompetente). Ingreso 2023-06-30, 30 actuaciones, última 2023-08-17."
+      },
+      {
+        "instanciaId": "sigchos-2025-06-06",
+        "relacion": "Misma causa en Sigchos. Ingreso 2025-06-06, 9 actuaciones, última 2025-07-04."
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10071,
+    "tokensSalida": 13213
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-404",
+        "categoria": "otro",
+        "resumen": "Razón de Secretaría del 10 de diciembre de 2025 que deja constancia de la elaboración de los oficios ordenados en el auto anterior y de su remisión a la casilla judicial 5029. Conmina a verificar los oficios antes de su utilización para corregir cualquier inconsistencia.",
+        "disposiciones": [
+          "Verificar los oficios elaborados antes de su utilización, a cargo de Secretaría"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-10",
+            "concepto": "Elaboración y remisión de los oficios ordenados"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-403",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 9 de diciembre de 2025 (11h20), dictado a petición de la parte actora, que ordena citar con el extracto de la demanda y el auto a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea, en la dirección indicada en el escrito del 4 de diciembre de 2025. Comisiona al Teniente Político de Cumbayá y ordena oficiar a la administración del Edificio Capri. Pide a la parte actora entregar copias en 5 días.",
+        "disposiciones": [
+          "Citar a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea con el extracto de la demanda y el auto, en la dirección indicada por el actor",
+          "Comisionar al Teniente Político de la Parroquia Cumbayá para la citación",
+          "Oficiar a la administración del Edificio Capri para que presten las facilidades necesarias",
+          "Solicitar a la parte actora brindar las copias necesarias dentro del término de 5 días"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-09",
+            "concepto": "Fecha del auto que ordena la citación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, entregar las copias necesarias. El plazo de 5 días corre desde la notificación del auto, que no consta en el texto; confirmar esa fecha antes de calcular el vencimiento."
+      },
+      {
+        "id": "quito-2020-10-26-402",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 9 de diciembre de 2025 (11h48) que deja constancia de haber notificado por boletas el auto de sustanciación a Fernando Egas Iturralde en el casillero electrónico 1710574540, a través del Dr./Ab. María Augusta Bunces Tipantasig. La lista de casilleros está omitida en el texto. El nombre del notificado no coincide exactamente con los demandados listados en el proceso.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-09",
+            "concepto": "Notificación por boletas del auto de sustanciación del 9 de diciembre de 2025"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-401",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación del 9 de diciembre de 2025 (11h20) con el mismo contenido que el oficio 403: ordena citar a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea mediante el Teniente Político de Cumbayá, oficiar al Edificio Capri y pedir a la parte actora copias en 5 días.",
+        "disposiciones": [
+          "Citar a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea con el extracto de la demanda y el auto, en la dirección indicada por el actor",
+          "Comisionar al Teniente Político de la Parroquia Cumbayá para la citación",
+          "Oficiar a la administración del Edificio Capri para que presten las facilidades necesarias",
+          "Solicitar a la parte actora brindar las copias necesarias dentro del término de 5 días"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-09",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, entregar las copias necesarias. El plazo de 5 días corre desde la notificación del auto, que no consta en el texto; confirmar esa fecha antes de calcular el vencimiento."
+      },
+      {
+        "id": "quito-2020-10-26-400",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado en línea por la parte actora el 4 de diciembre de 2025 a las 15:27. El registro sólo indica 'Escrito, FePresentacion' y su contenido no consta. Según el auto posterior, indica la dirección para la citación de los demandados.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-04",
+            "concepto": "Presentación del escrito de la parte actora"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-399",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 21 de noviembre de 2025 (11h34) que deja constancia de haber notificado por boletas el auto de sustanciación de esa fecha a Fernando Egas Iturralde en el casillero electrónico 1710574540, a través del Dr./Ab. María Augusta Bunces Tipantasig. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-11-21",
+            "concepto": "Notificación por boletas del auto de sustanciación del 21 de noviembre de 2025"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-398",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 21 de noviembre de 2025 (11h21) que, previo a ordenar lo que corresponda, deja sin efecto la citación de Fernando José Leopoldo Egas Varea y Ryna Mercedes Iturralde Vásconez, porque la citadora no aclaró las actas ni las fotografías requeridas en la providencia del 27 de enero de 2025. Ordena volver a citarlos en la dirección del escrito del 17 de mayo de 2023, mediante deprecatorio a Sigchos. Ordena también oficiar a Latacunga para aclarar la citación de Feritúvaz Agroganadera S.A.",
+        "disposiciones": [
+          "Dejar sin efecto la citación de Fernando José Leopoldo Egas Varea y Ryna Mercedes Iturralde Vásconez",
+          "Volver a citar a dichos demandados en la dirección indicada por la parte actora en su escrito del 17 de mayo de 2023, mediante deprecatorio a la Unidad Judicial Multicompetente de Sigchos",
+          "Oficiar a la Unidad Judicial Civil de Latacunga (citador Néstor Rodrigo Apia Galarza) para que aclare el acta de citación de Feritúvaz Agroganadera S.A. de 26 de septiembre de 2025 y determine si la compañía estaba activa al momento de la citación"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-07-25",
+            "concepto": "Inicio de la fijación de boletas de citación a Egas y a Iturralde Vásconez (25, 26 y 27 de julio de 2023)"
+          },
+          {
+            "fecha": "2025-01-27",
+            "concepto": "Providencia que ordenó aclarar la citación y anexar fotografías"
+          },
+          {
+            "fecha": "2025-09-26",
+            "concepto": "Fecha del acta de citación de Feritúvaz Agroganadera S.A. que debe aclararse"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, dar seguimiento al deprecatorio a Sigchos y al oficio a Latacunga. La nueva citación depende de la devolución de esos despachos, que no consta. Revisar la dirección indicada en el escrito del 17 de mayo de 2023."
+      },
+      {
+        "id": "quito-2020-10-26-397",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado en línea por la parte actora el 18 de noviembre de 2025. El registro sólo indica 'Escrito, FePresentacion' y su contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-11-18",
+            "concepto": "Presentación del escrito de la parte actora"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-396",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 16 de octubre de 2025 (13h19) que deja constancia de haber notificado por boletas el auto de sustanciación de esa fecha a Fernando Egas Iturralde en el casillero electrónico 1710574540. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-16",
+            "concepto": "Notificación por boletas del auto de sustanciación del 16 de octubre de 2025"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-395",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 16 de octubre de 2025 (12h42) que agrega a los autos el escrito presentado por la parte actora y ordena tener en cuenta lo manifestado para los fines legales pertinentes. No contiene otra orden.",
+        "disposiciones": [
+          "Agregar a los autos el escrito presentado por la parte actora",
+          "Tener en cuenta lo manifestado por la parte actora para los fines legales pertinentes"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-16",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-394",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 8 de octubre de 2025 (15:14). El registro sólo indica 'Escrito, FePresentacion' y su contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-08",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-393",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 3 de octubre de 2025 (13h56) que deja constancia de haber notificado por boletas el auto de sustanciación de esa fecha a Fernando Egas Iturralde en el casillero electrónico 1710574540. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-03",
+            "concepto": "Notificación por boletas del auto de sustanciación del 3 de octubre de 2025"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-392",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 3 de octubre de 2025 (11h51) que agrega a los autos el escrito y anexos de la parte actora del 1 de octubre de 2025 y pone en conocimiento de la actora el acta de citación de Feritúvaz Agroganadera S.A., por intermedio de su gerente general Iturralde Vásconez Mario Emiliano.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte actora el acta de citación de Feritúvaz Agroganadera S.A., por intermedio de su gerente general Iturralde Vásconez Mario Emiliano"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-01",
+            "concepto": "Presentación del escrito y anexos de la parte actora"
+          },
+          {
+            "fecha": "2025-10-03",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, revisar el acta de citación de Feritúvaz Agroganadera S.A. que se le puso en conocimiento. El texto no fija plazo para pronunciarse sobre ella."
+      },
+      {
+        "id": "quito-2020-10-26-391",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito de la parte actora presentado el 1 de octubre de 2025 (12:26) con anexos. El registro no detalla su contenido; el auto del 3 de octubre de 2025 lo agrega a los autos.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-10-01",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-390",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 23 de septiembre de 2025 (10h24) que deja constancia de haber notificado por boletas el auto de sustanciación de esa fecha a Fernando Egas Iturralde en el casillero electrónico 1710574540. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-09-23",
+            "concepto": "Notificación por boletas del auto de sustanciación del 23 de septiembre de 2025"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-389",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto del 23 de septiembre de 2025 (10h19) que agrega el escrito al proceso y, según la revisión del sistema Satje, niega lo solicitado porque la unidad deprecada no ha devuelto el deprecatorio.",
+        "disposiciones": [
+          "Agregar al proceso el escrito que antecede",
+          "No ha lugar a lo solicitado en el escrito, porque la unidad deprecada no ha devuelto el deprecatorio"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-09-23",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-388",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado el 19 de septiembre de 2025 (14:48). El registro sólo indica 'Escrito, FePresentacion' y su contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-09-19",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-387",
+        "categoria": "otro",
+        "resumen": "Razón de certificación del 8 de julio de 2025 que indica que la documentación escaneada adjunta contiene piezas procesales conformes con sus originales, según el Memorando circular-CJ-DNGP-2018-0121-MC. Los originales permanecen en el Repositorio de la Unidad.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-07-08",
+            "concepto": "Fecha de la razón de certificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-386",
+        "categoria": "otro",
+        "resumen": "Oficio deprecatorio fechado el 8 de julio de 2025, que transcribe el auto del 27 de junio de 2025 (09h42). Depreca a la Unidad Judicial Civil de Latacunga la citación de Feritúvaz Agroganadera S.A., por intermedio de su gerente general Iturralde Vásconez Mario Emiliano, en la dirección indicada por el actor el 6 de junio de 2025. Pide a la parte actora entregar copias en 5 días.",
+        "disposiciones": [
+          "Deprecar a la Unidad Judicial Civil del Cantón Latacunga la citación de Feritúvaz Agroganadera S.A.",
+          "Solicitar a la parte actora brindar las copias necesarias dentro del término de 5 días",
+          "Tomar en cuenta lo manifestado en el apartado segundo del escrito que se provee"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-06-27",
+            "concepto": "Fecha del auto que ordena la citación deprecada"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, entregar las copias necesarias. El plazo de 5 días corre desde una notificación que no consta en el texto; confirmar la fecha antes de calcular el vencimiento."
+      },
+      {
+        "id": "quito-2020-10-26-385",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del 27 de junio de 2025 (10h04) que deja constancia de haber notificado por boletas un auto de sustanciación a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto no identifica qué auto se notificó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-06-27",
+            "concepto": "Notificación por boletas de un auto de sustanciación no identificado"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8532,
+    "tokensSalida": 3984
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-184",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Enrique Alcides: el proceso fue asignado a un citador. El texto de la providencia adjunta es genérico y repite una fecha de enero de 2023 que no coincide con la fecha de la razón (24/05/2023).",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-183",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna (enero de 2023) no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-182",
+        "categoria": "citacion",
+        "resumen": "Tercera gestión del citador respecto de Iturralde Vasconez Eduardo Fernando, en boleta 3 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Tercera gestión de citación (boleta 3, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-181",
+        "categoria": "citacion",
+        "resumen": "Tercera gestión del citador respecto de Iturralde Vasconez Enrique Alcides, en boleta 3 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-24",
+            "concepto": "Tercera gestión de citación (boleta 3, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-180",
+        "categoria": "citacion",
+        "resumen": "Segunda gestión del citador respecto de Iturralde Vasconez Enrique Alcides, en boleta 2 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-23",
+            "concepto": "Segunda gestión de citación (boleta 2, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-179",
+        "categoria": "citacion",
+        "resumen": "Segunda gestión del citador respecto de Iturralde Vasconez Eduardo Fernando, en boleta 2 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-23",
+            "concepto": "Segunda gestión de citación (boleta 2, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-178",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-23",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-177",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Enrique Alcides: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-23",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-176",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Enrique Alcides: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-22",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-175",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-22",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-174",
+        "categoria": "citacion",
+        "resumen": "Primera gestión del citador respecto de Iturralde Vasconez Eduardo Fernando, en boleta 1 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-22",
+            "concepto": "Primera gestión de citación (boleta 1, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-173",
+        "categoria": "citacion",
+        "resumen": "Primera gestión del citador respecto de Iturralde Vasconez Enrique Alcides, en boleta 1 (dirección principal). El texto no indica el resultado de la gestión.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-22",
+            "concepto": "Primera gestión de citación (boleta 1, dirección principal)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-172",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El contenido del escrito no consta en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-17",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-171",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El contenido del escrito no consta en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-17",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-170",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del auto de sustanciación de 10/05/2023 a los actores Iturralde Varea Daniela y Iturralde Varea José Miguel, mediante boletas judiciales y correo electrónico. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-10",
+            "concepto": "Notificación del auto de sustanciación mediante boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-169",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que agrega el escrito y anexos de la parte accionante. Constata que la dirección de Egas Varea Fernando José Leopoldo en el RUC no es clara, y que el consumo de energía eléctrica de Iturralde Vasconez Ryna Mercedes no refleja la dirección de sus servicios.",
+        "disposiciones": [
+          "Agregar al proceso el escrito y anexos presentados por la parte accionante.",
+          "Ordenar a la parte accionante que, en cinco días, presente la dirección exacta donde citar a Egas Varea Fernando José Leopoldo.",
+          "Ordenar a la parte accionante que, en el mismo término de cinco días, presente una búsqueda adicional en el registro público respecto de Iturralde Vasconez Ryna Mercedes."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-05-10",
+            "concepto": "Fecha del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar dentro de cinco días la dirección exacta para citar a Egas Varea Fernando José Leopoldo y una búsqueda adicional en registro público de Iturralde Vasconez Ryna Mercedes. El plazo se cuenta desde la notificación de este auto, cuya fecha no consta en el texto recibido, por lo que la fecha límite no puede calcularse."
+      },
+      {
+        "id": "quito-2020-10-26-168",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Enrique Alcides: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-26",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-167",
+        "categoria": "citacion",
+        "resumen": "Razón de envío a citaciones respecto de Iturralde Vasconez Eduardo Fernando: el proceso fue asignado a un citador. El texto adjunto es genérico y su fecha interna no coincide con la fecha de la razón.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-26",
+            "concepto": "Asignación del proceso a un citador (razón de envío a citaciones)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-166",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente con anexos. El contenido del escrito no consta en el texto recibido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-25",
+            "concepto": "Presentación del escrito con anexos"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-165",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación del auto de sustanciación a los actores Iturralde Varea Daniela y Iturralde Varea José Miguel, mediante boletas judiciales y correo electrónico. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-04-19",
+            "concepto": "Notificación del auto de sustanciación mediante boletas"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

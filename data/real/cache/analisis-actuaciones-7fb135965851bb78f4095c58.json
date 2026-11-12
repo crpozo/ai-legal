@@ -1,0 +1,292 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 11353,
+    "tokensSalida": 7487
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-064",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto de sustanciación que califica la reforma a la demanda (quito-2020-10-26-063), practicada a los actores en los casilleros indicados. Se deja constancia de la fecha y hora de la diligencia.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-29",
+            "concepto": "Notificación por boletas del auto de calificación de la reforma a la demanda"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-063",
+        "categoria": "providencia",
+        "resumen": "El juez avoca conocimiento, admite a trámite la reforma a la demanda por procedimiento ordinario y ordena citar a las partes demandadas. Concede a los demandados treinta días para contestar y designa procurador común de los actores a José Miguel Iturralde Varea.",
+        "disposiciones": [
+          "Admitir a trámite la reforma a la demanda por procedimiento ORDINARIO",
+          "Citar a Compañía Feritutvaz Agroganadera S.A., Eduardo Fernando Iturralde Vásconez, Ryna Mercedes Iturralde Vásconez, Santiago Efraín Iturralde Vásconez, Enrique Alcides Iturralde Vásconez y Fernando José Leopoldo Egas Varea",
+          "La parte actora debe proporcionar las copias en el término de tres días contados desde que el auto quede ejecutoriado",
+          "Conceder a la parte demandada el término de treinta días para contestar la demanda (artículo 291 del COGEP)",
+          "Tener como procurador común de los accionantes a José Miguel Iturralde Varea"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-29",
+            "concepto": "Notificación del auto a los actores (razón 064); desde esta fecha se puede contar el ejecutoriado, pero el texto no fija cuándo quedó ejecutoriado"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar las copias para citación dentro de tres días de ejecutoriado el auto; confirmar la fecha de ejecutoriado y, una vez citados los demandados, calcular el plazo de treinta días para contestar (la fecha de citación no consta en esta actuación)."
+      },
+      {
+        "id": "quito-2020-10-26-062",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente el 2022-03-08. El texto recibido solo indica 'Escrito, FePresentacion' y no permite conocer su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-061",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto que ordenó completar y aclarar la reforma a la demanda (quito-2020-10-26-060), practicada a los actores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-03",
+            "concepto": "Notificación por boletas del auto que ordena completar y aclarar la reforma"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-060",
+        "categoria": "providencia",
+        "resumen": "El juez no toma en cuenta la solicitud de citación porque se presentó una reforma a la demanda. Observa que la reforma no cumple el requisito de firma del artículo 142 numeral 12 del COGEP y ordena completarla y aclararla.",
+        "disposiciones": [
+          "No tomar en cuenta la solicitud de citación presentada por la parte actora",
+          "Completar y aclarar la reforma a la demanda en el término de cinco días, por no cumplir la firma exigida por el artículo 142 numeral 12 del COGEP (artículo 146, inciso segundo)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-03-03",
+            "concepto": "Fecha de notificación por boletas (razón 061) desde la cual corre el término de cinco días; el texto no fija el vencimiento"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-059",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito de la parte actora con anexos, presentado electrónicamente el 2022-01-24. El texto recibido no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-058",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito de la parte actora con anexos, presentado electrónicamente el 2022-01-21. El texto recibido no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-057",
+        "categoria": "otro",
+        "resumen": "Acta de juramento de desconocimiento de domicilio rendida por José Miguel Iturralde Varea el 2022-01-21 a las 14h30 ante el juez. Declara que es imposible determinar el domicilio de Santiago Efraín e Ryna Mercedes Iturralde Vásconez tras agotar las diligencias necesarias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-01-21",
+            "concepto": "Diligencia de juramento de desconocimiento de domicilio"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-056",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto de reconocimiento de firma y rúbrica (quito-2020-10-26-055), practicada a los actores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2022-01-14",
+            "concepto": "Notificación por boletas del auto de 2022-01-14 (quito-2020-10-26-055)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-055",
+        "categoria": "providencia",
+        "resumen": "El juez fija diligencia de juramento de desconocimiento de domicilio, pide aclarar la citación telemática a la compañía demandada (el gerente general no coincide con el de la Superintendencia), pide aclarar la dirección de Fernando José Leopoldo Egas Varea y pide la dirección para citar a Eduardo Fernando Iturralde Vásconez.",
+        "disposiciones": [
+          "Concurrir a la diligencia de juramento de desconocimiento de domicilio de Santiago Efraín e Ryna Mercedes Iturralde Vásconez",
+          "Pronunciarse en cinco días sobre la citación telemática a la compañía demandada, dado que el gerente general no coincide con el de la Superintendencia de Compañías",
+          "Pronunciarse en cinco días sobre la dirección de Fernando José Leopoldo Egas Varea que aparece en el certificado del CNT",
+          "Presentar en cinco días la dirección donde debe citarse a Eduardo Fernando Iturralde Vásconez"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2022-01-21",
+            "concepto": "Diligencia de juramento fijada a las 14h30. El auto dice 2021, pero el acta de 2022-01-21 confirma la diligencia"
+          },
+          {
+            "fecha": "2022-01-14",
+            "concepto": "Notificación del auto (razón 056); desde aquí correrían los cinco días, pero el texto no fija el vencimiento"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar si los escritos de 2022-01-21 y 2022-01-24 atienden los cinco días para los puntos 2, 3 y 4. El texto no permite confirmarlo."
+      },
+      {
+        "id": "quito-2020-10-26-054",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito de la parte actora con anexos, presentado electrónicamente el 2021-12-21. El texto recibido no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-053",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto que concede tres días para indicar la dirección de citación de Eduardo Fernando Iturralde Vásconez (quito-2020-10-26-052), practicada a los actores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-12-15",
+            "concepto": "Notificación por boletas del auto de 2021-12-15 (quito-2020-10-26-052)"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-052",
+        "categoria": "providencia",
+        "resumen": "Agregado el deprecatorio de la Unidad Judicial Civil de Latacunga con acta de no citación a Eduardo Fernando Iturralde Vásconez por dirección insuficiente. Se concede tres días para indicar el lugar exacto de citación con los datos señalados.",
+        "disposiciones": [
+          "Conceder el término de tres días para que la parte interesada indique la dirección exacta donde debe citarse a Eduardo Fernando Iturralde Vásconez, con calle principal, calle secundaria, nomenclatura, provincia, cantón, parroquia, sector y referencia"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-12-15",
+            "concepto": "Notificación por boletas (razón 053) desde la cual corre el término de tres días; el texto no fija el vencimiento"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar si hubo respuesta dentro de los tres días desde la notificación del 2021-12-15; el texto no muestra escrito de respuesta específico. Si no se cumplió, la citación de Eduardo Fernando Iturralde Vásconez queda pendiente."
+      },
+      {
+        "id": "quito-2020-10-26-051",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón del secretario que certifica la recepción del deprecatorio virtual de la Unidad Judicial Civil de Latacunga, con diligencia de no citación a Eduardo Fernando Iturralde Vásconez, el 2021-12-13.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-12-13",
+            "concepto": "Recepción del deprecatorio virtual con diligencia de no citación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-050",
+        "categoria": "otro",
+        "resumen": "Oficio o deprecatorio dirigido a un juez de la Unidad Judicial Civil con sede en Latacunga, para citar a Feritutvaz Agroganadera S.A. y a Eduardo Fernando Iturralde Vásconez, conforme al auto de 2021-09-24.",
+        "disposiciones": [
+          "Remitir deprecatorio a un juez de Latacunga para citar a Feritutvaz Agroganadera S.A. y a Eduardo Fernando Iturralde Vásconez"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-09-28",
+            "concepto": "Fecha del oficio de deprecatorio"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-049",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto de 2021-09-24 (quito-2020-10-26-048), practicada a los actores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-09-24",
+            "concepto": "Notificación por boletas del auto de 2021-09-24"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-048",
+        "categoria": "providencia",
+        "resumen": "Ordena citar a Feritutvaz Agroganadera S.A. en la dirección del escrito y remitir deprecatorio a Latacunga para citar a Eduardo Fernando Iturralde Vásconez.",
+        "disposiciones": [
+          "Citar a Feritutvaz Agroganadera S.A. en la dirección señalada en el escrito",
+          "Remitir deprecatorio a un juez de la Unidad Judicial Civil de Latacunga para citar a Eduardo Fernando Iturralde Vásconez",
+          "Ordenar al actuario el cumplimiento de lo dispuesto en el auto anterior"
+        ],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-047",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente el 2021-09-14. El texto recibido no describe su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-046",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas del auto de 2021-09-10 (quito-2020-10-26-045), practicada a los actores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2021-09-10",
+            "concepto": "Notificación por boletas del auto de 2021-09-10"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-045",
+        "categoria": "providencia",
+        "resumen": "Declara la nulidad del acta de citación a Feritutvaz Agroganadera S.A. porque se fijó la boleta en la puerta sin constatar la presencia de un dependiente, contra el artículo 55 del COGEP. Ordena nueva citación y remitir deprecatorio a Latacunga para citar a Eduardo Fernando Iturralde Vásconez.",
+        "disposiciones": [
+          "Poner en conocimiento el acta de citación a Enrique Alcides Iturralde Vásconez, citado por boleta fijada",
+          "Declarar la nulidad del acta de citación a Feritutvaz Agroganadera S.A., representada por Eduardo Fernando Iturralde Vásconez (artículos 107 numeral 4 y 110 numeral 1)",
+          "Ordenar nueva citación a Feritutvaz Agroganadera S.A. en la dirección proporcionada por el actor; el accionante debe facilitar las copias en cinco días",
+          "Remitir deprecatorio a un juez de Latacunga para citar a Eduardo Fernando Iturralde Vásconez en la nueva dirección del escrito"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2021-09-10",
+            "concepto": "Notificación del auto (razón 046); desde aquí correría el término de cinco días para entregar copias, pero el texto no fija el vencimiento"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar a secretaría las copias necesarias para las boletas de citación a Feritutvaz Agroganadera S.A. en el término de cinco días desde la notificación del 2021-09-10, y confirmar la nueva dirección de Eduardo Fernando Iturralde Vásconez."
+      }
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21241,
+    "tokensSalida": 9720
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-244",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235). La judicatura, citando la sentencia 008-16-SCN-CC y un fallo del Tribunal de Alzada, ordena oficiar a varias entidades para ubicar el domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain. El texto no indica que el oficio sea distinto del auto.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, Registro Civil, CNT, Registro de la Propiedad de Quito, Conecel, Netlife y Empresa Eléctrica Quito para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545), con detalle completo si la respuesta es afirmativa"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-243",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235). Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-242",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235). Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-241",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235), con la diferencia de que en la lista de entidades aparece un código 219102144-DFE junto a Empresa Eléctrica Quito. Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-240",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235), con el código 219102144-DFE junto a Empresa Eléctrica Quito. Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-239",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235), con el código 219102144-DFE junto a Empresa Eléctrica Quito. Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-238",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235), con el código 219102144-DFE junto a Empresa Eléctrica Quito. Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-237",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Oficio con el mismo texto del auto de 5 de diciembre de 2023 (ver quito-2020-10-26-235), con el código 219102144-DFE junto a Empresa Eléctrica Quito. Ordena oficiar a las entidades indicadas para localizar al demandado Iturralde Vasconez Santiago Efrain.",
+        "disposiciones": [
+          "Oficiar a las entidades indicadas para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto que ordena los oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-236",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación de fecha 5 de diciembre de 2023 a las 13:18, mediante boletas judiciales, del auto de sustanciación (quito-2020-10-26-235) a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha de notificación del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-235",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de 5 de diciembre de 2023 que, citando la sentencia 008-16-SCN-CC y un fallo del Tribunal de Alzada, advierte que el impulso del proceso corresponde a las partes. Indica que la actora buscó el domicilio del demandado por su cuenta sin acudir a la autoridad competente, y ordena oficiar a varias entidades para localizarlo.",
+        "disposiciones": [
+          "Oficiar al SRI, Dirección Nacional de Registros Públicos, Registro Civil, CNT, Registro de la Propiedad de Quito, Conecel, Netlife y Empresa Eléctrica Quito para que en 5 días informen sobre domicilio o lugar de trabajo de Iturralde Vasconez Santiago Efrain (C.C. 0500541545)",
+          "Notificar"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-05",
+            "concepto": "Fecha del auto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Confirmar qué parte representa el estudio. Revisar el auto completo, que cita un precedente de archivo de la demanda por falta de impulso de la actora. Dar seguimiento a las respuestas de las entidades oficiadas; el plazo de 5 días no se puede calcular porque no consta la fecha de recepción de los oficios. Evaluar si el estudio tiene datos de domicilio que aportar."
+      },
+      {
+        "id": "quito-2020-10-26-234",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito registrado el 1 de diciembre de 2023 como presentado electrónicamente, pero el lote solo contiene la etiqueta FePresentacion. No se puede determinar su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-01",
+            "concepto": "Fecha de presentación del escrito"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito directamente en el expediente, porque el lote no incluye su contenido."
+      },
+      {
+        "id": "quito-2020-10-26-233",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación de 29 de noviembre de 2023 a las 08:44, mediante boletas judiciales, del auto de sustanciación (quito-2020-10-26-232) a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-29",
+            "concepto": "Fecha de notificación del auto de sustanciación de 29-nov-2023"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-232",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de 29 de noviembre de 2023 que pone en conocimiento el acta de no citación de Feritubaz y ordena citarla con el extracto de la demanda. También exige a la actora justificar que agotó las diligencias para hallar el domicilio de Iturralde Vasconez Santiago Efrain, antes de citarlo por la prensa, y para ello debe consultar registros públicos.",
+        "disposiciones": [
+          "Poner en conocimiento de la actora el acta de no citación de la Compañía Feritubaz Agroganaderia S.A.",
+          "Citar a Feritubaz con el extracto de la demanda y el auto, en la dirección indicada por el actor",
+          "Solicitar a la actora, en 5 días, las copias necesarias para la citación",
+          "Ordenar a la actora justificar en legal y debida forma las diligencias para determinar el domicilio de Iturralde Vasconez Santiago Efrain, con al menos tres consultas de registros de acceso público, en 10 días, sin perjuicio del artículo 120 del COGEP"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-29",
+            "concepto": "Fecha de notificación según razón quito-2020-10-26-233"
+          },
+          {
+            "fecha": "2023-11-29",
+            "concepto": "Inicio del plazo de 10 días para justificar diligencias, contado desde la notificación. Los días son hábiles y no se calcula el vencimiento"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la actora, preparar la justificación de diligencias de domicilio con al menos tres consultas de registros públicos y las copias para la citación. Los plazos de 10 días y 5 días corren desde la notificación del 29-nov-2023 según la razón; confirmar el cómputo en el expediente porque no se calculó el vencimiento."
+      },
+      {
+        "id": "quito-2020-10-26-231",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito registrado el 27 de noviembre de 2023 como presentado electrónicamente, pero el lote solo contiene la etiqueta FePresentacion. El auto del 29 de noviembre menciona un escrito en línea firmado por el Dr. Guillermo Javier Córdova, pero no consta que sea este.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-27",
+            "concepto": "Fecha de presentación del escrito"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito en el expediente, porque el lote no incluye su contenido, y confirmar si es el que menciona el auto del 29-nov-2023."
+      },
+      {
+        "id": "quito-2020-10-26-230",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones, con fecha de registro 8 de noviembre de 2023, sobre la citación de Feritubaz en dirección principal. El texto repite el de la razón de 25-oct-2023 y menciona un miércoles 11 de octubre de 2023 que no coincide con la fecha del registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-08",
+            "concepto": "Fecha del registro de la razón de envío a citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-229",
+        "categoria": "citacion",
+        "resumen": "Acta de citación de Feritubaz registrada el 8 de noviembre de 2023 con resultado No realizada (DESCONOCIDO). El texto solo contiene la etiqueta de acta, sin detalle del motivo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-08",
+            "concepto": "Fecha del registro del acta de no citación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-228",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones, registrada el 8 de noviembre de 2023 a las 12:30, que indica proceso asignado a un citador. El texto es el mismo de las razones anteriores y menciona un miércoles 11 de octubre de 2023 que no coincide con la fecha del registro.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-11-08",
+            "concepto": "Fecha del registro de la razón"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-227",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones con fecha de asignación a citador de 25 de octubre de 2023 a las 16:09, registrada el 8 de noviembre de 2023. El texto repite el de las razones anteriores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-10-25",
+            "concepto": "Fecha de asignación a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-226",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones con fecha de asignación a citador de 25 de octubre de 2023 a las 16:09. El texto repite el de las razones anteriores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-10-25",
+            "concepto": "Fecha de asignación a un citador"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-225",
+        "categoria": "otro",
+        "resumen": "Razón de envío a Citaciones, con fecha de 25 de octubre de 2023 a las 15:05, que indica que las boletas fueron recibidas por la Oficina de Citaciones. El texto repite el de las razones anteriores.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-10-25",
+            "concepto": "Fecha de recepción de boletas por la Oficina de Citaciones"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

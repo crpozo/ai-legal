@@ -1,0 +1,271 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12904,
+    "tokensSalida": 7475
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-264",
+        "categoria": "auto_sustanciacion",
+        "resumen": "El registro figura como OFICIO del 2024-01-29, pero el texto es el mismo auto de sustanciación de Quito del 25-01-2024 a las 11h53 que consta en quito-2020-10-26-259. Ordena poner en conocimiento de la parte interesada la contestación de la Dinarp, advierte que el impulso del proceso corresponde a las partes y ordena oficiar a varias instituciones para obtener un domicilio o lugar de trabajo de Iturralde Vasconez Eduardo Fernando. No consta por el texto ninguna orden de archivo.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por la Dinarp",
+          "Oficiar al SRI, Dinarp, Registro Civil, CNT, Conecel, Netlife, EPMAPS y Empresa Eléctrica Quito para que, en un término de 5 días, informen sobre alguna dirección de domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, con C.C. 0500812375, con el detalle de calle principal, calle secundaria, nomenclatura, provincia, cantón, parroquia y sector"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar las respuestas de las instituciones oficiadas cuando se pongan en conocimiento. Confirmar con la secretaría la fecha de notificación del auto, porque el plazo de 5 días para las instituciones depende de ella y no consta en este registro."
+      },
+      {
+        "id": "quito-2020-10-26-263",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del mismo auto de sustanciación del 25-01-2024 (ver quito-2020-10-26-259). Su contenido es idéntico al de quito-2020-10-26-264.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por la Dinarp",
+          "Oficiar al SRI, Dinarp, Registro Civil, CNT, Conecel, Netlife, EPMAPS y Empresa Eléctrica Quito para que, en un término de 5 días, informen sobre alguna dirección de domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, con C.C. 0500812375"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Tratar como la misma actuación que quito-2020-10-26-259 y no duplicar el seguimiento. Confirmar con la secretaría la fecha de notificación del auto."
+      },
+      {
+        "id": "quito-2020-10-26-262",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del mismo auto de sustanciación del 25-01-2024 (ver quito-2020-10-26-259). Su contenido es idéntico al de quito-2020-10-26-264.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por la Dinarp",
+          "Oficiar al SRI, Dinarp, Registro Civil, CNT, Conecel, Netlife, EPMAPS y Empresa Eléctrica Quito para que, en un término de 5 días, informen sobre alguna dirección de domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, con C.C. 0500812375"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Tratar como la misma actuación que quito-2020-10-26-259 y no duplicar el seguimiento. Confirmar con la secretaría la fecha de notificación del auto."
+      },
+      {
+        "id": "quito-2020-10-26-261",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Registro duplicado del mismo auto de sustanciación del 25-01-2024 (ver quito-2020-10-26-259). Su contenido es idéntico al de quito-2020-10-26-264.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por la Dinarp",
+          "Oficiar al SRI, Dinarp, Registro Civil, CNT, Conecel, Netlife, EPMAPS y Empresa Eléctrica Quito para que, en un término de 5 días, informen sobre alguna dirección de domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, con C.C. 0500812375"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Tratar como la misma actuación que quito-2020-10-26-259 y no duplicar el seguimiento. Confirmar con la secretaría la fecha de notificación del auto."
+      },
+      {
+        "id": "quito-2020-10-26-260",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación en la que el actuario declara haber notificado, mediante boletas judiciales el 25-01-2024 desde las 12h04, el auto de sustanciación que antecede a Fernando Egas Iturralde en el casillero electrónico 1710574540. Figura el abogado Bunces Tipantasig Maria Augusta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-259",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que pone en conocimiento la contestación de la Dinarp y dispone oficiar a varias instituciones para localizar un domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, antes de citar por la prensa. Cita la sentencia 008-16-SCN-CC y el criterio del Tribunal de Alzada sobre el archivo de la demanda por falta de impulso, pero no ordena el archivo.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por la Dinarp",
+          "Oficiar al SRI, Dinarp, Registro Civil, CNT, Conecel, Netlife, EPMAPS y Empresa Eléctrica Quito para que, en un término de 5 días, informen sobre alguna dirección de domicilio o lugar de trabajo del demandado Iturralde Vasconez Eduardo Fernando, con C.C. 0500812375, con el detalle de calle principal, calle secundaria, nomenclatura, provincia, cantón, parroquia y sector"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-25",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Vigilar el plazo de 5 días que tienen las instituciones y las respuestas que se pongan en conocimiento. Advertir al cliente, si representa a la parte actora, que el auto menciona el archivo de la demanda por falta de impulso y que la parte actora no ha cumplido la carga de solicitar la información por las vías legales. Confirmar la fecha de notificación, porque no consta en el registro."
+      },
+      {
+        "id": "quito-2020-10-26-258",
+        "categoria": "escrito_de_parte",
+        "resumen": "Registro de un escrito presentado electrónicamente el 23-01-2024 con anexos. El texto disponible solo indica anexos, escrito y presentación electrónica, por lo que no consta su contenido ni a quién corresponde.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-257",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio del 22-01-2024 con anexos. El texto solo indica anexos, escrito y presentación electrónica, por lo que no consta su contenido ni su remitente.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-256",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación en la que el actuario declara haber notificado, mediante boletas judiciales el 15-01-2024 desde las 10h48, el auto de sustanciación que antecede a Fernando Egas Iturralde en el casillero electrónico 1710574540.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-15",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-255",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que pone en conocimiento de la parte actora el acta de no citación de Iturralde Vasconez Eduardo Fernando y le ordena indicar el lugar donde debe citarse. También pone en conocimiento de la parte interesada las contestaciones de Empresa Eléctrica Quito, CNT, Conecel, Registro Civil y SRI.",
+        "disposiciones": [
+          "Ordenar a la parte actora que, dentro del término de 5 días, indique el lugar en que debe citarse a Iturralde Vasconez Eduardo Fernando, con dirección electrónica si se conoce, y los datos de calle principal, calle secundaria, nomenclatura, casa o departamento, provincia, cantón, parroquia, sector y referencias necesarias para la diligencia, conforme a los artículos 53, 54 y 55 del COGEP y al artículo 7 de la Resolución 300-2015 del Consejo de la Judicatura",
+          "Poner en conocimiento de la parte interesada las contestaciones de Empresa Eléctrica Quito, CNT, Conecel, Registro Civil y SRI"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-15",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Si el estudio representa a la parte actora, preparar y presentar dentro de 5 días el lugar de citación del demandado. El plazo corre desde la notificación del auto; la notificación consta en quito-2020-10-26-256 del 15-01-2024, pero el cómputo (días hábiles o no) no consta en el texto y no se calcula aquí. Revisar también las contestaciones institucionales puestas en conocimiento."
+      },
+      {
+        "id": "quito-2020-10-26-254",
+        "categoria": "otro",
+        "resumen": "Razón de secretaría del 15-01-2024 que deja constancia de una observación de ventanillas: el oficio de la CNT, presentado el 21-12-2023 por el funcionario Jaime Danilo Nuñez Bosquez, se ingresó por duplicado. Se puso en conocimiento del juez.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-01-15",
+            "concepto": "Fecha de la razón de secretaría"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-253",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio del 10-01-2024 con anexos. El texto solo indica anexos, oficio y presentación electrónica, por lo que no consta su contenido ni su remitente.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-252",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio del 10-01-2024 con anexos. El texto solo indica anexos, oficio y presentación electrónica, por lo que no consta su contenido ni su remitente.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-251",
+        "categoria": "escrito_de_parte",
+        "resumen": "Registro de un escrito presentado electrónicamente el 21-12-2023. El texto solo indica escrito y presentación electrónica, por lo que no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-250",
+        "categoria": "escrito_de_parte",
+        "resumen": "Registro de un escrito presentado electrónicamente el 21-12-2023. El texto solo indica escrito y presentación electrónica, por lo que no consta su contenido ni quién lo presentó.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-249",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio del 19-12-2023 con anexos. El texto solo indica anexos, oficio y presentación electrónica, por lo que no consta su contenido ni su remitente.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-248",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación en la que el actuario declara haber notificado, mediante boletas judiciales el 19-12-2023 desde las 11h08, el auto de sustanciación que antecede a Fernando Egas Iturralde en el casillero electrónico 1710574540. El texto está cortado en la lista de casilleros.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-19",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-247",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que agrega el oficio de Netlife y pone en conocimiento de la parte interesada la contestación emitida por esa empresa.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada la contestación emitida por Netlife"
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-19",
+            "concepto": "Fecha del auto que consta en el texto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-246",
+        "categoria": "otro",
+        "resumen": "Registro de un oficio del 15-12-2023. El texto solo indica escrito y presentación electrónica, por lo que no consta su contenido ni su remitente.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-245",
+        "categoria": "otro",
+        "resumen": "Razón de secretaría del 06-12-2023 que deja constancia de la elaboración y remisión de los oficios ordenados en el auto anterior a la casilla judicial 5318. Conmina a verificar los oficios antes de su utilización para corregir inconsistencias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2023-12-06",
+            "concepto": "Fecha de elaboración y remisión de oficios"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

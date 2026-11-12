@@ -1,0 +1,305 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10198,
+    "tokensSalida": 4862
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-424",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito con anexos presentado electrónicamente en el proceso. El texto disponible no indica la parte que lo presenta ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito y sus anexos en el expediente para determinar su contenido y si requiere respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-423",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente en el proceso. El texto disponible no indica la parte que lo presenta ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito en el expediente para determinar su contenido y si requiere respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-422",
+        "categoria": "otro",
+        "resumen": "Razón del secretario en la que consta que se elaboraron los oficios dispuestos en el auto de 17 de septiembre de 2026 y que se incorporaron al repositorio del juzgado. Advierte que se debe verificar cada oficio antes de usarlo para corregir inconsistencias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-09-17",
+            "concepto": "Elaboración de los oficios dispuestos en el auto de la misma fecha"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-421",
+        "categoria": "providencia",
+        "resumen": "Auto que ordena oficiar a la Tenencia Política de la Parroquia Cumbayá para que, en 3 días, aclare el acta de citación de los demandados Egas Varea Fernando José Leopoldo e Iturralde Vásconez Ryna Mercedes, precisando día y mes de cada citación. Señala que las segunda y tercera boletas de citación constan fijadas en la puerta del domicilio solo el 29 de enero de 2026.",
+        "disposiciones": [
+          "Oficiar a la Tenencia Política de la Parroquia Cumbayá para que, dentro de 3 días, aclare el acta de citación de Egas Varea Fernando José Leopoldo e Iturralde Vásconez Ryna Mercedes, determinando con precisión los días y mes de las citaciones."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2026-09-17",
+            "concepto": "Fecha del auto"
+          },
+          {
+            "fecha": "2026-01-29",
+            "concepto": "Fecha en que, según el auto, constan fijadas la segunda y tercera boletas de citación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento a la respuesta de la Tenencia Política de Cumbayá. El plazo de 3 días se cuenta desde que se practique el oficio, fecha que no consta en el texto."
+      },
+      {
+        "id": "quito-2020-10-26-420",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas judiciales del auto de sustanciación de 17 de septiembre de 2026 a Fernando Egas Iturralde en el casillero electrónico indicado. El texto está truncado y la lista de casilleros está omitida.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-09-17",
+            "concepto": "Fecha de la notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-419",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto de sustanciación que ordena oficiar a la Tenencia Política de Cumbayá para aclarar las actas de citación de Egas Varea y Iturralde Vásconez, indicando que las boletas constan fijadas solo el 29 de enero de 2026.",
+        "disposiciones": [
+          "Oficiar a la Tenencia Política de la Parroquia Cumbayá para que, dentro de 3 días, aclare el acta de citación de Egas Varea Fernando José Leopoldo e Iturralde Vásconez Ryna Mercedes, determinando los días y mes de las citaciones."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2026-09-17",
+            "concepto": "Fecha del auto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento a la aclaración que debe dar la Tenencia Política de Cumbayá. El inicio del plazo de 3 días no consta en el texto."
+      },
+      {
+        "id": "quito-2020-10-26-418",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas judiciales del auto de sustanciación de 13 de abril de 2026 a Fernando Egas Iturralde en el casillero electrónico indicado. El texto está truncado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-04-13",
+            "concepto": "Fecha de la notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-417",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que, antes de resolver lo pedido, ordena al actuario sentar razón sobre si todos los demandados están citados y si comparecieron dentro del término del Art. 291 del COGEP.",
+        "disposiciones": [
+          "Sentar razón que detalle si todos los demandados de la causa están ya citados.",
+          "Determinar si los demandados comparecieron dentro del término del Art. 291 del COGEP."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2026-04-13",
+            "concepto": "Fecha del auto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-416",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente en el proceso. El texto disponible no indica la parte que lo presenta ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito en el expediente para determinar su contenido y si requiere respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-415",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas judiciales del auto de sustanciación de 16 de marzo de 2026 a Fernando Egas Iturralde en el casillero electrónico indicado. El texto está truncado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-03-16",
+            "concepto": "Fecha de la notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-414",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que agrega los oficios presentados y tiene en cuenta la comisión remitida por la Teniente Política de Cumbayá, Sonia Sánchez Pasquel.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-03-16",
+            "concepto": "Fecha del auto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-413",
+        "categoria": "otro",
+        "resumen": "Oficio presentado electrónicamente. El texto disponible solo indica su tipo y que tiene anexos; no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-03-09",
+            "concepto": "Fecha de presentación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-412",
+        "categoria": "otro",
+        "resumen": "Oficio presentado electrónicamente. El texto disponible solo indica su tipo y que tiene anexos; no consta su contenido.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-03-09",
+            "concepto": "Fecha de presentación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-411",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación mediante boletas judiciales del auto de sustanciación de 4 de febrero de 2026 a Fernando Egas Iturralde en el casillero electrónico indicado. El texto está truncado.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2026-02-04",
+            "concepto": "Fecha de la notificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-410",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que pone en conocimiento de las partes la aclaración del citador Néstor Rodrigo Tapia Galarza, que da cumplimiento a lo requerido en providencia de 21 de noviembre de 2025.",
+        "disposiciones": [
+          "Poner en conocimiento de las partes la aclaración presentada por el citador Néstor Rodrigo Tapia Galarza."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2026-02-04",
+            "concepto": "Fecha del auto"
+          },
+          {
+            "fecha": "2025-11-21",
+            "concepto": "Fecha de la providencia que se cumple"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-409",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente en el proceso. El texto disponible no indica la parte que lo presenta ni su contenido.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": true,
+        "accionSugerida": "Revisar el escrito en el expediente para determinar su contenido y si requiere respuesta."
+      },
+      {
+        "id": "quito-2020-10-26-408",
+        "categoria": "otro",
+        "resumen": "Razón de certificación de copias digitales de piezas procesales, conforme al memorando circular CJ-DNGP-2018-0121-MC. Las copias quedan en el repositorio de la unidad.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-18",
+            "concepto": "Fecha de la certificación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-407",
+        "categoria": "otro",
+        "resumen": "Oficio de deprecatorio a la Unidad Judicial Civil de Latacunga para que el citador Néstor Rodrigo Apia Galarza aclare el acta de citación. El auto de 21 de noviembre de 2025 deja sin efecto la citación de Egas Varea y Iturralde Vásconez, ordena volver a citarlos en la dirección de la demanda por medio de la Unidad de Sigchos, y ordena aclarar si la compañía Feituvaz Agroganadera S.A. estaba activa al citarla.",
+        "disposiciones": [
+          "Deprecar a la Unidad Judicial Civil con sede en Latacunga la aclaración del acta de citación por el citador Néstor Rodrigo Apia Galarza.",
+          "Dejar sin efecto la citación de Egas Varea Fernando José Leopoldo e Iturralde Vásconez Ryna Mercedes.",
+          "Volver a citar a Egas Varea y a Iturralde Vásconez en la dirección indicada en el escrito de la parte actora de 17 de mayo de 2023, mediante deprecatorio a la Unidad Judicial Multicompetente de Sigchos.",
+          "Oficiar al citador de Latacunga para que aclare si la compañía Feituvaz Agroganadera S.A., representada por Iturralde Vásconez Mario Emiliano, estaba activa al momento de la citación del 26 de septiembre de 2025."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-11-21",
+            "concepto": "Providencia que el oficio reproduce como base"
+          },
+          {
+            "fecha": "2025-12-18",
+            "concepto": "Fecha del oficio"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Dar seguimiento a la nueva citación de Egas Varea y de Iturralde Vásconez ordenada por deprecatorio a Sigchos, y a la aclaración sobre la actividad de Feituvaz Agroganadera S.A. Verificar el acta de citación del citador de Latacunga."
+      },
+      {
+        "id": "quito-2020-10-26-406",
+        "categoria": "otro",
+        "resumen": "Razón del secretario en la que consta que se elaboró la comisión dispuesta en auto, incorporada al repositorio del juzgado, con indicación de verificar inconsistencias antes de su uso.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-18",
+            "concepto": "Fecha de la razón"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-405",
+        "categoria": "otro",
+        "resumen": "Comisión a la Teniente Política de la Parroquia Cumbayá para citar con el extracto de la demanda y el auto a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea, en la dirección indicada por el actor. Ordena oficiar a la administración del Edificio Capri para facilitar la diligencia y exige a la parte actora entregar copias en 5 días.",
+        "disposiciones": [
+          "Comisionar al Teniente Político de la Parroquia Cumbayá para citar a Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea en la dirección indicada por el actor en su escrito de 4 de diciembre de 2025.",
+          "Oficiar a la administración del Edificio Capri para que presten las facilidades necesarias para la citación.",
+          "Solicitar a la parte actora que entregue las copias necesarias dentro de 5 días."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2025-12-09",
+            "concepto": "Fecha del auto que ordena la comisión"
+          },
+          {
+            "fecha": "2025-12-18",
+            "concepto": "Fecha del oficio"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Entregar las copias necesarias para la citación dentro de 5 días. El plazo se cuenta desde una fecha que no consta en el texto; verificar la fecha de notificación de la providencia."
+      }
+    ]
+  }
+}

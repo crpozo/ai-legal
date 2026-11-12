@@ -1,0 +1,191 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9312,
+    "tokensSalida": 5750
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-104",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Egas Varea Fernando José Leopoldo, registrada el 18/08/2022 a las 11:50. El cuerpo del texto repite la fecha 21/07/2022, que no coincide con la fecha de registro. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-103",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Ryna Mercedes, registrada el 18/08/2022 a las 11:50. El cuerpo del texto repite la fecha 21/07/2022, que no coincide con la fecha de registro. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-102",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: primera gestión del citador sobre Egas Varea Fernando José Leopoldo, boleta 1 con dirección principal, registrada el 18/08/2022 a las 11:50. El texto no indica si la boleta fue entregada ni el resultado de la gestión. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-101",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: primera gestión del citador sobre Iturralde Vasconez Ryna Mercedes, boleta 1 con dirección principal, registrada el 18/08/2022 a las 11:50. El texto no indica si la boleta fue entregada ni el resultado de la gestión. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-100",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Egas Varea Fernando José Leopoldo, registrada el 18/08/2022 a las 09:55. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-099",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Ryna Mercedes, registrada el 18/08/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-098",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Eduardo Fernando, registrada el 18/08/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-097",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Eduardo Fernando, registrada el 11/08/2022 a las 13:01. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-096",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Ryna Mercedes, registrada el 11/08/2022 a las 12:57. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-095",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Egas Varea Fernando José Leopoldo, registrada el 11/08/2022 a las 12:56. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-094",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Varea María Fernanda, registrada el 11/08/2022 a las 12:54. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-093",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Feritubaz Agroganadera S.A., en la persona de su gerente general Eduardo Fernando Iturralde Vásconez, registrada el 11/08/2022 a las 12:54. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-092",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: el proceso fue asignado a un citador para citar o notificar a Iturralde Vasconez Santiago Efraín, registrada el 11/08/2022 a las 12:52. El cuerpo repite la fecha 21/07/2022. No consta el resultado de la citación.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-091",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Feritubaz Agroganadera S.A., en la persona de su gerente general Eduardo Fernando Iturralde Vásconez, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-090",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Iturralde Vasconez Ryna Mercedes, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-089",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Iturralde Vasconez Eduardo Fernando, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-088",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Egas Varea Fernando José Leopoldo, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-087",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Iturralde Varea María Fernanda, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-086",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de Oficina de Citaciones: se registran como recibidas por la Oficina de Citaciones las boletas de Iturralde Vasconez Santiago Efraín, con fecha 26/07/2022 a las 09:54. El cuerpo repite la fecha 21/07/2022.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-085",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de la secretaría: el 21/07/2022 a las 10:00 se remitió despacho legal suficiente a la Oficina de Citaciones para citar o notificar a Iturralde Vasconez Santiago Efraín, Egas Varea Fernando José Leopoldo, Iturralde Vasconez Enrique Alcides, Iturralde Vasconez Ryna Mercedes, Iturralde Vasconez Eduardo Fernando y Feritubaz Agroganadera S.A. El texto no fija plazos ni fechas de audiencia.",
+        "disposiciones": [],
+        "fechasClave": [],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}

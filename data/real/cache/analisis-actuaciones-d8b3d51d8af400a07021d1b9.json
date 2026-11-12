@@ -1,0 +1,312 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 11131,
+    "tokensSalida": 4635
+  },
+  "salida": {
+    "actuaciones": [
+      {
+        "id": "quito-2020-10-26-364",
+        "categoria": "razon_notificacion",
+        "resumen": "Secretaría elabora el extracto dispuesto en auto anterior y lo remite a la casilla judicial 5318, con la advertencia de verificar su contenido antes de usarlo para corregir posibles inconsistencias.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-10-04",
+            "concepto": "Razón de elaboración y remisión del extracto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar el extracto remitido a la casilla 5318 antes de utilizarlo para la publicación ordenada."
+      },
+      {
+        "id": "quito-2020-10-26-363",
+        "categoria": "citacion",
+        "resumen": "Extracto de citación dirigido a Eduardo Fernando Iturralde Vásconez, que reproduce la providencia de 29 de octubre de 2020 (admisión a trámite) y la de 28 de agosto de 2024 (citación por la prensa). El extracto no consta publicado en el texto recibido.",
+        "disposiciones": [
+          "Citar a Eduardo Fernando Iturralde Vásconez por la prensa, mediante tres publicaciones en diario de amplia circulación local (o, en su defecto, de la capital provincial o de circulación nacional)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-10-04",
+            "concepto": "Elaboración del extracto"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Verificar la publicación del extracto y presentar en la Unidad Judicial las publicaciones en el término de 15 días, contados desde la entrega del extracto; la fecha exacta de entrega no consta en el texto."
+      },
+      {
+        "id": "quito-2020-10-26-362",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 4 de octubre de 2024 a Fernando Egas Iturralde en el casillero electrónico indicado. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-10-04",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-361",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega al proceso el escrito y anexos de la parte actora del 29 de agosto de 2024 y se ordena al actuario elaborar un nuevo extracto y remitirlo a la casilla señalada por la actora.",
+        "disposiciones": [
+          "Elaborar un nuevo extracto y remitirlo a la casilla señalada por la parte actora."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-10-04",
+            "concepto": "Auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-360",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito de la parte actora con anexos, presentado electrónicamente el 29 de agosto de 2024. El texto recibido solo consigna su encabezado; el contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-29",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-359",
+        "categoria": "razon_notificacion",
+        "resumen": "Secretaría elabora el extracto dispuesto en auto anterior y lo remite a la casilla judicial 5318, con la advertencia de verificar su contenido antes de usarlo.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-28",
+            "concepto": "Razón de elaboración y remisión del extracto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-358",
+        "categoria": "citacion",
+        "resumen": "Extracto de citación a Eduardo Fernando Iturralde Vásconez, con transcripción de la providencia de 29 de octubre de 2020 y de la de 28 de agosto de 2024 que ordena la citación por la prensa.",
+        "disposiciones": [
+          "Citar a Eduardo Fernando Iturralde Vásconez por la prensa, mediante tres publicaciones en diario de amplia circulación local (o, en su defecto, de la capital provincial o de circulación nacional)."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-28",
+            "concepto": "Elaboración del extracto"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-357",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 28 de agosto de 2024 a Fernando Egas Iturralde. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-28",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-356",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Auto que dispone citar por la prensa a Eduardo Fernando Iturralde Vásconez, con base en el juramento rendido y el certificado del Ministerio de Relaciones Exteriores. Ordena a la parte actora presentar las publicaciones en 15 días tras entregado el extracto.",
+        "disposiciones": [
+          "Citar a Eduardo Fernando Iturralde Vásconez por la prensa, mediante tres publicaciones en diario de amplia circulación local (o, en su defecto, de la capital provincial o de circulación nacional).",
+          "La parte actora deberá presentar las publicaciones respectivas en la Unidad Judicial en el término de 15 días tras la entrega del extracto."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-28",
+            "concepto": "Auto de citación por la prensa"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Presentar las publicaciones de la citación por la prensa en la Unidad Judicial en el término de 15 días desde la entrega del extracto; la fecha de entrega no consta."
+      },
+      {
+        "id": "quito-2020-10-26-355",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 23 de julio de 2024 a Fernando Egas Iturralde. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-07-23",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-354",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se precisa que la parte actora debe comparecer ante la Judicatura a rendir juramento respecto del demandado Eduardo Fernando Iturralde Vásconez, en los términos del auto anterior.",
+        "disposiciones": [
+          "La parte actora debe comparecer a la Judicatura Complejo Judicial Norte a rendir juramento referente al demandado Eduardo Fernando Iturralde Vásconez."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-07-23",
+            "concepto": "Auto de sustanciación"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Comparecer ante la Judicatura Complejo Judicial Norte a rendir juramento sobre el domicilio del demandado Eduardo Fernando Iturralde Vásconez; el texto no fija fecha para la comparecencia."
+      },
+      {
+        "id": "quito-2020-10-26-353",
+        "categoria": "convocatoria_audiencia",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 23 de julio de 2024 que señala día y hora para diligencia, a Fernando Egas Iturralde. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-07-23",
+            "concepto": "Notificación por boletas del señalamiento de diligencia"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-352",
+        "categoria": "convocatoria_audiencia",
+        "resumen": "Se toma en cuenta el escrito de la actora del 19 de julio de 2024. Antes de citar por la prensa al demandado José Miguel Iturralde Vásconez, la actora debe comparecer con juramento a justificar que no se conoce su domicilio y que hizo diligencias para ubicarlo.",
+        "disposiciones": [
+          "La parte actora debe comparecer a la Judicatura Complejo Judicial Norte, piso quinto, a expresar con juramento la imposibilidad de determinar el domicilio o residencia del demandado José Miguel Iturralde Vásconez y las diligencias realizadas para ubicarlo, bajo las prevenciones del numeral 2 del art. 56 del COGEP."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-08-28",
+            "concepto": "Comparecencia de la parte actora a rendir juramento (08h30, piso quinto, Complejo Judicial Norte)"
+          },
+          {
+            "fecha": "2024-07-23",
+            "concepto": "Auto de señalamiento"
+          }
+        ],
+        "requiereAccion": true,
+        "accionSugerida": "Comparecer el 28 de agosto de 2024 a las 08h30 en piso quinto del Complejo Judicial Norte a rendir juramento; ese día ya pasó según la fecha del último movimiento, así que conviene confirmar si la diligencia se cumplió o se reprogramó. El texto menciona José Miguel Iturralde Vásconez, nombre que no figura como demandado en la demanda."
+      },
+      {
+        "id": "quito-2020-10-26-351",
+        "categoria": "escrito_de_parte",
+        "resumen": "Escrito presentado electrónicamente por la parte actora el 19 de julio de 2024. El texto recibido solo consigna su encabezado; el contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-07-19",
+            "concepto": "Presentación del escrito"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-350",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 24 de junio de 2024 a Fernando Egas Iturralde. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-24",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-349",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agrega el oficio de respuesta y se pone en conocimiento de la parte interesada la contestación de la Corporación Nacional de Telecomunicaciones.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada el contenido de la contestación de la Corporación Nacional de Telecomunicaciones."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-24",
+            "concepto": "Auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-348",
+        "categoria": "otro",
+        "resumen": "Oficio recibido electrónicamente el 20 de junio de 2024. El texto recibido solo consigna su encabezado; el contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-20",
+            "concepto": "Presentación del oficio"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-347",
+        "categoria": "razon_notificacion",
+        "resumen": "Razón de notificación por boletas judiciales del auto de sustanciación de 13 de junio de 2024 a Fernando Egas Iturralde. La lista de casilleros está omitida en el texto.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-13",
+            "concepto": "Notificación por boletas del auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-346",
+        "categoria": "auto_sustanciacion",
+        "resumen": "Se agregan los oficios de respuesta y se pone en conocimiento de la parte interesada las contestaciones de Conocel S.A., Epmaps, Registro Civil y Dinarp.",
+        "disposiciones": [
+          "Poner en conocimiento de la parte interesada el contenido de las contestaciones de Conocel S.A., Epmaps, Registro Civil y Dinarp."
+        ],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-13",
+            "concepto": "Auto de sustanciación"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      },
+      {
+        "id": "quito-2020-10-26-345",
+        "categoria": "otro",
+        "resumen": "Oficio recibido electrónicamente el 11 de junio de 2024. El texto recibido solo consigna su encabezado; el contenido no consta.",
+        "disposiciones": [],
+        "fechasClave": [
+          {
+            "fecha": "2024-06-11",
+            "concepto": "Presentación del oficio"
+          }
+        ],
+        "requiereAccion": false,
+        "accionSugerida": ""
+      }
+    ]
+  }
+}
