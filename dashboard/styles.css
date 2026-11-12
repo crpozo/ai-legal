@@ -309,3 +309,42 @@ main { padding-bottom: 32px; }
 .seg-titulo i { font-style: normal; color: var(--tenue); }
 .seg-pie { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13.5px; margin-top: 6px; }
 .inicio .sin-resultado { margin-bottom: 4px; }
+
+/* Inicio: buscador a todo el ancho, seguimiento debajo */
+.inicio { grid-template-columns: 1fr; gap: 28px; }
+.inicio .heroe { position: static; padding: 3vh 0 0; gap: 14px; }
+.inicio .heroe h1 { max-width: none; font-size: clamp(32px, 4.4vw, 52px); }
+.inicio .bajada { max-width: 70ch; }
+.inicio #form-buscar { margin-top: 14px; padding: 9px; }
+.inicio #q { padding: 16px 24px; font-size: 18px; }
+.inicio #form-buscar button { padding: 0 44px; font-size: 16.5px; }
+[hidden] { display: none !important; }
+
+/* Usuario en la barra */
+.usuario { display: flex; align-items: center; gap: 10px; }
+#usuario-inicial { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--acento-suave); color: var(--acento); font-weight: 400; }
+#salir { border: 0; background: none; color: var(--tenue); cursor: pointer; padding: 6px 4px; font-size: 14.5px; }
+#salir:hover { color: var(--tinta); }
+
+/* Inicio de sesión */
+#login { min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); background: var(--fondo); }
+.login-arte { background: var(--degradado); color: #fff; padding: 48px 56px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+.login-arte .logo { width: 44px; height: 44px; color: #fff; align-self: flex-start; }
+.login-arte h2 { font-size: clamp(40px, 5vw, 68px); font-weight: 200; line-height: 1.02; letter-spacing: -.03em; }
+.login-arte p { margin-top: 18px; font-size: 18px; max-width: 34ch; opacity: .92; }
+.login-arte small { font-size: 13.5px; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+#form-login { align-self: center; justify-self: center; width: min(400px, 100%); padding: 40px 24px; display: grid; gap: 16px; }
+#form-login h1 { font-size: 36px; letter-spacing: -.02em; }
+#form-login label { display: grid; gap: 6px; font-size: 14px; color: var(--tenue); margin-top: 4px; }
+#form-login input { border: 1px solid var(--linea); background: var(--panel); border-radius: 12px; padding: 13px 16px; font-size: 16px; color: var(--tinta); outline: none; }
+#form-login input:focus { border-color: var(--acento); box-shadow: 0 0 0 3px var(--acento-suave); }
+#form-login button { border: 0; border-radius: 99px; padding: 14px; background: var(--degradado); color: #fff; font-size: 16.5px; cursor: pointer; margin-top: 6px; }
+#form-login button:disabled { opacity: .7; cursor: progress; }
+#login-error { color: var(--alta); font-size: 14px; min-height: 1.4em; }
+@media (max-width: 820px) {
+  #login { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .login-arte { padding: 28px 24px; gap: 20px; }
+  .login-arte p { font-size: 16px; }
+  #form-login { align-self: start; }
+  .usuario #salir { display: none; }
+}

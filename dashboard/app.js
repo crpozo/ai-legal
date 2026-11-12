@@ -136,17 +136,12 @@ function vistaBuscar(datos) {
   return `
     <div class="inicio">
     <section class="heroe">
-      <p class="sobre">Portal E-SATJE · Función Judicial del Ecuador</p>
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
       <p class="bajada">Maya consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
       </form>
-      <ul class="capacidades">
-        <li><b>Causas</b>Elige la carpeta correcta, clasifica cada actuación y reporta alertas, plazos y próximos pasos.</li>
-        <li><b>Jueces</b>Compara sus resoluciones: normativa, jurisprudencia, criterios reiterados y cambios de interpretación.</li>
-      </ul>
     </section>
     <div id="progreso" aria-live="polite">
       <section class="bloque">
@@ -379,6 +374,39 @@ async function cargar() {
   }
   return null;
 }
+
+/* Acceso simulado: no hay autenticación real, cualquier correo y contraseña entran. */
+const sesion = {
+  leer: () => { try { return sessionStorage.getItem("maya-sesion"); } catch { return null; } },
+  guardar: (v) => { try { v ? sessionStorage.setItem("maya-sesion", v) : sessionStorage.removeItem("maya-sesion"); } catch { /* sin almacenamiento */ } },
+};
+function aplicarSesion(correo) {
+  $("#login").hidden = Boolean(correo);
+  document.querySelector(".area").hidden = !correo;
+  if (correo) $("#usuario-inicial").textContent = correo.trim().charAt(0).toUpperCase() || "M";
+  else $("#login-correo").focus();
+}
+$("#form-login").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const correo = $("#login-correo").value.trim(), clave = $("#login-clave").value;
+  if (!/^\S+@\S+\.\S+$/.test(correo) || !clave) {
+    $("#login-error").textContent = "Ingresa tu correo y tu contraseña.";
+    return;
+  }
+  $("#login-error").textContent = "";
+  const boton = ev.target.querySelector("button");
+  boton.disabled = true;
+  boton.textContent = "Ingresando…";
+  await new Promise((ok) => setTimeout(ok, 800));
+  boton.disabled = false;
+  boton.textContent = "Ingresar";
+  $("#login-clave").value = "";
+  sesion.guardar(correo);
+  aplicarSesion(correo);
+  window.scrollTo(0, 0);
+});
+$("#salir").addEventListener("click", () => { sesion.guardar(null); aplicarSesion(null); });
+aplicarSesion(sesion.leer());
 
 const datos = await cargar();
 if (!datos) {
