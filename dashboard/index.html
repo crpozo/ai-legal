@@ -4,20 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estudio Maya · Seguimiento judicial con IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="cabecera">
-    <div>
-      <p class="marca">Estudio Jurídico Maya</p>
-      <h1>Seguimiento judicial con IA</h1>
+    <div class="cabecera-in">
+      <a class="marca" href="#buscar" data-vista="buscar">
+        <span class="sello" aria-hidden="true">M</span>
+        <span><b>Estudio Jurídico Maya</b><small>Seguimiento judicial con IA</small></span>
+      </a>
+      <nav id="pestanas" role="tablist" aria-label="Secciones"></nav>
     </div>
-    <nav id="pestanas" role="tablist" aria-label="Secciones"></nav>
   </header>
-  <div id="aviso"></div>
   <main id="contenido"><p class="vacio">Cargando…</p></main>
   <footer class="pie">
-    <p>La disponibilidad de documentos depende de la Función Judicial: la digitalización del expediente es progresiva y un documento ausente en el portal puede existir en el expediente físico. Los análisis son apoyo para el abogado y deben verificarse contra la actuación citada.</p>
+    <p>La disponibilidad de documentos depende de la Función Judicial y no de esta herramienta: la digitalización del expediente es progresiva y un documento ausente en el portal puede existir en el expediente físico. Los análisis son apoyo para el abogado y deben verificarse contra la actuación citada.</p>
     <p id="pie-meta"></p>
   </footer>
   <script type="module" src="app.js"></script>
