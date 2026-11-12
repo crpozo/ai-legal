@@ -74,6 +74,48 @@ export const JuezRaw = z.object({
 
 /* ───────────── Salidas de los agentes ───────────── */
 
+/** Noticia del delito tal como la muestra la consulta pública de la Fiscalía (SIAF). */
+export const NoticiaDelito = z.object({
+  numero: z.string(),
+  /** Falso cuando solo se conoce el número y el detalle no se capturó. */
+  detalleDisponible: z.boolean(),
+  lugar: z.string().optional(),
+  fecha: z.string().optional(),
+  hora: z.string().optional(),
+  digitador: z.string().optional(),
+  nroOficio: z.string().optional(),
+  tipoIncidente: z.string().optional(),
+  delito: z.string().optional(),
+  unidad: z.string().optional(),
+  numFiscalia: z.string().optional(),
+  sujetos: z.array(z.object({ cedula: z.string().optional(), nombre: z.string(), estado: z.string() })),
+  vehiculos: z.array(z.object({ marca: z.string(), modelo: z.string(), placa: z.string() })),
+});
+export type NoticiaDelito = z.infer<typeof NoticiaDelito>;
+
+export const FiscaliaRaw = z.object({
+  fuente: Fuente,
+  consulta: z.object({ criterio: z.string(), valor: z.string(), persona: z.string().optional() }),
+  noticias: z.array(NoticiaDelito),
+});
+export type FiscaliaRaw = z.infer<typeof FiscaliaRaw>;
+
+export const ReporteFiscalia = z.object({
+  resumenEjecutivo: z.string(),
+  noticias: z.array(
+    z.object({
+      numero: z.string(),
+      rolDeLaPersona: z.enum(["denunciante", "sospechoso", "victima", "otro", "no_consta"]),
+      resumen: z.string(),
+      queVerificar: z.string(),
+    }),
+  ),
+  alertas: z.array(z.object({ nivel: z.enum(["alta", "media", "baja"]), texto: z.string(), numero: z.string() })),
+  proximosPasos: z.array(z.string()),
+  limitaciones: z.array(z.string()),
+});
+export type ReporteFiscalia = z.infer<typeof ReporteFiscalia>;
+
 export const Confianza = z.enum(["alta", "media", "baja"]);
 
 /** Agente 1: elige la carpeta (instancia) correcta entre las que devuelve el portal. */
@@ -205,6 +247,12 @@ export const Dashboard = z.object({
       normasMasCitadas: z.array(z.object({ norma: z.string(), n: z.number() })),
     }),
     patrones: PatronesJuez,
+  }).optional(),
+  fiscalia: z.object({
+    fuente: Fuente,
+    consulta: FiscaliaRaw.shape.consulta,
+    noticias: z.array(NoticiaDelito),
+    reporte: ReporteFiscalia,
   }).optional(),
   costos: z.object({ porAgente: z.array(UsoAgente), totalUsd: z.number() }),
 });

@@ -91,7 +91,26 @@ function recorridoJuez({ juez }) {
   ];
 }
 
-const RECORRIDOS = { causa: recorridoCausa, juez: recorridoJuez };
+function recorridoFiscalia({ fiscalia }) {
+  const n = fiscalia.noticias, conDetalle = n.filter((x) => x.detalleDisponible).length;
+  return [
+    { titulo: "1. Ingresar a la consulta de noticias del delito", pasos: [
+      [1, "Ingresa al enlace oficial de la Fiscalía", esc(fiscalia.fuente.url)],
+      [2, "Identifica los campos de búsqueda", "Noticia del delito · Cédula · RUC · Nombres y apellidos · Placa · Número de oficio"],
+    ] },
+    { titulo: "2. Buscar la noticia del delito", pasos: [
+      [3, "Selecciona el criterio y llena la información", `${esc(fiscalia.consulta.criterio)}: <b>${esc(fiscalia.consulta.valor)}</b>`],
+      [4, "Haz clic en BUSCAR DENUNCIA", `${plural(n.length, "denuncia desplegada", "denuncias desplegadas")}`],
+    ] },
+    { titulo: "3. Información que presenta el sistema", pasos: [
+      [5, "Selecciona cada registro y abre su detalle", `Detalle leído en ${conDetalle} de ${n.length}`],
+      [6, "Verifica los datos de cada noticia", "Número NDD · Provincia y cantón · Fecha · Hora · Delito · Número de oficio · Unidad fiscal · Sujetos involucrados"],
+    ] },
+  ];
+}
+
+const RECORRIDOS = { causa: recorridoCausa, juez: recorridoJuez, fiscalia: recorridoFiscalia };
+const TITULOS = { causa: "Revisión y actualización de la causa", juez: "Historial de causas del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
 const pintarRecorrido = (fases, estado) => `<div class="recorrido">${fases.map((f) => `
   <div class="fase"><h4>${esc(f.titulo)}</h4><ol>${f.pasos.map(([n, que, resultado]) => `
     <li data-estado="${estado}"><span class="marca-paso" aria-hidden="true"></span><div><p><span class="num">Paso ${n}</span>${esc(que)}</p><p class="resultado">${resultado}</p></div></li>`).join("")}
@@ -110,6 +129,11 @@ function resolver(datos, consulta) {
     if (contiene([...e.actores, ...e.demandados].join(" "))) return "causa";
   }
   if (datos.juez && contiene(datos.juez.juez.nombre)) return "juez";
+  if (datos.fiscalia) {
+    const f = datos.fiscalia, d = digitos(q);
+    if (d.length >= 8 && (d === digitos(f.consulta.valor) || f.noticias.some((x) => x.numero === d))) return "fiscalia";
+    if (f.consulta.persona && contiene(f.consulta.persona)) return "fiscalia";
+  }
   return null;
 }
 
@@ -118,10 +142,19 @@ function vistaBuscar(datos) {
   if (datos.causa) {
     const c = datos.causa, e = elegidaDe(c), ultima = c.actuaciones[0];
     filas.push(`<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
-      <span class="seg-cab"><b>${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
+      <span class="seg-cab"><b>Función Judicial · ${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</span>
       <span class="tenue">${esc(e.materia)} · ${esc(e.asunto)} · ${esc(e.dependencia)}</span>
       <span class="seg-pie"><span>Última actuación ${fecha(ultima.fecha)}</span><span>${c.actuaciones.length} actuaciones</span><span>${c.actuaciones.filter((a) => a.analisis.requiereAccion).length} requieren acción</span></span>
+    </button>`);
+  }
+  if (datos.fiscalia) {
+    const f = datos.fiscalia, delitos = [...new Set(f.noticias.map((x) => x.delito).filter(Boolean))];
+    filas.push(`<button type="button" class="seguimiento" data-q="${esc(f.consulta.valor)}">
+      <span class="seg-cab"><b>Fiscalía · Cédula ${esc(f.consulta.valor)}</b><span class="etiqueta ${f.reporte.alertas.length ? "alta" : ""}">${plural(f.reporte.alertas.length, "alerta", "alertas")}</span></span>
+      <span class="seg-titulo">${esc(f.consulta.persona ?? f.consulta.valor)}</span>
+      <span class="tenue">Noticias del delito · ${delitos.map(esc).join(" · ")}</span>
+      <span class="seg-pie"><span>${plural(f.noticias.length, "noticia del delito", "noticias del delito")}</span><span>${f.noticias.filter((x) => !x.detalleDisponible).length} con detalle pendiente</span></span>
     </button>`);
   }
   if (datos.juez) {
@@ -356,14 +389,93 @@ function vistaJuez(datos) {
   return { html };
 }
 
+/* ───────────── Fiscalía · Noticias del delito ───────────── */
+
+const ROLES = { denunciante: "Denunciante", sospechoso: "Sospechoso", victima: "Víctima", otro: "Otro", no_consta: "No consta" };
+
+function vistaFiscalia(datos) {
+  const { fiscalia: f } = datos;
+  const r = f.reporte;
+  const analisis = new Map(r.noticias.map((x) => [x.numero, x]));
+  const cuentaRol = (rol) => r.noticias.filter((x) => x.rolDeLaPersona === rol).length;
+  const orden = [...f.noticias].sort((a, b) => (b.fecha ?? "").localeCompare(a.fecha ?? ""));
+  const dato = (etiqueta, valor) => `<div><dt>${etiqueta}</dt><dd>${valor ? esc(valor) : "—"}</dd></div>`;
+  const html = `
+    <section class="portada">
+      <div class="portada-izq">
+        <p class="sobre">Fiscalía General del Estado · Noticias del delito</p>
+        <h1>${esc(f.consulta.persona ?? f.consulta.valor)}</h1>
+        <p class="meta">${esc(f.consulta.criterio)}: ${esc(f.consulta.valor)} · consulta del ${fecha(f.fuente.capturadoEn)}</p>
+        <div class="cifras">
+          ${cifra("Noticias del delito", f.noticias.length)}
+          ${cifra("Como denunciante", cuentaRol("denunciante"))}
+          ${cifra("Como sospechoso", cuentaRol("sospechoso"))}
+        </div>
+      </div>
+      <div class="portada-der">
+        <header><h2>Reporte de la consulta</h2><span class="paso-ref">Paso 6</span></header>
+        <p class="lectura">${esc(r.resumenEjecutivo)}</p>
+      </div>
+    </section>
+
+    <nav class="subtabs" role="tablist" aria-label="Secciones de la consulta">
+      <button role="tab" data-panel="noticias" aria-selected="true">Noticias del delito <span>${f.noticias.length}</span></button>
+      <button role="tab" data-panel="seguimiento">Alertas y próximos pasos <span>${r.alertas.length}</span></button>
+      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
+    </nav>
+
+    <div class="panel" data-panel="noticias">
+      ${orden.map((n) => { const a = analisis.get(n.numero); return `
+      <section class="bloque noticia">
+        <header><h3>Noticia del delito n.º ${esc(n.numero)}</h3><span class="etiqueta ${a.rolDeLaPersona === "sospechoso" ? "alta" : a.rolDeLaPersona === "no_consta" ? "media" : ""}">${n.detalleDisponible ? esc(ROLES[a.rolDeLaPersona]) : "Detalle pendiente"}</span></header>
+        ${n.detalleDisponible ? `
+        <dl class="ficha-ndd">
+          ${dato("Delito", n.delito)}${dato("Provincia y cantón", n.lugar)}${dato("Fecha", n.fecha ? fecha(n.fecha) : "")}${dato("Hora", n.hora)}
+          ${dato("Tipo de incidente", n.tipoIncidente)}${dato("Número de oficio", n.nroOficio)}${dato("Fiscalía n.º", n.numFiscalia)}${dato("Digitador", n.digitador)}
+          <div class="ancho"><dt>Unidad fiscal</dt><dd>${esc(n.unidad)}</dd></div>
+        </dl>
+        <div class="tabla"><table>
+          <thead><tr><th>Sujeto</th><th>Cédula</th><th>Calidad</th></tr></thead>
+          <tbody>${n.sujetos.map((x) => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.cedula ?? "—")}</td><td>${esc(x.estado)}</td></tr>`).join("")}</tbody>
+        </table></div>
+        ${n.vehiculos.length ? `<p class="tenue">Vehículos: ${n.vehiculos.map((v) => `${esc(v.marca)} · placa ${esc(v.placa)}`).join("; ")}</p>` : ""}` : ""}
+        <p>${esc(a.resumen)}</p>
+        <p class="implica"><b>Qué verificar.</b> ${esc(a.queVerificar)}</p>
+      </section>`; }).join("")}
+      <p class="descargo">Una noticia del delito es el registro de una denuncia: no indica el estado ni el resultado de la investigación. Quien figura como sospechoso conserva la presunción de inocencia (art. 76.2 de la Constitución).</p>
+    </div>
+
+    <div class="panel" data-panel="seguimiento" hidden>
+      ${bloque(`Alertas · ${r.alertas.length}`, r.alertas.length ? `<ul class="alertas">${r.alertas.map((a) => `<li class="${esc(a.nivel)}"><span class="etiqueta ${esc(a.nivel)}">${esc(a.nivel)}</span><p>${esc(a.texto)}</p><span class="ref">NDD ${esc(a.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">Sin alertas.</p>`)}
+      <div class="par">
+        ${bloque("Próximos pasos", `<ol class="pasos-sugeridos">${r.proximosPasos.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>`)}
+        ${bloque("Lo que esta consulta no permite saber", lista(r.limitaciones))}
+      </div>
+    </div>
+
+    <div class="panel" data-panel="recorrido" hidden>
+      ${pintarRecorrido(recorridoFiscalia(datos), "hecho")}
+    </div>`;
+  const montar = () => {
+    document.querySelector(".subtabs").addEventListener("click", (ev) => {
+      const b = ev.target.closest("button");
+      if (!b) return;
+      for (const x of document.querySelectorAll(".subtabs button")) x.setAttribute("aria-selected", String(x === b));
+      for (const d of document.querySelectorAll(".panel")) d.hidden = d.dataset.panel !== b.dataset.panel;
+    });
+  };
+  return { html, montar };
+}
+
 /* ───────────── Arranque ───────────── */
 
 const ICONOS = {
   buscar: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
   causa: '<path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/>',
+  fiscalia: '<path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/>',
   juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
 };
-const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez]];
+const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia]];
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -433,7 +545,7 @@ if (!datos) {
       caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre las causas y jueces en seguimiento. Verifica el número de proceso o el nombre.</p>`);
       return;
     }
-    caja.innerHTML = `<p class="sobre centro">${flujo === "causa" ? "Revisión y actualización de la causa" : "Historial de causas del juez"} · en curso</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
+    caja.innerHTML = `<p class="sobre centro">${TITULOS[flujo]} · en curso</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
     caja.scrollIntoView({ behavior: "smooth", block: "start" });
     const items = [...caja.querySelectorAll("li")];
     for (const [i, item] of items.entries()) {

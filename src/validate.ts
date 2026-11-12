@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
-import { CausaRaw, Dashboard, JuezRaw } from "./schemas.js";
+import { CausaRaw, Dashboard, FiscaliaRaw, JuezRaw } from "./schemas.js";
 
 /** Valida cada dataset de data/ contra los esquemas: lo capturado y lo que lee el dashboard. */
 let errores = 0;
@@ -15,6 +15,7 @@ for (const dataset of readdirSync("data")) {
   };
   revisar("raw/causa.json", CausaRaw);
   revisar("raw/juez.json", JuezRaw);
+  revisar("raw/fiscalia.json", FiscaliaRaw);
   revisar("processed/dashboard.json", Dashboard);
 }
 process.exit(errores ? 1 : 0);

@@ -1,13 +1,14 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { analizarActuaciones, reportarCausa, seleccionarInstancia } from "./agents/causa.js";
+import { reportarFiscalia } from "./agents/fiscalia.js";
 import { analizarPatrones, estadisticas, ficharSentencias } from "./agents/juez.js";
 import { resumenDeUso } from "./llm.js";
-import { CausaRaw, Dashboard, JuezRaw } from "./schemas.js";
+import { CausaRaw, Dashboard, FiscaliaRaw, JuezRaw } from "./schemas.js";
 
 /**
  * Uso: npm run agentes -- <dataset>      (dataset = carpeta dentro de data/, por defecto "real")
- * Lee data/<dataset>/raw/{causa,juez}.json y escribe data/<dataset>/processed/dashboard.json.
+ * Lee data/<dataset>/raw/{causa,juez,fiscalia}.json y escribe data/<dataset>/processed/dashboard.json.
  * Cada flujo corre si su archivo existe, así se puede avanzar con uno mientras se captura el otro.
  */
 const dataset = process.argv[2] ?? "real";
@@ -61,14 +62,24 @@ async function flujoJuez(crudo: unknown) {
   };
 }
 
+async function flujoFiscalia(crudo: unknown) {
+  const fiscalia = FiscaliaRaw.parse(crudo);
+  console.log(`Fiscalía · ${fiscalia.consulta.criterio} ${fiscalia.consulta.valor}`);
+  const reporte = await reportarFiscalia(fiscalia, cacheDir);
+  console.log(`  ${fiscalia.noticias.length} noticias del delito reportadas`);
+  return { ...fiscalia, reporte };
+}
+
 const causaCruda = leer("causa.json");
 const juezCrudo = leer("juez.json");
-if (!causaCruda && !juezCrudo) throw new Error(`No hay datos capturados en ${path.join(base, "raw")}.`);
+const fiscaliaCruda = leer("fiscalia.json");
+if (!causaCruda && !juezCrudo && !fiscaliaCruda) throw new Error(`No hay datos capturados en ${path.join(base, "raw")}.`);
 
 const salida = Dashboard.parse({
   meta: { dataset, ficticio: dataset === "ejemplo", origen: "agentes", generadoEn: new Date().toISOString() },
   causa: causaCruda ? await flujoCausa(causaCruda) : undefined,
   juez: juezCrudo ? await flujoJuez(juezCrudo) : undefined,
+  fiscalia: fiscaliaCruda ? await flujoFiscalia(fiscaliaCruda) : undefined,
   costos: resumenDeUso(),
 });
 
