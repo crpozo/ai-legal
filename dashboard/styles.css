@@ -348,3 +348,15 @@ main { padding-bottom: 32px; }
   #form-login { align-self: start; }
   .usuario #salir { display: none; }
 }
+
+/* Escala del inicio: titular, buscador y lista en la misma proporción */
+.inicio { gap: 22px; }
+.inicio .heroe { padding-top: 1vh; gap: 8px; }
+.inicio .heroe h1 { font-size: clamp(28px, 3vw, 38px); line-height: 1.15; letter-spacing: -.02em; }
+.inicio .bajada { font-size: 15.5px; }
+.inicio #form-buscar { margin-top: 12px; padding: 5px; }
+.inicio #q { padding: 10px 18px; font-size: 15.5px; }
+.inicio #form-buscar button { padding: 0 28px; font-size: 15px; min-height: 42px; }
+.inicio .bloque h3 { font-size: 20px; }
+.seguimiento { padding: 16px 6px; }
+.seg-titulo { font-size: 18px; }
