@@ -147,24 +147,44 @@ function vistaCausa(datos) {
   const cuenta = (cat) => acts.filter((a) => a.analisis.categoria === cat).length;
   const conArchivos = acts.filter((a) => a.documentos.some((d) => d.disponible)).length;
   const fechaDe = (id) => fecha(acts.find((a) => a.id === id)?.fecha);
+  const anios = new Map();
+  for (const a of acts) anios.set(a.fecha.slice(0, 4), (anios.get(a.fecha.slice(0, 4)) ?? 0) + 1);
+  const porAnio = [...anios].sort(([a], [b]) => a.localeCompare(b));
+  const maxAnio = Math.max(1, ...porAnio.map(([, n]) => n));
   const nivelConfianza = { alta: "baja", media: "media", baja: "alta" }[causa.seleccion.confianza] ?? "media";
   const html = `
-    <section class="ficha">
-      <p class="sobre">Flujo I · Proceso ${esc(causa.numero)}</p>
-      <h1>${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</h1>
-      <p class="meta">${esc(e.materia)} · ${esc(e.tipoAccion)} · ${esc(e.asunto)} · ingreso ${fecha(e.fechaIngreso)}</p>
-      <p class="meta">${esc(e.dependencia)}</p>
-      <div class="cifras">
-        ${cifra("Actuaciones leídas", acts.length)}
-        ${cifra("Requieren acción", pendientes)}
-        ${cifra("Alertas", r.alertas.length)}
-        ${cifra("Carpetas del proceso", causa.instancias.length)}
+    <section class="portada">
+      <div class="portada-izq">
+        <p class="sobre">Flujo I · Proceso ${esc(causa.numero)}</p>
+        <h1>${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</h1>
+        <p class="meta">${esc(e.materia)} · ${esc(e.tipoAccion)} · ${esc(e.asunto)} · ingreso ${fecha(e.fechaIngreso)}</p>
+        <p class="meta">${esc(e.dependencia)}</p>
+        <div class="cifras">
+          ${cifra("Actuaciones leídas", acts.length)}
+          ${cifra("Requieren acción", pendientes)}
+          ${cifra("Carpetas del proceso", causa.instancias.length)}
+        </div>
+      </div>
+      <div class="portada-der">
+        <header><h2>Reporte integral del caso</h2><span class="paso-ref">Paso 15</span></header>
+        <p class="lectura">${esc(r.resumenEjecutivo)}</p>
       </div>
     </section>
 
+    <div class="tablero">
+      <section class="tesela">
+        <h3>Alertas</h3>
+        <strong>${r.alertas.length}</strong>
+        <p>${plural(r.alertas.filter((a) => a.nivel === "alta").length, "de nivel alto", "de nivel alto")} · ${plural(r.plazos.length, "plazo", "plazos")} con fecha · ${plural(r.proximosPasos.length, "próximo paso", "próximos pasos")}</p>
+        <div class="onda" aria-hidden="true">${Array.from({ length: 32 }, (_, k) => `<i style="height:${8 + Math.round(26 * Math.abs(Math.sin(k * 0.45)) * (1 - Math.abs(k - 16) / 20))}px"></i>`).join("")}</div>
+      </section>
+      ${bloque("Actuaciones a las que prestar atención", `<ul class="atencion">${ATENCION.map(([cat, nombre, que]) => `<li><button type="button" data-cat="${cat}" ${cuenta(cat) ? "" : "disabled"}><span><b>${esc(nombre)}</b><small>${esc(que)}</small></span><strong>${cuenta(cat)}</strong></button></li>`).join("")}</ul>`, { paso: "Paso 8" })}
+      ${bloque("Actividad por año", `<p class="gran">${acts.length} <small>actuaciones</small></p><div class="columnas-anio">${porAnio.map(([anio, n]) => `<div title="${anio}: ${n} actuaciones"><span class="pista"><i style="height:${Math.max(3, (100 * n) / maxAnio)}%"></i></span><b>${n}</b><small>${String(anio).slice(2)}</small></div>`).join("")}</div>`, { paso: "Paso 7" })}
+    </div>
+
     <div class="columnas">
       <div class="principal">
-        ${bloque("Reporte integral del caso", `<p class="lectura">${esc(r.resumenEjecutivo)}</p><dl class="pares"><dt>Etapa procesal</dt><dd>${esc(r.etapaProcesal)}</dd><dt>Estado actual</dt><dd>${esc(r.estadoActual)}</dd></dl>`, { paso: "Paso 15", clase: "destacado" })}
+        ${bloque("Etapa y estado del proceso", `<dl class="pares"><dt>Etapa procesal</dt><dd>${esc(r.etapaProcesal)}</dd><dt>Estado actual</dt><dd>${esc(r.estadoActual)}</dd></dl>`, { paso: "Paso 15" })}
         ${bloque("Actuación más reciente", `<p class="tenue">${fechaDe(r.ultimaActuacion.actuacionId)} · ${ref(r.ultimaActuacion.actuacionId)}</p><p>${esc(r.ultimaActuacion.resumen)}</p><p class="implica"><b>Qué implica.</b> ${esc(r.ultimaActuacion.implicaciones)}</p>`, { paso: "Paso 14" })}
         ${bloque(`Alertas · ${r.alertas.length}`, r.alertas.length ? `<ul class="alertas">${r.alertas.map((a) => `<li class="${esc(a.nivel)}"><span class="etiqueta ${esc(a.nivel)}">${esc(a.nivel)}</span><p>${esc(a.texto)}</p>${ref(a.actuacionId)}</li>`).join("")}</ul>` : `<p class="tenue">Sin alertas.</p>`)}
         <div class="par">
@@ -177,7 +197,6 @@ function vistaCausa(datos) {
       <aside class="lateral">
         ${bloque("Carpeta elegida por la IA", `<p><b>${esc(e.dependencia)}</b></p><p><span class="etiqueta ${nivelConfianza}">confianza ${esc(causa.seleccion.confianza)}</span></p><p class="tenue">${esc(causa.seleccion.justificacion)}</p>
           ${causa.seleccion.otras.length ? `<details class="mas"><summary>Otras ${causa.seleccion.otras.length} carpetas con el mismo número</summary><ul class="filas">${causa.seleccion.otras.map((o) => { const i = causa.instancias.find((x) => x.id === o.instanciaId); return `<li><b>${esc(i?.dependencia ?? o.instanciaId)}</b>${i ? ` <span class="ref">${fecha(i.fechaIngreso)} · ${i.totalActuaciones} act.</span>` : ""}<br><span class="tenue">${esc(o.relacion)}</span></li>`; }).join("")}</ul></details>` : ""}`, { paso: "Paso 5" })}
-        ${bloque("Actuaciones a las que prestar atención", `<ul class="atencion">${ATENCION.map(([cat, nombre, que]) => `<li><button type="button" data-cat="${cat}" ${cuenta(cat) ? "" : "disabled"}><span><b>${esc(nombre)}</b><small>${esc(que)}</small></span><strong>${cuenta(cat)}</strong></button></li>`).join("")}</ul>`, { paso: "Paso 8" })}
         ${bloque("Documentos del expediente digital", `<p><b>${conArchivos}</b> de ${acts.length} actuaciones tienen archivos en el portal.</p>${r.documentosNoDisponibles.length ? `<details class="mas"><summary>${plural(r.documentosNoDisponibles.length, "documento no disponible", "documentos no disponibles")} en el portal</summary>${lista(r.documentosNoDisponibles)}</details>` : ""}<p class="descargo">Que un documento no aparezca no significa que no exista: depende de la Función Judicial y puede solicitarse a la dependencia.</p>`, { paso: "Pasos 10–13" })}
         ${bloque("Partes", `<p class="tenue">Actores</p>${lista(e.actores)}<p class="tenue" style="margin-top:10px">Demandados</p>${lista(e.demandados)}`)}
       </aside>
@@ -244,21 +263,25 @@ function vistaJuez(datos) {
   const barras = (xs, etiqueta) => xs.map((x) => `<div class="barra"><span>${esc(etiqueta(x))}</span><span><i style="width:${(100 * x.n) / max(xs)}%"></i></span><span>${x.n}</span></div>`).join("");
   const filtros = [f.materia, f.tipoAccion, f.asunto, f.desde && f.hasta ? `${fecha(f.desde)} a ${fecha(f.hasta)}` : ""].filter(Boolean).map(esc).join(" · ");
   const html = `
-    <section class="ficha">
-      <p class="sobre">Flujo II · Procesos resueltos por juez</p>
-      <h1>${esc(juez.juez.nombre)}</h1>
-      <p class="meta">${filtros}</p>
-      <div class="cifras">
-        ${cifra("Resoluciones analizadas", e.total)}
-        ${cifra("Criterios reiterados", p.criteriosReiterados.length)}
-        ${cifra("Cambios de interpretación", p.cambiosDeInterpretacion.length)}
-        ${cifra("Diferencias entre casos similares", p.diferenciasEntreCasosSimilares.length)}
+    <section class="portada">
+      <div class="portada-izq">
+        <p class="sobre">Flujo II · Procesos resueltos por juez</p>
+        <h1>${esc(juez.juez.nombre)}</h1>
+        <p class="meta">${filtros}</p>
+        <div class="cifras">
+          ${cifra("Resoluciones analizadas", e.total)}
+          ${cifra("Criterios reiterados", p.criteriosReiterados.length)}
+          ${cifra("Cambios de interpretación", p.cambiosDeInterpretacion.length)}
+        </div>
+      </div>
+      <div class="portada-der">
+        <header><h2>Cómo decide este juez</h2><span class="paso-ref">Paso 11</span></header>
+        <p class="lectura">${esc(p.resumenEjecutivo)}</p>
       </div>
     </section>
 
     <div class="columnas">
       <div class="principal">
-        ${bloque("Cómo decide este juez", `<p class="lectura">${esc(p.resumenEjecutivo)}</p>`, { paso: "Paso 11", clase: "destacado" })}
         ${bloque("Criterios reiterados", p.criteriosReiterados.length ? `<ul class="filas">${p.criteriosReiterados.map((c) => `<li><span class="etiqueta">solidez ${esc(c.solidez)}</span> ${esc(c.criterio)}<br>${procs(c.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">La muestra no muestra criterios reiterados.</p>`, { paso: "Paso 11" })}
         ${bloque("Cambios de interpretación", p.cambiosDeInterpretacion.length ? `<ul class="filas">${p.cambiosDeInterpretacion.map((c) => `<li><b>${esc(c.tema)}</b><dl class="pares"><dt>Antes</dt><dd>${esc(c.antes)}</dd><dt>Después</dt><dd>${esc(c.despues)}</dd></dl>${procs(c.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">No se detectaron cambios.</p>`, { paso: "Paso 11" })}
         ${bloque("Diferencias entre casos aparentemente similares", p.diferenciasEntreCasosSimilares.length ? `<ul class="filas">${p.diferenciasEntreCasosSimilares.map((d) => `<li>${esc(d.descripcion)}<p class="implica"><b>Uso estratégico.</b> ${esc(d.utilidadEstrategica)}</p>${procs(d.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">No se detectaron diferencias.</p>`, { paso: "Paso 11" })}
@@ -297,6 +320,11 @@ function vistaJuez(datos) {
 
 /* ───────────── Arranque ───────────── */
 
+const ICONOS = {
+  buscar: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  causa: '<path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/>',
+  juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
+};
 const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez]];
 
 async function cargar() {
@@ -321,7 +349,7 @@ if (!datos) {
   let vistas = [];
   const pintarPestanas = () => {
     vistas = disponibles.filter(([id]) => id === "buscar" || encontrados.has(id));
-    $("#pestanas").innerHTML = vistas.map(([id, nombre]) => `<button role="tab" data-vista="${id}">${nombre}</button>`).join("");
+    $("#pestanas").innerHTML = vistas.map(([id, nombre]) => `<button role="tab" data-vista="${id}" title="${nombre}" aria-label="${nombre}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg></button>`).join("");
   };
   const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
   let corrida = 0;
@@ -357,7 +385,7 @@ if (!datos) {
     corrida++;
     const { html, montar } = vista(datos);
     $("#contenido").innerHTML = html;
-    $("#contenido").dataset.vista = id;
+    document.body.dataset.vista = id;
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
     history.replaceState(null, "", `#${id}`);
     montar?.();
@@ -369,7 +397,16 @@ if (!datos) {
   };
 
   pintarPestanas();
-  $("#pestanas").addEventListener("click", (ev) => ev.target.dataset.vista && mostrar(ev.target.dataset.vista));
-  document.querySelector(".marca").addEventListener("click", (ev) => { ev.preventDefault(); mostrar("buscar"); });
+  $("#pestanas").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) mostrar(b.dataset.vista); });
+  for (const a of document.querySelectorAll(".marca, .logo")) a.addEventListener("click", (ev) => { ev.preventDefault(); mostrar("buscar"); });
+  $("#buscar-top").addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    const q = $("#q-top").value.trim();
+    if (!q) return;
+    mostrar("buscar");
+    $("#q").value = q;
+    $("#q-top").value = "";
+    buscar(q);
+  });
   mostrar(vistas.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : "buscar");
 }

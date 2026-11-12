@@ -6,24 +6,32 @@
   <title>Estudio Maya · Seguimiento judicial con IA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="cabecera">
-    <div class="cabecera-in">
-      <a class="marca" href="#buscar" data-vista="buscar">
-        <span class="sello" aria-hidden="true">M</span>
-        <span><b>Estudio Jurídico Maya</b><small>Seguimiento judicial con IA</small></span>
+  <div class="marco">
+    <aside class="riel">
+      <a class="logo" href="#buscar" aria-label="Inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 25V8l11 11L27 8v17" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <nav id="pestanas" role="tablist" aria-label="Secciones"></nav>
+    </aside>
+    <div class="area">
+      <header class="superior">
+        <a class="marca" href="#buscar"><b>Maya</b><small>Seguimiento judicial con IA</small></a>
+        <form id="buscar-top" role="search">
+          <label class="campo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q-top" type="search" autocomplete="off" aria-label="Buscar causa, parte o juez" placeholder="Buscar causa, parte o juez…"></label>
+          <button type="submit">Buscar</button>
+        </form>
+      </header>
+      <main id="contenido"><p class="vacio">Cargando…</p></main>
+      <footer class="pie">
+        <p>La disponibilidad de documentos depende de la Función Judicial y no de esta herramienta: la digitalización del expediente es progresiva y un documento ausente en el portal puede existir en el expediente físico. Los análisis son apoyo para el abogado y deben verificarse contra la actuación citada.</p>
+        <p id="pie-meta"></p>
+      </footer>
     </div>
-  </header>
-  <main id="contenido"><p class="vacio">Cargando…</p></main>
-  <footer class="pie">
-    <p>La disponibilidad de documentos depende de la Función Judicial y no de esta herramienta: la digitalización del expediente es progresiva y un documento ausente en el portal puede existir en el expediente físico. Los análisis son apoyo para el abogado y deben verificarse contra la actuación citada.</p>
-    <p id="pie-meta"></p>
-  </footer>
+  </div>
   <script type="module" src="app.js"></script>
 </body>
 </html>
