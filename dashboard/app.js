@@ -349,7 +349,7 @@ if (!datos) {
   let vistas = [];
   const pintarPestanas = () => {
     vistas = disponibles.filter(([id]) => id === "buscar" || encontrados.has(id));
-    $("#pestanas").innerHTML = vistas.map(([id, nombre]) => `<button role="tab" data-vista="${id}" title="${nombre}" aria-label="${nombre}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg></button>`).join("");
+    $("#pestanas").innerHTML = vistas.map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
   };
   const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
   let corrida = 0;
@@ -398,7 +398,7 @@ if (!datos) {
 
   pintarPestanas();
   $("#pestanas").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) mostrar(b.dataset.vista); });
-  for (const a of document.querySelectorAll(".marca, .logo")) a.addEventListener("click", (ev) => { ev.preventDefault(); mostrar("buscar"); });
+  for (const a of document.querySelectorAll(".marca")) a.addEventListener("click", (ev) => { ev.preventDefault(); mostrar("buscar"); });
   $("#buscar-top").addEventListener("submit", (ev) => {
     ev.preventDefault();
     const q = $("#q-top").value.trim();
