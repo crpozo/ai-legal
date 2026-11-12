@@ -285,3 +285,27 @@ main { padding-bottom: 32px; }
   .inicio .heroe { position: static; padding-top: 1vh; }
   .inicio .heroe h1 { max-width: none; }
 }
+
+/* Pestañas dentro del caso */
+.subtabs { display: flex; gap: 4px; border-bottom: 1px solid var(--linea); overflow-x: auto; scrollbar-width: none; position: sticky; top: 0; background: var(--fondo); z-index: 3; scroll-margin-top: 0; }
+.subtabs::-webkit-scrollbar { display: none; }
+.subtabs button { flex: none; border: 0; background: none; padding: 14px 18px; font-size: 16px; color: var(--tenue); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.subtabs button:hover { color: var(--tinta); }
+.subtabs button[aria-selected="true"] { color: var(--tinta); border-color: var(--acento); }
+.subtabs span { font-size: 12px; color: var(--acento); background: var(--acento-suave); border-radius: 99px; padding: 1px 8px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.panel { display: grid; gap: 16px; min-width: 0; }
+.panel[hidden] { display: none; }
+.tesela { cursor: pointer; }
+@media (max-width: 640px) { .subtabs { margin: 0 -16px; padding: 0 8px; } .subtabs button { padding: 12px 12px; font-size: 15px; } }
+
+/* Inicio: capacidades y lista en seguimiento */
+.capacidades { list-style: none; padding: 0; margin-top: 18px; display: grid; gap: 14px; color: var(--tenue); font-size: 14.5px; max-width: 52ch; }
+.capacidades b { display: block; color: var(--tinta); font-weight: 400; font-size: 16px; }
+.seguimiento { width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--linea); padding: 18px 8px; display: grid; gap: 6px; cursor: pointer; }
+.seguimiento:hover { background: var(--hundido); }
+.seg-cab { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--acento); font-size: 13.5px; letter-spacing: .03em; }
+.seg-cab b { font-weight: 400; }
+.seg-titulo { font-size: 22px; line-height: 1.25; letter-spacing: -.01em; }
+.seg-titulo i { font-style: normal; color: var(--tenue); }
+.seg-pie { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13.5px; margin-top: 6px; }
+.inicio .sin-resultado { margin-bottom: 4px; }

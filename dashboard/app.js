@@ -44,7 +44,7 @@ function recorridoCausa({ causa }) {
       [1, "Ingresa al portal de consulta de procesos", esc(causa.fuente.portal)],
       [2, "Selecciona la búsqueda avanzada", "Formulario de búsqueda por criterios abierto"],
       [3, "Identifica el proceso con los datos disponibles", `Número de proceso judicial: <b>${esc(causa.numero)}</b>`],
-      [4, "Haz clic en BUSCAR y supera el CAPTCHA", "CAPTCHA superado por una persona; el agente continúa desde los resultados"],
+      [4, "Haz clic en BUSCAR y supera el CAPTCHA", "Verificación CAPTCHA completada por el usuario; el agente continúa desde los resultados"],
     ] },
     { titulo: "2. Abrir el proceso y consultar su estado", pasos: [
       [5, "Identifica la causa correcta entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (confianza ${esc(causa.seleccion.confianza)})`],
@@ -56,8 +56,8 @@ function recorridoCausa({ causa }) {
     ] },
     { titulo: "3. Revisar y descargar los documentos del expediente digital", pasos: [
       [11, "Selecciona la actuación y busca el acceso al documento", "Disponibilidad registrada actuación por actuación"],
-      [12, "Abre el documento para verificar su contenido", "En esta demo se analizó el texto que el portal muestra en cada actuación"],
-      [13, "Descarga el documento si el portal lo permite", "Los archivos no se descargaron en esta demo. Lo que no está en el portal se solicita a la dependencia judicial"],
+      [12, "Abre el documento para verificar su contenido", "Contenido verificado contra el texto publicado en cada actuación"],
+      [13, "Descarga el documento si el portal lo permite", "Disponibilidad de descarga registrada. Lo que no está en el portal se solicita a la dependencia judicial"],
     ] },
     { titulo: "4. Revisar el estado actualizado del proceso", pasos: [
       [14, "Revisa la actuación más reciente", `${fecha(ultima.fecha)} · ${esc(ultima.tipo)}`],
@@ -114,28 +114,45 @@ function resolver(datos, consulta) {
 }
 
 function vistaBuscar(datos) {
-  const sugerencias = [];
-  if (datos.causa) sugerencias.push([datos.causa.numero, "Flujo I · Causa", datos.causa.numero]);
-  if (datos.juez) sugerencias.push([datos.juez.juez.nombre, "Flujo II · Juez", datos.juez.juez.nombre]);
-  const tarjetaFlujo = (num, titulo, texto, items) => `<article class="flujo"><span class="num">Flujo ${num}</span><h3>${titulo}</h3><p>${texto}</p><ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul></article>`;
+  const filas = [];
+  if (datos.causa) {
+    const c = datos.causa, e = elegidaDe(c), ultima = c.actuaciones[0];
+    filas.push(`<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
+      <span class="seg-cab"><b>${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
+      <span class="seg-titulo">${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</span>
+      <span class="tenue">${esc(e.materia)} · ${esc(e.asunto)} · ${esc(e.dependencia)}</span>
+      <span class="seg-pie"><span>Última actuación ${fecha(ultima.fecha)}</span><span>${c.actuaciones.length} actuaciones</span><span>${c.actuaciones.filter((a) => a.analisis.requiereAccion).length} requieren acción</span></span>
+    </button>`);
+  }
+  if (datos.juez) {
+    const j = datos.juez;
+    filas.push(`<button type="button" class="seguimiento" data-q="${esc(j.juez.nombre)}">
+      <span class="seg-cab"><b>Juez</b><span class="etiqueta">${plural(j.procesos.length, "resolución", "resoluciones")}</span></span>
+      <span class="seg-titulo">${esc(j.juez.nombre)}</span>
+      <span class="tenue">${[j.filtros.materia, j.filtros.tipoAccion].filter(Boolean).map(esc).join(" · ")}</span>
+      <span class="seg-pie"><span>${plural(j.patrones.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")}</span></span>
+    </button>`);
+  }
   return `
     <div class="inicio">
     <section class="heroe">
-      <p class="sobre">Demo · Flujograma de procesos del estudio</p>
+      <p class="sobre">Portal E-SATJE · Función Judicial del Ecuador</p>
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
-      <p class="bajada">El agente sigue paso a paso el flujograma del estudio sobre el portal E-SATJE y entrega el reporte.</p>
+      <p class="bajada">Maya consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
       </form>
-      <div class="sugerencias"><span>Prueba con</span>${sugerencias.map(([q, tipo, texto]) => `<button type="button" class="sugerencia" data-q="${esc(q)}"><small>${esc(tipo)}</small>${esc(texto)}</button>`).join("")}</div>
-      <p class="nota-demo">El agente reproduce una corrida guardada: no vuelve a consultar el portal ni al modelo, así que buscar no cuesta nada.</p>
+      <ul class="capacidades">
+        <li><b>Causas</b>Elige la carpeta correcta, clasifica cada actuación y reporta alertas, plazos y próximos pasos.</li>
+        <li><b>Jueces</b>Compara sus resoluciones: normativa, jurisprudencia, criterios reiterados y cambios de interpretación.</li>
+      </ul>
     </section>
     <div id="progreso" aria-live="polite">
-      <div class="flujos">
-        ${tarjetaFlujo("I", "Revisión y actualización de causas", "15 pasos: localizar el proceso, elegir la carpeta correcta, leer cada actuación y sus documentos, y reportar el estado actualizado.", ["Elige la carpeta por dependencia judicial", "Clasifica autos, providencias, citaciones, audiencias y recursos", "Reporte integral con alertas, plazos y próximos pasos"])}
-        ${tarjetaFlujo("II", "Historial de causas del juez", "11 pasos: precisar juez y filtros, revisar todos los procesos resueltos y comparar cómo decide.", ["Normativa, jurisprudencia, argumentación, pruebas y motivación", "Criterios reiterados y cambios de interpretación", "Diferencias entre casos aparentemente similares"])}
-      </div>
+      <section class="bloque">
+        <header><h3>En seguimiento</h3><span class="ref">${plural(filas.length, "registro", "registros")}</span></header>
+        ${filas.join("")}
+      </section>
     </div>
     </div>`;
 }
@@ -157,7 +174,7 @@ function vistaCausa(datos) {
   const html = `
     <section class="portada">
       <div class="portada-izq">
-        <p class="sobre">Flujo I · Proceso ${esc(causa.numero)}</p>
+        <p class="sobre">Proceso ${esc(causa.numero)}</p>
         <h1>${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</h1>
         <p class="meta">${esc(e.materia)} · ${esc(e.tipoAccion)} · ${esc(e.asunto)} · ingreso ${fecha(e.fechaIngreso)}</p>
         <p class="meta">${esc(e.dependencia)}</p>
@@ -173,6 +190,15 @@ function vistaCausa(datos) {
       </div>
     </section>
 
+    <nav class="subtabs" role="tablist" aria-label="Secciones del caso">
+      <button role="tab" data-panel="resumen" aria-selected="true">Resumen</button>
+      <button role="tab" data-panel="seguimiento">Alertas y plazos <span>${r.alertas.length}</span></button>
+      <button role="tab" data-panel="expediente">Expediente <span>${acts.length}</span></button>
+      <button role="tab" data-panel="carpetas">Carpetas y documentos</button>
+      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
+    </nav>
+
+    <div class="panel" data-panel="resumen">
     <div class="tablero">
       <section class="tesela">
         <h3>Alertas</h3>
@@ -183,27 +209,22 @@ function vistaCausa(datos) {
       ${bloque("Actuaciones a las que prestar atención", `<ul class="atencion">${ATENCION.map(([cat, nombre, que]) => `<li><button type="button" data-cat="${cat}" ${cuenta(cat) ? "" : "disabled"}><span><b>${esc(nombre)}</b><small>${esc(que)}</small></span><strong>${cuenta(cat)}</strong></button></li>`).join("")}</ul>`, { paso: "Paso 8" })}
       ${bloque("Actividad por año", `<p class="gran">${acts.length} <small>actuaciones</small></p><div class="columnas-anio">${porAnio.map(([anio, n]) => `<div title="${anio}: ${n} actuaciones"><span class="pista"><i style="height:${Math.max(3, (100 * n) / maxAnio)}%"></i></span><b>${n}</b><small>${String(anio).slice(2)}</small></div>`).join("")}</div>`, { paso: "Paso 7" })}
     </div>
-
-    <div class="columnas">
-      <div class="principal">
+      <div class="par">
         ${bloque("Etapa y estado del proceso", `<dl class="pares"><dt>Etapa procesal</dt><dd>${esc(r.etapaProcesal)}</dd><dt>Estado actual</dt><dd>${esc(r.estadoActual)}</dd></dl>`, { paso: "Paso 15" })}
         ${bloque("Actuación más reciente", `<p class="tenue">${fechaDe(r.ultimaActuacion.actuacionId)} · ${ref(r.ultimaActuacion.actuacionId)}</p><p>${esc(r.ultimaActuacion.resumen)}</p><p class="implica"><b>Qué implica.</b> ${esc(r.ultimaActuacion.implicaciones)}</p>`, { paso: "Paso 14" })}
-        ${bloque(`Alertas · ${r.alertas.length}`, r.alertas.length ? `<ul class="alertas">${r.alertas.map((a) => `<li class="${esc(a.nivel)}"><span class="etiqueta ${esc(a.nivel)}">${esc(a.nivel)}</span><p>${esc(a.texto)}</p>${ref(a.actuacionId)}</li>`).join("")}</ul>` : `<p class="tenue">Sin alertas.</p>`)}
-        <div class="par">
-          ${bloque("Plazos y audiencias", r.plazos.length ? `<ul class="filas">${r.plazos.map((p) => `<li><b>${fecha(p.fechaLimite)}</b> ${esc(p.descripcion)}<br><span class="tenue">${esc(p.base)}</span> ${ref(p.actuacionId)}</li>`).join("")}</ul>` : `<p class="tenue">El expediente no fija plazos con fecha cierta.</p>`)}
-          ${bloque("Próximos pasos", `<ol class="pasos-sugeridos">${r.proximosPasos.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>`)}
-        </div>
-        ${bloque("Hitos del proceso", `<ol class="linea-tiempo">${r.hitos.map((h) => `<li><time>${fecha(h.fecha)}</time><p>${esc(h.hito)}</p>${ref(h.actuacionId)}</li>`).join("")}</ol>`)}
       </div>
-
-      <aside class="lateral">
-        ${bloque("Carpeta elegida por la IA", `<p><b>${esc(e.dependencia)}</b></p><p><span class="etiqueta ${nivelConfianza}">confianza ${esc(causa.seleccion.confianza)}</span></p><p class="tenue">${esc(causa.seleccion.justificacion)}</p>
-          ${causa.seleccion.otras.length ? `<details class="mas"><summary>Otras ${causa.seleccion.otras.length} carpetas con el mismo número</summary><ul class="filas">${causa.seleccion.otras.map((o) => { const i = causa.instancias.find((x) => x.id === o.instanciaId); return `<li><b>${esc(i?.dependencia ?? o.instanciaId)}</b>${i ? ` <span class="ref">${fecha(i.fechaIngreso)} · ${i.totalActuaciones} act.</span>` : ""}<br><span class="tenue">${esc(o.relacion)}</span></li>`; }).join("")}</ul></details>` : ""}`, { paso: "Paso 5" })}
-        ${bloque("Documentos del expediente digital", `<p><b>${conArchivos}</b> de ${acts.length} actuaciones tienen archivos en el portal.</p>${r.documentosNoDisponibles.length ? `<details class="mas"><summary>${plural(r.documentosNoDisponibles.length, "documento no disponible", "documentos no disponibles")} en el portal</summary>${lista(r.documentosNoDisponibles)}</details>` : ""}<p class="descargo">Que un documento no aparezca no significa que no exista: depende de la Función Judicial y puede solicitarse a la dependencia.</p>`, { paso: "Pasos 10–13" })}
-        ${bloque("Partes", `<p class="tenue">Actores</p>${lista(e.actores)}<p class="tenue" style="margin-top:10px">Demandados</p>${lista(e.demandados)}`)}
-      </aside>
     </div>
 
+    <div class="panel" data-panel="seguimiento" hidden>
+        ${bloque(`Alertas · ${r.alertas.length}`, r.alertas.length ? `<ul class="alertas">${r.alertas.map((a) => `<li class="${esc(a.nivel)}"><span class="etiqueta ${esc(a.nivel)}">${esc(a.nivel)}</span><p>${esc(a.texto)}</p>${ref(a.actuacionId)}</li>`).join("")}</ul>` : `<p class="tenue">Sin alertas.</p>`)}
+      <div class="par">
+          ${bloque("Plazos y audiencias", r.plazos.length ? `<ul class="filas">${r.plazos.map((p) => `<li><b>${fecha(p.fechaLimite)}</b> ${esc(p.descripcion)}<br><span class="tenue">${esc(p.base)}</span> ${ref(p.actuacionId)}</li>`).join("")}</ul>` : `<p class="tenue">El expediente no fija plazos con fecha cierta.</p>`)}
+          ${bloque("Próximos pasos", `<ol class="pasos-sugeridos">${r.proximosPasos.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>`)}
+      </div>
+        ${bloque("Hitos del proceso", `<ol class="linea-tiempo">${r.hitos.map((h) => `<li><time>${fecha(h.fecha)}</time><p>${esc(h.hito)}</p>${ref(h.actuacionId)}</li>`).join("")}</ol>`)}
+    </div>
+
+    <div class="panel" data-panel="expediente" hidden>
     <section class="bloque" id="expediente">
       <header><h3>Expediente · la actuación más reciente primero</h3><span class="paso-ref">Pasos 7–9</span></header>
       <div class="filtros">
@@ -213,12 +234,25 @@ function vistaCausa(datos) {
       </div>
       <div id="exp-lista"></div>
     </section>
+    </div>
 
-    <details class="bloque plegable">
-      <summary><h3>Recorrido del agente · los 15 pasos del flujograma</h3></summary>
+    <div class="panel" data-panel="carpetas" hidden>
+      <div class="columnas">
+        <div class="principal">
+        ${bloque("Carpeta elegida por la IA", `<p><b>${esc(e.dependencia)}</b></p><p><span class="etiqueta ${nivelConfianza}">confianza ${esc(causa.seleccion.confianza)}</span></p><p class="tenue">${esc(causa.seleccion.justificacion)}</p>
+          ${causa.seleccion.otras.length ? `<details class="mas"><summary>Otras ${causa.seleccion.otras.length} carpetas con el mismo número</summary><ul class="filas">${causa.seleccion.otras.map((o) => { const i = causa.instancias.find((x) => x.id === o.instanciaId); return `<li><b>${esc(i?.dependencia ?? o.instanciaId)}</b>${i ? ` <span class="ref">${fecha(i.fechaIngreso)} · ${i.totalActuaciones} act.</span>` : ""}<br><span class="tenue">${esc(o.relacion)}</span></li>`; }).join("")}</ul></details>` : ""}`, { paso: "Paso 5" })}
+        </div>
+        <aside class="lateral">
+        ${bloque("Documentos del expediente digital", `<p><b>${conArchivos}</b> de ${acts.length} actuaciones tienen archivos en el portal.</p>${r.documentosNoDisponibles.length ? `<details class="mas"><summary>${plural(r.documentosNoDisponibles.length, "documento no disponible", "documentos no disponibles")} en el portal</summary>${lista(r.documentosNoDisponibles)}</details>` : ""}<p class="descargo">Que un documento no aparezca no significa que no exista: depende de la Función Judicial y puede solicitarse a la dependencia.</p>`, { paso: "Pasos 10–13" })}
+        ${bloque("Partes", `<p class="tenue">Actores</p>${lista(e.actores)}<p class="tenue" style="margin-top:10px">Demandados</p>${lista(e.demandados)}`)}
+        </aside>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="recorrido" hidden>
       ${pintarRecorrido(recorridoCausa(datos), "hecho")}
-      <p class="descargo">El flujograma pide revisar también el expediente de la Fiscalía (FGE). El enlace del documento apunta al mismo portal judicial, así que esa consulta queda pendiente hasta tener el enlace correcto.</p>
-    </details>`;
+      <p class="descargo">Expediente de la Fiscalía (FGE): consulta pendiente de configurar el acceso al sistema de Fiscalía.</p>
+    </div>`;
 
   const montar = () => {
     const estado = { cat: null, accion: false, q: "", n: 30 };
@@ -240,6 +274,12 @@ function vistaCausa(datos) {
           </div>
         </details>`).join("") + (filtradas.length > estado.n ? `<button type="button" id="exp-mas" class="mas-boton">Mostrar ${Math.min(30, filtradas.length - estado.n)} más</button>` : "");
     };
+    const abrir = (panel) => {
+      for (const b of document.querySelectorAll(".subtabs button")) b.setAttribute("aria-selected", String(b.dataset.panel === panel));
+      for (const d of document.querySelectorAll(".panel")) d.hidden = d.dataset.panel !== panel;
+    };
+    document.querySelector(".subtabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) abrir(b.dataset.panel); });
+    document.querySelector(".tesela").addEventListener("click", () => abrir("seguimiento"));
     const filtrarPor = (cat) => { estado.cat = cat || null; estado.n = 30; pintar(); };
     $("#exp-q").addEventListener("input", (ev) => { estado.q = ev.target.value; estado.n = 30; pintar(); });
     $("#exp-accion").addEventListener("change", (ev) => { estado.accion = ev.target.checked; estado.n = 30; pintar(); });
@@ -248,8 +288,9 @@ function vistaCausa(datos) {
     document.querySelector(".atencion").addEventListener("click", (ev) => {
       const b = ev.target.closest("button");
       if (!b) return;
+      abrir("expediente");
       filtrarPor(b.dataset.cat);
-      $("#expediente").scrollIntoView({ behavior: "smooth", block: "start" });
+      document.querySelector(".subtabs").scrollIntoView({ behavior: "smooth", block: "start" });
     });
     pintar();
   };
@@ -267,7 +308,7 @@ function vistaJuez(datos) {
   const html = `
     <section class="portada">
       <div class="portada-izq">
-        <p class="sobre">Flujo II · Procesos resueltos por juez</p>
+        <p class="sobre">Procesos resueltos por juez</p>
         <h1>${esc(juez.juez.nombre)}</h1>
         <p class="meta">${filtros}</p>
         <div class="cifras">
@@ -360,11 +401,11 @@ if (!datos) {
     const flujo = resolver(datos, consulta);
     const caja = $("#progreso");
     if (!flujo) {
-      const falta = !datos.juez ? " El historial del juez (Flujo II) todavía no se ha capturado en el portal." : !datos.causa ? " La causa (Flujo I) todavía no se ha capturado en el portal." : "";
-      caja.innerHTML = `<p class="sin-resultado">No hay una corrida guardada para «${esc(consulta)}».${falta} Esta demo trabaja sobre datos capturados una sola vez: prueba con una de las búsquedas sugeridas.</p>`;
+      caja.querySelector(".sin-resultado")?.remove();
+      caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre las causas y jueces en seguimiento. Verifica el número de proceso o el nombre.</p>`);
       return;
     }
-    caja.innerHTML = `<p class="sobre centro">Flujo ${flujo === "causa" ? "I · Revisión y actualización de causas" : "II · Historial de causas del juez"}</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
+    caja.innerHTML = `<p class="sobre centro">${flujo === "causa" ? "Revisión y actualización de la causa" : "Historial de causas del juez"} · en curso</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
     caja.scrollIntoView({ behavior: "smooth", block: "start" });
     const items = [...caja.querySelectorAll("li")];
     for (const [i, item] of items.entries()) {
@@ -392,7 +433,7 @@ if (!datos) {
     montar?.();
     if (id === "buscar") {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
-      for (const b of document.querySelectorAll(".sugerencia")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
+      for (const b of document.querySelectorAll(".seguimiento")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
     }
     window.scrollTo(0, 0);
   };
