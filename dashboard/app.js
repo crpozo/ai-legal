@@ -119,6 +119,7 @@ function vistaBuscar(datos) {
   if (datos.juez) sugerencias.push([datos.juez.juez.nombre, "Flujo II · Juez", datos.juez.juez.nombre]);
   const tarjetaFlujo = (num, titulo, texto, items) => `<article class="flujo"><span class="num">Flujo ${num}</span><h3>${titulo}</h3><p>${texto}</p><ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul></article>`;
   return `
+    <div class="inicio">
     <section class="heroe">
       <p class="sobre">Demo · Flujograma de procesos del estudio</p>
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
@@ -128,6 +129,7 @@ function vistaBuscar(datos) {
         <button type="submit">Buscar</button>
       </form>
       <div class="sugerencias"><span>Prueba con</span>${sugerencias.map(([q, tipo, texto]) => `<button type="button" class="sugerencia" data-q="${esc(q)}"><small>${esc(tipo)}</small>${esc(texto)}</button>`).join("")}</div>
+      <p class="nota-demo">El agente reproduce una corrida guardada: no vuelve a consultar el portal ni al modelo, así que buscar no cuesta nada.</p>
     </section>
     <div id="progreso" aria-live="polite">
       <div class="flujos">
@@ -135,7 +137,7 @@ function vistaBuscar(datos) {
         ${tarjetaFlujo("II", "Historial de causas del juez", "11 pasos: precisar juez y filtros, revisar todos los procesos resueltos y comparar cómo decide.", ["Normativa, jurisprudencia, argumentación, pruebas y motivación", "Criterios reiterados y cambios de interpretación", "Diferencias entre casos aparentemente similares"])}
       </div>
     </div>
-    <p class="nota-demo">El agente reproduce una corrida guardada: no vuelve a consultar el portal ni al modelo, así que buscar no cuesta nada.</p>`;
+    </div>`;
 }
 
 /* ───────────── Flujo I · Causa ───────────── */
@@ -341,7 +343,6 @@ const datos = await cargar();
 if (!datos) {
   $("#contenido").innerHTML = `<p class="vacio">No hay datos procesados. Corre <code>npm run agentes</code>.</p>`;
 } else {
-  $("#pie-meta").textContent = `${datos.meta.ficticio ? "Datos ficticios de ejemplo · " : ""}Dataset "${datos.meta.dataset}" · generado ${fecha(datos.meta.generadoEn)}`;
 
   // Causa y Juez aparecen cuando el agente ya los encontró (o si se llega por enlace directo).
   const disponibles = TODAS.filter(([id]) => id === "buscar" || datos[id]);
@@ -349,7 +350,7 @@ if (!datos) {
   let vistas = [];
   const pintarPestanas = () => {
     vistas = disponibles.filter(([id]) => id === "buscar" || encontrados.has(id));
-    $("#pestanas").innerHTML = vistas.map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
+    $("#pestanas").innerHTML = vistas.filter(([id]) => id !== "buscar").map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
   };
   const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
   let corrida = 0;
