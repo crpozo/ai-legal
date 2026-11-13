@@ -145,7 +145,7 @@ function vistaBuscar(datos) {
       <span class="seg-cab"><b>Función Judicial · ${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</span>
       <span class="tenue">${esc(e.materia)} · ${esc(e.asunto)} · ${esc(e.dependencia)}</span>
-      <span class="seg-pie"><span>Última actuación ${fecha(ultima.fecha)}</span><span>${c.actuaciones.length} actuaciones</span><span>${c.actuaciones.filter((a) => a.analisis.requiereAccion).length} requieren acción</span></span>
+      <span class="seg-pie"><span>Última actuación ${fecha(ultima.fecha)}</span><span>${c.actuaciones.length} actuaciones</span><span>${c.actuaciones.filter((a) => a.analisis.requiereAccion && a.fecha >= new Date(Date.parse(ultima.fecha) - 90 * 86_400_000).toISOString()).length} con acción sugerida en los últimos 90 días</span></span>
     </button>`);
   }
   if (datos.fiscalia) {
@@ -194,7 +194,8 @@ function vistaBuscar(datos) {
 function vistaCausa(datos) {
   const { causa } = datos;
   const r = causa.reporte, e = elegidaDe(causa), acts = causa.actuaciones;
-  const pendientes = acts.filter((a) => a.analisis.requiereAccion).length;
+  const desde = new Date(Date.parse(acts[0].fecha) - 90 * 86_400_000).toISOString();
+  const pendientes = acts.filter((a) => a.analisis.requiereAccion && a.fecha >= desde).length;
   const cuenta = (cat) => acts.filter((a) => a.analisis.categoria === cat).length;
   const conArchivos = acts.filter((a) => a.documentos.some((d) => d.disponible)).length;
   const fechaDe = (id) => fecha(acts.find((a) => a.id === id)?.fecha);
@@ -214,7 +215,7 @@ function vistaCausa(datos) {
         <p class="meta">${esc(e.dependencia)}</p>
         <div class="cifras">
           ${cifra("Actuaciones leídas", acts.length)}
-          ${cifra("Requieren acción", pendientes)}
+          ${cifra("Con acción sugerida, últimos 90 días", pendientes)}
           ${cifra("Carpetas del proceso", causa.instancias.length)}
         </div>
       </div>
@@ -236,6 +237,7 @@ function vistaCausa(datos) {
     </nav>
 
     <div class="panel" data-panel="resumen">
+      ${x && x.despacho.muestras ? bloque("Tiempo de despacho del juzgado", `<div class="despacho"><div class="cifras">${cifra("Mediana de días entre un escrito y el siguiente auto", x.despacho.medianaDias)}${cifra("Nueve de cada diez se despachan en (días)", x.despacho.p90Dias)}${cifra("Máximo observado (días)", x.despacho.maxDias)}</div><div class="columnas-anio">${x.despacho.porAnio.map((d) => `<div title="${d.anio}: mediana ${d.medianaDias} días en ${d.muestras} escritos"><span class="pista"><i style="height:${Math.max(3, (100 * d.medianaDias) / Math.max(1, ...x.despacho.porAnio.map((y) => y.medianaDias)))}%"></i></span><b>${d.medianaDias} d</b><small>${d.anio.slice(2)}</small></div>`).join("")}</div></div><p class="tenue">Calculado sobre ${x.despacho.muestras} escritos de parte de este expediente y el primer auto o providencia posterior a cada uno. Es una aproximación: no distingue qué escrito atiende cada providencia.</p>`) : ""}
     <div class="tablero">
       <section class="tesela">
         <h3>Alertas</h3>
@@ -250,7 +252,6 @@ function vistaCausa(datos) {
         ${bloque("Etapa y estado del proceso", `<dl class="pares"><dt>Etapa procesal</dt><dd>${esc(r.etapaProcesal)}</dd><dt>Estado actual</dt><dd>${esc(r.estadoActual)}</dd></dl>`, { paso: "Paso 15" })}
         ${bloque("Actuación más reciente", `<p class="tenue">${fechaDe(r.ultimaActuacion.actuacionId)} · ${ref(r.ultimaActuacion.actuacionId)}</p><p>${esc(r.ultimaActuacion.resumen)}</p><p class="implica"><b>Qué implica.</b> ${esc(r.ultimaActuacion.implicaciones)}</p>`, { paso: "Paso 14" })}
       </div>
-      ${x && x.despacho.muestras ? bloque("Tiempo de despacho del juzgado", `<div class="despacho"><div class="cifras">${cifra("Mediana de días entre un escrito y el siguiente auto", x.despacho.medianaDias)}${cifra("Nueve de cada diez se despachan en (días)", x.despacho.p90Dias)}${cifra("Máximo observado (días)", x.despacho.maxDias)}</div><div class="columnas-anio">${x.despacho.porAnio.map((d) => `<div title="${d.anio}: mediana ${d.medianaDias} días en ${d.muestras} escritos"><span class="pista"><i style="height:${Math.max(3, (100 * d.medianaDias) / Math.max(1, ...x.despacho.porAnio.map((y) => y.medianaDias)))}%"></i></span><b>${d.medianaDias} d</b><small>${d.anio.slice(2)}</small></div>`).join("")}</div></div><p class="tenue">Calculado sobre ${x.despacho.muestras} escritos de parte de este expediente y el primer auto o providencia posterior a cada uno. Es una aproximación: no distingue qué escrito atiende cada providencia.</p>`) : ""}
     </div>
 
     <div class="panel" data-panel="seguimiento" hidden>
