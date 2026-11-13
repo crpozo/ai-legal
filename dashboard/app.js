@@ -487,7 +487,7 @@ async function cargar() {
   return null;
 }
 
-/* Acceso simulado: no hay autenticación real, cualquier correo y contraseña entran. */
+/* Acceso simulado: no hay autenticación real; "Ingresar" abre la app con o sin credenciales. */
 const sesion = {
   leer: () => { try { return sessionStorage.getItem("maya-sesion"); } catch { return null; } },
   guardar: (v) => { try { v ? sessionStorage.setItem("maya-sesion", v) : sessionStorage.removeItem("maya-sesion"); } catch { /* sin almacenamiento */ } },
@@ -500,11 +500,8 @@ function aplicarSesion(correo) {
 }
 $("#form-login").addEventListener("submit", async (ev) => {
   ev.preventDefault();
-  const correo = $("#login-correo").value.trim(), clave = $("#login-clave").value;
-  if (!/^\S+@\S+\.\S+$/.test(correo) || !clave) {
-    $("#login-error").textContent = "Ingresa tu correo y tu contraseña.";
-    return;
-  }
+  // Demo: entra sin exigir credenciales; si no se escribe un correo se usa uno genérico.
+  const correo = $("#login-correo").value.trim() || "abogado@estudiomaya.ec";
   $("#login-error").textContent = "";
   const boton = ev.target.querySelector("button");
   boton.disabled = true;
