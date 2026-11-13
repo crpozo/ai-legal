@@ -290,7 +290,7 @@ function vistaCausa(datos) {
       <section class="bloque escrito">
         <header><h3>${esc(b.titulo)}</h3><span class="etiqueta media">Borrador para revisión</span></header>
         <p>${esc(b.porQueAhora)} ${ref(b.actuacionId)}</p>
-        ${b.datosPorCompletar.length ? `<div class="completar"><h5>Antes de presentar</h5>${lista(b.datosPorCompletar)}</div>` : ""}
+        ${b.datosPorCompletar.length ? `<details class="completar"><summary><span>Recomendación legal antes de presentar</span><span class="etiqueta media">${plural(b.datosPorCompletar.length, "punto", "puntos")}</span></summary>${lista(b.datosPorCompletar)}</details>` : ""}
         <pre class="hoja" id="escrito-${i}">${esc(b.texto)}</pre>
         <div class="acciones"><button type="button" data-copiar="escrito-${i}">Copiar texto</button><button type="button" data-descargar="escrito-${i}" data-nombre="${esc(causa.numero)}-escrito-${i + 1}.txt">Descargar</button></div>
       </section>`).join("")}

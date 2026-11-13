@@ -431,3 +431,11 @@ div.hoja { white-space: normal; display: grid; gap: 12px; font-family: var(--san
 @media (max-width: 1080px) { .panel[data-panel="preguntas"] .columnas { grid-template-columns: 1fr; } }
 
 .portada .cifra span { max-width: 16ch; }
+
+details.completar { padding: 0; }
+.completar > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 18px; font-size: 15.5px; }
+.completar > summary::-webkit-details-marker { display: none; }
+.completar > summary::before { content: "+"; font-size: 22px; font-weight: 200; line-height: 1; width: 14px; color: var(--media); }
+.completar[open] > summary::before { content: "–"; }
+.completar > summary .etiqueta { margin-left: auto; background: var(--panel); }
+.completar > ul { padding: 0 18px 16px 50px; }
