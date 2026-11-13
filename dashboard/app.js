@@ -181,6 +181,10 @@ function vistaBuscar(datos) {
         <header><h3>En seguimiento</h3><span class="ref">${plural(filas.length, "registro", "registros")}</span></header>
         ${filas.join("")}
       </section>
+      ${datos.causa ? `<div class="par">
+        ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Causa ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
+        ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Causa ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
+      </div>` : ""}
     </div>
     </div>`;
 }
@@ -198,6 +202,8 @@ function vistaCausa(datos) {
   for (const a of acts) anios.set(a.fecha.slice(0, 4), (anios.get(a.fecha.slice(0, 4)) ?? 0) + 1);
   const porAnio = [...anios].sort(([a], [b]) => a.localeCompare(b));
   const maxAnio = Math.max(1, ...porAnio.map(([, n]) => n));
+  const x = causa.extras;
+  const nAct = (id) => String(id).replace(/^.*-(\d+)$/, "$1");
   const nivelConfianza = { alta: "baja", media: "media", baja: "alta" }[causa.seleccion.confianza] ?? "media";
   const html = `
     <section class="portada">
@@ -222,6 +228,9 @@ function vistaCausa(datos) {
       <button role="tab" data-panel="resumen" aria-selected="true">Resumen</button>
       <button role="tab" data-panel="seguimiento">Alertas y plazos <span>${r.alertas.length}</span></button>
       <button role="tab" data-panel="expediente">Expediente <span>${acts.length}</span></button>
+      ${x ? `<button role="tab" data-panel="preguntas">Preguntas</button>
+      <button role="tab" data-panel="escritos">Escritos <span>${x.borradores.length}</span></button>
+      <button role="tab" data-panel="cliente">Para el cliente</button>` : ""}
       <button role="tab" data-panel="carpetas">Carpetas y documentos</button>
       <button role="tab" data-panel="recorrido">Recorrido del agente</button>
     </nav>
@@ -241,6 +250,7 @@ function vistaCausa(datos) {
         ${bloque("Etapa y estado del proceso", `<dl class="pares"><dt>Etapa procesal</dt><dd>${esc(r.etapaProcesal)}</dd><dt>Estado actual</dt><dd>${esc(r.estadoActual)}</dd></dl>`, { paso: "Paso 15" })}
         ${bloque("Actuación más reciente", `<p class="tenue">${fechaDe(r.ultimaActuacion.actuacionId)} · ${ref(r.ultimaActuacion.actuacionId)}</p><p>${esc(r.ultimaActuacion.resumen)}</p><p class="implica"><b>Qué implica.</b> ${esc(r.ultimaActuacion.implicaciones)}</p>`, { paso: "Paso 14" })}
       </div>
+      ${x && x.despacho.muestras ? bloque("Tiempo de despacho del juzgado", `<div class="despacho"><div class="cifras">${cifra("Mediana de días entre un escrito y el siguiente auto", x.despacho.medianaDias)}${cifra("Nueve de cada diez se despachan en (días)", x.despacho.p90Dias)}${cifra("Máximo observado (días)", x.despacho.maxDias)}</div><div class="columnas-anio">${x.despacho.porAnio.map((d) => `<div title="${d.anio}: mediana ${d.medianaDias} días en ${d.muestras} escritos"><span class="pista"><i style="height:${Math.max(3, (100 * d.medianaDias) / Math.max(1, ...x.despacho.porAnio.map((y) => y.medianaDias)))}%"></i></span><b>${d.medianaDias} d</b><small>${d.anio.slice(2)}</small></div>`).join("")}</div></div><p class="tenue">Calculado sobre ${x.despacho.muestras} escritos de parte de este expediente y el primer auto o providencia posterior a cada uno. Es una aproximación: no distingue qué escrito atiende cada providencia.</p>`) : ""}
     </div>
 
     <div class="panel" data-panel="seguimiento" hidden>
@@ -264,6 +274,35 @@ function vistaCausa(datos) {
     </section>
     </div>
 
+    ${x ? `
+    <div class="panel" data-panel="preguntas" hidden>
+      <div class="columnas">
+        <aside class="lateral">
+          ${bloque("Pregunta sobre el expediente", `<ul class="preguntas">${x.preguntas.map((q, i) => `<li><button type="button" data-i="${i}">${esc(q.pregunta)}</button></li>`).join("")}</ul>`)}
+        </aside>
+        <div class="principal"><section class="bloque" id="respuesta"><p class="tenue">Elige una pregunta para ver la respuesta con las actuaciones que la sustentan.</p></section></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="escritos" hidden>
+      ${x.borradores.map((b, i) => `
+      <section class="bloque escrito">
+        <header><h3>${esc(b.titulo)}</h3><span class="etiqueta media">Borrador para revisión</span></header>
+        <p>${esc(b.porQueAhora)} ${ref(b.actuacionId)}</p>
+        ${b.datosPorCompletar.length ? `<div class="completar"><h5>Antes de presentar</h5>${lista(b.datosPorCompletar)}</div>` : ""}
+        <pre class="hoja" id="escrito-${i}">${esc(b.texto)}</pre>
+        <div class="acciones"><button type="button" data-copiar="escrito-${i}">Copiar texto</button><button type="button" data-descargar="escrito-${i}" data-nombre="${esc(causa.numero)}-escrito-${i + 1}.txt">Descargar</button></div>
+      </section>`).join("")}
+    </div>
+
+    <div class="panel" data-panel="cliente" hidden>
+      <section class="bloque correo">
+        <header><h3>Reporte para el cliente</h3><span class="etiqueta media">Borrador para revisión</span></header>
+        <div class="hoja" id="correo-cliente"><p class="asunto"><b>Asunto:</b> ${esc(x.cliente.asunto)}</p>${x.cliente.parrafos.map((t) => `<p>${esc(t)}</p>`).join("")}<p><b>Próximos pasos</b></p><ul>${x.cliente.proximosPasos.map((t) => `<li>${esc(t)}</li>`).join("")}</ul><p>${esc(x.cliente.cierre)}</p></div>
+        <div class="acciones"><button type="button" data-copiar="correo-cliente">Copiar texto</button><button type="button" data-descargar="correo-cliente" data-nombre="${esc(causa.numero)}-reporte-cliente.txt">Descargar</button></div>
+      </section>
+    </div>` : ""}
+
     <div class="panel" data-panel="carpetas" hidden>
       <div class="columnas">
         <div class="principal">
@@ -283,14 +322,14 @@ function vistaCausa(datos) {
     </div>`;
 
   const montar = () => {
-    const estado = { cat: null, accion: false, q: "", n: 30 };
+    const estado = { cat: null, accion: false, q: "", n: 30, id: null };
     const cats = Object.keys(CATEGORIAS).filter((c) => cuenta(c));
     const pintar = () => {
       $("#exp-cats").innerHTML = [[null, "Todas", acts.length], ...cats.map((c) => [c, CATEGORIAS[c], cuenta(c)])]
         .map(([c, nombre, n]) => `<button type="button" class="chip" data-cat="${c ?? ""}" aria-pressed="${estado.cat === c}">${esc(nombre)} <span>${n}</span></button>`).join("");
       const q = plano(estado.q);
-      const filtradas = acts.filter((a) => (!estado.cat || a.analisis.categoria === estado.cat) && (!estado.accion || a.analisis.requiereAccion) && (!q || plano(`${a.tipo} ${a.analisis.resumen} ${a.texto}`).includes(q)));
-      $("#exp-lista").innerHTML = (filtradas.length ? `<p class="tenue conteo">${plural(filtradas.length, "actuación", "actuaciones")}</p>` : `<p class="tenue conteo">Ninguna actuación coincide con el filtro.</p>`) + filtradas.slice(0, estado.n).map((a) => `
+      const filtradas = acts.filter((a) => (!estado.id || a.id === estado.id) && (!estado.cat || a.analisis.categoria === estado.cat) && (!estado.accion || a.analisis.requiereAccion) && (!q || plano(`${a.tipo} ${a.analisis.resumen} ${a.texto}`).includes(q)));
+      $("#exp-lista").innerHTML = (estado.id ? `<p class="conteo"><button type="button" id="exp-todas" class="chip" aria-pressed="true">Actuación n.º ${nAct(estado.id)} ✕ ver todas</button></p>` : "") + (filtradas.length ? `<p class="tenue conteo">${plural(filtradas.length, "actuación", "actuaciones")}</p>` : `<p class="tenue conteo">Ninguna actuación coincide con el filtro.</p>`) + filtradas.slice(0, estado.n).map((a) => `
         <details class="actuacion">
           <summary><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span><span class="titulo">${esc(a.analisis.resumen)}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</summary>
           <div class="detalle">
@@ -308,11 +347,50 @@ function vistaCausa(datos) {
     };
     document.querySelector(".subtabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) abrir(b.dataset.panel); });
     document.querySelector(".tesela").addEventListener("click", () => abrir("seguimiento"));
-    const filtrarPor = (cat) => { estado.cat = cat || null; estado.n = 30; pintar(); };
+    const filtrarPor = (cat) => { estado.cat = cat || null; estado.id = null; estado.n = 30; pintar(); };
+    const verActuacion = (id) => {
+      Object.assign(estado, { id, cat: null, accion: false, q: "" });
+      $("#exp-q").value = ""; $("#exp-accion").checked = false;
+      abrir("expediente");
+      pintar();
+      const d = document.querySelector("#exp-lista details");
+      if (d) d.open = true;
+      document.querySelector(".subtabs").scrollIntoView({ behavior: "smooth", block: "start" });
+    };
     $("#exp-q").addEventListener("input", (ev) => { estado.q = ev.target.value; estado.n = 30; pintar(); });
     $("#exp-accion").addEventListener("change", (ev) => { estado.accion = ev.target.checked; estado.n = 30; pintar(); });
     $("#exp-cats").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) filtrarPor(b.dataset.cat); });
-    $("#exp-lista").addEventListener("click", (ev) => { if (ev.target.id === "exp-mas") { estado.n += 30; pintar(); } });
+    $("#exp-lista").addEventListener("click", (ev) => {
+      if (ev.target.id === "exp-mas") { estado.n += 30; pintar(); }
+      if (ev.target.id === "exp-todas") { estado.id = null; pintar(); }
+    });
+    if (x) {
+      let turno = 0;
+      document.querySelector(".preguntas").addEventListener("click", async (ev) => {
+        const b = ev.target.closest("button");
+        if (!b) return;
+        const mio = ++turno, q = x.preguntas[Number(b.dataset.i)];
+        for (const o of document.querySelectorAll(".preguntas button")) o.setAttribute("aria-pressed", String(o === b));
+        $("#respuesta").innerHTML = `<header><h3>${esc(q.pregunta)}</h3></header><p class="pensando"><span class="marca-paso"></span>Revisando ${acts.length} actuaciones…</p>`;
+        await new Promise((ok) => setTimeout(ok, 900));
+        if (mio !== turno) return;
+        $("#respuesta").innerHTML = `<header><h3>${esc(q.pregunta)}</h3></header><p class="lectura">${esc(q.respuesta)}</p><div><h5>Sustento en el expediente</h5><div class="chips">${q.actuacionIds.map((id) => { const a = acts.find((y) => y.id === id); return `<button type="button" class="chip" data-act="${esc(id)}">${fecha(a?.fecha)} · n.º ${nAct(id)}</button>`; }).join("")}</div></div>`;
+      });
+      $("#respuesta").addEventListener("click", (ev) => { const b = ev.target.closest("[data-act]"); if (b) verActuacion(b.dataset.act); });
+      document.querySelector("#contenido").addEventListener("click", async (ev) => {
+        const copiar = ev.target.closest("[data-copiar]"), bajar = ev.target.closest("[data-descargar]");
+        if (copiar) {
+          const texto = document.getElementById(copiar.dataset.copiar).innerText;
+          try { await navigator.clipboard.writeText(texto); copiar.textContent = "Copiado"; } catch { copiar.textContent = "No se pudo copiar"; }
+          setTimeout(() => { copiar.textContent = "Copiar texto"; }, 1800);
+        }
+        if (bajar) {
+          const url = URL.createObjectURL(new Blob([document.getElementById(bajar.dataset.descargar).innerText], { type: "text/plain;charset=utf-8" }));
+          Object.assign(document.createElement("a"), { href: url, download: bajar.dataset.nombre }).click();
+          setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+      });
+    }
     document.querySelector(".atencion").addEventListener("click", (ev) => {
       const b = ev.target.closest("button");
       if (!b) return;
@@ -585,7 +663,7 @@ if (!datos) {
     montar?.();
     if (id === "buscar") {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
-      for (const b of document.querySelectorAll(".seguimiento")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
+      for (const b of document.querySelectorAll(".seguimiento, .novedad")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
     }
     window.scrollTo(0, 0);
   };

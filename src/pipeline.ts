@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { analizarActuaciones, reportarCausa, seleccionarInstancia } from "./agents/causa.js";
+import { redactarBorradores, reportarAlCliente, responderPreguntas, tiemposDeDespacho } from "./agents/extras.js";
 import { reportarFiscalia } from "./agents/fiscalia.js";
 import { analizarPatrones, estadisticas, ficharSentencias } from "./agents/juez.js";
 import { resumenDeUso } from "./llm.js";
@@ -29,6 +30,12 @@ async function flujoCausa(crudo: unknown) {
   console.log(`  ${analisis.length} actuaciones analizadas`);
   const reporte = await reportarCausa(instancia, analisis, cacheDir);
   console.log("  reporte integral listo");
+  const [cliente, borradores, preguntas] = await Promise.all([
+    reportarAlCliente(causa, instancia, reporte, cacheDir),
+    redactarBorradores(causa, instancia, analisis, reporte, cacheDir),
+    responderPreguntas(instancia, analisis, reporte, cacheDir),
+  ]);
+  console.log(`  reporte para el cliente, ${borradores.length} borradores y ${preguntas.length} respuestas listos`);
   const porId = new Map(analisis.map(({ id, ...resto }) => [id, resto]));
   return {
     fuente: causa.fuente,
@@ -39,6 +46,7 @@ async function flujoCausa(crudo: unknown) {
       .sort((a, b) => b.fecha.localeCompare(a.fecha))
       .map((a) => ({ ...a, analisis: porId.get(a.id)! })),
     reporte,
+    extras: { cliente, borradores, preguntas, despacho: tiemposDeDespacho(instancia, analisis) },
   };
 }
 

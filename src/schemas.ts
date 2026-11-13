@@ -210,6 +210,35 @@ export const PatronesJuez = z.object({
 
 /* ───────────── Archivo que lee el dashboard ───────────── */
 
+/** Reporte de estado en lenguaje llano, para enviar al cliente. */
+export const ReporteCliente = z.object({
+  asunto: z.string(),
+  parrafos: z.array(z.string()),
+  proximosPasos: z.array(z.string()),
+  cierre: z.string(),
+});
+export type ReporteCliente = z.infer<typeof ReporteCliente>;
+
+/** Borradores de escritos que el expediente justifica presentar ahora. */
+export const Borradores = z.object({
+  borradores: z.array(
+    z.object({
+      titulo: z.string(),
+      porQueAhora: z.string(),
+      actuacionId: z.string(),
+      texto: z.string(),
+      datosPorCompletar: z.array(z.string()),
+    }),
+  ),
+});
+export type Borradores = z.infer<typeof Borradores>;
+
+/** Respuestas a preguntas frecuentes sobre el expediente, con las actuaciones que las sustentan. */
+export const Respuestas = z.object({
+  respuestas: z.array(z.object({ pregunta: z.string(), respuesta: z.string(), actuacionIds: z.array(z.string()) })),
+});
+export type Respuestas = z.infer<typeof Respuestas>;
+
 export const UsoAgente = z.object({
   agente: z.string(),
   modelo: z.string(),
@@ -235,6 +264,18 @@ export const Dashboard = z.object({
     seleccion: SeleccionInstancia,
     actuaciones: z.array(Actuacion.extend({ analisis: ActuacionAnalizada.omit({ id: true }) })),
     reporte: ReporteCausa,
+    extras: z.object({
+      cliente: ReporteCliente,
+      borradores: Borradores.shape.borradores,
+      preguntas: Respuestas.shape.respuestas,
+      despacho: z.object({
+        muestras: z.number(),
+        medianaDias: z.number(),
+        p90Dias: z.number(),
+        maxDias: z.number(),
+        porAnio: z.array(z.object({ anio: z.string(), muestras: z.number(), medianaDias: z.number() })),
+      }),
+    }).optional(),
   }).optional(),
   juez: z.object({
     fuente: Fuente,

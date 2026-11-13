@@ -397,3 +397,35 @@ ul.sujetos { list-style: none; padding: 0; }
   .datos > div { grid-template-columns: 1fr; gap: 0; }
   .noticia > header { flex-direction: column; } .rol { justify-items: start; }
 }
+
+/* Inicio: novedades */
+.novedad { width: 100%; text-align: left; background: none; border: 0; padding: 0; display: grid; gap: 4px; cursor: pointer; }
+.novedad:hover span:nth-child(2) { color: var(--acento); }
+.nov-cab { display: flex; align-items: center; gap: 10px; }
+.nov-cab time { font-size: 13.5px; color: var(--tenue); font-variant-numeric: tabular-nums; }
+.inicio #progreso { display: grid; gap: 16px; }
+
+/* Preguntas, escritos y reporte al cliente */
+ul.preguntas { list-style: none; padding: 0; }
+.preguntas li { margin: 0; border-top: 1px solid var(--linea); }
+.preguntas li:first-child { border-top: 0; }
+.preguntas button { width: 100%; text-align: left; background: none; border: 0; padding: 12px 8px; cursor: pointer; font-size: 15px; }
+.preguntas button:hover { background: var(--hundido); }
+.preguntas button[aria-pressed="true"] { color: var(--acento); background: var(--acento-suave); }
+#respuesta h5, .completar h5 { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transform: uppercase; color: var(--tenue); margin-bottom: 8px; }
+.pensando { display: flex; align-items: center; gap: 10px; color: var(--tenue); }
+.pensando .marca-paso { margin: 0; border-color: var(--acento-suave); border-top-color: var(--acento); animation: girar .7s linear infinite; }
+.completar { background: var(--media-suave); padding: 14px 18px; font-size: 14.5px; }
+.hoja { margin: 0; background: var(--panel); border: 1px solid var(--linea); padding: 32px clamp(18px, 5vw, 56px); font: 400 15px/1.7 Georgia, "Times New Roman", serif; white-space: pre-wrap; overflow-wrap: anywhere; max-width: 860px; }
+div.hoja { white-space: normal; display: grid; gap: 12px; font-family: var(--sans); font-weight: 300; font-size: 15.5px; }
+.hoja .asunto { padding-bottom: 12px; border-bottom: 1px solid var(--linea); }
+.acciones { display: flex; gap: 8px; }
+.acciones button { border: 1px solid var(--linea); background: var(--panel); border-radius: 99px; padding: 8px 20px; cursor: pointer; }
+.acciones button:first-child { background: var(--tinta); border-color: var(--tinta); color: var(--fondo); }
+.despacho { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr); gap: 32px; align-items: end; }
+.despacho .cifras { margin-top: 0; }
+.despacho .cifra span { max-width: 20ch; font-size: 14px; }
+.despacho .columnas-anio { height: 140px; }
+@media (max-width: 820px) { .despacho { grid-template-columns: 1fr; } }
+.panel[data-panel="preguntas"] .columnas { grid-template-columns: minmax(260px, 1fr) minmax(0, 1.75fr); }
+@media (max-width: 1080px) { .panel[data-panel="preguntas"] .columnas { grid-template-columns: 1fr; } }

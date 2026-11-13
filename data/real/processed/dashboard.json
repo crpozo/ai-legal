@@ -3,7 +3,7 @@
     "dataset": "real",
     "ficticio": false,
     "origen": "agentes",
-    "generadoEn": "2026-11-13T15:20:10.511Z"
+    "generadoEn": "2026-11-13T15:53:32.137Z"
   },
   "causa": {
     "fuente": {
@@ -11154,6 +11154,171 @@
         "Confirmar con el estudio a qué parte se patrocina, para orientar la estrategia sobre las citaciones."
       ],
       "documentosNoDisponibles": []
+    },
+    "extras": {
+      "cliente": {
+        "asunto": "Estado del juicio 17230-2020-11399 (acción colusoria, Unidad Judicial Civil de Iñaquito, Quito): la causa sigue en etapa de citación",
+        "parrafos": [
+          "Le informamos sobre el juicio 17230-2020-11399, que se tramita en la Unidad Judicial Civil de Iñaquito, en Quito, a cargo del juez Wilmer Zambrano Ortiz. Es una acción colusoria, es decir, un juicio en el que se alega que ciertas personas se pusieron de acuerdo para perjudicar los derechos de otras. La demanda se presentó el 26 de octubre de 2020. La familia Iturralde Varea demanda a la compañía Ferituvaz Agroganadera S.A. y a cinco personas, entre ellas varios miembros de la familia Iturralde Vásconez. La demanda también consta inscrita en el Registro de la Propiedad de Latacunga.",
+          "El juicio sigue en su primera etapa, llamada citación. La citación es el acto formal por el que se entrega la demanda a cada demandado para que pueda responder. El juez no avanza a la siguiente fase, en la que revisa las respuestas y convoca a la primera audiencia, hasta que todos los demandados estén citados de forma válida. A la fecha ya se tienen por citados Enrique Alcides, Eduardo Fernando y Santiago Efraín Iturralde Vásconez, así como la compañía Ferituvaz. Eduardo Fernando Iturralde Vásconez ya contestó la demanda y presentó una reconvención, es decir, una contrademanda. El juez la revisará cuando estén citados todos los demandados.",
+          "El principal obstáculo son dos demandados: Ryna Mercedes Iturralde Vásconez y Fernando Egas Varea. Sus citaciones ya fueron anuladas o dejadas sin efecto en 2022, 2023 y 2025. El intento más reciente lo hizo la Tenencia Política de Cumbayá en enero de 2026, y el juez también lo observó el 17 de septiembre de 2026. La ley exige que los avisos de citación se dejen en días distintos y seguidos, pero el acta muestra dos de ellos con la misma fecha. El juez pidió a la Tenencia Política que aclare esas fechas. En el expediente todavía no consta esa aclaración. Si se confirma el error, es probable que haya que repetir la citación, lo que alargaría el juicio.",
+          "Además, el 13 de abril de 2026 el juez pidió al secretario del juzgado certificar si todos los demandados están citados y si respondieron a tiempo. Esa certificación tampoco consta todavía. Por último, el 6 y el 9 de noviembre de 2026 se presentaron dos escritos que el juez aún no ha resuelto. El sistema público no muestra quién los presentó ni qué piden.",
+          "Por ahora no es posible indicar una fecha para la siguiente etapa ni para el fin del juicio. Los plazos pendientes dependen de fechas que no constan en el expediente, como el día en que la Tenencia Política recibió el pedido del juez."
+        ],
+        "proximosPasos": [
+          "El estudio revisará el contenido de los escritos presentados el 6 y el 9 de noviembre de 2026 para saber quién los presentó y qué solicitan.",
+          "El estudio verificará si la Tenencia Política de Cumbayá recibió el pedido del juez y si ya aclaró las fechas de la citación, y dará seguimiento a ese trámite.",
+          "El estudio comprobará si el secretario del juzgado ya emitió la certificación sobre las citaciones y, si no la ha emitido, pedirá que se realice.",
+          "El estudio revisará los documentos de la citación a la compañía Ferituvaz y a Santiago Efraín Iturralde Vásconez, para detectar cualquier punto que pueda generar problemas más adelante.",
+          "El estudio analizará la contestación y la contrademanda presentadas por Eduardo Fernando Iturralde Vásconez.",
+          "Le pedimos que nos envíe cualquier documento, aviso o comunicación sobre este juicio que usted haya recibido o reciba, y que nos informe de inmediato si alguien se comunica con usted al respecto.",
+          "Si conoce direcciones actualizadas u otra información sobre las personas involucradas que pueda ser útil para el juicio, le agradeceremos compartirla con nosotros."
+        ],
+        "cierre": "Le mantendremos informado en cuanto el juez resuelva los pedidos pendientes, y quedamos atentos a cualquier consulta que tenga."
+      },
+      "borradores": [
+        {
+          "titulo": "Escrito solicitando que se insista en el oficio a la Tenencia Política de Cumbayá y que se certifique su entrega",
+          "porQueAhora": "La providencia del 17-09-2026 ordenó que la Tenencia Política de Cumbayá aclarara, en el término de 3 días, las fechas de las boletas de citación de Fernando José Leopoldo Egas Varea y Ryna Mercedes Iturralde Vásconez. Según el auto, la segunda y la tercera boleta aparecen fijadas el mismo día, 29-01-2026. El expediente recibido solo muestra que el oficio se elaboró el 17-09-2026. No consta su entrega ni la respuesta. Mientras esa citación no se aclare, el juez no calificará la contestación y la reconvención de Eduardo Fernando Iturralde Vásconez (auto del 27-01-2025, art. 77 COGEP). Si el estudio patrocina a este demandado reconviniente, le conviene que el proceso avance. El escrito no afirma que el término de 3 días esté vencido, porque no consta cuándo recibió el oficio la Tenencia Política.",
+          "actuacionId": "quito-2020-10-26-419",
+          "texto": "SEÑOR JUEZ DE LA UNIDAD JUDICIAL CIVIL CON SEDE EN LA PARROQUIA IÑAQUITO DEL DISTRITO METROPOLITANO DE QUITO, PROVINCIA DE PICHINCHA\n\nJuicio No. 17230-2020-11399\nProcedimiento: Ordinario – Acción colusoria\n\nYo, EDUARDO FERNANDO ITURRALDE VÁSCONEZ, [CALIDAD EN QUE COMPARECE: demandado y reconviniente], dentro del juicio ordinario No. 17230-2020-11399, ante usted comparezco y respetuosamente digo:\n\nI. ANTECEDENTES\n\n1. Mediante auto de sustanciación de 17 de septiembre de 2026, a las 16h26, su Autoridad, al amparo de los Arts. 63 y 72 del COGEP en armonía con el Art. 30 del COFJ, ordenó oficiar a la Tenencia Política de la Parroquia Cumbayá. El objeto del oficio es que, dentro del término de 3 días, aclare el acta de citación de los demandados EGAS VAREA FERNANDO JOSÉ LEOPOLDO e ITURRALDE VÁSCONEZ RYNA MERCEDES y determine de manera clara y precisa los días y el mes en que se efectuaron las citaciones. El auto se dicta porque de autos se verifica que la segunda y la tercera boleta se fijaron únicamente el 29 de enero de 2026.\n\n2. Según la razón sentada por Secretaría el 17 de septiembre de 2026, ese día se elaboró el oficio dispuesto. Sin embargo, en el expediente no consta la fecha de su entrega o recepción por la Tenencia Política de la Parroquia Cumbayá, ni la aclaración requerida.\n\n3. Comparecí al proceso con contestación a la demanda y reconvención. Mediante auto de 27 de enero de 2025, su Autoridad dispuso atenderlas oportunamente, conforme al Art. 77 del COGEP, una vez que se encuentren citados todos los demandados. Por ello, la aclaración solicitada a la Tenencia Política es indispensable para la prosecución de la causa.\n\nII. PETICIÓN\n\nPor lo expuesto, solicito:\n\n1. Que el señor Actuario siente razón sobre la fecha en que el oficio dispuesto el 17 de septiembre de 2026 fue remitido y recibido por la Tenencia Política de la Parroquia Cumbayá.\n\n2. Que, si no consta la aclaración ordenada, se insista mediante nuevo oficio a la Tenencia Política de la Parroquia Cumbayá para que cumpla lo dispuesto en el auto de 17 de septiembre de 2026, con el apercibimiento que su Autoridad estime pertinente.\n\n3. Que, una vez recibida la aclaración, se resuelva sobre la validez de la citación de los demandados EGAS VAREA FERNANDO JOSÉ LEOPOLDO e ITURRALDE VÁSCONEZ RYNA MERCEDES, y se continúe con el trámite conforme al Art. 77 del COGEP y lo dispuesto en auto de 27 de enero de 2025.\n\nIII. NOTIFICACIONES\n\nLas notificaciones que me correspondan las seguiré recibiendo en el casillero judicial No. [CASILLERO JUDICIAL], en el casillero electrónico No. [CASILLERO ELECTRÓNICO] y en el correo electrónico [CORREO ELECTRÓNICO] de mi abogado patrocinador.\n\nFirmo con mi abogado patrocinador.\n\n\n_______________________________\nEDUARDO FERNANDO ITURRALDE VÁSCONEZ\nC.C. [NÚMERO DE CÉDULA]\n\n\n_______________________________\n[NOMBRE DEL ABOGADO]\nMatrícula No. [MATRÍCULA PROFESIONAL]",
+          "datosPorCompletar": [
+            "Confirmar a qué parte representa el estudio. El cliente figura como 'Iturralde Vásconez Fernando', que no coincide exactamente con ninguna parte. Se redactó desde la posición de Eduardo Fernando Iturralde Vásconez (demandado y reconviniente), que es la coincidencia más probable. Debe descartarse que se trate de Fernando José Leopoldo Egas Varea, cuya citación es precisamente la cuestionada, o de otra persona.",
+            "[CALIDAD EN QUE COMPARECE]: verificar que comparece como demandado y reconviniente.",
+            "Confirmar con el cliente que le conviene impulsar la validación de la citación de los otros codemandados, porque esa decisión es estratégica.",
+            "[NÚMERO DE CÉDULA] del cliente.",
+            "[NOMBRE DEL ABOGADO] y [MATRÍCULA PROFESIONAL].",
+            "[CASILLERO JUDICIAL], [CASILLERO ELECTRÓNICO] y [CORREO ELECTRÓNICO] señalados en autos.",
+            "Revisar antes en el portal los escritos del 06-11-2026 y 09-11-2026 (quito-2020-10-26-423 y -424). Pueden ya contener esta misma petición o la aclaración de la Tenencia Política, y en ese caso este escrito sería innecesario o debería ajustarse.",
+            "Verificar en el portal si la Tenencia Política de Cumbayá ya respondió al oficio."
+          ]
+        },
+        {
+          "titulo": "Escrito solicitando que se siente la razón ordenada el 13-04-2026 y que, cumplido ello, se califiquen la contestación y la reconvención",
+          "porQueAhora": "El 13-04-2026 el juez ordenó al Actuario sentar razón sobre dos puntos: si todos los demandados están citados y si comparecieron dentro del término del art. 291 COGEP. Esa razón no consta en el expediente recibido. De ella depende que el juez resuelva lo pedido y califique la contestación y la reconvención de Eduardo Fernando Iturralde Vásconez, que se difirieron por el auto del 27-01-2025 (art. 77 COGEP). Pedir que se siente la razón ayuda a evitar que la causa siga paralizada en fase de citación.",
+          "actuacionId": "quito-2020-10-26-417",
+          "texto": "SEÑOR JUEZ DE LA UNIDAD JUDICIAL CIVIL CON SEDE EN LA PARROQUIA IÑAQUITO DEL DISTRITO METROPOLITANO DE QUITO, PROVINCIA DE PICHINCHA\n\nJuicio No. 17230-2020-11399\nProcedimiento: Ordinario – Acción colusoria\n\nYo, EDUARDO FERNANDO ITURRALDE VÁSCONEZ, [CALIDAD EN QUE COMPARECE: demandado y reconviniente], dentro del juicio ordinario No. 17230-2020-11399, ante usted comparezco y respetuosamente digo:\n\nI. ANTECEDENTES\n\n1. Mediante auto de sustanciación de 13 de abril de 2026, su Autoridad dispuso que, previo a ordenar lo que en derecho corresponda, el Actuario del despacho siente una razón que detalle si se encuentran citados todos y cada uno de los demandados de esta causa y si comparecieron al proceso dentro del término establecido en el Art. 291 del COGEP.\n\n2. En el expediente no consta que dicha razón haya sido sentada.\n\n3. Comparecí al proceso con contestación a la demanda y reconvención. Mediante auto de 27 de enero de 2025, su Autoridad dispuso atenderlas oportunamente, conforme al Art. 77 del COGEP.\n\nII. PETICIÓN\n\nPor lo expuesto, solicito:\n\n1. Que se disponga al señor Actuario del despacho sentar la razón ordenada en auto de 13 de abril de 2026. La razón deberá detallar, respecto de cada uno de los demandados, si se encuentra citado, la forma y la fecha de la citación, y si compareció dentro del término del Art. 291 del COGEP.\n\n2. Que, sentada la razón y verificada la citación de todos los demandados, se califiquen la contestación a la demanda y la reconvención presentadas por el compareciente, conforme a lo dispuesto en auto de 27 de enero de 2025 y al Art. 77 del COGEP, y se continúe con la sustanciación de la causa.\n\nIII. NOTIFICACIONES\n\nLas notificaciones que me correspondan las seguiré recibiendo en el casillero judicial No. [CASILLERO JUDICIAL], en el casillero electrónico No. [CASILLERO ELECTRÓNICO] y en el correo electrónico [CORREO ELECTRÓNICO] de mi abogado patrocinador.\n\nFirmo con mi abogado patrocinador.\n\n\n_______________________________\nEDUARDO FERNANDO ITURRALDE VÁSCONEZ\nC.C. [NÚMERO DE CÉDULA]\n\n\n_______________________________\n[NOMBRE DEL ABOGADO]\nMatrícula No. [MATRÍCULA PROFESIONAL]",
+          "datosPorCompletar": [
+            "Confirmar a qué parte representa el estudio. 'Iturralde Vásconez Fernando' no coincide exactamente con ninguna parte. Se asumió que es Eduardo Fernando Iturralde Vásconez, demandado y reconviniente. Si el cliente fuera otro, el escrito debe rehacerse.",
+            "[CALIDAD EN QUE COMPARECE].",
+            "[NÚMERO DE CÉDULA] del cliente.",
+            "[NOMBRE DEL ABOGADO] y [MATRÍCULA PROFESIONAL].",
+            "[CASILLERO JUDICIAL], [CASILLERO ELECTRÓNICO] y [CORREO ELECTRÓNICO].",
+            "Verificar en el portal si la razón del Actuario ya fue sentada, porque podría no figurar en el extracto recibido.",
+            "Revisar los escritos 423 y 424 (06-11-2026 y 09-11-2026) para evitar duplicar peticiones.",
+            "Verificar en autos la fecha exacta de presentación de la contestación y reconvención. El reporte la ubica el 07-01-2025 y no se incluyó en el texto.",
+            "Valorar si conviene presentar este escrito por separado o integrarlo con el primer borrador en un solo escrito."
+          ]
+        }
+      ],
+      "preguntas": [
+        {
+          "pregunta": "¿Qué demandados están citados y cuáles faltan?",
+          "respuesta": "Según el expediente, constan citados: (i) Enrique Alcides Iturralde Vásconez, por boleta fijada los días 22, 23 y 24 de mayo de 2023, puesta en conocimiento el 07-06-2023; compareció con defensor, y el auto del 28-06-2023 registra sus correos. (ii) Santiago Efraín Iturralde Vásconez, por la prensa: se ordenó el 17-04-2024 y el 27-05-2024 el juez tomó nota de las publicaciones. (iii) Eduardo Fernando Iturralde Vásconez, por la prensa en El Expreso los días 5, 6 y 7 de noviembre de 2024 (agregadas el 03-12-2024); contestó el 07-01-2025. (iv) Ferituvaz Agroganadera S.A., a través de su gerente Mario Emiliano Iturralde Vásconez; el acta se puso en conocimiento el 03-10-2025 y la aclaración del citador de Latacunga, el 04-02-2026. Ojo: la reforma ordenó citarla en la persona de Hilda Rosa Paredes Escobar. Faltan Ryna Mercedes Iturralde Vásconez y Fernando José Leopoldo Egas Varea. Su citación por la Tenencia Política de Cumbayá fue observada el 17-09-2026 y no consta que se haya aclarado. Egas Varea tiene casillero electrónico en el proceso y en agosto de 2023 presentó un escrito devolviendo boletas, pero el juez no lo ha tenido por citado. La razón del Actuario sobre si todos están citados, ordenada el 13-04-2026, no consta.",
+          "actuacionIds": [
+            "quito-2020-10-26-187",
+            "quito-2020-10-26-339",
+            "quito-2020-10-26-366",
+            "quito-2020-10-26-392",
+            "quito-2020-10-26-410",
+            "quito-2020-10-26-421"
+          ]
+        },
+        {
+          "pregunta": "¿Por qué se anularon o dejaron sin efecto las citaciones anteriores?",
+          "respuesta": "Hubo cuatro decisiones. (1) El 10-09-2021 se anuló el acta de citación a Ferituvaz: se fijó la boleta en la puerta sin constatar la presencia de un dependiente, en contra del art. 55 COGEP. (2) El 01-11-2022 se anularon las actas de Ryna Mercedes Iturralde Vásconez y Egas Varea por incumplir el art. 55 COGEP, porque la segunda boleta se entregó a una empleada. (3) El 27-01-2025 el juez dejó sin efecto los numerales 2 a 6 del auto del 01-09-2023, que había validado la citación por deprecatorio a Sigchos y rechazado lo alegado por Egas. Además, ordenó al citador aclarar las actas y agregar fotografías de la puerta del domicilio de los días 25, 26 y 27 de julio de 2023. (4) El 21-11-2025 dejó sin efecto esa citación porque la citadora no presentó la aclaración ni las fotografías. A esto se suma que el 17-09-2026 se observó la nueva citación de Cumbayá, porque la segunda y la tercera boleta constan fijadas solo el 29-01-2026; aún no hay declaratoria de nulidad sobre ella.",
+          "actuacionIds": [
+            "quito-2020-10-26-045",
+            "quito-2020-10-26-129",
+            "quito-2020-10-26-218",
+            "quito-2020-10-26-369",
+            "quito-2020-10-26-398",
+            "quito-2020-10-26-421"
+          ]
+        },
+        {
+          "pregunta": "¿Qué ha dicho el juez sobre el archivo de la causa?",
+          "respuesta": "El juez nunca ha ordenado el archivo, pero lo ha advertido varias veces. El 19-04-2023 concedió a la actora 5 días para indicar el lugar exacto de citación de Ryna Mercedes y Egas Varea, bajo prevención de archivo, e invocó precedentes de la Corte Constitucional y del Tribunal de Alzada sobre impulso procesal. El 01-09-2023 le ordenó precisar la dirección de la compañía, también bajo prevención de archivo. El 05-12-2023 y el 25-01-2024 recordó que el impulso corresponde a las partes, con cita de la sentencia 008-16-SCN-CC; en el segundo auto mencionó además el art. 146 COGEP y la posible aplicación del archivo por incumplimiento. El 25-04-2024 dio 5 días, bajo prevención de archivo, para indicar una dirección completa de Ferituvaz. El expediente no permite verificar si cada uno de esos términos se cumplió a tiempo; solo constan escritos posteriores de la actora.",
+          "actuacionIds": [
+            "quito-2020-10-26-164",
+            "quito-2020-10-26-218",
+            "quito-2020-10-26-235",
+            "quito-2020-10-26-268",
+            "quito-2020-10-26-313"
+          ]
+        },
+        {
+          "pregunta": "¿Qué ordenó la última providencia con contenido y a quién?",
+          "respuesta": "Es el auto del 17-09-2026. Ordena oficiar a la Tenencia Política de la Parroquia Cumbayá para que, en el término de 3 días, aclare el acta de citación de Fernando José Leopoldo Egas Varea y Ryna Mercedes Iturralde Vásconez, precisando el día y el mes de cada boleta. El motivo es que la segunda y la tercera boleta constan fijadas en la puerta del domicilio únicamente el 29-01-2026. La secretaría elaboró los oficios el mismo 17-09-2026 y los incorporó al repositorio, pero no consta su entrega ni su recepción, así que el término no es calculable. Tampoco consta respuesta de la Tenencia. Después solo hay dos escritos, del 06-11-2026 y del 09-11-2026, sin contenido visible ni proveídos.",
+          "actuacionIds": [
+            "quito-2020-10-26-421",
+            "quito-2020-10-26-419",
+            "quito-2020-10-26-422",
+            "quito-2020-10-26-423",
+            "quito-2020-10-26-424"
+          ]
+        },
+        {
+          "pregunta": "¿Qué se sabe de la contestación y la reconvención presentadas?",
+          "respuesta": "Solo se sabe lo siguiente. Eduardo Fernando Iturralde Vásconez, citado por la prensa los días 5, 6 y 7 de noviembre de 2024, presentó el 07-01-2025 un escrito con anexos que contiene su contestación a la demanda y una reconvención. El auto del 27-01-2025 registró su casilla y correo y dispuso que ambas se atiendan oportunamente, porque no consta la citación de los demás demandados. El texto disponible no recoge el contenido de la contestación ni de la reconvención: no se conocen las excepciones ni las pretensiones reconvencionales. Tampoco se ha calificado si la contestación fue oportuna; el juez pidió al Actuario el 13-04-2026 una razón sobre la comparecencia dentro del término del art. 291 COGEP, y esa razón no consta.",
+          "actuacionIds": [
+            "quito-2020-10-26-368",
+            "quito-2020-10-26-369",
+            "quito-2020-10-26-366",
+            "quito-2020-10-26-417"
+          ]
+        },
+        {
+          "pregunta": "¿Dónde se ha demorado más el proceso y por qué?",
+          "respuesta": "La demora está en la citación, que lleva seis años desde la admisión del 29-10-2020. Hay tres focos. (1) Ryna Mercedes Iturralde Vásconez y Egas Varea: no habían sido citados ya en marzo de 2021; la citación de 2022 se anuló el 01-11-2022; la de Sigchos de julio de 2023 quedó sin efecto el 27-01-2025 y de nuevo el 21-11-2025; la de Cumbayá de enero de 2026 fue observada el 17-09-2026. (2) Ferituvaz: tuvo una nulidad en 2021 y discrepancias sobre su gerente; las actas de no citación por dirección insuficiente o causa desconocida se repitieron en 2023 y 2024, lo que obligó a oficiar a varias entidades en mayo de 2024; solo fue citada en septiembre de 2025. (3) Santiago Efraín y Eduardo Fernando: el juez exigió oficios a entidades y juramentos antes de autorizar la prensa (diciembre de 2023 a agosto de 2024). También pesaron la reforma de la demanda, admitida el 29-03-2022, y dos deprecatorios que no se remitieron en 2025, el 05-03 por piezas incompletas y el 28-05 por falta de dirección. Además, entre el 13-04-2026 y el 17-09-2026 no hubo providencias.",
+          "actuacionIds": [
+            "quito-2020-10-26-398",
+            "quito-2020-10-26-369",
+            "quito-2020-10-26-321",
+            "quito-2020-10-26-374",
+            "quito-2020-10-26-380",
+            "quito-2020-10-26-421"
+          ]
+        }
+      ],
+      "despacho": {
+        "muestras": 51,
+        "medianaDias": 11,
+        "p90Dias": 26,
+        "maxDias": 56,
+        "porAnio": [
+          {
+            "anio": "2021",
+            "muestras": 6,
+            "medianaDias": 22
+          },
+          {
+            "anio": "2022",
+            "muestras": 7,
+            "medianaDias": 36
+          },
+          {
+            "anio": "2023",
+            "muestras": 12,
+            "medianaDias": 11
+          },
+          {
+            "anio": "2024",
+            "muestras": 15,
+            "medianaDias": 5
+          },
+          {
+            "anio": "2025",
+            "muestras": 9,
+            "medianaDias": 8
+          },
+          {
+            "anio": "2026",
+            "muestras": 2,
+            "medianaDias": 4
+          }
+        ]
+      }
     }
   },
   "fiscalia": {
@@ -11319,15 +11484,42 @@
         "usd": 1.0295
       },
       {
-        "agente": "reporte-fiscalia",
+        "agente": "reporte-cliente",
         "modelo": "us.anthropic.claude-opus-5-5",
         "llamadas": 1,
         "desdeCache": 0,
+        "tokensEntrada": 7491,
+        "tokensSalida": 2055,
+        "usd": 0.0711
+      },
+      {
+        "agente": "preguntas-expediente",
+        "modelo": "us.anthropic.claude-opus-5-5",
+        "llamadas": 1,
+        "desdeCache": 0,
+        "tokensEntrada": 72507,
+        "tokensSalida": 4944,
+        "usd": 0.3889
+      },
+      {
+        "agente": "borradores-escritos",
+        "modelo": "us.anthropic.claude-opus-5-5",
+        "llamadas": 1,
+        "desdeCache": 0,
+        "tokensEntrada": 12846,
+        "tokensSalida": 5152,
+        "usd": 0.1544
+      },
+      {
+        "agente": "reporte-fiscalia",
+        "modelo": "us.anthropic.claude-opus-5-5",
+        "llamadas": 1,
+        "desdeCache": 1,
         "tokensEntrada": 2259,
         "tokensSalida": 2648,
         "usd": 0.062
       }
     ],
-    "totalUsd": 1.1821
+    "totalUsd": 1.7965
   }
 }
