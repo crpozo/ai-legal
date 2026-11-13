@@ -79,6 +79,28 @@
     .portada .boton:not(.primario):hover { border-color: #fff; }
     .portada .maqueta { color: var(--tinta); border-color: transparent; }
     .portada .maqueta .sobre { color: var(--acento); }
+    /* Tarjeta de la portada: bordes redondeados y entrada animada */
+    .maqueta { border-radius: 24px; padding: 28px; box-shadow: 0 40px 90px -30px rgba(3, 10, 30, .65); animation: maq-entra .8s cubic-bezier(.2, .8, .2, 1) both, maq-flota 7s ease-in-out 1.2s infinite; }
+    .maq-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; }
+    .maq-estado { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; padding: 5px 12px; border-radius: 99px; background: var(--acento-suave); color: var(--acento); white-space: nowrap; transition: background .4s, color .4s; }
+    .maq-estado i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid currentColor; border-top-color: transparent; animation: maq-gira .7s linear infinite; }
+    .maq-estado.listo { background: var(--baja-suave); color: var(--baja); }
+    .maq-estado.listo i { animation: none; border: 0; background: currentColor; width: 8px; height: 8px; }
+    .maq-barra { height: 4px; border-radius: 99px; background: var(--hundido); overflow: hidden; }
+    .maq-barra i { display: block; height: 100%; width: 100%; border-radius: 99px; background: linear-gradient(90deg, #2563eb, #60a5fa); transform-origin: left; animation: maq-llena 2s cubic-bezier(.3, .7, .2, 1) .3s both; }
+    .maq-cifras { border: 0; gap: 10px; }
+    .maq-cifras div, .maq-cifras div + div { border: 0; padding: 14px 16px; border-radius: 16px; background: var(--hundido); }
+    .maq-cifras strong { font-variant-numeric: tabular-nums; }
+    .maq-alertas li { padding: 10px 12px; border-radius: 14px; background: var(--hundido); opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) forwards; }
+    .maq-alertas li:nth-child(1) { animation-delay: 1.5s; } .maq-alertas li:nth-child(2) { animation-delay: 1.8s; } .maq-alertas li:nth-child(3) { animation-delay: 2.1s; }
+    .maq-pie { border-radius: 14px; background: var(--acento-suave); opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) 2.5s forwards; }
+    .maq-pie .chip { background: var(--panel); }
+    @keyframes maq-entra { from { opacity: 0; transform: translateY(28px) scale(.97); } to { opacity: 1; transform: none; } }
+    @keyframes maq-flota { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+    @keyframes maq-sube { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes maq-llena { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes maq-gira { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .maqueta, .maq-barra i, .maq-alertas li, .maq-pie, .maq-estado i { animation: none; opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .portada .fondo { display: none; } .portada { background: #0a1630 url("https://images.pexels.com/videos/5637303/pexels-photo-5637303.jpeg?w=1280") center / cover; } }
 
     /* Maqueta del producto */
@@ -254,15 +276,19 @@
           <p class="nota">Demo sobre un proceso real de 424 actuaciones y 190 resoluciones de un juez.</p>
         </div>
 
-        <div class="maqueta" aria-label="Ejemplo de reporte de una causa">
-          <div>
-            <p class="sobre">Proceso 17230-2020-11399</p>
-            <h3>Acción colusoria · Unidad Judicial Civil de Iñaquito</h3>
+        <div class="maqueta" id="maqueta" aria-label="Ejemplo de reporte de una causa">
+          <div class="maq-cab">
+            <div>
+              <p class="sobre">Proceso 17230-2020-11399</p>
+              <h3>Acción colusoria · Unidad Judicial Civil de Iñaquito</h3>
+            </div>
+            <span class="maq-estado" id="maq-estado"><i></i><span>Leyendo expediente…</span></span>
           </div>
+          <div class="maq-barra" aria-hidden="true"><i></i></div>
           <div class="maq-cifras">
-            <div><strong>424</strong><span>actuaciones leídas</span></div>
-            <div><strong>8</strong><span>alertas</span></div>
-            <div><strong>11 d</strong><span>mediana de despacho</span></div>
+            <div><strong data-hasta="424">424</strong><span>actuaciones leídas</span></div>
+            <div><strong data-hasta="8">8</strong><span>alertas</span></div>
+            <div><strong data-hasta="11" data-sufijo=" d">11 d</strong><span>mediana de despacho</span></div>
           </div>
           <ul class="maq-alertas">
             <li><span class="chip alta">alta</span><span>La citación de dos demandados fue observada por cuarta vez: dos boletas aparecen fijadas el mismo día.</span></li>
@@ -486,6 +512,24 @@
     </div>
   </footer>
   <script>
+    // Tarjeta de la portada: las cifras cuentan hasta su valor y el estado pasa a "Reporte listo".
+    (() => {
+      const quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const estado = document.getElementById("maq-estado");
+      const listo = () => { estado.classList.add("listo"); estado.querySelector("span").textContent = "Reporte listo"; };
+      if (quieto) return listo();
+      const DURACION = 1700, inicio = performance.now() + 350;
+      const cifras = [...document.querySelectorAll("#maqueta [data-hasta]")];
+      for (const c of cifras) c.textContent = `0${c.dataset.sufijo ?? ""}`;
+      const paso = (ahora) => {
+        const t = Math.min(1, Math.max(0, (ahora - inicio) / DURACION)), suave = 1 - Math.pow(1 - t, 3);
+        for (const c of cifras) c.textContent = `${Math.round(Number(c.dataset.hasta) * suave)}${c.dataset.sufijo ?? ""}`;
+        if (t < 1) requestAnimationFrame(paso);
+      };
+      requestAnimationFrame(paso);
+      setTimeout(listo, 3000);
+    })();
+
     // Planes: forma de pago y número de abogados.
     (() => {
       const estado = { ciclo: "anual", puestos: 1 };
