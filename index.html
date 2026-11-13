@@ -2,8 +2,373 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=dashboard/">
-  <title>Estudio Maya · Seguimiento judicial con IA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya · Agentes de IA para abogados</title>
+  <meta name="description" content="Maya revisa el portal de la Función Judicial y de la Fiscalía, lee cada actuación y te entrega el estado de tus causas, el criterio de los jueces y los escritos listos para revisar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap">
+  <style>
+    :root {
+      --fondo: #fdfdfc; --panel: #ffffff; --hundido: #f5f7fb; --tinta: #0d1117; --tenue: #5f6876; --linea: #e6e8ec;
+      --acento: #2563eb; --acento-suave: #eaf1fe;
+      --degradado: radial-gradient(120% 90% at 85% 10%, #7db4ff 0%, transparent 55%), radial-gradient(90% 80% at 10% 95%, #1e40af 0%, transparent 60%), linear-gradient(135deg, #2563eb, #3b82f6 55%, #60a5fa);
+      --alta: #b42318; --alta-suave: #fdeceb; --media: #9a5b00; --media-suave: #fdf3df; --baja: #18794e; --baja-suave: #e6f6ee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #0f1319; --panel: #141a22; --hundido: #19202a; --tinta: #eef1f5; --tenue: #98a3b3; --linea: #252d39; --acento: #6ea8ff; --acento-suave: #172640;
+        --alta: #ff9c93; --alta-suave: #3a1f1d; --media: #f0c36d; --media-suave: #33270f; --baja: #7fd6a8; --baja-suave: #142c1f; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--fondo); color: var(--tinta); font: 300 17px/1.6 "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+    h1, h2, h3 { font-weight: 300; letter-spacing: -.02em; text-wrap: balance; }
+    b, strong { font-weight: 500; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+    .ancho { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    .sobre { font-size: 13px; font-weight: 400; letter-spacing: .1em; text-transform: uppercase; color: var(--acento); }
+    .tenue { color: var(--tenue); }
+    .boton { display: inline-flex; align-items: center; gap: 8px; border-radius: 99px; padding: 14px 28px; text-decoration: none; font-size: 16.5px; font-weight: 400; border: 1px solid var(--linea); background: var(--panel); white-space: nowrap; }
+    .boton.primario { border: 0; background: var(--degradado); color: #fff; box-shadow: 0 12px 30px -14px rgba(37, 99, 235, .8); }
+    .boton:hover { border-color: var(--acento); }
+    section { padding: 88px 0; }
+    section + section { border-top: 1px solid var(--linea); }
+
+    /* Barra */
+    .barra { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--fondo) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--linea); }
+    .barra .ancho { display: flex; align-items: center; gap: 28px; padding-top: 16px; padding-bottom: 16px; }
+    .marca { display: flex; align-items: baseline; gap: 10px; text-decoration: none; margin-right: auto; }
+    .marca svg { width: 26px; height: 26px; color: var(--acento); align-self: center; }
+    .marca b { font-size: 25px; font-weight: 400; letter-spacing: -.02em; }
+    .barra nav { display: flex; gap: 24px; font-size: 15.5px; }
+    .barra nav a { text-decoration: none; color: var(--tenue); }
+    .barra nav a:hover { color: var(--tinta); }
+    .barra .boton { padding: 10px 20px; font-size: 15px; }
+
+    /* Portada */
+    .portada { padding: 72px 0 80px; }
+    .portada .ancho { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+    .portada h1 { font-size: clamp(42px, 5.6vw, 76px); line-height: 1.02; font-weight: 200; letter-spacing: -.035em; margin: 16px 0 22px; }
+    .portada h1 em { font-style: normal; color: var(--acento); }
+    .portada p.bajada { font-size: 20px; color: var(--tenue); max-width: 34em; text-wrap: pretty; }
+    .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .nota { font-size: 14px; color: var(--tenue); margin-top: 16px; }
+
+    /* Maqueta del producto */
+    .maqueta { background: var(--panel); border: 1px solid var(--linea); box-shadow: 0 40px 80px -40px rgba(13, 17, 23, .35); padding: 24px; display: grid; gap: 18px; font-size: 14.5px; }
+    .maqueta h3 { font-size: 22px; line-height: 1.2; }
+    .maq-cifras { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); }
+    .maq-cifras div { padding: 14px 14px 14px 0; }
+    .maq-cifras div + div { border-left: 1px solid var(--linea); padding-left: 14px; }
+    .maq-cifras strong { display: block; font-size: 40px; font-weight: 200; line-height: 1; letter-spacing: -.03em; }
+    .maq-cifras span { font-size: 12.5px; color: var(--tenue); }
+    .maq-alertas { list-style: none; padding: 0; display: grid; gap: 10px; }
+    .maq-alertas li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
+    .chip { display: inline-block; font-size: 11.5px; padding: 2px 10px; border-radius: 99px; white-space: nowrap; }
+    .chip.alta { background: var(--alta-suave); color: var(--alta); } .chip.media { background: var(--media-suave); color: var(--media); } .chip.azul { background: var(--acento-suave); color: var(--acento); }
+    .maq-pie { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--hundido); padding: 12px 14px; font-size: 13.5px; }
+
+    /* Cifras */
+    .cifras { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .cifras div { padding: 6px 28px; border-left: 1px solid var(--linea); }
+    .cifras div:first-child { border-left: 0; padding-left: 0; }
+    .cifras strong { display: block; font-size: clamp(46px, 5vw, 68px); font-weight: 200; line-height: 1; letter-spacing: -.03em; }
+    .cifras span { display: block; margin-top: 10px; color: var(--tenue); font-size: 16px; line-height: 1.35; }
+    .titulo { display: grid; gap: 14px; max-width: 760px; margin-bottom: 48px; }
+    .titulo h2 { font-size: clamp(32px, 4vw, 50px); line-height: 1.08; }
+    .titulo p { font-size: 19px; color: var(--tenue); text-wrap: pretty; }
+
+    /* Funciones */
+    .rejilla { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linea); border-left: 1px solid var(--linea); }
+    .funcion { padding: 30px 28px; border-right: 1px solid var(--linea); border-bottom: 1px solid var(--linea); display: grid; gap: 10px; align-content: start; background: var(--panel); }
+    .funcion svg { width: 28px; height: 28px; fill: none; stroke: var(--acento); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .funcion h3 { font-size: 22px; }
+    .funcion p { color: var(--tenue); font-size: 16px; }
+    .funcion .chip { justify-self: start; }
+
+    /* Cómo funciona */
+    .pasos { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: paso; }
+    .pasos li { counter-increment: paso; display: grid; gap: 10px; align-content: start; padding-top: 22px; border-top: 2px solid var(--tinta); }
+    .pasos li::before { content: "0" counter(paso); font-size: 15px; color: var(--acento); letter-spacing: .08em; }
+    .pasos h3 { font-size: 24px; }
+    .pasos p { color: var(--tenue); font-size: 16.5px; }
+
+    /* Informe del juez */
+    .juez { background: var(--degradado); color: #fff; border: 0 !important; }
+    .juez .sobre { color: #fff; opacity: .85; }
+    .juez .ancho { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+    .juez h2 { font-size: clamp(32px, 4vw, 52px); line-height: 1.06; margin: 14px 0 18px; }
+    .juez p { font-size: 18.5px; opacity: .93; text-wrap: pretty; }
+    .juez dl { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .juez dl div { padding: 22px 24px; border-left: 1px solid rgba(255, 255, 255, .3); border-top: 1px solid rgba(255, 255, 255, .3); }
+    .juez dl div:nth-child(-n+2) { border-top: 0; }
+    .juez dt { font-size: 15px; opacity: .85; }
+    .juez dd { font-size: clamp(44px, 5vw, 66px); font-weight: 200; line-height: 1.05; letter-spacing: -.03em; }
+    .juez .boton { margin-top: 28px; border: 0; background: #fff; color: #12243a; }
+
+    /* Planes */
+    .planes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+    .plan { border: 1px solid var(--linea); background: var(--panel); padding: 32px 28px; display: grid; gap: 16px; align-content: start; }
+    .plan.destacado { border-color: var(--acento); box-shadow: 0 30px 60px -40px rgba(37, 99, 235, .7); }
+    .plan h3 { font-size: 24px; }
+    .precio { font-size: 60px; font-weight: 200; line-height: 1; letter-spacing: -.03em; }
+    .precio small { font-size: 16px; color: var(--tenue); letter-spacing: 0; }
+    .plan ul { list-style: none; padding: 0; display: grid; gap: 10px; font-size: 16px; }
+    .plan li { padding-left: 26px; position: relative; }
+    .plan li::before { content: ""; position: absolute; left: 4px; top: 9px; width: 10px; height: 6px; border-left: 1.5px solid var(--acento); border-bottom: 1.5px solid var(--acento); transform: rotate(-45deg); }
+    .plan .boton { justify-content: center; margin-top: 8px; }
+    .extras { margin-top: 28px; font-size: 15.5px; color: var(--tenue); }
+
+    /* Preguntas */
+    .faq { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 56px; }
+    details { border-top: 1px solid var(--linea); padding: 20px 0; }
+    details:last-child { border-bottom: 1px solid var(--linea); }
+    summary { cursor: pointer; list-style: none; font-size: 20px; display: flex; justify-content: space-between; gap: 16px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--acento); font-size: 24px; font-weight: 200; line-height: 1; }
+    details[open] summary::after { content: "–"; }
+    details p { margin-top: 12px; color: var(--tenue); max-width: 60ch; }
+
+    .cierre { text-align: center; }
+    .cierre h2 { font-size: clamp(36px, 5vw, 64px); font-weight: 200; line-height: 1.04; letter-spacing: -.03em; max-width: 16ch; margin: 0 auto 28px; }
+    footer { border-top: 1px solid var(--linea); padding: 28px 0 40px; font-size: 13.5px; color: var(--tenue); }
+    footer .ancho { display: grid; gap: 8px; }
+
+    @media (max-width: 960px) {
+      section { padding: 64px 0; }
+      .portada .ancho, .juez .ancho, .faq { grid-template-columns: 1fr; gap: 36px; }
+      .rejilla, .planes, .pasos { grid-template-columns: 1fr 1fr; }
+      .cifras { grid-template-columns: 1fr 1fr; gap: 28px 0; } .cifras div:nth-child(3) { border-left: 0; padding-left: 0; }
+      .barra nav { display: none; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .ancho { padding: 0 20px; }
+      .rejilla, .planes, .pasos { grid-template-columns: 1fr; }
+      .portada { padding: 44px 0 56px; }
+      .maq-cifras strong { font-size: 32px; }
+      .juez dl div { padding: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
-<body><p><a href="dashboard/">Abrir el dashboard</a></p></body>
+<body>
+  <header class="barra">
+    <div class="ancho">
+      <a class="marca" href="#inicio" aria-label="Maya, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 25V8l11 11L27 8v17" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <b>Maya</b>
+      </a>
+      <nav aria-label="Secciones">
+        <a href="#funciones">Qué hace</a>
+        <a href="#como">Cómo funciona</a>
+        <a href="#jueces">Jueces</a>
+        <a href="#planes">Planes</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="boton primario" href="dashboard/">Ver la demo</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="portada">
+      <div class="ancho">
+        <div>
+          <p class="sobre">Agentes de IA para abogados · Ecuador</p>
+          <h1>Cada causa, al día. <em>Sin revisar el portal una por una.</em></h1>
+          <p class="bajada">Maya entra al portal de la Función Judicial y a la consulta de la Fiscalía, lee cada actuación y te entrega el estado del proceso, las alertas, los plazos y los escritos listos para revisar.</p>
+          <div class="acciones">
+            <a class="boton primario" href="dashboard/">Probar la demo →</a>
+            <a class="boton" href="#planes">Ver planes</a>
+          </div>
+          <p class="nota">La demo corre sobre un proceso real de 424 actuaciones y 190 resoluciones de un juez.</p>
+        </div>
+
+        <div class="maqueta" aria-label="Ejemplo de reporte de una causa">
+          <div>
+            <p class="sobre">Proceso 17230-2020-11399</p>
+            <h3>Acción colusoria · Unidad Judicial Civil de Iñaquito</h3>
+          </div>
+          <div class="maq-cifras">
+            <div><strong>424</strong><span>actuaciones leídas</span></div>
+            <div><strong>8</strong><span>alertas</span></div>
+            <div><strong>11 d</strong><span>mediana de despacho</span></div>
+          </div>
+          <ul class="maq-alertas">
+            <li><span class="chip alta">alta</span><span>La citación de dos demandados fue observada por cuarta vez: dos boletas aparecen fijadas el mismo día.</span></li>
+            <li><span class="chip alta">alta</span><span>El juez ha advertido el archivo de la causa por falta de impulso.</span></li>
+            <li><span class="chip media">media</span><span>La reconvención se atenderá cuando estén citados todos los demandados.</span></li>
+          </ul>
+          <div class="maq-pie"><span>2 borradores de escrito listos para revisar</span><span class="chip azul">Reporte para el cliente</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="ancho">
+        <div class="cifras">
+          <div><strong>424</strong><span>actuaciones de un solo proceso leídas y clasificadas</span></div>
+          <div><strong>190</strong><span>resoluciones de un juez comparadas entre sí</span></div>
+          <div><strong>15</strong><span>pasos del portal que el agente recorre por ti</span></div>
+          <div><strong>$1.73</strong><span>costó analizar ese expediente completo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funciones">
+      <div class="ancho">
+        <div class="titulo">
+          <p class="sobre">Qué hace</p>
+          <h2>El trabajo de revisar, hecho. El de decidir sigue siendo tuyo.</h2>
+          <p>Cada afirmación del reporte cita la actuación o la resolución que la sustenta, para que la verifiques en un clic.</p>
+        </div>
+        <div class="rejilla">
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/></svg>
+            <h3>Seguimiento de causas</h3>
+            <p>Elige la carpeta correcta entre varias instancias, lee el expediente completo y resume el estado, la etapa y la última actuación.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/></svg>
+            <h3>Historial del juez</h3>
+            <p>Revisa todas sus resoluciones de segunda instancia: criterios reiterados, cambios de criterio, casos similares resueltos distinto y tiempos.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/></svg>
+            <h3>Noticias del delito</h3>
+            <p>Organiza las denuncias de una persona en la Fiscalía: delito, unidad fiscal, sujetos y qué verificar en cada una.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a6 6 0 0 0-6 6v4l-1.5 3h15L18 14v-4a6 6 0 0 0-6-6z"/><path d="M10 20h4"/></svg>
+            <h3>Alertas y plazos</h3>
+            <p>Señala los riesgos del proceso y los términos que constan en el expediente. Si un plazo no puede calcularse con certeza, lo dice.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19.5 6 15 16.5 4.5l3 3L9 18z"/><path d="m14.5 6.5 3 3"/></svg>
+            <h3>Borradores de escritos</h3>
+            <p>Propone el escrito que el estado del proceso justifica, con una recomendación legal de lo que debes confirmar antes de presentarlo.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16v11H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            <h3>Reporte para el cliente</h3>
+            <p>El mismo estado del caso, en lenguaje llano y listo para enviar. Tu cliente deja de preguntar cómo va su juicio.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg>
+            <h3>Pregunta a Maya</h3>
+            <p>Consulta en un chat lo que ya está analizado: quién falta por citar, cómo resuelve un juez, cuánto tarda. Cada respuesta te lleva a la fuente.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h6l2 2h8v10H4z"/><path d="M8 13h8M8 16h5"/></svg>
+            <h3>Análisis de casos</h3>
+            <p>Todo lo que consultas queda guardado por categoría, con sus reportes y documentos para abrir o descargar.</p>
+          </article>
+          <article class="funcion">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg>
+            <h3>Vigilancia diaria</h3>
+            <p>Un resumen cada mañana con lo que se movió en toda tu cartera y lo que requiere acción.</p>
+            <span class="chip azul">Próximamente</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como">
+      <div class="ancho">
+        <div class="titulo">
+          <p class="sobre">Cómo funciona</p>
+          <h2>Tres pasos, los mismos que harías tú.</h2>
+        </div>
+        <ol class="pasos">
+          <li><h3>Buscas</h3><p>Escribes el número de proceso, el nombre de una parte, el de un juez o una cédula.</p></li>
+          <li><h3>El agente recorre el portal</h3><p>Tú superas el CAPTCHA una vez. Maya sigue el flujo paso a paso: carpetas, actuaciones, resoluciones y documentos.</p></li>
+          <li><h3>Recibes el análisis</h3><p>Reporte, alertas, plazos, escritos y el resumen para tu cliente, guardados en tu centro de documentación.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="juez" id="jueces">
+      <div class="ancho">
+        <div>
+          <p class="sobre">Historial del juez</p>
+          <h2>Conoce cómo decide antes de plantear tu caso.</h2>
+          <p>En la demo, Maya leyó 190 resoluciones de un tribunal de la Corte Provincial de Pichincha en garantías constitucionales. Encontró el criterio con que resuelve cada tipo de acción, un cambio de criterio y pares de casos casi idénticos resueltos en sentidos opuestos.</p>
+          <a class="boton" href="dashboard/#juez">Ver el informe →</a>
+        </div>
+        <dl>
+          <div><dt>Acciones que prosperan</dt><dd>24%</dd></div>
+          <div><dt>Días en resolver (mediana)</dt><dd>99</dd></div>
+          <div><dt>Criterios reiterados</dt><dd>15</dd></div>
+          <div><dt>Demoras anómalas</dt><dd>14</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="planes">
+      <div class="ancho">
+        <div class="titulo">
+          <p class="sobre">Planes</p>
+          <h2>Un precio por mes, según cuántas causas vigilas.</h2>
+          <p>Sin contratos largos. Si necesitas más, agregas causas o informes sueltos.</p>
+        </div>
+        <div class="planes">
+          <article class="plan">
+            <h3>Independiente</h3>
+            <p class="precio">$39 <small>al mes</small></p>
+            <p class="tenue">Para el abogado que lleva su propia cartera.</p>
+            <ul><li>20 causas en seguimiento</li><li>2 informes de juez al mes</li><li>10 consultas de Fiscalía</li><li>Borradores y reportes para clientes</li></ul>
+            <a class="boton" href="dashboard/">Probar la demo</a>
+          </article>
+          <article class="plan destacado">
+            <h3>Estudio</h3>
+            <p class="precio">$149 <small>al mes</small></p>
+            <p class="tenue">Para un equipo que comparte causas.</p>
+            <ul><li>100 causas en seguimiento</li><li>10 informes de juez al mes</li><li>50 consultas de Fiscalía</li><li>Centro de documentación compartido</li></ul>
+            <a class="boton primario" href="dashboard/">Probar la demo</a>
+          </article>
+          <article class="plan">
+            <h3>Firma</h3>
+            <p class="precio">$449 <small>al mes</small></p>
+            <p class="tenue">Para carteras grandes y varias áreas.</p>
+            <ul><li>400 causas en seguimiento</li><li>30 informes de juez al mes</li><li>Fiscalía sin tope razonable</li><li>Acompañamiento en la puesta en marcha</li></ul>
+            <a class="boton" href="dashboard/">Probar la demo</a>
+          </article>
+        </div>
+        <p class="extras">Adicionales: causa extra $2 al mes · informe de juez $15 · borrador o reporte fuera del plan $1. Precios en dólares, referenciales.</p>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="ancho faq">
+        <div class="titulo">
+          <p class="sobre">Preguntas</p>
+          <h2>Lo que un abogado pregunta primero.</h2>
+        </div>
+        <div>
+          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. Maya lee lo mismo que verías tú en el portal y guarda de dónde tomó cada dato.</p></details>
+          <details><summary>¿Maya resuelve el CAPTCHA?</summary><p>No. El portal lo pide para comprobar que hay una persona, y lo marcas tú una vez por sesión. A partir de ahí el agente recorre el expediente completo.</p></details>
+          <details><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
+          <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: Maya lo señala para que lo solicites a la dependencia.</p></details>
+          <details><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cierre">
+      <div class="ancho">
+        <h2>Mira lo que encuentra en un proceso real.</h2>
+        <a class="boton primario" href="dashboard/">Probar la demo →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ancho">
+      <p>Maya es una herramienta de apoyo para abogados. Los análisis deben verificarse contra la actuación o resolución citada y no constituyen asesoría legal.</p>
+      <p>La disponibilidad de la información depende de los portales de la Función Judicial y de la Fiscalía General del Estado.</p>
+    </div>
+  </footer>
+</body>
 </html>
