@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const TIPOS = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".pdf": "application/pdf" };
+const TIPOS = { ".svg": "image/svg+xml", ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".pdf": "application/pdf" };
 const PUBLICO = ["/dashboard/", "/data/"];
 
 createServer(async (req, res) => {
@@ -14,7 +14,7 @@ createServer(async (req, res) => {
   if (ruta === "/") ruta = "/index.html"; // landing
   if (ruta === "/dashboard/") ruta = "/dashboard/index.html";
   const archivo = path.join(raiz, ruta);
-  if (!archivo.startsWith(raiz) || !(ruta === "/index.html" || PUBLICO.some((p) => ruta.startsWith(p))) || ruta.includes("/cache/")) {
+  if (!archivo.startsWith(raiz) || !(ruta === "/index.html" || ruta === "/favicon.svg" || PUBLICO.some((p) => ruta.startsWith(p))) || ruta.includes("/cache/")) {
     res.writeHead(404).end("No encontrado");
     return;
   }
