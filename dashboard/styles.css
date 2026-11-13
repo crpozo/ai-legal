@@ -509,3 +509,11 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 
 /* Logo AI Legal: el SVG trae sus propios colores. */
 .login-arte .logo rect { fill: rgba(255, 255, 255, .18); }
+
+/* Marca AI Legal */
+.superior .marca { align-items: center; gap: 12px; }
+.superior .logo { width: 36px; height: 36px; stroke: none; }
+.marca .nombre { font-weight: 300; }
+.marca .nombre i { font-style: normal; font-weight: 600; color: var(--acento); }
+.superior .marca small { align-self: center; margin-top: 4px; }
+.login-arte .logo { width: 52px; height: 52px; }

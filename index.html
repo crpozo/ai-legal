@@ -41,7 +41,10 @@
     .barra .ancho { display: flex; align-items: center; gap: 28px; padding-top: 16px; padding-bottom: 16px; }
     .marca { display: flex; align-items: baseline; gap: 10px; text-decoration: none; margin-right: auto; }
     .marca svg { width: 26px; height: 26px; color: var(--acento); align-self: center; }
-    .marca b { font-size: 25px; font-weight: 400; letter-spacing: -.02em; }
+    .marca { align-items: center; }
+    .marca svg { width: 34px; height: 34px; }
+    .marca b { font-size: 25px; font-weight: 300; letter-spacing: -.02em; }
+    .marca b i { font-style: normal; font-weight: 600; color: var(--acento); }
     .barra nav { display: flex; gap: 24px; font-size: 15.5px; }
     .barra nav a { text-decoration: none; color: var(--tenue); }
     .barra nav a:hover { color: var(--tinta); }
@@ -158,8 +161,8 @@
   <header class="barra">
     <div class="ancho">
       <a class="marca" href="#inicio" aria-label="AI Legal, inicio">
-        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2563eb"/><path d="M9 23.5 16 8l7 15.5M12 18h8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="8" r="2.2" fill="#93c5fd"/></svg>
-        <b>AI Legal</b>
+        <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg-ail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d4ed8"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg-ail)" style="stroke:none"/><path d="M11.5 29.5 20 11l8.500 18.500M14.900 22.800h10.200" fill="none" stroke="#fff" stroke-width="3.400" stroke-linecap="round" stroke-linejoin="round"/><path d="M30.500 5.500l1.150 3.050 3.050 1.150-3.050 1.150-1.150 3.050-1.150-3.050-3.050-1.150 3.050-1.150z" fill="#fff" style="stroke:none"/></svg>
+        <b class="nombre"><i>AI</i> Legal</b>
       </a>
       <nav aria-label="Secciones">
         <a href="#funciones">Qué hace</a>
