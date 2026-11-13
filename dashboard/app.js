@@ -425,22 +425,37 @@ function vistaFiscalia(datos) {
     </nav>
 
     <div class="panel" data-panel="noticias">
-      ${orden.map((n) => { const a = analisis.get(n.numero); return `
+      ${orden.map((n) => {
+        const a = analisis.get(n.numero);
+        const [, unidadNombre, unidadResto] = /^(.*?)\s*-\s*Edi\.\s*-\s*(.*)$/.exec(n.unidad ?? "") ?? [null, n.unidad ?? "", ""];
+        const fila = (etiqueta, valor, extra = "") => (valor ? `<div><dt>${etiqueta}</dt><dd>${esc(valor)}${extra ? `<small>${esc(extra)}</small>` : ""}</dd></div>` : "");
+        const verificar = a.queVerificar.split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚ])/).filter(Boolean);
+        const rolClase = a.rolDeLaPersona === "sospechoso" ? "alta" : a.rolDeLaPersona === "no_consta" ? "media" : "baja";
+        return `
       <section class="bloque noticia">
-        <header><h3>Noticia del delito n.º ${esc(n.numero)}</h3><span class="etiqueta ${a.rolDeLaPersona === "sospechoso" ? "alta" : a.rolDeLaPersona === "no_consta" ? "media" : ""}">${n.detalleDisponible ? esc(ROLES[a.rolDeLaPersona]) : "Detalle pendiente"}</span></header>
+        <header>
+          <div>
+            <p class="sobre">NDD n.º ${esc(n.numero)}${n.fecha ? ` · ${fecha(n.fecha)}` : ""}${n.hora ? ` · ${esc(n.hora.slice(0, 5))}` : ""}</p>
+            <h3>${n.detalleDisponible ? esc(n.delito) : "Detalle pendiente de consultar"}</h3>
+          </div>
+          <span class="rol ${rolClase}"><small>${esc(f.consulta.persona?.split(" ")[0] ?? "La persona")} figura como</small>${n.detalleDisponible ? esc(ROLES[a.rolDeLaPersona]) : "No consta"}</span>
+        </header>
         ${n.detalleDisponible ? `
-        <dl class="ficha-ndd">
-          ${dato("Delito", n.delito)}${dato("Provincia y cantón", n.lugar)}${dato("Fecha", n.fecha ? fecha(n.fecha) : "")}${dato("Hora", n.hora)}
-          ${dato("Tipo de incidente", n.tipoIncidente)}${dato("Número de oficio", n.nroOficio)}${dato("Fiscalía n.º", n.numFiscalia)}${dato("Digitador", n.digitador)}
-          <div class="ancho"><dt>Unidad fiscal</dt><dd>${esc(n.unidad)}</dd></div>
-        </dl>
-        <div class="tabla"><table>
-          <thead><tr><th>Sujeto</th><th>Cédula</th><th>Calidad</th></tr></thead>
-          <tbody>${n.sujetos.map((x) => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.cedula ?? "—")}</td><td>${esc(x.estado)}</td></tr>`).join("")}</tbody>
-        </table></div>
-        ${n.vehiculos.length ? `<p class="tenue">Vehículos: ${n.vehiculos.map((v) => `${esc(v.marca)} · placa ${esc(v.placa)}`).join("; ")}</p>` : ""}` : ""}
-        <p>${esc(a.resumen)}</p>
-        <p class="implica"><b>Qué verificar.</b> ${esc(a.queVerificar)}</p>
+        <div class="noticia-cuerpo">
+          <dl class="datos">
+            ${fila("Lugar", n.lugar)}
+            ${fila("Tipo de incidente", n.tipoIncidente)}
+            ${fila("Unidad fiscal", `${unidadNombre}${n.numFiscalia ? ` · Fiscalía n.º ${n.numFiscalia}` : ""}`, unidadResto.replace(/\s*-\s*Dir\.\s*-\s*/, " · ").replace(/\s*-\s*Telef\.\s*-\s*/, " · Tel. "))}
+            ${fila("N.º de oficio", n.nroOficio === "SN" ? "Sin número" : n.nroOficio)}
+            ${fila("Digitador", n.digitador)}
+          </dl>
+          <div>
+            <h5>Sujetos involucrados</h5>
+            <ul class="sujetos">${n.sujetos.map((x) => `<li><span>${esc(x.nombre)}${x.cedula ? `<small>Cédula ${esc(x.cedula)}</small>` : ""}</span><span class="etiqueta ${/sospech/i.test(x.estado) ? "alta" : ""}">${esc(x.estado)}</span></li>`).join("")}</ul>
+            ${n.vehiculos.length ? `<h5 style="margin-top:14px">Vehículos</h5><ul class="sujetos">${n.vehiculos.map((v) => `<li><span>${esc(v.marca)}<small>Placa ${esc(v.placa)}</small></span></li>`).join("")}</ul>` : ""}
+          </div>
+        </div>` : `<p>${esc(a.resumen)}</p>`}
+        <div class="verificar"><h5>Qué verificar en la unidad fiscal</h5><ul>${verificar.map((v) => `<li>${esc(v)}</li>`).join("")}</ul></div>
       </section>`; }).join("")}
       <p class="descargo">Una noticia del delito es el registro de una denuncia: no indica el estado ni el resultado de la investigación. Quien figura como sospechoso conserva la presunción de inocencia (art. 76.2 de la Constitución).</p>
     </div>

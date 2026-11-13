@@ -371,3 +371,29 @@ table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
 th, td { text-align: left; padding: 10px 12px; border-top: 1px solid var(--linea); }
 th { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transform: uppercase; color: var(--tenue); background: var(--hundido); border-top: 0; }
 @media (max-width: 820px) { .ficha-ndd { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Tarjeta de noticia del delito */
+.noticia { gap: 18px; }
+.noticia > header { align-items: flex-start; }
+.noticia h3 { font-size: 26px; margin-top: 4px; }
+.rol { display: grid; justify-items: end; font-size: 18px; white-space: nowrap; }
+.rol small { font-size: 12px; color: var(--tenue); letter-spacing: .03em; }
+.rol.alta { color: var(--alta); } .rol.media { color: var(--media); } .rol.baja { color: var(--baja); }
+.noticia-cuerpo { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 28px 44px; padding-top: 18px; border-top: 1px solid var(--linea); }
+.datos { display: grid; gap: 0; }
+.datos > div { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 10px 0; border-top: 1px solid var(--linea); }
+.datos > div:first-child { border-top: 0; padding-top: 0; }
+.datos dt { color: var(--tenue); font-size: 14px; }
+.datos dd small { display: block; color: var(--tenue); font-size: 13px; }
+.noticia h5 { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transform: uppercase; color: var(--tenue); margin-bottom: 8px; }
+ul.sujetos { list-style: none; padding: 0; }
+.sujetos li { margin: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--linea); }
+.sujetos li:first-child { border-top: 0; padding-top: 0; }
+.sujetos small { display: block; color: var(--tenue); font-size: 13px; }
+.verificar { background: var(--hundido); padding: 16px 20px; }
+.verificar ul { padding-left: 18px; }
+@media (max-width: 820px) {
+  .noticia-cuerpo { grid-template-columns: 1fr; }
+  .datos > div { grid-template-columns: 1fr; gap: 0; }
+  .noticia > header { flex-direction: column; } .rol { justify-items: start; }
+}
