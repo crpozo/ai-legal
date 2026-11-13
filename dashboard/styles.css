@@ -504,3 +504,5 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 .bloque.categoria { gap: 0; padding-bottom: 6px; }
 .bloque.categoria > header { padding-bottom: 12px; }
 #res-q { border: 0; background: var(--hundido); border-radius: 99px; padding: 10px 18px; }
+/* Las etiquetas "Paso N" del flujograma ya no se muestran. */
+.paso-ref { display: none; }
