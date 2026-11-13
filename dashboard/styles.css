@@ -449,3 +449,18 @@ details.completar { padding: 0; }
 .correo .hoja { max-width: none; }
 .panel[data-panel="cliente"] .correo { max-width: 980px; }
 @media (max-width: 1080px) { .escrito-cuerpo { grid-template-columns: 1fr; } .escrito-cuerpo aside { position: static; order: -1; } }
+
+/* Seguimientos */
+.portada.sola { grid-template-columns: 1fr; }
+.portada.sola .portada-izq { padding-right: 0; }
+.bloque.sin-tope { padding-top: 6px; padding-bottom: 6px; gap: 0; }
+.bloque.sin-tope .seguimiento:first-child { border-top: 0; }
+.atajo { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; background: var(--panel); border: 1px solid var(--linea); padding: 16px 22px; cursor: pointer; font-size: 20px; }
+.atajo:hover { border-color: var(--acento); color: var(--acento); }
+.atajo b { display: block; font-weight: 400; font-size: 18px; }
+.atajo small { color: var(--tenue); font-size: 14px; }
+table.docs td { vertical-align: middle; }
+.acciones-fila { text-align: right; white-space: nowrap; }
+.acciones-fila button { border: 1px solid var(--linea); background: var(--panel); border-radius: 99px; padding: 5px 14px; margin-left: 6px; cursor: pointer; font-size: 13.5px; }
+.acciones-fila button:first-child { background: var(--tinta); border-color: var(--tinta); color: var(--fondo); }
+.hist { display: flex; justify-content: space-between; align-items: center; gap: 16px; }

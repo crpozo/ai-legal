@@ -137,7 +137,7 @@ function resolver(datos, consulta) {
   return null;
 }
 
-function vistaBuscar(datos) {
+function tarjetasSeguimiento(datos) {
   const filas = [];
   if (datos.causa) {
     const c = datos.causa, e = elegidaDe(c), ultima = c.actuaciones[0];
@@ -166,6 +166,11 @@ function vistaBuscar(datos) {
       <span class="seg-pie"><span>${plural(j.patrones.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")}</span></span>
     </button>`);
   }
+  return filas;
+}
+
+function vistaBuscar(datos) {
+  const filas = tarjetasSeguimiento(datos);
   return `
     <div class="inicio">
     <section class="heroe">
@@ -177,10 +182,7 @@ function vistaBuscar(datos) {
       </form>
     </section>
     <div id="progreso" aria-live="polite">
-      <section class="bloque">
-        <header><h3>En seguimiento</h3><span class="ref">${plural(filas.length, "registro", "registros")}</span></header>
-        ${filas.join("")}
-      </section>
+      <button type="button" class="atajo" data-ir="seguimientos"><span><b>Seguimientos</b><small>${plural(filas.length, "registro guardado", "registros guardados")} con sus reportes y documentos</small></span><span aria-hidden="true">→</span></button>
       ${datos.causa ? `<div class="par">
         ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Causa ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
         ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Causa ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
@@ -567,13 +569,112 @@ function vistaFiscalia(datos) {
 
 /* ───────────── Arranque ───────────── */
 
+/* ───────────── Seguimientos: todo lo consultado y sus documentos ───────────── */
+
+const textoPlano = {
+  reporteCausa: ({ causa }) => {
+    const r = causa.reporte;
+    return [`REPORTE INTEGRAL · Proceso ${causa.numero}`, "", r.resumenEjecutivo, "", `ETAPA PROCESAL\n${r.etapaProcesal}`, "", `ESTADO ACTUAL\n${r.estadoActual}`, "",
+      "ALERTAS", ...r.alertas.map((a) => `- [${a.nivel}] ${a.texto}`), "", "PLAZOS", ...r.plazos.map((p) => `- ${p.fechaLimite}: ${p.descripcion}`), "", "PRÓXIMOS PASOS", ...r.proximosPasos.map((x, i) => `${i + 1}. ${x}`)].join("\n");
+  },
+  cliente: ({ causa }) => { const c = causa.extras.cliente; return [`Asunto: ${c.asunto}`, "", ...c.parrafos.flatMap((x) => [x, ""]), "Próximos pasos", ...c.proximosPasos.map((x) => `- ${x}`), "", c.cierre].join("\n"); },
+  reporteFiscalia: ({ fiscalia }) => {
+    const r = fiscalia.reporte;
+    return [`NOTICIAS DEL DELITO · ${fiscalia.consulta.persona ?? ""} · ${fiscalia.consulta.valor}`, "", r.resumenEjecutivo, "", ...r.noticias.flatMap((n) => [`NDD ${n.numero}`, n.resumen, `Qué verificar: ${n.queVerificar}`, ""]),
+      "ALERTAS", ...r.alertas.map((a) => `- [${a.nivel}] ${a.texto}`), "", "PRÓXIMOS PASOS", ...r.proximosPasos.map((x, i) => `${i + 1}. ${x}`)].join("\n");
+  },
+};
+
+function documentosDe(datos) {
+  const docs = [];
+  if (datos.causa) {
+    const c = datos.causa, origen = `Causa ${c.numero}`, f = datos.meta.generadoEn;
+    docs.push({ nombre: "Reporte integral del caso", tipo: "Reporte", origen, fecha: f, abrir: "causa:resumen", archivo: `${c.numero}-reporte-integral.txt`, texto: () => textoPlano.reporteCausa(datos) });
+    docs.push({ nombre: `Alertas y plazos (${c.reporte.alertas.length} alertas)`, tipo: "Seguimiento", origen, fecha: f, abrir: "causa:seguimiento" });
+    docs.push({ nombre: `Expediente analizado (${c.actuaciones.length} actuaciones)`, tipo: "Expediente", origen, fecha: f, abrir: "causa:expediente" });
+    if (c.extras) {
+      docs.push({ nombre: "Reporte para el cliente", tipo: "Correo", origen, fecha: f, abrir: "causa:cliente", archivo: `${c.numero}-reporte-cliente.txt`, texto: () => textoPlano.cliente(datos) });
+      c.extras.borradores.forEach((b, i) => docs.push({ nombre: b.titulo, tipo: "Borrador de escrito", origen, fecha: f, abrir: "causa:escritos", archivo: `${c.numero}-escrito-${i + 1}.txt`, texto: () => b.texto }));
+      docs.push({ nombre: `Preguntas sobre el expediente (${c.extras.preguntas.length})`, tipo: "Consulta", origen, fecha: f, abrir: "causa:preguntas" });
+    }
+  }
+  if (datos.fiscalia) {
+    const x = datos.fiscalia;
+    docs.push({ nombre: "Reporte de noticias del delito", tipo: "Reporte", origen: `Fiscalía · ${x.consulta.persona ?? x.consulta.valor}`, fecha: x.fuente.capturadoEn, abrir: "fiscalia:noticias", archivo: `${x.consulta.valor}-fiscalia.txt`, texto: () => textoPlano.reporteFiscalia(datos) });
+  }
+  if (datos.juez) {
+    const j = datos.juez;
+    docs.push({ nombre: "Informe de criterios del juez", tipo: "Reporte", origen: `Juez ${j.juez.nombre}`, fecha: j.fuente.capturadoEn, abrir: "juez" });
+  }
+  return docs;
+}
+
+function vistaSeguimientos(datos, ctx) {
+  const filas = tarjetasSeguimiento(datos), docs = documentosDe(datos), historial = ctx.historial();
+  const cuando = (iso) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? "" : `${fecha(iso)} · ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
+  const html = `
+    <section class="portada sola">
+      <div class="portada-izq">
+        <p class="sobre">Centro de documentación</p>
+        <h1>Seguimientos</h1>
+        <p class="meta">Todo lo que consultas queda guardado aquí, con sus reportes y documentos listos para abrir o descargar.</p>
+        <div class="cifras">
+          ${cifra("Registros en seguimiento", filas.length)}
+          ${cifra("Documentos generados", docs.length)}
+          ${cifra("Búsquedas realizadas", historial.length)}
+        </div>
+      </div>
+    </section>
+
+    <nav class="subtabs" role="tablist" aria-label="Secciones de seguimientos">
+      <button role="tab" data-panel="registros" aria-selected="true">Registros <span>${filas.length}</span></button>
+      <button role="tab" data-panel="documentos">Documentos <span>${docs.length}</span></button>
+      <button role="tab" data-panel="historial">Historial de búsquedas <span>${historial.length}</span></button>
+    </nav>
+
+    <div class="panel" data-panel="registros"><section class="bloque sin-tope">${filas.join("")}</section></div>
+
+    <div class="panel" data-panel="documentos" hidden>
+      <section class="bloque"><div class="tabla"><table class="docs">
+        <thead><tr><th>Documento</th><th>Tipo</th><th>Origen</th><th>Generado</th><th></th></tr></thead>
+        <tbody>${docs.map((d, i) => `<tr><td>${esc(d.nombre)}</td><td><span class="etiqueta">${esc(d.tipo)}</span></td><td class="tenue">${esc(d.origen)}</td><td class="tenue">${fecha(d.fecha)}</td><td class="acciones-fila"><button type="button" data-abrir="${esc(d.abrir)}">Abrir</button>${d.texto ? `<button type="button" data-bajar="${i}">Descargar</button>` : ""}</td></tr>`).join("")}</tbody>
+      </table></div></section>
+    </div>
+
+    <div class="panel" data-panel="historial" hidden>
+      <section class="bloque">${historial.length ? `<ul class="filas">${historial.map((h) => `<li class="hist"><span><b>${esc(h.consulta)}</b><br><span class="tenue">${cuando(h.fecha)}</span></span>${h.flujo ? `<button type="button" class="chip" data-abrir="${esc(h.flujo)}">${esc(TITULOS[h.flujo])} →</button>` : `<span class="etiqueta media">Sin resultados</span>`}</li>`).join("")}</ul><p><button type="button" class="mas-boton" id="borrar-historial">Borrar historial</button></p>` : `<p class="tenue">Todavía no has hecho búsquedas en este navegador. Cada búsqueda queda registrada aquí.</p>`}</section>
+    </div>`;
+  const montar = () => {
+    document.querySelector(".subtabs").addEventListener("click", (ev) => {
+      const b = ev.target.closest("button");
+      if (!b) return;
+      for (const x of document.querySelectorAll(".subtabs button")) x.setAttribute("aria-selected", String(x === b));
+      for (const d of document.querySelectorAll(".panel")) d.hidden = d.dataset.panel !== b.dataset.panel;
+    });
+    $("#contenido").addEventListener("click", (ev) => {
+      const abrir = ev.target.closest("[data-abrir]"), bajar = ev.target.closest("[data-bajar]"), tarjeta = ev.target.closest(".seguimiento");
+      if (abrir) ctx.abrir(...abrir.dataset.abrir.split(":"));
+      if (tarjeta) ctx.abrir(resolver(datos, tarjeta.dataset.q));
+      if (bajar) {
+        const d = docs[Number(bajar.dataset.bajar)];
+        const url = URL.createObjectURL(new Blob([d.texto()], { type: "text/plain;charset=utf-8" }));
+        Object.assign(document.createElement("a"), { href: url, download: d.archivo }).click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+      if (ev.target.id === "borrar-historial") { ctx.borrarHistorial(); ctx.abrir("seguimientos", "historial"); }
+    });
+  };
+  return { html, montar };
+}
+
 const ICONOS = {
+  seguimientos: '<path d="M4 6.5h6l2 2h8v10H4z"/><path d="M8 13h8M8 16h5"/>',
   buscar: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
   causa: '<path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/>',
   fiscalia: '<path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/>',
   juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
 };
-const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia]];
+const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Seguimientos", vistaSeguimientos]];
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -621,11 +722,17 @@ if (!datos) {
 } else {
 
   // Causa y Juez aparecen cuando el agente ya los encontró (o si se llega por enlace directo).
-  const disponibles = TODAS.filter(([id]) => id === "buscar" || datos[id]);
+  const disponibles = TODAS.filter(([id]) => id === "buscar" || id === "seguimientos" || datos[id]);
+  // Historial de búsquedas: se guarda en este navegador.
+  const historial = {
+    leer: () => { try { return JSON.parse(localStorage.getItem("maya-historial") ?? "[]"); } catch { return []; } },
+    agregar: (consulta, flujo) => { try { localStorage.setItem("maya-historial", JSON.stringify([{ consulta, flujo, fecha: new Date().toISOString() }, ...historial.leer()].slice(0, 50))); } catch { /* sin almacenamiento */ } },
+    borrar: () => { try { localStorage.removeItem("maya-historial"); } catch { /* sin almacenamiento */ } },
+  };
   const encontrados = new Set([location.hash.slice(1)]);
   let vistas = [];
   const pintarPestanas = () => {
-    vistas = disponibles.filter(([id]) => id === "buscar" || encontrados.has(id));
+    vistas = disponibles.filter(([id]) => id === "buscar" || id === "seguimientos" || encontrados.has(id));
     $("#pestanas").innerHTML = vistas.filter(([id]) => id !== "buscar").map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
   };
   const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
@@ -634,6 +741,7 @@ if (!datos) {
   const buscar = async (consulta) => {
     const turno = ++corrida;
     const flujo = resolver(datos, consulta);
+    historial.agregar(consulta, flujo);
     const caja = $("#progreso");
     if (!flujo) {
       caja.querySelector(".sin-resultado")?.remove();
@@ -657,10 +765,20 @@ if (!datos) {
     mostrar(flujo);
   };
 
+  // Abre una vista (y, si se indica, una de sus pestañas internas) sin pasar por la búsqueda.
+  const abrir = (id, panel) => {
+    if (!id) return;
+    encontrados.add(id);
+    pintarPestanas();
+    mostrar(id);
+    if (panel) document.querySelector(`.subtabs [data-panel="${panel}"]`)?.click();
+  };
+  const ctx = { historial: historial.leer, borrarHistorial: historial.borrar, abrir };
+
   const mostrar = (pedida) => {
     const [id, , vista] = vistas.find(([v]) => v === pedida) ?? vistas[0];
     corrida++;
-    const { html, montar } = vista(datos);
+    const { html, montar } = vista(datos, ctx);
     $("#contenido").innerHTML = html;
     document.body.dataset.vista = id;
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
@@ -668,7 +786,8 @@ if (!datos) {
     montar?.();
     if (id === "buscar") {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
-      for (const b of document.querySelectorAll(".seguimiento, .novedad")) b.addEventListener("click", () => { $("#q").value = b.dataset.q; buscar(b.dataset.q); });
+      for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
+      document.querySelector(".atajo")?.addEventListener("click", () => abrir("seguimientos"));
     }
     window.scrollTo(0, 0);
   };
