@@ -1,3 +1,5 @@
+import { montarChat } from "./chat.js";
+
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const fecha = (iso) => {
@@ -137,30 +139,30 @@ function tarjetasSeguimiento(datos) {
   const filas = [];
   if (datos.causa) {
     const c = datos.causa, e = elegidaDe(c), ultima = c.actuaciones[0];
-    filas.push(`<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
+    filas.push(["Causas judiciales", `<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
       <span class="seg-cab"><b>Función Judicial · ${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</span>
       <span class="tenue">${esc(e.materia)} · ${esc(e.asunto)} · ${esc(e.dependencia)}</span>
       <span class="seg-pie"><span>Última actuación ${fecha(ultima.fecha)}</span><span>${c.actuaciones.length} actuaciones</span><span>${c.actuaciones.filter((a) => a.analisis.requiereAccion && a.fecha >= new Date(Date.parse(ultima.fecha) - 90 * 86_400_000).toISOString()).length} con acción sugerida en los últimos 90 días</span></span>
-    </button>`);
+    </button>`]);
   }
   if (datos.fiscalia) {
     const f = datos.fiscalia, delitos = [...new Set(f.noticias.map((x) => x.delito).filter(Boolean))];
-    filas.push(`<button type="button" class="seguimiento" data-q="${esc(f.consulta.valor)}">
+    filas.push(["Personas · Fiscalía", `<button type="button" class="seguimiento" data-q="${esc(f.consulta.valor)}">
       <span class="seg-cab"><b>Fiscalía · Cédula ${esc(f.consulta.valor)}</b><span class="etiqueta ${f.reporte.alertas.length ? "alta" : ""}">${plural(f.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(f.consulta.persona ?? f.consulta.valor)}</span>
       <span class="tenue">Noticias del delito · ${delitos.map(esc).join(" · ")}</span>
       <span class="seg-pie"><span>${plural(f.noticias.length, "noticia del delito", "noticias del delito")}</span><span>${f.noticias.filter((x) => !x.detalleDisponible).length} con detalle pendiente</span></span>
-    </button>`);
+    </button>`]);
   }
   if (datos.juez) {
     const j = datos.juez;
-    filas.push(`<button type="button" class="seguimiento" data-q="${esc(j.juez.nombre)}">
+    filas.push(["Jueces", `<button type="button" class="seguimiento" data-q="${esc(j.juez.nombre)}">
       <span class="seg-cab"><b>Función Judicial · Procesos resueltos por juez</b><span class="etiqueta">${plural(j.procesos.length, "resolución", "resoluciones")}</span></span>
       <span class="seg-titulo">${esc(j.juez.nombre)}</span>
       <span class="tenue">${[j.filtros.materia, j.filtros.tipoAccion].filter(Boolean).map(esc).join(" · ")}</span>
       <span class="seg-pie"><span>${plural(j.patrones.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")}</span><span>${plural(j.patrones.cambiosDeInterpretacion.length, "cambio de criterio", "cambios de criterio")}</span>${j.estadisticas.tiempos ? `<span>Mediana de ${j.estadisticas.tiempos.medianaDias} días en resolver</span>` : ""}</span>
-    </button>`);
+    </button>`]);
   }
   return filas;
 }
@@ -178,7 +180,7 @@ function vistaBuscar(datos) {
       </form>
     </section>
     <div id="progreso" aria-live="polite">
-      <button type="button" class="atajo" data-ir="seguimientos"><span><b>Seguimientos</b><small>${plural(filas.length, "registro guardado", "registros guardados")} con sus reportes y documentos</small></span><span aria-hidden="true">→</span></button>
+      <button type="button" class="atajo" data-ir="seguimientos"><span><b>Análisis de casos</b><small>${plural(filas.length, "análisis guardado", "análisis guardados")} con sus reportes y documentos</small></span><span aria-hidden="true">→</span></button>
       ${datos.causa ? `<div class="par">
         ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Causa ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
         ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Causa ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
@@ -688,23 +690,23 @@ function vistaSeguimientos(datos, ctx) {
     <section class="portada sola">
       <div class="portada-izq">
         <p class="sobre">Centro de documentación</p>
-        <h1>Seguimientos</h1>
-        <p class="meta">Todo lo que consultas queda guardado aquí, con sus reportes y documentos listos para abrir o descargar.</p>
+        <h1>Análisis de casos</h1>
+        <p class="meta">Todo lo que consultas queda guardado aquí por categoría, con sus reportes y documentos listos para abrir o descargar.</p>
         <div class="cifras">
-          ${cifra("Registros en seguimiento", filas.length)}
+          ${cifra("Análisis guardados", filas.length)}
           ${cifra("Documentos generados", docs.length)}
           ${cifra("Búsquedas realizadas", historial.length)}
         </div>
       </div>
     </section>
 
-    <nav class="subtabs" role="tablist" aria-label="Secciones de seguimientos">
-      <button role="tab" data-panel="registros" aria-selected="true">Registros <span>${filas.length}</span></button>
+    <nav class="subtabs" role="tablist" aria-label="Secciones de análisis de casos">
+      <button role="tab" data-panel="registros" aria-selected="true">Casos <span>${filas.length}</span></button>
       <button role="tab" data-panel="documentos">Documentos <span>${docs.length}</span></button>
       <button role="tab" data-panel="historial">Historial de búsquedas <span>${historial.length}</span></button>
     </nav>
 
-    <div class="panel" data-panel="registros"><section class="bloque sin-tope">${filas.join("")}</section></div>
+    <div class="panel" data-panel="registros">${["Causas judiciales", "Jueces", "Personas · Fiscalía"].filter((cat) => filas.some(([c]) => c === cat)).map((cat) => `<section class="bloque categoria"><header><h3>${cat}</h3><span class="ref">${filas.filter(([c]) => c === cat).length}</span></header>${filas.filter(([c]) => c === cat).map(([, h]) => h).join("")}</section>`).join("")}</div>
 
     <div class="panel" data-panel="documentos" hidden>
       <section class="bloque"><div class="tabla"><table class="docs">
@@ -746,7 +748,7 @@ const ICONOS = {
   fiscalia: '<path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/>',
   juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
 };
-const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Seguimientos", vistaSeguimientos]];
+const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Análisis de casos", vistaSeguimientos]];
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -805,7 +807,7 @@ if (!datos) {
   let vistas = [];
   const pintarPestanas = () => {
     vistas = disponibles.filter(([id]) => id === "buscar" || id === "seguimientos" || encontrados.has(id));
-    $("#pestanas").innerHTML = vistas.filter(([id]) => id !== "buscar").map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
+    $("#pestanas").innerHTML = vistas.filter(([id]) => id === "seguimientos").map(([id, nombre]) => `<button role="tab" data-vista="${id}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id]}</svg>${nombre}</button>`).join("");
   };
   const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
   let corrida = 0;
@@ -847,6 +849,7 @@ if (!datos) {
   };
   const ctx = { historial: historial.leer, borrarHistorial: historial.borrar, abrir };
 
+  let chat = null;
   const mostrar = (pedida) => {
     const [id, , vista] = vistas.find(([v]) => v === pedida) ?? vistas[0];
     corrida++;
@@ -856,6 +859,7 @@ if (!datos) {
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
     history.replaceState(null, "", `#${id}`);
     montar?.();
+    chat?.refrescar();
     if (id === "buscar") {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
       for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
@@ -864,6 +868,7 @@ if (!datos) {
     window.scrollTo(0, 0);
   };
 
+  chat = montarChat({ datos, abrir, vistaActual: () => document.body.dataset.vista });
   pintarPestanas();
   $("#pestanas").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) mostrar(b.dataset.vista); });
   for (const a of document.querySelectorAll(".marca")) a.addEventListener("click", (ev) => { ev.preventDefault(); mostrar("buscar"); });
