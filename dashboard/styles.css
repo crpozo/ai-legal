@@ -439,3 +439,13 @@ details.completar { padding: 0; }
 .completar[open] > summary::before { content: "–"; }
 .completar > summary .etiqueta { margin-left: auto; background: var(--panel); }
 .completar > ul { padding: 0 18px 16px 50px; }
+
+/* Escrito: documento a la izquierda, contexto y acciones a la derecha */
+.escrito-cuerpo { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr); gap: 28px; align-items: start; }
+.escrito-cuerpo .hoja { max-width: none; }
+.escrito-cuerpo aside { display: grid; gap: 18px; position: sticky; top: 64px; font-size: 14.5px; }
+.escrito-cuerpo h5 { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transform: uppercase; color: var(--tenue); margin-bottom: 6px; }
+.escrito-cuerpo .completar > ul { max-height: 46vh; overflow: auto; }
+.correo .hoja { max-width: none; }
+.panel[data-panel="cliente"] .correo { max-width: 980px; }
+@media (max-width: 1080px) { .escrito-cuerpo { grid-template-columns: 1fr; } .escrito-cuerpo aside { position: static; order: -1; } }

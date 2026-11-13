@@ -289,10 +289,14 @@ function vistaCausa(datos) {
       ${x.borradores.map((b, i) => `
       <section class="bloque escrito">
         <header><h3>${esc(b.titulo)}</h3><span class="etiqueta media">Borrador para revisión</span></header>
-        <p>${esc(b.porQueAhora)} ${ref(b.actuacionId)}</p>
-        ${b.datosPorCompletar.length ? `<details class="completar"><summary><span>Recomendación legal antes de presentar</span><span class="etiqueta media">${plural(b.datosPorCompletar.length, "punto", "puntos")}</span></summary>${lista(b.datosPorCompletar)}</details>` : ""}
-        <pre class="hoja" id="escrito-${i}">${esc(b.texto)}</pre>
-        <div class="acciones"><button type="button" data-copiar="escrito-${i}">Copiar texto</button><button type="button" data-descargar="escrito-${i}" data-nombre="${esc(causa.numero)}-escrito-${i + 1}.txt">Descargar</button></div>
+        <div class="escrito-cuerpo">
+          <pre class="hoja" id="escrito-${i}">${esc(b.texto)}</pre>
+          <aside>
+            <div class="acciones"><button type="button" data-copiar="escrito-${i}">Copiar texto</button><button type="button" data-descargar="escrito-${i}" data-nombre="${esc(causa.numero)}-escrito-${i + 1}.txt">Descargar</button></div>
+            <div><h5>Por qué presentarlo ahora</h5><p>${esc(b.porQueAhora)}</p><p>${ref(b.actuacionId)}</p></div>
+            ${b.datosPorCompletar.length ? `<details class="completar" open><summary><span>Recomendación legal antes de presentar</span><span class="etiqueta media">${plural(b.datosPorCompletar.length, "punto", "puntos")}</span></summary>${lista(b.datosPorCompletar)}</details>` : ""}
+          </aside>
+        </div>
       </section>`).join("")}
     </div>
 
