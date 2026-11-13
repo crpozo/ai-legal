@@ -77,45 +77,42 @@
     .portada .puntos li::after { border-color: #9cc4ff; }
     .portada .boton:not(.primario) { background: transparent; border-color: rgba(255, 255, 255, .45); color: #fff; }
     .portada .boton:not(.primario):hover { border-color: #fff; }
-    .portada .maqueta { color: var(--tinta); border-color: transparent; }
     .portada .maqueta .sobre { color: var(--acento); }
-    /* Tarjeta de la portada: bordes redondeados y entrada animada */
-    .maqueta { border-radius: 24px; padding: 28px; box-shadow: 0 40px 90px -30px rgba(3, 10, 30, .65); animation: maq-entra .8s cubic-bezier(.2, .8, .2, 1) both, maq-flota 7s ease-in-out 1.2s infinite; }
-    .maq-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; }
-    .maq-estado { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; padding: 5px 12px; border-radius: 99px; background: var(--acento-suave); color: var(--acento); white-space: nowrap; transition: background .4s, color .4s; }
+    @media (prefers-reduced-motion: reduce) { .portada .fondo { display: none; } .portada { background: #0a1630 url("https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280") center / cover; } }
+
+    /* Tarjeta del reporte en la portada */
+    .maqueta { background: var(--panel); color: var(--tinta); border-radius: 26px; padding: 26px; display: grid; gap: 16px; font-size: 15px; box-shadow: 0 40px 90px -30px rgba(3, 10, 30, .65); animation: maq-entra .8s cubic-bezier(.2, .8, .2, 1) both, maq-flota 7s ease-in-out 1.2s infinite; }
+    .maq-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+    .maq-cab .sobre { font-size: 12px; }
+    .maq-cab h3 { font-size: 24px; line-height: 1.2; margin-top: 4px; }
+    .maq-sub { font-size: 14px; color: var(--tenue); }
+    .maq-estado { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 400; padding: 6px 12px; border-radius: 99px; background: var(--acento-suave); color: var(--acento); white-space: nowrap; transition: background .4s, color .4s; }
     .maq-estado i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid currentColor; border-top-color: transparent; animation: maq-gira .7s linear infinite; }
     .maq-estado.listo { background: var(--baja-suave); color: var(--baja); }
     .maq-estado.listo i { animation: none; border: 0; background: currentColor; width: 8px; height: 8px; }
-    .maq-barra { height: 4px; border-radius: 99px; background: var(--hundido); overflow: hidden; }
-    .maq-barra i { display: block; height: 100%; width: 100%; border-radius: 99px; background: linear-gradient(90deg, #2563eb, #60a5fa); transform-origin: left; animation: maq-llena 2s cubic-bezier(.3, .7, .2, 1) .3s both; }
-    .maq-cifras { border: 0; gap: 10px; }
-    .maq-cifras div, .maq-cifras div + div { border: 0; padding: 14px 16px; border-radius: 16px; background: var(--hundido); }
-    .maq-cifras strong { font-variant-numeric: tabular-nums; }
-    .maq-alertas li { padding: 10px 12px; border-radius: 14px; background: var(--hundido); opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) forwards; }
+    .maq-barra { height: 3px; border-radius: 99px; background: var(--hundido); overflow: hidden; }
+    .maq-barra i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #2563eb, #60a5fa); transform-origin: left; animation: maq-llena 2s cubic-bezier(.3, .7, .2, 1) .3s both; }
+    .maq-cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .maq-cifras div { padding: 16px 18px; border-radius: 18px; background: var(--hundido); display: grid; gap: 6px; }
+    .maq-cifras div:first-child { background: var(--degradado); color: #fff; }
+    .maq-cifras strong { font-size: 40px; font-weight: 300; line-height: 1; letter-spacing: -.03em; }
+    .maq-cifras span { font-size: 13px; color: var(--tenue); line-height: 1.25; }
+    .maq-cifras div:first-child span { color: rgba(255, 255, 255, .85); }
+    .maq-alertas { list-style: none; padding: 0; display: grid; gap: 8px; }
+    .maq-alertas li { display: grid; grid-template-columns: 4px 1fr auto; gap: 12px; align-items: center; padding: 12px 14px 12px 0; border-radius: 14px; background: var(--hundido); overflow: hidden; opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) forwards; line-height: 1.4; }
+    .maq-alertas li::before { content: ""; align-self: stretch; margin: -12px 0; background: var(--alta); }
+    .maq-alertas li.media::before { background: var(--media); }
     .maq-alertas li:nth-child(1) { animation-delay: 1.5s; } .maq-alertas li:nth-child(2) { animation-delay: 1.8s; } .maq-alertas li:nth-child(3) { animation-delay: 2.1s; }
-    .maq-pie { border-radius: 14px; background: var(--acento-suave); opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) 2.5s forwards; }
-    .maq-pie .chip { background: var(--panel); }
+    .chip { display: inline-block; font-size: 11.5px; padding: 3px 10px; border-radius: 99px; white-space: nowrap; }
+    .chip.alta { background: var(--alta-suave); color: var(--alta); } .chip.media { background: var(--media-suave); color: var(--media); } .chip.azul { background: var(--acento-suave); color: var(--acento); }
+    .maq-pie { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 12px 12px 16px; border-radius: 16px; border: 1px solid var(--linea); font-size: 14px; opacity: 0; animation: maq-sube .5s cubic-bezier(.2, .8, .2, 1) 2.5s forwards; }
+    .maq-pie .chip { background: var(--tinta); color: var(--fondo); padding: 7px 14px; font-size: 12.5px; }
     @keyframes maq-entra { from { opacity: 0; transform: translateY(28px) scale(.97); } to { opacity: 1; transform: none; } }
     @keyframes maq-flota { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
     @keyframes maq-sube { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
     @keyframes maq-llena { from { transform: scaleX(0); } to { transform: scaleX(1); } }
     @keyframes maq-gira { to { transform: rotate(360deg); } }
     @media (prefers-reduced-motion: reduce) { .maqueta, .maq-barra i, .maq-alertas li, .maq-pie, .maq-estado i { animation: none; opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .portada .fondo { display: none; } .portada { background: #0a1630 url("https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280") center / cover; } }
-
-    /* Maqueta del producto */
-    .maqueta { background: var(--panel); border: 1px solid var(--linea); box-shadow: 0 40px 80px -40px rgba(13, 17, 23, .35); padding: 24px; display: grid; gap: 18px; font-size: 14.5px; }
-    .maqueta h3 { font-size: 22px; line-height: 1.2; }
-    .maq-cifras { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); }
-    .maq-cifras div { padding: 14px 14px 14px 0; }
-    .maq-cifras div + div { border-left: 1px solid var(--linea); padding-left: 14px; }
-    .maq-cifras strong { display: block; font-size: 40px; font-weight: 200; line-height: 1; letter-spacing: -.03em; }
-    .maq-cifras span { font-size: 12.5px; color: var(--tenue); }
-    .maq-alertas { list-style: none; padding: 0; display: grid; gap: 10px; }
-    .maq-alertas li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
-    .chip { display: inline-block; font-size: 11.5px; padding: 2px 10px; border-radius: 99px; white-space: nowrap; }
-    .chip.alta { background: var(--alta-suave); color: var(--alta); } .chip.media { background: var(--media-suave); color: var(--media); } .chip.azul { background: var(--acento-suave); color: var(--acento); }
-    .maq-pie { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--hundido); padding: 12px 14px; font-size: 13.5px; }
 
     /* Cifras */
     .cifras { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -230,7 +227,7 @@
       .plan { border-left: 0; } .plan + .plan { border-top: 1px solid var(--linea); }
       .conmutador button { font-size: 14px; padding: 8px 12px; } .conmutador span { display: none; }
       .portada { padding: 44px 0 56px; } .portada h1 { white-space: normal; }
-      .maq-cifras strong { font-size: 32px; }
+      .maq-cifras strong { font-size: 30px; } .maq-cifras div { padding: 14px 12px; } .maqueta { padding: 20px; border-radius: 22px; }
       .juez dl div { padding: 16px; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -280,7 +277,8 @@
           <div class="maq-cab">
             <div>
               <p class="sobre">Proceso 17230-2020-11399</p>
-              <h3>Acción colusoria · Unidad Judicial Civil de Iñaquito</h3>
+              <h3>Acción colusoria</h3>
+              <p class="maq-sub">Unidad Judicial Civil de Iñaquito, Quito</p>
             </div>
             <span class="maq-estado" id="maq-estado"><i></i><span>Leyendo expediente…</span></span>
           </div>
@@ -291,11 +289,11 @@
             <div><strong data-hasta="11" data-sufijo=" d">11 d</strong><span>mediana de despacho</span></div>
           </div>
           <ul class="maq-alertas">
-            <li><span class="chip alta">alta</span><span>La citación de dos demandados fue observada por cuarta vez: dos boletas aparecen fijadas el mismo día.</span></li>
-            <li><span class="chip alta">alta</span><span>El juez ha advertido el archivo de la causa por falta de impulso.</span></li>
-            <li><span class="chip media">media</span><span>La reconvención se atenderá cuando estén citados todos los demandados.</span></li>
+            <li class="alta"><span>La citación de dos demandados fue observada por cuarta vez.</span><span class="chip alta">alta</span></li>
+            <li class="alta"><span>El juez advirtió el archivo de la causa por falta de impulso.</span><span class="chip alta">alta</span></li>
+            <li class="media"><span>La reconvención espera a que todos estén citados.</span><span class="chip media">media</span></li>
           </ul>
-          <div class="maq-pie"><span>2 borradores de escrito listos para revisar</span><span class="chip azul">Reporte para el cliente</span></div>
+          <div class="maq-pie"><span>2 borradores de escrito y el reporte para el cliente</span><span class="chip">Listos para revisar</span></div>
         </div>
       </div>
     </div>
