@@ -117,10 +117,10 @@ export function montarChat({ datos, abrir, vistaActual }) {
   const raizEl = document.createElement("div");
   raizEl.innerHTML = `
     <button type="button" id="chat-boton" aria-expanded="false" aria-controls="chat-panel">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg><span>Pregunta a Maya</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg><span>Pregunta a AI Legal</span>
     </button>
-    <section id="chat-panel" role="dialog" aria-label="Chat con Maya" hidden>
-      <header><div><b>Maya</b><small>Responde con tus análisis de casos</small></div><button type="button" id="chat-cerrar" aria-label="Cerrar chat">✕</button></header>
+    <section id="chat-panel" role="dialog" aria-label="Chat con AI Legal" hidden>
+      <header><div><b>AI Legal</b><small>Responde con tus análisis de casos</small></div><button type="button" id="chat-cerrar" aria-label="Cerrar chat">✕</button></header>
       <div id="chat-mensajes" aria-live="polite"></div>
       <div id="chat-sugeridas"></div>
       <form id="chat-form"><input id="chat-q" type="text" autocomplete="off" placeholder="Pregunta sobre una causa, un juez o una persona…" aria-label="Tu pregunta"><button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg></button></form>
@@ -138,29 +138,29 @@ export function montarChat({ datos, abrir, vistaActual }) {
   };
   const saludar = () => {
     if (mensajes.children.length) return;
-    decir("maya", `<p>Hola. Puedo responder sobre tus análisis guardados: ${disponibles.map((a) => AMBITOS[a].nombre.toLowerCase()).join(", ")}. Cada respuesta indica de dónde sale para que la verifiques.</p>`);
+    decir("ia", `<p>Hola. Puedo responder sobre tus análisis guardados: ${disponibles.map((a) => AMBITOS[a].nombre.toLowerCase()).join(", ")}. Cada respuesta indica de dónde sale para que la verifiques.</p>`);
   };
 
   const responder = async (pregunta) => {
     decir("yo", `<p>${esc(pregunta)}</p>`);
-    const espera = decir("maya pensando", `<p><span class="marca-paso"></span>Buscando en tus análisis…</p>`);
+    const espera = decir("ia pensando", `<p><span class="marca-paso"></span>Buscando en tus análisis…</p>`);
     const hallados = recuperar(conocimiento, pregunta, vistaActual());
     if (CHAT_ENDPOINT) {
       try {
         const r = await fetch(CHAT_ENDPOINT, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ pregunta, pasajes: hallados.map(({ d }) => ({ titulo: d.titulo, origen: d.origen, texto: d.texto, ref: d.ref })) }) });
-        if (r.ok) { const { respuesta } = await r.json(); espera.remove(); decir("maya", parrafos(respuesta)); return; }
+        if (r.ok) { const { respuesta } = await r.json(); espera.remove(); decir("ia", parrafos(respuesta)); return; }
       } catch { /* sin conexión al modelo: se responde con los pasajes */ }
     }
     await new Promise((ok) => setTimeout(ok, 700));
     espera.remove();
     if (!hallados.length || hallados[0].s < 2.2) {
-      decir("maya", `<p>No encuentro eso en los análisis guardados. Prueba con el número de proceso, el nombre de una parte o un tema concreto, como una citación, un plazo o un criterio del juez.</p>`);
+      decir("ia", `<p>No encuentro eso en los análisis guardados. Prueba con el número de proceso, el nombre de una parte o un tema concreto, como una citación, un plazo o un criterio del juez.</p>`);
       return;
     }
     const [mejor, ...resto] = hallados;
     const afines = resto.filter((x) => x.s > mejor.s * 0.72 && x.d.titulo !== mejor.d.titulo).slice(0, 2);
     const fuente = (d) => `<button type="button" class="chip" data-abrir="${esc(d.abrir)}"${d.proc ? ` data-proc="${esc(d.proc)}"` : ""}${d.buscar ? ` data-buscar="${esc(d.buscar)}"` : ""}>${esc(d.origen)}${d.ref ? ` · ${esc(d.ref)}` : ""} →</button>`;
-    decir("maya", `<p class="msj-titulo">${esc(mejor.d.titulo)}</p>${parrafos(mejor.d.texto)}${afines.length ? `<p class="msj-titulo">También relacionado</p><ul>${afines.map(({ d }) => `<li><b>${esc(d.titulo)}.</b> ${esc(d.texto.length > 320 ? `${d.texto.slice(0, 320).replace(/\s+\S*$/, "")}…` : d.texto)}</li>`).join("")}</ul>` : ""}<div class="msj-fuentes">${[mejor, ...afines].map(({ d }) => fuente(d)).join("")}</div>`);
+    decir("ia", `<p class="msj-titulo">${esc(mejor.d.titulo)}</p>${parrafos(mejor.d.texto)}${afines.length ? `<p class="msj-titulo">También relacionado</p><ul>${afines.map(({ d }) => `<li><b>${esc(d.titulo)}.</b> ${esc(d.texto.length > 320 ? `${d.texto.slice(0, 320).replace(/\s+\S*$/, "")}…` : d.texto)}</li>`).join("")}</ul>` : ""}<div class="msj-fuentes">${[mejor, ...afines].map(({ d }) => fuente(d)).join("")}</div>`);
   };
 
   const alternar = (abierto) => {

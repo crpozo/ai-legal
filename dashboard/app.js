@@ -173,7 +173,7 @@ function vistaBuscar(datos) {
     <div class="inicio">
     <section class="heroe">
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
-      <p class="bajada">Maya consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
+      <p class="bajada">AI Legal consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
@@ -762,8 +762,8 @@ async function cargar() {
 
 /* Acceso simulado: no hay autenticación real; "Ingresar" abre la app con o sin credenciales. */
 const sesion = {
-  leer: () => { try { return sessionStorage.getItem("maya-sesion"); } catch { return null; } },
-  guardar: (v) => { try { v ? sessionStorage.setItem("maya-sesion", v) : sessionStorage.removeItem("maya-sesion"); } catch { /* sin almacenamiento */ } },
+  leer: () => { try { return sessionStorage.getItem("ailegal-sesion"); } catch { return null; } },
+  guardar: (v) => { try { v ? sessionStorage.setItem("ailegal-sesion", v) : sessionStorage.removeItem("ailegal-sesion"); } catch { /* sin almacenamiento */ } },
 };
 function aplicarSesion(correo) {
   $("#login").hidden = Boolean(correo);
@@ -774,7 +774,7 @@ function aplicarSesion(correo) {
 $("#form-login").addEventListener("submit", async (ev) => {
   ev.preventDefault();
   // Demo: entra sin exigir credenciales; si no se escribe un correo se usa uno genérico.
-  const correo = $("#login-correo").value.trim() || "abogado@estudiomaya.ec";
+  const correo = $("#login-correo").value.trim() || "abogado@tuestudio.ec";
   $("#login-error").textContent = "";
   const boton = ev.target.querySelector("button");
   boton.disabled = true;
@@ -799,9 +799,9 @@ if (!datos) {
   const disponibles = TODAS.filter(([id]) => id === "buscar" || id === "seguimientos" || datos[id]);
   // Historial de búsquedas: se guarda en este navegador.
   const historial = {
-    leer: () => { try { return JSON.parse(localStorage.getItem("maya-historial") ?? "[]"); } catch { return []; } },
-    agregar: (consulta, flujo) => { try { localStorage.setItem("maya-historial", JSON.stringify([{ consulta, flujo, fecha: new Date().toISOString() }, ...historial.leer()].slice(0, 50))); } catch { /* sin almacenamiento */ } },
-    borrar: () => { try { localStorage.removeItem("maya-historial"); } catch { /* sin almacenamiento */ } },
+    leer: () => { try { return JSON.parse(localStorage.getItem("ailegal-historial") ?? "[]"); } catch { return []; } },
+    agregar: (consulta, flujo) => { try { localStorage.setItem("ailegal-historial", JSON.stringify([{ consulta, flujo, fecha: new Date().toISOString() }, ...historial.leer()].slice(0, 50))); } catch { /* sin almacenamiento */ } },
+    borrar: () => { try { localStorage.removeItem("ailegal-historial"); } catch { /* sin almacenamiento */ } },
   };
   const encontrados = new Set([location.hash.slice(1)]);
   let vistas = [];
