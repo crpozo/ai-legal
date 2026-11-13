@@ -125,6 +125,37 @@
     .plan li::before { content: ""; position: absolute; left: 4px; top: 9px; width: 10px; height: 6px; border-left: 1.5px solid var(--acento); border-bottom: 1.5px solid var(--acento); transform: rotate(-45deg); }
     .plan .boton { justify-content: center; margin-top: 8px; }
     .extras { margin-top: 28px; font-size: 15.5px; color: var(--tenue); }
+    .planes { grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--linea); }
+    .plan { border: 0; border-left: 1px solid var(--linea); padding: 30px 24px; position: relative; }
+    .plan:first-child { border-left: 0; }
+    .plan.destacado { box-shadow: none; outline: 2px solid var(--acento); outline-offset: -1px; background: var(--acento-suave); }
+    .plan h3 { font-size: 26px; }
+    .plan > .tenue { font-size: 15.5px; min-height: 3.2em; }
+    .precio { font-size: 58px; }
+    .precio b { font-weight: 200; }
+    .detalle-precio { font-size: 14.5px; color: var(--tenue); min-height: 3em; margin-top: -8px; }
+    .creditos { font-size: 16px; padding: 10px 14px; background: var(--hundido); }
+    .plan.destacado .creditos { background: var(--panel); }
+    .creditos b { font-size: 20px; }
+    .popular { justify-self: start; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; background: var(--acento); color: #fff; padding: 3px 12px; border-radius: 99px; }
+    .controles { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .conmutador { display: inline-flex; border: 1px solid var(--linea); border-radius: 99px; padding: 4px; background: var(--panel); }
+    .conmutador button { border: 0; background: none; color: var(--tenue); font: inherit; font-size: 15.5px; padding: 9px 18px; border-radius: 99px; cursor: pointer; }
+    .conmutador button[aria-pressed="true"] { background: var(--tinta); color: var(--fondo); }
+    .conmutador button { white-space: nowrap; }
+    .conmutador span { font-size: 12.5px; margin-left: 6px; padding: 2px 8px; border-radius: 99px; background: var(--acento); color: #fff; }
+    .puestos { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; }
+    .puestos button { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--linea); background: var(--panel); color: inherit; font: inherit; font-size: 20px; cursor: pointer; }
+    .puestos button:hover { border-color: var(--acento); color: var(--acento); }
+    .puestos output { min-width: 2ch; text-align: center; font-size: 22px; font-variant-numeric: tabular-nums; }
+    .resumen-plan { margin-top: 18px; font-size: 16.5px; }
+    .tabla-creditos { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 40px; align-items: start; }
+    .tabla-creditos h3 { font-size: 28px; margin-bottom: 8px; }
+    .tabla-creditos dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--linea); }
+    .tabla-creditos dl div:last-child { border-bottom: 1px solid var(--linea); }
+    .tabla-creditos dt small { color: var(--tenue); font-size: 14px; margin-left: 6px; }
+    .tabla-creditos dd { font-size: 24px; font-variant-numeric: tabular-nums; }
+    .tabla-creditos dd::after { content: " créditos"; font-size: 14px; color: var(--tenue); }
 
     /* Preguntas */
     .faq { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 56px; }
@@ -145,6 +176,8 @@
       section { padding: 64px 0; }
       .portada .ancho, .juez .ancho, .faq { grid-template-columns: 1fr; gap: 36px; }
       .rejilla, .planes, .pasos { grid-template-columns: 1fr 1fr; }
+      .plan:nth-child(3) { border-left: 0; } .plan:nth-child(n+3) { border-top: 1px solid var(--linea); }
+      .tabla-creditos { grid-template-columns: 1fr; gap: 20px; }
       .cifras { grid-template-columns: 1fr 1fr; gap: 28px 0; } .cifras div:nth-child(3) { border-left: 0; padding-left: 0; }
       .barra nav { display: none; }
     }
@@ -152,6 +185,8 @@
       body { font-size: 16px; }
       .ancho { padding: 0 20px; }
       .rejilla, .planes, .pasos { grid-template-columns: 1fr; }
+      .plan { border-left: 0; } .plan + .plan { border-top: 1px solid var(--linea); }
+      .conmutador button { font-size: 14px; padding: 8px 12px; } .conmutador span { display: none; }
       .portada { padding: 44px 0 56px; }
       .maq-cifras strong { font-size: 32px; }
       .juez dl div { padding: 16px; }
@@ -314,33 +349,80 @@
       <div class="ancho">
         <div class="titulo">
           <p class="sobre">Planes</p>
-          <h2>Un precio por mes, según cuántas causas vigilas.</h2>
-          <p>Sin contratos largos. Si necesitas más, agregas causas o informes sueltos.</p>
+          <h2>Pagas por puesto y usas créditos en lo que necesites.</h2>
+          <p>Cada plan trae créditos mensuales por abogado. Los gastas en cargar causas, vigilarlas, pedir informes de jueces o generar escritos.</p>
         </div>
+
+        <div class="controles">
+          <div class="conmutador" role="group" aria-label="Forma de pago">
+            <button type="button" data-ciclo="anual" aria-pressed="true">Pago anual <span>Ahorra 20%</span></button>
+            <button type="button" data-ciclo="mensual" aria-pressed="false">Pago mensual</button>
+          </div>
+          <div class="puestos">
+            <span>Abogados</span>
+            <button type="button" data-paso="-1" aria-label="Quitar un abogado">–</button>
+            <output id="n-puestos" aria-live="polite">1</output>
+            <button type="button" data-paso="1" aria-label="Agregar un abogado">+</button>
+          </div>
+        </div>
+
         <div class="planes">
-          <article class="plan">
-            <h3>Independiente</h3>
-            <p class="precio">$39 <small>al mes</small></p>
-            <p class="tenue">Para el abogado que lleva su propia cartera.</p>
-            <ul><li>20 causas en seguimiento</li><li>2 informes de juez al mes</li><li>10 consultas de Fiscalía</li><li>Borradores y reportes para clientes</li></ul>
+          <article class="plan" data-anual="0" data-mensual="0" data-creditos="30">
+            <h3>Gratis</h3>
+            <p class="tenue">Para conocer la herramienta con tus propias causas.</p>
+            <p class="precio">$<b class="monto">0</b></p>
+            <p class="detalle-precio">Sin tarjeta</p>
+            <p class="creditos"><b>30</b> créditos al mes</p>
+            <ul><li>Reporte integral de la causa</li><li>Alertas y plazos</li><li>Consulta de Fiscalía</li></ul>
             <a class="boton" href="dashboard/">Probar la demo</a>
           </article>
-          <article class="plan destacado">
-            <h3>Estudio</h3>
-            <p class="precio">$149 <small>al mes</small></p>
-            <p class="tenue">Para un equipo que comparte causas.</p>
-            <ul><li>100 causas en seguimiento</li><li>10 informes de juez al mes</li><li>50 consultas de Fiscalía</li><li>Centro de documentación compartido</li></ul>
+          <article class="plan" data-anual="29" data-mensual="36" data-creditos="250">
+            <h3>Básico</h3>
+            <p class="tenue">Para el abogado que lleva su propia cartera.</p>
+            <p class="precio">$<b class="monto">29</b></p>
+            <p class="detalle-precio">por abogado al mes, <span class="ciclo">facturado anualmente</span></p>
+            <p class="creditos"><b>250</b> créditos al mes</p>
+            <ul><li>Todo lo del plan Gratis</li><li>Vigilancia de causas</li><li>Borradores de escritos</li><li>Reporte para el cliente</li></ul>
+            <a class="boton" href="dashboard/">Probar la demo</a>
+          </article>
+          <article class="plan destacado" data-anual="59" data-mensual="74" data-creditos="700">
+            <span class="popular">Más elegido</span>
+            <h3>Profesional</h3>
+            <p class="tenue">Para quien litiga a diario y quiere conocer a sus jueces.</p>
+            <p class="precio">$<b class="monto">59</b></p>
+            <p class="detalle-precio">por abogado al mes, <span class="ciclo">facturado anualmente</span></p>
+            <p class="creditos"><b>700</b> créditos al mes</p>
+            <ul><li>Todo lo del plan Básico</li><li>Informes de jueces</li><li>Preguntas sobre el expediente</li><li>Centro de documentación</li></ul>
             <a class="boton primario" href="dashboard/">Probar la demo</a>
           </article>
-          <article class="plan">
-            <h3>Firma</h3>
-            <p class="precio">$449 <small>al mes</small></p>
-            <p class="tenue">Para carteras grandes y varias áreas.</p>
-            <ul><li>400 causas en seguimiento</li><li>30 informes de juez al mes</li><li>Fiscalía sin tope razonable</li><li>Acompañamiento en la puesta en marcha</li></ul>
+          <article class="plan" data-anual="99" data-mensual="124" data-creditos="1500" data-minimo="3">
+            <h3>Estudio</h3>
+            <p class="tenue">Para equipos que comparten causas y créditos.</p>
+            <p class="precio">$<b class="monto">99</b></p>
+            <p class="detalle-precio">por abogado al mes (mínimo 3), <span class="ciclo">facturado anualmente</span></p>
+            <p class="creditos"><b>1.500</b> créditos al mes por abogado</p>
+            <ul><li>Todo lo del plan Profesional</li><li>Créditos compartidos en el equipo</li><li>Documentación compartida</li><li>Acompañamiento en la puesta en marcha</li></ul>
             <a class="boton" href="dashboard/">Probar la demo</a>
           </article>
         </div>
-        <p class="extras">Adicionales: causa extra $2 al mes · informe de juez $15 · borrador o reporte fuera del plan $1. Precios en dólares, referenciales.</p>
+        <p class="resumen-plan" id="resumen-plan" aria-live="polite"></p>
+
+        <div class="tabla-creditos">
+          <div>
+            <h3>En qué se gastan los créditos</h3>
+            <p class="tenue">Un crédito adicional cuesta $0.10. Paquete de 500 créditos: $50.</p>
+          </div>
+          <dl>
+            <div><dt>Cargar una causa <small>hasta 100 actuaciones</small></dt><dd>10</dd></div>
+            <div><dt>Cada 100 actuaciones adicionales</dt><dd>5</dd></div>
+            <div><dt>Vigilar una causa durante un mes</dt><dd>10</dd></div>
+            <div><dt>Informe de un juez</dt><dd>100</dd></div>
+            <div><dt>Consulta de Fiscalía</dt><dd>2</dd></div>
+            <div><dt>Borrador de escrito</dt><dd>5</dd></div>
+            <div><dt>Reporte para el cliente</dt><dd>3</dd></div>
+          </dl>
+        </div>
+        <p class="extras">Precios en dólares, referenciales.</p>
       </div>
     </section>
 
@@ -352,7 +434,6 @@
         </div>
         <div>
           <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. AI Legal lee lo mismo que verías tú en el portal y guarda de dónde tomó cada dato.</p></details>
-          <details><summary>¿AI Legal resuelve el CAPTCHA?</summary><p>No. El portal lo pide para comprobar que hay una persona, y lo marcas tú una vez por sesión. A partir de ahí el agente recorre el expediente completo.</p></details>
           <details><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
           <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: AI Legal lo señala para que lo solicites a la dependencia.</p></details>
           <details><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
@@ -374,5 +455,28 @@
       <p>La disponibilidad de la información depende de los portales de la Función Judicial y de la Fiscalía General del Estado.</p>
     </div>
   </footer>
+  <script>
+    // Planes: forma de pago y número de abogados.
+    (() => {
+      const estado = { ciclo: "anual", puestos: 1 };
+      const planes = [...document.querySelectorAll(".plan")];
+      const miles = (n) => n.toLocaleString("es-EC");
+      const pintar = () => {
+        for (const b of document.querySelectorAll(".conmutador button")) b.setAttribute("aria-pressed", String(b.dataset.ciclo === estado.ciclo));
+        document.getElementById("n-puestos").textContent = estado.puestos;
+        for (const p of planes) {
+          p.querySelector(".monto").textContent = p.dataset[estado.ciclo];
+          const c = p.querySelector(".ciclo");
+          if (c) c.textContent = estado.ciclo === "anual" ? "facturado anualmente" : "facturado cada mes";
+        }
+        const pro = planes.find((p) => p.classList.contains("destacado"));
+        const precio = Number(pro.dataset[estado.ciclo]), total = precio * estado.puestos;
+        document.getElementById("resumen-plan").textContent = `Plan Profesional para ${estado.puestos} ${estado.puestos === 1 ? "abogado" : "abogados"}: $${miles(total)} al mes${estado.ciclo === "anual" ? ` ($${miles(total * 12)} al año)` : ""}, con ${miles(Number(pro.dataset.creditos) * estado.puestos)} créditos mensuales.`;
+      };
+      document.querySelector(".conmutador").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { estado.ciclo = b.dataset.ciclo; pintar(); } });
+      document.querySelector(".puestos").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { estado.puestos = Math.min(50, Math.max(1, estado.puestos + Number(b.dataset.paso))); pintar(); } });
+      pintar();
+    })();
+  </script>
 </body>
 </html>
