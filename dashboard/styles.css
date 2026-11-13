@@ -514,6 +514,9 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 .superior .marca { align-items: center; gap: 12px; }
 .superior .logo { width: 36px; height: 36px; stroke: none; }
 .marca .nombre { font-weight: 300; }
-.marca .nombre i { font-style: normal; font-weight: 600; color: var(--acento); }
+.marca .nombre span { font-weight: 600; color: var(--acento); }
 .superior .marca small { align-self: center; margin-top: 4px; }
 .login-arte .logo { width: 52px; height: 52px; }
+
+.login-arte::before { content: "AI Legal"; font-size: 24px; font-weight: 400; letter-spacing: -.01em; }
+.login-arte > small { display: none; }
