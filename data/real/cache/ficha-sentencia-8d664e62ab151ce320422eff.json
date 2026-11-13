@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26466,
+    "tokensSalida": 3235
+  },
+  "salida": {
+    "numero": "17230202433352",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "66.4",
+          "82",
+          "86.3",
+          "86.5",
+          "88",
+          "228",
+          "229",
+          "326.4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "25",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3 y 4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional 2006-18-EP/24 (13 de marzo de 2024), parágrafos 38 a 44",
+      "Corte Constitucional 1178-19-JP/21",
+      "Corte Constitucional 1452-17-EP/24",
+      "Corte Constitucional 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional 102-13-SEP-CC (caso 0380-10-EP)",
+      "Corte Constitucional 11-18-CN/19 y 18-21-CN/21 (parámetros de discriminación, citados en la sentencia de primera instancia)",
+      "Corte Constitucional 258-15-SEP-CC, 344-16-SEP-CC, 122-16-SEP-CC, 002-14-SIN-CC, 131-15-SEP-CC, 103-18-SEP-CC, 214-14-SEP-CC (citadas en la sentencia de primera instancia)"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la sentencia de primera instancia que negó la acción de protección. Parte de que, conforme a la jurisprudencia de la Corte Constitucional (2006-18-EP/24), el juez no está obligado a analizar el fondo cuando la pretensión es una homologación salarial de servidores de empresa pública, materia que corresponde a la justicia ordinaria, salvo casos de evidente discriminación o urgencia, que el tribunal estima no configurados. Además, considera que los accionantes no demostraron comparabilidad, porque los cargos eran distintos, y que la prueba sobre el alegado principio de progresividad (acuerdos MDT-2016-0152 y MDT-2016-0156) no fue adjuntada ni practicada. Concluye que la acción es manifiestamente improcedente por los numerales 1, 3 y 4 del artículo 42 de la LOGJCC.",
+    "pruebas": [
+      "Tabla salarial de EP Petroecuador aprobada por el directorio, invocada por la empresa accionada",
+      "Documento de Administración del Talento Humano No. 17072 (caso del trabajador Mendoza Guzmán), referido como comparación por la parte accionante",
+      "Información sobre el cargo de la trabajadora Del Castillo Montenegro, referida como comparación por la parte accionante",
+      "Acuerdos Ministeriales MDT-2016-0152 y MDT-2016-0156, mencionados pero no adjuntados ni practicados",
+      "Expediente de primera instancia y demanda constitucional"
+    ],
+    "motivacion": "La motivación se basa en la regla de la Corte Constitucional según la cual la acción de protección no sustituye a la justicia ordinaria en conflictos laborales de servidores públicos, y en la falta de comparabilidad probada entre los cargos. El tribunal no analiza el fondo de las vulneraciones alegadas, sino que declara la improcedencia por la vía elegida.",
+    "criterioResolucion": "En conflictos sobre homologación salarial de servidores de empresa pública, la acción de protección es improcedente salvo que comprometa notoria o gravemente la dignidad o autonomía del servidor, como en casos de evidente discriminación, o requiera respuesta urgente; en esos casos corresponde a la justicia ordinaria.",
+    "citaTextual": "Como se puede constatar de la demanda la pretensión de los legitimados activos es que se aplique una homologación salarial, lo cual corresponde su conocimiento y análisis a la justicia ordinaria conforme textualmente lo ordena la Corte Constitucional en los fallos citados ut supra.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la igualdad formal, igualdad material y no discriminación",
+      "Derecho al trabajo y principio de igual remuneración por trabajo de igual valor",
+      "Derecho a la seguridad jurídica",
+      "Principio de progresividad de los derechos"
+    ],
+    "fundamentosDeHecho": "Los accionantes, ex servidores de EP Petroecuador, alegan que recibieron una remuneración inferior a la de otros trabajadores y que fueron discriminados por su condición socioeconómica y de mujer. El tribunal no da por probada la comparabilidad: afirma que los cargos eran distintos. No consta que se hayan practicado los acuerdos ministeriales invocados. La parte demandada sostiene que las remuneraciones se fijan según tabla salarial y cargo, y que se pagaron las indemnizaciones correspondientes. El tribunal aclara que los accionantes fueron separados de la entidad (la sentencia de primera instancia menciona renuncia y jubilación).",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

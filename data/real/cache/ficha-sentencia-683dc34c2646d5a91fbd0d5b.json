@@ -1,0 +1,60 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 34154,
+    "tokensSalida": 3676
+  },
+  "salida": {
+    "numero": "17233202408269",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "33",
+          "66 numeral 4",
+          "82",
+          "88",
+          "326 numerales 2, 3 y 4",
+          "429"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "42 numerales 1, 3 y 4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 54-17-IN/22",
+      "Corte Constitucional, sentencia 75-15-IN/21 y acumulado",
+      "Corte Constitucional, sentencia 26-18-IN/20",
+      "Corte Constitucional, sentencia 1797-18-EP/20",
+      "Corte Constitucional, sentencia vinculante 2006-18-EP",
+      "Corte Constitucional, sentencia vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal afirma que el asunto no es materia de acción de protección, pero examina igualmente cada derecho alegado. Sobre igualdad, concluye que no hay comparabilidad ni prueba de que a otros servidores en las mismas condiciones se les haya dado un trato distinto. Sobre trabajo, señala que la separación fue por causa legal (eliminación del comisariato), que los accionantes recibieron a conformidad sus liquidaciones e indemnizaciones, y que los conflictos de esa naturaleza corresponden a la justicia ordinaria. Sobre seguridad jurídica, sostiene que los actos se respaldaron en normas previas, claras y públicas vigentes entre 2001 y 2009. Finalmente aplica la excepción de la sentencia 2006-18-EP y declara la improcedencia por los numerales 1, 3 y 4 del artículo 42 LOGJCC.",
+    "pruebas": [
+      "Liquidaciones de haberes e indemnizaciones de cada accionante, recibidas a conformidad",
+      "Documentación del expediente constitucional sobre la desvinculación",
+      "Oficios aportados por la parte accionada sobre la naturaleza del empleador"
+    ],
+    "motivacion": "No se verifica tratamiento discriminatorio ni vulneración del derecho al trabajo ni de la seguridad jurídica. Los reclamos sobre reliquidación de niveles y categorías y sobre liquidación laboral son asuntos de legalidad que deben tramitarse en la justicia ordinaria o contencioso administrativa, no en la acción de protección.",
+    "criterioResolucion": "En conflictos laborales entre el Estado y sus servidores sobre actos administrativos (como homologación salarial o liquidación), el conocimiento corresponde por regla general a la jurisdicción contencioso administrativa; si además no se verifica comparabilidad ni vulneración de derechos constitucionales, la acción de protección es improcedente conforme al artículo 42 numerales 1, 3 y 4 LOGJCC.",
+    "citaTextual": "42. Con este antecedente, esta Corte identifica una nueva excepción a partir del presente caso: cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad formal, igualdad material y no discriminación (art. 11.2 y 66.4 CRE)",
+      "Derecho al trabajo: irrenunciabilidad, favorabilidad e igual remuneración por trabajo de igual valor (art. 33 y 326 CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "Los accionantes fueron trabajadores del Servicio Social de la Fuerza Terrestre (comisariato del ejército). Alegan que no se les reconoció la diferencia de niveles y categorías del período 2001 a 2009 que sí se reconoció a otros servidores civiles según la Orden General 075. El comisariato fue eliminado en 2009, se liquidaron haberes y se pagaron indemnizaciones en 2010, y los accionantes recibieron esas liquidaciones a conformidad. El tribunal no encuentra prueba de comparabilidad ni de un trato diferenciado.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

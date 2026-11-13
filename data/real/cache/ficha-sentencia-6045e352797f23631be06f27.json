@@ -1,0 +1,98 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26775,
+    "tokensSalida": 1821
+  },
+  "salida": {
+    "numero": "17240202600021",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "82",
+          "11 numeral 2",
+          "66 numeral 4",
+          "76 numeral 7 literal l",
+          "226",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40",
+          "7"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "30"
+        ]
+      },
+      {
+        "norma": "Resolución de Directorio No. 001-D-SPPAT-2025",
+        "articulos": [
+          "9",
+          "21",
+          "61",
+          "67"
+        ]
+      },
+      {
+        "norma": "Resolución de Directorio No. 002-D-SPPAT-2016",
+        "articulos": [
+          "11"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "140"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "24"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia 214-14-SEP-CC (caso 1049-10-EP)",
+      "Sentencia No. 119-15-SEP-CC (caso 0537-11-EP)",
+      "Sentencia No. 027-12-SIN-CC",
+      "Opinión Consultiva No. 18 de la Corte Interamericana de Derechos Humanos",
+      "Sentencia C-250-12 de la Corte Constitucional de Colombia"
+    ],
+    "argumentacion": "El tribunal advierte inicialmente que la acción podría ser improcedente por tratarse de un asunto de legalidad, pero analiza igualmente los derechos invocados. Seguridad jurídica: el SPPAT aplicó la norma reglamentaria, pidió subsanación y los accionantes no la cumplieron. Igualdad: la comparación con otro caso (Tibanlombo) es insuficiente porque no consta que hubiera un vehículo en fuga ni que las situaciones fueran idénticas. Motivación: el oficio contiene base legal, competencia y razones suficientes. Nadie está obligado a lo imposible e informalidad: los requisitos son presupuestos legales, no formalismos excesivos ni imposibles; lo que existe es falta de medios de prueba. Concluye que no hay vulneración de derechos constitucionales y que el asunto es de legalidad, con vías ordinarias expeditas.",
+    "pruebas": [
+      "Oficio SPPAT-DAP-2025-7257-O de 6 de octubre de 2025",
+      "Oficio SPPAT-DAP-2025-8784-O de 20 de noviembre de 2025",
+      "Certificado de defunción de Alexi Leonardo Valencia Leones",
+      "Informe pericial PN-Z9-DMQ-JMLEG-TANAF-2024-1902-INF",
+      "Denuncia presentada por los accionantes",
+      "Informe técnico pericial de reconocimiento del lugar de los hechos PNZ9-DMQ-JAVIAL-IT-2025-0799 (dinámica, causas y contravenciones no determinadas)"
+    ],
+    "motivacion": "Aplica la regla de la sentencia 001-16-PJO-CC sobre análisis de la real existencia de vulneración antes de declarar la vía ordinaria idónea, y el criterio de la sentencia 1158-17-EP/21 sobre motivación. Concluye que no hay vulneración de derechos y que el asunto debe discutirse ante la autoridad administrativa competente, confirmando la sentencia de primera instancia.",
+    "criterioResolucion": "Si no se acredita el hecho generador (accidente de tránsito con participación de vehículo automotor) según los requisitos legales, la negativa de la prestación no vulnera derechos constitucionales; los requisitos legales no son imposibles y la controversia sobre su cumplimiento es de legalidad, debiendo ventilarse en la vía administrativa u ordinaria.",
+    "citaTextual": "Las juezas o jueces constitucionales únicamente, cuando no encuentren vulneración de derechos constitucionales y lo señalen motivadamente en su sentencia, sobre la base de los parámetros de razonabilidad, lógica y comprensibilidad, podrán determinar que la justicia ordinaria es la vía idónea y eficaz para resolver el asunto controvertido.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Igualdad y no discriminación",
+      "Debido proceso en la garantía de motivación",
+      "Derecho a la defensa",
+      "Principio ad impossibilia nemo tenetur",
+      "Principio de informalidad y justicia material"
+    ],
+    "fundamentosDeHecho": "Fallecimiento de Alexi Leonardo Valencia Leones el 27 de diciembre de 2024 por suceso de tránsito con fuga del vehículo, según protocolo de autopsia. El SPPAT solicitó subsanación con copia certificada del expediente fiscal y, tras la respuesta, declaró improcedente el reclamo porque no se determinaron las circunstancias del suceso ni la participación de un vehículo automotor. El informe pericial de reconocimiento del lugar no determinó la dinámica ni las causas del accidente.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20575,
+    "tokensSalida": 3095
+  },
+  "salida": {
+    "numero": "17204202403547",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "44",
+          "66 numeral 4",
+          "82",
+          "88",
+          "169",
+          "341"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "21 inciso tercero",
+          "24",
+          "28",
+          "40 numeral 1",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público (LOSEP)",
+        "articulos": [
+          "23 literal g",
+          "33 inciso quinto"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Discapacidades",
+        "articulos": [
+          "48",
+          "52"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1214-18-EP/22 (Corte Constitucional)",
+      "Sentencia 001-16-PJO-CC, caso 0530-10-JP (Corte Constitucional)",
+      "Sentencia 1101-20-EP/22, caso 1101-20-EP (Corte Constitucional)",
+      "Sentencia 54-17-IN/22 (Corte Constitucional)",
+      "Sentencia 2691-18-EP/21 (Corte Constitucional)"
+    ],
+    "argumentacion": "El tribunal de alzada confirma que la acción de protección es procedente y que la accionante es sustituta directa de su hijo con discapacidad severa. Constata que la Universidad de las Fuerzas Armadas no concedió el permiso de dos horas diarias desde el informe técnico UTHM-2023-511 (15 de septiembre de 2023) hasta que se autorizó tras la notificación de la demanda (29 de octubre de 2024), lo que aplica como demora de más de once meses. Analiza la igualdad y no discriminación según los tres elementos de la sentencia 54-17-IN/22 y concluye que hubo trato discriminatorio negativo sin cumplir la LOSEP. Añade la vulneración del interés superior del niño y de la atención prioritaria. Rechaza el recurso del rector y confirma la sentencia de primera instancia, incluidas las medidas de reparación. El texto no registra en el resumen de la sentencia de primera instancia el alcance preciso de las reparaciones en dinero más allá de lo transcrito.",
+    "pruebas": [
+      "Memorando ESPE-USUN-2022-1381-M de 3 de octubre de 2022",
+      "Informe técnico UTHM-2023-511 de 15 de septiembre de 2023",
+      "Certificado de sustituto directo MDT-SUS-2022-10-403666 de 19 de octubre de 2023",
+      "Informe de evaluación psicopedagógica CZ2-17D11-DB-2024-074 de 26 de julio de 2024",
+      "Factura de medicamentos por 199 dólares",
+      "Acta de audiencia pública y certificado notarial de documentos"
+    ],
+    "motivacion": "Confirma la vulneración por la demora y la falta de concesión del permiso previsto en la LOSEP y en la Ley Orgánica de Discapacidades, a la luz de los artículos 11.2, 66.4 y 341 de la Constitución. Remite a los estándares de la Corte Constitucional sobre la naturaleza tutelar de la acción de protección y sobre el interés superior del niño.",
+    "criterioResolucion": "La falta de concesión, sin justificación, del permiso de dos horas diarias para el cuidado de un familiar con discapacidad a un servidor sustituto directo, que se prolonga durante meses, constituye trato discriminatorio negativo y vulnera la igualdad material, lo que justifica acoger la acción de protección y confirmar la reparación.",
+    "citaTextual": "por lo tanto, en el presente caso se puede advertir, que el Rector de la Universidad de las Fuerzas Armadas ESPE, al no conceder las dos horas de permiso para el cuidado del hijo con discapacidad de la legitimada activa, actuó de manera discriminatoria (de forma negativa), sin dar cumplimiento a lo dispuesto en la Ley Orgánica de Servicio Público que dispone:",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad formal y no discriminación (art. 11.2 y 66.4 CRE)",
+      "Buen vivir (art. 340 y siguientes CRE, según la demanda)",
+      "No ser discriminado y trato de igualdad (demanda)",
+      "Tutela efectiva y justicia expedita (según la demanda)"
+    ],
+    "fundamentosDeHecho": "La accionante es madre de un menor de 12 años con discapacidad psicosocial del 56 % y tiene certificado de sustituto directo. Solicitó el 3 de octubre de 2022 el permiso de dos horas diarias para su cuidado. El informe técnico UTHM-2023-511 recomendó autorizarlo, pero el rector no lo aprobó hasta después de notificada la demanda; la autorización se concedió el 29 de octubre de 2024. La jueza de primera instancia reconoció la vulneración y ordenó pago de las horas no concedidas, disculpas públicas y seguimiento por la Defensoría del Pueblo.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

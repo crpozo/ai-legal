@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23212,
+    "tokensSalida": 1120
+  },
+  "salida": {
+    "numero": "17204202600349",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "91",
+          "169",
+          "82",
+          "66 numeral 19"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "47",
+          "4.8",
+          "24",
+          "10"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Transparencia y Acceso a la Información Pública",
+        "articulos": [
+          "1",
+          "15 numeral 6",
+          "19"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de la Contraloría General del Estado",
+        "articulos": [
+          "26",
+          "53",
+          "56"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1214-18-EP/22",
+      "Corte Constitucional, sentencia 839-14-EP/21",
+      "Corte Constitucional, sentencia 29-21-JI y acumulados/21",
+      "Corte Constitucional, sentencia 2064-14-EP/21"
+    ],
+    "argumentacion": "El tribunal de apelación verifica la validez del proceso y el marco de la acción de acceso a la información. Constata que la CGE entregó parte de la información solicitada, que la información negada corresponde a respuestas y descargos de otros sujetos de control, y que ésta contiene datos personales de terceros cuya entrega requiere autorización del titular. Concluye que la CGE no vulneró el derecho de acceso y confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Oficio 1442-SGEN-AGDyAI-2025 de 12 de diciembre de 2025 de la CGE",
+      "Solicitud de acceso con trámite CV 145361 de 19 de noviembre de 2025",
+      "Oficio de subsanación de 20 de noviembre de 2025",
+      "Reglamento de Información y/o Documentación de Carácter Confidencial (Acuerdo 029-CG-2023)"
+    ],
+    "motivacion": "Se considera que la información no entregada es de terceros con datos personales protegidos, que la CGE sí entregó la información no sujeta a restricción y que no hay vulneración del derecho de acceso a la información pública.",
+    "criterioResolucion": "No hay vulneración del derecho de acceso a la información cuando la entidad entregó la información no restringida y niega la de terceros que contiene datos personales, cuya entrega requiere autorización del titular.",
+    "citaTextual": "La negativa de entrega de ciertos documentos se fundamentó en que contenían información personal que identifica o hace identificable a personas naturales, lo cual es de uso exclusivo de terceros; se clasificaron como confidenciales los \"papeles de trabajo\" de la auditoría",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Acceso a la información pública (artículo 91 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "El 19 de noviembre de 2025 las empresas accionantes solicitaron copias del expediente administrativo de las Resoluciones 25947, 25954 y 26027 de la CGE. La CGE entregó parte de la información el 12 de diciembre de 2025 y negó otra parte por contener datos personales de terceros y papeles de trabajo confidenciales. La primera instancia negó la acción por improcedente y el tribunal confirma.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

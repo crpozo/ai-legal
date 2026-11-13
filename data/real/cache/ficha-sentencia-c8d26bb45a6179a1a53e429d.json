@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31723,
+    "tokensSalida": 1536
+  },
+  "salida": {
+    "numero": "17U06202400460",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76",
+          "82",
+          "88",
+          "159",
+          "160",
+          "169",
+          "173",
+          "188",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42.1",
+          "42.3",
+          "42.4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público (COESCOP)",
+        "articulos": [
+          "48",
+          "121"
+        ]
+      },
+      {
+        "norma": "Reglamento para la aplicación del régimen disciplinario del libro 1 del COESCOP",
+        "articulos": [
+          "4 literal b"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 2034-13-EP/19",
+      "Corte Constitucional, sentencia No. 1158-17-EP/21",
+      "Corte Constitucional, sentencia No. 14-15-CN/19",
+      "Corte Constitucional, sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 917-15/21",
+      "Corte Constitucional, sentencia 376-20-JP-21"
+    ],
+    "argumentacion": "El tribunal, pese a considerar que el asunto no era de jurisdicción constitucional, analiza el fondo. Concluye que la resolución MDI-CGJ-R-2024-054 está motivada: cita la norma aplicable (art. 48 COESCOP) y explica la sanción, por lo que no hay vulneración del art. 76.7.l. Sostiene que el argumento sobre presunción de inocencia es un control de constitucionalidad o legalidad de un procedimiento administrativo disciplinario, materia de la justicia ordinaria. Aplica las causales de improcedencia del art. 42 numerales 1, 3 y 4 LOGJCC. Confirma el rechazo de la acción y rechaza la apelación.",
+    "pruebas": [
+      "Resolución MDI-CGJ-R-2024-054 (fs. 6 a 12)",
+      "Orden de encarcelamiento (fs. 13)",
+      "Parte policial y escritos del sumario administrativo, valorados por la autoridad administrativa",
+      "Resolución de sobreseimiento penal de 6 de septiembre de 2023 (fs. 16 a 20)"
+    ],
+    "motivacion": "Se afirma que la resolución administrativa enuncia las normas aplicables y explica su pertinencia, cumpliendo la motivación exigida por la Constitución y la Corte Constitucional. La presunción de inocencia y la legalidad del procedimiento disciplinario se remiten a la vía ordinaria contencioso-administrativa, y no se demuestra vía inadecuada o ineficaz.",
+    "criterioResolucion": "La acción de protección no procede para discutir la legalidad de una sanción disciplinaria administrativa cuando la resolución cita la norma aplicable y explica su pertinencia, y el acto administrativo es impugnable en la vía judicial ordinaria (art. 42 numerales 1, 3 y 4 LOGJCC).",
+    "citaTextual": "Consecuentemente no se evidencia que se haya vulnerado el derecho al debido proceso en la garantía de la debida motivación de las resoluciones emitidas por el poder público, contenida en el artículo 76, numeral 7, literal l) de la Constitución de la República del Ecuador.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)",
+      "Presunción de inocencia (art. 76.2 CRE)",
+      "Derecho al trabajo"
+    ],
+    "fundamentosDeHecho": "El accionante, policía nacional, estuvo privado de libertad desde el 22 de junio hasta el 21 de julio de 2023 por orden judicial en un proceso penal. Durante ese tiempo se ausentó de su trabajo y, en sumario administrativo, fue sancionado con destitución por el art. 121.1 COESCOP. El recurso de apelación administrativo fue negado mediante la resolución MDI-CGJ-R-2024-054 de 14 de febrero de 2024. La jueza de primera instancia negó la acción por improcedente. El texto no indica fechas de notificación de la sentencia de apelación.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

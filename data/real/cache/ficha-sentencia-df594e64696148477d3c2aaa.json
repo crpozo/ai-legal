@@ -1,0 +1,120 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 41022,
+    "tokensSalida": 2257
+  },
+  "salida": {
+    "numero": "17203202403227",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42 numerales 1, 3 y 4",
+          "18"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "169",
+          "82",
+          "76 numeral 7 literales a) y l)",
+          "32",
+          "33",
+          "66 numeral 2",
+          "88",
+          "86 numeral 5",
+          "11 numeral 6",
+          "229"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "47 literal c)",
+          "60"
+        ]
+      },
+      {
+        "norma": "Reglamento a la LOSEP",
+        "articulos": [
+          "104",
+          "155",
+          "156",
+          "157",
+          "158",
+          "160",
+          "161"
+        ]
+      },
+      {
+        "norma": "Acuerdo Ministerial MDT-2020-0124",
+        "articulos": [
+          "1",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66",
+          "300"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "100",
+          "105 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Corte Constitucional 2034-13-EP/19",
+      "Sentencia 053-16-SEP-CC",
+      "Sentencia 1290-18-EP/21",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 328-19-EP/20",
+      "Sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia 105-10-JP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 26-18-IN-20 y acumulados"
+    ],
+    "argumentacion": "El tribunal de apelación plantea como problema jurídico si el memorando SENAE-DNH-2020-2513-M y la acción de personal 2020-02805 vulneran debido proceso (defensa y motivación), salud, trabajo, vida digna y seguridad jurídica. Analiza cada derecho: en motivación y defensa concluye que los actos son comprensibles y cumplen los requisitos, y que el Acuerdo MDT-2020-0124 no exige notificar actos previos; en salud no hay prueba de vulneración; en trabajo, la supresión se realizó con base en normativa y el derecho no es absoluto; en vida digna se verificó el pago de indemnización; en seguridad jurídica, la supresión se fundó en normas previas y aplicadas por autoridad competente. Añade la excepción de la sentencia 2006-18-EP/24 sobre conflictos laborales de servidores públicos y concluye que la vía contencioso-administrativa era la idónea, aplicando el artículo 42 numerales 1, 3 y 4 LOGJCC.",
+    "pruebas": [
+      "Memorando SENAE-DNH-2020-2513-M de 25 de septiembre de 2020",
+      "Acción de personal 2020-02805",
+      "Acuerdo Ministerial MDT-2020-0124 (fs. 233 a 237-vlt)",
+      "Resolución SENAE-SENAE-2020-0049-RE de 22 de septiembre de 2020 (fs. 337 a 340-vlt)",
+      "Pago de indemnización por supresión de partida",
+      "Certificado médico de 30 de mayo de 2024 (valorado como sin diagnóstico médico por la parte accionada; el tribunal no lo analiza expresamente)"
+    ],
+    "motivacion": "El tribunal concluye que no existe vulneración de derechos constitucionales y que la pretensión es improcedente por los numerales 1, 3 y 4 del artículo 42 LOGJCC, porque el acto administrativo podía impugnarse en la vía contencioso-administrativa, sin que la accionante demostrara que esa vía no fuera adecuada ni eficaz. Confirma así la decisión de la jueza de primera instancia en lo sustancial, aunque el texto dice rechazar el recurso de apelación y, en consecuencia, rechazar la acción por improcedente.",
+    "criterioResolucion": "La acción de protección es improcedente cuando, sin vulneración real de derechos constitucionales, se impugna la legalidad de un acto administrativo de supresión de partida que puede ser revisado en la vía contencioso-administrativa, salvo que se demuestre que esa vía no es adecuada ni eficaz.",
+    "citaTextual": "Por lo expuesto, el Primer Tribunal de la Sala Especializada de lo Civil y Mercantil de la Corte Provincial de Justicia de Pichincha, ADMINISTRANDO JUSTICIA EN NOMBRE DEL PUEBLO SOBERANO DEL ECUADOR, Y POR AUTORIDAD DE LA CONSTITUCIÓN Y LAS LEYES DE LA REPÚBLICA, rechaza el recurso de apelación presentado por la legitimada activa VALERIA DENIS VALDIVIESO JACOME y en consecuencia se rechaza por improcedente, la acción de protección presentada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Derecho a la defensa (art. 76.7.a CRE)",
+      "Derecho al trabajo (art. 33 CRE)",
+      "Derecho a la salud (art. 32 CRE)",
+      "Derecho a una vida digna (art. 66.2 CRE)",
+      "Derecho a la alimentación (art. 13 CRE) y otros derechos del buen vivir invocados como conexos"
+    ],
+    "fundamentosDeHecho": "La accionante, servidora de carrera del SENAE, fue cesada por supresión de su partida (Técnico en Adquisiciones 3) mediante memorando SENAE-DNH-2020-2513-M y acción de personal 2020-02805, ambos de septiembre de 2020, dentro de un proceso de supresión de 221 puestos autorizado por el MDT (Resolución MDT-SFSP-2020-038) y ordenado por resolución SENAE-SENAE-2020-0049-RE. Se le pagó la indemnización. Afirma que no fue notificada con informes y resoluciones citados y que no se le entregó el expediente administrativo. La sentencia de primera instancia rechazó la acción y la accionante apeló.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17045,
+    "tokensSalida": 1555
+  },
+  "salida": {
+    "numero": "17283202400364",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76 numeral 7 literales a) y m)",
+          "82",
+          "169",
+          "88",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "25",
+          "40 numeral 1",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "263"
+        ]
+      },
+      {
+        "norma": "Código de Trabajo",
+        "articulos": [
+          "632",
+          "42 numeral 7"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1214-18-EP/22",
+      "Corte Constitucional, sentencia 1101-20-EP/22",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 1391-14-EP/20",
+      "Corte Constitucional, sentencia 1797-18-EP/20",
+      "Corte Constitucional, sentencia 043-10-SEP-CC (caso 1774-09-EP)",
+      "Corte Constitucional, sentencia 2971-18-EP",
+      "Corte Constitucional, sentencia 0016-013-C-CC"
+    ],
+    "argumentacion": "El tribunal de apelación examina primero la validez del proceso y el contenido del derecho a la defensa (art. 76.7 a y m CRE). Constata que la resolución de sanción fue notificada en un correo distinto al señalado por el accionante (fs. 91), lo que le impidió presentar descargos e impugnar. Concluye que el Ministerio de Trabajo vulneró el debido proceso. Luego analiza la seguridad jurídica (art. 82 CRE) y concluye que la autoridad actuó contra norma legal expresa. Descarta la objeción de improcedencia por vía contenciosa al considerar que la acción de protección es la vía eficaz cuando hay vulneración de derechos constitucionales. Acepta la apelación.",
+    "pruebas": [
+      "Constancia de notificación a fs. 91 en correo darflacoc@hotmail.com",
+      "Escrito de fs. 4 que señala casillero 1401 y correo darflac@hotmail.com",
+      "Resolución de sanción MDT-DRTSP2-2021-0855-R4-D-MG de 29 de julio de 2021",
+      "Acta de audiencia de 30 de junio de 2021 (fs. 5)",
+      "Expediente del proceso coactivo 1698-JC-2023"
+    ],
+    "motivacion": "La violación del derecho a la defensa se deduce de que la notificación se practicó en un correo distinto del señalado por el accionante, impidiéndole descargos e impugnación. La seguridad jurídica se considera vulnerada porque la autoridad procedió contra norma legal expresa. La acción de protección es la vía eficaz porque no existe otra que tutele esos derechos.",
+    "criterioResolucion": "La notificación de un acto administrativo sancionador en un correo electrónico distinto al señalado por el administrado, que le impide presentar descargos e impugnarlo, vulnera el derecho a la defensa y el debido proceso, y procede la acción de protección para tutelarlos.",
+    "citaTextual": "en el presente caso el Ministerio de Trabajo, vulneró el derecho al debido proceso y las garantías del derecho a la defensa del Accionante Marco Trujillo Carrillo, Gerente General de la Compañía ANTENA SATELITAL MT&T ANSATTV S.A.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso (art. 76 CRE)",
+      "Derecho a la defensa (art. 76.7.a y 76.7.m CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Propiedad (art. 66 CRE, mencionado en la pretensión)"
+    ],
+    "fundamentosDeHecho": "La inspectora de Trabajo emitió la resolución de sanción MDT-DRTSP2-2021-0855-R4-D-MG (multa de USD 400) el 29 de julio de 2021 y la notificó al correo darflacoc@hotmail.com, distinto del señalado por la empresa (darflac@hotmail.com y casillero 1401). El accionante conoció la sanción aproximadamente dos años después, con el proceso coactivo 1698-JC-2023 y retenciones ya dispuestas. La sentencia de primera instancia rechazó la acción por improcedencia.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

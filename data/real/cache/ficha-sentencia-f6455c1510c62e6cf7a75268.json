@@ -1,0 +1,72 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32223,
+    "tokensSalida": 1682
+  },
+  "salida": {
+    "numero": "17U06202400527",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "76 numeral 7 literal l)",
+          "82",
+          "88",
+          "86 numeral 5",
+          "169",
+          "325"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40 numeral 1",
+          "40.3",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Sistema Nacional de Contratación Pública",
+        "articulos": [
+          "35",
+          "69",
+          "105"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia No. 1679-12-EP/20",
+      "Sentencia No. 112-13-SEP-CC",
+      "Sentencia No. 1797-18-EP/20"
+    ],
+    "argumentacion": "El tribunal de apelación resuelve el recurso del IESS contra la sentencia de primera instancia que aceptó la acción. Verifica que el proceso no tiene nulidades y que la legitimación activa y pasiva están justificadas. Analiza la vía constitucional frente a la alegada vía ordinaria y concluye que, al existir vulneración de derechos, la acción de protección es procedente. Examina la motivación de la Resolución IESS-DSSC-2024-0007-R: considera que no relaciona adecuadamente los hechos con las normas aplicadas y que se dictó sin oportunidad de subsanar la observación documental. Señala que la declaratoria de fallido exige causa imputable al adjudicatario (art. 35 LOSNCP) y que esa causa no se verifica porque el proveedor respondió con documentos originales y certificados. Concluye que se vulneraron el derecho al trabajo, la seguridad jurídica y la motivación.",
+    "pruebas": [
+      "Resolución IESS-DSSC-2024-0007-R de 6 de marzo de 2024 (fs. 58)",
+      "Memorando IESS-PG-2023-2080-M de 13 de diciembre de 2023 (informe jurídico)",
+      "Correo electrónico institucional de 6 de diciembre de 2023 sobre la firma supuestamente pegada",
+      "Documentos originales y certificados presentados por el accionante dentro de las 24 horas",
+      "Acta de resumen de puja y resolución de adjudicación (valor USD 86.400)"
+    ],
+    "motivacion": "La resolución se funda en que la declaratoria de adjudicatario fallido carece de motivación suficiente y de causa imputable al proveedor, por lo que vulnera la seguridad jurídica, el debido proceso (motivación) y el derecho al trabajo. Se confirma la sentencia de primera instancia y sus medidas de reparación.",
+    "criterioResolucion": "La declaratoria de adjudicatario fallido exige una causa imputable al adjudicatario (art. 35 LOSNCP); si la resolución no relaciona adecuadamente los hechos con las normas aplicadas y no existe causa imputable verificada, se vulneran la motivación, la seguridad jurídica y el derecho al trabajo, y la acción de protección es procedente.",
+    "citaTextual": "Resulta evidente que la declaratoria de fallido, sólo procede cuando existe una causa imputable al adjudicatario. Sin embargo, en el presente caso, no se verifica un incumplimiento atribuible al proveedor, pues respondió de manera oportuna, clara y documentada, cumpliendo con la debida diligencia para subsanar cualquier posible observación, lo que desvirtúa la existencia de una causa real para sostener la sanción administrativa impuesta.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo (art. 33 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)"
+    ],
+    "fundamentosDeHecho": "El IESS declaró adjudicatario fallido a VIALDENTAL GENERAL SERVICES CIA. LTDA. mediante resolución de 6 de marzo de 2024, por la observación de que la firma de un documento de autorización de distribución estaba pegada. El accionante presentó originales y certificados que acreditaban su autenticidad. El tribunal considera que no se verificó incumplimiento imputable al proveedor. Consta que el adjudicatario tenía la oferta más baja en la puja (USD 86.400). Las fechas de notificación de la sentencia de primera instancia se consignan como 21 de enero de 2025 y la apelación se ingresó el 6 de febrero de 2025.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

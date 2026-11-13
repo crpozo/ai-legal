@@ -1,0 +1,71 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21399,
+    "tokensSalida": 1603
+  },
+  "salida": {
+    "numero": "17230202510136",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "Art. 86 numeral 3",
+          "Art. 88",
+          "Art. 86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 39",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42 numerales 1, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "Art. 120",
+          "Art. 121",
+          "Art. 122",
+          "Art. 123"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 217 numerales 1, 2, 4 y 5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional Sentencia No. 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional Sentencia No. 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional Sentencia No. 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional Sentencia No. 2006-18-EP/24",
+      "Corte Constitucional Sentencia No. 3064-22-EP/25"
+    ],
+    "argumentacion": "El tribunal confirma que el objeto de la acción es el acto de simple administración (informe SCVS-IRCVSQ-DRMV-C-2024-476) que recomienda iniciar un proceso administrativo sancionador. Lo encuadra en los arts. 120 a 123 del COA, que lo califican como acto de opinión o juicio previo, sin efectos jurídicos directos sobre el administrado. Señala que el reclamo versa sobre legalidad (aplicación de la Ley de Compañías y de la Ley de Mercado de Valores) y que existe la vía contencioso-administrativa. Aplica el art. 42 numeral 4 LOGJCC y la sentencia 3064-22-EP/25 para concluir que no se verifica vulneración de derechos constitucionales que merezca tutela constitucional.",
+    "pruebas": [
+      "Informe No. SCVS-IRCVSQ-DRMV-C-2024-476 de 24 de diciembre de 2024, que recomienda iniciar proceso administrativo sancionador",
+      "Informe No. SCVS-IRCVSQ-DRMV-C-2024-394 de 29 de octubre de 2024",
+      "Oficios y comunicaciones de la SCVS citados por el accionante"
+    ],
+    "motivacion": "La improcedencia se funda en que el acto impugnado es de simple administración y no produce efectos jurídicos directos; el asunto es de mera legalidad, con vía contencioso-administrativa expedita; y no se demostró que esa vía sea inadecuada o ineficaz. Se citan los precedentes de la Corte Constitucional sobre subsidiariedad y el art. 42 LOGJCC.",
+    "criterioResolucion": "Un informe de simple administración que recomienda iniciar un proceso administrativo sancionador no es objeto directo de la acción de protección cuando carece de efectos jurídicos directos sobre el administrado y el asunto es de legalidad con vía contencioso-administrativa expedita (art. 42.4 LOGJCC).",
+    "citaTextual": "Solo si un acto de simple administración vulnera de forma directa derechos constitucionales y no existe otra vía judicial expedita, cabría la acción de protección, supuesto que en el presente caso no sucede de la lectura de la demanda del accionante, por lo tanto, al ser actos de trámite interno, no producen efectos directos sobre el administrado y, en consecuencia, no suelen constituir el objeto directo de esta garantía constitucional.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de legalidad (art. 76.3 CRE)",
+      "Seguridad jurídica",
+      "Igualdad y no discriminación"
+    ],
+    "fundamentosDeHecho": "Mediante informe SCVS-IRCVSQ-DRMV-C-2024-476 de 24 de diciembre de 2024, la Superintendencia de Compañías, Valores y Seguros recomendó iniciar un proceso administrativo sancionador contra el accionante, como representante legal de HEIMDALTRUST ADMINISTRADORA DE FONDOS Y DEICOMISOS S.A. El proceso sancionador no se ha iniciado ni resuelto, y el accionante ejerce su defensa en la fase investigativa. El tribunal considera que no consta vulneración directa de derechos.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

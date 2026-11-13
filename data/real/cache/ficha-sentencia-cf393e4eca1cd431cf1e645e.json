@@ -1,0 +1,64 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 15212,
+    "tokensSalida": 1455
+  },
+  "salida": {
+    "numero": "17986202400333",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "92",
+          "86 numeral 5",
+          "169",
+          "82"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "25 numeral 1",
+          "49",
+          "50 numerales 1 y 2",
+          "50"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Transparencia y Acceso a la Información Pública",
+        "articulos": [
+          "35"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia No. 1214-18-EP/22",
+      "Corte Constitucional sentencia No. 007-15-SIS-CC",
+      "Corte Constitucional sentencia No. 025-15-SEP-CC (caso 0725-12-EP)",
+      "Corte Constitucional sentencia No. 182-15-SEP-CC",
+      "Corte Constitucional sentencia No. 107-17-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación confirma que el proceso es válido y que la acción fue interpuesta por legitimadas activas y contra una parte legitimada pasiva debidamente notificada. Recoge la tesis de la jueza de primera instancia: la solicitud de nómina, autorizaciones, informes y actas es genérica, no singulariza documentos concretos y obligaría a la fundación a crear o producir información, lo que no encaja en el hábeas data. Además, la información requerida se refiere al manejo educativo, administrativo y financiero de la fundación y no a datos personales o bienes de las peticionarias. Concluye que no hubo negativa expresa ni tácita en el sentido del numeral 1 del artículo 50 LOGJCC, y que la pretensión es manifiestamente improcedente por esta vía.",
+    "pruebas": [
+      "Correos electrónicos de requerimiento de 3 de octubre de 2023, 16 de octubre de 2023 y 24 de enero de 2024",
+      "Estatuto de la fundación y registro oficial de 19 de diciembre de 2007 que designa socias fundadoras",
+      "Acta de la audiencia pública de 10 de abril de 2024 (fs. 60 a 62)"
+    ],
+    "motivacion": "La decisión se justifica por la falta de identificación precisa de la documentación requerida, por la naturaleza de la información (que no es personal ni sobre bienes de las accionantes) y por la inexistencia de una negativa, expresa o tácita, de acceso a documentos existentes. Se cita el criterio de la Corte Constitucional según el cual la información pública debe existir al momento de la solicitud y la entidad no está obligada a crearla.",
+    "criterioResolucion": "La acción de hábeas data procede cuando se niega el acceso a documentos, bancos o informes personales o sobre bienes propios del titular; no procede para exigir información general que requiere ser creada o producida por la entidad, ni cuando la solicitud no singulariza los documentos concretos requeridos y la información no se refiere a datos personales o bienes de la persona solicitante.",
+    "citaTextual": "Resulta evidente que la pretensión del accionante se aparta de la normativa, pues claramente se observa que no se especifica qué documentación se requiere; eso hace que la pretensión que tiene el legitimado activo, sea manifiestamente improcedente por la vía de acción constitucional de hábeas data",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho de acceso a la información personal y de bienes propios (art. 92 CRE)",
+      "Derecho a la autodeterminación informativa"
+    ],
+    "fundamentosDeHecho": "Las accionantes, socias fundadoras de la Fundación Caminitos de Luz, requirieron por correo electrónico en tres fechas (2023-10-03, 2023-10-16 y 2024-01-24) información detallada sobre directiva, personal, autorizaciones, informes y actividades de la fundación y su escuela, sin recibir respuesta. La jueza de primera instancia negó la acción y el tribunal de apelación confirmó esa decisión. El texto no consta sobre la fecha de notificación de la sentencia de apelación ni sobre el plazo de ejecutoria.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

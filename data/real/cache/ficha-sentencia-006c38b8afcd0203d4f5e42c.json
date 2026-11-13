@@ -1,0 +1,91 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31308,
+    "tokensSalida": 1936
+  },
+  "salida": {
+    "numero": "17204202402293",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "75",
+          "76 numeral 7 literal a)",
+          "82",
+          "11 numeral 5",
+          "88",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "22",
+          "164",
+          "165",
+          "166",
+          "192",
+          "279",
+          "280"
+        ]
+      },
+      {
+        "norma": "Ley de Compañías",
+        "articulos": [
+          "17"
+        ]
+      },
+      {
+        "norma": "Ley de Seguridad Social",
+        "articulos": [
+          "75"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 22-13-IN-20",
+      "Corte Constitucional, sentencia 2390-16-EP",
+      "Corte Constitucional, sentencia 623-19-EP",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional, sentencia 001-10-JPO",
+      "Corte Constitucional, sentencia 030-09-SEP-CC (caso 0100-09-EP)"
+    ],
+    "argumentacion": "El tribunal descarta la improcedencia por mera legalidad que aplicó el juez de primera instancia, al considerar que no se trata de las excepciones jurisprudenciales de improcedencia manifiesta y que debe examinarse la vulneración alegada. Aplica la carga de la prueba invertida contra la entidad pública (art. 86.3 CRE y art. 16 LOGJCC). Concluye que el IESS no demostró la notificación de las órdenes de pago inmediato a los accionantes ni en el domicilio de la compañía ni personalmente, por boletas o por medio de comunicación, y que la vinculación se hizo en calidad de socios y no de representantes, por lo que el art. 75 de la Ley de Seguridad Social no aplica. Declara vulnerado el debido proceso en la garantía de defensa y, por consecuencia, la seguridad jurídica, al disponer en los hechos un levantamiento del velo societario por autoridad administrativa.",
+    "pruebas": [
+      "Providencias de 14 de agosto y 25 de octubre de 2023 (órdenes de pago inmediato y medidas cautelares)",
+      "Oficios 04531, 04532 y 04534-JC-IESS-DPP-SPBR de 17 de enero de 2024",
+      "Estatuto de la compañía SOLUWORK CIA. LTDA. y nombramientos de gerentes",
+      "Ausencia en el expediente de constancias de notificación al domicilio de la compañía, personales, por boletas o por medio de comunicación",
+      "Ausencia del expediente administrativo coactivo contra los accionantes"
+    ],
+    "motivacion": "La falta de constancia de notificación de la orden de pago inmediato, exigida por los arts. 279, 280, 164, 165 y 166 del COA, lleva a concluir la vulneración del art. 76.7.a) CRE. La vinculación de los accionantes como socios, sin sentencia de develamiento o levantamiento del velo, lleva a concluir la vulneración de la seguridad jurídica (art. 82 CRE y art. 17 de la Ley de Compañías, con cita de la sentencia 22-13-IN-20). Como reparación se dejan sin efecto las providencias y los oficios y se ordena expedir documentos para levantar las retenciones.",
+    "criterioResolucion": "Según esta resolución, la orden de pago inmediato que dispone el cobro a socios debe notificarse en la forma prevista en el COA (279 y 280 en relación con 164 a 166). Las medidas cautelares sin notificación previa (art. 192 COA) no eximen de notificar la orden de pago, y la extensión del cobro a socios por autoridad administrativa equivale a un levantamiento del velo societario, que solo puede ordenar un juez o árbitro. La falta de notificación vulnera el derecho a la defensa y la seguridad jurídica, y la acción de protección procede.",
+    "citaTextual": "El levantamiento del velo societario solamente podrá ser dispuesto mediante sentencia judicial o, cuando correspondiere, a través de laudo arbitral. Por consiguiente, las autoridades administrativas de cualquier naturaleza no podrán ordenarla en ningún caso, sin excepción.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Propiedad (mencionado en los hechos, sin análisis separado)"
+    ],
+    "fundamentosDeHecho": "El IESS, mediante providencias de 14 de agosto y 25 de octubre de 2023, extendió órdenes de pago inmediato y medidas cautelares a los socios Carla Renata Martínez Yerovi y Gilberto Fernando Solórzano Párraga por una deuda de la compañía SOLUWORK CIA. LTDA. No consta en el expediente notificación de esas órdenes a los accionantes ni al domicilio de la compañía. Los bancos retuvieron fondos de cuentas personales tras oficios de 17 de enero de 2024 a la Superintendencia de Bancos.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

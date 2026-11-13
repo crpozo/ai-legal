@@ -1,0 +1,52 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 51753,
+    "tokensSalida": 3185
+  },
+  "salida": {
+    "numero": "17204202400339",
+    "decision": "otro",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86.3"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal de alzada parte de la carga de la prueba: al ser entidad pública la accionada, se presumen ciertos los hechos de la demanda si no los desvirtúa (CRE 86.3; LOGJCC 16). Luego constata que la sentencia de primera instancia carece de motivación suficiente para declarar improcedente la acción, porque no verifica ni sustenta si existe o no vulneración de los derechos invocados antes de remitir el asunto a la justicia ordinaria. Reseña además los argumentos de los accionantes sobre non bis in idem, defensa, motivación, proporcionalidad y trabajo. El texto recibido termina dentro de una cita a la sentencia 1158-17-EP/21 y no contiene el análisis de fondo ni el dispositivo final.",
+    "pruebas": [
+      "Resolución No. SCVS-IRCVSQ-DRS-2024-00001607 de 25 de enero de 2024",
+      "Resoluciones sancionatorias previas SCVS-IRQ-DRS-2021-00011393, SCVS-INPAI-2022-00001198, SCVS-INPAI-2022-00001402, SCVS-INPAI-2022-00003261 y SCVS-IRQ-DRS-2022-00003851",
+      "Expediente del procedimiento administrativo sancionador y su informe técnico (memorando SCVS-IRQ-DRS-2023-2722-M)",
+      "Documentos del expediente administrativo que la accionada debía demostrar"
+    ],
+    "motivacion": "Según el tribunal, la sentencia apelada es insuficiente en su motivación porque se limita a transcribir argumentos, enumerar documentos y afirmar en abstracto que el caso es de legalidad, sin analizar si hubo vulneración de derechos. La carga de demostrar lo contrario recae sobre la entidad pública accionada. El texto no permite conocer la decisión final sobre los derechos alegados ni sobre la procedencia de la acción.",
+    "criterioResolucion": "El juez de garantías debe verificar y motivar si existe vulneración de derechos constitucionales antes de declarar improcedente la acción de protección y remitir el caso a la vía ordinaria. La insuficiencia de esa verificación invalida la decisión de improcedencia.",
+    "citaTextual": "el juzgador no verifica, ni sustenta si existe o no la vulneración de los derechos constitucionales invocados como vulnerados para ulteriormente decidir que la vía constitucional no es procedente en este caso sino la justicia ordinaria.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes",
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de non bis in idem",
+      "Derecho a la defensa",
+      "Debido proceso en la garantía de motivación y principio de proporcionalidad",
+      "Derecho al trabajo",
+      "Derecho al buen nombre"
+    ],
+    "fundamentosDeHecho": "La Dirección Regional de Seguros sancionó el 25 de enero de 2024 con remoción a dos representantes legales y con multa a cinco miembros del directorio, por infracciones de reaseguros de 2017 a 2021. Previamente la compañía había sido sancionada por hechos que los accionantes consideran idénticos. La primera instancia negó la acción por improcedencia y los legitimados activos apelaron. El texto no contiene la decisión final del tribunal de apelación.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

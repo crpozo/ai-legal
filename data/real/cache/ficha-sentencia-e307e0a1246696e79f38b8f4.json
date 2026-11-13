@@ -1,0 +1,112 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25608,
+    "tokensSalida": 2005
+  },
+  "salida": {
+    "numero": "17250202500045",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "82",
+          "33",
+          "327",
+          "228",
+          "229",
+          "11.2",
+          "66.4",
+          "35",
+          "66.2",
+          "76.7.l",
+          "38 numeral 2",
+          "47 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numeral 1",
+          "42 numeral 3",
+          "42 numeral 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público",
+        "articulos": [
+          "58"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP",
+        "articulos": [
+          "143",
+          "146 literal a)"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Discapacidades",
+        "articulos": [
+          "48"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 211-16-SEP-CC",
+      "Sentencia 033-C-SEP-CC",
+      "Sentencia 076-15-SEP-CC",
+      "Sentencia 005-13-SIS-CC",
+      "Sentencia 053-16-SEP-CC",
+      "Sentencia 116-16-SEP-CC",
+      "Sentencia 016-13-SEP-CC (causa 1000-12-EP)",
+      "Sentencia 093-14-SEP-CC (causa 1752-11-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 102-13-SEP-CC",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 1937-19-JP/25 y acumulados",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1679-12-EP/20, 253-16-EP/21 y 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación confirma el rechazo de primera instancia. Razona que la controversia es de legalidad (terminación de contratos ocasionales al cumplir plazo, sin concurso de méritos), que corresponde a la jurisdicción contencioso-administrativa según la excepción creada en la sentencia 2006-18-EP/24. Descarta que concurra la excepción de discriminación evidente o urgencia, y concluye que no se acreditó la condición de discapacidad o enfermedad catastrófica de las hijas de dos accionantes, por lo que tampoco aplica la protección laboral reforzada de la sentencia 1937-19-JP/25, que el tribunal reconoce como estándar general. Aplica las causales de improcedencia del art. 42 numerales 1, 3 y 4 LOGJCC.",
+    "pruebas": [
+      "Contratos de servicios ocasionales y acciones de personal de las accionantes",
+      "Memorandos de terminación (IESS-SDNGTH-2024-19855-M) e informe técnico IESS-HGSQ-2024-0612",
+      "Certificaciones de Talento Humano sobre desvinculación de 30 personas y sobre inexistencia de condiciones de grupo prioritario",
+      "Informe de Talento Humano de 16 de diciembre de 2024 sobre condiciones de vulnerabilidad",
+      "Acuerdo Ministerial 00001829 (fojas 348 a 351) sobre diagnóstico de una hija",
+      "Informe médico de la otra hija (fojas 380 a 384)"
+    ],
+    "motivacion": "La improcedencia se funda en que los hechos alegados son controversias de legalidad laboral sin afectación notoria de la dignidad o autonomía de las servidoras y sin prueba suficiente de discapacidad o enfermedad catastrófica que active la excepción constitucional. Por ello no se examinan los derechos alegados sobre el fondo.",
+    "criterioResolucion": "Cuando la impugnación recae sobre la terminación de contratos ocasionales de servidores públicos y no se demuestra discriminación evidente, urgencia o protección laboral reforzada acreditada, el conflicto corresponde a la jurisdicción contencioso-administrativa y la acción de protección es improcedente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la igualdad y no discriminación",
+      "Derechos de personas con discapacidad y enfermedades catastróficas y de grupos de atención prioritaria",
+      "Derecho a una vida digna"
+    ],
+    "fundamentosDeHecho": "Cinco accionantes, médicas y una analista, tenían contratos de servicios ocasionales renovados desde 2017, 2018 o 2021 en el IESS. El IESS dio por terminados los contratos al cumplirse el plazo el 31 de diciembre de 2024, mediante memorando de 30 de diciembre de 2024. El tribunal considera que no consta prueba suficiente de discapacidad o enfermedad catastrófica de las hijas de dos accionantes, ni de discriminación evidente.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

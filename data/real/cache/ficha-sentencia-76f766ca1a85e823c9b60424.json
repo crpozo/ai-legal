@@ -1,0 +1,58 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9377,
+    "tokensSalida": 1304
+  },
+  "salida": {
+    "numero": "17113202500031",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 66 numeral 14",
+          "Art. 89",
+          "Art. 86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 43",
+          "Art. 44 numeral 1",
+          "Art. 44 numeral 3"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "Art. 527"
+        ]
+      }
+    ],
+    "jurisprudencia": [],
+    "argumentacion": "El tribunal identifica como base de la acción la alegada detención ilegal, arbitraria e ilegítima y los presuntos tratos crueles por parte de agentes policiales. Revisa las declaraciones de las testigos, que afirman no haber presenciado los maltratos al no permitírseles acceder al lugar, y el chequeo médico, que no registra novedad. Pondera además que la defensa técnica, en la audiencia de flagrancia, declaró no tener observaciones sobre la legalización de la flagrancia y la detención. Concluye que no existe prueba que respalde las agresiones, por lo que la detención no se considera arbitraria, ilegal ni ilegítima.",
+    "pruebas": [
+      "Chequeo médico del accionante",
+      "Declaraciones testimoniales de Doris Margoth Chiriguayo Mosquera y Bianka Saday Carbo Chiriguayo",
+      "Acta de la audiencia de flagrancia (fs. 42)",
+      "Informe de la jueza y extracto de audiencia penal (fs. 31 a 49)",
+      "Boleta de encarcelamiento Nº 17U05-2025-000278",
+      "Parte policial"
+    ],
+    "motivacion": "La decisión se sostiene en la ausencia de demostración de los maltratos alegados, dado que las testigos no los constataron y el examen médico no evidenció novedades, y en la falta de objeción de la defensa técnica a la legalidad de la detención en la audiencia de flagrancia. El tribunal valora también las circunstancias de la privación de libertad y la inexistencia de peligro para la vida o integridad del accionante.",
+    "criterioResolucion": "La acción de hábeas corpus se rechaza cuando no se demuestran agresiones físicas o psicológicas que respalden la alegación de detención arbitraria, ilegal o ilegítima ni tratos crueles, y la privación de libertad mantiene boleta de detención por prisión preventiva dictada en proceso penal.",
+    "citaTextual": "no obre de autos demostración alguna que respalden tales afirmaciones, al contrario, las mismas quedaron sin sustento por las afirmaciones directas de sus testigos, como quedó explicado precedentemente y no desprendiéndose del cuaderno constitucional la existencia de agresiones en su contra al momento de ser aprehendido",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Libertad personal",
+      "Derecho a no ser torturado ni tratado en forma cruel, inhumana o degradante",
+      "Derecho a guardar silencio y a contar con defensa técnica",
+      "Derecho de los hijos menores a la protección en el operativo"
+    ],
+    "fundamentosDeHecho": "El accionante estaba privado de libertad por prisión preventiva dictada en el proceso 17U05-2025-00088 por presunto secuestro extorsivo con muerte. Alegó que fue detenido el 11 de julio de 2025 sin orden y agredido por agentes policiales. El tribunal no da por probadas las agresiones: las testigos no las presenciaron y el chequeo médico no registró novedad. Consta la boleta de encarcelamiento con fecha de ingreso 12 de julio de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

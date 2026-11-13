@@ -1,0 +1,75 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 27513,
+    "tokensSalida": 1702
+  },
+  "salida": {
+    "numero": "17294202500194",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "61 numeral 7",
+          "76 numeral 1",
+          "82",
+          "88",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "19",
+          "24",
+          "25 numeral 1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "58"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Carrera Sanitaria",
+        "articulos": [
+          "6 numeral 4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 18-21-CN/21 y acumulados",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 2006-18-EP/24",
+      "Sentencia No. 497-22-EP/25",
+      "Sentencia No. 2038-23-EP-24 (citada por la Procuraduría)"
+    ],
+    "argumentacion": "El tribunal de alzada revisa si hubo vulneración de participación (art. 61.7), debido proceso en la garantía de cumplimiento de normas (art. 76.1) y seguridad jurídica (art. 82). Constata con prueba documental que la accionante tuvo contratos ocasionales sucesivos desde 2020 hasta diciembre de 2024 y que el hospital contrató a otro profesional para el mismo puesto, lo que demuestra necesidad permanente. Aplica el art. 58 LOSEP, que exige prorrogar el contrato hasta el concurso. Desecha el argumento de cambio de régimen a la Ley de Carrera Sanitaria, pues su art. 6 numeral 4 excluye a los contratos ocasionales. Admite la vía constitucional por excepción, por la discriminación evidente y la arbitrariedad de la desvinculación que compromete la dignidad, pese a que el asunto es laboral. Concluye que se vulneraron los derechos.",
+    "pruebas": [
+      "Contratos de servicios ocasionales y adendums (fs. 4 a 10)",
+      "Mecanizado de aportaciones al IESS (fs. 11 a 14)",
+      "Memorando de terminación MSP-CZ9-HEG-2024-4941-M",
+      "Oficio del Hospital que consta a fs. 38 sobre la contratación de otro profesional para el mismo puesto",
+      "Informe técnico que sirvió de antecedente a la terminación"
+    ],
+    "motivacion": "Los hechos probados (contratación sucesiva por más de cuatro años y reemplazo inmediato por otro profesional) demuestran una necesidad permanente del puesto y una decisión arbitraria sin causa justificada, lo que vulnera la norma previa del art. 58 LOSEP y compromete la dignidad de la accionante, excepción que habilita la acción de protección.",
+    "criterioResolucion": "Cuando un contrato de servicios ocasionales se prolonga más de cuatro años consecutivos y el puesto se ocupa después por otro profesional, la necesidad es permanente. Terminarlo sin concurso de méritos y oposición y sin causa justa vulnera el art. 58 LOSEP, la seguridad jurídica y el debido proceso en la garantía de cumplimiento de normas, y la acción de protección es procedente como excepción a la regla de la vía ordinaria cuando está comprometida la dignidad de manera grave y notoria.",
+    "citaTextual": "Este Tribunal ha verificado que la desvinculación de la accionante por parte del Hospital General Enrique Garcés, seguida de la inmediata contratación de otra persona para desempeñar exactamente el mismo cargo, constituye un acto que compromete de manera notoria y grave su dignidad y su autonomía, vulnerando así sus derechos de rango constitucional.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Desempeñar empleos y funciones públicas con base en méritos y capacidades (art. 61.7 CRE)",
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante prestó servicios al Hospital General Enrique Garcés desde el 16 de abril de 2020 mediante contratos ocasionales sucesivos, el último como médico especialista en pediatría desde 2022. Sin concurso de méritos y oposición, el 31 de diciembre de 2024 el gerente dio por terminado el contrato. Consta que después el hospital contrató a otro profesional para el mismo puesto.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

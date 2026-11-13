@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25653,
+    "tokensSalida": 1416
+  },
+  "salida": {
+    "numero": "17571202400502",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76 numeral 1",
+          "76 numeral 7 literales a), b), c), h) y l)",
+          "82",
+          "86 numeral 5",
+          "88",
+          "169",
+          "213",
+          "308"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "21",
+          "24",
+          "40 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Monetario y Financiero",
+        "articulos": [
+          "62 numeral 20",
+          "285",
+          "288",
+          "289 numeral 12"
+        ]
+      },
+      {
+        "norma": "Reglamento a la Ley Orgánica de Economía Popular y Solidaria",
+        "articulos": [
+          "34",
+          "37"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1214-18-EP/22",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal de apelación examina si la remoción del accionante como presidente y vocal del Consejo de Administración de Cooprogreso, dispuesta por oficio de la SEPS de 31 de mayo de 2024, vulneró el debido proceso. Constata que la SEPS no le notificó hallazgos imputables a su persona, pues los hallazgos se atribuían al Consejo de Administración como órgano colegiado, y que el accionante no tuvo oportunidad de defenderse ante la medida. Concluye que hubo vulneración del derecho a la defensa y a la motivación, y rechaza la apelación confirmando la sentencia de primera instancia que aceptó la acción.",
+    "pruebas": [
+      "Oficio SEPS-SGD-II-SESF-2024-15000-OF de 31 de mayo de 2024",
+      "Comunicación de resultados finales de la supervisión in situ (anexo 1) y hallazgos notificados a la cooperativa",
+      "Estatuto social de Cooprogreso y normativa de atribuciones del presidente del Consejo de Administración",
+      "Resolución SEPS-INSESF-2024-0002 de 26 de febrero de 2024"
+    ],
+    "motivacion": "La motivación se sostiene en que la medida correctiva de remoción no identifica una conducta imputable personalmente al accionante ni expone la norma y la pertinencia de su aplicación a los hechos, y en que el accionante no tuvo ocasión de presentar descargos. Se confirma así la vulneración del debido proceso en las garantías de defensa y motivación.",
+    "criterioResolucion": "La remoción de un miembro del Consejo de Administración como medida correctiva, sin imputación personal de hallazgos ni oportunidad de defensa y sin motivación suficiente, vulnera el debido proceso (artículo 76.7 literales a) y l) de la Constitución).",
+    "citaTextual": "no existe motivación en la medida correctiva tomada que resolvió la remoción del Presidente del Consejo de Administración de la Cooperativa de Ahorro y Crédito Cooprogreso Limitada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de defensa",
+      "Debido proceso en la garantía de motivación",
+      "Debido proceso en la garantía de proporcionalidad de la sanción",
+      "Seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La SEPS, en el marco de una supervisión in situ a la Cooperativa Cooprogreso, emitió el oficio de 31 de mayo de 2024 como medida correctiva del artículo 289 del Código Orgánico Monetario y Financiero, removiendo al accionante de su cargo de presidente y vocal del Consejo de Administración. Los hallazgos notificados se atribuían al Consejo de Administración como cuerpo colegiado y no al accionante personalmente, y no se le dio oportunidad de defenderse antes de la remoción.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

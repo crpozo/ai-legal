@@ -1,0 +1,76 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 15114,
+    "tokensSalida": 1428
+  },
+  "salida": {
+    "numero": "17981202400060",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42 numerales 1, 3 y 4",
+          "10 numerales 2 y 3"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "169",
+          "82",
+          "88",
+          "3 numeral 1",
+          "33",
+          "34",
+          "326 numeral 2",
+          "76 numerales 1, 7 literal l)",
+          "160",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Decreto Ejecutivo No. 632 de 2011",
+        "articulos": []
+      },
+      {
+        "norma": "Acuerdo Ministerial No. 5233-A de 4 de enero de 2015",
+        "articulos": [
+          "2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Corte Constitucional No. 2034-13-EP/19",
+      "Sentencia vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 16-09-IN/20",
+      "Sentencia No. 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia No. 75-15-IN/21",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal de alzada declara válido el proceso, examina los derechos al trabajo, a la seguridad social, al debido proceso (cumplimiento de normas y motivación) y concluye que no hay vulneración. Reconoce que el asunto no es materia de acción de protección, pero lo analiza por exigencia de la Corte Constitucional. Concluye que el acto de separación es un acto administrativo debidamente motivado, amparado en un acuerdo ministerial vigente, y que el accionante no pertenece a grupo de atención prioritaria ni tenía estabilidad. Finalmente aplica las causales de improcedencia del art. 42 numerales 3 y 4 LOGJCC.",
+    "pruebas": [
+      "Orden General 244 del Comando General de la Policía Nacional de 22 de diciembre de 2015 (acto de desvinculación)",
+      "Acuerdo Ministerial 5233-A y Decreto Ejecutivo 632 (fundamento de la separación)",
+      "Aportes al Instituto de Seguridad Social de la Policía Nacional durante la relación laboral",
+      "Documentación aportada por el accionante"
+    ],
+    "motivacion": "La separación se fundamenta en normas vigentes (Acuerdo Ministerial 5233-A y Decreto 632) y fue comunicada al accionante, por lo que cumple la motivación exigida por el art. 76.7.l) constitucional. No se acredita incumplimiento de seguridad social ni de trabajo, y la vía para impugnar el acto administrativo era judicial o administrativa, por lo que procede la improcedencia.",
+    "criterioResolucion": "La acción de protección es improcedente cuando no hay vulneración de derechos constitucionales y se impugna exclusivamente la legalidad o constitucionalidad de un acto administrativo que puede ser impugnado en la vía judicial o administrativa (art. 42 numerales 3 y 4 LOGJCC).",
+    "citaTextual": "Cuando el acto administrativo pueda ser impugnado en la vía judicial, salvo que se demuestre que la vía no fuere adecuada ni eficaz.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso (garantías de cumplimiento de normas y motivación)",
+      "Derecho al trabajo",
+      "Derecho a la seguridad social"
+    ],
+    "fundamentosDeHecho": "El accionante fue separado de la Policía Nacional de forma definitiva y con efecto inmediato mediante la Orden General 244 de 22 de diciembre de 2015, sin sumario administrativo previo, en aplicación del Acuerdo Ministerial 5233-A. Consta que los aportes al seguro social se realizaron durante la relación laboral. El tribunal no encuentra probada la vulneración alegada.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

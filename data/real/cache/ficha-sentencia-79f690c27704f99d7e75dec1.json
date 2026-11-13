@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9930,
+    "tokensSalida": 3173
+  },
+  "salida": {
+    "numero": "17231202400892",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "87",
+          "88",
+          "229",
+          "436.6",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "168.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "18 letra a)",
+          "19 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional del Ecuador, sentencia 3-19-JP/20 y acumulados (jurisprudencia vinculante sobre protección laboral de la mujer embarazada en el sector público)",
+      "Corte Constitucional del Ecuador, sentencia 1-16-PJO-CC de 22 de marzo de 2016, caso 530-10-JP",
+      "Corte Constitucional del Ecuador, sentencia 0016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal confirma la sentencia de primera instancia que aceptó la acción. Parte de que la actora era servidora de libre designación y remoción, régimen que el texto no discute. Luego aplica la sentencia 3-19-JP/20, que trata la pérdida de confianza como causa de terminación en cargos de libre remoción, pero presume discriminación cuando la terminación coincide con el embarazo o el cuidado. Constata que la actora estaba embarazada antes de la notificación de la desvinculación y que la empresa no revisó su situación al recibir el certificado de gestación. Concluye que se vulneraron la tutela judicial, la protección a la mujer embarazada, la igualdad y no discriminación y, como consecuencia, el derecho al trabajo. Rechaza la objeción de que la normativa interna prevalece sobre la jurisprudencia vinculante.",
+    "pruebas": [
+      "Acción de Personal N° 17920, de 1 de septiembre de 2023 (nombramiento de libre designación y remoción)",
+      "Memorando N° EEQ-GG-20230420-ME, de 18 de octubre de 2023 (terminación del nombramiento)",
+      "Acción de Personal N° 18680, de 18 de octubre de 2023 (remoción de funciones)",
+      "Correo electrónico de 27 de octubre de 2023 con prueba de embarazo positiva, de 3 a 4 semanas",
+      "Normativa Interna para la Gestión de Talento Humano de la Empresa Eléctrica Quito, artículo 14",
+      "Correo de la Procuraduría con datos de la ficha postocupacional y del certificado gestacional",
+      "Acta de Pago de Haberes y Finiquito de 20 de noviembre de 2023"
+    ],
+    "motivacion": "La decisión se justifica en que la jurisprudencia vinculante de la sentencia 3-19-JP/20 prevalece sobre la normativa interna. El tribunal considera que la terminación coincidió con un embarazo ya existente y que la empresa no demostró un incumplimiento del desempeño. El texto no desarrolla con detalle la prueba de la falta de revisión de la situación laboral, que se afirma en el punto 4.9.",
+    "criterioResolucion": "En un cargo de libre remoción, si la terminación coincide con el embarazo o con el periodo de cuidado o lactancia, se presume discriminatoria y la entidad debe demostrar que la causa fue un incumplimiento comprobado del desempeño. Esta presunción aplica aunque la terminación se fundamente en la pérdida de confianza.",
+    "citaTextual": "Si la mujer venía trabajando en el cargo de libre remoción y la supuesta “pérdida de confianza” coincide con la noticia del embarazo o con su periodo de cuidado o lactancia, se presumirá que la terminación de la relación laboral se basa en un hecho discriminatorio",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Tutela judicial efectiva",
+      "Trabajo",
+      "Igualdad y no discriminación (formal y material)",
+      "Protección y atención prioritaria a mujeres embarazadas",
+      "Tutela administrativa efectiva (según se denomina en la motivación)"
+    ],
+    "fundamentosDeHecho": "La actora fue nombrada el 1 de septiembre de 2023 en un cargo de libre designación y remoción y fue desvinculada el 18 de octubre de 2023. El 27 de octubre de 2023 comunicó a la empresa un embarazo positiva de 3 a 4 semanas, es decir, un embarazo anterior a la notificación de la desvinculación. La empresa alegó que la actora no estaba embarazada al momento de la desvinculación y que se trató de un nombramiento de confianza. El texto no fija con claridad la fecha de notificación de la salida, pues menciona el 20/10/2024, fecha que parece errónea. El finiquito consta del 20 de noviembre de 2023.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

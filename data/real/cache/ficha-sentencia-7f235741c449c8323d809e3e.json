@@ -1,0 +1,66 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 24666,
+    "tokensSalida": 1677
+  },
+  "salida": {
+    "numero": "17571202501072",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86",
+          "88",
+          "76.7.a",
+          "76.7.l",
+          "82",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "39",
+          "40",
+          "42.1",
+          "42.4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 1568-13-EP/20",
+      "Sentencia No. 740-12-EP/20",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 1852-21-EP/25",
+      "Sentencia No. 1791-22-EP/25",
+      "Sentencia No. 1391-14-EP/20",
+      "Sentencia No. 1679-12-EP/20",
+      "Sentencia No. 001-16-PJO-CC (caso No. 0530-10-JP)",
+      "Sentencia No. 016-13-SEP-CC (caso No. 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de apelación revisa la sentencia de primera instancia que rechazó la acción. Plantea como problema jurídico si el CES violó el derecho a la defensa (prohibición de indefensión, art. 76.7.a) y la motivación (art. 76.7.l) con la Resolución RPC-SO-29-No.556-2017. Concluye que el CES inició primero un sumario contra el accionante como persona natural, luego, con base en el informe de Procuraduría, lo excluyó al corregir el inicio solo contra el Instituto, y finalmente lo sancionó sin haber sido sujeto del procedimiento, lo que generó expectativa de exclusión e impidió su defensa. Además, halla que la resolución carece de motivación suficiente porque incumple criterios del propio CES y no permite comprender su contenido. Rechaza que exista improcedencia por identidad de acción con otro proceso citado por el CES, sin que el texto desarrolle expresamente ese punto más allá de esa conclusión implícita.",
+    "pruebas": [
+      "Resolución RPC-SO-20-No.397-2017 de 14 de junio de 2017 (inicio del sumario)",
+      "Informe jurídico de la Procuraduría del CES para rectificación (23 de junio de 2017)",
+      "Resolución RPC-SO-22-No.436-2017 de 28 de junio de 2017 (reforma)",
+      "Resolución RPC-SO-29-No.556-2017 de 16 de agosto de 2017 (sanción)",
+      "Documentación de notificaciones del CES y audiencia de trámite constitucional"
+    ],
+    "motivacion": "Acepta el recurso y revoca la sentencia venida en grado. Declara la vulneración de los derechos a la defensa (prohibición de indefensión) y a la motivación por parte del CES y deja sin efecto la Resolución RPC-SO-29-No.556-2017, ordenando devolver el proceso al inferior tras ejecutoriarse, conforme al art. 86.5 de la Constitución.",
+    "criterioResolucion": "Cuando la autoridad administrativa inicia un sumario contra una persona, luego la excluye tras un informe jurídico institucional y finalmente la sanciona sin haber sido sujeto del procedimiento, se produce indefensión (art. 76.7.a); y una resolución que no es comprensible frente a sus propios antecedentes carece de motivación suficiente (art. 76.7.l).",
+    "citaTextual": "Esta circunstancia impidió que el accionante pueda comparecer y defenderse de manera adecuada dentro del proceso que culminó con el resolución administrativa impugnada que sanciona al Instituto Tecnológico Superior \"New Generation\" y al Ing. Víctor Hugo Medina Pérez, lo cual conforme lo indicado por la Corte Constitucional es una causal de verificación para demostrar la indefensión de una persona dentro de un procedimiento iniciado en su contra.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la defensa, garantía de no quedar en indefensión en ninguna etapa o grado del procedimiento (art. 76.7.a CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)"
+    ],
+    "fundamentosDeHecho": "El CES inició el 14 de junio de 2017 un sumario contra el ingeniero Víctor Hugo Medina Pérez como rector. Tras un informe de Procuraduría, el 28 de junio de 2017 se reformó el inicio y se limitó el procedimiento al Instituto. El 16 de agosto de 2017 el CES sancionó al Instituto y también al accionante como rector (multa de 150 SBU para el Instituto y amonestación y suspensión de 60 días para el accionante).",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

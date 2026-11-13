@@ -1,0 +1,111 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32130,
+    "tokensSalida": 1679
+  },
+  "salida": {
+    "numero": "17981202400200",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42.1",
+          "42.3",
+          "42.4",
+          "15.1",
+          "10.6"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "169",
+          "82",
+          "76.7.l",
+          "66.2",
+          "88",
+          "328",
+          "371",
+          "226",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Código de Procedimiento Civil",
+        "articulos": [
+          "941",
+          "942",
+          "951",
+          "952",
+          "77"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Monetario y Financiero",
+        "articulos": [
+          "352",
+          "353"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "65",
+          "98",
+          "99",
+          "103",
+          "115",
+          "118",
+          "119",
+          "218",
+          "272"
+        ]
+      },
+      {
+        "norma": "Código de Trabajo",
+        "articulos": [
+          "91"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 227-12-SEP-CC",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Caso No. 985-12-EP/20",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 029-14-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de alzada revisa la sentencia de primera instancia que rechazó la acción de protección y analiza si hubo vulneración del debido proceso (defensa y motivación), de la seguridad jurídica y de la vida digna. Concluye que el accionante fue citado y que el proceso coactivo se tramitó ante autoridad competente, por lo que no hay violación de defensa ni de seguridad jurídica. Considera que la motivación de la contestación administrativa cumple los parámetros de razonabilidad, lógica y comprensibilidad. Estima que el reclamo sobre la inembargabilidad de remuneraciones es un asunto de legalidad que corresponde a la justicia ordinaria, y aplica las causales de improcedencia de los numerales 3 y 4 del artículo 42 de la LOGJCC.",
+    "pruebas": [
+      "Pagaré a la orden con cláusula de jurisdicción coactiva",
+      "Contrato de mutuo para personas naturales (cláusula sexta)",
+      "Constancia de citación con el auto de pago (fs. 98)",
+      "Auto de inicio del proceso coactivo 218-2016",
+      "Contestación del Banco Nacional de Fomento en liquidación al pedido del accionante",
+      "Certificado laboral del IESS y acta de finiquito",
+      "Carnet CONADIS del accionante",
+      "Estado de cuenta del Banco Produbanco"
+    ],
+    "motivacion": "Aplica el test de motivación (razonabilidad, lógica y comprensibilidad) a la contestación administrativa y verifica la notificación del proceso coactivo. Sostiene que el asunto de fondo, incluida la calidad de los fondos retenidos y la inembargabilidad de remuneraciones, es de legalidad y debe ventilarse en la vía ordinaria, por lo que la acción de protección es improcedente.",
+    "criterioResolucion": "La acción de protección no procede cuando no se verifica una vulneración de derechos constitucionales y el asunto es de legalidad o existe una vía judicial ordinaria adecuada y eficaz; el juez constitucional debe verificar la real vulneración de derechos antes de resolver.",
+    "citaTextual": "Las juezas y jueces constitucionales únicamente, cuando no encuentren vulneración de derechos constitucionales y lo señalen motivadamente en su sentencia, sobre la base de los parámetros de razonabilidad. Lógica y comprensibilidad, podrán determinar que la justicia ordinaria es la vía idónea y eficaz para resolver el asunto controvertido",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)",
+      "Vida digna (art. 66.2 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Inembargabilidad de remuneraciones (art. 328 CRE)",
+      "Atención prioritaria por discapacidad"
+    ],
+    "fundamentosDeHecho": "El accionante fue deudor principal en un préstamo con el Banco Nacional de Fomento en liquidación; se inició un proceso coactivo 218-2016 en 2016 y se retuvieron fondos de su cuenta bancaria (USD 10.666,06), que el accionante sostiene provienen de la liquidación de haberes de su empleo. Consta su citación con el auto de pago. La entidad negó el levantamiento de la retención por no tratarse de remuneraciones ni de pensión jubilar.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

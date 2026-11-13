@@ -1,0 +1,83 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 9330,
+    "tokensSalida": 2671
+  },
+  "salida": {
+    "numero": "17230202516063",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.3",
+          "11.5",
+          "11.6",
+          "43.3",
+          "43.4",
+          "44",
+          "69.1",
+          "86",
+          "86.5",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "168.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público",
+        "articulos": [
+          "33"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Derecho al Cuidado Humano",
+        "articulos": [
+          "23"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional del Ecuador, sentencia 1-16-PJO-CC (caso 530-10-JP), párr. 30",
+      "Corte Constitucional del Ecuador, sentencia 0016-13-SEP-CC",
+      "Corte Constitucional del Ecuador, sentencia 36-19-IN/21"
+    ],
+    "argumentacion": "El tribunal analiza si la negativa de la Universidad Central a conceder el permiso remunerado de dos horas por cuidado del recién nacido vulnera derechos constitucionales. Concluye que el derecho al cuidado y a la lactancia se entiende en favor del niño, por lo que tiene carácter prioritario, citando la sentencia 36-19-IN/21. Aplica el artículo 11 de la Constitución, que prohíbe alegar falta de norma para desconocer derechos. Constata que ni el artículo 23 de la Ley Orgánica del Derecho al Cuidado Humano ni el artículo 33 de la LOSEP distinguen por tipo de jornada, y por eso la entidad debe aplicarlas en su texto. Revoca la sentencia de primera instancia. Hay una discrepancia de fechas en el expediente sobre el oficio impugnado (5 de junio y 6 de agosto de 2025), que el tribunal no aclara.",
+    "pruebas": [
+      "Contrato de servicios ocasionales de la actora con la Universidad Central del Ecuador",
+      "Oficio N° UCE-DTH-2025-3853-O, de 5 de junio de 2025 (acto administrativo impugnado)",
+      "Distributivo del Instituto Académico de Idiomas, junio-agosto 2025",
+      "Oficio del Director de Talento Humano al Procurador, de 15 de agosto de 2025",
+      "Oficio N° CES-CES-2025-0614-CO del Consejo de Educación Superior",
+      "Partida de nacimiento del hijo (nacido el 22 de marzo de 2025) y documento de la licencia de maternidad (22 de marzo a 13 de junio de 2025)",
+      "Certificado de la Pontificia Universidad Católica del Ecuador sobre la actora como instructora por horas"
+    ],
+    "motivacion": "El tribunal considera que el derecho del niño recién nacido no puede ser desconocido por falta de norma expresa para servidoras a tiempo parcial. Señala que las normas invocadas no distinguen por tipo de jornada, por lo que la entidad debía aplicarlas tal como están redactadas para hacer efectivos los derechos del recién nacido y de la madre.",
+    "criterioResolucion": "Los derechos del recién nacido al cuidado y a la lactancia son prioritarios. No puede negarse el permiso de dos horas diarias por el hecho de que la servidora tenga jornada a tiempo parcial, porque los artículos 23 de la Ley Orgánica del Derecho al Cuidado Humano y 33 de la LOSEP no distinguen por tipo de jornada. La falta de norma expresa no justifica el desconocimiento del derecho.",
+    "citaTextual": "así las cosas, tenemos que esta norma no debe ser entendida en favor de la madre, sino del niño o niña recién nacido, debido a que requiere de los cuidados especiales en sus primeros meses de vida",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al cuidado",
+      "Derecho a la protección prioritaria durante el posparto",
+      "Derecho a la lactancia materna",
+      "Derecho a la seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La actora es docente a medio tiempo de la Universidad Central del Ecuador. Su hijo nació el 22 de marzo de 2025 y tuvo licencia de maternidad hasta el 13 de junio de 2025. La Universidad negó el permiso remunerado de dos horas diarias mediante el oficio UCE-DTH-2025-3853-O, por considerar que la norma no regula a servidoras a tiempo parcial. La actora también tiene un contrato por horas con la Pontificia Universidad Católica del Ecuador.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

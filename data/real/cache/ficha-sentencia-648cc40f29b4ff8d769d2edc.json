@@ -1,0 +1,115 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22181,
+    "tokensSalida": 1792
+  },
+  "salida": {
+    "numero": "17250202400048",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "3 numeral 1",
+          "11 numerales 4, 7 y 9",
+          "82",
+          "76",
+          "34",
+          "371",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "10",
+          "13",
+          "39",
+          "40"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "192",
+          "263",
+          "268.1",
+          "271 a 281",
+          "279"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "7",
+          "8",
+          "9",
+          "25"
+        ]
+      },
+      {
+        "norma": "Pacto Internacional de Derechos Civiles y Políticos",
+        "articulos": [
+          "2",
+          "3",
+          "14"
+        ]
+      },
+      {
+        "norma": "Declaración Americana de Derechos y Deberes del Hombre",
+        "articulos": [
+          "XVIII"
+        ]
+      },
+      {
+        "norma": "Declaración Universal de Derechos Humanos",
+        "articulos": [
+          "8",
+          "9",
+          "10",
+          "11"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 013-15-SEP-CC, caso 0476-14-EP",
+      "Corte Constitucional, sentencia 054-14-SEP-CC, caso 2084-11-EP",
+      "Corte Constitucional, sentencia 016-13-SEP-CC, caso 1000-12-EP",
+      "Corte Constitucional, sentencia 904-12-JP/19",
+      "Corte Constitucional, sentencia 889-20-JP/21",
+      "Corte Constitucional, sentencia 005-16-SEP-CC, caso 1221-14-EP"
+    ],
+    "argumentacion": "La Sala niega el pedido de audiencia en segunda instancia por ser facultad potestativa del juzgador conforme el art. 24 LOGJCC. Verifica la validez procesal. Sobre el fondo, concluye que la retención de la pensión de jubilación en la cuenta del Produbanco vulnera el art. 371 CRE (no retención de prestaciones del seguro social) y la seguridad jurídica (art. 82 CRE), al no verificar el origen de los fondos. Descarta la vulneración de seguridad social y del debido proceso por falta de notificación, porque la accionante había actuado en el proceso coactivo desde el inicio y había señalado lugar para notificaciones. Confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Copias certificadas del proceso coactivo DPIC-OP-2022-950 (fs. 77 a 100), incluida la razón de 26 de marzo de 2024",
+      "Audio de la audiencia oral, pública y contradictoria",
+      "Documentación sobre la relación laboral y la condición de jubilada, no impugnada",
+      "Constancia de que la accionante señaló lugar para notificaciones en el proceso coactivo"
+    ],
+    "motivacion": "La Sala considera que la retención de fondos provenientes de una pensión de jubilación, sin verificar su origen, vulnera derechos constitucionales de protección reforzada. Por el contrario, la omisión de notificación no queda demostrada porque la accionante conoció y actuó en el proceso coactivo desde el comienzo. Con base en el art. 40 LOGJCC, estima que se cumplen los requisitos de procedencia y que la vía constitucional es la adecuada.",
+    "criterioResolucion": "La retención de cuentas bancarias en las que se acreditan pensiones de jubilación, dispuesta como medida cautelar en un procedimiento coactivo sin verificar el origen de los fondos, vulnera el art. 371 CRE (no retención de prestaciones de la seguridad social) y la seguridad jurídica; la acción de protección es la vía idónea para repararla.",
+    "citaTextual": "Las prestaciones en dinero del seguro social no serán susceptibles de cesión, embargo o retención, salvo los casos de alimentos debidos por ley o de obligaciones contraídas a favor de la institución aseguradora, y estarán exentas del pago de impuestos.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Jubilación universal",
+      "Tutela imparcial de sus intereses",
+      "Debido proceso (garantía de cumplimiento de normas y derechos)",
+      "Derecho a la defensa (ser escuchada, presentar argumentos, no ser privada de defensa en ninguna etapa)",
+      "Seguridad jurídica",
+      "No retención de prestaciones en dinero de la seguridad social"
+    ],
+    "fundamentosDeHecho": "La accionante fue servidora judicial del Consejo de la Judicatura y luego se jubiló. El Consejo inició un procedimiento coactivo (DPIC-OP-2022-950) por $4.910,72 con base en un título de crédito, y se dispuso la retención de fondos en sus cuentas, incluida la cuenta donde recibe su pensión de jubilación. La Sala considera acreditado que la accionante conoció y actuó en el proceso coactivo desde el inicio y que no se desvirtuó la retención de la pensión. No se acredita la omisión de notificación.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

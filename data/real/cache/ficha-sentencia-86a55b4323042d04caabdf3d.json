@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 24789,
+    "tokensSalida": 1551
+  },
+  "salida": {
+    "numero": "17282202600628",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "75",
+          "76.7.l",
+          "82"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42.1",
+          "42.4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "262",
+          "196",
+          "197",
+          "200"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "244"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 2901-19-EP/23",
+      "Corte Constitucional sentencia 2006-18-EP/24",
+      "Corte Constitucional sentencia 001-16-PJO-CC",
+      "Corte Constitucional sentencia 1178-19-JP/21",
+      "Corte Constitucional sentencia 2142-16-EP/21",
+      "Corte Constitucional sentencia 989-11-EP/19",
+      "Corte Constitucional sentencia 1084-14-EP/20",
+      "Corte Constitucional sentencia 1558-19-EP/23",
+      "Corte Constitucional sentencia 1933-21-EP/26",
+      "Corte Constitucional resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Interamericana de Derechos Humanos, caso Velásquez Rodríguez vs. Honduras"
+    ],
+    "argumentacion": "El tribunal de apelación analiza si la acción de protección es procedente. Constata que el accionante ya interpuso una acción contenciosa administrativa (No. 17811-2024-03310) con las mismas pretensiones y hechos sobre el expediente disciplinario No. 027-2024. Aplica la excepción de la sentencia 2901-19-EP/23 (superposición de vías ordinaria y constitucional) y la 2006-18-EP/24, y concluye que la acción está incursa en causal de improcedencia. Añade que el caso no encaja en las excepciones por notoria afectación de dignidad o autonomía del servidor. Subsidiariamente, reconoce que el juez a quo sí analizó los derechos denunciados y que la sentencia está motivada.",
+    "pruebas": [
+      "Acta de sorteo de la acción contenciosa administrativa No. 17811-2024-03310 (fojas 141)",
+      "Demanda contenciosa administrativa (fojas 142 a 147)",
+      "Expediente disciplinario No. 027-2024, incluida la citación de 6 de junio de 2024 (foja 11) y la resolución del Tribunal de Disciplina de 9 de julio de 2024"
+    ],
+    "motivacion": "La improcedencia se funda en la superposición de vías: identidad de hechos, cargos y pretensiones entre la acción de protección y la contenciosa administrativa ya radicada. Subsidiariamente, se sostiene que la sentencia de primera instancia contiene motivación suficiente.",
+    "criterioResolucion": "Cuando el accionante activa la vía ordinaria y luego propone acción de protección con los mismos hechos, cargos y pretensiones, la acción es manifiestamente improcedente y el juez puede desestimarla sin análisis profundo de las vulneraciones alegadas.",
+    "citaTextual": "39.1. Cuando los accionantes activaron, en primer lugar, la vía ordinaria y, posteriormente, propusieron una acción de protección con fundamento en los mismos hechos, cargos y pretensiones, sentencia 2901-19-EP/23.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso",
+      "Tutela judicial efectiva"
+    ],
+    "fundamentosDeHecho": "El accionante fue sancionado por el Tribunal de Disciplina de la Primera División de Ejército SHYRIS mediante resolución de 9 de julio de 2024 en el expediente 027-2024, con separación del servicio activo por abandono de servicio de guardia. Alega que la citación del 10 de junio de 2024 se realizó 102 días después de la supuesta falta del 29 de febrero de 2024, fuera del plazo de tres meses del artículo 262 LOPDFA. Consta que ya tramitaba una acción contenciosa administrativa (17811-2024-03310) con las mismas pretensiones.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 30269,
+    "tokensSalida": 3361
+  },
+  "salida": {
+    "numero": "17282202401945",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66 numeral 4",
+          "82",
+          "88",
+          "169",
+          "341"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "40",
+          "42 numerales 1, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Reglamento a la Ley de Reconocimiento de Héroes y Heroínas Nacionales",
+        "articulos": [
+          "13"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 1894-10-JP/20",
+      "Sentencia 1797-18-EP/20"
+    ],
+    "argumentacion": "El tribunal confirma la improcedencia decidida en primera instancia. Primero, verifica la validez formal del proceso. Segundo, recuerda que la acción de protección no sustituye a las vías ordinarias y que debe verificarse si hubo acto u omisión violatoria de derechos. Tercero, examina igualdad y no discriminación: concluye que no hay trato diferenciado probado entre pares, pues los accionantes fueron conscriptos en servicio activo y los reservistas ARUTAM fueron calificados por el CPCCS en condiciones distintas. Cuarto, examina seguridad jurídica: concluye que la Comisión aplicó la Ley y su reglamento, y que los accionantes no probaron el acto heroico exigido por el artículo 13 del reglamento. Quinto, considera que el reclamo es, en sustancia, un control de legalidad y un pedido de declaración de derecho, por lo que aplica las causales 1, 4 y 5 del artículo 42 de la LOGJCC.",
+    "pruebas": [
+      "Listados remitidos por el Ministerio de Defensa Nacional",
+      "Oficio MDN-DSG-2024-0609-ME y memorando MDN-DSG-2024-0641-ME, según lo invocado por la defensa",
+      "Documentación del Consejo de Participación Ciudadana (Memorias del Primer Proceso de Reconocimiento de Héroes y Heroínas Nacionales, anexo 6)",
+      "Testimonios de Crespo Torres José Luis y García Jiménez Gerardo Vinicio",
+      "Postulaciones de los accionantes y su documentación anexa"
+    ],
+    "motivacion": "El tribunal sostiene que no hay violación de derechos constitucionales (igualdad y seguridad jurídica) y que la pretensión es una declaración de derecho sobre el reconocimiento de héroes, que corresponde a la vía ordinaria o administrativa. Por ello niega la acción por improcedente, al amparo del artículo 42 numerales 1, 4 y 5 de la LOGJCC, y rechaza la apelación.",
+    "criterioResolucion": "Quien pide el reconocimiento de la calidad de héroe debe probar el acto heroico exigido por la ley; la falta de esa prueba no vulnera seguridad jurídica ni igualdad, y la pretensión de declaración de un derecho es improcedente en acción de protección.",
+    "citaTextual": "Es decir, la Ley establece que se debía probar la realización de un acto heroico, situación que no se ha cumplido por parte de los legitimados activos, razón por la cual han sido excluidos de dicho reconocimiento",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la igualdad formal, material y no discriminación",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la tutela judicial efectiva (motivación)"
+    ],
+    "fundamentosDeHecho": "Los accionantes, integrantes de la Asociación de Excombatientes del Alto Cenepa, fueron conscriptos en el conflicto de 1995. Postularon al reconocimiento como héroes nacionales y su postulación no fue calificada. Reclaman los beneficios de la disposición final segunda de la Ley de Reconocimiento de Héroes y Heroínas Nacionales frente al Ministerio de Defensa Nacional. El tribunal no encuentra probado el acto heroico exigido ni un trato discriminatorio, y el CPCCS calificó como héroes a reservistas ARUTAM en condiciones distintas.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

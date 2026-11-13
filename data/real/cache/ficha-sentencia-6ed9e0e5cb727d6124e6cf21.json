@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 18039,
+    "tokensSalida": 1413
+  },
+  "salida": {
+    "numero": "17113202400036",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "89 inciso quinto",
+          "89",
+          "75",
+          "77 numeral 9",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "44.1",
+          "43"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "541 numerales 2, 5 y 7",
+          "534",
+          "162",
+          "42 numeral 1 literal a",
+          "47 numeral 5"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "25.1",
+          "7.6",
+          "27.2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Interamericana, Opinión Consultiva OC-8/87 (30 de enero de 1987)",
+      "Corte Nacional de Justicia, sentencia N° 23112-2021-00064"
+    ],
+    "argumentacion": "El tribunal declara su competencia por tratarse de privación de libertad dispuesta en proceso penal. Clasifica la acción como hábeas corpus traslativo por invocarse la caducidad de la prisión preventiva. Con base en el informe del tribunal penal y en la respuesta del juez accionado, establece que no existe sentencia condenatoria y que el procesado permaneció privado de libertad desde el 3 de febrero de 2022 (detención en Colombia) hasta la presentación de la acción el 3 de octubre de 2024, unos dos años y ocho meses. Aplica el plazo máximo de un año para delitos sancionados con reclusión (secuestro extorsivo, pena de diez a trece años) y concluye que la prisión preventiva caducó, por lo que la privación de libertad es ilegal y arbitraria.",
+    "pruebas": [
+      "Parte policial de Interpol Colombia del 3 de febrero de 2022",
+      "Oficio de Interpol Ecuador y resolución de la Presidencia de la Corte Nacional de Justicia de 7 de febrero de 2022",
+      "Certificación del Centro de Privación Provisional Pichincha No. 1 (El Inca) del 17 de octubre de 2024",
+      "Boleta de encarcelamiento No. 09281-2022-000152",
+      "Informe del Tribunal de Garantías Penales de Guayaquil",
+      "Informe escrito del juez accionado Roberto Calderón Filian",
+      "Acta de sorteo de fojas 68"
+    ],
+    "motivacion": "La caducidad se verifica por el cómputo de tiempo desde la privación efectiva de la libertad y la ausencia de sentencia condenatoria, aplicando el límite de un año de la norma constitucional y legal para delitos de reclusión. No consta en el texto que el procesado haya evadido o retardado su juzgamiento, por lo que no se aplica la suspensión del plazo.",
+    "criterioResolucion": "La prisión preventiva caduca cuando, sin sentencia condenatoria, se exceden los plazos legales (en delitos de reclusión, un año), y la privación de libertad posterior se vuelve ilegal y arbitraria, lo que justifica el hábeas corpus traslativo.",
+    "citaTextual": "por lo que la privación de la libertad se torna en ilegal y arbitraria",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Tutela judicial efectiva en el elemento de celeridad procesal",
+      "Libertad personal",
+      "Garantía de plazo máximo de la prisión preventiva (artículo 77 numeral 9 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "El procesado chino Guo Gui fue detenido en Cali, Colombia, el 3 de febrero de 2022 por orden de captura con fines de extradición en la causa penal 09281-2021-00636 por secuestro extorsivo. Fue extraditado y se encuentra en El Inca desde el 6 de junio de 2024. No consta sentencia condenatoria. El juez accionado no remitió oportunamente el proceso al tribunal de garantías penales ni resolvió la solicitud de caducidad presentada el 30 de septiembre de 2024.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

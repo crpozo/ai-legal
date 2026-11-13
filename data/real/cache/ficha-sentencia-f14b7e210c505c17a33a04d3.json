@@ -1,0 +1,69 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26818,
+    "tokensSalida": 1542
+  },
+  "salida": {
+    "numero": "17205202400925",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86.5",
+          "88",
+          "82",
+          "76 numeral 7"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 3, 4 y 5",
+          "6"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 2006-18-EP/24",
+      "Corte Constitucional 1101-20-EP/22",
+      "Corte Constitucional 1178-19-JP/21",
+      "Corte Constitucional 49-21-CN/25",
+      "Corte Constitucional 001-16-PJO-CC",
+      "Corte Constitucional 210-16-SEP-CC",
+      "Corte Constitucional 1116-13-EP/20",
+      "Corte Constitucional 214-17-SEP-CC",
+      "Corte Constitucional 135-14-SEP-CC",
+      "Corte Constitucional 016-13-SEP-CC",
+      "Corte Constitucional 041-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación revisa la sentencia de primera instancia que había declarado vulnerados el debido proceso (defensa) y la seguridad jurídica. Aplica la excepción de la sentencia 2006-18-EP/24 para actos administrativos sobre conflictos laborales o contractuales con el Estado, que corresponden por regla general a la jurisdicción ordinaria. Examina la igualdad: el accionante no recurrió en sede administrativa, a diferencia de los 15 recurrentes, por lo que no hay comparabilidad ni trato diferenciado discriminatorio. Sobre el debido proceso y la seguridad jurídica, concluye que verificar si la terminación unilateral del contrato observó sus cláusulas es una cuestión de legalidad que compete a la justicia ordinaria. Por ello revoca y rechaza la acción por improcedente.",
+    "pruebas": [
+      "Oficio Nro. IESS-DPP-2024-0167-O de 8 de abril de 2024",
+      "Resolución Nro. IESS-PG-2024-0016-R de 29 de mayo de 2024",
+      "Contrato de prestación de servicios de 7 de junio de 2023 (cláusula séptima)"
+    ],
+    "motivacion": "Se considera que la controversia sobre si el acto es de simple administración y si la terminación contractual respetó las cláusulas del contrato es de mera legalidad, y que el accionante no agotó la vía administrativa ni demostró una vulneración de igualdad al no haber impugnado el acto, por lo que corresponde a la justicia ordinaria conocerla (arts. 42.3 y 42.4 LOGJCC).",
+    "criterioResolucion": "Cuando se impugnan actos administrativos sobre conflictos laborales o contractuales entre el Estado y sus prestadores o servidores, el conocimiento corresponde por regla general a la jurisdicción ordinaria, salvo que se comprometa notoria o gravemente la dignidad o autonomía del afectado o se requiera respuesta urgente; determinar si la terminación contractual observó las cláusulas es una cuestión de legalidad.",
+    "citaTextual": "Cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso en la garantía del derecho a la defensa",
+      "Seguridad jurídica",
+      "Igualdad"
+    ],
+    "fundamentosDeHecho": "El accionante prestaba servicios profesionales como secretario abogado externo de coactiva del IESS en Pichincha desde el 7 de junio de 2023. Mediante oficio de 8 de abril de 2024 se dio por terminado su contrato sin notificarle previamente los informes de evaluación. Quince gestores que apelaron obtuvieron la nulidad de ese oficio en cuanto a su contrato mediante resolución de 29 de mayo de 2024; el accionante no apeló.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

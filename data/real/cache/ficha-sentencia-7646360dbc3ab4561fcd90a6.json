@@ -1,0 +1,46 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 6137,
+    "tokensSalida": 1017
+  },
+  "salida": {
+    "numero": "17113202600026",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "76 numeral 7 literal k",
+          "89"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 7",
+          "7",
+          "44 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia N.° 020-17-SEP-CC, caso N.° 0223-16-EP (18 de enero de 2017)",
+      "Corte Constitucional, Sentencia No. 365-18-JH/21 y acumulados (21 de marzo de 2021)",
+      "Corte Constitucional, Sentencia 98-23-JH/23 (13 de diciembre de 2023)"
+    ],
+    "argumentacion": "El tribunal verifica su competencia previa a sustanciar la causa. Constata, a partir del libelo, que el accionante está privado de libertad en el Centro de Privación de Libertad El Rodeo, Portoviejo, jurisdicción de Manabí. Cita el artículo 7 y el artículo 44 de la LOGJCC, que atribuyen competencia al juez del lugar donde se presume la privación de libertad, y la jurisprudencia constitucional que exige motivar la incompetencia y, en caso de incompetencia territorial, inadmitir la acción remitiendo el expediente al juez competente. Concluye que el tribunal no es competente en razón del territorio.",
+    "pruebas": [
+      "Libelo de la demanda y correo electrónico del Centro de Privación de Libertad El Rodeo Portoviejo, anexado para notificación y conexión a la audiencia",
+      "Constatación de la privación de libertad a partir del libelo"
+    ],
+    "motivacion": "La competencia territorial depende del lugar donde se presume la privación de libertad. Al constar que el accionante está privado de libertad en Portoviejo, el tribunal no es competente y debe inadmitir la acción y remitirla a la Corte Provincial de Manabí para sorteo.",
+    "criterioResolucion": "En hábeas corpus, si la jueza o juez es incompetente en razón del territorio, debe inadmitir la acción en su primera providencia y remitir el expediente de inmediato al juez competente, sin archivarlo, según el lugar donde se presume la privación de libertad.",
+    "citaTextual": "deberá inadmitir la acción en su primera providencia, pero no podrá disponer al archivo, sino que remitirá en forma inmediata el expediente al juez competente.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [],
+    "fundamentosDeHecho": "El accionante Joan Antonio Álava Toárez, con cédula 1310717739, se encuentra privado de libertad en el Centro de Privación de Libertad El Rodeo Portoviejo, según consta del libelo. El tribunal no conoció la acción en el fondo.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

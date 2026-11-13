@@ -1,0 +1,86 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31441,
+    "tokensSalida": 3788
+  },
+  "salida": {
+    "numero": "17250202400002",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 82",
+          "Art. 226",
+          "Art. 228",
+          "Art. 76 num. 7 lit. m)",
+          "Art. 86.3",
+          "Art. 86.5",
+          "Art. 88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "Art. 5 lit. h)",
+          "Art. 17 lit. b.5)",
+          "Art. 86"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional (LOGJCC)",
+        "articulos": [
+          "Art. 16",
+          "Art. 18",
+          "Art. 19",
+          "Art. 21",
+          "Art. 24",
+          "Art. 39",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "Art. 22"
+        ]
+      },
+      {
+        "norma": "Norma técnica del subsistema de reclutamiento y selección de personal (RO 155, 15-jun-2011)",
+        "articulos": [
+          "Disposición Transitoria Quinta"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 1290-18-EP/21 (párrafos 40 y 149)",
+      "Corte Constitucional 8-19-IS/22",
+      "Corte Interamericana de Derechos Humanos, caso Trujillo Oroza vs. Bolivia (citada en Sentencia 57-17-IS/19, párrafo 69)"
+    ],
+    "argumentacion": "El tribunal de apelación verifica la vulneración de derechos constitucionales alegada. Concluye que el concurso fue declarado con ganadora a la accionante y que se le otorgó nombramiento provisional el 3 de octubre de 2011. Sostiene que la omisión del informe favorable del Instituto Nacional de Meritocracia no puede trasladarse a la ganadora y que, por ello, el Ministerio de Educación alteró arbitrariamente su situación jurídica, vulnerando la seguridad jurídica. Deriva de ello la afectación al derecho al trabajo. Confirma la vulneración declarada en primera instancia. Sobre la reparación económica, la revoca por retardo injustificado en la presentación de la demanda (más de 13 años) y ratifica el reintegro como medida de reparación integral en equidad.",
+    "pruebas": [
+      "Acta final de oposición de 22 de septiembre de 2011 (fojas 13 a 14), con puntaje de la accionante",
+      "Memorando MINEDUC-SEDMQ-2012-00071 de 14 de febrero de 2012 (fojas 10)",
+      "Pronunciamiento 0368-DS-INM-2011 del Instituto Nacional de Meritocracia de 24 de noviembre de 2011 (fojas 160 a 162)",
+      "Nombramiento provisional y acción de personal No. 0286985, vigente a la fecha de la acción",
+      "Publicación de la convocatoria en Últimas Noticias de 17 de mayo de 2011",
+      "Oficios del Colegio Diez de Agosto (oficios 13 CNDA y 23 CNDA) y certificación presupuestaria"
+    ],
+    "motivacion": "La decisión se justifica en que la accionante cumplió los requisitos del concurso y fue declarada ganadora, y que la entidad pública no demostró lo contrario ni aportó una base legal para no otorgarle el nombramiento definitivo, por lo que opera la inversión de la carga de la prueba del art. 86.3 de la Constitución. La vulneración de la seguridad jurídica se considera probada. Respecto de la reparación económica, el tribunal la deja sin efecto por el retardo injustificado en demandar, citando la sentencia 1290-18-EP/21, y mantiene el reintegro al puesto con características equivalentes.",
+    "criterioResolucion": "Quien gana un concurso de méritos y oposición tiene derecho a que se le otorgue el nombramiento definitivo tras el nombramiento provisional. Las omisiones administrativas posteriores (falta de informe del Instituto de Meritocracia) no pueden imputarse a la ganadora, y su separación verbal, sin acto administrativo, vulnera la seguridad jurídica y el derecho al trabajo. La reparación económica no procede cuando la demora en demandar es excesiva y no está justificada; en tal caso se ordena el reintegro como reparación integral.",
+    "citaTextual": "la legitimada activa no ha justificado el retardo excesivo para demandar la violación de sus derechos constitucionales, y lo ha hecho luego de más de 13 años, por lo que el Tribunal de Alzada considera que no cabe ningún tipo de indemnización económica",
+    "apelacion": "reforma",
+    "derechosInvocados": [
+      "Debido proceso",
+      "Derecho a la defensa",
+      "Seguridad jurídica",
+      "Derecho al trabajo"
+    ],
+    "fundamentosDeHecho": "La accionante fue declarada ganadora de un concurso de méritos y oposición para odontóloga del Colegio Nacional Diez de Agosto en 2011 (acta de 22 o 23 de septiembre de 2011). Se le otorgó nombramiento provisional el 3 de octubre de 2011, que ejerció dos meses. Luego, de forma verbal, se le pidió que dejara de laborar sin acto administrativo notificado. La acción de personal sigue vigente. El concurso no contó con el informe favorable previo del Instituto Nacional de Meritocracia. La acción se presentó más de 13 años después de los hechos, sin justificación del retardo.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

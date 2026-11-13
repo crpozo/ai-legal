@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 28725,
+    "tokensSalida": 1728
+  },
+  "salida": {
+    "numero": "17113202400014",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "82",
+          "76 numeral 7 literal a)",
+          "76 numeral 7 literal l)",
+          "86 numeral 5",
+          "169"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "542",
+          "540",
+          "534",
+          "522 numerales 1 y 2",
+          "521",
+          "520",
+          "519",
+          "5 numerales 11, 13 y 17"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "43",
+          "44",
+          "45 numeral 2",
+          "6",
+          "168 numeral 2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1158-17-EP/21",
+      "Corte Constitucional, sentencia 004-18-PJO-CC, caso 0157-15-JHJ",
+      "Corte Constitucional, sentencia 006-17-SCN-CC, caso 0011-11-CN",
+      "Corte Constitucional, sentencia 171-15-SEP-CC, caso 0560-12-EP",
+      "Corte Nacional de Justicia, Juicio No. 08102-2022-00010",
+      "Corte Interamericana de Derechos Humanos, caso Gangaram Panday Vs. Surinam",
+      "Corte Interamericana de Derechos Humanos, caso La Cantuta Vs. Perú",
+      "Corte Interamericana de Derechos Humanos, caso Tibi Vs. Ecuador",
+      "Corte Interamericana de Derechos Humanos, Opinión Consultiva OC-8/87"
+    ],
+    "argumentacion": "El tribunal fija como problema jurídico si, para revocar las medidas alternativas del art. 522 numerales 1 y 2 del COIP por incumplimiento, era necesaria una audiencia oral, pública y contradictoria. Sostiene que el art. 542 del COIP regula el incumplimiento, pero que la revocatoria de una medida no privativa de libertad debe discutirse y resolverse en audiencia. Constata que no hubo audiencia en la que se discutiera la prisión preventiva, pese a que la audiencia de juicio fue declarada fallida, y concluye que la privación de libertad es ilegal y arbitraria por vulnerar el principio de legalidad. Aunque el texto relata que la orden se dictó en la misma audiencia fallida, el tribunal lo valora como ausencia de audiencia contradictoria.",
+    "pruebas": [
+      "Boleta de encarcelamiento No. 17250-2024-000013 de 22 de abril de 2024",
+      "Parte policial No. 2024042104532573812",
+      "Informe de los jueces del Tribunal de Garantías Penales de Iñaquito",
+      "Razón actuarial de la audiencia de juicio fallida de 19 de octubre de 2022",
+      "Auto interlocutorio de prisión preventiva de 19 de octubre de 2022 (referido en el texto)"
+    ],
+    "motivacion": "La privación de libertad se considera ilegal y arbitraria porque la orden de prisión preventiva no se adoptó en audiencia oral, pública y contradictoria, exigida por los arts. 540 y 521 del COIP, y el derecho a la defensa (art. 76.7.a CRE). El tribunal entiende que el principio de concentración no suple esa audiencia. Se apoya en el art. 45 numeral 2 de la LOGJCC y en la seguridad jurídica (art. 82 CRE).",
+    "criterioResolucion": "La revocatoria de medidas cautelares no privativas de libertad por incumplimiento, y la consiguiente orden de prisión preventiva, deben discutirse y resolverse en audiencia oral, pública y contradictoria; si no hubo tal audiencia, la privación de libertad es ilegal y arbitraria. El tribunal no aplica el principio de concentración para suplir dicha audiencia.",
+    "citaTextual": "la revocatoria de una medida diferente a la privación de la libertad, por incumplimiento de la misma, se debe discutir y resolver en audiencia oral, publica y contradictoria.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Debido proceso",
+      "Derecho a la defensa (art. 76.7.a, c y h CRE)",
+      "Motivación (art. 76.7.l CRE)",
+      "Libertad personal (art. 89 CRE)"
+    ],
+    "fundamentosDeHecho": "Los procesados MIGUEL ALEXANDER MONTAÑO NARVÁEZ y otro fueron llamados a juicio por robo (art. 189 COIP) con medidas cautelares no privativas de libertad. El 19 de octubre de 2022 no comparecieron a la audiencia de juicio, que se declaró fallida. En la misma fecha el tribunal ordenó prisión preventiva a petición de fiscalía, con base en el art. 542 del COIP. El 21 de abril de 2024 el accionante fue detenido en virtud de esa orden, regularizada por boleta de 22 de abril de 2024.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

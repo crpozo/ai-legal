@@ -1,0 +1,108 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 24972,
+    "tokensSalida": 1909
+  },
+  "salida": {
+    "numero": "17371202502913",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86.5",
+          "88",
+          "82",
+          "35",
+          "36",
+          "38",
+          "47",
+          "50",
+          "154 numeral 1",
+          "160",
+          "163",
+          "173",
+          "227",
+          "229"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público",
+        "articulos": [
+          "4",
+          "59",
+          "60",
+          "65",
+          "102"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "164"
+        ]
+      },
+      {
+        "norma": "Estatuto Orgánico de Gestión por Procesos de la Policía Nacional (Acuerdo Ministerial 080)",
+        "articulos": [
+          "11",
+          "51",
+          "55"
+        ]
+      },
+      {
+        "norma": "Reglamento Sustitutivo al Reglamento de Carrera para las y los Servidores Policiales",
+        "articulos": [
+          "145"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 2126-19-EP/24",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 2901-19-EP/23"
+    ],
+    "argumentacion": "El tribunal de apelación revisa la sentencia de primera instancia que aceptó la acción. Primero considera que la acción de protección debe analizar si hay vulneración, pero que existen excepciones jurisprudenciales cuando el asunto es un conflicto laboral del servidor público con el Estado sin compromiso grave de dignidad o autonomía. Constata que la discapacidad auditiva de la madre (41%, moderada) no demuestra que dependa necesariamente del accionante, por lo que no se trata de un caso de notoria gravedad o discriminación evidente. Concluye que el traslado se fundó en normas previas y en autoridad competente, sin arbitrariedad, y que los derechos de atención prioritaria no se vulneran directamente por el traslado. Declara improcedente la acción conforme al artículo 42 numerales 1, 3, 4 y 5 de la LOGJCC y remite al accionante a la justicia ordinaria.",
+    "pruebas": [
+      "Telegrama Nro. PN-DNATH-DTD-2025-4040-T de 26 de septiembre de 2025",
+      "Memorando Nro. PN-DNATH-2025-126-M de 23 de octubre de 2025",
+      "Oficio Nro. PN-DNATH-QX-2025-30229-O de 23 de octubre de 2025",
+      "Certificado de inscripción de persona con discapacidad (41%, tipo auditivo) de fojas 6",
+      "Cédula de la madre del accionante de fojas 10",
+      "Formulario de registro de firmas de fojas 4"
+    ],
+    "motivacion": "La improcedencia se justifica porque: (i) el caso es un conflicto laboral-administrativo de servidor policial, cuya vía idónea es la contencioso-administrativa u ordinaria según la regla de la Sentencia 2006-18-EP/24; (ii) no se acredita afectación grave a la dignidad o autonomía de la madre; (iii) el acto de traslado tiene base legal y competencial, por lo que no hay vulneración de seguridad jurídica; (iv) los derechos de atención prioritaria invocados no resultan vulnerados directamente por el traslado.",
+    "criterioResolucion": "En conflictos laborales entre el Estado y servidores públicos que impugnan actos administrativos (como traslados), la acción de protección es improcedente por regla general, salvo que el asunto comprometa notoria o gravemente la dignidad o autonomía del servidor, como en casos de evidente discriminación, o requiera respuesta urgente.",
+    "citaTextual": "el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo. Esto implica un trato igualitario hacia los servidores públicos respecto de los empleados sujetos al Código del Trabajo o a la Ley Orgánica de Empresas Públicas",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Derecho de defensa",
+      "Incumplimiento de norma",
+      "Tutela judicial efectiva",
+      "Debido proceso",
+      "Igualdad y no discriminación",
+      "Derechos de personas con discapacidad (cuidado y vivienda adecuada, art. 47 CRE)",
+      "Protección de personas de atención prioritaria (art. 35 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, Sargento Segundo de Policía, fue incluido en el Telegrama PN-DNATH-DTD-2025-4040-T de 26 de septiembre de 2025 para un traslado temporal de 120 días a Zaruma (El Oro). Su madre tiene una discapacidad auditiva del 41% y vive con él en Quito. La solicitud de dejar sin efecto el traslado fue declarada no procedente mediante memorando de 23 de octubre de 2025, que remitió a trámite de calamidad doméstica. La jueza de primera instancia aceptó la acción; el tribunal de apelación, al resolver el recurso de los legitimados pasivos, la desestimó.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

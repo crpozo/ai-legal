@@ -1,0 +1,89 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22311,
+    "tokensSalida": 3619
+  },
+  "salida": {
+    "numero": "17U05202500009",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "88",
+          "228",
+          "229",
+          "325",
+          "326",
+          "33",
+          "11.2",
+          "66.4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42.1",
+          "42.3",
+          "42.4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "Disposición Transitoria Undécima"
+        ]
+      },
+      {
+        "norma": "Reglamento de la LOSEP",
+        "articulos": [
+          "18"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 016-13-SEP-CC, caso 1000-12-EP",
+      "Sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Sentencia 001-16-PJO-CC, caso 530-10-JP",
+      "Sentencia 102-13-SEP-CC, caso 0831-12-EP",
+      "Sentencia 0380-10-EP",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación parte de la jurisprudencia de la Corte Constitucional que obliga a examinar primero si hubo vulneración de derechos, salvo excepciones. Constata que la pretensión es aplicar la Disposición Transitoria Undécima de la LOSEP, que es una norma infraconstitucional, y que el conflicto es laboral entre servidores públicos y el IESS. Aplica la excepción de la sentencia 2006-18-EP/24, según la cual estos conflictos corresponden por regla general a la jurisdicción contencioso administrativa, salvo que comprometan gravemente la dignidad o autonomía del servidor, exista evidente discriminación o se requiera una respuesta urgente. Considera que no concurre ninguna de esas excepciones. Concluye que la acción es manifiestamente improcedente conforme al artículo 42 numerales 1, 3 y 4 de la LOGJCC. Rechaza la apelación y confirma la sentencia de primera instancia, que había negado la acción por improcedencia tras analizar seguridad jurídica, trabajo e igualdad.",
+    "pruebas": [
+      "Actas de declaratoria de ganador IESS-CMO-DTU-2018-0003 (puesto de enfermería) y SDNGTH-IESS-CMO-AC-2019-092 (puesto de médico especialista en pediatría)",
+      "Certificados de tiempo de servicio aportados por los accionantes",
+      "Documentación del IESS sobre concursos previos y circunstancias de la suspensión de convocatorias"
+    ],
+    "motivacion": "La improcedencia se funda en que el caso es un conflicto laboral de mera legalidad sobre la aplicación de una norma infraconstitucional, sin dignidad comprometida, discriminación evidente ni urgencia. El tribunal cita además que los accionantes no identificaron casos comparables suficientes para sostener la desigualdad de trato. Como argumento subsidiario, la sentencia de primera instancia había considerado que no se acreditó vulneración de seguridad jurídica, trabajo ni igualdad, mientras el tribunal de apelación se apoya principalmente en la improcedencia.",
+    "criterioResolucion": "Cuando se impugnan actos u omisiones de la administración sobre conflictos laborales entre el Estado y sus servidores públicos, la materia corresponde por regla general a la jurisdicción contencioso administrativa. La acción de protección solo procede si el caso compromete notoria o gravemente la dignidad o autonomía del servidor, hay evidente discriminación o se requiere respuesta urgente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo (art. 33 y, según se cita en la demanda, art. 3 de la Constitución)",
+      "Estabilidad laboral (arts. 228 y 229 de la Constitución)",
+      "Seguridad jurídica",
+      "Igualdad y no discriminación (arts. 11.2 y 66.4 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "Los accionantes son servidores del IESS, en el Hospital de Especialidades Carlos Andrade Marín, con nombramiento provisional y más de cuatro años de servicios ininterrumpidos a la fecha de la Disposición Transitoria Undécima. Consta que el IESS realizó concursos en 2018 y 2019 para otros puestos. No consta convocatoria reciente para los puestos de los accionantes. El IESS atribuye la falta de convocatoria a la pandemia, a la ejecución de sentencias previas, a cambios normativos y a la dependencia del Ministerio de Trabajo. El tribunal no encontró probado un trato desigual injustificado ni una vulneración de derechos que habilite la vía constitucional.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

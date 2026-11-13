@@ -1,0 +1,99 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 16787,
+    "tokensSalida": 2012
+  },
+  "salida": {
+    "numero": "17203202503784",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "88",
+          "226 num. 2",
+          "228",
+          "229",
+          "170",
+          "86 num. 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "136",
+          "120",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público (LOSEP)",
+        "articulos": [
+          "83 letra h",
+          "85",
+          "47 letra e"
+        ]
+      },
+      {
+        "norma": "Reglamento de la LOSEP",
+        "articulos": [
+          "17",
+          "105"
+        ]
+      },
+      {
+        "norma": "Reglas de Procedimiento para el Ejercicio de las Competencias de la Corte Constitucional",
+        "articulos": [
+          "50"
+        ]
+      },
+      {
+        "norma": "Acuerdo Ministerial MDT-2025-105",
+        "articulos": [
+          "3"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 0016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 053-16-SEP-CC (caso 0577-12-EP)",
+      "Sentencia No. 2126-19/24 (citada en audiencia por la Fiscalía; no se transcribe su contenido)"
+    ],
+    "argumentacion": "El tribunal fija dos puntos: si la terminación unilateral del nombramiento provisional vulnera derechos constitucionales y si el asunto es de mera legalidad. Concluye que la terminación es una facultad legal de la Administración, que no implica vulneración del derecho al trabajo ni de la estabilidad, y que el art. 136 del COFJ no es aplicable porque la accionante no ganó concurso. Descarta la estabilidad reforzada porque la accionante no es sustituta, no tiene discapacidad ni está embarazada o en lactancia, y la enfermedad de la madre no encaja en esos supuestos. Añade que la accionante conocía la falta de estabilidad al aceptar el nombramiento provisional. Remite la controversia a la vía ordinaria o contencioso-administrativa.",
+    "pruebas": [
+      "Acción de personal No. 3148-DTH-FGE (29 de mayo de 2024)",
+      "Resolución No. 004-FGE-2025 (31 de enero de 2025)",
+      "Informe técnico No. FGE-DTH-2025-00027 (31 de enero de 2025)",
+      "Acción de personal No. 323-DTH-FGE (21 o 31 de enero de 2025; el texto presenta ambas fechas)",
+      "Nombramiento provisional emitido el 1 de junio de 2024 (según la Fiscalía)",
+      "Certificados médicos de la madre de la accionante (informes de 24 de abril y 26 de mayo de 2025, citados por la Fiscalía)",
+      "Certificado del médico institucional sobre servicios como ayudante de fiscal (aportado por la Fiscalía)"
+    ],
+    "motivacion": "La decisión se justifica en que no hay vulneración directa de derechos constitucionales sino un asunto de legalidad del acto administrativo, con vías ordinarias idóneas. Se apoya en la LOGJCC y en precedentes de la Corte Constitucional sobre la naturaleza de la acción de protección y la estabilidad en el sector público. Se confirma la sentencia de primera instancia.",
+    "criterioResolucion": "La terminación unilateral de un nombramiento provisional en el sector público, prevista en la ley, no vulnera por sí misma el derecho al trabajo ni la estabilidad; sin concurso de méritos y oposición o sin un supuesto de estabilidad reforzada (discapacidad, sustituto directo, embarazo o lactancia), el asunto es de mera legalidad y debe ventilarse en la vía ordinaria.",
+    "citaTextual": "Se vulnera el derecho al trabajo cuando se impide o limita sin justa ni legal causa del trabajo a una persona, como por ejemplo por razones discriminatorias, o sin sustento normativo, más sucede, que si la posibilidad de dar por terminada una relación laboral en el sector público, se encuentra normada en la Ley, tal situación per se no implica vulneración al derecho al trabajo o la estabilidad",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo (art. 33 CRE)",
+      "Estabilidad laboral",
+      "Intangibilidad e inalienabilidad de derechos laborales (art. 226 num. 2 CRE)",
+      "Prohibición de regresión en derechos fundamentales",
+      "Derecho a desempeñar empleos y funciones públicas (arts. 228 y 229 CRE)",
+      "Derecho 61.7 CRE"
+    ],
+    "fundamentosDeHecho": "La accionante fue nombrada provisionalmente como asistente de fiscal en la Fiscalía Provincial de Los Ríos y su nombramiento fue dado por terminado mediante resolución de 31 de enero de 2025, sustentada en un informe técnico que invocó necesidad institucional y optimización de recursos. Alegó que la decisión fue contradictoria porque se vinculó a otra persona en su puesto, y que no se consideró la situación de su madre con una enfermedad diagnosticada en diciembre de 2024. La Fiscalía sostuvo que el nombramiento fue provisional, que no era sustituta ni tenía discapacidad, y que no había notificado la enfermedad de su madre. El tribunal no fija hechos probatorios específicos sobre la vinculación de otra persona ni sobre el conocimiento institucional de la enfermedad, más allá de constatar que la Fiscalía lo justificó como no puesto en conocimiento.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

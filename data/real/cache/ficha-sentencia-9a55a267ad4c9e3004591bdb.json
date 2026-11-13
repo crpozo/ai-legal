@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32012,
+    "tokensSalida": 1629
+  },
+  "salida": {
+    "numero": "17284202500285",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "30",
+          "31",
+          "44",
+          "45",
+          "76",
+          "82",
+          "86 numeral 5",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "25 numeral 1",
+          "40 numerales 1, 2 y 3",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "8",
+          "9",
+          "23",
+          "25"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 146-14-SEP-CC (caso 1773-11-EP)",
+      "Sentencia 1298-17-EP/21",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 239-17-EP/22"
+    ],
+    "argumentacion": "El tribunal de alzada considera que el asunto no es materia de acción de protección, pero analiza igualmente cada derecho alegado. Descarta vulneración de vivienda digna porque el remate deriva del incumplimiento de un préstamo hipotecario; descarta vulneración del interés superior de niños, niñas y adolescentes siguiendo el criterio de la jueza de primera instancia; verifica que la accionante fue notificada el 18 de marzo de 2022 con el requerimiento de pago y en persona con la orden de pago, por lo que no hay indefensión; y concluye que no hay afectación a la seguridad jurídica porque las actuaciones fueron emitidas por autoridad competente. Finalmente, aplica la improcedencia por cuestiones de mera legalidad y por existencia de vía judicial ordinaria.",
+    "pruebas": [
+      "Requerimiento de pago voluntario notificado el 18 de marzo de 2022 (fs. 354)",
+      "Notificación personal de la orden de pago (fs. 389)",
+      "Auto de 15 de noviembre de 2022 (fs. 107), citado por el banco",
+      "Informe pericial informático forense (fs. 66 vuelta y anexos)",
+      "Copias certificadas del juicio coactivo y hojas SF/SN (fs. 99)",
+      "Comparecencia de 7 de abril de 2025 con correos electrónicos para notificaciones (fs. 305 y 307)"
+    ],
+    "motivacion": "La improcedencia se funda en el numeral 1 del artículo 42 de la LOGJCC, por no verificarse vulneración de derechos constitucionales, y en los numerales 3 y 4 del mismo artículo, por tratarse de impugnación de legalidad y por existir vía judicial ordinaria idónea respecto del acto administrativo coactivo.",
+    "criterioResolucion": "La acción de protección no procede para resolver conflictos de mera legalidad sobre actuaciones de un procedimiento coactivo cuando no se verifica una real vulneración de derechos constitucionales y existe una vía judicial ordinaria para impugnar el acto administrativo.",
+    "citaTextual": "la acción de protección es la garantía idónea y eficaz que procede cuando el juez efectivamente verifica una real vulneración a derechos constitucionales, con lo cual, no existe otra vía para la tutela de estos derechos que no sean las garantías jurisdiccionales. No todas las vulneraciones al ordenamiento jurídico necesariamente tienen cabida para el debate en la esfera constitucional",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía del derecho a la defensa (art. 76.7 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Vivienda digna (art. 30 CRE)",
+      "Derechos de niñas, niños y adolescentes (arts. 44 y 45 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante, divorciada desde el 8 de junio de 2022, alega que no fue notificada válidamente de la orden de pago del juicio coactivo BP-002705-II-2021 ni de la providencia de remate de 28 de febrero de 2025, y que el inmueble, su vivienda familiar, fue rematado el 22 de abril de 2025 con el Banco del Pacífico como único postor. El tribunal considera acreditadas las notificaciones de 18 de marzo de 2022 y la notificación personal de la orden de pago. No consta en el texto la fecha de notificación de la sentencia de primera instancia en formato único; la resolución de primera instancia se notificó por escrito el 2 de septiembre de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

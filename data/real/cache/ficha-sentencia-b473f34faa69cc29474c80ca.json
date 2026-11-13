@@ -1,0 +1,83 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26992,
+    "tokensSalida": 1686
+  },
+  "salida": {
+    "numero": "17571202500383",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "33",
+          "228",
+          "229",
+          "326",
+          "66",
+          "76",
+          "82",
+          "86",
+          "88",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "39",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "5",
+          "47",
+          "86"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 2034-13-EP/19",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Corte Constitucional, sentencia 67-23-IN/24",
+      "Corte Constitucional, sentencia 54-17-IN/22",
+      "Corte Constitucional, sentencia 1425-18-EP/23",
+      "Corte Constitucional, sentencia 1158-17-EP/21",
+      "Corte Constitucional, sentencia 1797-18-EP/20",
+      "Corte Constitucional, sentencia 2006-18-EP"
+    ],
+    "argumentacion": "El tribunal de alzada confirma en lo sustancial la improcedencia: considera que el asunto es de mera legalidad y no de jurisdicción constitucional, pero analiza igualmente cada derecho invocado. Concluye que el nombramiento provisional no genera estabilidad definitiva, que no hay trato discriminatorio probado, que el informe técnico y la acción de personal están motivados y fueron emitidos por autoridad competente con base en normas previas, y que la impugnación de actos de conflictos laborales entre el Estado y sus servidores corresponde, por regla general, a la vía contencioso administrativa.",
+    "pruebas": [
+      "Nombramiento provisional (fs. 5)",
+      "Acción de personal (fs. 6)",
+      "Informe técnico Nro. 2025-0040-HE-1-11-d3 de 17 de marzo de 2025 (fs. 7 a 13)",
+      "Oficio HE-1-DTH-2025-045-d3 de 19 de marzo de 2025",
+      "Terminación del nombramiento (fs. 17)",
+      "Acción de personal Nro. 0028 de 31 de marzo de 2025",
+      "Título de tercer nivel y registro SENESCYT"
+    ],
+    "motivacion": "La motivación se apoya en el análisis de los derechos al trabajo, igualdad y no discriminación, debido proceso (cumplimiento de normas y motivación) y seguridad jurídica, citando normativa constitucional, LOSEP, Ley Orgánica de Carrera Sanitaria y jurisprudencia de la Corte Constitucional, y en la verificación de la documentación del expediente. Se remite también a la improcedencia del artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "criterioResolucion": "La acción de protección no procede para impugnar la terminación de un nombramiento provisional en un conflicto laboral del servidor público con el Estado, cuando no se demuestra vulneración de derechos constitucionales; corresponde por regla general a la jurisdicción contencioso administrativa, salvo que el asunto comprometa notoriamente la dignidad del servidor o requiera respuesta urgente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Igualdad formal, material y no discriminación",
+      "Vida digna",
+      "Debido proceso en la garantía de cumplimiento de normas",
+      "Debido proceso en la garantía de motivación",
+      "Seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La accionante, servidora con nombramiento provisional como enfermera de cuidado directo desde el 1 de octubre de 2014, fue desvinculada mediante acción de personal Nro. 0028 de 31 de marzo de 2025, con base en un informe técnico que concluyó que no cumplía el perfil mínimo (título de cuarto nivel) exigido por el Manual de puestos. El tribunal considera acreditado el informe técnico, el oficio de 19 de marzo de 2025 y la acción de personal; no advierte trato discriminatorio ni vulneración de la motivación.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

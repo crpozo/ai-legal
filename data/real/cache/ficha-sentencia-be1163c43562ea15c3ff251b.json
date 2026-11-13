@@ -1,0 +1,116 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 34923,
+    "tokensSalida": 2233
+  },
+  "salida": {
+    "numero": "17981202501607",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "Art. 76 numeral 1",
+          "Art. 76 numeral 7 literales a), b), c), g) y h)",
+          "Art. 86 numeral 3",
+          "Art. 88",
+          "Art. 33",
+          "Art. 325",
+          "Art. 34",
+          "Art. 169",
+          "Art. 82"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 16",
+          "Art. 18",
+          "Art. 19",
+          "Art. 24",
+          "Art. 30",
+          "Art. 39",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "Art. 30"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "Art. 337"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público (COESCOP)",
+        "articulos": [
+          "Art. 121 numeral 1",
+          "Art. 130",
+          "Art. 131",
+          "Art. 132",
+          "Art. 108",
+          "Art. 36"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "Art. 8"
+        ]
+      },
+      {
+        "norma": "Pacto Internacional de Derechos Civiles y Políticos",
+        "articulos": [
+          "Art. 14 numeral 3 literal b)"
+        ]
+      },
+      {
+        "norma": "Declaración Universal de Derechos Humanos",
+        "articulos": [
+          "Art. 11 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 2195-19-EP/21",
+      "Sentencia 2342018SEPCC (caso 231516EP)",
+      "Sentencia 024-14-SIS-CC (caso 0023-12-IS)",
+      "Sentencia 917 (citada por el Ministerio del Interior)",
+      "Sentencia de la Corte Suprema de Justicia, Sala de lo Social y Laboral, de 17 de marzo de 1994"
+    ],
+    "argumentacion": "El tribunal de alzada revisa la apelación del legitimado pasivo y la del accionante. Parte de la carga de la prueba invertida a la entidad pública (art. 86.3 CRE, art. 16 LOGJCC). Constata con las certificaciones del centro de privación de libertad y los informes de la jornada del 15 de octubre de 2024 que el accionante estaba privado de libertad y que la audiencia no se realizó por intervención militar y policial. Concluye que la ausencia laboral tuvo causa de fuerza mayor (art. 30 CC, art. 337 COA) y que el sumario siguió sin cumplir la defensa. Rechaza la reparación insuficiente de primera instancia, por considerarla no integral conforme al art. 18 LOGJCC, y ordena dejar sin efecto los actos de destitución y cese, la reincorporación y el pago de remuneraciones.",
+    "pruebas": [
+      "Certificaciones del Centro de Privación de Libertad Guayas No. 5 y oficio SNAI-CPPLG5-2025-0000624 de 10 de abril de 2025",
+      "Informes CSVP-CPL-G-No. 5 PARTE No. 576 e Informe SNAI-CPLG-No. 5-CSVP-2024-577 de 15 de octubre de 2024",
+      "Memorando CSVP-CPPL-GUAYAQUIL-2024 de 15 de octubre de 2024",
+      "Parte policial de 23 de julio de 2024 y certificación de 8 de agosto de 2024",
+      "Auto de sobreseimiento en la causa 17U05202242006616",
+      "Resolución Nro. 2024-049-SZG-Z5 y expediente del sumario administrativo 2024-46-DAI-SZ-GUAYAS-SA",
+      "Resolución Nro. 2025-0085-DSPO-CG-PN de 13 de enero de 2025",
+      "Razón de 17 de octubre de 2024 sobre la audiencia del sumario"
+    ],
+    "motivacion": "El tribunal considera probada la vulneración del derecho de defensa porque el accionante no fue llevado a la audiencia del 15 de octubre de 2024 por una circunstancia de fuerza mayor documentada, y el sumario prosiguió sin escucharlo. Considera también que la inasistencia laboral estaba justificada por la privación de libertad, lo que afecta el derecho al trabajo. Para una reparación integral, la retrotracción del sumario que ordenó la jueza de primera instancia se considera insuficiente, por lo que se deja sin efecto el acto de cese y la sanción y se ordena la reincorporación y el pago de remuneraciones.",
+    "criterioResolucion": "Cuando la ausencia del servidor policial se debe a privación de libertad por orden de autoridad (fuerza mayor), y la audiencia del sumario se celebra sin su comparecencia por causa documentada, se vulnera el derecho a la defensa y el derecho al trabajo; la reparación integral debe dejar sin efecto la destitución y el cese, ordenar la reincorporación y el pago de remuneraciones, sin limitarse a retrotraer el procedimiento.",
+    "citaTextual": "La acción de autoridad constituye fuerza mayor y libera de responsabilidad al obligado cuando no ha sobrevenido por su culpa.",
+    "apelacion": "reforma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Presunción de inocencia (art. 76.2 CRE)",
+      "Motivación (art. 76.7.l CRE)",
+      "Derecho al trabajo (art. 33 y 325 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, cabo de policía, fue privado de libertad el 23 de julio de 2024 por orden de detención con fines investigativos, luego sobreseído. Durante su privación de libertad se fijó para el 15 de octubre de 2024 la audiencia telemática del sumario administrativo, que no se realizó por intervención militar y policial en el centro de privación de libertad. En la nueva audiencia del 17 de octubre de 2024 no contó con abogado. Fue destituido por Resolución de 24 de octubre de 2024 y cesado el 13 de enero de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 6657,
+    "tokensSalida": 1085
+  },
+  "salida": {
+    "numero": "17113202500039",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "169",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "168",
+          "15 numeral 1",
+          "43",
+          "44",
+          "45"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos (norma supletoria)",
+        "articulos": [
+          "237"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia de la Corte Constitucional No. 1256-18-JP/23 (Caso No. 1256-18-JP, 20 de diciembre de 2023)"
+    ],
+    "argumentacion": "El tribunal verifica su competencia por tratarse de una orden de encarcelamiento dictada en un proceso penal. Constata que el accionante desiste de la garantía mediante escrito (fs. 19 y 20), lo ratifica en audiencia y expone razones personales (haber recuperado su libertad). Con cita de la sentencia 1256-18-JP/23, señala que el desistimiento requiere manifestar razones personales y queda sujeto a valoración del juez, y que no hubo oposición de los legitimados pasivos. Concluye que no existe vulneración de derechos y acepta el desistimiento, ordenando el archivo.",
+    "pruebas": [
+      "Certificado de permanencia del Centro de Privación Provisional de Libertad Pichincha N.° 1, emitido el 18 de noviembre de 2025 (citado por el accionante)",
+      "Boleta constitucional de encarcelamiento Nro. 17282-2024-001035",
+      "Escrito de desistimiento de fs. 19 y 20 del cuaderno constitucional",
+      "Ratificación del desistimiento en audiencia"
+    ],
+    "motivacion": "El desistimiento se acepta porque el accionante lo presenta de forma expresa, con razones de carácter personal, sin oposición de los legitimados pasivos, y el tribunal no aprecia vulneración de derechos, dado que el accionante ya recuperó su libertad.",
+    "criterioResolucion": "El desistimiento expreso del accionante, con razones personales y sin oposición de los legitimados pasivos, se acepta y conlleva el archivo de la garantía de hábeas corpus, sujeto a valoración del juez.",
+    "citaTextual": "\"el desistimiento de la acción no opera automáticamente con la presentación de un escrito [pues] requiere que la persona afectada manifieste en qué consisten sus razones de carácter personal para desistir\"",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Libertad personal (detención ilegal, arbitraria e ilegítima, según el escrito de hábeas corpus)"
+    ],
+    "fundamentosDeHecho": "El accionante, privado de libertad desde el 16 de noviembre de 2024 por prisión preventiva dictada en el proceso 17282-2024-02264, presentó hábeas corpus. Posteriormente desistió de la garantía por escrito y en audiencia, alegando que ya recuperó su libertad. Los legitimados pasivos no se opusieron.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

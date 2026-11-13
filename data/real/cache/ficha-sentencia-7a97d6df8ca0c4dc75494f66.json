@@ -1,0 +1,76 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 28183,
+    "tokensSalida": 1600
+  },
+  "salida": {
+    "numero": "17297202402151",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "82",
+          "226",
+          "88",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "300"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "30"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 231-18-SEP-CC (caso 0470-15-EP)",
+      "Sentencia 1763-12-EP/20",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 102-13-SEP-CC (caso 0380-10-EP)",
+      "Sentencia 2006-18-EP/24"
+    ],
+    "argumentacion": "El tribunal constata que la Corte Constitucional (sentencia 2006-18-EP/24) admite excepciones a la obligación de analizar primero las vulneraciones alegadas, y que la impugnación de la terminación de un nombramiento provisional sólo escapa a la vía ordinaria si compromete notoria o gravemente la dignidad o autonomía del servidor, como en casos de evidente discriminación o de respuesta urgente. Señala que en el caso no concurre la excepción de urgencia, pues no consta embarazo ni otra circunstancia equivalente. Sobre la alegación de discriminación, concluye que la narrativa no fue probada más allá de la demanda y que no existe prueba que la sustente. Por ello, la acción es improcedente y debe acudirse a la vía contencioso administrativa.",
+    "pruebas": [
+      "Acción de Personal 2024-000316 de 16 de julio de 2024 (terminación de nombramiento provisional)",
+      "Memorando SERCOP-CGCOP-CGAF-2024-0401-M de 16 de julio de 2024",
+      "Resolución SERCOP-CGAF-2024 sobre cambio de partidas 839, 840 y 865",
+      "Oficio MDT-VSP-20176-0234 (manual de puestos del SERCOP)"
+    ],
+    "motivacion": "La improcedencia se funda en los numerales 1, 3 y 4 del artículo 42 de la LOGJCC: no se demostró violación de derechos constitucionales, la controversia es de legalidad y existe una vía judicial adecuada (contencioso administrativo). Para el caso de discriminación, el tribunal considera que la prueba es insuficiente.",
+    "criterioResolucion": "En impugnaciones de actos administrativos sobre conflictos laborales entre el Estado y sus servidores (como la finalización de nombramientos provisionales), el conocimiento corresponde por regla general a la jurisdicción contencioso administrativa; la acción de protección sólo procede si el caso compromete notoria o gravemente la dignidad o autonomía del servidor (p. ej., evidente discriminación) o requiere respuesta urgente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de la motivación",
+      "Derecho al trabajo y estabilidad laboral",
+      "Igualdad y no discriminación",
+      "Derecho a una vida libre de violencia en el ámbito público y privado"
+    ],
+    "fundamentosDeHecho": "La accionante, servidora con nombramiento provisional de especialista de desarrollo de soluciones del SERCOP desde 2019 (tras contratos ocasionales desde 2015), fue desvinculada mediante acción de personal y memorando de 16 de julio de 2024, fundada en el artículo 17 literal B del Reglamento a la LOSEP, en un contexto de reestructuración y medición de carga laboral. El tribunal no encuentra probados los hechos de discriminación alegados. No consta embarazo ni circunstancia de urgencia.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

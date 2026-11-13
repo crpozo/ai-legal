@@ -1,0 +1,102 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23340,
+    "tokensSalida": 3601
+  },
+  "salida": {
+    "numero": "17U05202500139",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "34",
+          "367",
+          "66",
+          "82",
+          "88",
+          "76",
+          "47",
+          "48",
+          "226",
+          "370",
+          "371",
+          "436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "25.1",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1",
+          "217"
+        ]
+      },
+      {
+        "norma": "Ley de Seguridad Social",
+        "articulos": [
+          "186"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Discapacidades",
+        "articulos": [
+          "4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 175-14-SEP-CC",
+      "Sentencia 8-19-IS/22 (caso 8-19-IS)",
+      "Sentencia 1933-19-EP/23",
+      "Sentencia 368-17-SEP-CC (caso 1013-13-EP)",
+      "Sentencia 119-15-SEP-CC (caso 0537-11-EP)",
+      "Sentencia 2158-19-EP/24",
+      "Sentencia 1844-18-EP/23",
+      "Sentencia 001-16-PJC-CC (caso 530-10-JP)",
+      "Sentencia 045-11-SEP-CC",
+      "Sentencia 351-2009",
+      "Precedente 1012-SEP-11",
+      "Sentencia 948-17-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 027-12-SIN-CC",
+      "Sentencias 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 016-13-SEP-CC y 1000-12-EP (citadas en el fallo de instancia)",
+      "Opinión Consultiva 18 de la Corte Interamericana de Derechos Humanos"
+    ],
+    "argumentacion": "El tribunal revisa si la acción de protección es procedente, pese a que la instancia la negó por las causales 1, 3 y 4 del artículo 42 de la LOGJCC. Concluye que la controversia no es de mera legalidad porque el IESS negó la jubilación por invalidez aplicando un criterio de preexistencia no previsto en el artículo 186 de la Ley de Seguridad Social, confundiendo discapacidad con incapacidad absoluta y permanente sobrevenida durante la afiliación. Analiza luego seguridad social, dignidad humana, no discriminación, seguridad jurídica y protección especial por discapacidad, y encuentra vulneración en los cuatro últimos en la parte que identifica (seguridad jurídica, igualdad y no discriminación, y atención prioritaria). Sobre dignidad humana el fallo también la declara vulnerada, aunque la parte resolutiva solo menciona seguridad jurídica, igualdad y no discriminación, y atención prioritaria. Las medidas son calificar nuevamente la jubilación y abstenerse de aplicar el criterio de preexistencia. No se resuelve restitución retroactiva ni pago de valores, y no se pronuncia sobre honorarios, por lo que sin costas. El texto contiene inconsistencias en la numeración de las resoluciones administrativas (CNV/CMV, CTP-CP/CPPCP) y en la fecha de la resolución impugnada, que conviene verificar en el expediente.",
+    "pruebas": [
+      "Resolución IESS-CNV-2024-14845-S1 (Comité Nacional Valuador)",
+      "Resolución de la Comisión Provincial de Prestaciones y Controversias confirmatoria (IESS-CTP-CP-2025-0270-A, también citada como acuerdo IESS-CPPCP-2025-0270-A)",
+      "Certificado de discapacidad del 82% a nombre del accionante",
+      "Informe CNV-INF-2025-03-S1 del 6 de octubre de 2025",
+      "Copias certificadas del expediente administrativo de jubilación por invalidez",
+      "Resoluciones C.D. 084 y C.D. 553 (citadas por el IESS)"
+    ],
+    "motivacion": "El tribunal sostiene que la negativa se basa en un criterio no previsto en la ley y que el artículo 186 protege la incapacidad absoluta sobrevenida durante la afiliación. Aplica jurisprudencia constitucional sobre la función del juez de garantías, que debe verificar la real existencia de vulneración de derechos constitucionales antes de remitir a la vía ordinaria, y sobre igualdad material y protección reforzada de personas con discapacidad. Por ello revoca la sentencia de instancia y ordena medidas de reparación.",
+    "criterioResolucion": "Negar la jubilación por invalidez por discapacidad previa a la afiliación (preexistencia) cuando la incapacidad absoluta y permanente sobrevino durante la afiliación constituye confusión entre discapacidad e incapacidad y vulnera seguridad jurídica, igualdad y no discriminación y atención prioritaria; el juez de garantías debe verificar si existe vulneración constitucional antes de declarar la improcedencia por mera legalidad.",
+    "citaTextual": "Al equiparar arbitrariamente la discapacidad con la incapacidad y dar un trato diferenciado y excluyente fundamentado en su vulnerabilidad en lugar de otorgarle la protección reforzada que manda el ordenamiento jurídico se configura un acto de discriminación indirecta, por lo tanto se considera vulneratorio.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la seguridad social",
+      "Derecho a la no discriminación",
+      "Derecho a la dignidad humana",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la protección especial como persona con discapacidad"
+    ],
+    "fundamentosDeHecho": "El accionante sufrió una lesión medular a los veinte años, en un accidente anterior a su afiliación al IESS. Estuvo afiliado desde 2006 hasta 2021 y trabajó como arquitecto. En 2021 se le determinó una discapacidad del 82%, que el accionante considera incapacidad absoluta y permanente sobrevenida durante la afiliación. El Comité Nacional Valuador y la Comisión Provincial de Prestaciones y Controversias negaron la jubilación por invalidez por considerar la condición preexistente, por datar de 1998. El tribunal da por probado el 82% de discapacidad y la afiliación, y decide sobre la negativa de jubilación por ese fundamento.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

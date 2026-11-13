@@ -1,0 +1,69 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 47254,
+    "tokensSalida": 3264
+  },
+  "salida": {
+    "numero": "17230202422827",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "66.4",
+          "66.16",
+          "33",
+          "76.1",
+          "76.7.l",
+          "82",
+          "88",
+          "169",
+          "326"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42.1",
+          "42.3",
+          "42.4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 1214-18-EP/22",
+      "Corte Constitucional sentencia 54-17-IN/22",
+      "Corte Constitucional sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Corte Constitucional sentencia 1617-16-EP/21",
+      "Corte Constitucional sentencia 1158-17-EP/21",
+      "Corte Constitucional sentencia 1425-18-EP/23",
+      "Corte Constitucional sentencia 1797-18-EP/20"
+    ],
+    "argumentacion": "La Sala confirma que el recurso de apelación de los accionantes no prospera y mantiene la negativa de la acción por improcedencia. Primero valida el proceso. Luego examina los derechos alegados: igualdad y no discriminación (no hay comparabilidad ni trato diferenciado por categoría sospechosa); trabajo (la desvinculación fue compensada con indemnización mediante actas de finiquito y la inconformidad corresponde a la justicia ordinaria); debido proceso en garantía de cumplimiento de normas (las desvinculaciones se basaron en normas previas y el Gerente General era competente); motivación (los oficios enuncian normas y explican su aplicación); y seguridad jurídica (la relación estuvo regulada por normas previas, claras y públicas). Concluye que no hay vulneración de derechos constitucionales y que la acción es improcedente conforme al art. 42 numerales 1, 3 y 4 de la LOGJCC. Nota: el fallo analiza el fondo para descartar la vulneración, pero formalmente declara improcedencia; por ello se marca rechaza y no inadmite.",
+    "pruebas": [
+      "Oficios de desvinculación de los cinco legitimados activos (PETRO-PGG series 2021 y 2022, y oficio PETRO-PGG-2021-1398-O de 3 de agosto de 2024)",
+      "Actas de finiquito (fs. 162-163, 172-173, 182-183, 192-193, 202-203) que acreditan pago de indemnización",
+      "Historial laboral del IESS",
+      "Acta de audiencia oral de trámite constitucional (fs. 482 a 490-vlt) de 14 de noviembre de 2024",
+      "Normas Internas de Administración del Talento Humano (art. 95) y Ley Orgánica de Empresas Públicas"
+    ],
+    "motivacion": "Las desvinculaciones se fundan en el art. 66.16 de la Constitución, en el art. 30.4 de la LOEP y en el art. 95 de las NIATH, con indemnización pagada. La inconformidad con la forma de separación o con las indemnizaciones debe resolverse en la vía ordinaria. La acción de protección no reemplaza las instancias ordinarias. La resolución juzga que los oficios cumplen la garantía de motivación al enunciar normas y explicar su pertinencia.",
+    "criterioResolucion": "La terminación unilateral de la relación laboral en empresa pública, con pago de indemnización mediante acta de finiquito, no vulnera derechos constitucionales; los conflictos sobre la forma de separación o indemnizaciones corresponden a la justicia ordinaria, y la acción de protección es improcedente (art. 42 numerales 1, 3 y 4 LOGJCC).",
+    "citaTextual": "si fuera el caso de que exista inconformidad por parte de los legitimados activos, acerca de la forma en que se produce su separación, indemnizaciones u otros beneficios, le corresponde a la justicia ordinaria conocer y resolver este tipo de conflictos",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Igualdad formal, igualdad material y no discriminación (arts. 11.2 y 66.4 CRE)",
+      "Derecho al trabajo y estabilidad laboral (art. 33 CRE)",
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)"
+    ],
+    "fundamentosDeHecho": "Cinco exservidores de EP Petroecuador, por intermedio de su procurador, fueron desvinculados mediante oficios del Gerente General sin informe técnico previo, invocando el art. 66.16 CRE, el art. 30.4 LOEP y el art. 95 de las NIATH. Consta el pago de indemnizaciones mediante actas de finiquito firmadas por los accionantes. La Sala da por probado que los oficios se emitieron y que las actas de finiquito existen. No consta la fecha de notificación de la sentencia de primera instancia ni fecha de la presente resolución en el texto recibido.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

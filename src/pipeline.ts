@@ -3,7 +3,7 @@ import path from "node:path";
 import { analizarActuaciones, reportarCausa, seleccionarInstancia } from "./agents/causa.js";
 import { redactarBorradores, reportarAlCliente, responderPreguntas, tiemposDeDespacho } from "./agents/extras.js";
 import { reportarFiscalia } from "./agents/fiscalia.js";
-import { analizarPatrones, estadisticas, ficharSentencias } from "./agents/juez.js";
+import { analizarPatrones, diasEnResolver, estadisticas, ficharSentencias } from "./agents/juez.js";
 import { resumenDeUso } from "./llm.js";
 import { CausaRaw, Dashboard, FiscaliaRaw, JuezRaw } from "./schemas.js";
 
@@ -64,8 +64,8 @@ async function flujoJuez(crudo: unknown) {
     filtros: juez.filtros,
     procesos: [...juez.procesos]
       .sort((a, b) => b.fechaResolucion.localeCompare(a.fechaResolucion))
-      .map(({ resolucionTexto, ...p }) => ({ ...p, ficha: porNumero.get(p.numero)! })),
-    estadisticas: estadisticas(fichas),
+      .map((p) => { const { resolucionTexto, ...resto } = p; return { ...resto, dias: diasEnResolver(p), ficha: porNumero.get(p.numero)! }; }),
+    estadisticas: estadisticas(juez, fichas),
     patrones,
   };
 }

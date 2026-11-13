@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 30723,
+    "tokensSalida": 1896
+  },
+  "salida": {
+    "numero": "17571202600149",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "35",
+          "66 numeral 23",
+          "75",
+          "76 numerales 1, 3, 7 literal l)",
+          "82",
+          "86",
+          "88",
+          "169",
+          "172"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "39",
+          "40",
+          "41 numeral 1",
+          "42 numerales 1, 2 y 6"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "587 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 832-20-JP/21",
+      "Sentencia No. 090-15-SEP-CC (caso 1567-13-EP)",
+      "Sentencia No. 918-14-EP/20",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 308-14-EP/25",
+      "Sentencia 102-13-SEP-CC",
+      "Sentencia No. 289-17-EP/22",
+      "Sentencia No. 983-18-JP/21"
+    ],
+    "argumentacion": "El tribunal de alzada admite el recurso oral del accionante, valida el proceso y plantea como problema si hubo vulneración de atención prioritaria, derecho de petición, tutela judicial efectiva, debido proceso (cumplimiento de normas y motivación) y seguridad jurídica por la demora de la Fiscalía General y de la Presidencia de la Corte Provincial de Manabí en resolver la oposición al archivo de una investigación previa. Concluye que la demora se canaliza por la vía penal ordinaria, que la Fiscalía resolvió mediante el Oficio FGE-CGAJ-2026-002548 revocando el requerimiento de archivo, que las actuaciones se ajustaron al COIP art. 587 numeral 1 y que no hay vulneración de los derechos. Finalmente aplica como causales de improcedencia los numerales 2 y 6 del art. 42 LOGJCC, por extinción del acto y por tratarse de providencias judiciales.",
+    "pruebas": [
+      "Oficio FGE-CGAJ-2026-002548 de 18 de marzo de 2026 con la resolución del Fiscal General encargado que revoca el requerimiento de archivo",
+      "Auto de 19 de junio de 2025 de la Presidencia de la Corte Provincial de Manabí",
+      "Oficio No. 101-CPJM-P-25 de 25 de junio de 2025",
+      "Escrito de oposición al archivo de 26 de mayo de 2025",
+      "Contestación de la Fiscalía a fs. 90 a 103"
+    ],
+    "motivacion": "El tribunal sostiene que el derecho de petición no obliga a acceder a lo pedido y que la respuesta tardía solo se verifica si se omite; considera que la Fiscalía resolvió la oposición, por lo que el acto se extinguió. Los reclamos sobre plazos y retardo corresponden a la justicia penal ordinaria, donde rige el principio dispositivo. Sobre la motivación, la resolución tiene suficiente estructura normativa y fáctica. La decisión se fundamenta además en improcedencia por extinción del acto y por tratarse de providencias judiciales.",
+    "criterioResolucion": "La demora o falta de respuesta en un trámite penal de la Fiscalía o de un juez penal, que se canaliza por la vía ordinaria (jueces de garantías penales), no configura por sí sola vulneración de derechos constitucionales; si el acto es resuelto de fondo durante el proceso, se extingue la omisión y la acción de protección es improcedente conforme al art. 42 numerales 2 y 6 LOGJCC.",
+    "citaTextual": "Los reclamos sobre el retardo en el despacho de la Fiscalía y el control de los actos de investigación previa deben canalizarse exclusivamente a través de los jueces de garantías penales, quienes poseen la competencia para fiscalizar dichas actuaciones",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Atención prioritaria (art. 35 CRE)",
+      "Derecho de petición (art. 66.23 CRE)",
+      "Tutela judicial efectiva (art. 75 CRE)",
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "Presidencia de la Corte Provincial de Manabí avocó conocimiento (sorteo 13100-2025-00019G, 28/04/2025) de la petición de archivo de la investigación previa 131901822070015. El accionante se opuso el 26/05/2025 y la causa se remitió a la Fiscalía General del Estado mediante auto de 19/06/2025. Han transcurrido unos 270 días sin respuesta motivada según el accionante. Durante el trámite, la Fiscalía General revocó el requerimiento de archivo y designó nuevo fiscal provincial mediante oficio de 18/03/2026.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19618,
+    "tokensSalida": 1774
+  },
+  "salida": {
+    "numero": "17U05202400224",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "76.1",
+          "76.7.h",
+          "76.7.l",
+          "82",
+          "86",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42.1",
+          "42.3",
+          "42.5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "36",
+          "126",
+          "130",
+          "142.1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 045-11-SEP-CC",
+      "Sentencia No. 001-16-PJC-CC (caso 530-10-JP)",
+      "Sentencia No. 54-17-IN/22",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1391-14-EP/20",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 1797-18-EP/20",
+      "Casos 0831-12-EP, 0380-10-EP y 1000-12-EP (citados en la sentencia)"
+    ],
+    "argumentacion": "El tribunal afirma que la acción de protección es excepcional y que el asunto es, en esencia, de mera legalidad, aunque lo examina igualmente. Descarta vulneración de igualdad y no discriminación por falta de comparación con otros militares. Descarta violación del debido proceso (cumplimiento de normas, defensa y motivación) porque la exclusión se hizo conforme al art. 142.1 LOPDFA y la orden general 049 indicaba vías de impugnación. Descarta la seguridad jurídica porque los actos se emitieron con normas vigentes, previas y públicas, y lo que se pretende es un control de legalidad. Concluye que no hay violación de derechos constitucionales y que la pretensión es improcedente por los numerales 3 y 5 del art. 42 LOGJCC, con referencia también al numeral 1.",
+    "pruebas": [
+      "Resoluciones COSUPE 023-2024 y 025-2024 de 23 de septiembre de 2024",
+      "Orden General de la Fuerza Naval No. 049 de 04 de octubre de 2024 (fs. 15-18)",
+      "Oficio ARE-COSUPE-SEC-204-0066-0 de 8 de octubre de 2024 (notificación)",
+      "Expediente administrativo adjuntado"
+    ],
+    "motivacion": "Rechaza la apelación y confirma la sentencia de primera instancia, que había negado la acción por improcedencia (art. 40 LOGJCC y art. 42 numerales 1, 3, 4 y 5). El tribunal estima que los actos administrativos cumplieron las normas vigentes y que el reclamo es de legalidad, no de vulneración de derechos constitucionales.",
+    "criterioResolucion": "La acción de protección es improcedente cuando la pretensión se limita a cuestionar la legalidad de un acto administrativo (exclusión de lista de ascenso aplicando la ley vigente) sin que se acredite una vulneración del contenido constitucional de los derechos invocados; en tal caso corresponde a la justicia ordinaria o a la vía administrativa.",
+    "citaTextual": "Al ser la acción de protección una garantía jurisdiccional, que tiene por objeto el amparo directo y eficaz de los derechos reconocidos en la Constitución y no la resolución de asuntos de mera legalidad, puesto que, en el caso sub júdice al no haberse probado por el accionante, en el proceso constitucional vulneración de derecho constitucional alguno, lo que se intenta por intermedio de esta garantía jurisdiccional “inoportuna” es que los jueces constitucionales resuelvan “un conflicto” que no entra en la esfera de lo constitucional, si no de mera legalidad",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Irretroactividad de la ley",
+      "Non bis in idem (art. 76.7.i CRE)",
+      "Motivación de los actos administrativos (art. 76.7.l CRE)",
+      "Igualdad y no discriminación (art. 11.2 CRE)",
+      "Debido proceso y derecho a la defensa",
+      "Trabajo y estabilidad laboral (arts. 325 y 228-229 CRE, según problemas jurídicos planteados)",
+      "Tutela judicial efectiva"
+    ],
+    "fundamentosDeHecho": "El accionante, Capitán de Fragata de la Armada, fue excluido de la lista provisional de ascenso 2024 por la inhabilidad del art. 142.1 LOPDFA (fórmula 2(DAS)+3(DAR) > 48), mediante resoluciones COSUPE 023 y 025-2024 de 23 de septiembre de 2024 y la Orden General 049 de 4 de octubre de 2024. El tribunal no consigna hechos adicionales probados más allá de la existencia de estos actos y de la notificación de la resolución 025-2024.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 14729,
+    "tokensSalida": 1795
+  },
+  "salida": {
+    "numero": "17230202417202",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 6",
+          "Art. 24",
+          "Art. 25 numeral 1",
+          "Art. 39",
+          "Art. 40",
+          "Art. 42 numerales 1, 4 y 5",
+          "Art. 74",
+          "Art. 76 numerales 4, 5 y 6",
+          "Art. 95",
+          "Art. 96 numeral 1"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 76",
+          "Art. 82",
+          "Art. 86",
+          "Art. 86 numeral 5",
+          "Art. 87",
+          "Art. 88",
+          "Art. 436 numerales 1 y 2"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "Art. 9 inciso tercero",
+          "Art. 66"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "Art. 47 letra k)"
+        ]
+      },
+      {
+        "norma": "Decreto Ejecutivo 813 (Reglamento General a la LOSEP)",
+        "articulos": [
+          "Art. 8 (artículo innumerado a continuación del Art. 108)"
+        ]
+      },
+      {
+        "norma": "Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos",
+        "articulos": [
+          "Art. 14"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 26-18-IN/20 y acumulados (Corte Constitucional, 28 de octubre de 2020)",
+      "Sentencia 0001-16-PJO-CC, caso 0530-10-JP (Corte Constitucional, 22 de marzo de 2016)",
+      "Sentencias 041-13-SEP-CC y 043-13-SEP-CC",
+      "Sentencia 2006-18-EP/24 (Corte Constitucional, 13 de marzo de 2024)",
+      "Resolución 10-2024 del Pleno de la Corte Nacional de Justicia (5 de junio de 2024), citada por el accionante"
+    ],
+    "argumentacion": "El tribunal identifica que la acción impugna la Acción de Personal N° 0338406 de 4 de mayo de 2012, de cese por compra de renuncia con indemnización. Señala que la inconstitucionalidad de la palabra 'obligatorias' (sentencia 26-18-IN/20) tiene efectos hacia el futuro según el art. 95 LOGJCC, por lo que no alcanza a un acto anterior a su emisión. Considera que los conflictos laborales Estado-servidor corresponden por regla general a la vía contencioso-administrativa, salvo discriminación evidente o casos urgentes, que no se configuran. Concluye que no hay vulneración de seguridad jurídica (art. 82 CRE), que la norma aplicada era vigente al momento del acto, y que la acción no cumple los requisitos de los arts. 40 y 42 numerales 1, 4 y 5 LOGJCC. Confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Acción de Personal N° 0338406 de 4 de mayo de 2012 (fs. 1 del cuaderno de primera instancia)",
+      "Constancias de la audiencia oral, pública y contradictoria (CD de audio y acta resumen, fs. 39 a 44 vuelta)"
+    ],
+    "motivacion": "La decisión se justifica en que la sentencia de inconstitucionalidad tiene efectos a futuro y no retroactivos, de modo que no invalida el acto de 2012; en que el asunto es de naturaleza laboral-administrativa y no constitucional; y en que no se demostró una vulneración de derechos constitucionales atribuible a la acción de personal.",
+    "criterioResolucion": "La declaratoria de inconstitucionalidad de la Corte Constitucional (sentencia 26-18-IN/20) produce efectos hacia el futuro y no alcanza a actos de cese por compra de renuncia expedidos con anterioridad a su emisión; los conflictos laborales Estado-servidor público corresponden por regla general a la jurisdicción contencioso-administrativa, salvo discriminación evidente o casos excepcionales urgentes.",
+    "citaTextual": "Esta sentencia produce efectos hacia el futuro conforme el artículo 95 de la LOGJCC, razón por la que no cubre situaciones que se hayan suscitado con anterioridad a su emisión.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Derecho al trabajo en la garantía de irrenunciabilidad de derechos laborales",
+      "Estabilidad laboral"
+    ],
+    "fundamentosDeHecho": "El accionante, ex servidor de apoyo 2 de la ex Dirección Nacional de Rehabilitación Social, fue cesado en funciones por compra de renuncia con indemnización mediante Acción de Personal N° 0338406 de 4 de mayo de 2012. Sostiene que la compra no fue voluntaria. La jueza de primera instancia rechazó la acción por improcedente; el accionante apeló.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

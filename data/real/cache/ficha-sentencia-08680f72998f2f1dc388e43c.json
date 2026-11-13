@@ -1,0 +1,88 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 34950,
+    "tokensSalida": 1490
+  },
+  "salida": {
+    "numero": "17371202601619",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "35",
+          "47",
+          "76.7.l",
+          "82",
+          "325",
+          "326 numerales 1, 2 y 3",
+          "330",
+          "48"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40 numeral 1",
+          "19",
+          "4.8",
+          "24",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de las Personas con Discapacidad",
+        "articulos": [
+          "56"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "11",
+          "16",
+          "18",
+          "30 numeral 4"
+        ]
+      },
+      {
+        "norma": "Normas Internas de Administración del Talento Humano de Petroecuador",
+        "articulos": [
+          "95"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 1937-19-JP/25",
+      "Corte Constitucional sentencia 1158-17-EP/21",
+      "Corte Constitucional sentencia 1095-20-EP/22",
+      "Corte Constitucional sentencia 1797-18-EP/20",
+      "Corte Constitucional sentencia 2034-13-EP/19",
+      "Corte Constitucional sentencia 016-13-SEP-CC",
+      "Corte Constitucional sentencia 001-16-PJO-CC"
+    ],
+    "argumentacion": "El tribunal de apelación verifica la validez del proceso y analiza tres problemas: (1) la protección laboral reforzada de una persona con discapacidad, concluyendo que EP Petroecuador debía considerar sus circunstancias y buscar reubicación antes de desvincularlo, y que no lo hizo; (2) la garantía de motivación del Memorando PETRO-THU-2025-1611-M, que considera insuficiente en su fundamentación normativa y fáctica; (3) la seguridad jurídica, por aplicación aislada de normas de terminación unilateral sin armonizarlas con la estabilidad reforzada. Con ello confirma la vulneración y ajusta solo la forma de ejecución de la reparación económica y la expresión 'estabilidad absoluta'.",
+    "pruebas": [
+      "Documentación médica, permisos, siniestros y reembolsos gestionados por EP Petroecuador (fs. 19 a 59)",
+      "Memorando PETRO-THU-2025-1611-M de 26 de julio de 2025",
+      "Acta de finiquito de 11 de septiembre de 2025",
+      "Historial laboral y cargos del accionante",
+      "Informe confidencial del IESS sobre condición discapacitante de 2017 (citado en la sentencia)"
+    ],
+    "motivacion": "La sentencia confirma la vulneración de derechos porque la entidad tenía información médica suficiente dentro de sus propios archivos, no realizó estudio de reubicación ni justificó la imposibilidad de mantener la relación laboral, y el memorando carece de estructura mínimamente completa de motivación, por lo que se aplica el estándar reforzado propio de personas con discapacidad.",
+    "criterioResolucion": "Un servidor público de carrera con discapacidad o condición protegida tiene estabilidad laboral reforzada: la entidad debe considerar sus circunstancias, procurar reubicación y justificar con carga argumentativa mayor la desvinculación; si no lo hace, se vulneran trabajo, seguridad jurídica y motivación.",
+    "citaTextual": "por lo tanto, la terminación directa vulneró el derecho al trabajo en su dimensión de estabilidad laboral reforzada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la seguridad jurídica",
+      "Derecho al debido proceso en la garantía de la motivación",
+      "Derecho a la estabilidad laboral reforzada como persona con discapacidad y persona con enfermedad catastrófica"
+    ],
+    "fundamentosDeHecho": "El accionante ingresó a PETROAMAZONAS en 2008 y luego laboró en EP Petroecuador como supervisor de construcciones con nombramiento definitivo, con encargos de intendente. Fue desvinculado mediante memorando de 26 de julio de 2025. Consta que la entidad conocía su condición de salud (permisos, siniestros, reembolsos) y que no se realizó evaluación individualizada ni estudio de reubicación.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

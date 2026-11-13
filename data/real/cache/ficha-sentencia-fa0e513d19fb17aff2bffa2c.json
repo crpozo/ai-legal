@@ -1,0 +1,84 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 28233,
+    "tokensSalida": 1625
+  },
+  "salida": {
+    "numero": "17250202400156",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "76.7.l",
+          "82",
+          "88",
+          "169",
+          "173",
+          "228",
+          "229",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "39",
+          "40",
+          "42.1",
+          "42.3",
+          "42.4",
+          "25.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "18",
+          "32"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de Planificación y Finanzas Públicas",
+        "articulos": [
+          "115"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 1214-18-EP/22",
+      "Corte Constitucional 224-23-JP/24",
+      "Corte Constitucional 2006-18-EP/24",
+      "Corte Constitucional 1012-11-EP",
+      "Corte Constitucional 1158-17-EP/21",
+      "Corte Constitucional 1617-16-EP/21",
+      "Corte Constitucional 3-19-CN/20",
+      "Corte Constitucional 246-15-SEP-CC",
+      "Corte Constitucional 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de alzada confirma que el asunto es de naturaleza laboral y no constitucional, pero analiza de todos modos la posible vulneración. Sobre el derecho al trabajo, concluye que existe vía ordinaria adecuada y eficaz (justicia laboral, con referencia a la liquidación pagada mediante acta de finiquito), por lo que no hay vulneración. Sobre la motivación, aplica el criterio de estructura mínimamente completa de la sentencia 1158-17-EP/21 y concluye que el memorando de terminación es comprensible y cumple los requisitos. Finalmente, aplica las causales de improcedencia del art. 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Memorando Nro. CELEC-EP-TRA-2024-6699-MEM de 5 de agosto de 2024",
+      "Memorando Nro. CELEC-EP-TRA-2024-6795-MEM (fs. 129-vlt), que consta como pago de indemnización",
+      "Acta de finiquito con liquidación de haberes",
+      "Evaluaciones de desempeño y nombramientos del accionante, mencionados por la parte accionante"
+    ],
+    "motivacion": "La improcedencia se justifica porque no se verifica vulneración de derechos constitucionales, porque el reclamo laboral tiene vía ordinaria idónea (la justicia laboral y la impugnación del acta de finiquito) y porque el acto administrativo puede impugnarse en la vía judicial sin que se demuestre que esa vía sea inadecuada o ineficaz.",
+    "criterioResolucion": "La acción de protección no procede en controversias de naturaleza laboral entre una empresa pública y su servidor cuando no se verifica vulneración de derechos constitucionales y existe vía ordinaria adecuada y eficaz (art. 42 numerales 1, 3 y 4 LOGJCC); la terminación por despido intempestivo, compensada con indemnización y acta de finiquito, debe impugnarse ante la justicia ordinaria.",
+    "citaTextual": "En consecuencia, la acción de protección no sustituye a todos los demás medios judiciales pues en dicho caso, la justicia constitucional pasaría a asumir potestades que no le corresponden, afectando la seguridad jurídica de los ciudadanos y desvirtuando la estructura jurisdiccional del Estado y desconociendo la garantía institucional que representa la Función Judicial.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo (arts. 33 y 326 CRE, según la demanda)",
+      "Derecho al debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Derecho a la defensa (alegado en la audiencia)"
+    ],
+    "fundamentosDeHecho": "El accionante laboraba en CELEC EP-UN-TRANSELECTRIC con nombramiento definitivo como Jefe de Presupuesto. Mediante Memorando Nro. CELEC-EP-TRA-2024-6699-MEM de 5 de agosto de 2024 se le notificó la terminación unilateral de la relación laboral por despido intempestivo. Consta el pago de una indemnización y la suscripción de acta de finiquito. El juez de primera instancia negó la acción por improcedente y el tribunal de apelación confirma esa decisión.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

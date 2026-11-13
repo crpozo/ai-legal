@@ -1,0 +1,129 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 36250,
+    "tokensSalida": 1750
+  },
+  "salida": {
+    "numero": "17981202405105",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "167",
+          "178.2",
+          "86 inciso 2",
+          "11.2",
+          "33",
+          "66.4",
+          "76.7.l",
+          "82",
+          "226",
+          "325",
+          "326",
+          "331",
+          "332",
+          "417",
+          "425",
+          "47.5",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "14",
+          "16",
+          "17",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42",
+          "86.3"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "150",
+          "151",
+          "156",
+          "159",
+          "160.1.2",
+          "208",
+          "208.1",
+          "209"
+        ]
+      },
+      {
+        "norma": "Convención sobre los Derechos de las Personas con Discapacidad",
+        "articulos": [
+          "2"
+        ]
+      },
+      {
+        "norma": "Declaración Americana de los Derechos y Deberes del Hombre",
+        "articulos": [
+          "14"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (citada por la defensa del Ministerio y el tribunal)",
+        "articulos": [
+          "17",
+          "47 literal e)",
+          "81",
+          "83",
+          "85"
+        ]
+      },
+      {
+        "norma": "Reglamento a la LOSEP (citado por la defensa del Ministerio)",
+        "articulos": [
+          "17",
+          "105"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 258-15-SEP-CC (Caso 2184-11-EP)",
+      "Sentencia de Revisión No. 3-19-EP/20",
+      "Sentencia Vinculante No. 3-19-JP/20 y acumulados",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 72-20-IN/23",
+      "Sentencia No. 011-16-SIS-CC",
+      "Sentencia No. 2231-22-JP/23",
+      "Sentencia No. 001-16-PJO-CC",
+      "Sentencia No. 085-12-SEP-CC",
+      "Sentencia No. 045-11-SEP",
+      "Sentencia No. 04-13-SAN-CC",
+      "Sentencia No. 319"
+    ],
+    "argumentacion": "El tribunal ubica el caso en el derecho al trabajo con estabilidad reforzada de persona con discapacidad y en la garantía de motivación. Reconoce que el nombramiento de libre remoción no confiere estabilidad, pero sostiene que, tratándose de una persona de atención prioritaria, la remoción debía motivarse con razones expresas y ajustes razonables. Constata que el memorando impugnado solo dispone finalizar el nombramiento sin enunciar normas ni explicar la pérdida de confianza, y concluye que hubo vulneración de la motivación y, por ello, de igualdad y no discriminación. Por esa razón revoca la sentencia de primera instancia, que había desechado la acción por improcedencia.",
+    "pruebas": [
+      "Memorando No. MSP-CZ9-2024-22084-M de 23 de noviembre de 2024",
+      "Carnet de discapacidad (fs. 43)",
+      "Acciones de personal (18 de julio de 2024 y 25 de noviembre de 2024), citadas en audiencia",
+      "Memorando MSP-HPBO-2024-5993-M de 14 de noviembre de 2024 (notificación de discapacidad)",
+      "Memorando MSP-MSP-2024-1401-M de 23 de noviembre de 2024",
+      "Registro de aportaciones del IESS"
+    ],
+    "motivacion": "Aplica la Constitución y la Convención sobre Discapacidad para exigir motivación expresa y ajustes razonables antes de terminar la relación con una persona con discapacidad en cargo de libre remoción. Declara que el memorando carece de fundamentación normativa y explicativa y que ello vulnera el debido proceso en la garantía de motivación y el derecho a la igualdad.",
+    "criterioResolucion": "En un cargo de libre nombramiento y remoción, la terminación del nombramiento de una persona con discapacidad (grupo de atención prioritaria) debe ser motivada de forma expresa, con normas aplicables y razones concretas de pérdida de confianza; un acto sin esa motivación vulnera el derecho al trabajo con estabilidad reforzada, la motivación y la igualdad.",
+    "citaTextual": "no existe motivación alguna del porque se da por terminada la relación laboral en las condiciones de libre nombramiento y remoción",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la igualdad y no discriminación",
+      "Estabilidad reforzada por discapacidad",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la motivación",
+      "Principios y garantías de atención prioritaria"
+    ],
+    "fundamentosDeHecho": "El accionante fue nombrado en libre nombramiento y remoción como gerente del Hospital Pediátrico Baca Ortiz, con discapacidad física del 51% acreditada con carnet. Notificó su discapacidad al MSP el 14 de noviembre de 2024 y el 23 de noviembre de 2024 se le notificó con el memorando que finaliza su nombramiento, sin explicar las razones. Tras la audiencia, la jueza de primera instancia desechó la acción por improcedente.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

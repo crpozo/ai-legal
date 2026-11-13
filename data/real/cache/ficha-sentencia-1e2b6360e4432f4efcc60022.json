@@ -1,0 +1,88 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25814,
+    "tokensSalida": 3284
+  },
+  "salida": {
+    "numero": "17230202407097",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "66 numeral 4",
+          "11 numeral 2",
+          "33",
+          "76",
+          "82",
+          "325",
+          "326",
+          "328",
+          "66 numeral 18"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1 y 3"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (citada en primera instancia, no en la apelación)",
+        "articulos": [
+          "81 literal h",
+          "83",
+          "85"
+        ]
+      },
+      {
+        "norma": "Reglamento de la LOSEP (citado en primera instancia, no en la apelación)",
+        "articulos": [
+          "102",
+          "105 numeral 2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que, en principio, el juez constitucional debe examinar primero si hubo vulneración de derechos y solo después la vía idónea. Recoge las excepciones fijadas por la Corte Constitucional en la sentencia 2006-18-EP/24 (parágrafos 38 a 44). Identifica una nueva excepción: los actos administrativos sobre conflictos laborales entre el Estado y servidores públicos corresponden, por regla general, a la jurisdicción contencioso administrativa, salvo que comprometan notoria o gravemente la dignidad o autonomía del servidor (por ejemplo, discriminación evidente) o requieran respuesta urgente. Constata en el expediente (fojas 68) un aviso de salida del 5 de junio de 2023 que remueve al actor del cargo de libre nombramiento y remoción. Concluye que el caso no encaja en esas excepciones y aplica los numerales 1 y 3 del artículo 42 de la LOGJCC.",
+    "pruebas": [
+      "Aviso de salida generado por la entidad empleadora, fojas 68, que registra la remoción del 5 de junio de 2023 (ACP-705-CTH-23)"
+    ],
+    "motivacion": "La improcedencia se funda en que el conflicto es de naturaleza laboral administrativa (remoción de un cargo de libre nombramiento y remoción) que no compromete notoria o gravemente la dignidad del servidor ni exige respuesta urgente, por lo que corresponde a la vía contencioso administrativa. Además, no se configura una discriminación evidente que justifique entrar al fondo. Por ello, se inadmite la acción y se confirma la sentencia de primera instancia que la negó.",
+    "criterioResolucion": "Los conflictos laborales entre el Estado y sus servidores que impugnan actos administrativos (como la remoción) corresponden por regla general a la jurisdicción contencioso administrativa; la acción de protección solo procede si el asunto compromete notoria o gravemente la dignidad o autonomía del servidor (p. ej., discriminación evidente) o requiere respuesta urgente, y el juez debe analizar si se cumple ese supuesto.",
+    "citaTextual": "La mentada excepción procede por regla general, a menos que (al igual que con los empleados de empresas públicas y privadas), el caso se refiera a asuntos que comprometan notoria o gravemente la dignidad o autonomía del servidor, como por ejemplo en casos de evidente discriminación, o en los excepcionalísimos que requieran una respuesta urgente por las circunstancias que lo rodeen.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a una remuneración justa y satisfactoria",
+      "Derecho a la igualdad formal, material y no discriminación",
+      "Derecho al debido proceso",
+      "Derecho a la seguridad jurídica",
+      "Derecho al honor y al buen nombre"
+    ],
+    "fundamentosDeHecho": "El actor, Hugo Enrique Ron Zurita, ocupaba un cargo de nivel jerárquico superior de libre nombramiento y remoción en la Prefectura de Pichincha. El 5 de junio de 2023 se le removió del cargo mediante aviso de salida (fojas 68), sin que, según su alegación, le notificaran formalmente. Reclama remuneraciones desde junio de 2023 y la circular del 19 de febrero de 2024 que informó de su salida. El juez de primera instancia, además, tuvo por constatada una renuncia del actor de 8 de mayo de 2023 (fojas 117); el tribunal de apelación no se basa en ese punto para su decisión.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22611,
+    "tokensSalida": 1803
+  },
+  "salida": {
+    "numero": "17297202501580",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "82",
+          "35",
+          "36",
+          "37",
+          "88",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Salud",
+        "articulos": [
+          "197"
+        ]
+      },
+      {
+        "norma": "Reglamento para el cumplimiento del año de salud rural de servicio social en la red pública integral de salud (Decreto Ejecutivo 468, RO 365 de 30-10-2014)",
+        "articulos": [
+          "2"
+        ]
+      },
+      {
+        "norma": "Instructivo para operativizar el Reglamento para el cumplimiento del año de salud rural (Acuerdo Ministerial 00076 de 21-01-2025)",
+        "articulos": [
+          "8"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "22"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución N° 016-13-SEP-CC (causa 1000-12-EP)",
+      "Sentencia N° 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia N° 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 102-13-SEP-CC (caso 0831-12-EP)",
+      "Sentencia 0380-10-EP",
+      "Sentencia 021-10-SEP-CC (caso 0585-09-EP)",
+      "Sentencia 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal de apelación recuerda que la acción de protección exige verificar una vulneración real de derechos constitucionales y que en el caso correspondía a la entidad demandada desvirtuar los hechos presumidos conforme al artículo 86.3 de la Constitución. Constata que no existe prueba de que la nieta hubiera comunicado al Ministerio su situación de cuidado ni de que tuviera la calidad de sustituta de persona con discapacidad o con enfermedad catastrófica, y que la diabetes no consta como enfermedad catastrófica. Concluye que la asignación de plaza se rige por normas previas y claras (reglamento e instructivo), cuyo incumplimiento por la profesional no genera vulneración de la seguridad jurídica (art. 82). Confirma que la accionante, por ser adulta mayor, merece atención prioritaria, pero no se demostró privación de derechos concretos.",
+    "pruebas": [
+      "Contrato de servicios profesionales de la nieta (01-04-2024), copia notariada",
+      "Certificado médico del Dr. Patricio Maldonado (diabetes, hipertensión y otras enfermedades)",
+      "Informe médico de ClíniVisión (dolencias oculares)",
+      "Documento de registro en el sistema de rurales (fojas 1, 05-07-2025)",
+      "Documento de elección de plaza por grupo 6 (fojas 2, cronograma 13-08-2025)",
+      "Aceptación de Postulación No. 56898-OD e Informe Técnico sobre postulación"
+    ],
+    "motivacion": "Se justifica la decisión en la falta de prueba de vulneración: no consta calificación de sustituta ni enfermedad catastrófica, la nieta no declaró el cuidado ante la entidad, y el procedimiento de asignación se ajustó a la normativa. Se señala que la vía constitucional no suple omisiones de la parte accionante y que la nieta puede volver a postularse.",
+    "criterioResolucion": "La acción de protección no procede para impugnar la asignación administrativa de una plaza de año rural cuando no se demuestra que la entidad vulneró derechos constitucionales de la persona adulta mayor; la falta de declaratoria de sustituto o de enfermedad catastrófica y el incumplimiento del procedimiento reglamentario impiden verificar tal vulneración.",
+    "citaTextual": "no existe en el proceso probanza alguna que demuestre que a su nieta Doménica Isabel Quiroz Feijoo, se la haya dispuesto realizar el año rural en una plaza específica",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derechos de las personas adultas mayores (arts. 35, 36 y 37 de la Constitución)",
+      "Derecho a la vida digna (art. 66.2 de la Constitución, según la sentencia de primera instancia)",
+      "Derecho a la seguridad jurídica (art. 82, mencionado en el análisis)"
+    ],
+    "fundamentosDeHecho": "La accionante, adulta mayor con diabetes y otras dolencias, vive con su nieta odontóloga, quien fue asignada por el sistema a la plaza de Ayapamba (El Oro) en el año rural 2025-2026 tras la postulación del grupo 6. La accionante impugna esa asignación y pide una plaza en Quito o Rumiñahui. La nieta no presentó recurso de revisión dentro de plazo (la plaza debía escogerse el 13-08-2025 y el recurso se presentó el 14-08-2025, según la sentencia de primera instancia) ni consta que hubiera sido declarada sustituta. La entidad indica que la nieta declinó la plaza y puede postularse en diciembre de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

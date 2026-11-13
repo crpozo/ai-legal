@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17268,
+    "tokensSalida": 2684
+  },
+  "salida": {
+    "numero": "17230202530298",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "35",
+          "82",
+          "88",
+          "173",
+          "76 numerales 1, 7.a, 7.b y 7.c",
+          "229",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "168.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público (LOSEP)",
+        "articulos": [
+          "48 literal m"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP",
+        "articulos": [
+          "22 literal c",
+          "222 literal c"
+        ]
+      },
+      {
+        "norma": "Acuerdo Ministerial MDT-2024-175 (procedimiento de sumarios administrativos)",
+        "articulos": [
+          "19",
+          "20",
+          "42",
+          "43"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 0016-13-SEP-CC",
+      "Sentencia 453-21-EP/24",
+      "Sentencia 2632-22-EP/25",
+      "Sentencia 2137-21-EP/21",
+      "Sentencia 258-15-SEP-CC (caso 2184-11-EP)"
+    ],
+    "argumentacion": "El tribunal analiza primero su competencia y la validez del proceso. Luego verifica si el conflicto laboral con el Estado debe resolverse en sede constitucional, por tratarse de una persona con discapacidad, y concluye que sí. Examina la seguridad jurídica: concluye que el informe técnico se adjuntó, aunque con error en la cita de número y fecha, lo que no tiene relevancia constitucional. Examina el debido proceso y la defensa: el procedimiento siguió el Acuerdo MDT-2024-175, el sumariado tuvo tiempo y medios, y los diferimientos fueron pedidos por él. Examina la tutela judicial efectiva y la motivación, y concluye que la condición de discapacidad no exime de responsabilidad disciplinaria con un debido proceso.",
+    "pruebas": [
+      "Copia del sumario administrativo MDT-SSCRSSP-DRSASP-SA-2025-173 (0472), incluidos auto de inicio, solicitud de la Universidad Estatal de Bolívar, auto de llamamiento y acta de audiencia",
+      "Informe Técnico 111-DTH-2025 (fs. 45 a 52 del expediente administrativo) y memorando UEB-ECT-2025-0407-M (fs. 204)",
+      "Notificación de resultados de la evaluación de desempeño 2024 (23 de enero de 2025)",
+      "Carné de discapacidad física del 44 % (fs. 2)",
+      "Certificación de materialización de documento (fs. 219)",
+      "Memorando UEB-TICS 2025-0227-M sobre la segunda evaluación"
+    ],
+    "motivacion": "Concluye que el Ministerio de Trabajo no vulneró los derechos alegados: el sumario cumplió las normas del procedimiento vigente, la causal de destitución estaba prevista en la ley, el sumariado ejerció su defensa y no compareció a la audiencia. La discapacidad no impide la sanción disciplinaria cuando se respeta el debido proceso.",
+    "criterioResolucion": "No basta la inobservancia de una norma infraconstitucional para declarar vulnerada la seguridad jurídica; debe tener como resultado la afectación de preceptos constitucionales. En conflictos laborales contra el Estado, el juez debe justificar la vía, verificar si hay excepcionalidad (como discapacidad) y analizar después las vulneraciones. Una persona con discapacidad no queda exenta de sanción disciplinaria si se observa el debido proceso.",
+    "citaTextual": "Es por ello que para que se produzca una vulneración al derecho a la seguridad jurídica es necesario que la inobservancia de la norma infra-constitucional tenga como resultado la afectación de preceptos constitucionales",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes",
+      "Derecho a la defensa (no ser privado de la defensa en ninguna etapa, contar con tiempo y medios, ser escuchado)",
+      "Tutela judicial efectiva, en relación con el derecho de petición",
+      "Garantía de motivación",
+      "Derecho al trabajo",
+      "Derecho a la vida digna"
+    ],
+    "fundamentosDeHecho": "El accionante, servidor de carrera de la Universidad Estatal de Bolívar con discapacidad física del 44 %, fue calificado como insuficiente en la evaluación de desempeño 2024 y en la segunda evaluación. Con base en ello, la Universidad solicitó un sumario administrativo al Ministerio de Trabajo, que lo tramitó y lo destituyó el 28 de agosto de 2025 por la causal del artículo 48 literal m de la LOSEP. El accionante no compareció a la audiencia de 28 de agosto de 2025, tras diferimientos pedidos por él.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

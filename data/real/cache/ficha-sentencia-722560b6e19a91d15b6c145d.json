@@ -1,0 +1,97 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12391,
+    "tokensSalida": 3116
+  },
+  "salida": {
+    "numero": "17204202400616",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.5",
+          "86",
+          "87",
+          "88",
+          "369",
+          "436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "42.1",
+          "168.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "158"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "33",
+          "35",
+          "1510"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "17 literal c",
+          "85"
+        ]
+      },
+      {
+        "norma": "Reglamento de Regulación de la declaratoria jurisdiccional previa en casos de dolo, manifiesta negligencia o error inexcusable (Resolución N° 012-CCE-PLE-2020)",
+        "articulos": [
+          "6",
+          "9"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 3-19-JP/20 de la Corte Constitucional, párrafos 182, 183, 184, 185, 186, 188, 213 y 214",
+      "Sentencia 3-19-CN/20 de la Corte Constitucional, numeral 113.2",
+      "Sentencia 1-16-PJO-CC (caso 530-10-JP), párr. 30",
+      "Sentencia 0016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación acepta el recurso, revoca la sentencia de primera instancia que había desechado la acción por improcedencia (art. 42.1 LOGJCC). Reconoce que el cargo era de libre remoción, pero examina si la desvinculación vulneró derechos constitucionales por la forma de computar el período de 30 días del párrafo 185 de la sentencia 3-19-JP/20. Concluye que aplicar el artículo 158 del COA, que trata los términos como máximos, es una interpretación contraria al artículo 11.5 de la Constitución, porque la sentencia vinculante favorece más la protección si se entiende el período como plazo, según los artículos 33 y 35 del Código Civil y 1510 ibídem. Por ello, la terminación del 8 de enero de 2024 vulneró la protección de la mujer embarazada y en lactancia. Respecto de la solicitud de declaratoria jurisdiccional previa, la rechaza por extemporánea: no se formuló como cargo independiente en el escrito del recurso de apelación oral del 12 de marzo de 2024, y el escrito del 15 de noviembre de 2024 se presentó fuera de oportunidad.",
+    "pruebas": [
+      "Nombramiento de libre remoción de la accionante como Directora Nacional de Contratación Pública (desde 24/08/22), con cambio de denominación por Acuerdo Ministerial de 22 de septiembre de 2022",
+      "Memorando N° MSP-MSP-2024-0042-M de 8 de enero de 2024 (terminación de la relación laboral)",
+      "Decreto Ejecutivo N° 15 de 23 de noviembre de 2023 (designación del Ministro Encalada Calero)",
+      "Memorando N° MSP DCP 2023-1701-M de 6 de diciembre de 2023 (vacaciones)",
+      "Memorando N° MSP-DCP-2023-1754-M de 19 de diciembre de 2023 (reintegro el 2 de diciembre de 2023 y permiso de lactancia de 12 meses)"
+    ],
+    "motivacion": "Se fundamenta en el carácter tutelar de la acción de protección (art. 88 CRE y jurisprudencia citada), en la fuerza vinculante de la sentencia 3-19-JP/20 (art. 436.6 CRE) y en la obligación de aplicar la interpretación más favorable a la vigencia de derechos (art. 11.5 CRE). Considera que el Ministerio tomó como término lo que la sentencia configura como plazo, lo que afectó el derecho de cuidado de la accionante durante la lactancia. Como reparación, ordena compensación económica por el derecho de cuidado, remuneración completa desde el 8 de enero de 2024 hasta el 2 de diciembre de 2024, liquidación ante el Tribunal Contencioso Administrativo y disculpas públicas en la página institucional. Niega las demás reparaciones por tratarse de situación consolidada y no de despido.",
+    "criterioResolucion": "Según esta resolución, el período máximo de 30 días del párrafo 185 de la sentencia 3-19-JP/20 debe entenderse como plazo y no como término, de modo que no le es aplicable el artículo 158 del Código Orgánico Administrativo. Esa interpretación es la que más favorece la vigencia de los derechos de la mujer en período de lactancia, conforme al artículo 11.5 de la Constitución, y su desconocimiento configura vulneración de derechos constitucionales.",
+    "citaTextual": "es evidente que la interpretación que favorece el ejercicio de los derechos laborales de la mujer embarazada y el derecho al cuidado es interpretar en el sentido de que se trata de un plazo, tanto más que la norma del artículo 33 del Código Civil determina que los plazos pueden computarse en días, meses o años y no con la limitación que prevé el Código Orgánico Administrativo",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Igualdad material y no discriminación",
+      "Atención prioritaria por condición de mujer embarazada",
+      "Facilidades para recuperarse del embarazo y durante la lactancia (derecho al cuidado)",
+      "Vida digna que asegure el trabajo y la seguridad social",
+      "Seguridad jurídica",
+      "Estabilidad laboral reforzada",
+      "Seguridad social"
+    ],
+    "fundamentosDeHecho": "La accionante fue nombrada en libre remoción como Directora Nacional de Contratación Pública del Ministerio de Salud Pública. Se acogió a licencia de maternidad y luego a permiso de lactancia desde el 2 de diciembre de 2023. Tras el cambio de Ministro (Decreto Ejecutivo N° 15 de 23 de noviembre de 2023), el Memorando N° MSP-MSP-2024-0042-M de 8 de enero de 2024 notificó la terminación de su relación laboral, con base en la sentencia 3-19-JP/20 y el cómputo de 30 días del artículo 158 del COA. La accionante denunció trato hostil y negativa de vacaciones, hechos que el tribunal no decide como vulneraciones autónomas.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

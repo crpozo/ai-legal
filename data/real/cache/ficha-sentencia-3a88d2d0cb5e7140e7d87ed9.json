@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 13688,
+    "tokensSalida": 1380
+  },
+  "salida": {
+    "numero": "17294202400500",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76.7.l",
+          "82",
+          "88",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "norma": "Reglas de Procedimiento para el Ejercicio de las competencias de la Corte Constitucional",
+        "articulos": [
+          "50"
+        ]
+      },
+      {
+        "norma": "Código Tributario",
+        "articulos": [
+          "55",
+          "56"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal aborda primero si existe vulneración de derechos constitucionales y luego si el asunto es de mera legalidad. Sobre la motivación, considera que el informe jurídico municipal y la emisión del título de crédito contienen motivación suficiente según los criterios de la sentencia 1158-17-EP/21. Sobre la seguridad jurídica, concluye que el título se emitió con normas vigentes y por recomendación obligatoria de la Contraloría. La prescripción alegada es un asunto de legalidad que corresponde a la administración o a la justicia ordinaria, por lo que no se configura vulneración a derechos constitucionales; la acción de protección no es procedente y se confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Comprobante de pago del título de crédito No. 61003668046",
+      "Comprobante de pago No. 3607751",
+      "Memorando No. 205-GU-2012",
+      "Memorando al Tesorero Municipal de 01 de octubre de 2012",
+      "Informe técnico favorable de subdivisión N°023",
+      "Escrito de impugnación de 06 de mayo de 2024",
+      "Resolución Nro. GADMQ-DMF-2024-0010-R",
+      "Copia de la cédula de identidad",
+      "Expediente administrativo presentado por la parte accionada"
+    ],
+    "motivacion": "La resolución sostiene que la motivación del título de crédito es suficiente y que la emisión obedece a normas vigentes y a una recomendación obligatoria de la Contraloría. Afirma que la prescripción es un análisis de legalidad que debe resolverse en la vía administrativa u ordinaria, y que la acción de protección no es residual ni procede en asuntos patrimoniales. Cita la regla de la sentencia 001-16-PJO-CC sobre la vía idónea.",
+    "criterioResolucion": "La prescripción de una obligación de cobro, al tratarse de un asunto de legalidad de naturaleza patrimonial, no se resuelve por acción de protección cuando existen vías administrativas y judiciales ordinarias idóneas, y la emisión de un título de crédito con motivación suficiente y normas vigentes no vulnera la garantía de motivación ni la seguridad jurídica.",
+    "citaTextual": "la alegación que hace el accionante sobre que dicho cobro estaría prescrito, evidentemente es un análisis que corresponderá a la administración y/o a la justicia ordinaria, toda vez que se trata de un asunto de legalidad",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de la motivación",
+      "Seguridad jurídica (principio de irretroactividad de los tributos)"
+    ],
+    "fundamentosDeHecho": "El 18 de octubre de 2012 el accionante pagó un título de crédito por contribución de áreas verdes (USD 6.714,53). En 2023 se le notificó una orden de pago por USD 11.385,00 emitida el 14 de marzo de 2023, tras un informe de la Contraloría (DNAI-AI-0396-2018). El accionante impugnó alegando prescripción del artículo 55 del Código Tributario. La jueza de primera instancia rechazó la acción y el tribunal confirma esa decisión.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

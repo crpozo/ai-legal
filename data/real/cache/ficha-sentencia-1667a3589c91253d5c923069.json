@@ -1,0 +1,96 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26489,
+    "tokensSalida": 1815
+  },
+  "salida": {
+    "numero": "17203202402009",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "35",
+          "43",
+          "66.4",
+          "82",
+          "86.3",
+          "86.5",
+          "332",
+          "325",
+          "33",
+          "88",
+          "436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "18",
+          "19",
+          "21",
+          "24",
+          "25",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "25"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66"
+        ]
+      },
+      {
+        "norma": "LOSEP",
+        "articulos": [
+          "58"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Corte Constitucional 2006-18-EP/24 (13 de marzo de 2024)",
+      "Sentencia Corte Constitucional 3-19-JP/20 y acumulados (5 de agosto de 2020)",
+      "Sentencia Corte Constitucional 001-16-PJO-CC (caso 530-10-JP)",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1178-19-JP/21"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que, conforme a la sentencia 2006-18-EP/24, la impugnación de la terminación de contratos de servicios ocasionales corresponde en regla general a la vía contencioso-administrativa, pero admite la excepción cuando la servidora estaba embarazada o en lactancia y se afectan derechos vinculados a la vida digna. Aplica el artículo 86.3 de la Constitución: al ser entidad pública la accionada, se presumen ciertos los hechos si no los desvirtúa. Concluye que la accionada no demostró lo contrario, por lo que la terminación se presume discriminatoria, citando el párrafo 72 de la sentencia 3-19-JP/20 y aplicando la compensación prevista en esa sentencia. Rechaza la apelación y confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Memorando URS-CGAF-2024-0020-M de 31 de enero de 2024 (terminación del contrato)",
+      "Acción de Personal CGAF-TH-2023-0299 (licencia por maternidad de 84 días)",
+      "Acción de Personal CGAF-TH-2023-0333 (permiso para cuidado del recién nacido de 15 meses)",
+      "Informe técnico URS-GTH-2023-007-IFT-014 citado en la acción de personal",
+      "Informes y documentación aportados por la accionada sobre la finalización contractual y el análisis de estabilidad laboral (no valorados en detalle en el texto)"
+    ],
+    "motivacion": "La falta de demostración por parte de la entidad accionada de que la terminación no fue discriminatoria, sumada a la presunción de ciertos hechos del artículo 86.3 de la Constitución y el artículo 16 de la LOGJCC, lleva a declarar vulnerados los derechos a la igualdad y no discriminación y la prohibición de despido (art. 332). Se confirma la reparación ordenada en primera instancia: reintegro, pago de haberes desde el 31 de enero de 2024 y remisión al Tribunal Contencioso Administrativo para determinar valores.",
+    "criterioResolucion": "Frente a la terminación de un contrato de servicios ocasionales de una mujer en periodo de lactancia, la entidad pública accionada debe demostrar que la desvinculación no fue discriminatoria; si no lo hace, la terminación se presume discriminatoria y procede la acción de protección pese a tratarse de un conflicto laboral con servidores públicos, según la excepción de la sentencia 2006-18-EP/24.",
+    "citaTextual": "toda terminación de una relación laboral de una mujer embarazada, en licencia de maternidad o en periodo de lactancia se debe presumir discriminatoria si la entidad responsable no demuestra lo contrario.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Debido proceso en la garantía de la motivación",
+      "Atención prioritaria y trato preferente de mujeres en periodo de lactancia",
+      "Derecho al desarrollo integral de niños, niñas y adolescentes (interés superior del niño)",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la igualdad y no discriminación",
+      "Derecho a una vida digna"
+    ],
+    "fundamentosDeHecho": "La accionante prestó servicios bajo contratos ocasionales en la Unidad del Registro Social desde 2022 hasta enero de 2024. Se le concedió licencia por maternidad (84 días desde el 29 de julio de 2023) y permiso para el cuidado del recién nacido (15 meses desde el 21 de octubre de 2023). Mediante memorando de 31 de enero de 2024 se le notificó la terminación del contrato 001-2024. La accionada alegó falta de recursos por terminación del préstamo que financiaba el proyecto, sin acreditarlo con la prueba que el tribunal considera suficiente para desvirtuar la presunción.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

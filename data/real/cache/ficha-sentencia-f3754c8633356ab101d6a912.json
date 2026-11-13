@@ -1,0 +1,64 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8044,
+    "tokensSalida": 2326
+  },
+  "salida": {
+    "numero": "17230202608119",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "43",
+          "44.4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "137"
+        ]
+      },
+      {
+        "norma": "Código de la Niñez y Adolescencia",
+        "articulos": [
+          "137"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2701-21-EP/23 (Corte Constitucional)",
+      "Sentencia 253-20-JH/22 (Caso Mona Estrellita, Corte Constitucional)",
+      "Sentencia N.° 247-17-SEP-CC (Caso N.° 0012-12-EP)"
+    ],
+    "argumentacion": "El tribunal confirma la competencia y la validez del proceso, delimita el objeto del hábeas corpus restaurativo con cita de la Corte Constitucional, define privación ilegal, arbitraria e ilegítima y verifica si el apremio personal por deuda alimenticia cumple esos criterios. Concluye que la orden fue dictada por la jueza competente, ejecutada conforme a la ley y sin vicios en la aprehensión, por lo que no procede recuperar la libertad. El texto no desarrolla en profundidad la ponderación con el interés superior del menor que alegaba el accionante.",
+    "pruebas": [
+      "Parte policial N° 2026031807112984701 sobre la aprehensión del 18/03/2026",
+      "Oficio 17203-2019-07265-Oficio-04521-2026 de 23 de febrero de 2026",
+      "Informe de la jueza accionada (fs. 159)",
+      "Proceso de alimentos examinado, incluida la audiencia del artículo 137 y la orden de apremio"
+    ],
+    "motivacion": "La privación de libertad se sustenta en apremio personal total ordenado por incumplimiento de dos o más pensiones alimenticias, sin que el alimentante justificara insuficiencia de recursos, enfermedad o discapacidad, tras haber sido convocado a audiencia a la que no compareció. Se respetó el debido proceso en la orden y en la aprehensión. Consideraciones posteriores sobre la custodia de la menor no alteran la legalidad de la orden respecto de una deuda alimenticia vinculada al derecho a la vida.",
+    "criterioResolucion": "En hábeas corpus restaurativo contra apremio personal por incumplimiento de pensiones alimenticias, la privación de libertad no es ilegal, arbitraria ni ilegítima si la orden fue dictada por juez competente, se agotó la audiencia del artículo 137 sin justificación de insuficiencia económica y la aprehensión se hizo conforme a la ley. Circunstancias posteriores a la determinación de la deuda, como un cambio de tenencia de la alimentaria, no bastan para desvirtuar ese apremio.",
+    "citaTextual": "En definitiva la privación de la libertad no fue ilegal, arbitraria ni ilegítima, sin que consideraciones supervenientes a la determinación de la deuda tengan relevancia respecto a un derecho como el de alimentos que está vinculado directamente con el derecho a la vida.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Libertad personal",
+      "Interés superior del menor"
+    ],
+    "fundamentosDeHecho": "El accionante William Germán Zapata Ramos fue apremiado personalmente por deuda de pensiones alimenticias, con incumplimiento de un convenio de pago desde mayo de 2020, audiencia del artículo 137 sin su comparecencia y apremio total ordenado por la jueza de la Unidad Judicial de Familia, Mujer, Niñez y Adolescencia de Mariscal Sucre. Fue aprehendido el 18/03/2026. Afirma que desde octubre de 2024 la menor vive con él por resolución de tenencia, circunstancia que el tribunal considera posterior a la determinación de la deuda. La primera instancia negó el hábeas corpus y el tribunal rechaza la apelación.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

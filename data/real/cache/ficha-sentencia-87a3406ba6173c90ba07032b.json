@@ -1,0 +1,95 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 16404,
+    "tokensSalida": 1940
+  },
+  "salida": {
+    "numero": "17282202501278",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 86",
+          "Art. 88",
+          "Art. 82",
+          "Art. 211",
+          "Art. 76 numeral 7 literal l)",
+          "Art. 11 numeral 2",
+          "Art. 66 numeral 4",
+          "Art. 76 numeral 7 literal a), c), h)"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 39 al 42",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42 numerales 1, 2, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de la Contraloría General del Estado",
+        "articulos": [
+          "Art. 52",
+          "Art. 53"
+        ]
+      },
+      {
+        "norma": "Reglamento de Determinación de Responsabilidades",
+        "articulos": [
+          "Art. 16"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "Art. 161",
+          "Art. 194"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 001-16-PJO-CC, caso 530-10-JP",
+      "Corte Constitucional, sentencia No. 045-11-SEP-CC",
+      "Corte Constitucional, sentencia No. 1774-20-EP/24",
+      "Corte Constitucional, sentencia No. 1844-18-EP/23",
+      "Corte Constitucional, sentencia No. 32-21-IN/21 y acumulado",
+      "Corte Constitucional, sentencia No. 61-19-IN/21",
+      "Corte Constitucional, sentencia No. 2900-18-EP/23",
+      "Corte Constitucional, caso No. 0343-09-EP",
+      "Corte Constitucional, sentencia No. 0055-11-SEP-CC",
+      "Corte Constitucional, casos Nos. 0831-12-EP, 0380-10-EP, 1000-12-EP y sentencias 102-13-SEP-CC y 016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal recuerda que la acción de protección exige violación de un derecho constitucional, acto de autoridad pública no judicial y ausencia de otro mecanismo adecuado y eficaz. Analiza cuatro preguntas: seguridad jurídica (concluye que no hay vulneración porque la Contraloría aplicó normas previas, claras y públicas, y la presunción de inocencia se mantuvo), motivación (concluye que la resolución 25247 enuncia normas y explica su aplicación, por lo que cumple el estándar mínimo), igualdad (no se demostró trato diferenciado ni casos análogos con resultados contrarios) y defensa (el rechazo de pruebas copiadas simples o no pertinentes no genera indefensión). Finalmente concluye que la pretensión es de mera legalidad y que se pretendía usar la acción como tercera instancia para revertir un acto administrativo, por lo que no cumple requisitos de procedencia.",
+    "pruebas": [
+      "Resolución No. 25247 de la Contraloría General del Estado, de 06 de febrero de 2025",
+      "Informe del examen especial DNA6-RN-0005-2021",
+      "Glosas solidarias 02935 y 02936, notificadas el 14 de junio de 2024",
+      "Escritos de descargo de los accionantes y documentos descartados por no reunir requisitos formales",
+      "Acta de la audiencia pública de 13 de agosto de 2025"
+    ],
+    "motivacion": "Se rechaza la apelación y se confirma la sentencia de primera instancia que negó la acción por improcedencia (Arts. 40 y 42 LOGJCC). El tribunal considera que no se acreditó vulneración de derechos constitucionales y que el asunto corresponde a la justicia ordinaria contencioso-administrativa.",
+    "criterioResolucion": "La acción de protección no procede cuando, sin vulneración real de derechos constitucionales, el accionante pretende que el juez constitucional revise la legalidad de un acto administrativo de control o la valoración de un examen especial, asuntos que corresponden a la vía contencioso-administrativa.",
+    "citaTextual": "Como se evidencia la pretensión de los accionantes radica en utilizar la garantía constitucional de la Acción de Protección como una \"tercera instancia\", para revertir un acto administrativo de control que no les es favorable. La inconformidad con la valoración del examen especial o la interpretación de cláusulas contractuales constituye un asunto de mera legalidad, cuyo conocimiento corresponde a la sede contencioso-administrativa;",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (Art. 82 CRE)",
+      "Debido proceso en la garantía de motivación (Art. 76.7.l CRE)",
+      "Igualdad formal, igualdad material y no discriminación (Art. 66.4 CRE)",
+      "Derecho a la defensa (Art. 76.7 CRE)"
+    ],
+    "fundamentosDeHecho": "Los accionantes fueron notificados el 14 de junio de 2024 con glosas solidarias 02935 y 02936 y tuvieron 60 días para presentar descargos. La Contraloría rechazó algunos documentos por no reunir requisitos formales. Mediante Resolución No. 25247 de 06 de febrero de 2025 se determinó responsabilidad civil culposa. El juez de primera instancia negó la acción en audiencia del 13 de agosto de 2025 y los accionantes apelaron.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25421,
+    "tokensSalida": 3576
+  },
+  "salida": {
+    "numero": "17571202600303",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "61 numeral 7",
+          "76 numeral 7 literal l",
+          "82",
+          "88",
+          "86 numeral 5",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "25 numeral 1",
+          "40",
+          "42 numeral 1",
+          "42 numerales 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público (COESCOP)",
+        "articulos": [
+          "93",
+          "94",
+          "95"
+        ]
+      },
+      {
+        "norma": "Acuerdo Ministerial 0151 (Reglamento del proceso de reclutamiento y selección), citado de forma general sin artículos precisos en la resolución",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 247-16-SEP-CC (caso 0997-11-EP)",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20"
+    ],
+    "argumentacion": "El tribunal de alzada confirma que el asunto no es materia de acción de protección, pero analiza igualmente cada derecho invocado. Sobre igualdad y no discriminación, no encuentra prueba de un trato diferenciado frente a otros servidores en igual situación. Sobre acceso a la función pública, considera que el régimen policial ofrece la vía de tránsito (arts. 93 a 95 COESCOP) y que la convocatoria responde a una finalidad válida. Sobre motivación, entiende que el acto estaba respaldado en la Comisión General de Admisión, en informes técnicos y en el Acuerdo 0151, y que cumple la estructura mínima. Sobre seguridad jurídica, considera que el oficio es un acto de comunicación interna que no reformó el acuerdo ni creó o extinguió derechos, y que el reclamo es de legalidad. Concluye que la acción es improcedente por el artículo 42 numerales 1, 3 y 4 de la LOGJCC, y que la vía ordinaria es la adecuada.",
+    "pruebas": [
+      "Oficio Nro. PN-CGA-QX-2026-0484-O de 12 de abril de 2026",
+      "Convocatoria del proceso de reclutamiento y selección abril 2026 (9 de abril de 2026)",
+      "Acuerdo Ministerial 0151",
+      "Informes técnicos de talento humano y planificación citados como respaldo del acto",
+      "Prueba documental actuada en el proceso"
+    ],
+    "motivacion": "Se confirma la sentencia de primera instancia y se niega la acción por improcedente. La decisión se apoya en que no se verificó una vulneración real de derechos constitucionales y en que el reclamo versa sobre legalidad, con una vía judicial ordinaria idónea. Cita los artículos 42 numerales 1, 3 y 4 LOGJCC. Nota: la parte dispositiva menciona solo el numeral 1, mientras que el análisis cita los numerales 3 y 4.",
+    "criterioResolucion": "La acción de protección no procede cuando no se verifica una vulneración real de derechos constitucionales y el reclamo se dirige a cuestionar la legalidad de un acto administrativo, para lo cual existe la vía judicial ordinaria idónea y eficaz.",
+    "citaTextual": "No todas las vulneraciones al ordenamiento jurídico necesariamente tienen cabida para el debate en la esfera constitucional ya que para conflictos en materia de legalidad existen las vías idóneas y eficaces dentro de la jurisdicción ordinaria.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad y no discriminación (art. 11.2 CRE)",
+      "Acceso a desempeñar funciones públicas en igualdad de condiciones (art. 61.7 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Garantía de la motivación (art. 76.7.l CRE)"
+    ],
+    "fundamentosDeHecho": "La legitimada activa, servidora policial técnico operativa en servicio activo, impugna el Oficio PN-CGA-QX-2026-0484-O de 12 de abril de 2026, que impidió la participación de servidores policiales en servicio activo en el proceso de reclutamiento abril 2026, convocado el 9 de abril de 2026. Sostiene que el Acuerdo 0151 no prevé esa exclusión. El tribunal no encuentra vulneración de derechos y declara la improcedencia de la acción.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

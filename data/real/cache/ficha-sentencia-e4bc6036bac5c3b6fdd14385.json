@@ -1,0 +1,72 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21648,
+    "tokensSalida": 1954
+  },
+  "salida": {
+    "numero": "17T03202400073",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "88",
+          "226",
+          "436.9"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "23",
+          "24",
+          "25.1",
+          "39",
+          "40",
+          "41",
+          "42.1",
+          "42.4",
+          "42.5",
+          "42.6",
+          "164.4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 140-12-SEP-CC",
+      "Sentencia No. 041-13-SEP-CC (caso 00470-12-EP)",
+      "Resolución No. 016-13-SEP-CC (causa 1000-12-EP)",
+      "Sentencia No. 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia No. 2731-23-EP/24",
+      "Sentencia No. 2006-18-EP/24",
+      "Sentencia No. 87-20-IN/23",
+      "Sentencia No. 1580-18-EP/23",
+      "Sentencia No. 102-13-SEP-CC (caso 0831-12-EP)",
+      "Sentencia No. 0380-10-EP",
+      "Sentencias 1357-13-EP/20, 1101-20-EP/22, 1679-12-EP/20, 253-16-EP/21, 1329-12-EP/22, 2901-19-EP/23, 1178-19-JP/21, 165-19-JP/21, 461-19-JP/23, 446-19-EP/24, 1452-17-EP/24 (citadas por la Corte Constitucional en la sentencia 2006-18-EP/24)"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que, en principio, el juez debe examinar si hubo vulneración de derechos antes de declarar la vía ordinaria idónea. Aplica las excepciones de la Corte Constitucional (2006-18-EP/24) y concluye que la acción es híbrida: demanda a entidades públicas y privadas. Respecto de las privadas (OCP Ecuador y Pampa Bloque 18), considera que la pretensión de pago de utilidades laborales y de ejecución de sentencias ajenas es improcedente (causales 1, 4, 5 y 6 del art. 42 LOGJCC), que las pretensiones 87 y 89 son asuntos de legalidad contractual y que la vía de cumplimiento es la acción de incumplimiento. Respecto de las públicas, considera que los derechos a salud, educación y seguridad social se plantean de forma abstracta y presupuestaria, sin caso concreto, y que la cuestión contractual del contrato de autorización corresponde a la justicia contenciosa administrativa. Confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Contrato de autorización para la construcción y operación del OCP (15 de febrero de 2001), citado por el accionante pero no examinado como prueba en el texto",
+      "Decreto Ejecutivo 969 (16 de noviembre de 2000), citado por las partes",
+      "Actas de Determinación SRI Nro. 1720090100141 y 172009010045 y sentencias en las causas 17501-2009-0028, 0076 y 17504-0114-2010, invocadas como sustento de la pretensión 88",
+      "Contrato de prestación de servicio público con EP Petroecuador (9 de noviembre de 2018), mencionado"
+    ],
+    "motivacion": "La improcedencia se funda en que la pretensión es de cumplimiento contractual, de ejecución de sentencias de otros jueces y de declaración de derechos laborales, y en que los derechos invocados se formulan de manera abstracta y no como vulneración concreta. Se apoya en la jurisprudencia de la Corte Constitucional sobre manifiesta improcedencia en contratos públicos y en la distinción entre legalidad y justicia constitucional.",
+    "criterioResolucion": "La acción de protección no procede cuando la pretensión se reduce al cumplimiento de obligaciones contractuales, a la ejecución de sentencias dictadas en otros procesos o a la declaración de derechos laborales, ni cuando los derechos invocados (salud, educación, seguridad social) se alegan de forma abstracta y presupuestaria sin un caso concreto de vulneración; en tales casos corresponde la vía ordinaria, contenciosa administrativa o la acción de incumplimiento.",
+    "citaTextual": "Una vez aclarado su ámbito, no es procedente entablar acción de protección cuando la pretensión de la misma se reduzca al cumplimiento de las disposiciones contractuales, como ocurre en el presente caso, pues para ello el ordenamiento jurídico provee en sede administrativa o vía jurisdiccional el camino diseñado para la protección de las cláusulas contractuales",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la salud",
+      "Derecho a la educación",
+      "Derecho a la seguridad social"
+    ],
+    "fundamentosDeHecho": "El accionante, por sus propios derechos y como coordinador del Frente de Defensa Petrolero Ecuatoriano, alega que el contrato de autorización del OCP (2001) terminó automáticamente el 20 de enero de 2024 y que el Estado no asumió la operación ni recibió los bienes y acciones, lo que afecta el presupuesto estatal. Pide la entrega del oleoducto, el pago de utilidades de 2005 y 2006 a favor de ex trabajadores y el cumplimiento de pasivos ambientales. La sentencia de primera instancia negó la acción y el tribunal de apelación confirma esa decisión. El texto no describe actos concretos de autoridad que hayan afectado a personas determinadas.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

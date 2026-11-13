@@ -1,0 +1,88 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 49187,
+    "tokensSalida": 4097
+  },
+  "salida": {
+    "numero": "17983202500405",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "66 numeral 4",
+          "33",
+          "66 numeral 17",
+          "325",
+          "82",
+          "88",
+          "86 numeral 5",
+          "169",
+          "228"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "14",
+          "18",
+          "24",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66"
+        ]
+      },
+      {
+        "norma": "Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos",
+        "articulos": [
+          "14"
+        ]
+      },
+      {
+        "norma": "Acuerdo Ministerial MRL-2011-00142 (norma de subsistema de reclutamiento y selección)",
+        "articulos": [
+          "34"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 2034-13-EP/19, párrafo 21",
+      "Corte Constitucional, sentencia 54-17-IN/22, párrafos 65 y 66",
+      "Corte Constitucional, sentencia 751-15-EP/21, párrafo 99",
+      "Corte Constitucional, sentencia 1797-18-EP/20, párrafos 39 y 40",
+      "Corte Constitucional, sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Corte Constitucional, sentencia 2006-18-EP/24, párrafos 42 y 43",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la sentencia de primera instancia que negó la acción de protección. Primero, valida el proceso. Segundo, plantea si hubo vulneración de igualdad y no discriminación, trabajo (estabilidad) y seguridad jurídica. En igualdad, concluye que no hay comparabilidad: un grupo tiene informes de meritocracia favorables y se crearon puestos para él, mientras que los accionantes tienen informes no favorables del ex Instituto Nacional de la Meritocracia; por ello no pasa al resto del test. En trabajo, sostiene que no se les privó de la capacidad general de trabajar, sino que se limitó el ejercicio de un puesto específico por restricciones técnicas de los informes no favorables, y que siguen laborando. En seguridad jurídica, considera que la normativa aplicable era previa, clara y pública, y que cualquier inconformidad sobre la forma del concurso debe ventilarse en la justicia ordinaria. Cita la sentencia 2006-18-EP/24 para concluir que los conflictos laborales con servidores públicos corresponden por regla general a la contencioso-administrativa, salvo discriminación evidente o afectación grave de la dignidad. Finalmente, aplica la improcedencia del artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Informes de validación no favorables 1419-DS-INM-2012, 2247-DS-INM-2013 y 1477-DS-INM-2012",
+      "Actas de declaratoria de ganador del concurso",
+      "Memorando MSP-CZ9-2025-10326-M de 22 de mayo de 2025 (informe del Ministerio de Salud)",
+      "Memorando MSP-HPBO-2025-2434-M (informe del Hospital Pediátrico Baca Ortiz, que indica que los 22 puestos fueron ocupados por ganadores con informe favorable del INM)",
+      "Resolución MRL-STF-2014-0575 de creación de 22 puestos",
+      "Informes de nombramientos y de situación laboral actual de los accionantes"
+    ],
+    "motivacion": "La resolución sostiene que la acción de protección no es la vía para resolver el conflicto sobre el nombramiento definitivo, porque el caso gira en torno a la validez de informes de un concurso y a la legalidad de la gestión administrativa, y no a una vulneración directa de derechos constitucionales. Verificado el fondo, no encuentra vulneración de igualdad, trabajo ni seguridad jurídica. Por eso declara improcedente la demanda y confirma la sentencia de primera instancia.",
+    "criterioResolucion": "No hay trato discriminatorio cuando el término de comparación no está en una situación idéntica o análoga, por ejemplo cuando un grupo tiene informes de meritocracia favorables y el otro informes no favorables. Además, las controversias sobre nombramientos derivados de concursos con informes no favorables deben tramitarse en la vía ordinaria o contencioso-administrativa, salvo discriminación evidente o afectación grave de la dignidad.",
+    "citaTextual": "Al no existir el elemento de comparabilidad, no se podría considerar a un trato diferenciado como discriminatorio, puesto que existirían diferencias que lo justifican y que no permiten brindar un tratamiento idéntico o equiparable",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la igualdad formal, material y no discriminación (artículos 11 numeral 2 y 66 numeral 4 de la Constitución)",
+      "Derecho al trabajo, en particular la estabilidad y permanencia en el sector público (artículos 33, 66 numeral 17 y 325 de la Constitución)",
+      "Derecho a la seguridad jurídica (artículo 82 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "Los accionantes participaron en el concurso de oposición y méritos de 2012 y fueron declarados ganadores, pero el Instituto Nacional de la Meritocracia emitió informes no favorables sobre sus procesos. El Ministerio de Salud no les ha otorgado nombramientos definitivos y actualmente laboran con nombramiento provisional, con denominaciones y remuneraciones distintas. Consta que a otros ganadores de concursos similares de 2012 sí se les crearon puestos y se les otorgó nombramiento definitivo, con informes favorables del Instituto. El tribunal considera acreditado que la situación de los accionantes difiere de la de esos otros servidores por los informes emitidos en su momento.",
+    "esPonente": "no",
+    "votoSalvado": true
+  }
+}

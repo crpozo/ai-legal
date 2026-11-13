@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29470,
+    "tokensSalida": 1889
+  },
+  "salida": {
+    "numero": "17230202529211",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "11 numeral 2",
+          "66 numerales 3, 4 y 18",
+          "33",
+          "325",
+          "82",
+          "76 numeral 7"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4 y 5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2006-18-EP/24 de la Corte Constitucional",
+      "Sentencia 001-16-PJO-CC",
+      "Sentencia 016-13-SEP-CC",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 041-13-SEP-CC",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1452-17-EP/24",
+      "Sentencia 1000-12-EP",
+      "Sentencia 040-11-SEP-CC",
+      "Sentencia 061-15-SEP-CC",
+      "Sentencia 067-13-SEP-CC",
+      "Sentencia 175-14-SEP-CC",
+      "Sentencia 045-15-SEP-CC",
+      "Sentencia 0343-09-EP",
+      "Sentencia 1679-12-EP/20"
+    ],
+    "argumentacion": "El Tribunal de Apelación confirma la improcedencia. Sostiene que, conforme a la sentencia 2006-18-EP/24, los conflictos laborales entre el Estado y servidores con contrato ocasional corresponden por regla general a la jurisdicción contencioso-administrativa, salvo que comprometan notoriamente la dignidad del servidor, como en casos de evidente discriminación. Revisa la prueba documental (oficio UCE-FJCPS-CD-2024-0581-O) y constata que la no renovación afectó a diez docentes, entre ellos ecuatorianos, por lo que no verifica discriminación. Concluye que la acción no es idónea y que la controversia sobre títulos y contrato es de legalidad. Aplica el artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Oficio UCE-FJCPS-CD-2024-0581-O de 16 de agosto de 2024 (fojas 102-103), que lista a diez docentes cuya renovación no se requiere",
+      "Informe de Gestión de la Dirección de Carrera (fojas 104-109) e Informe de necesidad institucional (fojas 110-120)",
+      "Contrato de servicios ocasionales 00270-DTH-2021-FG-DOC (fojas 287)",
+      "Oficio R-1919-2025 de 9 de diciembre de 2025 (fojas 342)",
+      "Oficios de SENESCYT de 6 de febrero de 2019 y 22 de octubre de 2019 y oficio 012-DCD de 2017 sobre revalidación del título",
+      "Informe de Consejo de Carrera de Derecho sobre la revalidación pendiente"
+    ],
+    "motivacion": "La motivación se apoya en la jurisprudencia vinculante de la Corte Constitucional sobre la improcedencia de la acción de protección en conflictos laborales de servidores públicos y en la ausencia de prueba de discriminación. Respecto del título, considera que su emisión depende de requisitos reglamentarios aún no cumplidos, lo que es asunto de legalidad.",
+    "criterioResolucion": "La acción de protección no es la vía para conflictos laborales de servidores públicos con contrato ocasional ni para cuestiones de legalidad o de cumplimiento de requisitos reglamentarios, salvo que se comprometa notoria o gravemente la dignidad del servidor, como en casos de evidente discriminación, lo que no se verifica en el caso.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la igualdad y no discriminación",
+      "Derecho al trabajo y a condiciones laborales justas y equitativas",
+      "Derecho a la seguridad jurídica y al debido proceso",
+      "Derecho a la honra y a la dignidad humana"
+    ],
+    "fundamentosDeHecho": "La accionante, docente con contrato ocasional en la Facultad de Jurisprudencia de la UCE desde 2015, fue excluida de la carga horaria y su contrato no fue renovado, tras una solicitud de desvinculación anticipada autorizada por el Rector (Oficio R-1919-2025). Además, no se le entregó el cartón físico de su título de abogada, pendiente del proceso de revalidación. El tribunal considera acreditado que la no renovación alcanzó también a diez docentes, varios de nacionalidad ecuatoriana, y que el proceso de revalidación no ha concluido.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

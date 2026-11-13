@@ -57,6 +57,11 @@ export const ProcesoJuez = z.object({
   fechaResolucion: z.string(),
   partes: z.string(),
   resolucionTexto: z.string(),
+  /** Ingreso a la dependencia que resuelve (segunda instancia), para medir cuánto tarda. */
+  fechaIngreso: z.string().optional(),
+  primeraInstancia: z.string().optional(),
+  /** Título de la actuación resolutiva en el portal, p. ej. "RECHAZAR RECURSO DE APELACION (RESOLUCION)". */
+  resultadoPortal: z.string().optional(),
 });
 
 export const JuezRaw = z.object({
@@ -190,7 +195,15 @@ export const FichaSentencia = z.object({
   motivacion: z.string(),
   criterioResolucion: z.string(),
   citaTextual: z.string(),
+  /** Qué hizo el tribunal de apelación con la sentencia de primera instancia. */
+  apelacion: z.enum(["confirma", "revoca", "reforma", "no_aplica"]),
+  derechosInvocados: z.array(z.string()),
+  fundamentosDeHecho: z.string(),
+  /** Si el juez estudiado es el ponente de la resolución. */
+  esPonente: z.enum(["si", "no", "no_consta"]),
+  votoSalvado: z.boolean(),
 });
+export type FichaSentencia = z.infer<typeof FichaSentencia>;
 
 /** Agente 5: patrones entre las resoluciones del juez. */
 export const PatronesJuez = z.object({
@@ -206,6 +219,12 @@ export const PatronesJuez = z.object({
   ),
   recomendaciones: z.array(z.string()),
   limitaciones: z.array(z.string()),
+  /** Criterio por tipo de acción (acción de protección, hábeas corpus, etc.). */
+  criterioPorAccion: z.array(
+    z.object({ accion: z.string(), criterio: z.string(), fundamentosDeDerecho: z.string(), fundamentosDeHecho: z.string(), procesos: z.array(z.string()) }),
+  ),
+  senalesDeArbitrariedad: z.array(z.object({ descripcion: z.string(), procesos: z.array(z.string()) })),
+  lecturaDeTiempos: z.string(),
 });
 
 /* ───────────── Archivo que lee el dashboard ───────────── */
@@ -281,13 +300,26 @@ export const Dashboard = z.object({
     fuente: Fuente,
     juez: JuezRaw.shape.juez,
     filtros: JuezRaw.shape.filtros,
-    procesos: z.array(ProcesoJuez.omit({ resolucionTexto: true }).extend({ ficha: FichaSentencia.omit({ numero: true }) })),
+    procesos: z.array(
+      ProcesoJuez.omit({ resolucionTexto: true }).extend({
+        dias: z.number().optional(),
+        ficha: FichaSentencia.omit({ numero: true }).partial({ apelacion: true, derechosInvocados: true, fundamentosDeHecho: true, esPonente: true, votoSalvado: true }),
+      }),
+    ),
     estadisticas: z.object({
       total: z.number(),
       porDecision: z.array(z.object({ decision: Decision, n: z.number() })),
       normasMasCitadas: z.array(z.object({ norma: z.string(), n: z.number() })),
+      porApelacion: z.array(z.object({ apelacion: z.string(), n: z.number() })).optional(),
+      porAccion: z.array(z.object({ accion: z.string(), n: z.number(), aceptadas: z.number(), medianaDias: z.number() })).optional(),
+      precedentesMasCitados: z.array(z.object({ precedente: z.string(), n: z.number() })).optional(),
+      tiempos: z.object({
+        muestras: z.number(), promedioDias: z.number(), medianaDias: z.number(), p90Dias: z.number(), maxDias: z.number(), umbralAnomalia: z.number(),
+        porAnio: z.array(z.object({ anio: z.string(), muestras: z.number(), medianaDias: z.number() })),
+        anomalias: z.array(z.object({ numero: z.string(), dias: z.number(), asunto: z.string() })),
+      }).optional(),
     }),
-    patrones: PatronesJuez,
+    patrones: PatronesJuez.partial({ criterioPorAccion: true, senalesDeArbitrariedad: true, lecturaDeTiempos: true }),
   }).optional(),
   fiscalia: z.object({
     fuente: Fuente,
@@ -303,6 +335,5 @@ export type JuezRaw = z.infer<typeof JuezRaw>;
 export type Instancia = z.infer<typeof Instancia>;
 export type Actuacion = z.infer<typeof Actuacion>;
 export type ActuacionAnalizada = z.infer<typeof ActuacionAnalizada>;
-export type FichaSentencia = z.infer<typeof FichaSentencia>;
 export type Dashboard = z.infer<typeof Dashboard>;
 export type UsoAgente = z.infer<typeof UsoAgente>;

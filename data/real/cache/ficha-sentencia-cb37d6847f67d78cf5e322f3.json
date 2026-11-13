@@ -1,0 +1,103 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 18556,
+    "tokensSalida": 3232
+  },
+  "salida": {
+    "numero": "17203202600137",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "82",
+          "76 numeral 7 literal l",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "25 numeral 1",
+          "39",
+          "40 numerales 1, 2 y 3",
+          "41",
+          "42 numeral 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "8",
+          "9",
+          "23",
+          "25",
+          "27",
+          "31"
+        ]
+      },
+      {
+        "norma": "Código Tributario",
+        "articulos": [
+          "148",
+          "157",
+          "158",
+          "164"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "261",
+          "262"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "Disposición Transitoria Segunda"
+        ]
+      },
+      {
+        "norma": "Código de Procedimiento Civil",
+        "articulos": [
+          "941"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-10-PJO-CC",
+      "Sentencia 0016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 102-13-SEP-CC (caso 0831-12-EP)",
+      "Sentencia 0380-10-EP",
+      "Sentencia 3064-22-EP/25",
+      "Sentencia 3043-19-EP/24"
+    ],
+    "argumentacion": "El tribunal confirma que la acción de protección es improcedente porque la pretensión (cese de la retención de fondos, suspensión del coactivo y restitución de valores) se refiere a un asunto de mera legalidad, impugnable en la vía administrativa (recurso de revisión) y ante la jurisdicción contencioso tributaria. Señala que el recurso de revisión no suspende ipso jure el procedimiento coactivo y que el artículo 164 del Código Tributario faculta al ejecutor a ordenar retenciones como medida precautelatoria. Concluye que no se vulneró la seguridad jurídica en la tramitación del coactivo. Sobre el debido proceso y la propiedad, afirma que la accionante no justificó la vulneración con prueba y que la retención de fondos es una limitación del dominio que debe revisarse en la vía ordinaria.",
+    "pruebas": [
+      "Recurso de revisión contra la resolución sancionatoria por contravención, en trámite y sin resolver, citado por la accionante con número de trámite 1170120250279525",
+      "Retención de fondos en cuentas bancarias de la accionante en Banco del Pacífico y Banco Internacional",
+      "Inicio del sumario por contravención DZ9-IDIOITC25-00000043-M, notificado el 27 de enero de 2025, según se transcribe de la sentencia de primera instancia",
+      "El tribunal sostiene que no existe prueba material, documental o de otra índole que justifique los argumentos de la accionante"
+    ],
+    "motivacion": "Aplica el artículo 42 numeral 4 de la LOGJCC y el artículo 173 de la Constitución: los actos administrativos son impugnables en la vía administrativa y ante la Función Judicial. Invoca precedentes de la Corte Constitucional que distinguen la mera legalidad de la vulneración de derechos constitucionales. Encuentra que la accionante tenía vías adecuadas y eficaces y que no demostró vulneración de derechos. Confirma la sentencia de primera instancia y rechaza la apelación.",
+    "criterioResolucion": "La acción de protección no procede cuando la pretensión, dirigida contra medidas cautelares o actuaciones de un procedimiento coactivo tributario, se reduce a discutir la legalidad del acto administrativo, que puede impugnarse en la vía administrativa o contencioso tributaria, y el accionante no demuestra una vulneración de derechos constitucionales.",
+    "citaTextual": "en la especie, se determina que la accionante en la vía administrativa o judicial puede interponer mecanismos de defensa adecuados y eficaces, basados en normas claras",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso",
+      "Tutela judicial efectiva",
+      "Derecho de propiedad"
+    ],
+    "fundamentosDeHecho": "La SRI inició un procedimiento de ejecución coactiva y dispuso la retención de fondos en cuentas bancarias de la accionante por una multa derivada de una retención en la fuente, mientras un recurso de revisión contra la resolución sancionatoria estaba pendiente. El tribunal no encuentra probado que la interposición del recurso suspenda la ejecución del acto.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

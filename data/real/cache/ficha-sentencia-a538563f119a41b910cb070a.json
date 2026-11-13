@@ -1,0 +1,65 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29433,
+    "tokensSalida": 3289
+  },
+  "salida": {
+    "numero": "17233202409402",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76.1",
+          "76.7.a",
+          "76.7.b",
+          "76.7.c",
+          "76.7.h",
+          "76.7.l",
+          "82",
+          "86.5",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42.1",
+          "42.3",
+          "42.4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1425-18-EP/23",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 4-19-EP/21",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia de carácter vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de alzada revisa la sentencia de primera instancia que aceptó la acción. Primero declara que el asunto no es de jurisdicción constitucional, pero analiza igualmente las vulneraciones alegadas. Concluye que el proceso coactivo 037-2016 se inició conforme al Código de Procedimiento Civil vigente, que hubo citación al garante solidario según constancia de fs. 312, y que no se verifica vulneración de la motivación ni de la seguridad jurídica, porque el reclamo se reduce a un control de legalidad. Finalmente, aplica las causales de improcedencia de los numerales 3 y 4 del artículo 42 de la LOGJCC y revoca la sentencia subida en grado.",
+    "pruebas": [
+      "Pagaré de fs. 225",
+      "Proceso coactivo 037-2016: liquidación, orden de cobro y auto de pago, con los autos de inicio de la acción coactiva y medidas cautelares",
+      "Constancia de citación al garante solidario Luis Becerra Reyes y citación Nro. 1 a Edwin Mauricio Becerra Páez y Lupe Marisol Páez Díaz, fs. 312"
+    ],
+    "motivacion": "Sostiene que no se vulneró la garantía de motivación del artículo 76.7.l porque el acto contiene la enunciación de normas y su aplicación al caso. Respecto de la seguridad jurídica, señala que la Corte Constitucional no examina la correcta o incorrecta aplicación de normas infraconstitucionales. Concluye que el análisis de legalidad corresponde a los jueces ordinarios, por lo que la acción es improcedente.",
+    "criterioResolucion": "Cuando el reclamo se centra en la legalidad de actuaciones de un procedimiento coactivo, sin verificar una vulneración de derechos constitucionales, la acción de protección es improcedente y la discusión corresponde a la justicia ordinaria.",
+    "citaTextual": "Por lo que dicha discusión legal, compete exclusivamente revisar a los jueces ordinarios competentes, para que en base a las pruebas que las partes aporten, se pueda resolver en derecho, sobre lo actuado por la accionada.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El Banco Nacional de Fomento en liquidación inició el proceso coactivo 037-2016 el 23 de marzo de 2016 contra los cuatro accionantes, con base en el pagaré de fs. 225, y dispuso medidas cautelares y embargos. Los accionantes alegan que no fueron citados ni notificados antes de la liquidación, la orden de cobro y el auto de pago. El tribunal considera acreditada la constancia de citación de fs. 312 y que el proceso se tramitó conforme a la normativa vigente en su momento.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

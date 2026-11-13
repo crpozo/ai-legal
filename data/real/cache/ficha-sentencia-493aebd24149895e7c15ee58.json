@@ -1,0 +1,107 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 28382,
+    "tokensSalida": 3829
+  },
+  "salida": {
+    "numero": "17204202401327",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "75",
+          "76.7.l",
+          "86",
+          "88",
+          "11.3",
+          "33",
+          "35",
+          "43.3",
+          "167",
+          "168.6",
+          "169",
+          "178.2",
+          "226",
+          "326",
+          "332",
+          "333"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "14",
+          "17",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "150",
+          "151",
+          "156",
+          "159",
+          "160.1.2",
+          "208",
+          "208.1",
+          "209"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público (LOSEP), según cita el tribunal",
+        "articulos": [
+          "58"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP, según cita el tribunal",
+        "articulos": [
+          "143",
+          "146 literal a"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia 002-14-SEP-CC (Caso 0121-11-EP)",
+      "Corte Constitucional, Sentencia 082-14-SEP-CC",
+      "Corte Constitucional, Sentencia 045-11-SEP-CC",
+      "Corte Constitucional, Sentencia 085-12-SEP-CC (Caso 0568-11-EP)",
+      "Corte Constitucional, Sentencia 001-16-PJO-CC (Caso 0530-10-JP)",
+      "Corte Constitucional, Sentencia 3-19-JP/20 y acumulados (Caso 3-19-JP)",
+      "Corte Constitucional, Sentencia 179-13-EP/20 (Caso 179-13-EP)",
+      "Corte Constitucional, Sentencia 2286-17-EP/23 (Caso 2286-17-EP)",
+      "Corte Constitucional, Sentencia 309-16-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación recuerda que, según la jurisprudencia constitucional citada, debe verificar la real existencia de la vulneración de derechos en los hechos del caso, aunque el hospital no formuló un argumento concreto contra la sentencia de primer nivel. Constata que la accionante era servidora con contrato ocasional vigente, que durante ese contrato tuvo un embarazo de alto riesgo y que dio a luz el 16 de septiembre de 2013. Concluye que la terminación del contrato por vencimiento de plazo, notificada mediante la Acción de Personal HBO-VDS-2227 del 27 de diciembre de 2013, se produjo en período de lactancia y sin considerar esa condición. Descarta que la temporalidad de la acción sea un obstáculo, citando la Sentencia 179-13-EP/20, y asume que la protección reforzada de la lactancia rige hasta que el período concluya, según la Sentencia 2286-17-EP/23. Por ello, establece la vulneración del artículo 43.3 de la Constitución y de la estabilidad laboral reforzada.",
+    "pruebas": [
+      "Contrato de servicios ocasionales de 1 de febrero de 2012 (fs. 2-3)",
+      "Memorando de la accionante a Talento Humano sobre su estado de salud y solicitud de permisos (fs. 4)",
+      "Informe ecosonográfico (fs. 5) y certificados médicos (fs. 6-7)",
+      "Registro médico del IESS (fs. 8-17)",
+      "Certificado de nacimiento de la menor (fs. 18) y cédula de la menor (fs. 19)",
+      "Acción de Personal HBO-VDS-2227 de 27 de diciembre de 2013 (fs. 20 y fs. 54)",
+      "Memorandos MSP-HPBO-2024-1939-M (fs. 51) y MSP-HPBO-UATH-2024-0922-M (fs. 52)",
+      "Oficio del Jefe del Departamento de Docencia e Investigaciones (fs. 57)",
+      "Testimonios de Karla Paola de Sucre Sarasti y Diana Isabel Martínez Changuan"
+    ],
+    "motivacion": "La decisión se justifica en que el tribunal verificó, con la documentación del expediente, que la terminación del contrato ocasional coincidió con el período de lactancia de la accionante y que la institución conocía su estado. Señala que, aunque el contrato ocasional no genera estabilidad, la condición de madre lactante limitaba la terminación hasta que concluyera el período correspondiente. Por ello confirma la sentencia de primer nivel, que acepta la acción, y rechaza el recurso del legitimado pasivo.",
+    "criterioResolucion": "La terminación, por vencimiento de plazo, de un contrato ocasional de una servidora que se encuentra en período de lactancia, notificada durante ese período sin considerar su condición, vulnera el derecho a la protección del cuidado durante la lactancia (art. 43.3 CRE) y la estabilidad laboral reforzada. El hecho de que el contrato ocasional no genere estabilidad no excluye esa protección.",
+    "citaTextual": "al haberse notificado a la accionante la terminación del contrato ocasional en un momento en que se encontraba en período de lactancia se produjo la vulneración de los derechos constitucionales garantizados por la Constitución de la República del Ecuador (Art. 43.3) y a la estabilidad laboral reforzada",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la lactancia materna y cuidado (art. 43.3 CRE)",
+      "Derecho al trabajo (arts. 332 y 333 CRE)",
+      "Estabilidad laboral reforzada"
+    ],
+    "fundamentosDeHecho": "La accionante suscribió un contrato de servicios ocasionales el 1 de febrero de 2012, renovado para el año 2013 con vencimiento el 31 de diciembre de 2013. Durante la vigencia del contrato tuvo un embarazo de alto riesgo y dio a luz a su hija el 16 de septiembre de 2013. El 27 de diciembre de 2013 el Hospital Pediátrico Baca Ortiz le notificó la terminación del contrato por vencimiento de plazo mediante la Acción de Personal HBO-VDS-2227. La acción de protección fue presentada en 2024, según la fecha de ingreso del expediente.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

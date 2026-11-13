@@ -1,0 +1,60 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 11969,
+    "tokensSalida": 1162
+  },
+  "salida": {
+    "numero": "17113202500002",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "89 inciso quinto",
+          "89",
+          "86.3",
+          "86.5",
+          "76.7 literales a), b), h)",
+          "75"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "44.1",
+          "43",
+          "16"
+        ]
+      },
+      {
+        "norma": "Convención Americana de Derechos Humanos",
+        "articulos": [
+          "25.1",
+          "7.6"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Opinión Consultiva OC-8/87 de la Corte Interamericana de Derechos Humanos",
+      "Caso Ernesto Castillo Páez vs. República del Perú (sentencia de 3 de noviembre de 1997)"
+    ],
+    "argumentacion": "El tribunal afirma su competencia por tratarse de una privación de libertad dispuesta en proceso penal. Clasifica el hábeas corpus, y concluye que el caso corresponde a un hábeas corpus conexo. Aplica la inversión de la carga de la prueba contra entidades públicas (art. 86.3 CRE y art. 16 LOGJCC). Constata en el SATJE el acta de audiencia del 19 de noviembre de 2024, en la que el juez penal ordenó practicar el examen psicosomático en 10 días, sin que conste cumplimiento. Los accionados no aportaron prueba en contrario. Concluye que hubo incumplimiento judicial y afectación del derecho de defensa.",
+    "pruebas": [
+      "Acta resumen de la audiencia de 19 de noviembre de 2024 en el proceso 17282-2024-01766, consultada en SATJE",
+      "Falta de prueba de los legitimados pasivos"
+    ],
+    "motivacion": "La omisión de los accionados de cumplir la orden del juez penal y de probar lo contrario restringe o amenaza el derecho de defensa del accionante en el proceso penal, por lo que procede el hábeas corpus conexo.",
+    "criterioResolucion": "Cuando una entidad pública no cumple la orden judicial de practicar una pericia a una persona privada de libertad y no prueba lo contrario, se presumen ciertos los hechos y procede el hábeas corpus conexo por afectación al derecho de defensa.",
+    "citaTextual": "Dicha omisión o incumplimiento por parte de los legitimados pasivos, restringe o amenaza el ejercicio de los derechos de defensa del legitimado activo en el referido proceso penal, por lo cual, es procedente la interposición de esta forma especial de hábeas corpus CONEXO",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Derecho a la defensa",
+      "Derecho a la salud",
+      "Derechos conexos a la libertad (debido proceso)"
+    ],
+    "fundamentosDeHecho": "El accionante, privado de libertad en el CPPL Masculino Pichincha No. 1 (El Inca), en proceso penal 17282-2024-01766, solicitó la práctica de una pericia (examen toxicológico/psicosomático) ordenada por Fiscalía y por el juez penal. El juez ordenó su realización en 10 días en la audiencia de 19 de noviembre de 2024. A la fecha de la audiencia del 9 de enero de 2025 la pericia no se había practicado y los accionados no probaron lo contrario.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

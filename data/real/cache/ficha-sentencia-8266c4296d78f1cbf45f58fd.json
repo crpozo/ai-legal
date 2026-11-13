@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12698,
+    "tokensSalida": 1417
+  },
+  "salida": {
+    "numero": "17230202605098",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "18.2",
+          "91",
+          "177",
+          "178"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "47"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Transparencia y Acceso a la Información Pública",
+        "articulos": [
+          "5",
+          "8",
+          "31"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "118"
+        ]
+      },
+      {
+        "norma": "Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos",
+        "articulos": [
+          "14"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional del Ecuador, sentencia No. 2366-18-EP/23 (9 de febrero de 2023), citada en los párrafos 55 y 56"
+    ],
+    "argumentacion": "El tribunal fija el marco constitucional y legal de la acción de acceso a la información pública, identifica como información pública los expedientes judiciales y concluye que el obligado a entregarlos es el funcionario jurisdiccional bajo cuya custodia están, no el Consejo de la Judicatura. Con base en las pruebas, constata que el accionante sí solicitó el expediente o sus copias a la jueza sustanciadora, que esta se las habría entregado, y que el trámite administrativo se remitió a la jueza. Concluye que la acción carece de sustento fáctico y jurídico contra el Consejo de la Judicatura.",
+    "pruebas": [
+      "Escrito del accionante de 08 de septiembre de 2025 y decreto de 09 de septiembre de 2025 en el proceso 17294-2025-00808",
+      "Memorando CJ-DG-2026-0886-M de 11 de febrero de 2026",
+      "Oficios DP17-SP-2026-0066-OF, DP17-SP-2026-0109-OF y 17294-2025-00808-OFICIO-05387-2026",
+      "Decreto de 02 de marzo de 2026 de la jueza sustanciadora",
+      "Notificación electrónica de 06 de marzo de 2026"
+    ],
+    "motivacion": "La competencia para entregar copias de expedientes y grabaciones de audiencias corresponde a la autoridad jurisdiccional que custodia el proceso (art. 118 COGEP, que limita las grabaciones a las partes). Como el accionante ya obtuvo o pudo obtener lo solicitado de la jueza, no se verifica vulneración atribuible al Consejo de la Judicatura. Se invoca además la seguridad jurídica.",
+    "criterioResolucion": "El acceso a expedientes judiciales es información pública cuyo obligado a entregarla es el funcionario jurisdiccional competente bajo cuya custodia se encuentra el proceso, por lo que la acción de acceso a la información pública no prospera contra el Consejo de la Judicatura cuando la información fue solicitada y entregada por la autoridad jurisdiccional.",
+    "citaTextual": "el acceso a los expedientes judiciales, es decir aquellos producidos en relación a un proceso judicial sustanciado ante jueces legalmente competentes, es 1.- PÚBLICA y 2.- EL OBLIGADO A ENTREGARLOS es el funcionario judicial competente, bajo cuya custodia se encuentra el \"proceso\" o \"los recaudos procesales\".",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho de acceso a la información pública (art. 18.2 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante solicitó al Consejo de la Judicatura copia certificada del expediente 17294-2025-00808 y de la grabación de la audiencia de 08 de septiembre de 2025 (trámite CJ-EXT-2025-17224). La jueza sustanciadora ordenó entregar las copias por decreto de 02 de marzo de 2026, y el trámite fue trasladado a la jueza y notificado al accionante. La jueza de primera instancia rechazó la demanda y el accionante apeló.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 30226,
+    "tokensSalida": 1428
+  },
+  "salida": {
+    "numero": "17294202500365",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76",
+          "82",
+          "160",
+          "188",
+          "86"
+        ]
+      },
+      {
+        "norma": "Reglamento de Disciplina de la Policía Nacional",
+        "articulos": [
+          "64.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40",
+          "42"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia Corte Constitucional 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal analiza primero si los hechos y pruebas permiten colegir vulneración de derechos constitucionales y, con base en la sentencia 001-16-PJO-CC, verifica que la controversia sea de naturaleza constitucional. Descarta vulneración de seguridad jurídica por aplicación de normas vigentes en 2013. Respecto al debido proceso, concluye que el accionante fue notificado por escrito del inicio de la investigación, asistió a rendir versión, estuvo presente con su abogado en la audiencia del Tribunal de Disciplina, y recurrió la decisión. Sobre la motivación, aplica la sentencia 1158-17-EP/21 y concluye que las resoluciones de 2013 son suficientemente motivadas. Señala que la materia penal y disciplinaria son independientes, de modo que la ratificación de inocencia penal no impedía la investigación disciplinaria, y que no puede analizar el fondo de la investigación disciplinaria por ser de competencia ordinaria.",
+    "pruebas": [
+      "Notificación escrita de 22 de agosto de 2013 al accionante",
+      "Testimonio rendido por el accionante en la audiencia (fojas 18)",
+      "Acta de audiencia suscrita por el accionante y su abogado (fojas 27)",
+      "Recurso de apelación del accionante (fojas 28 y siguientes)",
+      "Notificación de la resolución de 12 de noviembre de 2013 (casilla 4193, 28 de noviembre de 2013)"
+    ],
+    "motivacion": "Las resoluciones administrativas de 2013 cumplen los parámetros de motivación al detallar hechos, pruebas, normas aplicables y subsunción; la falta de favorabilidad de la decisión no equivale a falta de motivación. Del expediente consta la notificación y participación del accionante, por lo que no hay vulneración del debido proceso ni de la defensa.",
+    "criterioResolucion": "La acción de protección contra una destitución disciplinaria policial no prospera cuando no se demuestra vulneración constitucional: se aplicaron normas vigentes, consta la notificación y participación del accionante en el proceso, y la resolución está suficientemente motivada; el análisis de fondo de la investigación disciplinaria corresponde a la justicia ordinaria.",
+    "citaTextual": "Las resoluciones de los poderes públicos deberán ser motivadas. No habrá motivación si en la resolución no se enuncian las normas o principios jurídicos en que se funda y no se explica la pertinencia de su aplicación a los antecedentes de hecho.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de defensa",
+      "Debido proceso en la garantía de motivación",
+      "Presunción de inocencia",
+      "Notificación y/o citación",
+      "Derecho al trabajo"
+    ],
+    "fundamentosDeHecho": "El accionante fue miembro de la Policía Nacional y fue destituido por resolución del Tribunal de Disciplina de 16 de octubre de 2013, ratificada por el Consejo de Clases y Policías el 12 de noviembre de 2013, por infracción del artículo 64.6 del Reglamento de Disciplina. Consta notificación escrita del inicio de la investigación el 22 de agosto de 2013 y su participación en la audiencia con abogado. La acción se presentó en 2025. El juez de primera instancia aceptó la acción; el tribunal de apelación la negó.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

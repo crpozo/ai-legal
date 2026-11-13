@@ -1,0 +1,75 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 24762,
+    "tokensSalida": 1563
+  },
+  "salida": {
+    "numero": "17985202500549",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "88",
+          "32",
+          "35",
+          "50",
+          "83",
+          "363"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de la Salud",
+        "articulos": []
+      },
+      {
+        "norma": "Acuerdo Ministerial 0018 de 2021 (citado por el delegado del MSP, no transcrito en la resolución)",
+        "articulos": []
+      },
+      {
+        "norma": "Acuerdo Ministerial 0098 de 2023 (citado por el delegado del MSP, no transcrito en la resolución)",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución N° 016-13-SEP-CC, caso N° 1000-12-EP",
+      "Sentencia N° 041-13-SEP-CC, caso N° 00470-12-EP",
+      "Sentencia N° 001-16-PJO-CC, caso N° 530-10-JP",
+      "Sentencias N° 102-13-SEP-CC (caso 0380-10-EP) y 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia N° 679-18-JP/20 y acumulados"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la sentencia de primera instancia que aceptó la acción de protección. Recuerda que, al tratarse de entidades públicas, se presumen ciertos los hechos de la demanda si la accionada no demuestra lo contrario, con base en el art. 86.3 de la Constitución y el art. 16 de la LOGJCC. Aplica los parámetros de la sentencia 679-18-JP/20 sobre el acceso a medicamentos. A partir de las declaraciones de los médicos tratantes en audiencia, concluye que el medicamento tiene registro sanitario, puede aplicarse al paciente y no ha sido administrado por falta de coordinación institucional y presupuesto. Señala que el tratamiento no es curativo y que el paciente no tiene contraindicación.",
+    "pruebas": [
+      "Acta resumen de la audiencia de primera instancia",
+      "Declaraciones de la médica tratante Sofía Ortiz Saldaña y del médico tratante Olger Estrella Benavides",
+      "Declaraciones de delegados del MSP (Dirección Nacional de Medicamentos y Dirección Nacional de Abastecimiento) sobre el trámite de autorización, registro sanitario y precios",
+      "Diagnóstico de mucopolisacaridosis tipo VI"
+    ],
+    "motivacion": "Declara la validez procesal y rechaza el recurso del hospital, confirmando la sentencia. Fundamenta la decisión en la presunción de ciertos de los hechos ante la omisión probatoria de las entidades públicas, en la prescripción médica documentada en audiencia y en la falta de acceso efectivo al medicamento, sin que conste que la falta de autorización se deba a causa distinta de la coordinación institucional y el presupuesto.",
+    "criterioResolucion": "Frente a una entidad pública, la carga de la prueba se invierte: se presumen ciertos los hechos de la demanda si la entidad no demuestra lo contrario. Acreditada la enfermedad, la prescripción del medicamento y la falta de acceso, procede ordenar el acceso a medicamentos de calidad, seguros y eficaces conforme a la sentencia 679-18-JP/20.",
+    "citaTextual": "Se presumirán ciertos los fundamentos alegados por la persona accionante cuando la entidad pública requerida no demuestre lo contrario o no suministre información",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la salud",
+      "Derecho a la vida",
+      "Derecho a la igualdad"
+    ],
+    "fundamentosDeHecho": "Alexander Zahir Perugachi Quilumbango padece mucopolisacaridosis tipo VI, enfermedad rara, progresiva y multisistémica. Los médicos tratantes indicaron el medicamento galsulfasa (Naglazyme), que retrasa la progresión pero no es curativo, y declararon que el paciente no tiene contraindicación. El medicamento tiene registro sanitario. No se ha suministrado al paciente por falta de coordinación institucional y de presupuesto, con trámite de autorización pendiente ante el Comité Interinstitucional (COTIEM), y con dificultades de precio techo.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

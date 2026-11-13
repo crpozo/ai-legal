@@ -1,0 +1,120 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23672,
+    "tokensSalida": 4465
+  },
+  "salida": {
+    "numero": "17233202401664",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "88",
+          "11.2",
+          "11.4",
+          "33",
+          "66.4",
+          "229",
+          "326",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código de Trabajo",
+        "articulos": [
+          "169",
+          "172",
+          "185",
+          "188"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Monetario y Financiero",
+        "articulos": [
+          "380"
+        ]
+      },
+      {
+        "norma": "Convenio 111 de la OIT sobre discriminación en materia de empleo y ocupación",
+        "articulos": [
+          "1"
+        ]
+      },
+      {
+        "norma": "Protocolo Adicional a la Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "7"
+        ]
+      },
+      {
+        "norma": "Declaración Universal de Derechos Humanos",
+        "articulos": [
+          "1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional sentencia 2006-18-EP/24 de 13 de marzo de 2024",
+      "Corte Constitucional sentencia 1158-17-EP/21",
+      "Corte Constitucional sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional sentencia 603-12-JP/19 y acumulados",
+      "Corte Constitucional sentencia 006-14-SIN-CC (caso 0060-09-IN)",
+      "Corte Constitucional sentencia 58-10-IN/21",
+      "Corte Constitucional caso 23-17-IN",
+      "Corte Constitucional sentencia 1101-20-EP/22",
+      "Corte Constitucional sentencia 1357-13-EP/20",
+      "Corte Constitucional sentencia 1679-12-EP/20",
+      "Corte Constitucional sentencia 253-16-EP/21",
+      "Corte Constitucional sentencia 1329-12-EP/22",
+      "Corte Constitucional sentencia 2901-19-EP/23",
+      "Corte Constitucional sentencia 1178-19-JP/21",
+      "Corte Constitucional sentencia 165-19-JP/21",
+      "Corte Constitucional sentencia 461-19-JP/23 y acumulados",
+      "Corte Constitucional sentencia 446-19-EP/24",
+      "Corte Constitucional sentencia 1452-17-EP/24",
+      "Corte Constitucional sentencias 0831-12-EP, 102-13-SEP-CC, 0380-10-EP",
+      "Corte Interamericana de Derechos Humanos, caso Duque vs. Colombia (sentencia de 26 de febrero de 2016)"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que, conforme a la Corte Constitucional, el juez debe examinar primero las vulneraciones alegadas, salvo las excepciones de la sentencia 2006-18-EP/24. Concluye que el caso sí encaja en la excepción sobre actos administrativos de terminación laboral de servidores públicos y que, por tanto, el juez debe analizar el fondo, aunque no identifica como servidores a los accionantes sino como trabajadores amparados por el Código del Trabajo. Revisa los tres memorandos de terminación del 31 de octubre de 2023 y sostiene que la alegación de discriminación no está sustentada: la diferencia de trato respecto de otros choferes no se demostró como discriminatoria, y la terminación con despido intempestivo tiene como consecuencia legal la indemnización del artículo 188 del Código de Trabajo, que los accionantes aceptaron en actas de finiquito. Concluye que la demanda está incursa en las causales de improcedencia de los numerales 1 y 3 del artículo 42 de la LOGJCC, y que lo procedente es inadmitir la acción por improcedente. Nota: el juez de primera instancia había negado la acción en el fondo, mientras que el tribunal la declara improcedente; el texto confirma la sentencia subida en grado.",
+    "pruebas": [
+      "Memorando BANECUADOR-GTN-2023-0382-MEM de 31 de octubre de 2023 (Cadena Guerrero)",
+      "Memorando BANECUADOR-GTN-2023-0383-MEM de 31 de octubre de 2023 (Soria Valencia)",
+      "Memorando BANECUADOR-GTN-2023-0381-MEM de 31 de octubre de 2023 (Coronel Soto)",
+      "Informes INF-GGS-09-03-2023-58, -60 y -61 de la Gerencia Administrativa",
+      "Informes INF-GCS-06-06-2023-40, -42 y -43 de la Gerencia de Talento Humano",
+      "Acta de finiquito 12417785ACF (fs. 143 vuelta, Soria Valencia)",
+      "Acta de finiquito 12385668ACF (fs. 105 vuelta, Cadena Guerrero)",
+      "Acta de finiquito (fs. 186, Coronel Soto)",
+      "Hecho admitido en audiencia: 14 choferes, de los cuales uno tiene discapacidad reconocida"
+    ],
+    "motivacion": "La improcedencia se funda en el artículo 42 numerales 1 y 3 de la LOGJCC. Se afirma que no hay violación de derechos constitucionales alegada con sustento, que la terminación se ajustó al Código de Trabajo con pago de indemnización y que la alegación de discriminación no reúne comparabilidad ni demostración de trato discriminatorio. Se afirma también que el reclamo es de legalidad y que las impugnaciones del despido o del finiquito corresponden a la vía judicial laboral o contencioso administrativo, citando la sentencia 2006-18-EP/24.",
+    "criterioResolucion": "Según este tribunal, la terminación unilateral de contratos de trabajadores sujetos al Código del Trabajo, con despido intempestivo, pago de indemnización y actas de finiquito suscritas, no basta por sí sola para configurar vulneración constitucional; la alegación de discriminación debe demostrarse con comparabilidad y resultado discriminatorio, y, si el reclamo es de legalidad laboral, la acción se declara improcedente.",
+    "citaTextual": "no se ha demostrado tales elementos o parámetros por el solo hecho de que su empleadora haya decidido terminar el vínculo laboral de manera unilateral con los tres accionantes y no a la vez con todos los demás servidores públicos",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la igualdad y no discriminación",
+      "Garantía de motivación",
+      "Debido proceso"
+    ],
+    "fundamentosDeHecho": "Mediante tres memorandos de 31 de octubre de 2023, BANECUADOR B.P. dio por terminado el contrato indefinido de tres choferes (Cadena Guerrero, Soria Valencia y Coronel Soto) con base en informes de Gerencia Administrativa y de Talento Humano, aplicando despido intempestivo del artículo 188 del Código de Trabajo. Los accionantes suscribieron actas de finiquito, las cuales el juez de primera instancia consideró aceptación expresa de la indemnización. Los tres accionantes tienen domicilio en Quito según el texto de la demanda, y el tribunal da por probado que existían otros choferes en situación similar que no fueron desvinculados.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

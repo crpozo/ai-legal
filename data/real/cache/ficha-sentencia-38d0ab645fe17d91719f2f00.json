@@ -1,0 +1,93 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 37456,
+    "tokensSalida": 3571
+  },
+  "salida": {
+    "numero": "17981202500527",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "82",
+          "52",
+          "76 numeral 7 literal l",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4, 5 y 6"
+        ]
+      },
+      {
+        "norma": "Código de Comercio",
+        "articulos": [
+          "690",
+          "696",
+          "723",
+          "726"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "1561",
+          "1562"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Defensa del Consumidor",
+        "articulos": [
+          "81",
+          "82",
+          "83",
+          "84"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional, sentencia 102-13-SEP-CC (caso 0380-10-EP)",
+      "Corte Constitucional, sentencia 1101-20-EP/22",
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 1178-19-JP/21",
+      "Corte Constitucional, sentencias 1357-13-EP/20, 2901-19-EP/23, 1679-12-EP/20, 253-16-EP/21 y 1329-12-EP/22 (citadas en el fallo)"
+    ],
+    "argumentacion": "El tribunal confirma la sentencia de primera instancia y rechaza la apelación. Considera que la pretensión es la declaración de derechos y el cumplimiento de una cobertura de seguro de desgravamen, y que el asunto es contractual y patrimonial. Con base en el art. 88 CRE y el art. 41 LOGJCC, señala que la accionante no identificó la premisa normativa aplicable frente a la aseguradora privada y no probó la subordinación o indefensión alegada, pues no hay medio probatorio que sustente el supuesto engaño. Afirma que el acto de la SCVS está sujeto a impugnación en vía administrativa y judicial (art. 173 CRE) y que la motivación de la resolución cumple el art. 76.7.l CRE. Concluye que concurren las causales 1, 4, 5 y 6 del art. 42 LOGJCC y que la vía adecuada es la ordinaria o la Ley Orgánica de Defensa del Consumidor.",
+    "pruebas": [
+      "Contrato de crédito con BanEcuador y solicitud de adhesión al seguro de vida deudores",
+      "Certificado individual de seguro y condiciones de la póliza 1500005394, incluido el anexo de incapacidad total y permanente con límite de 65 años",
+      "Oficio de Seguros Equinoccial de 17 de junio de 2024",
+      "Resolución SCVS-INS-DNNR-2024-00016195 de 2 de diciembre de 2024 (fs. 272 a 278)",
+      "Certificación de la enfermedad (fs. 117) y notificación de siniestro (fs. 107)"
+    ],
+    "motivacion": "Se justifica con la lectura conjunta del art. 88 CRE, los arts. 39 a 42 LOGJCC y la jurisprudencia citada. Se señala que la carga probatoria corresponde a la accionante frente a un particular (art. 16 LOGJCC), que no se acreditó subordinación y que el reclamo ya fue resuelto en sede administrativa. Se concluye que existen vías ordinarias idóneas, por lo que la acción no procede.",
+    "criterioResolucion": "Las controversias originadas en relaciones contractuales de seguro o crédito, de contenido patrimonial, tienen vía ordinaria propia y no pueden tramitarse por acción de protección, salvo que se demuestre la vulneración de derechos de contenido constitucional y la premisa normativa del art. 88 CRE. La pretensión declarativa de derechos también es improcedente en vía constitucional (art. 42.5 LOGJCC).",
+    "citaTextual": "pretender solucionar conflictos provenientes de relaciones contractuales a través de una acción de protección constituye la desnaturalización del objeto de esta garantía, pues dicha pretensión excede el objeto de amparo directo y eficaz de un derecho constitucional e invade la autonomía de la voluntad de las partes.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Derecho a recibir servicios de calidad y no engañosos (art. 52 CRE)",
+      "Atención prioritaria y protección reforzada a grupos de atención prioritaria",
+      "Derecho a la salud (art. 32 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante contrató en noviembre de 2020 un crédito con BanEcuador y una póliza colectiva de vida deudores, a los 68 años. La cobertura de incapacidad total y permanente tenía como límite los 65 años. En 2024 se le diagnosticó linfoma no Hodgkin y la aseguradora negó la cobertura de ITP. La SCVS negó su reclamo administrativo el 2 de diciembre de 2024. El tribunal considera que no se acreditó la subordinación alegada ni el engaño, y que el acto administrativo fue motivado.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 14673,
+    "tokensSalida": 1521
+  },
+  "salida": {
+    "numero": "17230202510490",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "91",
+          "92",
+          "66 numeral 19",
+          "18 numeral 2"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "14",
+          "15",
+          "17",
+          "24",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "207"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional del Ecuador, sentencia No. 182-15-SEP-CC",
+      "Corte Constitucional del Ecuador, sentencia No. 001-14-PJO-CC",
+      "Corte Constitucional del Ecuador, precedente vinculante No. 55-14-JD/20",
+      "Corte Constitucional del Ecuador, sentencia No. 025-15-SEP-CC",
+      "Corte Constitucional del Ecuador, sentencia No. 1868-13-EP/20",
+      "Corte Constitucional del Ecuador, sentencia No. 839-14-EP"
+    ],
+    "argumentacion": "El tribunal confirma que la acción de hábeas data no procede para lo pedido: gran parte de los documentos son información pública o datos de terceros, no datos personales del accionante sujetos a los supuestos taxativos del art. 50 LOGJCC. Señala que el accionante confunde hábeas data con acceso a la información pública y que pretendía usar la garantía como medio de prueba para otra acción. Además, considera que la entidad respondió el 29 de mayo de 2025 (oficio UCE-FCA-SA-2025-0013-O) dentro de un plazo razonable, y que la acción se presentó a los seis días de la solicitud, sin dejar transcurrir un plazo razonable para responder o para que operara el silencio administrativo.",
+    "pruebas": [
+      "Solicitudes del accionante de 7 y 9 de mayo de 2025 (fojas 1 a 4)",
+      "Acta de sorteo de la acción (foja 10)",
+      "Oficio UCE-FCA-SA-2025-0013-O de 29 de mayo de 2025 (foja 27)",
+      "Manifestaciones del accionante en audiencia de primera instancia"
+    ],
+    "motivacion": "Se confirma la negativa porque la pretensión no encaja en los supuestos del art. 50 LOGJCC, la información solicitada es en parte pública y en parte de terceros, y la entidad sí respondió dentro de un plazo razonable antes de la presentación de la acción.",
+    "criterioResolucion": "El hábeas data procede solo en los supuestos taxativos del art. 50 LOGJCC (negativa de acceso a datos personales, negativa de actualización/rectificación/eliminación o uso indebido de información personal); la información pública se rige por la acción de acceso a la información pública. Y la falta de respuesta a una solicitud se considera negativa tácita solo tras transcurrir un plazo razonable.",
+    "citaTextual": "La persona natural o jurídica pública o privada requerida deberá responder a la solicitud efectuada por el titular de la información personal en un plazo razonable que permita de mejor manera la satisfacción del derecho, que dependerá de la cantidad de la información requerida, del tipo de pedido y de la propia conducta de la persona natural o jurídica pública o privada que posea la administración de los datos requeridos.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho de acceso a la información pública (art. 18 numeral 2 CRE)",
+      "Derecho a la protección de datos personales (art. 66 numeral 19 CRE, como base del hábeas data)"
+    ],
+    "fundamentosDeHecho": "El accionante, docente de la Facultad de Ciencias Administrativas de la UCE, fue comunicado con el oficio UCE-FCA-DEC-2025-1331-O de 5 de mayo de 2025 de no renovación de contratos para el periodo 2025. El 7 y 9 de mayo de 2025 pidió documentación a la Decana encargada y a otras autoridades. Presentó la acción el 15 de mayo de 2025. La UCE respondió el 29 de mayo de 2025. El tribunal da por probado que la solicitud mezcla información pública y datos de terceros, y que el accionante pretendía usar la acción como medio de prueba para otro proceso.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

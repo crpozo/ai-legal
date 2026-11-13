@@ -1,0 +1,87 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32005,
+    "tokensSalida": 3688
+  },
+  "salida": {
+    "numero": "17282202600376",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "66 numeral 1 (citado como derecho a elegir y ser elegidos)",
+          "66 numeral 13",
+          "66 numeral 26",
+          "86 numeral 3",
+          "86 numeral 5",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41 numeral 4 literal c)",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "1957",
+          "1959"
+        ]
+      },
+      {
+        "norma": "Decreto Ejecutivo 193",
+        "articulos": [
+          "6 numeral 1"
+        ]
+      },
+      {
+        "norma": "Reglamento del Consorcio para la Vivienda de Interés Social Virgen del Quinche (documento interno, no norma legal)",
+        "articulos": [
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 832-20-JP/21 de la Corte Constitucional",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)"
+    ],
+    "argumentacion": "El tribunal identifica que coexisten dos directivas del Consorcio y verifica cuál respetó el ordenamiento interno. Concluye que la designación de diciembre de 2023 se hizo sin el procedimiento del Reglamento (tribunal electoral, convocatoria con quince días, calidad de socio de los electos) y sin que concluyera el periodo 2022-2024, lo que altera arbitrariamente la situación jurídica de la accionante y vulnera la seguridad jurídica. De ahí deriva la afectación del derecho a elegir y ser elegido y del derecho de asociación. Sobre la legitimación pasiva, aplica el artículo 88 y el artículo 41 numeral 4 literal c) de la LOGJCC, y considera que el daño grave se configura por la incertidumbre sobre los títulos de propiedad de los socios. Descarta la alternancia como requisito, al no existir prohibición en el contrato ni en el reglamento.",
+    "pruebas": [
+      "Acta de asamblea de 3 de diciembre de 2023 (fs. 86-87)",
+      "Contrato de constitución del Consorcio de 1 de abril de 2002 (fs. 4-34)",
+      "Reglamento del Consorcio aprobado en 2008 (fs. 225-231)",
+      "Actas de elección de 14 de agosto de 2022 y de 25 de agosto de 2024 (fs. 102-112)",
+      "Acta de fs. 62-68 invocada por las accionadas"
+    ],
+    "motivacion": "La decisión se justifica porque la designación de diciembre de 2023 inobservó la normativa interna previa, clara y pública del Consorcio, lo que vulnera la seguridad jurídica y, como consecuencia, los derechos de elegir y ser elegido y de asociación. La incertidumbre sobre la situación jurídica de los títulos de propiedad de los socios constituye daño grave, lo que habilita la acción frente a particulares. El tribunal revoca la sentencia de primera instancia, acepta la acción y ordena dejar sin efecto dos actas, oficiar a las autoridades, realizar elecciones conforme a la Constitución, el Código Civil, el estatuto y el reglamento, y encargar a la Defensoría del Pueblo el seguimiento.",
+    "criterioResolucion": "La designación de representantes de un consorcio que se aparta de las reglas internas previas, claras y públicas (estatuto y reglamento) altera arbitrariamente la situación jurídica de un socio y vulnera la seguridad jurídica. En acciones contra particulares, si esa violación provoca daño grave a los socios, procede la acción de protección.",
+    "citaTextual": "En este sentido es evidente que en el presente caso las legitimadas pasivas alteraron arbitrariamente la situación jurídica de la accionante, al inobservar la normativa interna previa, clara y pública establecida en el estatuto y reglamento del Consorcio para la Vivienda de Interés Social Virgen del Quinche",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Derecho a elegir y ser elegido (art. 61 numeral 1 CRE)",
+      "Derecho de asociación (art. 66 numeral 13 CRE)"
+    ],
+    "fundamentosDeHecho": "El Consorcio para la Vivienda de Interés Social Virgen del Quinche tiene un reglamento con un procedimiento eleccionario específico. La accionante fue presidenta hasta agosto de 2022. El 3 de diciembre de 2023, en una asamblea extraordinaria, las accionadas fueron designadas representantes del Consorcio, sin que concluyera el periodo 2022-2024 y con una accionada que, según el propio tribunal, no justificó ser socia. Coexisten dos directivas. El tribunal da por probado que la designación de 2023 se hizo al margen de la normativa interna. Además, la elección de 25 de agosto de 2024, en la que la accionante resultó elegida, contó con 23 participantes de 74 socios, según el primer fallo.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

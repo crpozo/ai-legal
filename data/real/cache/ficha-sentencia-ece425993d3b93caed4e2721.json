@@ -1,0 +1,77 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17872,
+    "tokensSalida": 1478
+  },
+  "salida": {
+    "numero": "17203202501625",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "36",
+          "66 numeral 26",
+          "82",
+          "83",
+          "86 numeral 5",
+          "88",
+          "169",
+          "226"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Monetario y Financiero",
+        "articulos": [
+          "315"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 135-17-SEP-CC (caso 0198-14-EP)"
+    ],
+    "argumentacion": "El tribunal sostiene que el asunto no es de jurisdicción constitucional, pero verifica igualmente si hay vulneración. Descarta la discriminación porque la negativa de pago se funda en el orden de prelación del artículo 315 del COMF aplicado a todos los acreedores en igual condición. Reconoce que el accionante tiene atención prioritaria por edad, pero concluye que ello no lo exime del orden legal de prelación. Descarta afectación a la propiedad porque el pago está sujeto a fases, plazos y prelación legales. Respecto de la buena fe, verifica que la actuación de la entidad se ajusta a la legalidad. Concluye que no hay vulneración y que concurren causales de improcedencia del artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Constancia de la póliza con COFEM Ltda. (fs. 1)",
+      "Certificado de depósito (fs. 3)",
+      "Oficio sobre renovación de depósito (fs. 2)",
+      "Comunicaciones dirigidas a CONAFIPS (fs. 7 a 9)",
+      "Listado de Consejos de Vigilancia con el nombre del accionante (fs. 4 vuelta a 6)",
+      "Contestación de la Mgs. Norma Pazmiño Cadena, Experto de Negocios Fiduciarios de CONAFIPS (fs. 17 a 19)"
+    ],
+    "motivacion": "La improcedencia se funda en la inexistencia de vulneración de derechos constitucionales, que no se demuestra porque el pago está condicionado por el orden de prelación legal del proceso de liquidación, y en que la vía ordinaria es la adecuada para discutir la legalidad de la actuación administrativa.",
+    "criterioResolucion": "La condición de persona adulta mayor (atención prioritaria) no exime del cumplimiento del orden de prelación legal del proceso de liquidación de una cooperativa; la negativa de pago fundada en esa prelación no vulnera igualdad, seguridad económica, propiedad ni buena fe, y la acción de protección resulta improcedente cuando no hay vulneración y existe vía judicial ordinaria.",
+    "citaTextual": "La protección prioritaria no implica la inaplicación de las normas de orden público financiero que regulan la prelación de pagos frente a los demás acreedores; por lo que no existe vulneración de este derecho.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad y no discriminación",
+      "Seguridad económica de las personas adultas mayores",
+      "Propiedad",
+      "Buena fe"
+    ],
+    "fundamentosDeHecho": "El accionante, de 71 años, es acreedor de la extinta Cooperativa COFEM Ltda. en liquidación, administrada por CONAFIPS en el décimo quinto fideicomiso. Posee una póliza por ahorros; cesó como directivo años antes de adquirirla. CONAFIPS no ha pagado la póliza y, según el accionante, la negativa se funda en su antigua condición de directivo. El tribunal da por probado que el pago se rige por el orden de prelación del artículo 315 del COMF. La primera instancia negó la acción por improcedente y el tribunal de alzada confirmó.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

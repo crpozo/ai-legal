@@ -1,0 +1,67 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 13652,
+    "tokensSalida": 1392
+  },
+  "salida": {
+    "numero": "17230202427933",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "25 numeral 1",
+          "42 numerales 1, 2 y 3"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "35",
+          "66 numeral 26",
+          "76 numeral 3",
+          "76 numeral 7 literal a)",
+          "82",
+          "86 numeral 5",
+          "169",
+          "325"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "10"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia No. 135-17-SEP-CC (caso 0198-14-EP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)"
+    ],
+    "argumentacion": "El tribunal de apelación considera que el asunto no es de jurisdicción constitucional, pero analiza de todos modos los derechos al trabajo y a la propiedad invocados. Concluye que no hay vulneración: sobre el trabajo, con la documentación aportada; sobre la propiedad, porque el juzgado coactivo levantó las medidas cautelares mediante providencia de 23 de octubre de 2024 al constatar que la accionante no era parte procesal. Declara que concurren las causales de improcedencia del artículo 42, numerales 1, 2 y 3, y niega la apelación confirmando la improcedencia de la acción.",
+    "pruebas": [
+      "Providencia del Juzgado de Coactivas del BNF en liquidación de 23 de octubre de 2024 (fs. 1452), que dispone el levantamiento de las medidas cautelares",
+      "Documentación aportada por la accionante sobre el trabajo, considerada insuficiente para acreditar vulneración",
+      "Oficio de la abogada externa al SRI y a la Superintendencia de Compañías con el RUC de Ecualacteos (referido en la audiencia)"
+    ],
+    "motivacion": "La acción de protección exige verificar una real vulneración de derechos constitucionales; no procede cuando el asunto es de legalidad y existe vía ordinaria idónea. Al no constatar violación de derechos y al haberse levantado las medidas cautelares, la pretensión queda incursa en las causales de improcedencia del artículo 42.",
+    "criterioResolucion": "La acción de protección solo procede cuando el juez verifica una real vulneración de derechos constitucionales; si no la hay y el asunto es de legalidad con vía ordinaria idónea, se declara improcedente (art. 42 LOGJCC).",
+    "citaTextual": "la acción de protección es la garantía idónea y eficaz que procede cuando el juez efectivamente verifica una real vulneración a derechos constitucionales, con lo cual, no existe otra vía para la tutela de estos derechos que no sean las garantías jurisdiccionales.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la propiedad",
+      "Derecho al debido proceso en la garantía de la defensa"
+    ],
+    "fundamentosDeHecho": "La accionante, empresa Ecualac, alegó que sus cuentas fueron retenidas por medidas cautelares del proceso coactivo 11-1996 del Banco Nacional de Fomento en liquidación, dirigido contra Lácteos Ecuatorianos Ecualacteos, por confusión de RUC. El BNF dispuso el levantamiento de las medidas el 23 de octubre de 2024 al reconocer el error. La resolución de primera instancia (Unidad Judicial Civil de Iñaquito, notificada el 15 de enero de 2025) desechó la acción. La apelación fue interpuesta oralmente por la accionante.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

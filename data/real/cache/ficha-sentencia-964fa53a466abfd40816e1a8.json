@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 18311,
+    "tokensSalida": 3450
+  },
+  "salida": {
+    "numero": "17250202500138",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "66.4",
+          "76.1",
+          "76.7.l)",
+          "82",
+          "86.5",
+          "88",
+          "173",
+          "315"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40",
+          "41",
+          "42 numerales 1, 3, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Discapacidades",
+        "articulos": [
+          "6",
+          "48"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "30 numeral 4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 375-17-C-CC (citada en la demanda)",
+      "Sentencia 197-20-EP/25 (citada en la demanda)",
+      "Sentencia 287-2016-SEN-CC",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 2006-18-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación recuerda que, en principio, el juez constitucional debe examinar si hubo vulneración de derechos antes de declarar la vía ordinaria idónea. Luego invoca la excepción de la sentencia 2006-18-EP/24 para impugnaciones de actos administrativos en conflictos laborales entre el Estado y servidores públicos, que corresponden por regla general a la jurisdicción contencioso-administrativa, salvo que comprometan notoria o gravemente la dignidad o autonomía del servidor (por ejemplo, discriminación evidente) o requieran respuesta urgente. Concluye que el caso no encaja en esas excepciones: la calificación de discapacidad (2 de septiembre de 2025) es posterior al memorando de terminación (26 de julio de 2025), y la desvinculación se dio en un proceso general de reorganización (1.246 trabajadores, 200 mujeres). Por ello declara improcedente la acción según el artículo 42 numerales 1, 3, 4 y 5 de la LOGJCC, y confirma la sentencia de primera instancia que negó la acción. El texto no identifica como ponente al juez Carranza Barona Carlo.",
+    "pruebas": [
+      "Memorando Nro. PETRO-THU-2025-1656-M de 26 de julio de 2025",
+      "Certificado de discapacidad psicosocial del 47% emitido por el Ministerio de Salud Pública el 2 de septiembre de 2025",
+      "Memorando de salud ocupacional de 11 de febrero de 2025",
+      "Certificación de la Jefatura de Beneficios Sociales de la empresa",
+      "Acta de finiquito con liquidación de 21.165,60 USD",
+      "Información sobre el número de desvinculaciones de 2025 (1.246 trabajadores, de ellos 200 mujeres)"
+    ],
+    "motivacion": "Se justifica con la falta de vulneración de derechos constitucionales demostrada: no consta trato diferenciado ni nexo causal con una discapacidad previamente calificada y registrada por la empleadora; la terminación se apoyó en una facultad legal (artículo 30 numeral 4 LOEP) y el asunto es de legalidad, por lo que debe ventilarse en la justicia ordinaria (artículo 173 de la Constitución).",
+    "criterioResolucion": "Cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidores públicos, el conocimiento corresponde por regla general a la jurisdicción contencioso-administrativa, salvo que el caso comprometa notoria o gravemente la dignidad o autonomía del servidor (por ejemplo, evidente discriminación) o requiera respuesta urgente.",
+    "citaTextual": "La mentada excepción procede por regla general, a menos que (al igual que con los empleados de empresas públicas y privadas), el caso se refiera a asuntos que comprometan notoria o gravemente la dignidad o autonomía del servidor, como por ejemplo en casos de evidente discriminación, o en los excepcionalísimos que requieran una respuesta urgente por las circunstancias que lo rodeen.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Igualdad formal, igualdad material y no discriminación",
+      "Debido proceso en la garantía de la motivación"
+    ],
+    "fundamentosDeHecho": "La accionante, analista de contabilidad de la Subgerencia de Finanzas de EP Petroecuador, fue desvinculada mediante Memorando PETRO-THU-2025-1656-M notificado el 26 de julio de 2025. La calificación de discapacidad psicosocial del 47% es de 2 de septiembre de 2025, posterior a la desvinculación, y no consta que la empresa conociera la discapacidad antes. Se pagó una liquidación de 21.165,60 USD mediante acta de finiquito. La desvinculación se dio dentro de un proceso general de reorganización institucional.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

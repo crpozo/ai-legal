@@ -1,0 +1,50 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 5099,
+    "tokensSalida": 1045
+  },
+  "salida": {
+    "numero": "17204202501460",
+    "decision": "otro",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "82"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "14",
+          "15"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "100"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia No. 1256-18-JP/23 de 20 de diciembre de 2023"
+    ],
+    "argumentacion": "El tribunal analiza si cabe aceptar el desistimiento de la accionante. Recuerda que el artículo 15 de la LOGJCC permite el desistimiento y que la Corte Constitucional fijó reglas sobre su valoración (párrafos 50.1 a 50.3 de la sentencia 1256-18-JP/23). Constata que la jueza dictó fallo oral de mérito el 27 de junio de 2025, sin recurso de la accionante, y que el desistimiento se presentó el 31 de octubre de 2025, cuando ya había sentencia de primera instancia. Aplica el artículo 100 del COGEP, según el cual la sentencia es inmutable, y concluye que el proceso no puede terminar a la vez por sentencia de mérito y por desistimiento. Por ello considera extemporáneo el pedido.",
+    "pruebas": [
+      "Acta resumen de la audiencia (fojas 1243 a 1252)",
+      "Escrito de desistimiento de 31 de octubre de 2025 (foja 1253), reiterado el 5 de noviembre y 4 de diciembre de 2025",
+      "Sentencia escrita de 14 de enero de 2026 (fojas 1284 a 1293)",
+      "Escrito de apelación (fojas 1300 a 1303)"
+    ],
+    "motivacion": "La sentencia oral de mérito ya había concluido el proceso en primera instancia, por lo que el desistimiento llegó tarde y no podía aceptarse. El tribunal no entra a valorar la razón personal del desistimiento.",
+    "criterioResolucion": "Presentado el desistimiento después de dictada la sentencia de mérito en primera instancia, el pedido es extemporáneo y no puede aceptarse, pues el proceso no puede terminar a la vez por sentencia y por desistimiento.",
+    "citaTextual": "O sea, el proceso constitucional en primera instancia concluyó de forma ordinaria con una sentencia de mérito y no puede culminar al mismo tiempo de forma extraordinaria con el desistimiento de la accionante.",
+    "apelacion": "confirma",
+    "derechosInvocados": [],
+    "fundamentosDeHecho": "La jueza de primera instancia dictó fallo oral negando la acción el 27 de junio de 2025, sin recurso. La accionante pidió desistir el 31 de octubre de 2025 y reiteró el pedido. La sentencia escrita de 14 de enero de 2026 negó el desistimiento y la accionante apeló.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

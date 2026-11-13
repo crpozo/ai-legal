@@ -1,0 +1,77 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23821,
+    "tokensSalida": 1461
+  },
+  "salida": {
+    "numero": "17113202400003",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76.7.l",
+          "89",
+          "82",
+          "169",
+          "86.5",
+          "77"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "43",
+          "6",
+          "168"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "534",
+          "520",
+          "519",
+          "522",
+          "529",
+          "561",
+          "563",
+          "162"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 1158-17-EP/21",
+      "Corte Constitucional sentencia 1320-13-EP/21",
+      "Corte Constitucional sentencia 004-18-PJO-CC",
+      "Corte Constitucional sentencia 207-11-JH/20",
+      "Corte Constitucional sentencia 2533-16-EP/21",
+      "Corte Constitucional sentencia 223-17-EP/23",
+      "Corte Constitucional sentencia 89-19-JH y acumulados/21",
+      "Corte Nacional de Justicia sentencia de 22 de junio de 2022 (juicio 09133-2022-00030)",
+      "Corte Provincial de Justicia del Guayas, Sala Laboral, juicio 09133-2023-00004",
+      "Resolución 14-2021 del Pleno de la Corte Nacional de Justicia"
+    ],
+    "argumentacion": "El accionante sostiene que la orden de prisión preventiva carece de motivación porque no explica los elementos de convicción, no justifica la insuficiencia de medidas alternativas ni considera incumplimientos previos, y que el acta resumen es incongruente con la audiencia. La jueza accionada responde que la motivación oral existe y cumple los cuatro numerales del art. 534 COIP, y que el análisis de elementos de convicción y de legalidad penal excede el hábeas corpus. El tribunal fija como núcleo el acta resumen frente a lo resuelto en audiencia y la motivación; valora las pruebas constitucionales (boleta de encarcelamiento, parte policial, acta resumen, grabación de la audiencia e informe de la jueza) y concluye que la prisión preventiva sí está motivada, sin que pueda afirmarse falta de motivación.",
+    "pruebas": [
+      "Boleta de encarcelamiento No. 17283-2023-000637 de 15 de diciembre de 2023",
+      "Parte policial No. 2023121404195380908",
+      "Acta resumen de la audiencia de calificación de flagrancia",
+      "Grabación de la audiencia de calificación de flagrancia",
+      "Informe de la jueza accionada"
+    ],
+    "motivacion": "El tribunal aplica el estándar de motivación de la sentencia 1158-17-EP/21 (fundamentación normativa y fáctica suficientes), considera que la motivación oral, verificada en la grabación, cumple los requisitos del art. 534 COIP y que la jueza no incurrió en arbitrariedad ni ilegalidad; los aspectos de legalidad penal se consideran ajenos al hábeas corpus.",
+    "criterioResolucion": "La motivación de la prisión preventiva se verifica en la fundamentación oral de la audiencia (grabación), y basta una estructura mínimamente completa con fundamentación normativa y fáctica suficientes; el juez constitucional de hábeas corpus no debe pronunciarse sobre elementos de convicción ni criterios propios de la justicia penal.",
+    "citaTextual": "no existen justificativos que determinen que las medidas no privativas de libertad serían suficientes",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Garantía de motivación (art. 76.7.l CRE)",
+      "Debido proceso (art. 76 CRE)",
+      "Libertad personal (art. 77 CRE, art. 89 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante fue aprehendido el 13-14 de diciembre de 2023 y, en audiencia de calificación de flagrancia del 14 de diciembre de 2023, se le dictó prisión preventiva por presunto secuestro extorsivo (art. 162 inc. 1 COIP). El acta resumen y la grabación de la audiencia constan en el proceso; el tribunal considera que la motivación oral existió y fue suficiente.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

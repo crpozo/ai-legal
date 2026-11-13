@@ -1,0 +1,77 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 16409,
+    "tokensSalida": 2881
+  },
+  "salida": {
+    "numero": "17250202500038",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "82",
+          "52",
+          "66.2",
+          "66.4",
+          "66.23",
+          "86.3",
+          "86.5",
+          "88",
+          "308",
+          "328"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Defensa del Consumidor",
+        "articulos": [
+          "81",
+          "82",
+          "83",
+          "84"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC, caso 1000-12-EP",
+      "Sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Sentencia 001-16-PJO-CC, caso 530-10-JP",
+      "Sentencia 102-13-SEP-CC, caso 0831-12-EP",
+      "Sentencia 016-13-SEP-CC, caso 0380-10-EP"
+    ],
+    "argumentacion": "El tribunal confirma la competencia y la validez procesal. Reseña los argumentos del accionante y la contestación del banco. Recoge la sentencia de primera instancia, que negó la acción por improcedencia. Examina la autorización de débito de 30 de enero de 2019 y la cláusula séptima del convenio de reestructuración de 7 de junio de 2021, y concluye que el accionante sí autorizó los débitos. Afirma que la carga de la prueba recae en el accionante (art. 16 LOGJCC) y que no aportó prueba suficiente. Considera que no se acreditó el daño grave exigido por el art. 88 CRE para actos de particulares. Sostiene que los reclamos sobre derechos de usuario o consumidor tienen vía propia en la Ley Orgánica de Defensa del Consumidor. Aplica las causales 1, 4, 5 y 6 del art. 42 LOGJCC y rechaza el recurso de apelación.",
+    "pruebas": [
+      "Roles de pago aportados por el accionante, que reflejan descuentos a favor del banco",
+      "Dos peticiones dirigidas al banco por el accionante",
+      "Autorización de débito de 30 de enero de 2019 (fojas 43), aportada por el banco",
+      "Convenio de reestructuración convencional de obligaciones No. 58863101 de 7 de junio de 2021 (fojas 44 a 48), cláusula séptima, aportado por el banco",
+      "Oficio de la Dirección General de Talento Humano de la Fuerza Terrestre, citado en la sentencia de primera instancia"
+    ],
+    "motivacion": "La acción no prospera porque no se demostró la vulneración de un derecho constitucional ni el daño grave exigido para accionar contra un particular. Los descuentos se fundan en una autorización escrita del propio accionante. Los reclamos sobre el consumo tienen vía propia, y pretender la declaración de derechos o la imposición de sanciones está excluido de la acción de protección.",
+    "criterioResolucion": "En acción de protección contra un particular, el accionante debe demostrar la vulneración de derechos constitucionales y, cuando se invoca el art. 88 CRE, el daño grave. Si el conflicto es de legalidad o de derechos del consumidor, corresponde la vía ordinaria o la Ley Orgánica de Defensa del Consumidor, y la acción se declara improcedente.",
+    "citaTextual": "La garantía idónea y eficaz que procede cuando el juez efectivamente verifica una real vulneración a derechos constitucionales, con lo cual, no existe otra vía para la tutela de esos derechos que no sean las garantías jurisdiccionales.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Derechos del usuario o consumidor (art. 52 CRE)",
+      "Derechos de libertad (art. 66.2, 66.4 y 66.23 CRE)",
+      "Derecho financiero (art. 308 CRE)",
+      "Derecho al trabajo (art. 328 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante reestructuró en 2021 un crédito con Banco General Rumiñahui y alega descuentos sin autorización en su rol de pagos desde 2024, sin que se rebajen de capital. El tribunal constató la autorización de débito de 30 de enero de 2019 y la cláusula séptima del convenio de reestructuración de 7 de junio de 2021, y que el banco debitó las cuotas autorizadas. No se acreditó daño grave.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

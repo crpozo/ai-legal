@@ -1,0 +1,66 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23603,
+    "tokensSalida": 2495
+  },
+  "salida": {
+    "numero": "17U05202400133",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "92",
+          "169",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "21",
+          "24",
+          "25 numeral 1",
+          "49",
+          "50 numerales 1 y 2"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "26",
+          "130 numeral 6"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 1214-18-EP/22",
+      "Corte Constitucional sentencia 007-15-SIS-CC",
+      "Corte Constitucional sentencia 025-15-SEP-CC (caso 0725-12-EP)",
+      "Corte Constitucional sentencia 182-15-SEP-CC",
+      "Corte Constitucional sentencia 2172-21-EP/25 (5 de junio de 2025)"
+    ],
+    "argumentacion": "El tribunal confirma la validez del proceso y recuerda que la negativa tácita a solicitudes de acceso enmarca la acción en el numeral 1 del artículo 50 LOGJCC. Constata que la empresa entregó información solo en la audiencia del 26 de julio de 2024 y que esa entrega fue parcial, por lo que existió negativa de acceso. Frente a la apelación, reproduce el criterio de la Corte Constitucional 2172-21-EP/25: el hábeas data repara violaciones de derechos y no sirve para declarar derechos subjetivos controvertidos ni para obtener prueba. Concluye que la pretensión de eliminar la información crediticia y la reparación material son improcedentes y que las peticiones desnaturalizan la garantía.",
+    "pruebas": [
+      "Solicitudes de la accionante de 22 de mayo y 25 de junio de 2024 con razón de recepción",
+      "Informes de historial crediticio de Equifax (17 de junio de 2024) y de la Superintendencia de Bancos (23 de junio de 2024), citados por la accionante",
+      "Contrato de compraventa de cartera con Almacenes De Prati, citado por las partes",
+      "Información entregada en la audiencia pública del 26 de julio de 2024",
+      "Escrito de la accionada de 23 de julio de 2024 con documentación"
+    ],
+    "motivacion": "La decisión se justifica en que la falta de respuesta y la entrega parcial de la información acreditan la negativa de acceso, que es el ámbito de protección del numeral 1 del artículo 50 LOGJCC. Las demás pretensiones, como la eliminación de datos controvertidos y la indemnización, se reservan a la justicia ordinaria porque el hábeas data no declara derechos subjetivos disputados.",
+    "criterioResolucion": "El hábeas data repara violaciones de derechos constitucionales y no puede usarse para declarar derechos subjetivos cuya existencia es controvertida entre las partes, por ser competencia de la justicia ordinaria. Tampoco es medio para obtener prueba.",
+    "citaTextual": "la garantía de hábeas data busca reparar violaciones de derechos constitucionales y no puede emplearse para declarar derechos subjetivos cuya existencia es controvertida por las partes, debido a que esto es competencia de la justicia ordinaria.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Autotutela informativa (acceso a datos personales e informes, art. 92 CRE)",
+      "Derecho a la reputación y buen nombre crediticio, alegado en la demanda"
+    ],
+    "fundamentosDeHecho": "La accionante pidió por escrito, el 22 de mayo y el 25 de junio de 2024, información sobre sus supuestos acreedores y los documentos que respaldan una deuda de USD 448,46 reportada por la empresa accionada. La accionada solo entregó información de forma parcial en la audiencia del 26 de julio de 2024. El tribunal de apelación da por probada la negativa de acceso parcial. No considera probadas las pretensiones de eliminación de datos ni de reparación material.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

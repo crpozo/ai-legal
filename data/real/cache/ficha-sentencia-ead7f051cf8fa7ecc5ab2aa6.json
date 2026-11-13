@@ -1,0 +1,80 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 35434,
+    "tokensSalida": 3262
+  },
+  "salida": {
+    "numero": "17U05202500196",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "82",
+          "86",
+          "88",
+          "173",
+          "228"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "5 literal h",
+          "17 literal a",
+          "86"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 1774-20-EP/24",
+      "Corte Constitucional, sentencia 287-2016-SEN-CC",
+      "Corte Constitucional, sentencia 1292-19-EP/21",
+      "Corte Constitucional, sentencia 2951-17-EP/21",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional, sentencias 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 016-13-SEP-CC, 1000-12-EP",
+      "Corte Constitucional, sentencia 045-11-SEP-CC",
+      "Corte Constitucional, sentencia 0055-11-SEP-CC",
+      "Corte Constitucional, caso 0343-09-EP",
+      "Corte Interamericana de Derechos Humanos, caso Loayza Tamayo Vs. Perú (27 de noviembre de 1998)"
+    ],
+    "argumentacion": "El tribunal confirma que la acción de protección es excepcional y solo procede ante vulneración real de derechos constitucionales. Examina los tres derechos invocados (trabajo y estabilidad laboral, seguridad jurídica y tutela judicial efectiva, proyecto de vida) y concluye que no hay vulneración: el nombramiento definitivo exige concurso de méritos y oposición, que no consta; las accionantes siguen laborando y percibiendo remuneración; y la controversia sobre la modalidad del vínculo es de legalidad, de competencia de la vía contencioso administrativa u ordinaria. Por ello confirma la sentencia de primera instancia, que declaró la improcedencia.",
+    "pruebas": [
+      "Acciones de personal de nombramiento provisional y de designación de funciones de las accionantes (2002-2025)",
+      "Resolución 0025-2008-RA de la Corte Constitucional y sentencia 15257-EG del Tribunal Contencioso Administrativo de Quito",
+      "Solicitudes de 30 de junio y 4 de agosto de 2025 a la Unidad de Talento Humano del HEEE",
+      "Memorando MSP-HEEE-2025-3630-M de 8 de agosto de 2025"
+    ],
+    "motivacion": "La decisión se justifica en que la pretensión (emisión de nombramiento definitivo y pago de diferencias) es de mera legalidad, vinculada a un conflicto laboral con el Estado; no se acredita privación de empleo, despido ni suspensión de haberes; y existen vías judiciales adecuadas (contencioso administrativa u ordinaria). No se cumple el requisito de violación de derecho constitucional del artículo 40 LOGJCC, por lo que aplica la causal del artículo 42 numerales 1 y 4.",
+    "criterioResolucion": "La acción de protección no es la vía para obtener un nombramiento definitivo sin concurso de méritos y oposición: al tratarse de un asunto de mera legalidad laboral, sin vulneración de derechos constitucionales, corresponde a la justicia ordinaria o contencioso administrativa.",
+    "citaTextual": "para obtener el nombramiento definitivo obligatoriamente deben ganar el concurso de méritos y oposición lo cual no se evidencia en la presente causa, además este tribunal constitucional está impedido de crear derechos como pretende las legitimadas activas",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo y a la estabilidad laboral",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la tutela judicial efectiva",
+      "Derecho al proyecto de vida"
+    ],
+    "fundamentosDeHecho": "Las accionantes, auxiliares de servicios de salud desde 2002-2003 con nombramiento provisional en el Hospital Eugenio Espejo, alegan que no se realizaron evaluaciones de período de prueba y que, por ello, debían tener nombramiento definitivo, según la sentencia 15257-EG y la Resolución 0025-2008-RA. Tras solicitudes de 2025, el Gerente del hospital respondió mediante memorando de 8 de agosto de 2025. El tribunal considera acreditado que siguen en sus cargos y percibiendo remuneración, sin privación de empleo ni suspensión de haberes.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

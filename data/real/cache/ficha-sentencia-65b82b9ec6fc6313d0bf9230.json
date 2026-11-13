@@ -1,0 +1,97 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20673,
+    "tokensSalida": 3451
+  },
+  "salida": {
+    "numero": "17571202500101",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "76 numeral 7 literal l",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "98",
+          "120",
+          "122"
+        ]
+      },
+      {
+        "norma": "Ley de Registro",
+        "articulos": [
+          "11 literal A numeral 5",
+          "28"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "287"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1158-17-EP/21 (garantía de la motivación)",
+      "Sentencia 2006-18-EP/24 de 13 de marzo de 2024",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 102-13-SEP-CC (caso 0831-12-EP)",
+      "Sentencia 0380-10-EP",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24",
+      "Sentencia 2572-22-EP/24 (citada como hecho: sentencia de la Corte Constitucional que deja sin efecto la transferencia de dominio)"
+    ],
+    "argumentacion": "El tribunal revisa primero la sentencia de primera instancia, que había aceptado la acción por falta de motivación del acto de suspensión. Luego concluye que el acto impugnado es un acto de simple administración (arts. 120 y 122 COA), no un acto administrativo (art. 98 COA), y que contiene motivación suficiente porque indica la norma en que se funda (art. 11 Ley de Registro) y el requisito a cumplir. Después examina si la seguridad jurídica, la motivación y la propiedad fueron realmente vulneradas y concluye que no se demostró. Señala que los reclamos sobre la inscripción y la aplicación de la Ley de Registro y del COIP son asuntos de legalidad de la justicia ordinaria. Aplica las excepciones de la jurisprudencia constitucional que permiten no analizar primero la vulneración, y declara la manifiesta improcedencia por los numerales 1, 3 y 4 del art. 42 LOGJCC. Acepta la apelación del Registro de la Propiedad y de la Procuraduría, revoca la sentencia y niega la acción. Rechaza la apelación del accionante.",
+    "pruebas": [
+      "Acta de suspensión de inscripción del trámite 3150275 (el texto cita fojas 12 y, en otro pasaje, fojas 2)",
+      "Certificado de gravámenes, que a la fecha registra como titular a INMOBILIAR",
+      "Sentencia 2572-22-EP/24 de la Corte Constitucional, con fecha de 21 de noviembre de 2024",
+      "Escrituras de constitución del fideicomiso y de cesión de derechos fiduciarios, valoradas solo como antecedente, sin relevancia para el objeto del juicio"
+    ],
+    "motivacion": "La resolución sostiene que el acto de suspensión es de simple administración y que, pese a su brevedad, cumple el estándar de motivación del art. 76.7.l CRE porque indica la norma aplicable y la documentación requerida. La falta de prueba de incumplimiento de la Ley de Registro, de limitación al derecho de propiedad y de inmotivación lleva a declarar improcedente la acción, por tratarse de controversias de legalidad ordinaria.",
+    "criterioResolucion": "Una suspensión de inscripción registral que se funda en una norma legal y pide un requisito concreto es un acto de simple administración que cumple la motivación constitucional. Las controversias sobre la aplicación de la Ley de Registro y la inscripción de documentos son de legalidad y deben tramitarse en la justicia ordinaria, por lo que la acción de protección es manifiestamente improcedente (art. 42 numerales 1, 3 y 4 LOGJCC).",
+    "citaTextual": "En definitiva, la acción de protección no es la vía adecuada para solicitar al juez constitucional, que a su vez, ordene a la legitimada pasiva deje sin efecto actuaciones administrativas que engloban únicamente la esfera legal y no constitucional.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de la motivación",
+      "Derecho a la propiedad"
+    ],
+    "fundamentosDeHecho": "El Fideicomiso Mercantil Casa Robles presentó para inscripción la escritura de constitución del fideicomiso y la cesión de derechos fiduciarios (trámite 3150275). El Registro de la Propiedad de Quito mantuvo la suspensión con base en la anotación marginal de la sentencia 2572-22-EP/24, que deja sin efecto una transferencia de dominio, y pidió justificar la titularidad del tradente. La resolución no examina el mecanismo por el cual se inscribió la sentencia en el Registro, porque no fue planteado en la demanda. El texto no fija si ese acta de suspensión tenía fecha de notificación determinada dentro del trámite de apelación.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

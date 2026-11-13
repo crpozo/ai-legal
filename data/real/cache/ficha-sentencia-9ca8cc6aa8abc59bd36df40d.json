@@ -1,0 +1,48 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 13135,
+    "tokensSalida": 2311
+  },
+  "salida": {
+    "numero": "17204202600840",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "82",
+          "76 num. 7 letra i",
+          "86 num. 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "10 (contenido de la demanda, numeral 6)",
+          "39 (objeto de la acción de protección)"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia No. 224-23-JP/24 (cosa juzgada constitucional y jurisdiccional)",
+      "Acción de protección No. 17U05-2024-00080 (sentencia de apelación previa, mismos accionantes y accionados, pretensión rechazada)"
+    ],
+    "argumentacion": "El tribunal parte del artículo 10 numeral 6 de la LOGJCC, que exige declarar que no se han planteado otras garantías por los mismos actos, contra la misma persona y con la misma pretensión. Compara la presente causa con la No. 17U05-2024-00080: mismos 11 accionantes, mismos legitimados pasivos en lo sustancial y pretensión de fondo idéntica, es decir, ser considerados aptos para el ascenso a Capitán con la Ley de Personal de 1991. Concluye que la declaración de no duplicidad no es verdadera y que existe cosa juzgada material jurisdiccional y abuso del derecho. Señala además que el artículo 39 limita la acción al amparo de derechos y que lo alegado (aplicación retroactiva de la ley de 2023) no puede resolverse en esta nueva acción. Por último, precisa que la acción de protección no es residual ni subsidiaria de otras vías judiciales.",
+    "pruebas": [
+      "Copia de la sentencia de apelación en la acción de protección No. 17U05-2024-00080",
+      "Demanda y declaración del acápite VIII sobre no duplicidad de garantías (fojas 84 a 92)",
+      "Oficio No. FT-DGTH-TH-AJ-2025-18226-O de 09 de diciembre de 2025 (acto impugnado)"
+    ],
+    "motivacion": "La decisión se justifica en la existencia de una acción previa resuelta y ejecutoriada entre las mismas partes sobre la misma pretensión, lo que activa la cosa juzgada jurisdiccional, y en la falsedad de la declaración exigida por el artículo 10 numeral 6 de la LOGJCC. Con ello, el tribunal estima que no procede analizar el fondo de la supuesta vulneración de seguridad jurídica.",
+    "criterioResolucion": "Si los mismos accionantes, contra los mismos accionados y con la misma pretensión de fondo, presentan una nueva acción de protección tras una acción previa ya resuelta con sentencia ejecutoriada, opera la cosa juzgada jurisdiccional y la nueva demanda es improcedente por abuso del derecho, aunque se invoque un oficio distinto como acto vulneratorio.",
+    "citaTextual": "Lo anterior, implica que una vez que se ha alcanzado una sentencia definitiva, las partes litigiosas no pueden someter la misma controversia a un nuevo proceso judicial.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (incluido el principio de irretroactividad)"
+    ],
+    "fundamentosDeHecho": "Once accionantes, tenientes de Sanidad de la promoción 122, solicitaron ser considerados para ascenso a Capitán bajo la Ley de Personal de las Fuerzas Armadas de 1991. La Dirección General de Talento Humano negó la petición mediante oficio de 09 de diciembre de 2025, aplicando la ley de 2023 que exige seis años de permanencia. Los mismos once accionantes ya habían presentado la acción No. 17U05-2024-00080 con la misma pretensión, la cual fue negada por sentencia ejecutoriada. El tribunal confirma la sentencia de primera instancia que rechazó la acción.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

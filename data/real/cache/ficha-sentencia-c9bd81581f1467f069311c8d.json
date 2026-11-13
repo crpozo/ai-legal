@@ -1,0 +1,65 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26346,
+    "tokensSalida": 1635
+  },
+  "salida": {
+    "numero": "17233202602437",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "92",
+          "169",
+          "76.7.l",
+          "86.5",
+          "161",
+          "26"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "25.1",
+          "49",
+          "50"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1214-18-EP/22 (párr. 29)",
+      "Corte Constitucional, sentencia 1226-20-EP/24 (párr. 18)",
+      "Corte Constitucional, sentencia 182-15-SEP-CC",
+      "Corte Constitucional, sentencia 007-15-SIS-CC",
+      "Corte Constitucional, sentencia 025-15-SEP-CC (caso 0725-12-EP)",
+      "Corte Constitucional, sentencia 2033-22-EP/26 (párr. 30)",
+      "Corte Constitucional, sentencia 2064-14-EP (citada por el accionante)",
+      "Corte Constitucional, sentencia 3279-17 (citada por la Policía Nacional)",
+      "Corte Constitucional, sentencia 2515-CC (citada por la Procuraduría General del Estado)"
+    ],
+    "argumentacion": "El tribunal confirma la validez del proceso y la competencia, y encuadra la pretensión en el numeral 1 del artículo 50 LOGJCC (negativa de acceso). Exige como presupuesto un requerimiento previo al custodio y una negativa expresa o tácita. Constata que el accionante presentó una petición formal el 3 de octubre de 2025 (fs. 96-97) y que la institución entregó los instrumentos existentes (fs. 187-191 y 308-311). Concluye que no hubo negativa que habilite la vía constitucional. Adicionalmente, sostiene que la pretensión busca la creación de documentos nuevos, lo que el hábeas data no permite, por lo que desnaturaliza la garantía.",
+    "pruebas": [
+      "Petición formal del accionante de 3 de octubre de 2025 (fs. 96-97)",
+      "Documento 'Análisis de las observaciones realizadas por los servidores policiales directivos pertenecientes a la promoción 56 de oficiales de línea' (fs. 187-191)",
+      "Acto de simple administración No. 2025-015-CA-PN con formulario de calificación de aspectos generales (fs. 308-311)",
+      "Oficios PN-CA-2026-013-O y PN-CA-2026-014-O citados por la defensa de la Policía Nacional y del Ministerio del Interior"
+    ],
+    "motivacion": "La decisión se justifica en que no existe requerimiento previo con negativa expresa o tácita, requisito exigido por la jurisprudencia obligatoria de la Corte Constitucional (1226-20-EP/24) para los numerales 1 y 2 del artículo 50 LOGJCC. Además, la existencia de la entrega de lo existente y la pretensión de generar información nueva llevan a rechazar la demanda.",
+    "criterioResolucion": "En hábeas data por negativa de acceso (art. 50.1 LOGJCC), es necesario que el titular haya requerido previamente el acceso al custodio y que exista una negativa expresa o tácita; si la entidad entregó la información existente, no hay negativa que habilite la garantía, y el hábeas data no sirve para obligar a crear información nueva.",
+    "citaTextual": "De acuerdo con la jurisprudencia obligatoria de la Corte Constitucional (Sentencia 1226-20-EP/24), para activar los numerales 1 y 2 del artículo 50 de la LOGJCC, es necesario que el titular solicite previamente el acceso, actualización o rectificación al custodio, y que exista una negativa expresa o tácita.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho de acceso a la información personal (hábeas data, art. 92 CRE)",
+      "Derecho a la motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica y debido proceso (art. 82 CRE), en la alegación de indefensión material"
+    ],
+    "fundamentosDeHecho": "El accionante, integrante del proceso de ascenso al grado de General de Distrito, reclamó acceso íntegro a la documentación de su proceso de ascenso tras ser calificado como no idóneo (resolución 2025-030-CA-PN de 24 de septiembre de 2025). El tribunal da por probado que presentó una petición formal el 3 de octubre de 2025 y que la institución entregó los instrumentos existentes. No consta un requerimiento previo que haya sido negado expresa o tácitamente respecto de la totalidad de lo pedido.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

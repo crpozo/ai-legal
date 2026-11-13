@@ -1,0 +1,80 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 27653,
+    "tokensSalida": 1555
+  },
+  "salida": {
+    "numero": "17576202501292",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "34",
+          "82",
+          "86",
+          "88",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "10.3",
+          "24",
+          "39",
+          "40",
+          "42.1",
+          "42.3",
+          "42.4"
+        ]
+      },
+      {
+        "norma": "Ley de Seguridad Social de las Fuerzas Armadas",
+        "articulos": [
+          "24"
+        ]
+      },
+      {
+        "norma": "Resolución C.D. 371 del Consejo Directivo del IESS",
+        "articulos": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Corte Constitucional 2034-13-EP/19",
+      "Sentencia Corte Constitucional 1024-19-JP/21 y acumulados",
+      "Sentencia Corte Constitucional 16-09-IN/20",
+      "Sentencia Corte Constitucional 16-18-IN/21",
+      "Sentencia Corte Constitucional 1797-18-EP/20",
+      "Sentencia Corte Constitucional 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia Corte Constitucional 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de alzada confirma la sentencia de primera instancia que negó la acción de protección. Señala que el asunto no es de jurisdicción constitucional, pero analiza igualmente si hubo vulneración. Concluye que el IESS aplicó los requisitos vigentes con base en 310 imposiciones civiles; que la discrepancia sobre años contabilizados es una impugnación a la liquidación económica, no una privación del derecho a la seguridad social; y que la interpretación de normativa infraconstitucional (Resolución C.D. 371, artículo 24 de la Ley de Seguridad Social de las Fuerzas Armadas) es un debate de legalidad. Aplica la improcedencia por tratarse de acto impugnable en vía judicial.",
+    "pruebas": [
+      "Liquidación de antigüedad de aportes del ISSFA (166 imposiciones)",
+      "Tiempo de servicio por empleador del IESS (331 imposiciones)",
+      "Acuerdo de Fijación de Pensión 2019-2104828 (310 imposiciones, coeficiente 0,6875)",
+      "Oficio IESS de 16 de octubre de 2025 que negó la transferencia de aportes del ISSFA",
+      "Solicitud del accionante de 4 de septiembre de 2025",
+      "Constancia de que el accionante percibe la pensión de vejez desde 2019"
+    ],
+    "motivacion": "Falta de vulneración de derechos constitucionales: el IESS concedió la pensión y el accionante la percibe desde 2019; no se acreditó la transferencia de fondos ISSFA–IESS ni un perjuicio real en la cuantía. Ante ello, la controversia se reduce a legalidad y a la vía contencioso-administrativa, según los numerales 3 y 4 del artículo 42 de la LOGJCC.",
+    "criterioResolucion": "La acción de protección es improcedente cuando la discrepancia sobre el cálculo de una pensión (no computar aportes militares) es un debate de legalidad o de impugnación de un acto administrativo impugnable en vía judicial, y no existe una privación del derecho a la seguridad social ni una vulneración de seguridad jurídica.",
+    "citaTextual": "La discrepancia sobre el número de años contabilizados (27 años frente a los 40 que resultan de sumar el aporte al ISSFA) no constituye una privación del derecho, sino una impugnación a la liquidación económica. Po lo cual no se avizora vulnerado el derecho a la seguridad social.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad social (art. 34 CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, con 65 años de edad, recibe desde octubre de 2019 una pensión de vejez del IESS (USD 1.576), calculada con 310 imposiciones civiles. Reclama que se computen 166 imposiciones de servicio militar en el ISSFA (total 497, coeficiente 1,0125). El IESS negó la solicitud mediante oficio de 16 de octubre de 2025. El tribunal considera que no consta acreditada la transferencia ISSFA–IESS ni un perjuicio real en la cuantía.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 35299,
+    "tokensSalida": 3464
+  },
+  "salida": {
+    "numero": "17297202400417",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numerales 8 y 9",
+          "33",
+          "34",
+          "82",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "62"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1214-18-EP/22",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 16-09-IN/20",
+      "Sentencia 1797-18-EP/20"
+    ],
+    "argumentacion": "El tribunal de alzada revisa el recurso de apelación de la accionante contra la sentencia de primera instancia que negó la acción. Primero valida el proceso. Luego analiza cada derecho alegado: no encuentra prueba de vulneración del derecho al trabajo ni del derecho a la seguridad social (la accionante está afiliada y trabaja en la institución), y considera que la seguridad jurídica no se vulneró porque el reclamo es de mera legalidad. Cita la sentencia 2006-18-EP/24 para remitir este tipo de conflictos laborales a la vía contencioso-administrativa. Hace referencia a la igualdad y no discriminación con los tres elementos de la sentencia 54-17-IN/22. Concluye que hay improcedencia por los numerales 1, 3 y 4 del artículo 42 de la LOGJCC. Nota: el problema jurídico que fija el tribunal nombra a otra persona (Carmen Magdalena Aldas Navarrete) en lugar de la accionante Marcia Cecilia Curay Díaz; el texto no aclara esta discrepancia.",
+    "pruebas": [
+      "Formulario de Análisis Ocupacional (FAO) de la accionante",
+      "Informe técnico MSP-UATH-2018-256, a fs. 236, con informe favorable para la implementación del manual de puestos",
+      "Afiliación al seguro social, a fs. 3",
+      "Dictamen presupuestario (Oficio MINFIN-DM-2014-1119) y resoluciones MDT-DFI-2015-001 y MDT-DFI-2015-002 citados por las partes"
+    ],
+    "motivacion": "Se da por probado que no existe prueba fehaciente de vulneración de los derechos alegados. La reclasificación depende de trámites administrativos y de financiamiento aún pendientes, por lo que el tribunal la trata como un asunto de mera legalidad que corresponde a la justicia ordinaria. Se confirma la negativa de la acción por improcedencia.",
+    "criterioResolucion": "Los reclamos de reclasificación y remuneración de un servidor público, cuando dependen de trámites administrativos y presupuestarios pendientes, son de mera legalidad y deben tramitarse en la vía contencioso-administrativa, no mediante acción de protección.",
+    "citaTextual": "se debe acudir a la autoridad judicial competente para reclamar sus derechos laborales, no se puede confundir y utilizar a una garantía jurisdiccional como es la acción de protección, para reclamar circunstancias de mera legalidad que tienen su propio procedimiento para ser conocidos y tutelados por los Jueces Ordinarios",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Seguridad jurídica",
+      "Igualdad formal y material y no discriminación",
+      "Seguridad social",
+      "Vida digna"
+    ],
+    "fundamentosDeHecho": "La accionante es servidora pública con nombramiento definitivo como analista zonal de contabilidad (SPA 3) en el Ministerio de Salud Pública, con remuneración de 675 dólares. Se le levantó un FAO y existe informe favorable para la implementación del manual de puestos, pero el manual de las resoluciones MDT-DFI-2015-001 y 002 no se ha aplicado porque la entidad no ha obtenido los fondos. El tribunal da por establecido que la accionante está afiliada al seguro social y que se encuentra trabajando en la institución.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

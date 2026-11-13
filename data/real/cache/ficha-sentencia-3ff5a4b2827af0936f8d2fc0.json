@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17609,
+    "tokensSalida": 1492
+  },
+  "salida": {
+    "numero": "17571202500961",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "88",
+          "86",
+          "76.7.l",
+          "66.23"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "6",
+          "25.1",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Declaración Universal de los Derechos Humanos",
+        "articulos": [
+          "23.1"
+        ]
+      },
+      {
+        "norma": "Pacto Internacional de Derechos Económicos, Sociales y Culturales",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2158-19-EP/24",
+      "Sentencia 630-23-EP/26",
+      "Sentencia 1859-22-EP/25",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 093-14-SEP-CC (caso 1752-11-EP)",
+      "Sentencia 045-11-SEP-CC",
+      "Sentencia 001-16-PJC-CC (caso 530-10-JP)",
+      "Sentencia 831-12-EP",
+      "Sentencia 102-13-SEP-CC (caso 0380-10-EP)"
+    ],
+    "argumentacion": "El tribunal confirma que la acción de protección es improcedente porque la pretensión (pago de planillas de julio a octubre de 2025 y garantía de pago de noviembre y diciembre) es un conflicto administrativo, contractual y patrimonial de estricta legalidad, ajeno a la justicia constitucional según la sentencia 630-23-EP/26. Descarta la vulneración de seguridad jurídica, del derecho al trabajo y de la motivación: para la motivación, el accionante debió impugnar un acto administrativo expreso y no una omisión de pago; el pago depende de asignación presupuestaria del Ministerio de Finanzas. Concluye que la vía adecuada es el contencioso-administrativo.",
+    "pruebas": [
+      "Memorando MSP-CZ9-17D06-DIRECCION-2025-12108-M de 30 de octubre de 2025",
+      "Oficios y comunicaciones cursados por la accionante (referidos en la demanda)",
+      "Acta de audiencia pública de 12 de enero de 2026 y reinstalación de 19 de enero de 2026"
+    ],
+    "motivacion": "La decisión se justifica en que no existe vulneración de derechos constitucionales en los hechos alegados, por tratarse de una obligación dineraria derivada de un contrato de servicios complementarios con el Estado, que debe ventilarse en la vía contencioso-administrativa; además, no se impugnó un acto administrativo expreso que justifique la alegación de falta de motivación.",
+    "criterioResolucion": "La acción de protección no es la vía idónea para exigir el cobro de obligaciones económicas derivadas de la provisión de bienes o servicios al Estado cuando no se demuestra una vulneración directa de derechos constitucionales; tal controversia es de naturaleza administrativa, contractual y patrimonial y corresponde a la jurisdicción contencioso-administrativa.",
+    "citaTextual": "Pretender cobrar planillas por esta vía desnaturaliza la garantía constitucional, utilizándola como un mecanismo alternativo o acelerado de cobro de deudas dinerarias.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la seguridad jurídica",
+      "Derecho al trabajo y a una remuneración justa",
+      "Garantía de la motivación",
+      "Igualdad",
+      "Derechos de pacientes y personal hospitalario a servicios públicos seguros"
+    ],
+    "fundamentosDeHecho": "La compañía COPRISEG, prestadora de servicios de vigilancia para la Dirección Distrital 17D06, reclama el pago de planillas de julio a octubre de 2025 (orden de compra por catálogo electrónico CE-20240002755901) y la garantía de pago de noviembre y diciembre de 2025. El tribunal considera que la entidad distrital tramitó la asignación presupuestaria ante las instancias financieras, y que el pago depende del Ministerio de Finanzas. El juez de primera instancia declaró improcedente la acción y el accionante apeló.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

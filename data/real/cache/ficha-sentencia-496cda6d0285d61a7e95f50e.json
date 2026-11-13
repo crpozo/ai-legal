@@ -1,0 +1,86 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 37608,
+    "tokensSalida": 1736
+  },
+  "salida": {
+    "numero": "17203202501361",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "82",
+          "86 numeral 5",
+          "88",
+          "167",
+          "169",
+          "424",
+          "426",
+          "228",
+          "229",
+          "325",
+          "75",
+          "76 numerales 1 y 7 literales h) y l)",
+          "126",
+          "160",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "16",
+          "24",
+          "25 numeral 1",
+          "40",
+          "42 numerales 1, 3 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "31"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 75-15-IN/21",
+      "Sentencia 1425-18-EP/23",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2231-22-JP/23 (voto salvado)",
+      "Sentencia 39-14-CEPCC (citada en audiencia)",
+      "Sentencia 9-17 (citada en audiencia)"
+    ],
+    "argumentacion": "El tribunal de apelación sostiene que el asunto no es de jurisdicción constitucional, pero analiza igualmente cada derecho alegado. Descarta discriminación por falta de comparabilidad, rechaza la vulneración del derecho al trabajo al considerar la destitución fruto de un procedimiento legal de la época, y no aprecia afectación al debido proceso (cumplimiento de normas, defensa y motivación), pues la orden general está motivada y el accionante tuvo oportunidad procesal según el expediente. Sobre seguridad jurídica, concluye que la baja se dio con normas previas, claras, públicas y aplicadas por autoridad competente, y que lo que se pretende es un control de legalidad propio de la justicia ordinaria. Finalmente, aplica las causales de improcedencia del artículo 42 numerales 1, 3 y 5.",
+    "pruebas": [
+      "Orden General No. 094 (fs. 72-73 vlt.)",
+      "Oficios y órdenes generales del proceso administrativo de 1997-1998 incorporados por la Policía Nacional",
+      "Resolución del juzgado segundo del primer distrito de la Policía Nacional (10 de febrero de 1998)",
+      "Documentación agregada por el accionante y certificaciones de la Policía Nacional"
+    ],
+    "motivacion": "La decisión se justifica en que no existe vulneración de derechos constitucionales verificable en el expediente; los actos de baja se fundaron en la Ley de Personal vigente a la fecha, dictados por autoridad competente; y la pretensión es de declaración de derecho o de control de legalidad, causales de improcedencia del artículo 42 de la LOGJCC.",
+    "criterioResolucion": "No existe vulneración de derechos constitucionales cuando la baja se funda en normas previas, claras, públicas y aplicadas por autoridad competente; cuestiones de mera legalidad o de declaración de derechos no son materia de acción de protección (art. 42 numerales 1, 3 y 5 LOGJCC).",
+    "citaTextual": "ADMINISTRANDO JUSTICIA EN NOMBRE DEL PUEBLO SOBERANO DEL ECUADOR, Y POR AUTORIDAD DE LA CONSTITUCIÓN Y LAS LEYES DE LA REPÚBLICA, rechaza el recurso de apelación presentado por el legitimado activo Freddy Fernando Espinosa Calderón y en consecuencia se rechaza por improcedente, la acción de protección presentada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad y no discriminación (art. 11.2 CRE)",
+      "Seguridad jurídica (arts. 82, 71, 126 CRE)",
+      "Derecho al trabajo y estabilidad laboral (arts. 325, 228, 229 CRE)",
+      "Debido proceso en las garantías de defensa, cumplimiento de normas y motivación (art. 76 CRE)",
+      "Tutela judicial efectiva"
+    ],
+    "fundamentosDeHecho": "El accionante ingresó a la Policía Nacional en 1981 y fue dado de baja mediante la Orden General No. 094 de 9 de mayo de 1998, tras un procedimiento por mala conducta profesional (arts. 25 y 26 Ley de Personal) relacionado con la tramitación de una licencia de conducir a cambio de dinero. Presentó la acción en 2025, cerca de 27 años después. El tribunal considera acreditado el procedimiento administrativo y la resolución del juzgado de distrito de 10 de febrero de 1998, sin constatar vulneración de derechos.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

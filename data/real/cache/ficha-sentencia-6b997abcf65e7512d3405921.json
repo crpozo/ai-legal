@@ -1,0 +1,84 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17987,
+    "tokensSalida": 1551
+  },
+  "salida": {
+    "numero": "17230202520613",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "82",
+          "66 numeral 26",
+          "169",
+          "88",
+          "75",
+          "76 numeral 7 literal m"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4",
+          "6",
+          "16",
+          "24",
+          "8 numeral 8",
+          "13",
+          "14",
+          "168"
+        ]
+      },
+      {
+        "norma": "Código de Procedimiento Civil (vigente a la época)",
+        "articulos": [
+          "84",
+          "941 y siguientes"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Banco Nacional de Fomento",
+        "articulos": [
+          "142"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 155-17-SEP-CC (caso 1563-12-EP)",
+      "Sentencia N.º 208-15-SEP-CC",
+      "Dictamen constitucional No 001-14-DRC",
+      "Sentencia 006-17-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación analiza si la falta de notificación del auto de pago en el proceso coactivo vulnera debido proceso, seguridad jurídica y propiedad. Constata que el coactivado Álvaro Ernesto López Merizalde compareció por escrito el 25 de abril de 2014, designó defensor y casillero, por lo que concluye que se cumplió la notificación conforme al artículo 84 del CPC. Sostiene que la discusión es de legalidad (forma de citación y medidas cautelares) y debe resolverse en la vía ordinaria, y que no hay vulneración de seguridad jurídica ni de propiedad porque la entidad actuó dentro de sus facultades. Concluye que no se observa vulneración de derechos y que la acción es improcedente.",
+    "pruebas": [
+      "Auto de pago de 12 de marzo de 2013 (fs. 1)",
+      "Formularios y boletas de citación (fs. 2 y 2 vta.)",
+      "Certificado de defunción de Alba Penélope Maldonado Coello (fs. 3)",
+      "Providencia de notificación a herederos y publicaciones de prensa (fs. 4 a 6)",
+      "Escrito de comparecencia de Álvaro Ernesto López Merizalde de 25 de abril de 2014 (fs. 90)",
+      "Providencia de 5 de mayo de 2014 (fs. 91)",
+      "Escritos posteriores y autorización de nuevo defensor de 23 de enero de 2015 (fs. 243 y 244)",
+      "Escritura de poder general (fs. 13 a 18)"
+    ],
+    "motivacion": "La improcedencia se funda en que el reclamo versa sobre legalidad y no sobre violación de derechos constitucionales, al haber comparecido el causante al proceso coactivo con defensa y casillero señalado. Se invoca el numeral 3 del artículo 42 y, en la decisión, los numerales 1, 3 y 4 de ese artículo.",
+    "criterioResolucion": "La acción de protección es improcedente cuando la discusión sobre la notificación y medidas cautelares de un proceso coactivo es de mera legalidad y no existe vulneración de derechos constitucionales que deba discutirse en sede constitucional.",
+    "citaTextual": "Por esta circunstancia, el Tribunal, observa que la discusión propuesta por la parte accionante en esta acción constitucional obedece temas de legalidad, sobre la notificación, así como, la disposición contenida en el auto de pago, respecto de ordenar medidas cautelares; y que, este tipo de discusiones de legalidad recaen en la improcedencia,",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso",
+      "Seguridad jurídica",
+      "Propiedad"
+    ],
+    "fundamentosDeHecho": "El auto de pago de 12 de marzo de 2013 no fue notificado al coactivado Álvaro Ernesto López Merizalde, quien falleció el 20 de abril de 2024 según la sentencia de primera instancia. Consta que el 25 de abril de 2014 compareció al proceso coactivo, designó abogado y señaló casillero judicial y correo electrónico. La sentencia de primera instancia aceptó la demanda y dejó sin efecto lo actuado desde fojas 7 del proceso coactivo 0136-2013; el banco apeló en la misma audiencia.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

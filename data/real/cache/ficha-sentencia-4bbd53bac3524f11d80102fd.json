@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22310,
+    "tokensSalida": 1727
+  },
+  "salida": {
+    "numero": "17572202400359",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "167",
+          "178.2",
+          "76.7.l",
+          "86.3",
+          "92",
+          "66.19",
+          "82",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "8.8",
+          "24",
+          "168.1",
+          "49",
+          "50.2",
+          "17.4",
+          "4.13",
+          "25.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1",
+          "208.8",
+          "8",
+          "9",
+          "23",
+          "25"
+        ]
+      },
+      {
+        "norma": "Ley de Protección de Datos Personales",
+        "articulos": [
+          "2",
+          "14",
+          "29"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "207"
+        ]
+      },
+      {
+        "norma": "Ley de Reordenamiento en materia económica en el área tributario-financiera",
+        "articulos": [
+          "29"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia No. 1158-17-EP/21 (Caso No. 1158-17-EP, 20 de octubre de 2021)",
+      "Corte Constitucional, Sentencia No. 55-14-JD/20 (Caso No. 55-14-JD, 1 de julio de 2020)"
+    ],
+    "argumentacion": "El tribunal de alzada verifica la validez procesal y la legitimación activa y pasiva, y toma como base la pretensión de rectificar la anotación de prohibición de enajenar sobre el inmueble de OPOR S.A. Considera que el hábeas data correctivo es procedente en abstracto para personas jurídicas y que la negativa tácita fue alegada. Sin embargo, concluye que el Registrador no puede cambiar el dominio o el estado de los inmuebles ni levantar una medida cautelar real dispuesta por autoridad competente mediante resoluciones de la AGD/UGEDEP y el artículo 29 de la Ley de Reordenamiento; que la posible confusión entre OPOR S.A. y OPORSA es un asunto que no corresponde resolver en hábeas data, sino en la vía ordinaria; y que tal pretensión desnaturaliza la garantía. Por ello revoca la sentencia de primera instancia y rechaza la acción.",
+    "pruebas": [
+      "Certificado de gravámenes e información registral (fs. 21 a 25)",
+      "Petición de rectificación de 7 de agosto de 2024 (fs. 28 a 32)",
+      "Respuesta de la Unidad de Gestión y Regularización (UGR) a la prueba requerida (fs. 65 a 66)",
+      "Acta de audiencia pública (fs. 57 a 60)",
+      "Resoluciones No. AGD-GG-GCI-2003-001 y No. 008-UGEDEP-2011",
+      "Acto de inscripción de las resoluciones en el libro de prohibiciones, referido por el Registro en audiencia"
+    ],
+    "motivacion": "Aplica la garantía de motivación del artículo 76.7.l de la Constitución y la sentencia 1158-17-EP/21, y analiza el objeto de la acción conforme al artículo 49 y 50.2 de la LOGJCC. Razona que la prohibición de enajenar es una medida cautelar real de cumplimiento obligatorio para el Registrador, que no corresponde a esa autoridad corregirla, y que la discusión sobre la identidad de la compañía debe ventilarse en la acción ordinaria.",
+    "criterioResolucion": "El hábeas data correctivo no es la vía para dejar sin efecto una medida cautelar real (prohibición de enajenar) inscrita por orden de autoridad competente, ni para resolver si un registro afecta a una persona distinta; si existe error en la identidad del titular, el accionante debe acudir a la acción ordinaria.",
+    "citaTextual": "no le corresponde al Registrador de la Propiedad cambiar el dominio o el estado actual de los inmuebles; tanto más que, la compañía OPOR S.A., señala ser el titular del bien inmueble",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la protección de datos personales (art. 66.19 de la Constitución)",
+      "Derecho a la propiedad (alegado en la demanda)"
+    ],
+    "fundamentosDeHecho": "OPOR S.A. es propietaria de un inmueble en la Av. 10 de Agosto No. 8906 y José Rafael Bustamante (Quito). El Registro de la Propiedad mantiene inscrita una prohibición de enajenar derivada de la Resolución AGD-GG-GCI-2003-001 y de la Resolución 008-UGEDEP-2011. La compañía alega que la resolución se refiere a OPORSA y no a OPOR S.A. La petición de rectificación de 7 de agosto de 2024 no tuvo respuesta expresa. La jueza de primer nivel aceptó la acción; el Tribunal de apelación considera que la medida fue dispuesta por autoridad competente y que no corresponde a la garantía corregirla.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

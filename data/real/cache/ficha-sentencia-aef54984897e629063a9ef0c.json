@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25753,
+    "tokensSalida": 3369
+  },
+  "salida": {
+    "numero": "17160202600092",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "66 numerales 3 literal b), 4 y 22",
+          "75",
+          "76 numeral 7 literales a), b), c), h) y l)",
+          "82",
+          "88",
+          "169",
+          "314",
+          "321",
+          "436 numeral 6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "42 numerales 1 y 5",
+          "25 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19 (caso 2034-13-EP)",
+      "Sentencia vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC de 16 de mayo de 2013 (caso 1000-12-EP)",
+      "Sentencia 54-17-IN/22 de 26 de mayo de 2022",
+      "Sentencia 116-12-JH/21",
+      "Sentencia 918-14-EP/20",
+      "Sentencia 1298-17-EP/21 (caso 1298-17-EP)",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 135-17-SEP-CC de 10 de mayo de 2017 (caso 0198-14-EP)"
+    ],
+    "argumentacion": "El tribunal de alzada fija como problema jurídico si existió vulneración de los derechos invocados por la accionante por impedirle el ingreso, uso, goce y disposición de su departamento por falta de pago de alícuotas. Afirma que el asunto subyacente es de naturaleza civil o administrativa (alícuotas y deudas con el conjunto) y no de jurisdicción constitucional. Revisa uno por uno los derechos: descarta discriminación por la exigencia de reconocimiento notarial del acuerdo de pago; descarta afectación a la integridad personal y a la inviolabilidad de domicilio por tratarse de limitaciones vinculadas al régimen de propiedad horizontal; descarta falta de tutela judicial efectiva; descarta vulneración del debido proceso porque las asambleas 2023 a 2025 informaron las deudas y la accionante pudo plantear acuerdos; descarta vulneración de seguridad jurídica porque el cobro se basó en el reglamento y en asambleas no impugnadas por vías idóneas; descarta afectación a servicios públicos porque son provistos por el Estado; y descarta vulneración del derecho de propiedad al tratarse de un régimen de propiedad horizontal. Concluye que no hay vulneración y que la pretensión es la declaración de un derecho, por lo que aplica la improcedencia del artículo 42 numeral 5 LOGJCC.",
+    "pruebas": [
+      "Actas y convocatorias de asambleas generales ordinarias de 2023, 2024 y 2025 con informes económicos sobre valores adeudados",
+      "Convocatoria a asamblea general ordinaria del 26 de agosto de 2025 (según alegatos de las accionadas)",
+      "Estado de cuenta de la deuda de la accionante",
+      "Protocolización de la elección de la directiva y de la administradora",
+      "Reglamento del conjunto, con las medidas sancionatorias y las condiciones de ingreso vehicular y certificación de expensas",
+      "Documentación aportada por la accionante sobre su propiedad"
+    ],
+    "motivacion": "Los jueces de alzada motivan la decisión en que no se verificó vulneración de ninguno de los derechos alegados, con base en los hechos documentados (asambleas, reglamento y deudas) y en la jurisprudencia de la Corte Constitucional sobre la acción de protección como garantía eficaz solo ante vulneraciones reales, y no como sustituto de la justicia ordinaria. Por ello revocan la sentencia de primera instancia que había aceptado parcialmente la acción y rechazan la acción por improcedente.",
+    "criterioResolucion": "La acción de protección es improcedente cuando, verificada la inexistencia de vulneración de derechos constitucionales, la pretensión consiste en la declaración de un derecho o en cuestiones de mera legalidad (limitación de uso por deudas de alícuotas en propiedad horizontal), que deben tramitarse ante la justicia ordinaria.",
+    "citaTextual": "considera que no se trata de un asunto que pueda ser sometido a la jurisdicción constitucional por medio de una acción de protección",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la propiedad",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la igualdad formal, material y no discriminación",
+      "Derecho a la integridad personal",
+      "Derecho a la inviolabilidad de domicilio",
+      "Derecho a la tutela judicial efectiva",
+      "Derecho al debido proceso en la garantía de la defensa",
+      "Derecho a la provisión de servicios públicos"
+    ],
+    "fundamentosDeHecho": "La accionante es propietaria del departamento 12 del Conjunto Habitacional Torres de San José. Alega que desde 2019, y especialmente el 11 de febrero de 2026, las administradoras le impidieron el ingreso y el uso del inmueble por una deuda de alícuotas, y que se le exigió un acuerdo de pago con reconocimiento notarial de firma. Consta que las asambleas de 2023, 2024 y 2025 presentaron informes económicos sobre los valores adeudados, y que la accionante tuvo oportunidad de plantear fórmulas de pago. La jueza de primera instancia aceptó parcialmente la acción; el tribunal de alzada revoca esa decisión.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

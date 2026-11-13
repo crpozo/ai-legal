@@ -1,0 +1,73 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20662,
+    "tokensSalida": 1740
+  },
+  "salida": {
+    "numero": "17294202600572",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "82",
+          "66 numeral 23",
+          "76 numerales 2, 3 y 7 literales a), b), c) y h)",
+          "169",
+          "326 numeral 2",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42",
+          "19"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 090-15-SEP-CC (caso 1567-13-EP)",
+      "Sentencia 050-15-SEP-CC",
+      "Sentencia 14-15-CN/19",
+      "Sentencia 34-17-IN/21",
+      "Sentencia 1298-17-EP/21",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2006-18-EP/24"
+    ],
+    "argumentacion": "El tribunal de alzada conoce la apelación de ACESS y de la Procuraduría contra la sentencia de primera instancia que aceptó parcialmente la acción. Examina el derecho de petición y concluye que no hubo respuesta efectiva y notificada a la solicitud del 15 de julio de 2024. Luego analiza debido proceso (presunción de inocencia, legalidad, defensa) y concluye que se aplicaron descuentos sin procedimiento previo ni decisión motivada, y que el reglamento posterior no es aplicable retroactivamente. Analiza seguridad jurídica y concluye que hubo afectación por consecuencias desfavorables sin decisión formal. Sobre irrenunciabilidad de derechos laborales no aprecia vulneración respecto del monto, por ser asunto de legalidad contencioso-administrativo. Declara las vulneraciones y ordena medidas de reparación.",
+    "pruebas": [
+      "Solicitud de liquidación presentada el 15 de julio de 2024 (fs. 100 a 101)",
+      "Informe Técnico Nro. MDT-DRTSPQ-GISCSP-GD-2024-0360 del Ministerio del Trabajo (fs. 19 a 24)",
+      "Documentación de ACESS que justifica el descuento (fs. 110 a 133)",
+      "Resolución ACESS-ACESS-2024-0049-R (reglamento interno expedido el 4 de septiembre de 2024)",
+      "Oficios internos y memorandos de ACESS"
+    ],
+    "motivacion": "La vulneración del derecho de petición se funda en la falta de notificación directa y motivada de la respuesta. La del debido proceso y seguridad jurídica se funda en la ausencia de procedimiento previo y de decisión motivada antes de la retención. El tribunal aclara que no determina montos ni días de vacaciones, y que esas cuestiones corresponden a la administración o a la vía contencioso-administrativa.",
+    "criterioResolucion": "La retención o descuento de haberes basado en supuestas faltas o inasistencias, sin procedimiento administrativo previo con comunicación, contradicción y decisión motivada, vulnera el debido proceso (defensa y presunción de inocencia) y la seguridad jurídica; el juez constitucional no liquida montos, que corresponden a la vía contencioso-administrativa.",
+    "citaTextual": "No resulta constitucionalmente admisible que la Administración omita ejercer oportunamente sus facultades de control mientras subsiste la relación de servicio y que, posteriormente, tras la desvinculación del funcionario, convierta esas omisiones administrativas en una consecuencia patrimonial desfavorable sin brindarle previamente un espacio de contradicción.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho de petición (art. 66.23 CRE)",
+      "Debido proceso: presunción de inocencia (art. 76.2 CRE)",
+      "Debido proceso: legalidad, sanción previa y tipicidad administrativa (art. 76.3 CRE)",
+      "Derecho a la defensa (art. 76.7 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Irrenunciabilidad e intangibilidad de los derechos laborales (art. 326.2 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, exfuncionario de ACESS hasta el 31 de diciembre de 2023, presentó el 15 de julio de 2024 una petición sobre su liquidación. ACESS retuvo o descontó parte de la liquidación por supuestos atrasos, inasistencias y saldos negativos de vacaciones, sin un procedimiento disciplinario previo. El Ministerio del Trabajo constató omisiones de ACESS en el control y en el debido proceso. No consta la notificación efectiva de una respuesta a la petición.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 24327,
+    "tokensSalida": 1386
+  },
+  "salida": {
+    "numero": "17571202500434",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "88",
+          "66 numerales 23 y 25",
+          "368",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 4, 5 y 6",
+          "16"
+        ]
+      },
+      {
+        "norma": "Código de Comercio",
+        "articulos": [
+          "693",
+          "718",
+          "725",
+          "726",
+          "118"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Monetario y Financiero, Libro III",
+        "articulos": [
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "18"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC, caso 1000-12-EP",
+      "Sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Sentencia 001-16-PJO-CC, caso 530-10-JP",
+      "Sentencias 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la sentencia de primera instancia. Señala que la accionante no probó ninguno de los supuestos del art. 88 de la Constitución para demandar a un particular (servicio público impropio, delegación o concesión, daño grave, subordinación o indefensión, discriminación). Considera que la controversia sobre la extemporaneidad del aviso del siniestro es contractual y se rige por el Código de Comercio y el Código Orgánico Monetario y Financiero, que prevén la vía administrativa ante la Superintendencia y la vía judicial ordinaria. Concluye que concurren las causales de improcedencia 1, 4, 5 y 6 del art. 42 de la LOGJCC.",
+    "pruebas": [
+      "Oficio DS-VAP-G-2025-489 de la aseguradora (fojas 150)",
+      "Consulta de la aseguradora a la Superintendencia de Compañías (fojas 162 a 164)",
+      "Historia clínica (fojas 25 a 96), citada en primera instancia",
+      "Ausencia de prueba sobre el daño grave y sobre subordinación o indefensión"
+    ],
+    "motivacion": "La accionante no demostró ninguno de los presupuestos de legitimación pasiva frente a un particular, conforme al art. 16 LOGJCC, y la pretensión de declarar derechos y ordenar pagos de una póliza es de naturaleza ordinaria, con vías idóneas en el Código de Comercio y el COMF.",
+    "criterioResolucion": "En acciones de protección contra aseguradoras privadas, el accionante debe probar uno de los supuestos del art. 88 de la Constitución; a falta de prueba, y cuando la controversia sobre el pago de una póliza tiene vías ordinarias o administrativas idóneas, la acción es improcedente.",
+    "citaTextual": "En el caso sub judice, la accionante no ha justificado ninguno de los supuestos normativos previstos en la norma constitucional del artículo 88 de la Constitución de la República.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la vida digna",
+      "Derecho a contar con bienes y servicios públicos de calidad",
+      "Derecho a dirigir peticiones y recibir respuesta motivada",
+      "Derecho a la seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La accionante, afiliada al IESS y con crédito hipotecario con el BIESS asegurado por la póliza 2507 de Hispana de Seguros, fue diagnosticada de cáncer de mama con metástasis. El siniestro se notificó a la aseguradora el 4 de febrero de 2025, por lo que la aseguradora negó la cobertura por extemporaneidad conforme al art. 718 del Código de Comercio. El tribunal no entra al fondo de la cobertura y no consta que la aseguradora haya acreditado su posición en el aviso.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

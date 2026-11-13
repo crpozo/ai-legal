@@ -1,0 +1,75 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 16371,
+    "tokensSalida": 1463
+  },
+  "salida": {
+    "numero": "17250202500111",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86",
+          "88",
+          "82",
+          "76.7.l",
+          "33"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40.1",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1",
+          "217"
+        ]
+      },
+      {
+        "norma": "Ley de Personal de la Policía Nacional",
+        "articulos": [
+          "53",
+          "54"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 045-11-SEP-CC",
+      "Sentencia No. 001-16-PJC-CC (caso 530-10-JP)",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 093-14-SEP-CC",
+      "Sentencia No. 246-15-SEP-CC",
+      "Sentencias Nos. 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 016-13-SEP-CC, 1000-12-EP"
+    ],
+    "argumentacion": "El tribunal de alzada examina si la Resolución No. 2010-1529-CCP-PN vulneró seguridad jurídica, debido proceso (cumplimiento de normas) y juez competente; concluye que no hay vulneración porque la autoridad aplicó la Ley de Personal de la Policía Nacional. Considera que la resolución es un acto impugnable en la vía contencioso-administrativa y que la pretensión de reintegro y reparación es de mera legalidad. Analiza la motivación según el estándar de estructura mínimamente completa y la encuentra suficiente. Sobre el derecho al trabajo, afirma que no hay violación porque la baja derivó del incumplimiento de normas internas. Concluye que se configura la causal de improcedencia del numeral 1 y los numerales 3 y 5 del artículo 42 LOGJCC.",
+    "pruebas": [
+      "Resolución No. 2010-1529-CCP-PN de 14 de octubre de 2010 (fs. 7 a 10)",
+      "Demanda constitucional (fs. 49 a 56)",
+      "Acta de audiencia pública de 09 de septiembre de 2025 (fs. 129 a 135)"
+    ],
+    "motivacion": "La decisión se justifica en que no consta vulneración de derechos constitucionales, que la controversia es de mera legalidad y debe ventilarse en la vía contencioso-administrativa, y que la motivación del acto impugnado cumple la estructura mínima exigida. Se rechaza la apelación y se confirma la sentencia de primera instancia que negó la acción.",
+    "criterioResolucion": "La acción de protección es improcedente cuando, sin vulneración de derechos constitucionales, lo que se impugna es la legalidad de un acto administrativo que puede discutirse en la vía contencioso-administrativa (art. 42 numerales 1, 3 y 5 LOGJCC).",
+    "citaTextual": "Al ser la acción de protección una garantía jurisdiccional, que tiene por objeto el amparo directo y eficaz de los derechos reconocidos en la Constitución y no la resolución de asuntos de mera legalidad, puesto que, en el caso sub júdice al no haberse probado por el accionante, en el proceso constitucional vulneración de derecho constitucional alguno",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de cumplimiento de normas",
+      "Derecho a ser juzgado por autoridad competente",
+      "Debido proceso en la garantía de la motivación",
+      "Derecho al trabajo"
+    ],
+    "fundamentosDeHecho": "El actor ingresó a la Policía Nacional y fue colocado a disposición mediante la Resolución No. 2010-1529-CCP-PN de 14 de octubre de 2010, que derivó en su baja. Según la resolución, la baja se hizo conforme a la Ley de Personal de la Policía Nacional. El tribunal no entra a analizar la prescripción de la potestad sancionadora alegada por el actor. El acta de audiencia es de 09 de septiembre de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

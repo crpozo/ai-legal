@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19405,
+    "tokensSalida": 3007
+  },
+  "salida": {
+    "numero": "17981202504749",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "76.7 a), b), c) y h)",
+          "88",
+          "86"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional (LOGJCC)",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3 y 5"
+        ]
+      },
+      {
+        "norma": "Código Tributario",
+        "articulos": [
+          "85",
+          "107",
+          "163"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica para el Desarrollo Económico y Sostenibilidad Fiscal (LODES)",
+        "articulos": [
+          "30.7"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Nacional de Justicia, Resolución 12-2024 (precedente jurisprudencial obligatorio)",
+      "Corte Constitucional, sentencia 1797-18-EP/20",
+      "Corte Constitucional, sentencia 2914-22-EP/25",
+      "Corte Constitucional, sentencia 1151-19-EP/23",
+      "Corte Constitucional, sentencia 045-11-SEP-CC",
+      "Corte Constitucional, sentencia 001-16-PJC-CC (caso 530-10-JP)",
+      "Corte Constitucional, casos 0831-12-EP, 0380-10-EP y 1000-12-EP; sentencias 102-13-SEP-CC y 016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal fija dos problemas jurídicos: si el SRI vulneró seguridad jurídica al tramitar el procedimiento coactivo, y si vulneró el derecho a la defensa. Sobre seguridad jurídica, concluye que el SRI actuó bajo normas previas, públicas y claras, y que la pretensión de dejar sin efecto los actos administrativos debe analizarla la justicia ordinaria. Sobre defensa, verifica con el auto de pago (notificado el 27 de octubre de 2023 según el texto) y la providencia de 8 de septiembre de 2025 que el accionante sí fue notificado, que señaló casillero y correo, y que podía impugnar ante el contencioso tributario. Un tercer punto, favorabilidad frente a la responsabilidad solidaria, lo rechaza por irretroactividad del artículo 85 del Código Tributario y porque el procedimiento no es sancionatorio según la Resolución 12-2024 de la CNJ. Concluye que la acción es improcedente por ser un asunto de mera legalidad, conforme al artículo 42 numerales 1, 3 y 5 de la LOGJCC.",
+    "pruebas": [
+      "Auto de pago y su notificación (fs. 224 a 228)",
+      "Acta de determinación No. 172021249014296937 y su notificación electrónica (fs. 16 a 201 y 210)",
+      "Providencia DZ9-COAPGEC25-00000851 de 8 de septiembre de 2025 (fs. 276)",
+      "Documentos de notificación y casillero judicial del accionante"
+    ],
+    "motivacion": "La acción de protección es excepcional y no procede para resolver asuntos de mera legalidad cuando existe una vía ordinaria idónea. El tribunal considera que no hubo vulneración de derechos constitucionales probada y que la controversia corresponde a la justicia ordinaria (contencioso tributario). Confirma la sentencia de primera instancia, que rechazó la acción, y concluye que reúne los mínimos de motivación.",
+    "criterioResolucion": "Cuando el accionante no prueba vulneración de derechos constitucionales y la controversia es de mera legalidad, con una vía ordinaria idónea como el contencioso tributario, la acción de protección es improcedente (art. 42 numerales 1, 3 y 5 LOGJCC).",
+    "citaTextual": "no es competencia de la justicia constitucional conocer asuntos de mera legalidad, es decir, el análisis de aspectos que son propios de la justicia ordinaria",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Igualdad de armas",
+      "Motivación",
+      "Favorabilidad (art. 76.5 CRE, invocada en la demanda)"
+    ],
+    "fundamentosDeHecho": "El SRI emitió una liquidación de pago (2021, ejercicio 2015) y un acta de determinación (2021, ejercicio 2014) contra el Consorcio GLP Ecuador. El accionante, procurador común desde el 11 de julio de 2018, fue vinculado al procedimiento coactivo mediante auto de pago notificado el 27 de octubre de 2023 como responsable por representación, sin notificación previa personal de los actos de determinación. Tras una solicitud de exclusión, el SRI negó la exclusión mediante la providencia de 8 de septiembre de 2025. La jueza de primera instancia rechazó la acción y el tribunal confirmó.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

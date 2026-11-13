@@ -1,0 +1,52 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 11154,
+    "tokensSalida": 3290
+  },
+  "salida": {
+    "numero": "17571202400358",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "86 numeral 5",
+          "86 numeral 3 inciso final",
+          "91",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "47"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 1214-18-EP/22 (Corte Constitucional)",
+      "Sentencia 29-21-JI y acumulados/21 de 01 de diciembre de 2021 (Corte Constitucional, casos 29-21-JI y 34-21-JI)"
+    ],
+    "argumentacion": "El tribunal fija como problema jurídico si existe vulneración del derecho de acceso a la información pública (art. 91 CRE en concordancia con el art. 47 LOGJCC) por parte del Ministerio de Trabajo. Parte de la solicitud del 26 de enero de 2024 y de la respuesta del 29 de febrero de 2024, en la que la entidad dijo no poder acceder a la información del sistema desde septiembre de 2017. Con base en la jurisprudencia constitucional sobre información pública, concluye que la negativa expresa de la entidad vulneró el derecho. Confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Solicitud de los accionantes de 26 de enero de 2024 dirigida a la Ministra de Trabajo",
+      "Memorando Nro. MDT-DRTSPQ-2024-1696-M de 19 de febrero de 2024 (citado en la demanda)",
+      "Oficio Nro. MDT-DRTSPQ-2024-5410-O de 29 de febrero de 2024 (negativa de acceso)"
+    ],
+    "motivacion": "La acción de acceso a la información pública tutela el principio de petición y el acceso a información pública no reservada ni confidencial. Según la Corte Constitucional, la información en poder de servidores públicos es pública en principio y debe entregarse sin necesidad de justificar interés. Como la entidad negó expresamente el acceso, sin que el texto registre una reserva o confidencialidad previamente declarada, el tribunal considera vulnerado el derecho y confirma la decisión de primera instancia.",
+    "criterioResolucion": "La negativa expresa de una entidad pública a entregar información pública, sin que conste su carácter reservado o confidencial declarado conforme a la ley, vulnera el derecho de acceso a la información pública y justifica la acción.",
+    "citaTextual": "En consecuencia, este Tribunal considera que en el presente caso se vulneró el derecho al acceso a la información de los peticionarios",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Acceso a la información pública (art. 91 CRE)",
+      "Principio de petición"
+    ],
+    "fundamentosDeHecho": "Los accionantes, miembros de la directiva del Comité de Empresa de la Empresa EXPLOCEN C.A., solicitaron el 26 de enero de 2024 copias certificadas de la resolución de aprobación del reglamento interno de la empresa y del propio reglamento. Mediante oficio de 29 de febrero de 2024, el Ministerio de Trabajo indicó que no podía acceder a la información del sistema desde septiembre de 2017. El tribunal considera que hubo negativa expresa y vulneración del derecho.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21910,
+    "tokensSalida": 1539
+  },
+  "salida": {
+    "numero": "17574202400113",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "88",
+          "86.5",
+          "83 numeral 1",
+          "82 numeral 1",
+          "44",
+          "45",
+          "11 numeral 3"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numeral 6"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "142",
+          "132 numeral 1",
+          "30"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "113",
+          "137",
+          "365",
+          "371",
+          "372",
+          "373",
+          "374",
+          "375",
+          "71"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "2374 numeral 6",
+          "1634"
+        ]
+      },
+      {
+        "norma": "Código de Procedimiento Civil",
+        "articulos": [
+          "439",
+          "442",
+          "443",
+          "444",
+          "445"
+        ]
+      },
+      {
+        "norma": "Código de la Niñez y Adolescencia",
+        "articulos": [
+          "11",
+          "14",
+          "256",
+          "Innumerado 18",
+          "Innumerado 26",
+          "Innumerado 30"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 1178-19/21 de la Corte Constitucional",
+      "Sentencia No. 3638-22-JP/24 de la Corte Constitucional",
+      "Sentencia No. 102-13-SEP-CC de 4 de diciembre de 2013 de la Corte Constitucional"
+    ],
+    "argumentacion": "El tribunal de apelación examina si la acción de protección procede contra la pretensión de la accionante, que pide ejecutar un embargo ordenado dentro del proceso de alimentos No. 17953-2008-1742 y sancionar investigaciones por su incumplimiento. Concluye que la demanda cuestiona incumplimientos de órdenes judiciales, por lo que se trata de una providencia judicial, causal de inadmisión según el numeral 6 del artículo 42 de la LOGJCC conforme a la sentencia 102-13-SEP-CC. Señala que el artículo 88 de la Constitución excluye de su objeto los actos de autoridades judiciales, que corresponde la acción extraordinaria de protección, y que la ejecución de sentencias corresponde a la jueza de primera instancia. Confirma la inadmisión dictada por la jueza a quo.",
+    "pruebas": [
+      "Oficios del Servicio de Cesantía de la Policía Nacional, incluido el oficio No. SCPN-DE-022-2016",
+      "Providencias y autos dictados en el proceso de alimentos No. 17953-2008-1742",
+      "Audiencia pública y audio contenido en CD aportado por la accionante"
+    ],
+    "motivacion": "Se justifica la inadmisión por tratarse de una providencia judicial excluida del objeto de la acción de protección (artículo 88 de la Constitución y numeral 6 del artículo 42 de la LOGJCC), con remisión a la jurisprudencia constitucional que distingue entre causales de admisión e improcedencia y a la competencia del juez de la causa para ejecutar sus decisiones.",
+    "criterioResolucion": "La acción de protección que pretende la ejecución o impugnación de órdenes dictadas dentro de un proceso judicial es inadmisible por tratarse de providencias judiciales, pues el artículo 88 de la Constitución excluye de su objeto los actos u omisiones de autoridades judiciales.",
+    "citaTextual": "La causal 6 que establece: \"6. Cuando se trate de providencias judiciales\", sí es una de aquellas causales de admisibilidad, pues de la simple enunciación por parte del accionante del acto u omisión supuestamente violatorio de los derechos constitucionales en la demanda, el juez podrá constatar si se trata de una providencia judicial o no",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Tutela judicial efectiva",
+      "Seguridad jurídica",
+      "Vida digna",
+      "Interés superior del niño, niña y adolescente"
+    ],
+    "fundamentosDeHecho": "Dentro del proceso de alimentos No. 17953-2008-1742 se ordenó el embargo de valores de un ex policía a favor del hijo de la accionante. Según la accionante, el Servicio de Cesantía de la Policía Nacional no ejecutó el embargo pese a varios oficios y órdenes judiciales. La jueza de primera instancia inadmitió la acción y el tribunal ratificó esa decisión, sin entrar al fondo de la pretensión.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

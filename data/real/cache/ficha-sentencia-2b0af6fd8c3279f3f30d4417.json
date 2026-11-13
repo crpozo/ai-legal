@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 18806,
+    "tokensSalida": 1533
+  },
+  "salida": {
+    "numero": "17113202400015",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "75",
+          "76 numeral 7 literales a), b), c), g) y h)",
+          "89 inciso quinto",
+          "169",
+          "85"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "43",
+          "44 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "594 numeral 3"
+        ]
+      },
+      {
+        "norma": "Pacto Internacional de Derechos Civiles y Políticos",
+        "articulos": [
+          "14.3"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "7.6",
+          "8.2 literales d y e",
+          "25.1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 4-19-EP (21 de julio de 2021)",
+      "Corte Constitucional, caso 2195-19-EP (17 de noviembre de 2021)",
+      "Corte Constitucional, sentencia 3068-18-EP/21",
+      "Corte Interamericana de Derechos Humanos, Opinión Consultiva OC-8/87",
+      "Corte Interamericana de Derechos Humanos, Opinión Consultiva OC 11/90"
+    ],
+    "argumentacion": "El tribunal confirma su competencia por tratarse de privación de libertad dispuesta en proceso penal. Constata, con los extractos de audiencias y el parte policial, que el accionante nunca fue citado ni notificado con actuación fiscal o judicial alguna. La fiscal afirmó haber agotado medios para ubicarlo, pero no aportó respaldo documental pese a que el tribunal lo requirió. Además, la defensora pública asignada no realizó gestión alguna para contactar al procesado. Con base en precedentes de la Corte Constitucional, concluye que la defensa fue nominal y que la privación de libertad es ilegal y arbitraria.",
+    "pruebas": [
+      "Extracto de la audiencia de formulación de cargos (1 de febrero de 2021)",
+      "Extracto de la audiencia evaluatoria y preparatoria de juicio (14 de febrero y 7 de mayo de 2022)",
+      "Parte policial de detención (1 de mayo de 2024)",
+      "Auto de legalización de la detención (1 de mayo de 2024)",
+      "Manifestaciones de la fiscal en audiencia constitucional, sin respaldo documental"
+    ],
+    "motivacion": "La privación de libertad se considera ilegal y arbitraria porque se vulneró la garantía de defensa del accionante en todas las etapas del proceso penal, pues nunca conoció el proceso ni tuvo defensa técnica eficaz. El tribunal aplica por analogía el razonamiento de la Corte Constitucional en el caso 4-19-EP, que el tribunal considera aplicable a un caso en que la persona no tuvo conocimiento del proceso.",
+    "criterioResolucion": "La privación de libertad dispuesta en un proceso penal es ilegal y arbitraria cuando el procesado nunca fue citado ni notificado de las actuaciones y no contó con una defensa técnica efectiva, por vulneración de las garantías de defensa del artículo 76.7 de la Constitución; la mera designación de un defensor público sin comunicación con el defendido no basta.",
+    "citaTextual": "La participación del defensor público en un proceso penal principalmente no es una mera formalidad, es una verdadera garantía de defensa material en virtud de los derechos constitucionales que están en juego, entre otros, principio de inocencia y garantía de defensa.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Derecho a la defensa (artículo 76.7 de la Constitución)",
+      "Derecho al debido proceso",
+      "Derecho a la libertad",
+      "Derecho al trabajo (mencionado como riesgo de pérdida de empleo)"
+    ],
+    "fundamentosDeHecho": "El accionante fue privado de libertad el 1 de mayo de 2024 en virtud de una orden en un proceso penal por estafa (No. 17297-2020-01705). No consta que fuera citado ni notificado con ninguna actuación fiscal o judicial. La fiscal afirmó haber intentado ubicarlo sin aportar documentación. Tuvo una defensora pública que no realizó gestiones para contactarlo. El tribunal lo declaró prófugo en la audiencia de llamamiento a juicio.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

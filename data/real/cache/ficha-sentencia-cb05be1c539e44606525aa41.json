@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29722,
+    "tokensSalida": 4353
+  },
+  "salida": {
+    "numero": "17T03202400046",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66 numerales 2 y 3 (literales a y b)",
+          "66 numeral 23",
+          "76 numeral 1",
+          "82",
+          "86 numeral 5",
+          "88",
+          "169",
+          "172"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "18",
+          "19",
+          "24",
+          "25 numeral 1",
+          "42 numerales 1 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Exterior",
+        "articulos": [
+          "121"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 2034-13-EP/19 (citada en la sentencia de primera instancia y transcrita en el texto)",
+      "Sentencia 1292-19-EP/21 (caso 1292-19-EP)",
+      "Sentencia 986-19-JP/21 y acumulados",
+      "Sentencia 1809-17-EP/22",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 989-19-JP-21 y acumulados (citada por el accionante, no por el tribunal)"
+    ],
+    "argumentacion": "El tribunal de alzada fija como problema jurídico si hubo violación de vida libre de violencia laboral, proyecto de vida, debido proceso y seguridad jurídica (arts. 66.2, 66.3, 76.1 y 82 CRE). Sobre proyecto de vida concluye que la rotación no lo afectó porque el accionante está en funciones y remunerado. Sobre debido proceso y tutela administrativa, considera que el Informe Técnico DATH-USSO-0120-2023 (fs. 60 a 68) cumple el Art. 5 del protocolo y no hay vulneración. Sobre seguridad jurídica, revisa la acción de personal 00652 y el art. 121 de la Ley Orgánica del Servicio Exterior: no se cumplió el tiempo de misión en Indonesia ni se acreditó la necesidad excepcional para el traslado, lo que a su juicio evidencia represalia por la denuncia de acoso laboral y arbitrariedad. Sobre la vida libre de violencia laboral, la sentencia no desarrolla un análisis específico en la parte resolutiva.",
+    "pruebas": [
+      "Acción de personal No. 00652 de 6 de marzo de 2024",
+      "Informe Técnico N° DATH-USSO-0120-2023 de 21 de diciembre de 2023 (fs. 60 a 68)",
+      "Acuerdo Ministerial No. 0000026 de 6 de marzo de 2024 (referido en la decisión)",
+      "Memorandos de denuncia y solicitud de prórroga (referidos por las partes; el tribunal no los valora de forma individual)"
+    ],
+    "motivacion": "El tribunal declara que no se acredita afectación al proyecto de vida ni al debido proceso en la garantía de cumplimiento de normas y tutela administrativa, pero sí una vulneración a la seguridad jurídica por actuar con arbitrariedad en la aplicación del art. 121 de la LOSE, al no cumplirse el plazo de misión ni la necesidad excepcional de traslado. Con base en ello acepta el recurso de apelación y dispone medidas de reparación integral: dejar sin efecto el Acuerdo Ministerial 0000026 y la Acción de Personal 00652, ordenar el cumplimiento del período de misión diplomática en Indonesia o en otra embajada en Asia, y el pago de pasajes, movilización y traslados a cuantificar ante el Tribunal Distrital de lo Contencioso Administrativo.",
+    "criterioResolucion": "La rotación de un funcionario del servicio exterior que no respeta los plazos de permanencia del art. 121 de la Ley Orgánica del Servicio Exterior, y en la que no se acredita una necesidad excepcional de servicio, constituye arbitrariedad que vulnera la seguridad jurídica (art. 82 CRE), especialmente cuando se evidencia represalia por una denuncia de acoso laboral.",
+    "citaTextual": "no se ha cumplido con el tiempo asignado para su misión en Indonesia, ni se ha demostrado la “NECESIDAD EXCEPCIONAL” para su traslado a la Coordinación de Talento Humano en Quito, lo que claramente demuestra una represalia al legitimado activo por la denuncia de acoso laboral",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a una vida digna (art. 66.2 CRE)",
+      "Derecho a la integridad personal, en particular a una vida libre de violencia en el ámbito laboral (art. 66.3 CRE)",
+      "Proyecto de vida",
+      "Debido proceso y garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, Ministro del Servicio Exterior destinado en la Embajada del Ecuador en Indonesia, presentó una denuncia por acoso laboral contra el jefe de misión. Posteriormente la Cancillería le inició un sumario disciplinario y, mediante Acuerdo Ministerial 0000026 y Acción de Personal 00652 de 6 de marzo de 2024, dispuso su retorno y reubicación en la Coordinación Administrativa Financiera en Quito por “necesidades del servicio”. El tribunal considera acreditado que no se cumplió el plazo de misión del art. 121 LOSE ni la necesidad excepcional del traslado, y que el accionante se encuentra en funciones y remunerado.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

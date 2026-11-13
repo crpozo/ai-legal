@@ -1,0 +1,59 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12659,
+    "tokensSalida": 1449
+  },
+  "salida": {
+    "numero": "17282202600796",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "44",
+          "45",
+          "86 numeral 5",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 184-18-SEP-CC de 29 de mayo de 2018 (caso Satya)",
+      "Auto de aclaración y ampliación de la sentencia 184-18-SEP-CC de 11 de julio de 2018"
+    ],
+    "argumentacion": "El tribunal de apelación analiza primero si hay vulneración de derechos constitucionales antes de examinar la vía, siguiendo la sentencia 001-16-PJO-CC. Verifica que la sentencia 184-18-SEP-CC fija como regla que los servidores del Registro Civil no pueden alegar falta de ley para negar la doble filiación en parejas del mismo sexo. Constata que la ley de reproducción asistida aún no está vigente y que la inseminación fue casera, por lo que no puede exigirse certificación médica. Concluye que la negativa vulnera derechos y que la acción de protección es la vía adecuada, por la afectación a la dignidad y por la condición de niña de la menor.",
+    "pruebas": [
+      "Oficio DIGERCIC-CZ9-2026-3906-O de 13 de marzo de 2026",
+      "Petición escrita No. DIGERCIC-DA.UGS-2026-0728-EXT",
+      "Partida o documento del Ministerio de Salud Pública sobre el nacimiento (fs. 1)",
+      "Certificado de matrimonio civil de 22 de enero de 2025",
+      "Testimonio bajo juramento del donante Hugo Antonio Ponce Loor en audiencia",
+      "Informe para segundo debate del proyecto de Ley Orgánica de reproducción humana asistida de 23 de julio de 2026"
+    ],
+    "motivacion": "La negativa de inscripción, fundada en la falta de certificación médica de técnica de reproducción asistida, no puede sostenerse porque la regla de la sentencia 184-18-SEP-CC prohíbe negar la inscripción por falta de ley, y en este caso no existe intervención médica que certificar. La vulneración afecta derechos de las accionantes y de la niña, por lo que la vía constitucional es la adecuada.",
+    "criterioResolucion": "Los servidores del Registro Civil no pueden negar la inscripción de la doble filiación de hijos de parejas del mismo sexo alegando falta de ley que regule la reproducción asistida, ni exigir certificación médica cuando la reproducción fue casera o artesanal sin intervención médica; y, en ese caso, la acción de protección es la vía adecuada por afectar la dignidad humana.",
+    "citaTextual": "Los servidores administrativos encargados del registro de nacimiento no podrán alegar falta de ley que reconozca expresamente la doble filiación paterna o materna, para desconocer los derechos a la identidad, la igualdad y no discriminación y al reconocimiento de los diversos tipos de familia, por medio de la negativa de inscripción.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Identidad",
+      "Igualdad y no discriminación",
+      "Vida privada y familiar",
+      "Derechos de la niña (interés superior y atención prioritaria)",
+      "Familia diversa",
+      "Integridad personal",
+      "Derechos sexuales y reproductivos",
+      "Intimidad familiar"
+    ],
+    "fundamentosDeHecho": "Las accionantes, parejas del mismo sexo y casadas desde el 22 de enero de 2025, tuvieron una hija el 14 de marzo de 2025 mediante inseminación casera con material genético de un familiar de una de ellas. El Registro Civil negó la inscripción con doble filiación materna por falta de certificación médica de la técnica de reproducción asistida (oficio de 13 de marzo de 2026). El donante declaró bajo juramento que no ejerce ni reclama paternidad y que consiente la doble filiación materna.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

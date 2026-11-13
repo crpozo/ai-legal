@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20730,
+    "tokensSalida": 4129
+  },
+  "salida": {
+    "numero": "17203202401460",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "35",
+          "36",
+          "37 numeral 3",
+          "76",
+          "82",
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "369",
+          "371 inciso 3",
+          "371 inciso final"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "164",
+          "166",
+          "279",
+          "280"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 105-10-JP/21",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 725-15-JP/23 (citada en el texto de primera instancia)"
+    ],
+    "argumentacion": "El tribunal recuerda que, por regla general, el juez constitucional debe examinar primero si hubo vulneración de derechos y solo después valorar la vía ordinaria, con las excepciones fijadas en la sentencia 2006-18-EP/24; concluye que, al tratarse de una persona adulta mayor, corresponde entrar al fondo. Descarta la vulneración del derecho de defensa: la orden de pago consta notificada por boletas (fs. 63 a 73). Sí constata que la providencia que contiene la orden de pago inmediato dispuso retener fondos en cuentas hasta USD 5.248,45, y que esa retención se ejecutó sobre la cuenta de ahorros donde se acredita la pensión jubilar por vejez del IESS. Aplica el artículo 371 de la Constitución y la regla de la sentencia 105-10-JP/21 y concluye que la retención de la pensión vulnera seguridad jurídica y seguridad social. Nota: el texto de primera instancia contiene un pasaje que menciona a otra persona (Mariana de Jesús Rivas García) y al IESS como entidad demandada; ese pasaje no corresponde al caso y el tribunal no lo trata.",
+    "pruebas": [
+      "Copia de la cédula de ciudadanía de la accionante (persona adulta mayor)",
+      "Copia certificada de la providencia con la orden de pago inmediato y la medida de retención (fs. 68)",
+      "Boletas de notificación de la orden de pago (fs. 63 a 73)",
+      "Certificación bancaria de retenciones sobre la cuenta de ahorros 3619732700 del Banco Pichincha (fs. 175 a 178)",
+      "Certificación de titularidad de la cuenta (fs. 106)",
+      "Certificado del IESS de jubilación por vejez desde 2016 (fs. 188)",
+      "Roles de pensión del IESS que acreditan el depósito mensual en la cuenta (fs. 202 a 204)"
+    ],
+    "motivacion": "El tribunal rechaza la apelación del legitimado pasivo y ratifica la sentencia de primera instancia. Funda la vulneración en que la retención de la pensión jubilar, prestación del seguro social, está prohibida por el artículo 371 de la Constitución salvo las excepciones allí previstas, y en que la retención no se ajustó a la regla jurisprudencial de la sentencia 105-10-JP/21, que exige verificar si la pensión es el único ingreso del deudor y proteger las condiciones mínimas de subsistencia.",
+    "criterioResolucion": "Por regla general, no procede el embargo ni la retención de pensiones jubilares en un proceso coactivo por prohibición del artículo 371 de la Constitución, salvo que el valor provenga de una obligación con el IESS o el BIESS y se pruebe que el deudor puede satisfacer sus necesidades básicas. La retención de la pensión jubilar sin esa verificación vulnera seguridad jurídica y seguridad social.",
+    "citaTextual": "Por regla general, no procede el embargo ni retención de las pensiones jubilares en un proceso coactivo por prohibición expresa del artículo 371 de la Constitución de la República excepto cuando el valor cuyo pago se persigue provenga de una obligación con el IESS o el BIESS, siempre que, precautelando el derecho constitucional a la vida digna, en el proceso",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso (derecho a la defensa, por falta de notificación)",
+      "Seguridad social"
+    ],
+    "fundamentosDeHecho": "La accionante, adulta mayor y jubilada por vejez del IESS desde 2016, recibe su pensión en la cuenta de ahorros 3619732700 del Banco Pichincha. En el procedimiento coactivo 1118-CONAFIPS-2021, seguido por una deuda con la Cooperativa Coopera en liquidación, se dictó medida de retención de fondos sobre esa cuenta, la cual se ejecutó. La accionante alega que no fue notificada de la orden de pago. El tribunal da por probado que la orden de pago sí fue notificada por boletas y que la retención de la pensión se ejecutó sin verificar las condiciones de la accionante.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29298,
+    "tokensSalida": 3817
+  },
+  "salida": {
+    "numero": "17U06202400118",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "32",
+          "66 numerales 2 y 24 (citado así en la resolución; el texto transcrito menciona el numeral 25)",
+          "82",
+          "88",
+          "169",
+          "362",
+          "86 numeral 5",
+          "35"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "17 numeral 4",
+          "18 inciso segundo",
+          "19",
+          "21",
+          "24",
+          "25",
+          "39",
+          "40 numeral 1",
+          "41"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 2034-13-EP/19",
+      "Corte Constitucional, sentencia No. 328-19-EP/20",
+      "Corte Constitucional, sentencia No. 679-18-JP/20"
+    ],
+    "argumentacion": "El tribunal de alzada examina primero si la acción de protección es la vía, concluye que el asunto no debería tramitarse por esta vía pero igualmente verifica si hubo vulneración. Recoge el marco constitucional del derecho a la salud (art. 32) y la sentencia 679-18-JP/20 sobre acceso a medicamentos de calidad, seguridad y eficacia. Constata que el medicamento Ribociclib no consta en el Cuadro Nacional de Medicamentos Básicos, que el hospital inició trámite (memorando de 16 de octubre de 2023) y que el comité de farmacoterapia lo aprobó sólo condicionado a documentos del servicio de oncología. Pondera que, pese a tratarse de enfermedad catastrófica, no se adoptaron medidas concretas para agilizar la adquisición y que el trámite fue luego negado en reunión. Con ello concluye que se vulneró el derecho a la salud y a un tratamiento adecuado, y niega la apelación del gerente del hospital. Confirma la sentencia de primera instancia y sus medidas de reparación integral. La resolución no transcribe ni analiza de forma propia el detalle de los plazos de la sentencia de primera instancia más allá de remitirse a ella.",
+    "pruebas": [
+      "Historia clínica de la accionante (atenciones de 27 de septiembre de 2023, 23 de noviembre de 2023, 14 de diciembre de 2023, 12 de enero de 2024 y 16 de febrero de 2024)",
+      "Memorando MSP-CZ9-HEEE-DIASONCOL-2023-0565-M de 16 de octubre de 2023 del servicio de oncología",
+      "Acta del Comité de Farmacoterapia del Hospital de Especialidades Eugenio Espejo",
+      "Factura de la compra privada del medicamento",
+      "Registro sanitario del medicamento vigente hasta 2029, según la accionante",
+      "Anexo para solicitud de Ribociclib y su negativa posterior"
+    ],
+    "motivacion": "La decisión se justifica en que, aunque el medicamento fue solicitado por la médica tratante y tramitado, el trámite no avanzó y terminó negado tras meses de espera, en un caso de enfermedad catastrófica. El tribunal aplica la sentencia 679-18-JP/20 para verificar la prescripción, el diagnóstico, la dificultad de acceso y la falta de medidas positivas. Rechaza el argumento de la defensa de que el hospital no se negó, al considerar que el propio acta condicionó la autorización.",
+    "criterioResolucion": "Cuando un medicamento no incluido en el cuadro básico ha sido prescrito para una enfermedad catastrófica y la entidad pública, pese a haber iniciado el trámite, no adopta medidas concretas y oportunas para su adquisición, se vulnera el derecho a la salud y a un tratamiento adecuado, lo que justifica la acción de protección.",
+    "citaTextual": "En consecuencia, este Tribunal considera que en el presente caso se vulneró el derecho a la salud y a obtener un tratamiento adecuado para su afección médica esto es carcinoma ductal infiltrante luminal",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la salud (art. 32 CRE)",
+      "Derecho a una vida digna (art. 66 numeral 2 CRE)",
+      "Derecho a acceder a servicios públicos de calidad (art. 66 numeral 25 CRE, citado en el texto)",
+      "Derecho a recibir tratamiento preferente y especializado por enfermedad catastrófica"
+    ],
+    "fundamentosDeHecho": "La accionante, diagnosticada con carcinoma ductal infiltrante luminal con expresión de receptores hormonales, fue prescrita Ribociclib 200 mg en el Hospital de Especialidades Eugenio Espejo. Al no ser provisto por el sistema público, la accionante lo adquirió de forma privada desde diciembre de 2023. El trámite administrativo del anexo de solicitud, iniciado en octubre de 2023, fue negado en una reunión posterior, sin que se adoptaran medidas concretas para su adquisición. La resolución de primera instancia acogió parcialmente la demanda y ordenó la adquisición y entrega del medicamento, así como una compensación económica que debe determinarse en un proceso contencioso administrativo.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21003,
+    "tokensSalida": 1470
+  },
+  "salida": {
+    "numero": "17203202501190",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "169",
+          "82",
+          "88",
+          "66 numeral 4",
+          "33",
+          "326 numeral 4",
+          "229",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "(cita sin número de artículo en el texto)"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1214-18-EP/22",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 2038-23-EP/24",
+      "Sentencia 986-19-PJ/21"
+    ],
+    "argumentacion": "El tribunal de alzada declara válido el proceso y plantea si hubo vulneración de igualdad y no discriminación, igual remuneración y seguridad jurídica. Afirma que la acción no es la vía adecuada para un asunto de carácter laboral y salarial, pero analiza el fondo. Sobre igualdad, concluye que las diferencias salariales obedecen a factores como antigüedad y capacitación, y que la remuneración actual es la que tenían al momento de la fusión. Sobre igual remuneración, considera que la pretensión busca revisar el sistema remunerativo y tablas salariales, lo que desnaturaliza la acción. Sobre seguridad jurídica, concluye que la parte solo enuncia el principio. Finalmente aplica la improcedencia por los numerales 1, 3 y 4 del artículo 42 LOGJCC.",
+    "pruebas": [
+      "Contratos de trabajo y documentos de talento humano de los accionantes",
+      "Certificado laboral emitido por EP Petroecuador",
+      "Memorandos sobre disconformidad salarial",
+      "Informe del proyecto SIL con tabla salarial (presentado por la empresa)",
+      "Memorando PETRO-GCO-CON-2025-0090-M sobre asignación de funciones"
+    ],
+    "motivacion": "La decisión se fundamenta en que no se demostró violación de derechos constitucionales en los hechos, en que la pretensión es de mera legalidad o de revisión de tablas salariales, y en la existencia de la vía contenciosa administrativa u ordinaria para conflictos laborales con empresas públicas, con la excepción de casos de evidente discriminación que el tribunal no encuentra acreditada.",
+    "criterioResolucion": "La acción de protección no procede para revisar sistemas remunerativos o tablas salariales de una empresa pública, ni para conflictos de mera legalidad laboral, cuando de los hechos no se desprende violación de derechos constitucionales (art. 42.1, 3 y 4 LOGJCC).",
+    "citaTextual": "La pretensión de los accionantes, persigue que el Tribunal revise el sistema remunerativo y las tablas salariales, lo que desnaturaliza la esencia tutelar de la acción de protección, por lo que este Tribunal considera que no existe vulneración a este derecho.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Igualdad formal, material y no discriminación",
+      "Derecho al trabajo (igual trabajo igual remuneración)"
+    ],
+    "fundamentosDeHecho": "Los cuatro accionantes, con discapacidad, ingresaron a PETROAMAZONAS EP y pasaron a EP PETROECUADOR tras la fusión por absorción (Decreto 1221). Alegan que perciben remuneraciones inferiores a las de compañeros con igual cargo o funciones sin discapacidad, y que sus cargos fueron reducidos o reasignados. El tribunal no da por probada la discriminación; constata que mantienen la remuneración que tenían al fusionarse y que trabajan en la empresa.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

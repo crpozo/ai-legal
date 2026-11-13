@@ -1,0 +1,387 @@
+{
+  "modelo": "us.anthropic.claude-opus-5-5",
+  "uso": {
+    "tokensEntrada": 141696,
+    "tokensSalida": 16030
+  },
+  "salida": {
+    "resumenEjecutivo": "En las fichas, el tribunal que integra Carranza Barona resuelve las garantías con una regla dominante: si no se demuestra una vulneración constitucional real y el asunto es de legalidad, la acción de protección es improcedente (art. 42 LOGJCC, 001-16-PJO-CC, 2034-13-EP/19). En conflictos laborales con el Estado aplica de forma sistemática la sentencia 2006-18-EP/24: la vía es la contencioso-administrativa, salvo que se comprometa gravemente la dignidad, exista discriminación evidente o haya urgencia. Las estadísticas muestran 190 resoluciones: 119 rechazos, 20 inadmisiones, 33 aceptaciones y 12 aceptaciones parciales; el tribunal confirma la primera instancia en 135 casos y la revoca en 35. La acción de protección prospera (37 de 159) en cinco supuestos: mujeres embarazadas, en lactancia o en licencia de paternidad, con presunción de discriminación y carga probatoria para la entidad; personas con discapacidad cuya condición la entidad conocía; falta de notificación probada en coactivas o procedimientos sancionadores; retención de pensiones, alimentos o remuneración; y medicamentos prescritos y no provistos. El hábeas corpus se resuelve en unos 8 días y solo prospera por defectos procesales o de salud, no por discusión probatoria penal. Hay pares de casos casi idénticos con resultados opuestos (coactivas de CNT con notificación en una dirección de DINARDAP; contratos ocasionales prolongados) que el estudio puede invocar.",
+    "criteriosReiterados": [
+      {
+        "criterio": "Regla general de improcedencia: sin vulneración real de un derecho constitucional, la impugnación de la legalidad de un acto administrativo que tiene vía judicial ordinaria es improcedente (art. 42 num. 1, 3 y 4 LOGJCC). El tribunal cita casi siempre 001-16-PJO-CC, 016-13-SEP-CC y 2034-13-EP/19.",
+        "procesos": [
+          "17460202402866",
+          "17U06202400460",
+          "17981202400060",
+          "17205202500434",
+          "17571202600303",
+          "17315202501134",
+          "17250202500111",
+          "17205202501420"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "En conflictos laborales entre el Estado y sus servidores, el conocimiento corresponde por regla general a la jurisdicción contencioso-administrativa (2006-18-EP/24). La acción de protección solo procede si se compromete notoria o gravemente la dignidad o autonomía del servidor, si hay discriminación evidente o si se requiere respuesta urgente, y el juez debe analizar si concurre esa excepción.",
+        "procesos": [
+          "17230202403333",
+          "17230202407097",
+          "17297202402151",
+          "17159202400832",
+          "17297202402408",
+          "17U05202500009",
+          "17201202500351",
+          "17371202502913"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "La terminación de un nombramiento provisional fundada en la ley y en un informe técnico es un asunto de mera legalidad, porque el nombramiento provisional no genera estabilidad. La excepción es un supuesto de estabilidad reforzada: discapacidad, sustituto directo, embarazo o lactancia.",
+        "procesos": [
+          "17U05202400073",
+          "17981202400446",
+          "17203202400970",
+          "17460202407275",
+          "17203202404420",
+          "17571202500383",
+          "17203202503784",
+          "17233202503663"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "La desvinculación de una mujer embarazada o en periodo de lactancia se presume discriminatoria, cualquiera sea el tipo de vínculo (contrato ocasional, libre remoción o nombramiento provisional). La entidad debe probar un incumplimiento comprobado (3-19-JP/20). El tribunal extendió este criterio a la licencia por paternidad y al permiso de lactancia en jornada parcial.",
+        "procesos": [
+          "17284202500612",
+          "17203202402009",
+          "17231202400892",
+          "17282202400683",
+          "17204202400616",
+          "17204202401327",
+          "17230202516063",
+          "17250202500100"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "Una persona con discapacidad o enfermedad catastrófica tiene estabilidad reforzada y derecho a una motivación reforzada cuando la entidad conocía su condición. Si la condición no se acredita, o se acredita después del acto, no hay protección.",
+        "procesos": [
+          "17981202405105",
+          "17371202601619",
+          "17204202403547",
+          "17460202602926",
+          "17282202402056",
+          "17250202500138",
+          "17203202402281",
+          "17250202500045"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "En coactivas y procedimientos sancionadores, la falta de notificación probada vulnera el derecho a la defensa y habilita la acción de protección. Ocurre cuando no se notificó la orden de pago conforme al COA, cuando se vinculó a socios sin declaratoria judicial de levantamiento del velo o cuando se notificó a un correo distinto del señalado. Si consta la citación o el accionante compareció, el tema es de legalidad.",
+        "procesos": [
+          "17204202402293",
+          "17230202613002",
+          "17232202600098",
+          "17283202400364",
+          "17233202409402",
+          "17T03202500011",
+          "17284202500285",
+          "17230202520613"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "Es inconstitucional la retención coactiva de cuentas en las que se acreditan pensiones jubilares, pensiones alimenticias o remuneraciones (arts. 371 y 328 CRE) si no se verifica el origen de los fondos.",
+        "procesos": [
+          "17250202400048",
+          "17203202401460",
+          "17296202600037",
+          "17204202502911"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "La declaratoria de inconstitucionalidad de la compra de renuncias obligatorias (26-18-IN/20) tiene efectos hacia el futuro y no ampara ceses anteriores.",
+        "procesos": [
+          "17230202417202",
+          "17204202500552",
+          "17297202402408"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "Para alegar discriminación se exige comparabilidad concreta: un término de comparación en situación idéntica o análoga y un trato diferenciado probado. Pertenecer al mismo sector o tener cargos similares no basta.",
+        "procesos": [
+          "17983202500405",
+          "17250202500098",
+          "17230202402127",
+          "17233202408269",
+          "17230202433352",
+          "17204202500990",
+          "17233202601985"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "Cuando el accionante ya activó la vía ordinaria o existe una acción previa idéntica, la acción de protección es improcedente, ya sea por cosa juzgada o por abuso del derecho.",
+        "procesos": [
+          "17282202600628",
+          "17204202600840",
+          "17203202500729",
+          "17204202503065",
+          "17571202500503"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "Cuando la acción de protección se dirige contra providencias judiciales o contra su incumplimiento o desacato, se inadmite (art. 42.6 LOGJCC; art. 88 CRE).",
+        "procesos": [
+          "17574202400113",
+          "17230202405573",
+          "17233202600128",
+          "17371202600008"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "Contra particulares, el accionante debe probar uno de los presupuestos del art. 88 CRE: subordinación, indefensión o daño grave. Sin esa prueba, la acción es improcedente.",
+        "procesos": [
+          "17250202500038",
+          "17571202500434",
+          "17371202600008",
+          "17981202500527",
+          "17282202402056",
+          "17282202600376"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "Frente a una entidad pública, el tribunal invierte la carga de la prueba y presume ciertos los hechos de la demanda si la entidad no los desvirtúa (art. 16 LOGJCC).",
+        "procesos": [
+          "17985202500549",
+          "17232202600098",
+          "17981202404044",
+          "17113202500002"
+        ],
+        "solidez": "media"
+      },
+      {
+        "criterio": "El hábeas data exige una petición previa al custodio sobre datos personales propios y una negativa expresa o tácita. No procede si se entregó la información, si se pide información pública o que deba producirse, ni si se usa como medio de prueba.",
+        "procesos": [
+          "17204202501035",
+          "17250202400099",
+          "17233202602437",
+          "17986202400333",
+          "17230202510490",
+          "17U05202400133"
+        ],
+        "solidez": "alta"
+      },
+      {
+        "criterio": "En hábeas corpus, el juez constitucional no valora elementos de convicción, culpabilidad ni calidad de la defensa penal. La privación de libertad ordenada por autoridad competente, con boleta y notificación, no es ilegal.",
+        "procesos": [
+          "17113202400003",
+          "17113202400006",
+          "17113202400042",
+          "17113202500010",
+          "17113202500031",
+          "17230202608119",
+          "17294202600941"
+        ],
+        "solidez": "alta"
+      }
+    ],
+    "cambiosDeInterpretacion": [
+      {
+        "tema": "Ganadores de concurso de méritos sin nombramiento definitivo por problemas con el informe del Instituto de Meritocracia",
+        "antes": "2024-08-20 (17250202400002, ponente otro juez): quien gana el concurso tiene derecho al nombramiento definitivo, y la falta de informe de Meritocracia no es imputable a la ganadora. Se aceptó la acción y se ordenó el reintegro, pese a 13 años de demora.",
+        "despues": "2025-02-26 (17460202406226, ponente Carranza): se rechazó el caso de una ganadora de concurso de 2008 sin nombramiento definitivo, por ser asunto de legalidad. 2026-07-13 (17983202500405, ponente otro juez): informes no favorables de Meritocracia justifican el trato distinto y el caso se remite a la vía ordinaria. Hay distinciones de hecho: separación verbal sin acto en 2024, frente a servidores que siguen laborando, y 'falta de informe' frente a 'informe no favorable'. Pero la deferencia a la vía ordinaria es mayor en las decisiones posteriores.",
+        "procesos": [
+          "17250202400002",
+          "17460202406226",
+          "17983202500405",
+          "17U05202500196"
+        ]
+      }
+    ],
+    "diferenciasEntreCasosSimilares": [
+      {
+        "descripcion": "Dos coactivas de CNT en las que la entidad notificó en una dirección obtenida de DINARDAP, distinta del domicilio alegado. En 17232202600098 (2026-05-28) el tribunal aceptó: no consta notificación válida de la orden de pago, invirtió la carga de la prueba y declaró vulnerada la defensa. En 17203202503546 (2026-07-06) revocó la aceptación de primera instancia: la 'duda razonable' sobre el domicilio real basta para negar la vulneración y el tema se remite al art. 316.10 COGEP. La única diferencia que consta es que en el segundo caso se probó la existencia del contrato y que el local era comercial, mientras en el primero el accionante negaba haber contratado. En ambos casos no consta quién fue el ponente.",
+        "procesos": [
+          "17232202600098",
+          "17203202503546"
+        ],
+        "utilidadEstrategica": "En coactivas por notificación defectuosa, invocar 17232202600098 y la inversión de la carga de la prueba. Si la contraparte cita 17203202503546, sostener que la 'duda razonable' sobre el domicilio no es un estándar compatible con el art. 16 LOGJCC aplicado por el propio tribunal."
+      },
+      {
+        "descripcion": "Contratos de servicios ocasionales prolongados por varios años y luego terminados. En 17294202500194 (ponente otro juez) el tribunal aceptó: más de cuatro años y la contratación posterior de otra persona para el mismo puesto revelan una necesidad permanente. En 17284202500297 (2019-2025, ponente Carranza) y 17250202500045 (contratos renovados desde 2017) rechazó con la regla 2006-18-EP/24. El elemento distintivo que consta es la prueba del reemplazo en el mismo puesto. En 17203202503784 la accionante alegó reemplazo, pero el tribunal no fijó hechos al respecto.",
+        "procesos": [
+          "17294202500194",
+          "17284202500297",
+          "17250202500045",
+          "17203202503784"
+        ],
+        "utilidadEstrategica": "Si el cliente es un servidor ocasional de larga data, probar documentalmente que el puesto fue ocupado por otra persona e invocar 17294202500194. Con el ponente Carranza conviene anticipar la objeción de 2006-18-EP/24."
+      },
+      {
+        "descripcion": "Retención coactiva sobre la cuenta donde se acredita el sueldo. En 17204202502911 el tribunal aceptó: la retención se mantuvo ocho meses sin despachar los recursos. En 17297202500059 rechazó: la medida se levantó y los valores se reintegraron a pedido de la accionante.",
+        "procesos": [
+          "17204202502911",
+          "17297202500059"
+        ],
+        "utilidadEstrategica": "La diferencia es la persistencia de la retención y la falta de respuesta administrativa. Documentar la duración de la retención y los recursos pendientes antes de demandar."
+      },
+      {
+        "descripcion": "Ocupación de propiedad privada por obra pública. En 17230202409993 el tribunal aceptó: sin declaratoria de utilidad pública ni expropiación hay confiscación. En 17203202401507 rechazó: existía declaratoria y ocupación urgente de 2005, y la falta de pago del justo precio es un tema de legalidad. En 17230202612022 rechazó: expropiación en fase preparatoria.",
+        "procesos": [
+          "17230202409993",
+          "17203202401507",
+          "17230202612022"
+        ],
+        "utilidadEstrategica": "El factor decisivo es la ausencia de declaratoria de utilidad pública. Si existe declaratoria, la acción de protección casi seguro fracasa, salvo que se pruebe un 'elemento de gravedad'."
+      },
+      {
+        "descripcion": "Traslados o cambios de condiciones que afectan a servidores con familiares con discapacidad o enfermedad. En los traslados policiales por condición de un familiar el tribunal rechazó (17371202500544; 17371202502913, revocando la aceptación de primera instancia). Aceptó en cambio cuando la condición era del propio servidor y la entidad la conocía (17282202402056, 17460202602926). En los casos rechazados no constaba declaratoria de sustituto.",
+        "procesos": [
+          "17371202500544",
+          "17371202502913",
+          "17282202402056",
+          "17460202602926"
+        ],
+        "utilidadEstrategica": "Acreditar la calidad de sustituto directo o la condición del propio servidor, y el conocimiento previo de la entidad, antes de plantear la acción."
+      },
+      {
+        "descripcion": "Ganadores de concurso de méritos sin nombramiento definitivo: 17250202400002 aceptó; 17460202406226 y 17983202500405 rechazaron. El tribunal distingue por separación verbal frente a continuidad laboral, y por falta de informe frente a informe no favorable.",
+        "procesos": [
+          "17250202400002",
+          "17460202406226",
+          "17983202500405"
+        ],
+        "utilidadEstrategica": "Encuadrar el caso en los hechos de 17250202400002: separación sin acto administrativo y omisión administrativa no imputable al ganador."
+      }
+    ],
+    "recomendaciones": [
+      "Plantear la excepción de 2006-18-EP/24 de forma expresa y con prueba: discriminación evidente, afectación grave de la dignidad o urgencia. Una demanda laboral contra el Estado que no la desarrolle será declarada improcedente (17297202402151, 17201202500351).",
+      "En casos de embarazo, lactancia o paternidad, invocar 3-19-JP/20 y los precedentes del propio tribunal sobre presunción de discriminación y carga probatoria para la entidad. Estos precedentes son consistentes con cualquier ponente (17284202500612 y 17282202400683 con Carranza como ponente; 17204202400616 y 17230202516063 con otro ponente).",
+      "En discapacidad o enfermedad catastrófica, probar que la entidad conocía la condición antes del acto (17250202500138, donde la calificación fue posterior) y acreditar con documentos la discapacidad o la calidad de sustituto (17203202402281, 17250202500045).",
+      "En coactivas, centrar el caso en la falta de notificación de la orden de pago conforme al COA, o en la vinculación de socios sin levantamiento judicial del velo (17204202402293, 17230202613002), y pedir la inversión de la carga de la prueba. Evitar plantear como acción de protección la discusión de montos, prescripción o calidad de deudor (17981202602846, 17T03202400075).",
+      "Ante retenciones de fondos, demostrar que la cuenta recibe pensión jubilar, alimentos o remuneración, y cuánto tiempo se ha prolongado la retención (17203202401460, 17296202600037, 17204202502911).",
+      "No presentar la acción de protección si ya hay un proceso contencioso en curso con el mismo objeto; el tribunal lo declara improcedente sin entrar al fondo (17282202600628, 17204202503065).",
+      "Si se alega igualdad, identificar un término de comparación en situación idéntica y probar el trato diferenciado (17250202500098, 17983202500405).",
+      "En hábeas corpus, no discutir elementos de convicción ni la defensa técnica penal. Concentrarse en defectos verificables: falta de audiencia para revocar medidas, falta de citación, caducidad de la prisión preventiva, incumplimiento de órdenes de pericia o atención de salud (17113202400014, 17113202400015, 17113202400036, 17113202600030).",
+      "En hábeas data, presentar antes una solicitud escrita, específica y referida a datos propios, y esperar un plazo razonable. Si la información es pública, usar la acción de acceso a la información.",
+      "Si se ganó en primera instancia, no asumir que se confirmará: el tribunal revocó 35 decisiones, en ambos sentidos (17203202400540, 17160202600092, 17315202501134). Conviene reforzar en la apelación el análisis de vulneración constitucional y no solo de legalidad.",
+      "Si los hechos son muy antiguos, justificar la demora: el tribunal no inadmite por ese solo motivo, pero limita la reparación económica (17250202400002) o aprecia la tardanza contra el accionante (17203202501361)."
+    ],
+    "limitaciones": [
+      "Las decisiones son de un tribunal de tres jueces. Carranza consta como ponente en una parte de las fichas, en otras consta que no lo fue y en muchas no consta. Los criterios atribuibles a él personalmente son los de las fichas marcadas 'si'. Los demás reflejan la posición del tribunal que integra, y no consta si hubo votos salvados.",
+      "Las fichas son resúmenes. No contienen la motivación completa, los votos ni las pruebas, por lo que los hallazgos dependen de la fidelidad de cada resumen.",
+      "Hay inconsistencias de codificación: por ejemplo, el resultado del portal dice 'ACEPTAR RECURSO' mientras la decisión aparece como 'rechaza', o 'ACEPTAR PARCIALMENTE' frente a 'acepta'. En 17204202400339 y 17293202600970 no consta la decisión final. Las cifras de aceptación deben leerse con cautela.",
+      "La estadística de normas trata por separado 'Constitución de la República del Ecuador' (157) y 'Constitución de la República' (33), lo que sugiere falta de normalización.",
+      "Hay un solo caso de hábeas corpus vinculado a una madre en lactancia (17113202600024). La ficha enuncia un criterio favorable a medidas menos severas, pero la acción se negó sin que consten las razones, por lo que no permite extraer un patrón.",
+      "Los temas con un único caso no constituyen patrón: doble filiación materna (17282202600796), acoso laboral en el servicio exterior (17T03202400046), adjudicatario fallido (17U06202400527), derecho al agua (17203202403678), jubilación por invalidez (17U05202500139), elecciones en particulares (17282202600376) y desistimiento extemporáneo (17204202501460).",
+      "No consta el punto de inicio del cómputo de 'dias' (ingreso a segunda instancia u otro), por lo que las demoras no pueden atribuirse con certeza al despacho del juez.",
+      "Algunas fechas de resolución son posteriores a la fecha actual aparente o tienen inconsistencias internas (por ejemplo, 17231202400892). Ningún plazo se calcula a partir de ellas."
+    ],
+    "criterioPorAccion": [
+      {
+        "accion": "Acción de Protección",
+        "criterio": "Primero verifica si existe una vulneración constitucional real. Si no la hay y el asunto es de legalidad, declara la improcedencia, que es lo habitual. En materia laboral pública aplica la regla de 2006-18-EP/24. Acepta sobre todo en cuatro escenarios: estabilidad reforzada de grupos de atención prioritaria, indefensión probada en procedimientos administrativos o coactivos, retención de prestaciones protegidas y negativa de medicamentos prescritos.",
+        "fundamentosDeDerecho": "Art. 88 CRE; art. 42 num. 1, 3, 4, 5 y 6 LOGJCC; art. 16 LOGJCC (carga de la prueba); 001-16-PJO-CC, 016-13-SEP-CC, 041-13-SEP-CC, 2034-13-EP/19, 1158-17-EP/21 (motivación), 2006-18-EP/24, 3-19-JP/20, 54-17-IN/22 (igualdad), 26-18-IN/20, 679-18-JP/20; arts. 35, 43, 76.7, 82, 328 y 371 CRE; LOSEP, COA (arts. 164-166 y 279-280) y COESCOP.",
+        "fundamentosDeHecho": "Considera decisivos: la existencia de informe técnico y de norma previa en las desvinculaciones; la constancia de citación o notificación en el expediente o la comparecencia del accionante; la firma de actas de finiquito con indemnización; el conocimiento previo de la entidad sobre embarazo, lactancia o discapacidad; la ausencia de prueba de la entidad para desvirtuar la presunción; la prueba de comparabilidad; y la existencia de procesos ordinarios paralelos.",
+        "procesos": [
+          "17203202402009",
+          "17284202500612",
+          "17204202402293",
+          "17203202401460",
+          "17985202500549",
+          "17297202402151",
+          "17460202402866",
+          "17233202409402"
+        ]
+      },
+      {
+        "accion": "Acción de Hábeas Corpus",
+        "criterio": "Controla la legalidad formal de la privación de libertad: autoridad competente, audiencia, notificación, plazos y condiciones de salud. No revisa la valoración penal. Acepta cuando faltó una audiencia contradictoria para revocar medidas, nunca se citó al procesado, caducó la prisión preventiva, se incumplieron pericias ordenadas o hay una enfermedad grave sin atención. En este último caso prefiere ordenar atención médica antes que la libertad.",
+        "fundamentosDeDerecho": "Art. 89 y 77 CRE; arts. 534 y 542 COIP; OC-8/87 Corte IDH; 004-18-PJO-CC, 006-17-SCN-CC, 171-15-SEP-CC, 207-11-JH/20, 209-15-JH/19, 365-18-JH/21 (competencia territorial), 253-20-JH/22; Resolución 14-2021 de la CNJ.",
+        "fundamentosDeHecho": "Considera decisivos: la grabación de la audiencia de flagrancia; la boleta de encarcelamiento; los partes policiales de notificación; la prueba de agresiones (exige respaldo médico o testimonial directo); y la constancia de atención médica en el centro de privación de libertad.",
+        "procesos": [
+          "17113202400014",
+          "17113202400015",
+          "17113202400036",
+          "17113202600030",
+          "17113202400003",
+          "17113202500010",
+          "17230202608119",
+          "17294202600941"
+        ]
+      },
+      {
+        "accion": "Acción de Hábeas Data",
+        "criterio": "Aplica de forma restrictiva los supuestos del art. 50 LOGJCC. Rechaza si la entidad concedió o entregó la información, si no hubo petición previa concreta, si se pide información pública o que deba crearse, o si se pretende corregir medidas cautelares registrales o declarar derechos controvertidos.",
+        "fundamentosDeDerecho": "Arts. 66.19 y 92 CRE; art. 50 LOGJCC; 1214-18-EP/22, 182-15-SEP-CC (negativa tácita), 007-15-SIS-CC, 025-15-SEP-CC, 55-14-JD/20.",
+        "fundamentosDeHecho": "Considera decisivos: las constancias de concesión, notificación o retiro de copias; la entrega en audiencia; la especificidad de la solicitud; y la naturaleza personal o pública de los datos.",
+        "procesos": [
+          "17204202501035",
+          "17250202400099",
+          "17233202602437",
+          "17986202400333",
+          "17230202510490",
+          "17572202400359",
+          "17U05202400133"
+        ]
+      },
+      {
+        "accion": "Acción de Acceso a la Información Pública",
+        "criterio": "Acepta ante una negativa expresa sin declaratoria legal de reserva. Rechaza si la información se entregó, si lo negado contiene datos personales de terceros o si el obligado era la autoridad jurisdiccional custodia y no el Consejo de la Judicatura.",
+        "fundamentosDeDerecho": "Arts. 18.2 y 91 CRE; 1214-18-EP/22, 29-21-JI/21, 2366-18-EP/23, 839-14-EP/21.",
+        "fundamentosDeHecho": "Considera decisivos: las fechas de solicitud y respuesta, el contenido de la negativa y la constancia de entrega.",
+        "procesos": [
+          "17571202400358",
+          "17204202600349",
+          "17230202605098"
+        ]
+      },
+      {
+        "accion": "Acción de Protección Con Medida Cautelar",
+        "criterio": "Aplica el mismo estándar que a la acción de protección: improcedencia si el asunto es de legalidad. Acepta la remoción sin imputación personal ni defensa (SEPS). Las medidas cautelares autónomas son revocables si cambian las circunstancias.",
+        "fundamentosDeDerecho": "Art. 42 LOGJCC; art. 15 LOGJCC (desistimiento); 1214-18-EP/22; 026-13-SCN-CC; Guía de Medidas Cautelares de la CC.",
+        "fundamentosDeHecho": "Considera decisivos: la imputación individual de hallazgos, la oportunidad de defensa, la prelación legal en liquidaciones y la fase en que se encuentra la expropiación.",
+        "procesos": [
+          "17571202400502",
+          "17203202501625",
+          "17205202501420",
+          "17571202600303",
+          "17230202612022"
+        ]
+      }
+    ],
+    "senalesDeArbitrariedad": [
+      {
+        "descripcion": "Trato desigual en hechos casi idénticos: dos coactivas de CNT con notificación en una dirección de DINARDAP distinta del domicilio alegado, resueltas con seis semanas de diferencia en sentidos opuestos. En una se invierte la carga de la prueba y se acepta; en la otra basta una 'duda razonable' sobre el domicilio para revocar la aceptación de primera instancia.",
+        "procesos": [
+          "17232202600098",
+          "17203202503546"
+        ]
+      },
+      {
+        "descripcion": "En 17203202400540 el tribunal reconoce que la Contraloría recibió los descargos y no los consideró al resolver en rebeldía, pero niega la vulneración de la defensa. Esto se aparta de su propio criterio en otros casos, donde la falta de oportunidad real de defensa en procedimientos sancionadores sí configura vulneración. La ficha no explica la diferencia.",
+        "procesos": [
+          "17203202400540",
+          "17571202400502",
+          "17283202400364",
+          "17571202501072"
+        ]
+      },
+      {
+        "descripcion": "En 17294202500194 el reemplazo del servidor ocasional por otro profesional fue decisivo para aceptar. En 17203202503784 la accionante alegó que se vinculó a otra persona en su puesto y el tribunal no fijó hechos sobre ese punto, aunque el reemplazo es determinante según su propio precedente.",
+        "procesos": [
+          "17294202500194",
+          "17203202503784"
+        ]
+      }
+    ],
+    "lecturaDeTiempos": "Sobre 190 resoluciones, el promedio es de 138 días y la mediana de 99. El p90 es de 292 días y el máximo de 915. El promedio supera a la mediana porque una cola de casos largos lo eleva. Por año, la mediana subió de 85 días (2024) a 116 (2025) y bajó a 92 (2026). Por tipo de acción, el hábeas corpus se resuelve con una mediana de 8 días, coherente con su urgencia; la acción de protección tiene una mediana de 105 días; el hábeas data, 147; la acción de protección con medida cautelar, 98; y el acceso a la información, 50. Hay 14 anomalías (más de 320 días): 11 acciones de protección, 2 acciones de protección con medida cautelar y 1 hábeas data; ningún hábeas corpus. No se asocian a una materia única, pero se observan tres rasgos. Primero, casi todas son causas ingresadas en 2024 y resueltas en 2025-2026. Segundo, predominan los rechazos que confirman la primera instancia: entre los 14 hay solo una aceptación (17282202400683), dos aceptaciones parciales (17203202403678 y 17U05202400133), un desistimiento y una inadmisión. Tercero, Carranza consta como ponente en cinco de ellas (17230202402127 con 915 días, 17981202400060, 17203202501625, 17U05202400133 y 17282202400683). Llama la atención 17294202400309: 784 días para terminar por desistimiento del recurso. Varias anomalías corresponden a propiedad, expropiación o coactivas (17203202401507, 17297202500059, 17230202520613) y a causas tributarias o de igualdad con debate técnico (17230202402127). No consta el punto de inicio del cómputo de días, por lo que la demora no puede atribuirse con certeza al despacho del tribunal."
+  }
+}

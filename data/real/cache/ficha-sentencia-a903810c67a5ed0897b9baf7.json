@@ -1,0 +1,91 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 33503,
+    "tokensSalida": 1755
+  },
+  "salida": {
+    "numero": "17204202500552",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "325",
+          "326",
+          "82",
+          "76",
+          "11",
+          "34",
+          "88",
+          "86",
+          "424",
+          "425",
+          "426"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42",
+          "39",
+          "95",
+          "96"
+        ]
+      },
+      {
+        "norma": "Declaración Universal de los Derechos Humanos",
+        "articulos": [
+          "23",
+          "25",
+          "10"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Constitucional 26-18-IN/20 y acumulados",
+      "Sentencia 1214-18-EP/22",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia 75-15-IN/21",
+      "Sentencia 16-09-IN/20",
+      "Sentencia 1425-18-EP/23",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2006-18-EP",
+      "Sentencia 224-23-JP/24",
+      "Sentencia 3-19-CN-20",
+      "Sentencia 1210-18-EP",
+      "Sentencia 082-14-C-CC"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que la acción no es el mecanismo para esta controversia, pero examina igualmente los derechos invocados: trabajo, seguridad social, debido proceso (cumplimiento de normas y motivación), y seguridad jurídica. Concluye que no hay vulneración: la desvinculación se hizo con normas vigentes en 2011, la acción de personal está motivada, consta el pago de aportes patronales al IESS, y la sentencia 26-18-IN/20 tiene efecto hacia futuro (ex nunc), sin retroactividad. Añade que los conflictos laborales con el Estado corresponden en principio a la vía contencioso-administrativa (sentencia 2006-18-EP) y aplica la improcedencia del artículo 42 numerales 1, 3 y 4.",
+    "pruebas": [
+      "Acción de personal No. 0260356 de 28 de octubre de 2011",
+      "Constancia de notificación de la acción de personal",
+      "Pago de liquidación por compra de renuncia (USD 37.620,00, según el Ministerio, no verificado por el tribunal)",
+      "Aportes patronales al IESS durante la relación laboral",
+      "Certificación presupuestaria alegada por el Ministerio"
+    ],
+    "motivacion": "Se descarta la vulneración de cada derecho invocado con referencia a normas vigentes a la fecha del acto y a la jurisprudencia constitucional citada. Se afirma que la sentencia 26-18-IN/20 no tiene efecto retroactivo y que la vía idónea para reclamar derechos laborales y nulidad del acto es la ordinaria o contencioso-administrativa. Se declara improcedente la acción y se rechaza la apelación.",
+    "criterioResolucion": "Según esta resolución, la declaratoria de inconstitucionalidad de la compra de renuncia obligatoria (26-18-IN/20) tiene efectos hacia futuro y no retroactivos, por lo que no permite reintegrar al servidor desvinculado en 2011 mediante acción de protección; además, los conflictos laborales con el Estado sobre actos administrativos deben tramitarse en la vía ordinaria o contencioso-administrativa y no en la acción de protección.",
+    "citaTextual": "En el presente caso, los efectos de esta declaratoria de inconstitucionalidad son los que la LOGJCC establece como regla general, esto es, a futuro, debido a que por el transcurso del tiempo desde que rige esta medida se han consolidado situaciones jurídicas en las instituciones que emplearon esta medida y también en los propios servidores y servidoras",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al trabajo (arts. 33 y 325 CRE)",
+      "Progresividad y no regresividad de derechos (art. 11.8 CRE)",
+      "Irrenunciabilidad e intangibilidad de derechos laborales (art. 326.2 CRE)",
+      "Derecho a la seguridad social (art. 34 CRE)",
+      "Debido proceso: cumplimiento de normas y motivación (art. 76.1 y 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Derechos previstos en la Declaración Universal de los Derechos Humanos (arts. 10, 23 y 25)"
+    ],
+    "fundamentosDeHecho": "El accionante ingresó al Ministerio de Transporte y Obras Públicas en 1998 como servidor de carrera. El 28 de octubre de 2011, mediante acción de personal No. 0260356, fue cesado por compra de renuncia con indemnización al amparo del Decreto Ejecutivo 813. Recibió la liquidación correspondiente y no impugnó el acto en su momento. Presentó la acción de protección en 2025.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

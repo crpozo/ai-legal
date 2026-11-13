@@ -1,0 +1,70 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21297,
+    "tokensSalida": 3589
+  },
+  "salida": {
+    "numero": "17233202601985",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "66.4",
+          "82",
+          "86",
+          "88",
+          "436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "25.1",
+          "33",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 1158-17-EP/21",
+      "Corte Constitucional 989-11-EP/19",
+      "Corte Constitucional 1271-18-EP/23",
+      "Corte Constitucional 2277-21-EP/25",
+      "Corte Constitucional 2012-22-EP/25",
+      "Corte Constitucional 145-15-EP/20",
+      "Corte Constitucional 1707-16-EP/21",
+      "Corte Constitucional 1788-24-EP/25",
+      "Corte Constitucional 2231-22-JP/23",
+      "Corte Constitucional 026-13-SCN-CC",
+      "Corte Constitucional 001-10-PJO-CC",
+      "Corte Constitucional 045-11-SEP-CC"
+    ],
+    "argumentacion": "El tribunal confirma la negativa de primera instancia. Parte de que la acción de protección exige una vulneración de derechos constitucionales y no sirve para resolver asuntos de estricta legalidad. Analiza seguridad jurídica: concluye que el oficio CFN-B.P.-GPAT-2025-0340-O obedece a un orden normativo y que el asunto corresponde a un juicio coactivo administrativo. Analiza igualdad y no discriminación con el test de tres elementos (comparabilidad, trato diferenciado, resultado): descarta comparabilidad y trato diferenciado, y concluye que no hay vulneración. Por último, rechaza por improcedente la nueva medida cautelar pedida en apelación, porque no es competente para resolverla al haberla negado el juez de instancia y porque el art. 33 LOGJCC no admite apelación.",
+    "pruebas": [
+      "Oficio No. CFN-B.P.-GPAT-2025-0340-O de 13 de noviembre de 2025 (folios 81 y 82), analizado como acto impugnado",
+      "Escrito de medida cautelar de 13 de mayo de 2026 (folios 4 y 5), desestimado"
+    ],
+    "motivacion": "Justifica la decisión en la ausencia de vulneración de derechos constitucionales, en la improcedencia de la acción para cuestiones de legalidad y en el test de igualdad. Invoca el estándar de motivación de la Corte Constitucional (estructura normativa y fáctica suficiente). No resuelve el debate fáctico sobre la fecha del vencimiento del plazo ni sobre los pagos alegados, que solo aparecen en las alegaciones de las partes.",
+    "criterioResolucion": "La acción de protección no procede para resolver asuntos de estricta legalidad: la actuación administrativa que obedece a un orden normativo no vulnera seguridad jurídica, y no hay vulneración de igualdad si no existen sujetos comparables ni un trato diferenciado.",
+    "citaTextual": "la justicia constitucional no se encuentra facultada para resolver problemas legales que no acarreen la vulneración de derechos constitucionales, quedando descartada, toda posibilidad de que la acción de protección sea procedente para resolver asuntos de estricta legalidad",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Igualdad y no discriminación (arts. 11.2 y 66.4 CRE)"
+    ],
+    "fundamentosDeHecho": "La CFN declaró concluido el proceso LOAH mediante el oficio CFN-B.P.-GPAT-2025-0340-O de 13 de noviembre de 2025, por vencimiento de plazo en marzo de 2025. El accionante alega actos posteriores de la CFN (ratificación de compromiso, requerimientos y pago de 50.000 dólares) y la reactivación del proceso coactivo. El tribunal enmarca la controversia como juicio coactivo administrativo y no fija como probados los hechos sobre el plazo ni sobre los actos previos.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

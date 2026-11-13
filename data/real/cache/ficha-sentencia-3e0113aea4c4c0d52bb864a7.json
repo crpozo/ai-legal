@@ -1,0 +1,65 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19169,
+    "tokensSalida": 2650
+  },
+  "salida": {
+    "numero": "17284202600145",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76 numeral 7 literal l",
+          "82",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "norma": "Reglas de Procedimiento para el Ejercicio de las competencias de la Corte Constitucional",
+        "articulos": [
+          "50"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "221"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal primero verifica si los hechos alegados permiten colegir vulneración de derechos constitucionales antes de examinar la procedencia. Sobre seguridad jurídica y competencia temporal, reconstruye el cronograma del procedimiento disciplinario a partir del expediente y concluye que la resolución de 26 de mayo de 2025 se notificó dentro del término de cinco días, considerando el feriado del 23 de mayo. Sobre tipicidad, aplica el artículo 221 de la LOPDFA, que admite la concurrencia de faltas, y concluye que la alegación carece de sustento legal. Sobre motivación, aplica el criterio rector de la sentencia 1158-17-EP/21 y concluye que ambas resoluciones administrativas son suficientemente motivadas. Finalmente, aplica la sentencia 001-16-PJO-CC: como no hay vulneración constitucional, el asunto es de mera legalidad y corresponde a la justicia ordinaria, en especial a la vía administrativa.",
+    "pruebas": [
+      "Expediente administrativo disciplinario (citación, informe de descargo, apertura y cierre de la fase probatoria de 16 de mayo de 2025)",
+      "Resolución COMANDO-IIIDE TARQUI-2025-011-FL de 26 de mayo de 2025",
+      "Resolución FT-COT-2025-003-AP de 4 de julio de 2025",
+      "Fecha de notificación de la primera resolución y calendario del término (incluido el feriado del 23 de mayo de 2025)",
+      "Captura de la notificación del 27 de mayo y validación de firma electrónica, aportadas por el accionante (el tribunal no las valora expresamente)"
+    ],
+    "motivacion": "Las resoluciones administrativas contienen antecedentes de hecho, normas aplicables, pertinencia de su aplicación y una valoración probatoria, por lo que no se advierte insuficiencia motivacional. El accionante ejerció su derecho a la defensa (citación, descargos, pruebas e impugnación). Como no hay vulneración de derechos constitucionales, la acción no es la vía idónea y el reclamo debe tramitarse en la justicia ordinaria.",
+    "criterioResolucion": "La acción de protección no es procedente en aspectos de mera legalidad cuando no se verifica vulneración de derechos constitucionales en la dimensión constitucional; en esos casos la vía es la justicia ordinaria, especialmente la administrativa.",
+    "citaTextual": "En la especie, como queda claro, la entidad accionada, no ha vulnerado los derechos señalados por el accionante quien, si considera haber recibido alguna afectación por las actuaciones administrativas regladas de los legitimados pasivos, deberá sustanciarla ante la justicia ordinaria NO ante la justicia constitucional, puesto que no se ha transgredido ninguna garantía referente a su dignidad humana",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica, en conexidad con el derecho a ser juzgado por autoridad competente",
+      "Debido proceso, en la garantía de tipicidad",
+      "Derecho a la defensa y a obtener decisiones debidamente motivadas"
+    ],
+    "fundamentosDeHecho": "El accionante, militar en servicio activo, fue sancionado el 26 de mayo de 2025 con tres días de arresto de rigor por concurrencia de faltas disciplinarias, y la apelación fue negada el 4 de julio de 2025. El tribunal da por no controvertidos esos hechos. El tribunal sostiene que la notificación de la primera resolución se hizo dentro del término legal, mientras que el accionante alegó una notificación extemporánea del 27 de mayo de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

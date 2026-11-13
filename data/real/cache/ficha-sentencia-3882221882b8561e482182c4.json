@@ -1,0 +1,100 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20314,
+    "tokensSalida": 1746
+  },
+  "salida": {
+    "numero": "17230202405877",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "86 numeral 5",
+          "173",
+          "76 numeral 7 literales c) y h)",
+          "82"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "42 numeral 4",
+          "42 numeral 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "165",
+          "166",
+          "175",
+          "250",
+          "255",
+          "256"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público (COESCOP)",
+        "articulos": [
+          "290 numeral 4",
+          "301",
+          "302",
+          "304",
+          "305",
+          "48"
+        ]
+      },
+      {
+        "norma": "Estatuto de Régimen Jurídico Administrativo de la Función Ejecutiva",
+        "articulos": [
+          "68"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia N° 016-13-SEP-CC, caso N° 1000-12-EP",
+      "Corte Constitucional, sentencia N° 187-16-SEP-CC, caso N° 0133-14-EP",
+      "Corte Constitucional, sentencia vinculante N° 001-16-PJO-CC, caso N° 0530-10-JP",
+      "Corte Constitucional, sentencia N° 001-10-PJO-CC, caso N° 0999-09-JP",
+      "Corte Constitucional, sentencia N° 140-12-SEP-CC",
+      "Corte Constitucional, sentencia N° 3330-17-EP/23"
+    ],
+    "argumentacion": "El tribunal reconoce la procedencia formal y la validez procesal. Examina si las resoluciones impugnadas (sanción de destitución y resolución de Procuraduría que inadmitió la apelación) son vulneradoras de derechos o asuntos de legalidad. Concluye que el sumario se tramitó con normas previas y claras, con ejercicio del derecho a la defensa, y que la pretensión busca revisar la legalidad de actos administrativos con presunción de legitimidad, así como declarar derechos y ordenar reintegro y pago de remuneraciones, lo que excede la acción de protección por ser de vía ordinaria/administrativa. Descarta vulneración de seguridad jurídica e igualdad, y no encuentra acreditada la inexistencia de una vía adecuada y eficaz.",
+    "pruebas": [
+      "Expediente del sumario administrativo AMT-DTH-SA-2024-003",
+      "Resolución AMT-CAD-SA-2024-013-R (27 de febrero de 2024)",
+      "Resolución 261B de la Procuraduría Metropolitana",
+      "Razón de notificación de 29 de febrero de 2024",
+      "Certificado de salud mental de 2 de abril de 2024 (considerado posterior a la presentación de la acción)",
+      "Registro SIGEN de actualización de datos (18 de marzo de 2024)"
+    ],
+    "motivacion": "La justificación se apoya en que los actos administrativos gozan de presunción de legitimidad y deben impugnarse en la vía administrativa o judicial correspondiente; la acción de protección no es subsidiaria y no procede para asuntos de mera legalidad, ni para declaraciones de derechos (art. 42 numerales 4 y 5 LOGJCC). No se demostró que la vía ordinaria fuera inadecuada o ineficaz.",
+    "criterioResolucion": "La acción de protección no procede contra actos administrativos de sanción disciplinaria cuando se trata de asuntos de mera legalidad impugnables en la vía judicial ordinaria, salvo que se demuestre que esa vía no es adecuada ni eficaz; no es subsidiaria, pero no puede usarse para examinar la legalidad de actos con presunción de legitimidad ni para declarar derechos.",
+    "citaTextual": "la acción de protección no procede cuando se refiera a aspectos de mera legalidad en razón de los cuales existan vías judiciales ordinarias para la reclamación de los derechos y particularmente la vía administrativa",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso",
+      "Seguridad jurídica",
+      "Trabajo",
+      "Igualdad y no discriminación",
+      "Derecho a la defensa",
+      "Derecho a recurrir (impugnación)",
+      "Protección",
+      "Justicia imparcial"
+    ],
+    "fundamentosDeHecho": "La accionante, agente civil de tránsito, fue sancionada con destitución en el sumario administrativo AMT-DTH-SA-2024-003 por la falta del art. 290 numeral 4 COESCOP (órdenes contrarias sin fundamento durante un operativo del 29-30 de diciembre de 2023). La Procuraduría Metropolitana inadmitió su recurso de apelación por extemporáneo, con base en la notificación al correo electrónico y al domicilio registrado. El tribunal considera que el sumario se tramitó con defensa y con normas previas, sin desigualdad probada.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

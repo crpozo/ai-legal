@@ -1,0 +1,56 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10830,
+    "tokensSalida": 2618
+  },
+  "salida": {
+    "numero": "17204202501035",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 5",
+          "169",
+          "82",
+          "92"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "24",
+          "25 numeral 1",
+          "49",
+          "50 numerales 1, 2 y 3"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1214-18-EP/22 (caso 1214-18-EP, párr. 29)",
+      "Corte Constitucional, sentencia 182-15-SEP-CC",
+      "Corte Constitucional, sentencia 007-15-SIS-CC",
+      "Corte Constitucional, sentencia 025-15-SEP-CC (caso 0725-12-EP)"
+    ],
+    "argumentacion": "El tribunal valida el proceso y reproduce las pretensiones del accionante y los argumentos del Banco del Pacífico, que cita las sentencias 1735-18-EP/20, 001-14-PJO-CC y 138-16-SEP-CC sobre la naturaleza del hábeas data. Examina la solicitud bajo el numeral 1 del artículo 50 LOGJCC (negativa de acceso). Con base en la prueba, concluye que las copias fueron concedidas, que la constancia de retiro por el defensor consta a fs. 116, que la providencia de concesión fue notificada a fs. 30 y que el accionante no compareció a retirarlas. Añade que, en audiencia, se entregó voluntariamente toda la documentación requerida. Por ello no hay negativa de acceso y no aplica la negativa tácita del precedente 182-15-SEP-CC. La resolución no se pronuncia de forma autónoma sobre la denuncia de entrega de información a terceros.",
+    "pruebas": [
+      "Constancia de retiro de copias por el defensor, fs. 116",
+      "Notificación de la providencia BP-008964-II-2025 (boleta) que concede copias certificadas, fs. 30",
+      "Entrega voluntaria de documentación en audiencia pública",
+      "Escrito de solicitud de copias de 27 de febrero de 2025 (referido en la demanda)"
+    ],
+    "motivacion": "La decisión se justifica en que la entidad accionada sí concedió y puso a disposición la información solicitada, por lo que no se configura la negativa de acceso exigida por el artículo 50 numeral 1 LOGJCC. La falta de retiro de las copias por el accionante se valora como hecho que impide sostener la negativa. Se confirma la sentencia de primera instancia, que negó la acción.",
+    "criterioResolucion": "No existe negativa de acceso al hábeas data informativo cuando la entidad concede las copias solicitadas y las entrega o las pone a disposición del titular, incluso si este no las retira; en ese caso no procede la negativa tácita del precedente 182-15-SEP-CC.",
+    "citaTextual": "por lo tanto no existe negativa de acceso a la información por el legitimado pasivo Banco del Pacifico S.A.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Acceso a la información personal (art. 92 CRE)",
+      "Protección de datos personales frente a uso por terceros (art. 92 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante solicitó el 27 de febrero de 2025 copias certificadas del juicio coactivo BP-003898-II-2023 y alegó que no se le entregaron en dos meses, que nunca fue notificado con el título de crédito y que se dio información a terceros. El tribunal da por probado que las copias fueron concedidas, que constan la constancia de retiro por el defensor a fs. 116 y la notificación a fs. 30, que el accionante no compareció a retirarlas y que se entregó la documentación en audiencia.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

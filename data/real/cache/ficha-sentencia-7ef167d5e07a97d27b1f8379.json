@@ -1,0 +1,93 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 49174,
+    "tokensSalida": 3224
+  },
+  "salida": {
+    "numero": "17981202404044",
+    "decision": "otro",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "35",
+          "36",
+          "37",
+          "66",
+          "75",
+          "86.3",
+          "169",
+          "326",
+          "424"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "16",
+          "24",
+          "40.3",
+          "42.4"
+        ]
+      },
+      {
+        "norma": "Código del Trabajo",
+        "articulos": [
+          "216"
+        ]
+      },
+      {
+        "norma": "Decreto Ejecutivo 172",
+        "articulos": [
+          "1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "22"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional 2034-13-EP/19",
+      "Corte Constitucional 001-16-PJO-CC",
+      "Corte Constitucional 016-13-SEP-CC",
+      "Corte Constitucional 031-12-SEP-CC",
+      "Corte Constitucional 832-20-JP/21",
+      "Corte Constitucional 725-15-JP/23",
+      "Corte Constitucional 39-11-SEP-CC",
+      "Corte Constitucional 5-19-CN/19",
+      "Corte Constitucional 2006-18-EP/24",
+      "Corte Nacional de Justicia Resolución 07-2021"
+    ],
+    "argumentacion": "El tribunal de alzada fija como problema jurídico si existe vulneración de derechos por no pagar la jubilación patronal del artículo 216 del Código del Trabajo y pagar en su lugar la transferencia solidaria del Decreto 172. Aplica la carga de la prueba invertida contra la entidad pública (art. 86.3 CRE y art. 16 LOGJCC). Constata que el pago consta como transferencia solidaria desde 2010 o 2011 y que la entidad no probó que la jubilación patronal se pagara por otra vía. Concluye que se vulnera la seguridad jurídica (art. 82) porque la norma aplicable es el art. 216 y la entidad no la aplica. Vincula esa vulneración con los derechos de los adultos mayores y de la persona con discapacidad (arts. 35, 36 y 37) y considera que el caso exige respuesta urgente, por lo que no cabe remitirlo a la vía ordinaria. El texto recibido está truncado y no contiene la parte resolutiva final, por lo que no consta de forma expresa el sentido de la decisión.",
+    "pruebas": [
+      "Detalle de pagos de fs. 344 a 354 (transferencia solidaria desde 2010 o 2011 hasta 2024)",
+      "Certificaciones de ingresos de fs. 390, 349 y 352",
+      "Oficios de la Procuraduría General del Estado 05104 de 2024 y 06112 de 2019",
+      "Memorando 2024-1630 de Petroecuador",
+      "Certificados de remuneraciones y liquidaciones de los accionantes"
+    ],
+    "motivacion": "La presunción de veracidad de los hechos de la demanda se impone porque la entidad pública no probó que pagara la jubilación patronal conforme al art. 216. El Decreto 172 no puede desplazar al Código del Trabajo, según la CNJ y la Procuraduría. La condición de adultos mayores y de discapacidad de uno de los accionantes justifica el análisis en sede constitucional.",
+    "criterioResolucion": "Cuando una entidad pública paga a adultos mayores una transferencia solidaria en lugar de la jubilación patronal del art. 216 del Código del Trabajo y no prueba haber pagado conforme a esa norma, se presumen ciertos los hechos de la demanda y se configura vulneración de seguridad jurídica y de derechos de atención prioritaria, lo que hace procedente la vía constitucional.",
+    "citaTextual": "Se presumirán ciertos los fundamentos alegados por la persona accionante cuando la entidad pública requerida no demuestre lo contrario o no suministre información",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82)",
+      "Atención prioritaria de adultos mayores (art. 35)",
+      "Derechos de las personas adultas mayores (arts. 36 y 37)",
+      "Igualdad y no discriminación (art. 66.4)",
+      "Derecho a la salud (art. 32)",
+      "Vida digna (art. 66.2)",
+      "Tutela judicial efectiva (art. 75)",
+      "Irrenunciabilidad y favorabilidad de derechos laborales (art. 326.2 y 326.3)"
+    ],
+    "fundamentosDeHecho": "Los tres accionantes son exempleados de Petroecuador, adultos mayores, y uno tiene discapacidad. Desde 2010 o 2011 perciben una transferencia solidaria del Decreto 172 en lugar de la jubilación patronal del art. 216 del Código del Trabajo. La entidad no probó que pagara conforme al art. 216. La sentencia de primera instancia rechazó la acción y los accionantes apelaron.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

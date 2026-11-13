@@ -1,0 +1,92 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 27191,
+    "tokensSalida": 1694
+  },
+  "salida": {
+    "numero": "17371202600008",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "88",
+          "96",
+          "61",
+          "66.6",
+          "66.13",
+          "82",
+          "225"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "21",
+          "39",
+          "40",
+          "41",
+          "42",
+          "42.6",
+          "52",
+          "142.1",
+          "24",
+          "7",
+          "17"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "26"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Economía Popular y Solidaria",
+        "articulos": [
+          "disposición general primera",
+          "8",
+          "147 literales a) y b)"
+        ]
+      },
+      {
+        "norma": "Reforma al Estatuto Orgánico del Ministerio de Gobierno (Acuerdo Ministerial No. 155)",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia N. 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia N. 041-13-SEP-CC (caso 0470-12-EP)",
+      "Sentencia N. 102-13-SEP-CC",
+      "Sentencia No. 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia No. 1226-24-EP/26",
+      "Sentencias 12-11-IN/20 y 7-19-RC/19 (citadas por el accionante y descartadas)"
+    ],
+    "argumentacion": "El tribunal confirma la sentencia de primera instancia. Razona que el accionante no probó ninguno de los supuestos del art. 88 CRE para accionar contra un particular (servicio público, daño grave, subordinación o indefensión), conforme a la carga de la prueba del art. 16 LOGJCC. Luego identifica que el hecho alegado (desacato de la medida cautelar 09965-2025-00173) es un eventual incumplimiento de una providencia judicial, lo que la CRE excluye del objeto de la acción de protección y remite a la acción extraordinaria de protección o a la acción de incumplimiento. Concluye que la improcedencia/inadmisión aplica por el art. 42.6 LOGJCC y que existen vías adecuadas.",
+    "pruebas": [
+      "Acta de la gran asamblea general extraordinaria de 17 de enero de 2026 (fs. 358-368)",
+      "Padrón electoral 2025-2028 (fs. 17-19vta.)",
+      "Oficio SEPS-SGD-INFMR-2026-04800-OF de 12 de febrero de 2026 (fs. 350-353vta.)",
+      "Resolución de medidas cautelares 09965-2025-00173 (fs. 356-357)",
+      "Constancia de la causa 09571-2026-00038 (fs. 174-176)",
+      "Certificación del Ministerio de Gobierno sobre la condición de Primer Vigilante del accionante"
+    ],
+    "motivacion": "La improcedencia se funda en la falta de prueba de los presupuestos del art. 88 CRE frente a un particular, en la existencia de una providencia judicial previa cuyo eventual desacato no es objeto de la acción de protección, y en la existencia de vías judiciales adecuadas. Cita la jurisprudencia vinculante 001-16-PJO-CC sobre el deber del juez de analizar si hay vulneración de derechos antes de remitir a otra vía.",
+    "criterioResolucion": "Frente a un particular, la acción de protección exige probar uno de los presupuestos del art. 88 CRE (servicio público impropio, delegación o concesión, daño grave, subordinación o indefensión). Y no procede para reclamar el eventual desacato de una providencia judicial, que corresponde a la acción extraordinaria de protección o a la acción de incumplimiento.",
+    "citaTextual": "por su naturaleza infra constitucional su conocimiento le corresponde a la justicia ordinaria",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Alternabilidad y deberes de participación (arts. 96 y 61 CRE)",
+      "Debido proceso en la garantía de la defensa",
+      "Libertad de expresión (art. 66.6 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante, miembro activo de la Gran Logia del Ecuador, alega que el mandato del Gran Maestro Héctor Vanegas quedó sin efecto el 11 de junio de 2025, que las elecciones convocadas para el 17 de enero de 2026 desacatan la medida cautelar 09965-2025-00173 y que su reelección vulnera la alternabilidad. El tribunal no da por probada la vulneración: la reforma estatutaria de 2022 rige, el accionante consta en el padrón y la elección se realizó en cumplimiento de la medida cautelar. El tribunal da por probado que la alegación de desacato es el eje de la demanda, y que no se acreditó la condición de sujeto que habilite la acción contra un particular.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

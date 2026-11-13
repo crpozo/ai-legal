@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 49176,
+    "tokensSalida": 2104
+  },
+  "salida": {
+    "numero": "17233202503663",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "82",
+          "76 numeral 7 literal l",
+          "33",
+          "326",
+          "325",
+          "88",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "17 literal b",
+          "127"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP",
+        "articulos": [
+          "18 literal c",
+          "17"
+        ]
+      },
+      {
+        "norma": "COGEP",
+        "articulos": [
+          "300"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 2006-18-EP/24",
+      "Corte Constitucional sentencia 1158-17-EP/21",
+      "Corte Constitucional sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional sentencia 1679-12-EP/20",
+      "Corte Constitucional sentencia 145-16-SEP-CC",
+      "Corte Constitucional sentencia 1274-14-EP/19",
+      "Corte Constitucional sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia 027-13-SEP-CC",
+      "Corte Constitucional sentencia 278-15-SEP-CC (caso 398-15-EP)",
+      "Corte Constitucional sentencia 1357-13-EP/20",
+      "Corte Constitucional sentencia 093-14-SEP-CC",
+      "Corte Constitucional sentencia 069-10-SEP-CC",
+      "Corte Constitucional sentencia 041-13-SEP-CC (caso 00470-12-EP)"
+    ],
+    "argumentacion": "El tribunal de apelación recoge la pretensión del accionante (nulidad de la acción de personal 1-47-6779 y del memorando SRI-SRI-2024-0049-M, reintegro y pagos) y las alegaciones de seguridad jurídica, motivación, trabajo y dignidad. Concluye que los cargos son de legalidad (aplicación de la LOSEP y su reglamento) y no de violación de derechos constitucionales. Examina la motivación según la sentencia 1158-17-EP/21 y estima que la acción de personal y el memorando sí contienen fundamentación suficiente. Aplica la excepción de la sentencia 2006-18-EP/24 sobre conflictos laborales con servidores públicos, que corresponden en regla general a lo contencioso administrativo, y verifica que no concurre la excepción de compromiso grave de dignidad o discriminación evidente. Concluye que son aplicables los numerales 1, 3 y 4 del artículo 42 LOGJCC y confirma la improcedencia.",
+    "pruebas": [
+      "Acciones de personal 1-38-6035, 1-13-539, 1-38-6974 y 1-47-6779",
+      "Memorando SRI-SRI-2024-0049-M de 06/03/2024",
+      "Correos electrónicos de 07/03/2024 entre el accionante y funcionarios del SRI",
+      "Oficios de Talento Humano sobre la convocatoria del concurso (código 263974) y la planificación de la partida 12820",
+      "Oficio de la Contraloría sobre la inexistencia de la orden de trabajo 003-DNA3-2014",
+      "Memorando SRI-ZPI-PTR-2025-0009-M sobre carga laboral y correos sobre permisos y llamados de atención"
+    ],
+    "motivacion": "Rechaza la apelación porque no hay violación de derechos constitucionales demostrada: la discusión sobre la aplicación de normas infraconstitucionales es de legalidad, la motivación cumple el estándar de suficiencia y el conflicto laboral debe resolverse en la jurisdicción contencioso administrativa al no concurrir las excepciones de la sentencia 2006-18-EP/24.",
+    "criterioResolucion": "La acción de protección es improcedente cuando lo alegado es un conflicto de legalidad sobre la terminación de un nombramiento provisional de un servidor público, sin violación de derechos constitucionales y sin que concurran las excepciones de compromiso grave de la dignidad o discriminación evidente; el conocimiento corresponde a la jurisdicción contencioso administrativa.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Motivación (art. 76.7.l CRE)",
+      "Derecho al trabajo (art. 33 y 326 CRE)",
+      "Dignidad en el ámbito laboral",
+      "Debido proceso"
+    ],
+    "fundamentosDeHecho": "El accionante, Jefe Zonal 8 y 9 del Departamento Jurídico de la Dirección Zonal 9 del SRI con nombramiento provisional, fue retornado a su puesto de carrera de Procurador Zonal mediante acción de personal 1-47-6779 de 07/03/2024, con efecto desde el 08/03/2024, en cumplimiento del memorando SRI-SRI-2024-0049-M. El tribunal da por acreditado que la acción de personal fue suscrita por autoridad competente y que el accionante conoció y aceptó el trámite por correo. Consta que la convocatoria del concurso para el puesto existía a 08/03/2024 según informe de Talento Humano, aunque otro informe del Ministerio del Trabajo indica que no hay concursos culminados con ganador. La sentencia de primera instancia rechazó la acción, decisión que el tribunal confirma.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

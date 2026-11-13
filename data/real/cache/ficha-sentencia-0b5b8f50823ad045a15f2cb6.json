@@ -1,0 +1,110 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29094,
+    "tokensSalida": 2322
+  },
+  "salida": {
+    "numero": "17159202400832",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86 numeral 5",
+          "88",
+          "33",
+          "75",
+          "76 numeral 7",
+          "82",
+          "11",
+          "325",
+          "426"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1 y 3",
+          "16"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "89 numeral 1",
+          "134 numeral 2",
+          "114",
+          "115 numeral 7",
+          "130 numeral 3"
+        ]
+      },
+      {
+        "norma": "Reglamento a la Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "44"
+        ]
+      },
+      {
+        "norma": "Reglamento para la Evaluación de la Condición Física del Personal Profesional de las Fuerzas Armadas",
+        "articulos": [
+          "12",
+          "13"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1249-12-EP/19",
+      "Sentencia 1901-13-EP/19",
+      "Sentencia 014-17-SEP-CC (caso 0678-12-EP)",
+      "Sentencia 014-10-SEP-CC (caso 0371-09-EP)",
+      "Sentencia 180-15-SEP-CC (caso 1755-10-EP)",
+      "Sentencia 231-12-SEP-CC (caso 0772-09-EP)",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal confirma que el accionante impugnó la sentencia de primera instancia que negó la acción por improcedencia. Examina primero si la acción procedía según la jurisprudencia de excepciones (sentencia 2006-18-EP/24) y concluye que el caso es un conflicto laboral-administrativo entre un militar y la Fuerza Terrestre, sin compromiso notorio de la dignidad del servidor ni urgencia, por lo que corresponde a la vía contencioso-administrativa. Añade que no se advierte vulneración de derechos: el acto de no idoneidad (numeral 1 del art. 89 LOPDFA) y la resolución 2024-248 aplicaron la normativa específica; la motivación se presume y el accionante no fundamentó su alegación; y la disponibilidad se fundó en el art. 115 numeral 7 de la LOPDFA. Concluye que la acción es improcedente por los numerales 1 y 3 del art. 42 LOGJCC.",
+    "pruebas": [
+      "Copias certificadas del expediente 049-2023 (fojas 354 a 567)",
+      "Informe FT-DGTH-2023-v-a3-001 de 15 de agosto de 2023",
+      "Informe No. 2023-012-CAA-CCS-FT de 23 de agosto de 2023 (notas del accionante: promedio 15,36)",
+      "Resolución 2023-080-E-1-KO-CCSFT de 25 de agosto de 2023",
+      "Certificado médico de 18 de junio de 2023 (fojas 651)",
+      "Resolución 2023-314-E-1-KO-CSS-FT de 21 de noviembre de 2023",
+      "Resolución 2024-248-E-KO-CSS-FT de 2 de septiembre de 2024 (fojas 1095 a 1099)",
+      "Informe FT-2024-E1-o-a2-030 de 25 de junio de 2024"
+    ],
+    "motivacion": "El tribunal aplica la jurisprudencia de la Corte Constitucional que exige verificar primero la vulneración de derechos y, como excepción, examinar la idoneidad de la vía ordinaria cuando el conflicto es laboral entre el Estado y un servidor público sin compromiso de dignidad o urgencia. Constata que el accionante no especificó los hechos vulneratorios de la resolución 2024-248 y que la defensa acreditó el cumplimiento del procedimiento. Confirma la improcedencia por los numerales 1 y 3 del art. 42 LOGJCC.",
+    "criterioResolucion": "Cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidores públicos, el conocimiento corresponde por regla general a la jurisdicción contencioso-administrativa, salvo que el caso comprometa notoria o gravemente la dignidad o autonomía del servidor o requiera respuesta urgente; en ausencia de estas circunstancias la acción de protección es improcedente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho al debido proceso (garantías de defensa y motivación)",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la igualdad"
+    ],
+    "fundamentosDeHecho": "El accionante, soldado de la Fuerza Terrestre, fue declarado no idóneo en el expediente 049-2023 por no alcanzar 17/20 en pruebas físicas (promedio 15,36) para el curso de ascenso. Alegó una lesión (síndrome femoropatelar) y pidió junta médica. Posteriormente, en el expediente 051-2024, la resolución 2024-248 negó su inclusión en la lista de ascenso por no haber aprobado el curso, ratificó la resolución 2024-087 y lo colocó en situación de disponibilidad. El tribunal da por constatados estos actos y que la defensa acreditó su tramitación; no examina el fondo de la lesión médica.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

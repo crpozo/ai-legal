@@ -1,0 +1,69 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20025,
+    "tokensSalida": 1423
+  },
+  "salida": {
+    "numero": "17250202400099",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "86 numeral 5",
+          "92",
+          "169",
+          "66 numeral 19"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "18",
+          "21",
+          "24",
+          "49",
+          "50 numerales 1, 2 y 3"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "101",
+          "103",
+          "271"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia No. 1214-18-EP/22",
+      "Corte Constitucional sentencia No. 007-15-SIS-CC",
+      "Corte Constitucional sentencia No. 025-15-SEP-CC (caso 0725-12-EP)",
+      "Corte Constitucional sentencia No. 182-15-SEP-CC",
+      "Corte Constitucional sentencia No. 24-22/24 (citada por la defensa del Municipio)",
+      "Corte Constitucional sentencia 00114-PGO (citada por la defensa de la AMT)"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la validez del proceso y el marco de la acción de hábeas data informativo. Constata que la AMT concedió las copias certificadas del expediente coactivo 2023-CA-6-0833 mediante providencia de 16 de abril de 2024, notificada a tres de los cuatro correos señalados, y que la providencia fue renotificada el 12 de julio de 2024. Concluye que la entrega de la documentación se produjo en audiencia, por lo que no existe negativa de acceso bajo el numeral 1 del artículo 50 LOGJCC. Considera que la falta de contestación en plazo razonable no se mantuvo como negativa tácita porque la administración sí respondió. Por ello niega la acción y rechaza la apelación de la accionante.",
+    "pruebas": [
+      "Oficio E015-02SA-2024-001 de 4 de abril de 2024",
+      "Providencia de 16 de abril de 2024 y su razón de notificación",
+      "Providencia de 12 de julio de 2024 y su razón de notificación",
+      "Expediente coactivo 2023-CA-6-0833 (fs. 41 a 512)",
+      "Oficio E015-04J-2022 de 18 de julio de 2024 (citado en audiencia)"
+    ],
+    "motivacion": "Tras verificar las notificaciones y la entrega del expediente coactivo, el tribunal estima que no se negó el acceso a la información, por lo que no se configura la causal del artículo 50 numeral 1 LOGJCC. Confirma la sentencia de primera instancia que negó la acción.",
+    "criterioResolucion": "No se configura la causal de negativa de acceso (art. 50 numeral 1 LOGJCC) cuando la entidad concedió y entregó las copias certificadas del expediente coactivo y la falta de notificación de una providencia fue subsanada con una renotificación.",
+    "citaTextual": "La Corte Constitucional ha señalado que la acción de hábeas data no puede ser incoada como medio para requerir la entrega física de soporte material o electrónico de documentos en los que se aleje que está contenida la información personal del titular sino para conocer su existencia tener acceso a él y ejercer los actos contenidos en el artículo 92 de la Constitución",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Protección de datos de carácter personal (art. 66 numeral 19 CRE)",
+      "Acceso a documentos y datos personales (art. 92 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante solicitó el 4 de abril de 2024 copias certificadas de títulos de crédito, razones de notificación y requerimientos de pago voluntario del proceso coactivo 2023-CA-6-0833. La AMT concedió las copias mediante providencia de 16 de abril de 2024, notificada a tres de los cuatro correos señalados, y renotificó el 12 de julio de 2024. Durante la audiencia se entregó el expediente. El tribunal de primera instancia negó la acción y la accionante apeló oralmente.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

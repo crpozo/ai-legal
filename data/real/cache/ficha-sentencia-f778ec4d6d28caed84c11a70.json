@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 18583,
+    "tokensSalida": 3728
+  },
+  "salida": {
+    "numero": "17203202500729",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "86.5",
+          "87",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "3",
+          "4 numeral 14",
+          "6",
+          "16",
+          "24",
+          "26",
+          "40",
+          "41",
+          "42 numerales 1, 3, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "31",
+          "217"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 1285-13-EP/19",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación recuerda que, en principio, el juez debe examinar primero si hubo vulneración de derechos. Luego identifica las excepciones jurisprudenciales (sentencias 1101-20-EP/22, 2901-19-EP/23, 1178-19-JP/21 y otras) y concluye que la pretensión cae en ellas: se pide el levantamiento de una hipoteca abierta y que se declare extinguida una obligación contractual por pago y prescripción, es decir, un conflicto de mera legalidad y la declaración de un derecho. Añade que el accionante ya activó la vía ordinaria (excepciones a la coactiva ante el Tribunal Distrital de lo Contencioso Administrativo), por lo que la acción es improcedente conforme al art. 42 numerales 1, 3, 4 y 5 LOGJCC. Por ello no examina de fondo la vulneración alegada. Confirma la sentencia de primera instancia que negó la acción.",
+    "pruebas": [
+      "Certificado de gravámenes del Registro de la Propiedad del cantón Rumiñahui, que consta la hipoteca abierta",
+      "Escritura de hipoteca abierta de 2014 (referida por el accionante y el banco)",
+      "Correo electrónico de funcionaria del Banco del Pacífico sobre el pago del crédito educativo (alegado por el accionante)",
+      "Demanda de excepciones a la coactiva presentada el 17 de febrero de 2022 (No. 17811-2022-00387)",
+      "Providencia de 31 de mayo de 2022 que ordenó suspender el proceso coactivo (alegada por el accionante)"
+    ],
+    "motivacion": "La acción no se orienta a tutelar derechos constitucionales sino a obtener la declaración de extinción de obligaciones contractuales y el levantamiento de un gravamen hipotecario. La vía adecuada es la justicia ordinaria, que el propio accionante ya activó. Por tanto, el tribunal considera que la acción es improcedente sin necesidad de analizar la vulneración alegada, y niega el recurso.",
+    "criterioResolucion": "Si la pretensión de la acción de protección es la extinción de una obligación proveniente de una relación contractual (en este caso, levantar una hipoteca y declarar extinta una deuda por pago y prescripción) y el accionante ya acudió a la vía ordinaria, la acción es improcedente por tratarse de un conflicto de mera legalidad, sin que el juez deba analizar la vulneración de derechos alegada.",
+    "citaTextual": "Toda vez que el ordenamiento jurídico ha previsto las especificidades en materia de extinción de obligaciones provenientes de relaciones contractuales, lo que está ligado a la voluntad de las partes, pretender solucionar conflictos provenientes de relaciones contractuales a través de una acción de protección constituye la desnaturalización del objeto de esta garantía, pues dicha pretensión excede el objeto de amparo directo y eficaz de un derecho constitucional e invade la autonomía de la voluntad de las partes.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Libertad de contratación",
+      "Propiedad"
+    ],
+    "fundamentosDeHecho": "El accionante Luis Iván Nolivos Espinosa alega que una hipoteca abierta de 2014 sobre un predio en Sangolquí, que garantizaba un crédito educativo de su hijo, debe levantarse porque ese crédito está pagado. Sostiene además que una deuda de tarjeta de crédito está prescrita y que el banco inició un juicio coactivo. Consta que presentó excepciones a la coactiva ante el Tribunal Distrital de lo Contencioso Administrativo (No. 17811-2022-00387), y que el proceso no ha llegado a audiencia preliminar. El tribunal no da por probado ningún derecho constitucional vulnerado; considera que el conflicto es contractual y ya se encuentra en la vía ordinaria.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

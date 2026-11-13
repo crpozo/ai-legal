@@ -1,0 +1,73 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17674,
+    "tokensSalida": 1228
+  },
+  "salida": {
+    "numero": "17113202600024",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "89",
+          "43",
+          "76.7.l",
+          "77",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "44.1",
+          "43"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "162",
+          "534",
+          "537",
+          "519",
+          "558",
+          "592",
+          "594"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Niñez y Adolescencia",
+        "articulos": [
+          "24"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución No. 14-2021 de la Corte Nacional de Justicia",
+      "Sentencia No. 319-JP/20 de la Corte Constitucional"
+    ],
+    "argumentacion": "El tribunal afirma su competencia por tratarse de una privación de libertad dispuesta en proceso penal. Verifica que la prisión preventiva esté motivada: expone los elementos de convicción, el riesgo de fuga y la inidoneidad de medidas alternativas según la jueza. Examina el alegado derecho de lactancia: constata el nacimiento del hijo el 4 de julio de 2025 y concluye que el supuesto del artículo 537 numeral 1 del COIP no aplica por haber transcurrido el plazo allí previsto. Descarta que la sentencia 319-JP/20 sea aplicable, por tratarse de casos laborales. Concluye que la medida no es ilegal, arbitraria ni ilegítima, y que no es necesaria la pericia social solicitada.",
+    "pruebas": [
+      "Certificado de nacimiento del hijo (fojas 1)",
+      "Grabación de la audiencia de flagrancia (fojas 29)",
+      "Versiones de la denunciante y de los adultos mayores",
+      "Reconocimiento del lugar de los hechos",
+      "Pericia psicológica del señor Segundo Carlos Camino Tixi"
+    ],
+    "motivacion": "La motivación se basa en que la resolución de la jueza de primera instancia enuncia las normas y explica su aplicación a los hechos (artículo 76.7.l de la Constitución), y en que el alegato de lactancia no encaja en el supuesto del artículo 537 del COIP.",
+    "criterioResolucion": "La prisión preventiva debe justificarse correctamente y de conformidad con la ley. Se ordenará solo sí se ha demostrado que la persona investigada podría fugarse, caso contrario, se deben dictar otras medidas menos severas para garantizar su presencia al juicio.",
+    "citaTextual": "La prisión preventiva debe justificarse correctamente y de conformidad con la ley. Se ordenará solo sí se ha demostrado que la persona investigada podría fugarse, caso contrario, se deben dictar otras medidas menos severas para garantizar su presencia al juicio.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Libertad personal",
+      "Motivación de las resoluciones (art. 76.7.l CRE)",
+      "Derecho de lactancia materna",
+      "Interés superior del niño"
+    ],
+    "fundamentosDeHecho": "Se dictó prisión preventiva el 10 de septiembre de 2026 en audiencia de flagrancia contra la accionante por presunto secuestro extorsivo (art. 162 COIP) en el proceso penal 17282-2026-01515. El hijo de la accionante, nacido el 4 de julio de 2025, tenía 1 año, 2 meses y 6 días a esa fecha. El tribunal niega la acción y concede la apelación del accionante.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

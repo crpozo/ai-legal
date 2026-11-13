@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22908,
+    "tokensSalida": 1603
+  },
+  "salida": {
+    "numero": "17232202600098",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "75",
+          "76 numeral 1",
+          "76 numeral 3",
+          "76 numeral 7 literales a, b, c, f, h",
+          "82",
+          "11 numeral 5",
+          "88",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "22",
+          "114 numeral 1",
+          "164",
+          "165",
+          "166",
+          "192",
+          "279",
+          "280"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 102-13-SEP-CC (caso 0831-12-EP)",
+      "Sentencia 0380-10-EP",
+      "Sentencia 2390-16-EP de 10 de marzo de 2021",
+      "Sentencia 026-14-SEP-CC de 12 de febrero de 2014"
+    ],
+    "argumentacion": "El tribunal de apelación examina primero si hubo vulneración de derechos antes de considerar la vía ordinaria. Aplica la inversión de la carga de la prueba contra la entidad pública (art. 86.3 CRE y art. 16 LOGJCC). Constata que no consta en el expediente constitucional notificación personal, por boletas ni por otro medio de la orden de pago inmediato del 13 de octubre de 2025, y que las boletas no cumplen los requisitos del art. 166 COA. Concluye que hubo violación de la garantía de defensa (art. 76.7.a CRE) y, como consecuencia procesal, de la seguridad jurídica (art. 82 CRE). Descarta que la comparecencia posterior del accionante subsane la falta de notificación de la orden de pago.",
+    "pruebas": [
+      "Informe de notificación del título 068332-PIC-2025 y capturas de pantalla de la DINARDAP (según CNT)",
+      "Fojas 2 y 3 del expediente coactivo (constancia de notificación del título y boletas)",
+      "Fojas 8: orden de pago inmediato JC-PIC-077678-2025 del 13 de octubre de 2025",
+      "Fojas 9: comparecencia del accionante en la coactiva (alegada por CNT)",
+      "Certificado de residencia en Puerto Quito y certificado de trabajo (presentados en audiencia de primera instancia)"
+    ],
+    "motivacion": "La falta de constancia de notificación válida de la orden de pago inmediato impide tener por cumplida la garantía de defensa. La carga probatoria recae en CNT por la inversión legal, y CNT no demostró lo contrario. La comparecencia alegada no equivale a notificación de la orden de pago. Por ello se confirma la sentencia de primera instancia en todas sus partes.",
+    "criterioResolucion": "Cuando la entidad pública no demuestra que notificó la orden de pago inmediato dentro del procedimiento coactivo en la forma prevista por el COA, y aplicando la inversión de la carga de la prueba, se vulnera la garantía de defensa (art. 76.7.a CRE) y, por consecuencia procesal, la seguridad jurídica (art. 82 CRE).",
+    "citaTextual": "por lo analizado es evidente la vulneración al derecho al debido proceso en la garantía de defensa prevista en el artículo 76 numeral 7 letra a) de la Constitución de la República, que dice “Nadie podrá ser privado del derecho a la defensa en ninguna etapa o grado del procedimiento.”",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso (garantía de defensa), art. 76 numeral 7 literales a, b y c CRE",
+      "Seguridad jurídica, art. 82 CRE"
+    ],
+    "fundamentosDeHecho": "Coactiva iniciada por CNT por un título de crédito de 30 de junio de 2025 por servicio telefónico que el accionante niega haber contratado. El título se notificó en una dirección obtenida de DINARDAP, distinta del domicilio que alega el accionante (Puerto Quito). No consta notificación válida de la orden de pago inmediato del 13 de octubre de 2025 ni de medidas cautelares previas, y se retuvieron fondos bancarios. El accionante solicitó copias en enero de 2026. El tribunal considera acreditado que no hubo notificación válida de la orden de pago.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

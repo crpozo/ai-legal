@@ -1,0 +1,89 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17679,
+    "tokensSalida": 1615
+  },
+  "salida": {
+    "numero": "17230202520323",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 33",
+          "Art. 76",
+          "Art. 82",
+          "Art. 86",
+          "Art. 87",
+          "Art. 88",
+          "Art. 66 numeral 2",
+          "Art. 436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 25.1",
+          "Art. 39 al 42",
+          "Art. 41",
+          "Art. 42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "Art. 316"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "Art. 5 literal c"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 045-11-SEP-CC",
+      "Sentencia No. 001-16-PJC-CC, caso 530-10-JP",
+      "Caso No. 0831-12-EP, Sentencia No. 102-13-SEP-CC",
+      "Caso No. 0380-10-EP, Sentencia No. 016-13-SEP-CC",
+      "Caso No. 1000-12-EP",
+      "Sentencia No. 246-15-SEP-CC, caso 1194-13-EP",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia No. 1504-19-JP/21",
+      "Caso No. 0343-09-EP",
+      "Sentencia No. 0055-11-SEP-CC",
+      "Sentencia No. 2300-21-EP/25"
+    ],
+    "argumentacion": "El tribunal afirma que la acción de protección es excepcional y no procede para asuntos de mera legalidad. Analiza cada derecho alegado (trabajo, debido proceso y defensa, seguridad jurídica, vida digna). Concluye que el registro de impedimento del Ministerio del Trabajo es un acto registral o informativo de simple administración, que no crea derechos ni sanciones, y que la accionante conocía el juicio coactivo por una acción de protección previa. Concluye también que la pretensión de dejar sin efecto el impedimento y las retenciones corresponde a la vía ordinaria. Confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Certificado de impedimento de ejercer cargo público del Ministerio del Trabajo de 02 de septiembre de 2025",
+      "Memorando MEM-DATH-2025-0547-ME",
+      "Certificado de cuenta de ahorros del Banco del Pacífico con retenciones judiciales",
+      "Copias certificadas de la sentencia de acción de protección No. 17282-2024-02378 (fs. 212 a 221)",
+      "Acta de audiencia pública de 22 de septiembre de 2025 (fs. 417 a 422)"
+    ],
+    "motivacion": "Se justifica con la distinción entre violación de derechos constitucionales y asuntos de legalidad, citando precedentes de la Corte Constitucional. Se afirma que la accionante tuvo oportunidad de defensa en el juicio coactivo y que el registro del Ministerio del Trabajo es un acto informativo. Se concluye que la sentencia de primera instancia está debidamente motivada.",
+    "criterioResolucion": "El registro de impedimento para ejercer cargo público, por ser un acto de simple administración e informativo, no es susceptible de acción de protección; las pretensiones de legalidad o de extinción de obligaciones deben ventilarse en la vía ordinaria.",
+    "citaTextual": "el registro emitido por el Ministerio del Trabajo no constituye un acto administrativo constitutivo o sancionatorio autónomo, sino un acto registral e informativo de simple administración que compila datos sobre prohibiciones e inhabilidades legales vigentes reportadas por las instituciones del sector público",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Debido proceso",
+      "Derecho a la defensa",
+      "Derecho a la vida digna",
+      "Seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La accionante, funcionaria pública del Ministerio de Energía y Minas, fue reportada por CONAFIPS como deudora del sector público, lo que motivó un registro de impedimento para ejercer cargo público y retenciones en su cuenta bancaria. Afirma no haber sido notificada del juicio coactivo. El tribunal considera acreditado que conocía el juicio coactivo por una acción de protección previa (No. 17282-2024-02378), que ordenó retrotraer el procedimiento. Posteriormente fue desvinculada de su cargo.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

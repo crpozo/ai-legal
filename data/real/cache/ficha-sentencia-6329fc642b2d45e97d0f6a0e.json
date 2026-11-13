@@ -1,0 +1,58 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25266,
+    "tokensSalida": 3364
+  },
+  "salida": {
+    "numero": "17282202400683",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "35",
+          "43",
+          "66 numeral 4",
+          "82",
+          "332"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40 numeral 1",
+          "19"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 3-19-JP/20 y acumulados (Corte Constitucional)",
+      "Sentencia No. 1894-10-JP/20 (Corte Constitucional)",
+      "Sentencia No. 1797-18-EP/20 (Corte Constitucional)",
+      "Sentencia No. 246-15-SEP-CC, caso No. 1194-13-EP (Corte Constitucional)"
+    ],
+    "argumentacion": "El tribunal de alzada revisa el problema jurídico de si la remoción de la accionante, en periodo de lactancia, de un cargo de libre remoción como Secretaria General vulneró trabajo, protección reforzada, igualdad y no discriminación, y seguridad jurídica. Concluye que la accionante estaba bajo estabilidad laboral reforzada por lactancia y que la CNT no lo advirtió. Aplica la regla de la sentencia 3-19-JP/20 según la cual la terminación se presume discriminatoria salvo prueba del empleador. Descarta que se configure una 'nueva administración' para la regla de 30 días, porque el gerente general era subrogante. Por ello no aplica el párrafo 185 ni el 188 de esa sentencia. Declara la vulneración de los cuatro derechos y revoca la sentencia de primera instancia.",
+    "pruebas": [
+      "Acción de personal No. GTH-NSP-0575-2024 de 21 de marzo de 2024",
+      "Informe técnico No. CNTEP-GNDEO-TH-2024-029-MX de 21 de marzo de 2024",
+      "Resolución No. CNTEP-GGE-2024-0012-R de 13 de marzo de 2024 (delegación de remoción)",
+      "Documentación de la condición de lactancia de la accionante"
+    ],
+    "motivacion": "El tribunal sostiene que la accionante se encontraba en periodo de lactancia y gozaba de estabilidad reforzada. La CNT no demostró un incumplimiento comprobado de funciones que justificara la remoción. La figura de subrogación del gerente general no constituye nueva administración a efectos de la regla de 30 días. Por tanto, la remoción vulneró los derechos invocados, y se ordena pagar las remuneraciones dejadas de percibir desde el 21 de marzo de 2024 hasta el 27 de marzo de 2025, y publicar disculpas públicas en la página web de la CNT.",
+    "criterioResolucion": "En cargos de libre remoción, si la terminación de una mujer en periodo de lactancia coincide con la pérdida de confianza, se presume discriminatoria y el empleador debe demostrar incumplimiento comprobado de sus funciones. La excepción de 30 días tras una nueva administración no aplica cuando el cambio lo produce un gerente subrogante.",
+    "citaTextual": "Si la mujer venía trabajando en el cargo de libre remoción y la supuesta “pérdida de confianza” coincide con la noticia del embarazo o con su periodo de cuidado o lactancia, se presumirá que la terminación de la relación laboral se basa en un hecho discriminatorio, por lo que el empleador deberá demostrar que la terminación no se produjo por razón de embarazo o lactancia, sino por incumplimiento comprobado del desempeño de su trabajo.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al trabajo (art. 33 CRE)",
+      "Protección reforzada de mujer en periodo de lactancia (arts. 35 y 43 CRE)",
+      "Igualdad formal, material y no discriminación (art. 66 numeral 4 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Derechos reproductivos y estabilidad laboral (art. 332 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante, Secretaria General de la CNT en cargo de libre remoción, se encontraba en periodo de lactancia (permiso hasta el 27 de marzo de 2025). Mediante acción de personal No. GTH-NSP-0575-2024 de 21 de marzo de 2024, basada en el informe técnico No. CNTEP-GNDEO-TH-2024-029-MX, fue removida del cargo. El Gerente General que delegó la facultad era subrogante. La primera instancia había negado la acción.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

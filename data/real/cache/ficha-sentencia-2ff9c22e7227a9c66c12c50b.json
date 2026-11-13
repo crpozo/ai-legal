@@ -1,0 +1,61 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 27153,
+    "tokensSalida": 1532
+  },
+  "salida": {
+    "numero": "17297202402408",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "88",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1 y 4"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 224-23-JP/24",
+      "Sentencia 26-18-IN/20 y acumulados",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 376-20-JP/21",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 102-13-SEP-CC (caso 0380-10-EP)",
+      "Sentencia 002-10-SIC-CC (caso 0020-09-IC)"
+    ],
+    "argumentacion": "El tribunal revisa si la acción de protección era procedente. Recuerda que, por regla general, debe analizarse primero la vulneración alegada, pero que la Corte Constitucional admite excepciones en conflictos laborales entre el Estado y sus servidores. Identifica que el acto impugnado es una acción de personal de 2015 de cese por compra de renuncia con indemnización, que es un conflicto laboral entre la accionante y la Contraloría, y que no se alega discriminación ni una urgencia que comprometa la dignidad de la servidora. Concluye que la vía idónea es la contencioso-administrativa y que la acción es improcedente por el artículo 42 numerales 1 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Acción de personal 944-A (15 de junio de 2015, vigencia 19 de julio de 2015)",
+      "Informe de plan de optimización de talento humano y certificación presupuestaria de la indemnización (fs. 88 a 132, según cita la jueza de primera instancia)"
+    ],
+    "motivacion": "Aplica la excepción jurisprudencial de la sentencia 2006-18-EP/24 para conflictos laborales de servidores públicos, confirma la improcedencia por existir vía contencioso-administrativa y confirma la sentencia de primera instancia que negó la acción.",
+    "criterioResolucion": "Cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidores públicos, el conocimiento corresponde, por regla general, a la jurisdicción contencioso-administrativa; la acción de protección es improcedente salvo que el caso comprometa notoria o gravemente la dignidad o autonomía del servidor (discriminación evidente) o requiera respuesta urgente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Derecho al trabajo en su elemento de estabilidad laboral",
+      "Derecho a la vida digna y a la seguridad social",
+      "Derecho a la motivación (alegado en primera instancia)"
+    ],
+    "fundamentosDeHecho": "La accionante fue cesada de sus funciones como Especialista de Auditoría 3 de la Contraloría General del Estado mediante la acción de personal 944-A, de 15 de junio de 2015, bajo la figura de compra de renuncia con indemnización (Decreto 813). Alega que no existió renuncia voluntaria y que la inconstitucionalidad declarada en la sentencia 26-18-IN/20 debía afectar sus efectos. El tribunal no entra al fondo de las vulneraciones y tiene por probado que la accionante no fue embarazada al momento de la desvinculación ni consta situación de urgencia o discriminación. El texto no indica el monto de indemnización pagado ni la fecha exacta de notificación del acto más allá de la mencionada en la acción de personal.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

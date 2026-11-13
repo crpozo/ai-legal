@@ -67,26 +67,22 @@ function recorridoCausa({ causa }) {
 }
 
 function recorridoJuez({ juez }) {
-  const f = juez.filtros, n = juez.procesos.length, p = juez.patrones;
+  const f = juez.filtros, n = juez.procesos.length, p = juez.patrones, t = juez.estadisticas.tiempos;
   return [
     { titulo: "1. Ingresar al sistema y precisar el juez y tipo de proceso", pasos: [
-      [1, "Ingresa al módulo de consulta por juez", esc(juez.fuente.portal)],
-      [2, "Se abre «Procesos resueltos por juez» (E-SATJE)", "Módulo abierto"],
+      [1, "Ingresa al módulo de consulta por juez", esc(juez.fuente.url ?? juez.fuente.portal)],
+      [2, "Se abre «Procesos resueltos por juez» (E-SATJE 2020)", "Módulo abierto"],
       [3, "Identifica los campos de búsqueda", "Identificación · Apellidos y nombres · Materia · Tipo de acción · Asunto o delito"],
-      [4, "Ingresa la información del juez", `<b>${esc(juez.juez.nombre)}</b>${juez.juez.cedula ? ` · cédula ${esc(juez.juez.cedula)}` : " · búsqueda por nombre"}`],
+      [4, "Ingresa la información del juez", `<b>${esc(juez.juez.nombre)}</b>${f.materia ? ` · Materia: <b>${esc(f.materia)}</b>` : ""}${f.tipoAccion ? ` · Tipo de acción: <b>${esc(f.tipoAccion)}</b>` : ""}`],
     ] },
     { titulo: "2. Aplicar filtros para encontrar procesos específicos", pasos: [
-      [5, "Completa los filtros principales", [f.materia && `Materia: <b>${esc(f.materia)}</b>`, f.tipoAccion && `Tipo de acción: <b>${esc(f.tipoAccion)}</b>`, f.asunto && `Asunto: <b>${esc(f.asunto)}</b>`].filter(Boolean).join(" · ") || "Sin filtros adicionales"],
-      [6, "Define el período de búsqueda", f.desde && f.hasta ? `${fecha(f.desde)} a ${fecha(f.hasta)}` : "Sin período"],
+      [5, "Usa los filtros adicionales y define el período", f.desde && f.hasta ? `Del ${fecha(f.desde)} al ${fecha(f.hasta)}` : "Sin período"],
     ] },
     { titulo: "3. Revisar los resultados de los procesos resueltos", pasos: [
-      [7, "El sistema presenta los resultados", `${plural(n, "proceso resuelto", "procesos resueltos")}`],
-      [8, "Verifica que correspondan al juez y al tipo de proceso", `La IA revisó los ${n}, sin carga para una persona`],
-    ] },
-    { titulo: "4. Analizar las decisiones del juez", pasos: [
-      [9, "Selecciona procesos resueltos de una misma materia", `${plural(n, "resolución fichada", "resoluciones fichadas")}`],
-      [10, "Compara los fundamentos jurídicos", "Normativa · Jurisprudencia · Argumentación · Pruebas · Motivación · Resolución"],
-      [11, "Genera el reporte de patrones", `${plural(p.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")} · ${plural(p.cambiosDeInterpretacion.length, "cambio de interpretación", "cambios de interpretación")} · ${plural(p.diferenciasEntreCasosSimilares.length, "diferencia", "diferencias")} entre casos similares`],
+      [7, "El sistema presenta los resultados tras superar el CAPTCHA", `Verificación CAPTCHA completada por el usuario · ${plural(n, "proceso", "procesos")} con resolución de segunda instancia`],
+      [8, "La IA revisa todos los procesos, solo en segunda instancia", `Carpeta de la Sala de la Corte Provincial abierta en cada proceso; leída la resolución final (${plural(n, "resolución", "resoluciones")})`],
+      [8, "Criterio, fundamentos de hecho y de derecho, y cambios de criterio", `${plural(p.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")} · ${plural(p.cambiosDeInterpretacion.length, "cambio de criterio", "cambios de criterio")} · ${plural(p.diferenciasEntreCasosSimilares.length, "diferencia", "diferencias")} entre casos similares`],
+      [8, "Tiempo que tarda en resolver: promedio y anomalías", t ? `Promedio ${t.promedioDias} días · mediana ${t.medianaDias} · ${plural(t.anomalias.length, "anomalía", "anomalías")} sobre ${t.umbralAnomalia} días` : "Sin datos de tiempo"],
     ] },
   ];
 }
@@ -160,10 +156,10 @@ function tarjetasSeguimiento(datos) {
   if (datos.juez) {
     const j = datos.juez;
     filas.push(`<button type="button" class="seguimiento" data-q="${esc(j.juez.nombre)}">
-      <span class="seg-cab"><b>Juez</b><span class="etiqueta">${plural(j.procesos.length, "resolución", "resoluciones")}</span></span>
+      <span class="seg-cab"><b>Función Judicial · Procesos resueltos por juez</b><span class="etiqueta">${plural(j.procesos.length, "resolución", "resoluciones")}</span></span>
       <span class="seg-titulo">${esc(j.juez.nombre)}</span>
       <span class="tenue">${[j.filtros.materia, j.filtros.tipoAccion].filter(Boolean).map(esc).join(" · ")}</span>
-      <span class="seg-pie"><span>${plural(j.patrones.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")}</span></span>
+      <span class="seg-pie"><span>${plural(j.patrones.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")}</span><span>${plural(j.patrones.cambiosDeInterpretacion.length, "cambio de criterio", "cambios de criterio")}</span>${j.estadisticas.tiempos ? `<span>Mediana de ${j.estadisticas.tiempos.medianaDias} días en resolver</span>` : ""}</span>
     </button>`);
   }
   return filas;
@@ -412,66 +408,142 @@ function vistaCausa(datos) {
 
 /* ───────────── Flujo II · Juez ───────────── */
 
+const APELACION = { confirma: "Confirma la sentencia", revoca: "Revoca la sentencia", reforma: "Reforma la sentencia", no_aplica: "No decide apelación" };
+
 function vistaJuez(datos) {
   const { juez } = datos;
-  const p = juez.patrones, e = juez.estadisticas, f = juez.filtros;
+  const p = juez.patrones, e = juez.estadisticas, f = juez.filtros, t = e.tiempos, procesos = juez.procesos;
   const max = (xs) => Math.max(1, ...xs.map((x) => x.n));
   const barras = (xs, etiqueta) => xs.map((x) => `<div class="barra"><span>${esc(etiqueta(x))}</span><span><i style="width:${(100 * x.n) / max(xs)}%"></i></span><span>${x.n}</span></div>`).join("");
   const filtros = [f.materia, f.tipoAccion, f.asunto, f.desde && f.hasta ? `${fecha(f.desde)} a ${fecha(f.hasta)}` : ""].filter(Boolean).map(esc).join(" · ");
+  const refs = (ns) => `<span class="chips">${ns.map((n) => `<button type="button" class="chip" data-proc="${esc(n)}">${esc(n)}</button>`).join("")}</span>`;
+  const aceptadas = procesos.filter((x) => x.ficha.decision === "acepta" || x.ficha.decision === "acepta_parcialmente").length;
+  const hallazgos = (titulo, items, pinta, vacio, paso = "Paso 8") => bloque(`${titulo} · ${items.length}`, items.length ? `<ul class="filas">${items.map(pinta).join("")}</ul>` : `<p class="tenue">${vacio}</p>`, { paso });
   const html = `
     <section class="portada">
       <div class="portada-izq">
-        <p class="sobre">Procesos resueltos por juez</p>
+        <p class="sobre">Procesos resueltos por juez · segunda instancia</p>
         <h1>${esc(juez.juez.nombre)}</h1>
         <p class="meta">${filtros}</p>
         <div class="cifras">
           ${cifra("Resoluciones analizadas", e.total)}
-          ${cifra("Criterios reiterados", p.criteriosReiterados.length)}
-          ${cifra("Cambios de interpretación", p.cambiosDeInterpretacion.length)}
+          ${cifra("Acciones que prosperan", `${Math.round((100 * aceptadas) / Math.max(1, e.total))}%`)}
+          ${cifra(t ? "Días en resolver (mediana)" : "Criterios reiterados", t ? t.medianaDias : p.criteriosReiterados.length)}
         </div>
       </div>
       <div class="portada-der">
-        <header><h2>Cómo decide este juez</h2><span class="paso-ref">Paso 11</span></header>
+        <header><h2>Cómo decide este juez</h2><span class="paso-ref">Paso 8</span></header>
         <p class="lectura">${esc(p.resumenEjecutivo)}</p>
       </div>
     </section>
 
-    <div class="columnas">
-      <div class="principal">
-        ${bloque("Criterios reiterados", p.criteriosReiterados.length ? `<ul class="filas">${p.criteriosReiterados.map((c) => `<li><span class="etiqueta">solidez ${esc(c.solidez)}</span> ${esc(c.criterio)}<br>${procs(c.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">La muestra no muestra criterios reiterados.</p>`, { paso: "Paso 11" })}
-        ${bloque("Cambios de interpretación", p.cambiosDeInterpretacion.length ? `<ul class="filas">${p.cambiosDeInterpretacion.map((c) => `<li><b>${esc(c.tema)}</b><dl class="pares"><dt>Antes</dt><dd>${esc(c.antes)}</dd><dt>Después</dt><dd>${esc(c.despues)}</dd></dl>${procs(c.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">No se detectaron cambios.</p>`, { paso: "Paso 11" })}
-        ${bloque("Diferencias entre casos aparentemente similares", p.diferenciasEntreCasosSimilares.length ? `<ul class="filas">${p.diferenciasEntreCasosSimilares.map((d) => `<li>${esc(d.descripcion)}<p class="implica"><b>Uso estratégico.</b> ${esc(d.utilidadEstrategica)}</p>${procs(d.procesos)}</li>`).join("")}</ul>` : `<p class="tenue">No se detectaron diferencias.</p>`, { paso: "Paso 11" })}
+    <nav class="subtabs" role="tablist" aria-label="Secciones del juez">
+      <button role="tab" data-panel="resumen" aria-selected="true">Resumen</button>
+      <button role="tab" data-panel="criterios">Criterios <span>${p.criteriosReiterados.length + p.cambiosDeInterpretacion.length + p.diferenciasEntreCasosSimilares.length + (p.senalesDeArbitrariedad?.length ?? 0)}</span></button>
+      ${t ? `<button role="tab" data-panel="tiempos">Tiempos y anomalías <span>${t.anomalias.length}</span></button>` : ""}
+      <button role="tab" data-panel="resoluciones">Resoluciones <span>${procesos.length}</span></button>
+      <button role="tab" data-panel="estrategia">Estrategia</button>
+      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
+    </nav>
+
+    <div class="panel" data-panel="resumen">
+      <div class="tablero">
+        <section class="tesela" data-ir-panel="criterios">
+          <h3>Criterios identificados</h3>
+          <strong>${p.criteriosReiterados.length}</strong>
+          <p>${plural(p.cambiosDeInterpretacion.length, "cambio de criterio", "cambios de criterio")} · ${plural(p.diferenciasEntreCasosSimilares.length, "diferencia", "diferencias")} entre casos similares</p>
+          <div class="onda" aria-hidden="true">${Array.from({ length: 32 }, (_, k) => `<i style="height:${8 + Math.round(26 * Math.abs(Math.sin(k * 0.45)) * (1 - Math.abs(k - 16) / 20))}px"></i>`).join("")}</div>
+        </section>
+        ${bloque("Cómo resuelve", `${barras(e.porDecision, (x) => DECISIONES[x.decision])}${e.porApelacion ? `<h5 class="sub">Frente a la sentencia de primera instancia</h5>${barras(e.porApelacion, (x) => APELACION[x.apelacion] ?? x.apelacion)}` : ""}`)}
+        ${e.porAccion ? bloque("Por tipo de acción", `<ul class="atencion">${e.porAccion.map((a) => `<li><button type="button" data-accion="${esc(a.accion)}"><span><b>${esc(a.accion)}</b><small>${a.aceptadas} de ${a.n} prosperan · mediana ${a.medianaDias} días</small></span><strong>${a.n}</strong></button></li>`).join("")}</ul>`) : bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma))}
       </div>
-      <aside class="lateral">
-        ${bloque(`Resolución · ${e.total} procesos`, barras(e.porDecision, (x) => DECISIONES[x.decision]), { paso: "Paso 10" })}
-        ${bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma), { paso: "Paso 10" })}
-        ${bloque("Recomendaciones para litigar ante este juez", lista(p.recomendaciones))}
-        ${bloque("Limitaciones del análisis", lista(p.limitaciones))}
-      </aside>
+      ${p.criterioPorAccion?.length ? `<div class="par">${p.criterioPorAccion.map((c) => bloque(c.accion, `<p>${esc(c.criterio)}</p><dl class="pares"><dt>Fundamentos de derecho</dt><dd>${esc(c.fundamentosDeDerecho)}</dd><dt>Fundamentos de hecho</dt><dd>${esc(c.fundamentosDeHecho)}</dd></dl>${refs(c.procesos)}`, { paso: "Paso 8" })).join("")}</div>` : ""}
+      ${e.porAccion ? bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma)) : ""}
     </div>
 
-    <section class="bloque">
-      <header><h3>Resoluciones analizadas · ${juez.procesos.length}</h3><span class="paso-ref">Pasos 9–10</span></header>
-      ${juez.procesos.map((x) => `
-      <details class="actuacion">
-        <summary><time>${fecha(x.fechaResolucion)}</time><span class="etiqueta">${esc(DECISIONES[x.ficha.decision])}</span><span class="titulo">${esc(x.asunto)} <span class="ref">${esc(x.numero)}</span></span></summary>
-        <div class="detalle">
-          <p class="tenue">${esc(x.partes)} · ${esc(x.dependencia)}</p>
-          <div><h5>Resolución</h5><p>${esc(x.ficha.criterioResolucion)}</p><blockquote>«${esc(x.ficha.citaTextual)}»</blockquote></div>
-          <div><h5>Normativa</h5>${lista(x.ficha.normativa, (n) => `${esc(n.norma)}${n.articulos.length ? `, art. ${n.articulos.map(esc).join(", ")}` : ""}`)}</div>
-          <div><h5>Jurisprudencia</h5>${lista(x.ficha.jurisprudencia)}</div>
-          <div><h5>Argumentación</h5><p>${esc(x.ficha.argumentacion)}</p></div>
-          <div><h5>Pruebas</h5>${lista(x.ficha.pruebas)}</div>
-          <div><h5>Motivación</h5><p>${esc(x.ficha.motivacion)}</p></div>
-        </div>
-      </details>`).join("")}
-    </section>
+    <div class="panel" data-panel="criterios" hidden>
+      ${hallazgos("Criterios reiterados", p.criteriosReiterados, (c) => `<li><span class="etiqueta">solidez ${esc(c.solidez)}</span> ${esc(c.criterio)}<br>${refs(c.procesos)}</li>`, "La muestra no muestra criterios reiterados.")}
+      ${hallazgos("Cambios de criterio", p.cambiosDeInterpretacion, (c) => `<li><b>${esc(c.tema)}</b><dl class="pares"><dt>Antes</dt><dd>${esc(c.antes)}</dd><dt>Después</dt><dd>${esc(c.despues)}</dd></dl>${refs(c.procesos)}</li>`, "No se detectaron cambios de criterio.")}
+      ${hallazgos("Diferencias entre casos aparentemente similares", p.diferenciasEntreCasosSimilares, (d) => `<li>${esc(d.descripcion)}<p class="implica"><b>Uso estratégico.</b> ${esc(d.utilidadEstrategica)}</p>${refs(d.procesos)}</li>`, "No se detectaron diferencias.")}
+      ${p.senalesDeArbitrariedad ? hallazgos("Señales de arbitrariedad", p.senalesDeArbitrariedad, (d) => `<li>${esc(d.descripcion)}<br>${refs(d.procesos)}</li>`, "Las resoluciones analizadas no muestran indicios concretos de arbitrariedad.") : ""}
+    </div>
 
-    <details class="bloque plegable">
-      <summary><h3>Recorrido del agente · los 11 pasos del flujograma</h3></summary>
+    ${t ? `<div class="panel" data-panel="tiempos" hidden>
+      ${bloque("Tiempo en resolver", `<div class="despacho"><div class="cifras">${cifra("Promedio (días)", t.promedioDias)}${cifra("Mediana (días)", t.medianaDias)}${cifra("Nueve de cada diez, en (días)", t.p90Dias)}${cifra("Máximo (días)", t.maxDias)}</div><div class="columnas-anio">${t.porAnio.map((d) => `<div title="${d.anio}: mediana ${d.medianaDias} días en ${d.muestras} resoluciones"><span class="pista"><i style="height:${Math.max(3, (100 * d.medianaDias) / Math.max(1, ...t.porAnio.map((y) => y.medianaDias)))}%"></i></span><b>${d.medianaDias} d</b><small>${d.anio.slice(2)}</small></div>`).join("")}</div></div><p class="tenue">Días entre el ingreso del proceso a la Sala y la resolución, sobre ${t.muestras} procesos.</p>${p.lecturaDeTiempos ? `<p class="implica">${esc(p.lecturaDeTiempos)}</p>` : ""}`, { paso: "Paso 8" })}
+      ${bloque(`Anomalías · más de ${t.umbralAnomalia} días`, t.anomalias.length ? `<div class="tabla"><table class="docs"><thead><tr><th>Proceso</th><th>Acción</th><th>Días en resolver</th><th></th></tr></thead><tbody>${t.anomalias.map((a) => `<tr><td>${esc(a.numero)}</td><td class="tenue">${esc(a.asunto)}</td><td><b>${a.dias}</b></td><td class="acciones-fila"><button type="button" data-proc="${esc(a.numero)}">Ver resolución</button></td></tr>`).join("")}</tbody></table></div>` : `<p class="tenue">Ningún proceso supera el umbral.</p>`)}
+    </div>` : ""}
+
+    <div class="panel" data-panel="resoluciones" hidden>
+      <section class="bloque" id="resoluciones">
+        <header><h3>Resoluciones analizadas</h3><span class="paso-ref">Paso 8</span></header>
+        <div class="filtros">
+          <input id="res-q" type="search" placeholder="Buscar por proceso, parte o criterio" aria-label="Buscar en las resoluciones">
+          <span></span>
+          <div id="res-chips" class="chips"></div>
+        </div>
+        <div id="res-lista"></div>
+      </section>
+    </div>
+
+    <div class="panel" data-panel="estrategia" hidden>
+      <div class="par">
+        ${bloque("Recomendaciones para litigar ante este juez", lista(p.recomendaciones))}
+        ${bloque("Limitaciones del análisis", lista(p.limitaciones))}
+      </div>
+    </div>
+
+    <div class="panel" data-panel="recorrido" hidden>
       ${pintarRecorrido(recorridoJuez(datos), "hecho")}
-    </details>`;
-  return { html };
+    </div>`;
+
+  const montar = () => {
+    const estado = { accion: null, decision: null, q: "", n: 30, numero: null };
+    const abrirPanel = (panel) => {
+      for (const b of document.querySelectorAll(".subtabs button")) b.setAttribute("aria-selected", String(b.dataset.panel === panel));
+      for (const d of document.querySelectorAll(".panel")) d.hidden = d.dataset.panel !== panel;
+    };
+    const acciones = [...new Set(procesos.map((x) => x.asunto))];
+    const pintar = () => {
+      $("#res-chips").innerHTML = (estado.numero ? `<button type="button" class="chip" aria-pressed="true" data-quitar="1">Proceso ${esc(estado.numero)} ✕ ver todas</button>` : "")
+        + [[null, "Todas las acciones"], ...acciones.map((a) => [a, a])].map(([a, nombre]) => `<button type="button" class="chip" data-accion="${esc(a ?? "")}" aria-pressed="${!estado.numero && estado.accion === a}">${esc(nombre)} <span>${a ? procesos.filter((x) => x.asunto === a).length : procesos.length}</span></button>`).join("")
+        + Object.entries(DECISIONES).filter(([d]) => procesos.some((x) => x.ficha.decision === d)).map(([d, nombre]) => `<button type="button" class="chip" data-decision="${d}" aria-pressed="${estado.decision === d}">${esc(nombre)} <span>${procesos.filter((x) => x.ficha.decision === d).length}</span></button>`).join("");
+      const q = plano(estado.q);
+      const filtradas = procesos.filter((x) => (!estado.numero || x.numero === estado.numero) && (!estado.accion || x.asunto === estado.accion) && (!estado.decision || x.ficha.decision === estado.decision) && (!q || plano(`${x.numero} ${x.partes.split(/\s*Use los botones/)[0]} ${x.ficha.criterioResolucion}`).includes(q)));
+      $("#res-lista").innerHTML = `<p class="tenue conteo">${plural(filtradas.length, "resolución", "resoluciones")}</p>` + filtradas.slice(0, estado.n).map((x) => `
+        <details class="actuacion"${estado.numero ? " open" : ""}>
+          <summary><time>${fecha(x.fechaResolucion)}</time><span class="etiqueta ${x.ficha.decision === "acepta" || x.ficha.decision === "acepta_parcialmente" ? "baja" : ""}">${esc(DECISIONES[x.ficha.decision])}</span><span class="titulo">${esc(x.asunto)} · ${esc(x.ficha.criterioResolucion)} <span class="ref">${esc(x.numero)}</span></span></summary>
+          <div class="detalle">
+            <p class="tenue">${esc(x.partes.split(/\s*Use los botones/)[0])}${x.primeraInstancia ? ` · Primera instancia: ${esc(x.primeraInstancia)}` : ""}</p>
+            <p class="tenue">${[x.resultadoPortal, x.ficha.apelacion ? APELACION[x.ficha.apelacion] : "", x.dias !== undefined ? `${x.dias} días en resolver` : "", x.ficha.esPonente === "si" ? "Juez ponente" : x.ficha.esPonente === "no" ? "No es ponente" : "", x.ficha.votoSalvado ? "Con voto salvado" : ""].filter(Boolean).map(esc).join(" · ")}</p>
+            <div><h5>Resolución</h5><p>${esc(x.ficha.criterioResolucion)}</p><blockquote>«${esc(x.ficha.citaTextual)}»</blockquote></div>
+            ${x.ficha.derechosInvocados?.length ? `<div><h5>Derechos invocados</h5>${lista(x.ficha.derechosInvocados)}</div>` : ""}
+            ${x.ficha.fundamentosDeHecho ? `<div><h5>Fundamentos de hecho</h5><p>${esc(x.ficha.fundamentosDeHecho)}</p></div>` : ""}
+            <div><h5>Normativa</h5>${lista(x.ficha.normativa, (n) => `${esc(n.norma)}${n.articulos.length ? `, art. ${n.articulos.map(esc).join(", ")}` : ""}`)}</div>
+            <div><h5>Jurisprudencia</h5>${lista(x.ficha.jurisprudencia)}</div>
+            <div><h5>Argumentación</h5><p>${esc(x.ficha.argumentacion)}</p></div>
+            <div><h5>Pruebas</h5>${lista(x.ficha.pruebas)}</div>
+            <div><h5>Motivación</h5><p>${esc(x.ficha.motivacion)}</p></div>
+          </div>
+        </details>`).join("") + (filtradas.length > estado.n ? `<button type="button" id="res-mas" class="mas-boton">Mostrar ${Math.min(30, filtradas.length - estado.n)} más</button>` : "");
+    };
+    const verProceso = (numero) => { Object.assign(estado, { numero, accion: null, decision: null, q: "", n: 30 }); $("#res-q").value = ""; abrirPanel("resoluciones"); pintar(); document.querySelector(".subtabs").scrollIntoView({ behavior: "smooth", block: "start" }); };
+    document.querySelector(".subtabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) abrirPanel(b.dataset.panel); });
+    $("#res-q").addEventListener("input", (ev) => { estado.q = ev.target.value; estado.numero = null; estado.n = 30; pintar(); });
+    $("#contenido").addEventListener("click", (ev) => {
+      const proc = ev.target.closest("[data-proc]"), chip = ev.target.closest("#res-chips .chip"), accion = ev.target.closest(".atencion [data-accion]"), tesela = ev.target.closest("[data-ir-panel]");
+      if (proc) verProceso(proc.dataset.proc);
+      else if (chip) {
+        if (chip.dataset.quitar) estado.numero = null;
+        else if ("decision" in chip.dataset) estado.decision = estado.decision === chip.dataset.decision ? null : chip.dataset.decision;
+        else { estado.accion = chip.dataset.accion || null; estado.numero = null; }
+        estado.n = 30; pintar();
+      } else if (accion) { Object.assign(estado, { accion: accion.dataset.accion, numero: null, decision: null, n: 30 }); abrirPanel("resoluciones"); pintar(); document.querySelector(".subtabs").scrollIntoView({ behavior: "smooth", block: "start" }); }
+      else if (tesela) abrirPanel(tesela.dataset.irPanel);
+      else if (ev.target.id === "res-mas") { estado.n += 30; pintar(); }
+    });
+    pintar();
+  };
+  return { html, montar };
 }
 
 /* ───────────── Fiscalía · Noticias del delito ───────────── */

@@ -1,0 +1,60 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 14733,
+    "tokensSalida": 1165
+  },
+  "salida": {
+    "numero": "17113202400006",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "86.5",
+          "76.7.l"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "44.1",
+          "43"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "519",
+          "522.6",
+          "534",
+          "220.1.c"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución No. 14-2021 del Pleno de la Corte Nacional de Justicia (15 de diciembre de 2021)",
+      "Opinión Consultiva OC-8/87 de la Corte Interamericana de Derechos Humanos (30 de enero de 1987)"
+    ],
+    "argumentacion": "El tribunal fija competencia por tratarse de privación de libertad dispuesta en proceso penal y declara validez procesal. Califica la acción como habeas corpus clásico o reparador y examina si la orden de prisión preventiva está motivada conforme al artículo 534 del COIP, verificando cada requisito según el texto transcrito de la orden y del audio de la audiencia. Concluye que la orden está motivada. Descarta que el examen toxicológico y el papel de la afectada en el delito sean materia constitucional, por corresponder al juicio penal. Tampoco acoge la alegación de enfermedad catastrófica por falta de prueba. Rechaza la acción.",
+    "pruebas": [
+      "Parte de aprehensión y allanamiento",
+      "Pericia preliminar de cocaína (144,25 gramos netos)",
+      "Cadena de custodia de la evidencia",
+      "Audio de la audiencia de calificación de flagrancia",
+      "Certificaciones médicas aportadas por el accionante, consideradas insuficientes"
+    ],
+    "motivacion": "La orden de prisión preventiva cumple los cuatro requisitos del artículo 534 del COIP y el juez la motivó suficientemente, en línea con la Resolución 14-2021 de la Corte Nacional. Los alegatos de igualdad, debido proceso y enfermedad catastrófica no fueron fundamentados en los hechos ni probados.",
+    "criterioResolucion": "La orden de prisión preventiva se considera motivada cuando el juez verifica los cuatro requisitos del artículo 534 del COIP, con indicios de la fiscalía y explicación de por qué otras medidas no bastan. La culpabilidad y el verbo rector se dilucidan en el proceso penal, no en el habeas corpus.",
+    "citaTextual": "La prisión preventiva debe justificarse correctamente y de conformidad con la ley. Se ordenará solo sí se ha demostrado que la persona investigada podría fugarse, caso contrario, se deben dictar otras medidas menos severas para garantizar su presencia al juicio.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Igualdad ante la ley",
+      "Debido proceso"
+    ],
+    "fundamentosDeHecho": "Allanamiento en un domicilio de La Libertad (Quito) con 144,25 gramos netos de sustancia presuntamente cocaína. La afectada y su esposo fueron aprehendidos. El 29 de febrero de 2024 el juez de flagrancia ordenó prisión preventiva contra ambos. El accionante alega falta de motivación y trato desigual.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

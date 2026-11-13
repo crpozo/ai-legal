@@ -1,0 +1,57 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20254,
+    "tokensSalida": 3231
+  },
+  "salida": {
+    "numero": "17230202204005",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "87"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "26",
+          "28",
+          "35"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia Corte Constitucional 026-13-SCN-CC",
+      "Sentencia Corte Constitucional 679-18-JP/20 y acumulados",
+      "Guía de Jurisprudencia Constitucional-Medidas Cautelares (Corte Constitucional, 2024)"
+    ],
+    "argumentacion": "El tribunal de apelación acepta el recurso del IESS/HCAM contra la negativa de revocatoria. Parte de que las medidas cautelares autónomas no producen cosa juzgada material y pueden revocarse si cambian las circunstancias. Compara las circunstancias de 2022 con las actuales: el menor perdió la marcha, el medicamento no tiene renovada su autorización en la UE, el registro sanitario en Ecuador no consta y la autorización de ARCSA de diciembre de 2025 no alcanza al HCAM. Pondera el informe multidisciplinario del HECAM, que el tribunal considera imparcial, por encima de la opinión del médico tratante, a la que atribuye conflicto y preconcepción según la sentencia 679-18-JP/20. Concluye que el medicamento no es eficaz en este caso y que el consentimiento informado no consta de forma suficiente. Revoca la medida y ordena que la atención continúe por la red pública de salud.",
+    "pruebas": [
+      "Informes médicos del médico tratante de 23 de junio de 2025 y de consulta presencial de 13 de octubre de 2025",
+      "Valoración conjunta con neurología y calificación NECPAL positiva",
+      "Informe técnico ARCSA-INF-DTRSNSOYA-TC-2025-010 de 23 de abril de 2025",
+      "Oficio ARCSA de 4 de junio de 2025 sobre ausencia de registro sanitario",
+      "Dictamen de la EMA sobre la no renovación de la autorización",
+      "Informe HECAM-CC-P-FR-001.09 de 21 de octubre de 2025 (fojas 2138 y siguientes)",
+      "Testimonio del médico tratante en audiencia de marzo de 2026",
+      "Autorización ARCSA de diciembre de 2025 para otros hospitales"
+    ],
+    "motivacion": "La revocatoria procede conforme al artículo 35 de la LOGJCC cuando cesan los requisitos que justificaron la medida. El tribunal considera que el medicamento ya no es eficaz para el caso del menor, que su médico tratante no lo recomienda y que el consentimiento informado no consta de forma suficiente. Por ello aplica la regla de la sentencia 679-18-JP/20 de que el Estado no debe entregar medicamentos que no sean de calidad, seguros y eficaces.",
+    "criterioResolucion": "Las medidas cautelares autónomas son provisionales y revocables. Si las circunstancias cambian y el medicamento no es eficaz para el caso concreto, según la prueba de un informe imparcial y no solo la opinión del prescriptor, la medida debe revocarse.",
+    "citaTextual": "Cuando los medicamentos no son de calidad, seguros ni eficaces, el Estado no debe entregar estos medicamentos.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la vida digna",
+      "Derecho a la salud",
+      "Derecho a una prestación de servicios de salud oportuna, eficaz y adecuada",
+      "Derecho al acceso y disponibilidad de medicamentos de calidad, seguridad y eficacia",
+      "Derecho a la igualdad y no discriminación"
+    ],
+    "fundamentosDeHecho": "Accionante: madre de un menor de 15 años con distrofia muscular de Duchenne, que perdió la marcha a los 10 años y usa silla de ruedas. En 2022 la jueza de primera instancia concedió medidas cautelares autónomas para que el HCAM suministrara ATALUREN. En 2025 el HCAM pidió la revocatoria. La jueza la negó tras audiencia y el HCAM apeló. El tribunal da por probado que el medicamento no tiene eficacia confirmada, que su autorización europea no fue renovada, que no consta registro sanitario ecuatoriano y que la autorización de ARCSA de diciembre de 2025 no se otorgó para el HCAM.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

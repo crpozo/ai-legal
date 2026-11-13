@@ -1,0 +1,100 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 38165,
+    "tokensSalida": 1833
+  },
+  "salida": {
+    "numero": "17205202501420",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "61 numeral 1",
+          "76 numerales 1 y 7 literal a",
+          "82",
+          "86 numeral 5",
+          "169",
+          "168 numeral 1",
+          "172",
+          "11 numeral 9"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "7",
+          "12",
+          "14",
+          "23",
+          "24",
+          "25 numeral 1",
+          "40",
+          "42 numerales 1, 3 y 4",
+          "88"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "107 numeral 5",
+          "108 numeral 7",
+          "109 numerales 2 y 7",
+          "114 al 119",
+          "123",
+          "124",
+          "125",
+          "130",
+          "131 numeral 3"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "1",
+          "16",
+          "18",
+          "19"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 2034-13-EP/19",
+      "Corte Constitucional sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia 007-14-SIN-CC (caso 0012-14-IN)",
+      "Corte Constitucional sentencia 1425-18-EP/23",
+      "Corte Constitucional sentencia 1391-14-EP/20",
+      "Corte Constitucional sentencia 1797-18-EP/20",
+      "Corte Constitucional sentencia 142-19-EP/25",
+      "Corte Constitucional sentencia 3-19-CN/20",
+      "Corte Interamericana de Derechos Humanos, caso Chocrón vs. Venezuela (2011)"
+    ],
+    "argumentacion": "El tribunal valida el proceso y fija como problema jurídico si existe violación a elegir y ser elegido, debido proceso y seguridad jurídica por el acta de 30 de julio de 2025 y el posterior registro ministerial. Concluye que el conflicto gira sobre la legalidad de normas estatutarias y del Acuerdo Ministerial MDT-2025-082, que tiene vías ordinarias o contencioso-administrativas idóneas. Analiza las garantías de cumplimiento de normas y de defensa y la seguridad jurídica, y señala que la discusión corresponde a jueces ordinarios. Aplica la improcedencia de los numerales 1, 3 y 4 del art. 42 LOGJCC. Por separado, resuelve la solicitud de declaratoria jurisdiccional previa contra la jueza de primera instancia y la rechaza.",
+    "pruebas": [
+      "Estatuto del Comité de Empresa de CNEL EP",
+      "Acuerdo Ministerial MDT-2025-082",
+      "Auto de convocatoria de 28 de julio de 2025",
+      "Acta de asamblea de 30 de julio de 2025",
+      "Oficio MDT-ST-2025-0046-O de 19 de agosto de 2025",
+      "Declaraciones juramentadas de Luis Alberto Varas Calderón y Juan José De la Torre Quiñónez",
+      "Informe de la jueza denunciada Nelly Puedmag Villota"
+    ],
+    "motivacion": "La improcedencia se funda en que no existe vulneración constitucional verificable: el conflicto es de legalidad infraconstitucional, con vías judiciales idóneas y eficaces. En la declaratoria previa, el tribunal considera que la denuncia no evidencia infracción disciplinaria y que no se verifica dolo, manifiesta negligencia ni error inexcusable.",
+    "criterioResolucion": "No toda contravención al ordenamiento jurídico, incluidas normas estatutarias y administrativas, configura vulneración de derechos constitucionales; si el conflicto es de mera legalidad y existe vía judicial ordinaria o contencioso-administrativa idónea y eficaz, la acción de protección es improcedente.",
+    "citaTextual": "No todas las vulneraciones al ordenamiento jurídico necesariamente tienen cabida para el debate en la esfera constitucional ya que para conflictos en materia de legalidad existen las vías idóneas y eficaces dentro de la jurisdicción ordinaria.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a elegir y ser elegido (art. 61.1 CRE)",
+      "Derecho al debido proceso en la garantía de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Derecho a la defensa (art. 76.7.a CRE)",
+      "Derecho a la seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante impugna el acta de la asamblea extraordinaria del Comité de Empresa de CNEL EP de 30 de julio de 2025 y el registro de directiva provisional por el Ministerio de Trabajo (oficio MDT-ST-2025-0046-O de 19 de agosto de 2025), alegando irregularidades en la convocatoria, la conformación de la asamblea y el orden del día. La sentencia de primera instancia negó la acción por improcedencia. El tribunal no pronuncia hechos probados en sentido constitutivo, sino que sostiene que el conflicto es de legalidad.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

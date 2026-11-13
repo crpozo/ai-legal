@@ -1,0 +1,71 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 20296,
+    "tokensSalida": 1797
+  },
+  "salida": {
+    "numero": "17230202612022",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 5",
+          "88",
+          "75"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "6",
+          "9",
+          "11",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 2035-16-EP/21",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 400-EP/24-24"
+    ],
+    "argumentacion": "El tribunal primero verifica si existe vulneración de derechos constitucionales, conforme a la sentencia 001-16-PJO-CC. Concluye que el acto administrativo de anuncio de 6 de agosto de 2025 no vulnera por sí mismo los derechos invocados. Señala que el accionante comparece solo por sus propios derechos y no acredita representación de la comunidad ni de las familias invocadas, lo que haría inejecutable una eventual sentencia. Constata que el predio está en fase preparatoria de expropiación sin declaratoria de utilidad pública, por lo que la afectación es incierta y no actual. Sobre la expropiación y el justo precio, cita la jurisprudencia de la Corte Constitucional que los remite a la vía ordinaria o contencioso-administrativa. Finalmente encuadra la acción en las causales de improcedencia de los numerales 1, 3 y 4 del artículo 42.",
+    "pruebas": [
+      "Informe técnico Av. Escalón 1 de 8 de junio de 2026 (fojas 83 y siguientes, foja 91)",
+      "Oficio No. EPMMOP-GJ-DEXP-2026-0659-O de 8 de junio de 2026 (fojas 70 y siguientes, foja 77)",
+      "Resolución EPMMOP-GG-2025-0002-RAP de 6 de agosto de 2025",
+      "Escritura de compraventa del lote 71 de 8 de agosto de 2003 (mencionada en el oficio de expropiación)"
+    ],
+    "motivacion": "No existe vulneración actual de derechos constitucionales: el acto de anuncio no afecta por sí mismo y la expropiación está en fase preparatoria, sin declaratoria de utilidad pública. Además, la falta de representación de la comunidad y de las familias afectadas impide extender los efectos. Por ello la acción es improcedente y debe discutirse en la vía ordinaria o contencioso-administrativa.",
+    "criterioResolucion": "Si no se verifica vulneración de derechos constitucionales en la actuación impugnada, y el acto impugnado es un anuncio de proyecto con expropiación en fase preparatoria sin utilidad pública declarada, la acción de protección es improcedente por las causales del artículo 42 numerales 1, 3 y 4 de la LOGJCC; la controversia sobre legalidad o justo precio corresponde a la vía ordinaria.",
+    "citaTextual": "Las juezas o jueces constitucionales únicamente, cuando no encuentren vulneración de derechos constitucionales y lo señalen motivadamente en su sentencia, sobre la base de los parámetros de razonabilidad, lógica y comprensibilidad, podrán determinar que la justicia ordinaria es la vía idónea y eficaz para resolver el asunto controvertido.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho humano al agua",
+      "Derecho a vivir en un ambiente sano y ecológicamente equilibrado",
+      "Derecho a la recreación, al esparcimiento, al deporte y al tiempo libre",
+      "Derecho a un hábitat seguro y saludable y a una vivienda adecuada y digna",
+      "Derecho al disfrute pleno de la ciudad y de sus espacios públicos",
+      "Principio del interés superior de niñas, niños y adolescentes",
+      "Derecho a una vida digna",
+      "Derecho de acceso gratuito a la justicia y a la tutela judicial efectiva",
+      "Derecho al debido proceso y a la defensa",
+      "Derecho a la participación",
+      "Derecho a la seguridad jurídica",
+      "Derecho a la formulación, ejecución, evaluación y control de las políticas públicas y servicios públicos",
+      "Derecho a la resistencia",
+      "Principio de proporcionalidad"
+    ],
+    "fundamentosDeHecho": "El accionante, por sus propios derechos, impugna la Resolución EPMMOP-GG-2025-0002-RAP de 6 de agosto de 2025, que aprueba el anuncio del proyecto Av. Escalón 1 y que afectaría su predio 663548 (lote 71, sector El Beaterio). El tribunal da por establecido que el procedimiento expropiatorio del predio se encontraba en fase preparatoria, sin declaratoria de utilidad pública a la fecha del oficio de 8 de junio de 2026. El accionante no comparece en representación de la comunidad del barrio Santa Fe ni de las familias invocadas.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

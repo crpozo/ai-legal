@@ -1,0 +1,68 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 11537,
+    "tokensSalida": 1458
+  },
+  "salida": {
+    "numero": "17203202401507",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "88",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42 numerales 1 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Régimen Municipal",
+        "articulos": [
+          "64 numeral 11",
+          "249",
+          "251"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Régimen para el Distrito Metropolitano de Quito",
+        "articulos": [
+          "8 numeral 10"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 0016-13-SEP-CC",
+      "Sentencia 146-14-SEP-CC (caso 1773-11-EP)",
+      "Sentencia 400-24-EP/24",
+      "Sentencia 0004-13-SAN-CC",
+      "Corte Interamericana de Derechos Humanos, caso Salvador Chiriboga vs. Ecuador"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la sentencia de primera instancia que rechazó la acción de protección. Primero examina si hubo vulneración constitucional y, solo después, si existen vías adecuadas. Constata que la declaratoria de utilidad pública y la ocupación urgente se realizaron conforme al procedimiento legal y con disponibilidad presupuestaria, que no hubo confiscación y que el Municipio ha respondido a los requerimientos de los herederos. Concluye que la falta de pago del precio es una controversia de justicia ordinaria, salvo que revista un elemento de gravedad, que no se acredita.",
+    "pruebas": [
+      "Acuerdo del Concejo Metropolitano de Quito de 2005 (declaratoria de utilidad pública y ocupación urgente, Repertorio 51435)",
+      "Registro de posesiones efectivas de los herederos (2007 y 2022) y acta notarial de 2024",
+      "Oficios de la EPMAPS de 2008, 2023 y del Departamento de Legalización de Recursos Hídricos e Inmuebles (requisitos para el pago)",
+      "Oficio de la Tesorería Metropolitana de 12 de abril de 2024 (no constan pagos desde 2005)"
+    ],
+    "motivacion": "La justificación se apoya en la jurisprudencia de la Corte Constitucional sobre la dimensión constitucional del derecho a la propiedad: solo la confiscación o un caso de especial gravedad corresponden a la vía constitucional; el pago del justo precio, si no hay acuerdo administrativo, se discute en la justicia ordinaria. Se valoran las pruebas sobre el cumplimiento del procedimiento expropiatorio y la actitud de colaboración del Municipio.",
+    "criterioResolucion": "Dentro de una expropiación con declaratoria de utilidad pública y ocupación urgente en la que se observó el procedimiento legal, la falta de pago del justo precio no constituye confiscación ni una vulneración del derecho a la propiedad en su dimensión constitucional, y debe discutirse en la justicia ordinaria, salvo que revista un elemento de gravedad.",
+    "citaTextual": "En definitiva, en el presente caso no se verifica una vulneración del derecho a la propiedad que pueda y deba ser tratado en sede constitucional, puesto que el pago del precio, si no existe un acuerdo en sede administrativa, debe ser discutido ante la justicia ordinaria,",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la propiedad"
+    ],
+    "fundamentosDeHecho": "El Concejo Metropolitano de Quito declaró en 2005 la utilidad pública y la ocupación urgente de parte de un inmueble de los cónyuges Subía Bedón y Cumandá del Pozo, para obras de la EPMAPS. No consta el pago de la indemnización desde 2005. Los herederos han tramitado posesiones efectivas (2007, 2022 y 2024) y el Municipio les ha requerido documentación para el pago, que se encuentra pendiente de los herederos.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25756,
+    "tokensSalida": 1884
+  },
+  "salida": {
+    "numero": "17294202600941",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "168 numeral 6",
+          "169",
+          "82",
+          "89",
+          "86",
+          "76.3",
+          "261 numeral 3",
+          "424"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "6",
+          "43",
+          "45"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Movilidad Humana",
+        "articulos": [
+          "164",
+          "143 numeral 7",
+          "144"
+        ]
+      },
+      {
+        "norma": "Ley de Seguridad Pública y del Estado",
+        "articulos": [
+          "19",
+          "22"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "217"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia No. 2034-13-EP/19",
+      "Corte Constitucional sentencia No. 247-17-C-CC",
+      "Corte Constitucional sentencia N°006-17-SCN-CC (caso 0011-11-CN)",
+      "Corte Constitucional sentencia N°171-15-SEP-CC (caso 0560-12-EP)",
+      "Corte Constitucional sentencia No. 017-18-SEP-CC (caso 513-16-EP)",
+      "Corte Constitucional sentencia No. 1150-17-EP/21",
+      "Corte Interamericana de Derechos Humanos, caso Tibi vs Ecuador (7 de septiembre de 2004)",
+      "Corte Interamericana de Derechos Humanos, Opinión Consultiva OC-8/87"
+    ],
+    "argumentacion": "El tribunal de apelación confirma la negativa de primera instancia. Descarta vicios de nulidad procesal y expone el marco del hábeas corpus (art. 89 CRE, art. 43 LOGJCC) con los conceptos de ilegalidad, ilegitimidad y arbitrariedad. Constata que existe un expediente administrativo de deportación (causal 7 del art. 143 LOMH), una resolución de deportación de 3 de julio de 2026 y un acta de audiencia, y concluye que la retención no es arbitraria ni ilegal porque obedece a la ejecución de esa deportación. Desestima la alegación de información de inteligencia posterior considerando que la prueba documental existe y que se invocan decretos y un acuerdo ministerial de clasificación. Rechaza el recurso y ordena remitir copia a la Corte Constitucional.",
+    "pruebas": [
+      "Expediente administrativo MDI-VSC-SDM-DCM-2026-PAD-749 / PAT-7749",
+      "Acta de recepción de productos de inteligencia (fs. 18 del expediente administrativo)",
+      "Acta de audiencia del proceso administrativo de deportación (fs. 75)",
+      "Resolución de deportación MDI-VSC-SDM-DCM-2026-310 de 3 de julio de 2026 (fs. 77 a 80)",
+      "Decreto Ejecutivo 328 y Acuerdo Ministerial MDI-DMI-2026-007",
+      "Sentencia de flagrancia No. 17282-2026-01444 (ilegalidad de la aprehensión previa)",
+      "Notificaciones a Defensoría Pública, Cancillería y embajada de Ghana"
+    ],
+    "motivacion": "Se justifica que el auto de deportación fue notificado conforme al expediente y que la autoridad migratoria actuó dentro de su competencia y del debido proceso, por lo que no se verifica privación ilegal, arbitraria ni ilegítima del derecho a la libertad. Se considera además que el juez a quo motivó suficientemente su decisión.",
+    "criterioResolucion": "La retención migratoria que se ejecuta en cumplimiento de una deportación dictada por autoridad competente, con expediente administrativo y notificación al afectado, no constituye privación ilegal, arbitraria o ilegítima de la libertad, y no procede hábeas corpus en esos supuestos.",
+    "citaTextual": "en virtud de lo cual, no se verifica la violación del derecho a la libertad referido por la accionante, cuando indican que se encuentra retenido físicamente, bajo control de Migración, sin orden judicial ni acto administrativo firme; pues, precisa dejar señalado que, la deportación dispuesta por el Director de Control Migratorio, tiene su sustento legal",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Libertad personal",
+      "Debido proceso",
+      "Defensa",
+      "Motivación",
+      "Seguridad jurídica",
+      "Tutela judicial efectiva",
+      "Comunicación consular",
+      "Igualdad y no discriminación",
+      "Movilidad humana",
+      "Prohibición de expulsión arbitraria"
+    ],
+    "fundamentosDeHecho": "El ciudadano ghanés Daniel Alanza fue aprehendido en flagrancia y el juez penal declaró ilegal la aprehensión y dispuso su libertad. Luego fue retenido por Migración en el aeropuerto Mariscal Sucre, en el marco de un procedimiento administrativo de deportación por causal 7 del art. 143 LOMH. El tribunal da por probado que existe expediente administrativo, notificación del auto de inicio, audiencia administrativa con intérprete y una resolución de deportación de 3 de julio de 2026. La fecha de notificación del auto de inicio se indica como 1 de julio de 2026 en la defensa de la entidad accionada. Consta además información de inteligencia incorporada el 2 de julio de 2026, cuya existencia no se niega.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

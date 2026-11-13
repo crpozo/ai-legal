@@ -57,6 +57,8 @@ export interface Llamada<T extends z.ZodType> {
   system: string;
   user: string;
   schema: T;
+  /** Tope de tokens de salida. Las síntesis largas con esfuerzo alto necesitan más margen. */
+  maxTokens?: number;
   /** Carpeta del caché en disco. Una corrida repetida con los mismos datos no gasta nada. */
   cacheDir: string;
 }
@@ -83,7 +85,7 @@ export async function ejecutarAgente<T extends z.ZodType>(l: Llamada<T>): Promis
   try {
     respuesta = await getCliente().messages.parse({
       model: l.modelo,
-      max_tokens: 16000,
+      max_tokens: l.maxTokens ?? 16000,
       system: l.system,
       messages: [{ role: "user", content: l.user }],
       output_config: { effort: l.esfuerzo, format: zodOutputFormat(l.schema) },

@@ -1,0 +1,114 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 34674,
+    "tokensSalida": 1968
+  },
+  "salida": {
+    "numero": "17230202409993",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "Art. 86 numeral 3",
+          "Art. 66 numeral 26",
+          "Art. 321",
+          "Art. 323",
+          "Art. 82",
+          "Art. 169",
+          "Art. 83 numeral 3",
+          "Art. 88",
+          "Art. 86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 39",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42",
+          "Art. 15",
+          "Art. 18",
+          "Art. 25"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "Art. 599"
+        ]
+      },
+      {
+        "norma": "COOTAD",
+        "articulos": [
+          "Art. 446",
+          "Art. 447"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Sistema Nacional de Contratación Pública (reforma por Ley Orgánica para la Eficiencia en la Contratación Pública)",
+        "articulos": [
+          "Art. 58",
+          "Art. 58.1",
+          "Art. 58.2",
+          "Art. 58.3",
+          "Art. 58.4",
+          "Art. 58.5",
+          "Art. 58.6",
+          "Art. 58.7",
+          "Art. 58.8",
+          "Art. 58.9"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "Art. 21",
+          "Art. 8"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 001-16-PJO-CC, caso 0530-10-JP",
+      "Corte Constitucional sentencia 146-14-SEP-CC, caso 1773-EP",
+      "Corte Constitucional sentencia 176-14-EP/19",
+      "Corte Constitucional sentencia 2737-19-EP/24",
+      "Corte Constitucional sentencia 211-18-SEP-CC",
+      "Corte Constitucional sentencia 102-13-SEP-CC, caso 0380-10-EP",
+      "Corte Constitucional sentencia 016-13-SEP-CC, caso 1000-12-EP",
+      "Corte Constitucional sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Corte Constitucional sentencia 175-14-SEP-CC, caso 1826-12-EP",
+      "Corte Constitucional sentencia 004-13-SAN-CC, caso 0015-10-AN",
+      "Corte Constitucional sentencia 011-16-SIS-CC, caso 0024-10-IS",
+      "Corte Interamericana de Derechos Humanos, caso Salvador Chiriboga vs. Ecuador"
+    ],
+    "argumentacion": "El tribunal de apelación confirma que la controversia tiene relevancia constitucional y no es de mera legalidad: el MTOP ocupó 144 m2 del predio de los accionantes sin declarar utilidad pública ni iniciar expropiación, lo que equivale a confiscación según la jurisprudencia citada. Aplica la regla de la sentencia 176-14-EP/19 (construir en propiedad privada sin proceso expropiatorio vulnera la propiedad). Por ello verifica la vulneración de propiedad, seguridad jurídica y debido proceso, y rechaza el argumento de que la vía idónea sea la contencioso-administrativa, dado que no se reclaman acciones de dominio ordinarias sino la privación sin expropiación. Rechaza la apelación del legitimado pasivo y confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Escritura pública de 3 de marzo de 1993 (fs. 99-102) que acredita dominio sobre el lote 63",
+      "Cuadro de detalle de predios afectados y valor de indemnización (fs. 62 y 78)",
+      "Oficio del Director Distrital de Napo sobre el trámite defensorial (fs. 128)",
+      "Memorando MTOP-DDN-2017-647-ME con valores pendientes de pago (fs. 137)",
+      "Falta de prueba del proceso expropiatorio por parte de los accionados, según la carga probatoria del art. 83.3 CRE"
+    ],
+    "motivacion": "Se considera que los hechos no controvertidos (dominio de los accionantes, ocupación de 144 m2, falta de declaratoria de utilidad pública y de juicio de expropiación) acreditan la confiscación. La carga de demostrar el proceso expropiatorio y el pago recaía en los accionados, que no la cumplieron.",
+    "criterioResolucion": "Cuando el Estado ocupa o construye dentro de propiedad privada sin un proceso expropiatorio (declaratoria de utilidad pública, justo precio y pago), la afectación constituye confiscación y vulnera el derecho constitucional a la propiedad, por lo que la controversia es de justicia constitucional y no de la vía ordinaria.",
+    "citaTextual": "si el Estado construye dentro de propiedad privada sin un proceso expropiatorio [supuesto de hecho], entonces, dicha afectación vulnera el derecho constitucional a la propiedad [consecuencia].",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Atención prioritaria y especializada de grupos de atención prioritaria",
+      "Vida digna",
+      "Vivienda",
+      "Petición",
+      "Acceso a servicios públicos de calidad",
+      "Propiedad privada",
+      "No confiscación de bienes",
+      "Seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "Los accionantes son titulares del lote 63 de la vía interoceánica de Papallacta (523,10 m2). El MTOP ocupó 144 m2 en el proyecto de rehabilitación de accesos a Papallacta sin declarar utilidad pública ni iniciar expropiación, y no consta pago del justo precio. El tribunal da por hechos no controvertidos estos extremos.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

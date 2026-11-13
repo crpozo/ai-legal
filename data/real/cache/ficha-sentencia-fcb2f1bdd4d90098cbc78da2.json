@@ -1,0 +1,76 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 8352,
+    "tokensSalida": 1112
+  },
+  "salida": {
+    "numero": "17294202400309",
+    "decision": "otro",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "167",
+          "178.2",
+          "86",
+          "88",
+          "75",
+          "168.6",
+          "169",
+          "76.7.l"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "25",
+          "39",
+          "40",
+          "41",
+          "42",
+          "14",
+          "15",
+          "17"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "151",
+          "159",
+          "160.1",
+          "160.2",
+          "208.1",
+          "150",
+          "156",
+          "209"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 256-18-JP/23 de la Corte Constitucional"
+    ],
+    "argumentacion": "El tribunal de apelación constata que el accionante, mediante escrito de fs. 7 y acta de fs. 11 con reconocimiento de firma y rúbrica, manifestó expresamente su desistimiento del recurso de apelación. Con base en el artículo 15 de la LOGJCC, que permite terminar el proceso por auto que declare el desistimiento, considera cumplidos los presupuestos legales y acepta el desistimiento. No se analiza el fondo de la acción de protección ni la validez de la sentencia de primera instancia.",
+    "pruebas": [
+      "Escrito de desistimiento del recurso de apelación (fs. 7 del cuaderno de segunda instancia)",
+      "Acta de reconocimiento de firma y rúbrica (fs. 11)"
+    ],
+    "motivacion": "La terminación del procedimiento se justifica por el desistimiento expreso del legitimado activo, reconocido en acta, en los términos del artículo 15 de la LOGJCC, en cumplimiento de la Sentencia No. 256-18-JP/23 de la Corte Constitucional.",
+    "criterioResolucion": "El desistimiento expreso del recurso de apelación, con firma y rúbrica reconocidas, cumple las exigencias del artículo 15 de la LOGJCC y determina la terminación del proceso y el archivo.",
+    "citaTextual": "tomando en consideración que desistimiento realizado por el legitimado activo Pablo Sebastian Valdivieso Montero cumple con las exigencias previstas en el artículo 15 de la Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional, lo acepta y dispone el archivo del proceso.",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "A la igualdad ante la ley y no discriminación",
+      "Al debido proceso en la garantía de motivación",
+      "Al debido proceso en la garantía de cumplimiento de normas y derechos de las partes",
+      "Al derecho a la defensa y derecho a recurrir de la resolución",
+      "A la seguridad jurídica",
+      "Al trabajo"
+    ],
+    "fundamentosDeHecho": "El accionante fue notificado con la terminación de su nombramiento permanente con periodo de prueba tras una segunda evaluación de desempeño de 41,67/100. La jueza de primera instancia negó la acción de protección. El accionante apeló y luego desistió expresamente del recurso, lo que fue reconocido en acta. El texto no detalla la motivación de la sentencia de primera instancia más allá de su parte resolutiva.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

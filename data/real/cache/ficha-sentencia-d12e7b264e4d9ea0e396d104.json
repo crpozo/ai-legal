@@ -1,0 +1,110 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32867,
+    "tokensSalida": 4375
+  },
+  "salida": {
+    "numero": "17230202403333",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "11.3",
+          "11.4",
+          "11.9",
+          "66.3",
+          "66.4",
+          "66.16",
+          "76.3",
+          "76.7.l",
+          "82",
+          "86.5",
+          "88",
+          "173",
+          "225",
+          "228",
+          "229",
+          "315",
+          "326",
+          "33",
+          "429"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41",
+          "42.1",
+          "42.3",
+          "42.4",
+          "18"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Empresas Públicas",
+        "articulos": [
+          "4",
+          "11.13",
+          "17",
+          "18",
+          "19",
+          "29",
+          "30.4",
+          "32",
+          "33"
+        ]
+      },
+      {
+        "norma": "Reglamento de Gestión del Talento Humano de CNT EP",
+        "articulos": [
+          "152",
+          "154",
+          "Disposición General Primera"
+        ]
+      },
+      {
+        "norma": "Mandato Constituyente No. 4",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 001-16-PJO-CC",
+      "Corte Constitucional, sentencia 1679-12-EP/20",
+      "Corte Constitucional, sentencia 253-16-EP/21",
+      "Corte Constitucional, sentencia 1329-12-EP/22",
+      "Corte Constitucional, sentencia 1101-20-EP/22",
+      "Corte Constitucional, sentencia 1357-13-EP/20",
+      "Corte Constitucional, sentencia 1178-19-JP/21",
+      "Corte Constitucional, sentencia 2901-19-EP/23",
+      "Corte Constitucional, resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional, sentencia 0086-10-CN"
+    ],
+    "argumentacion": "El tribunal confirma la improcedencia y niega la protección. Primero recuerda que, en regla general, debe examinar si hubo vulneración de derechos antes de evaluar la vía ordinaria, pero la sentencia 2006-18-EP/24 introduce excepciones. Aplica la excepción de la sentencia 2006-18-EP/24: cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y servidores públicos, la competencia corresponde en principio a lo contencioso administrativo, salvo asuntos que comprometan gravemente la dignidad o autonomía del servidor, como evidente discriminación, o urgencia. Considera que la accionante impugna la acción de personal GTH-NSP-0870-2018 que dio por terminada su relación, y pide su nulidad, por lo que el caso se ubica en la regla general. Descarta que se configure la excepción, señalando que no se demostró una urgencia comparable al caso de embarazo de la sentencia 2006-18-EP/24. Sobre la alegada discriminación por sexo, el tribunal no la acepta como evidente y remite a su análisis de comparabilidad, sin desarrollar un examen de fondo. Concluye que la acción es improcedente según el artículo 42 numerales 1 y 3 de la LOGJCC. La parte dispositiva dice rechaza la apelación y confirma la sentencia de primera instancia, que había negado la acción; la parte considerativa dice inadmitir por improcedente. Ambas formulaciones coinciden en que no se entra al fondo, pero el texto no las reconcilia.",
+    "pruebas": [
+      "Acción de personal GTH-NSP-0870-2018 de 15 de mayo de 2018 (terminación unilateral de la relación laboral)",
+      "Acta de finiquito de 4 de febrero de 2019, a fojas 13, suscrita por la legitimada activa",
+      "Notificación de terminación laboral (citada por el juez de primera instancia)"
+    ],
+    "motivacion": "La improcedencia se funda en que el conflicto laboral sobre un acto administrativo de desvinculación de un servidor público corresponde por regla general a la vía contencioso administrativa, y no se demostró que la vía ordinaria fuera inadecuada o ineficaz. Se invoca además el artículo 173 de la Constitución, que permite impugnar actos administrativos ante la Función Judicial. El tribunal también señala que la acción de protección no sustituye a los medios judiciales ordinarios.",
+    "criterioResolucion": "Cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidores públicos, el conocimiento corresponde por regla general a la jurisdicción contencioso administrativa; la acción de protección solo procede si el caso compromete gravemente la dignidad o autonomía del servidor (por ejemplo, discriminación evidente) o requiere respuesta urgente, y el juez debe analizar si se cumple esa excepción.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso (art. 76.3 CRE)",
+      "Igualdad y no discriminación (art. 11.2 y 66.4 CRE)",
+      "Derecho al trabajo y a la estabilidad laboral (art. 33 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante fue vinculada a CNT EP en 2014 mediante contrato de servicios ocasionales en el proyecto IT y, desde el 2 de noviembre de 2015, con nombramiento definitivo como analista de planificación de accesos. El 15 de mayo de 2018 la entidad dio por terminada su relación laboral mediante acción de personal GTH-NSP-0870-2018, invocando el numeral 13 del artículo 11 y el numeral 4 del artículo 30 de la LOEP. Consta un acta de finiquito de 4 de febrero de 2019, suscrita por la accionante, con indemnización por despido intempestivo. La accionante alega discriminación por sexo, ya que, según su versión, solo se desvinculó a mujeres del mismo cargo. El texto no consta sobre la fecha del acta de finiquito en relación con la acción de personal, que aparece como posterior.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 39641,
+    "tokensSalida": 1845
+  },
+  "salida": {
+    "numero": "17291202400266",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "33",
+          "66 numeral 4",
+          "82",
+          "86",
+          "88",
+          "326 numerales 2 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "38"
+        ]
+      },
+      {
+        "norma": "Reglamento General de la Ley Orgánica del Servicio Público",
+        "articulos": [
+          "71 literal a"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de Planificación y Finanzas Públicas",
+        "articulos": [
+          "115"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1214-18-EP/22",
+      "Sentencia 119-17-CC",
+      "Sentencia 2006-18-EP/24 (citada también como 2016-18-EP/24)",
+      "Sentencia 365-22-EP/24",
+      "Sentencia 2618-EP24",
+      "Sentencia 001-16-PJO-CC",
+      "Sentencia 016-13-SEP-CC",
+      "Sentencia 54-17-IN/22",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 246-15-SEP-CC",
+      "Sentencia 319-JP/20"
+    ],
+    "argumentacion": "El tribunal de alzada analiza primero la procedencia: afirma que el asunto no es de jurisdicción constitucional por tratarse de un conflicto laboral/administrativo con vía contenciosa. Luego examina igualdad y no discriminación: concluye que no hay trato discriminatorio porque los cambios administrativos (art. 38 LOSEP, art. 71 RLOSEP) no modifican la partida presupuestaria. Sobre remuneración justa, verifica que la accionante percibe el valor del SP4 del Manual y que el cambio administrativo no afecta la partida. Sobre seguridad jurídica, concluye que la accionante solo enuncia el principio y reclama mera legalidad. Finalmente, aplica el art. 42 numerales 1, 3 y 4 LOGJCC y niega por improcedente la acción.",
+    "pruebas": [
+      "Acciones de personal (incluidas la 022, 012, 335, 040 y 473 DD17D10-UATH)",
+      "Memorando 189-2019 y memorando MINERUCZ217D1020220203-M",
+      "Formulario de Análisis Ocupacional (FAO) No. 25986",
+      "Documentación de fs. 90 a 93 sobre cambios administrativos",
+      "Resolución MDTSFSP2018066 (reclasificación)",
+      "Memorando MINEDUCZ2202401206-M de 27 de febrero de 2024",
+      "Contratos de servicios ocasionales alegados por la accionante (no valorados expresamente en la sentencia)"
+    ],
+    "motivacion": "Se sostiene que no hay vulneración de derechos constitucionales porque los cambios administrativos se hicieron conforme a la LOSEP y su reglamento, sin modificar la partida presupuestaria, y la accionante percibe la remuneración de su grado. El reclamo es de mera legalidad y de naturaleza laboral-administrativa, con vía en la jurisdicción contenciosa o laboral ordinaria, por lo que la acción es improcedente.",
+    "criterioResolucion": "La acción de protección no es la vía idónea para reclamos de diferencias remunerativas derivados de conflictos laborales con el Estado, salvo que se comprometa notoria o gravemente la dignidad o autonomía del servidor (p. ej., discriminación evidente o necesidad de respuesta urgente); si no hay vulneración de derechos constitucionales, procede la improcedencia conforme al art. 42 LOGJCC.",
+    "citaTextual": "43. La mentada excepción procede por regla general, a menos que (al igual que con los empleados de empresas públicas y privadas),31 el caso se refiera a asuntos que comprometan notoria o gravemente la dignidad o autonomía del servidor, como por ejemplo en casos de evidente discriminación, o en los excepcionalísimos que requieran una respuesta urgente por las circunstancias que lo rodeen.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al trabajo en el componente de remuneración justa (art. 33 CRE)",
+      "Derecho a la igualdad formal, material y no discriminación (arts. 11.2 y 66.4 CRE)",
+      "Derecho a la seguridad jurídica (art. 82 CRE)",
+      "Principios laborales de irrenunciabilidad e igual remuneración por trabajo de igual valor (art. 326.2 y 326.4 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante, servidora pública, fue objeto de cambios administrativos y encargos (2021-2023) en los que percibió USD 1.086 mensuales, mientras que el Manual de Puestos del Ministerio de Educación asigna USD 1.212 a los cargos de Analista Distrital de Planificación 2 y Jefe Distrital de Talento Humano. El tribunal considera que no consta vulneración: la accionante mantiene el SP4 de su clasificación de 2018 y los cambios administrativos se realizaron conforme a la LOSEP y su reglamento.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

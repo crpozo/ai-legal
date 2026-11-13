@@ -1,0 +1,49 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 7678,
+    "tokensSalida": 2414
+  },
+  "salida": {
+    "numero": "17233202600128",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 86 numeral 3",
+          "Art. 86.5",
+          "Art. 87",
+          "Art. 436 numerales 1 y 3 (citado en la sentencia 102-13-SEP-CC)"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 41",
+          "Art. 42 numeral 6",
+          "Art. 42 inciso final"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 102-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal confirma que la acción de protección trata sobre un auto del juez de la Unidad Judicial Penal que dispuso el archivo de una investigación previa. Con base en el art. 42 numeral 6 de la LOGJCC y en la sentencia 102-13-SEP-CC, concluye que la causal de providencias judiciales es de inadmisión, que se verifica al calificar la demanda y que no requiere mayor análisis. Señala que el art. 41 LOGJCC y el art. 87 CRE se refieren a actos de autoridades públicas no judiciales, por lo que la acción no procedía contra la providencia. Por ello confirma la inadmisión dictada en primera instancia y rechaza la apelación. No analiza el fondo de las alegaciones sobre falta de motivación ni sobre la omisión de remitir el expediente al fiscal provincial.",
+    "pruebas": [
+      "Auto resolutivo de 28 de noviembre de 2025 dictado en la investigación previa, como objeto impugnado (única pieza que el tribunal examina)"
+    ],
+    "motivacion": "La inadmisión se justifica porque el acto impugnado es una providencia judicial, lo que activa la causal 6 del art. 42 LOGJCC conforme a la interpretación condicionada de la Corte Constitucional. El tribunal considera que el juez a quo resolvió conforme al ordenamiento constitucional y legal.",
+    "criterioResolucion": "Los cuestionamientos a una providencia judicial (en este caso, el auto de archivo de una investigación previa) no son tramitables mediante acción de protección. La causal de providencias judiciales (art. 42.6 LOGJCC) se aplica al calificar la demanda y lleva a inadmitirla.",
+    "citaTextual": "La causal 6 que establece: “6. Cuando se trate de providencias judiciales”, sí es una de aquellas causales de admisibilidad, pues de la simple enunciación por parte del accionante del acto u omisión supuestamente violatorio de los derechos constitucionales en la demanda, el juez podrá constatar si se trata de una providencia judicial o no",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Tutela judicial efectiva",
+      "Debido proceso"
+    ],
+    "fundamentosDeHecho": "El accionante impugna el auto de 28 de noviembre de 2025 (11h41) del juez de la Unidad Judicial Penal con sede en Iñaquito, que ordenó el archivo de la investigación previa por fraude procesal. Alega que el juez ignoró su oposición al archivo, omitió resolver una petición de nulidad constitucional y no remitió el expediente al fiscal provincial. El tribunal sostiene que el acto impugnado es una providencia judicial.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

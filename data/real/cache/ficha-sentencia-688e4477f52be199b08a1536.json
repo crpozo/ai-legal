@@ -1,0 +1,116 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 32521,
+    "tokensSalida": 1948
+  },
+  "salida": {
+    "numero": "17250202500100",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "82",
+          "332",
+          "86.3",
+          "88",
+          "66",
+          "69",
+          "11",
+          "35",
+          "44",
+          "45",
+          "76.1",
+          "436.1",
+          "436.6"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "25",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "17",
+          "27",
+          "60",
+          "83",
+          "85"
+        ]
+      },
+      {
+        "norma": "Reglamento a la LOSEP",
+        "articulos": [
+          "17",
+          "18"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "99",
+          "105"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "26"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 3-19-JP/20 y acumulados",
+      "Sentencia 1150-23-JP (16 de abril de 2026)",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 1095-20-EP/22",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 016-13-SEP-CC (causa 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Sentencia 025-14-CEP-CC (caso 0157-12-EP)",
+      "Sentencia 210-16-SEP-CC",
+      "Sentencia 034-16-SEP-CC (caso 0103-13-EP)",
+      "Sentencia 103-18-SEP-CC",
+      "Sentencia 102-13-SEP-CC (caso 0380-10-EP)",
+      "Sentencia 0831-12-EP",
+      "Sentencia 0380-10-EP"
+    ],
+    "argumentacion": "El tribunal de apelación analiza si se vulneraron derechos al haberse dado por terminado un nombramiento provisional del accionante durante su licencia por paternidad. Aplica la presunción de ciertos hechos por no demostración de la entidad pública (art. 86.3 CRE y art. 16 LOGJCC) y el estándar de mayor probabilidad. Considera no controvertidos el vínculo provisional, la fecha de desvinculación (notificada el 26/03/2021) y el período de licencia. Con base en el informe de Talento Humano, concluye que la desvinculación se basó en faltas injustificadas inexistentes durante la licencia. Aplica precedentes de la Corte Constitucional sobre protección laboral reforzada en licencia de paternidad y sobre la vía adecuada, y concluye que la vulneración de derechos constitucionales justifica la acción de protección. Rechaza la apelación de la ESPE.",
+    "pruebas": [
+      "Acción de personal N.° 28891 (nombramiento provisional)",
+      "Acción de personal N.° 29418 (26/03/2021, terminación)",
+      "Memorando ESPE UAJR-300 de 23/03/2021 (aviso del nacimiento)",
+      "Memorando ESPE-UAJR-2021-0304-M de 25/03/2021",
+      "Informe UTHM-ESPE-e-6-2020-0195 de 20/04/2021 de Talento Humano",
+      "Registro de permiso de paternidad en WorkFlow y SIFRHE (9 al 23/03/2021)",
+      "Certificado de nacido vivo y partida de nacimiento del hijo"
+    ],
+    "motivacion": "Se funda en la presunción de veracidad de los hechos por la inversión de la carga de la prueba a la entidad pública, en el informe institucional que acredita la licencia aprobada, en la ausencia de procedimiento legal para terminar el nombramiento provisional (que, según el tribunal, solo podía terminar tras concurso de méritos y oposición o por las vías legales) y en precedentes vinculantes de la Corte Constitucional sobre la protección del período de licencia de paternidad.",
+    "criterioResolucion": "La terminación o notificación de la terminación de un nombramiento provisional durante el período de licencia por paternidad, sin justificación válida y sin cumplir el procedimiento legal, vulnera el derecho a la seguridad jurídica y el derecho reproductivo/paternidad (arts. 82 y 332 CRE), siendo la acción de protección la vía adecuada y eficaz.",
+    "citaTextual": "no se puede obstaculizar que los hombres ejerzan su rol de cuidado o interrumpir arbitrariamente el cuidado",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Derecho reproductivo y de paternidad (art. 332 CRE)",
+      "Derecho al trabajo y estabilidad reforzada",
+      "Derecho de protección especial y preferente",
+      "Derecho a la igualdad material",
+      "Debido proceso",
+      "Derechos del niño (art. 44 CRE) (invocados por el accionante)",
+      "No discriminación (art. 11 CRE) (invocado por el accionante)"
+    ],
+    "fundamentosDeHecho": "El accionante ingresó a la ESPE el 6/11/2019 con nombramiento provisional, hasta obtener ganador de concurso. Durante el período de licencia por paternidad (9 al 23/03/2021) tras el nacimiento de su hijo por cesárea, fue desvinculado mediante acción de personal N.° 29418 notificada el 26/03/2021, con efectos al 31/03/2021, bajo el argumento de faltas injustificadas. El informe de Talento Humano de 20/04/2021 acredita que el permiso estaba aprobado. No consta que se haya convocado el concurso para la partida ocupada.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

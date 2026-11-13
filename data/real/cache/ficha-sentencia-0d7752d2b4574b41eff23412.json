@@ -1,0 +1,75 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 15983,
+    "tokensSalida": 1500
+  },
+  "salida": {
+    "numero": "17204202401458",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 86",
+          "Art. 88",
+          "Art. 33",
+          "Art. 11.2",
+          "Art. 86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 25",
+          "Art. 39",
+          "Art. 40 numeral 3",
+          "Art. 41",
+          "Art. 42 numeral 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208 numeral 1",
+          "Art. 238"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 001-16-PJO/CC (caso 530-10-JP)",
+      "Sentencia No. 079-14-SEP-CC",
+      "Sentencia No. 037-13-SCN-CC",
+      "Sentencia No. 986-19-JP/21 y acumulados",
+      "Sentencia No. 1763-12-EP/20",
+      "Sentencia No. 041-13-SEP-CC (caso 0470-12-EP)",
+      "Sentencia No. 045-11-SEP-CC",
+      "Casos 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 016-13-SEP-CC, 1000-12-EP (citados)"
+    ],
+    "argumentacion": "El tribunal de apelación examina si existe vulneración de derechos constitucionales alegados (trabajo digno, no discriminación, estabilidad laboral, seguridad jurídica, indemnización por despido, integridad personal y laboral). Concluye que el trabajo digno no se vulneró porque no hay prueba de privación de remuneraciones y existe un acuerdo de liquidación ante la Inspectoría de Trabajo; que no hay discriminación probada; y que los demás derechos conexos son de naturaleza laboral y de mera legalidad, cuya vía adecuada es la judicial ordinaria (Código del Trabajo y COGEP). Confirma la sentencia de primera instancia que rechazó la acción por improcedencia.",
+    "pruebas": [
+      "Acta de audiencia ante la Inspectoría de Trabajo de Pichincha (fs. 87) con acuerdo de liquidación por USD 5.775,60",
+      "Demanda constitucional (fs. 66-70)",
+      "Auto de admisión (fs. 76)",
+      "Acta de audiencia pública (fs. 218-223)",
+      "Sentencia de primera instancia (fs. 231-242)"
+    ],
+    "motivacion": "Se sostiene que no hay vulneración de derechos constitucionales; la controversia es de índole laboral y de legalidad, por lo que corresponde a la justicia ordinaria, y la acción no puede sustituir las vías judiciales ordinarias. Se deja a salvo el derecho de la accionante a acudir a la autoridad jurisdiccional competente.",
+    "criterioResolucion": "La acción de protección es improcedente cuando la pretensión es de estricta legalidad o laboral (reclamos de liquidación, indemnizaciones, despido) y no se acredita vulneración del contenido constitucional de los derechos invocados, existiendo vía judicial ordinaria adecuada y eficaz.",
+    "citaTextual": "no existe vulneración a este derecho constitucional, sino se observa que existe inconformidad de la legitimada activa hacia su ex patrono misma que debe ser ventilada ante los Jueces de Trabajo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Trabajo digno",
+      "Estabilidad laboral",
+      "No discriminación en el trabajo",
+      "Seguridad jurídica",
+      "Estabilidad en el empleo",
+      "Indemnización por despido injustificado",
+      "Integridad personal y laboral"
+    ],
+    "fundamentosDeHecho": "La accionante laboró para la Fundación Humanitaria Rotary Club Quito Sur desde el 01/07/2015 hasta su desvinculación en septiembre de 2023, como Directora Administrativa, con remuneración de USD 1.422. Las partes llegaron a un acuerdo de liquidación ante la Inspectoría de Trabajo por USD 5.775,60. El tribunal no constata discriminación ni privación de derechos constitucionales; la controversia es laboral. La sentencia de primera instancia rechazó la acción por improcedencia.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

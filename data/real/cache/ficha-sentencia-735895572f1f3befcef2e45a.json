@@ -1,0 +1,64 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22686,
+    "tokensSalida": 3181
+  },
+  "salida": {
+    "numero": "17203202503546",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "33",
+          "66.4",
+          "76.7",
+          "82",
+          "86.5",
+          "321"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "316 numeral 10"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 214-14-SEP-CC (caso 1049-10-EP)"
+    ],
+    "argumentacion": "El tribunal revisa si hubo vulneración de derechos antes de examinar la procedencia. Concluye que el accionante sí tuvo vínculo contractual con CNT y que el local arrendado no es vivienda, por lo que queda duda razonable sobre su domicilio al notificarle. Descarta vulneración de seguridad jurídica, debido proceso (defensa), igualdad, trabajo y propiedad. Luego examina la improcedencia: la nulidad del proceso coactivo tiene vía en la justicia ordinaria (COGEP art. 316.10), por lo que encaja en las causales 1, 3 y 4 del art. 42 LOGJCC. Revoca la sentencia de primera instancia que había aceptado la acción y rechaza la demanda por improcedente.",
+    "pruebas": [
+      "Contrato de prestación de servicios móviles con CNT (firma del accionante)",
+      "Contrato de arrendamiento de un local comercial del 1 de julio de 2024 (foja 70)",
+      "Boletas de notificación del título de crédito (foja 116 y segunda boleta)",
+      "Informes de DINARDAP y DIPSERVIS sobre la dirección del accionante",
+      "Testimonios de testigos del accionante sobre su domicilio"
+    ],
+    "motivacion": "Aplica el orden del art. 42 LOGJCC: primero verifica vulneración de derechos y no la encuentra por duda razonable sobre el domicilio; después constata que la controversia sobre la validez y notificación del proceso coactivo debe resolverse en la vía ordinaria, con cita del art. 316.10 COGEP y de la sentencia 001-16-PJO-CC.",
+    "criterioResolucion": "No hay vulneración del debido proceso (defensa) cuando persiste duda razonable sobre el domicilio real del obligado al notificarle un título de crédito. Si el asunto es la validez o notificación de un proceso coactivo, tiene vía ordinaria idónea (COGEP art. 316.10), y la acción de protección es improcedente (LOGJCC art. 42, numerales 1, 3 y 4).",
+    "citaTextual": "Dados así los hechos, este Tribunal NO ENCUENTRA vulneración al debido proceso en la garantía a la defensa, puesto que queda la duda razonable, en cuanto a la verdadera dirección domiciliaria del hoy accionante al momento de que se pretendía notificarle con el procedimiento coactivo.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso en la garantía a la defensa (art. 76, numerales 1 y 7 literal h)",
+      "Seguridad jurídica (art. 82)",
+      "Derecho al trabajo (art. 33)",
+      "Igualdad y no discriminación (art. 11.2)",
+      "Derecho a la propiedad (art. 66)",
+      "Derecho a una vida digna (art. 66.2)"
+    ],
+    "fundamentosDeHecho": "El accionante alega que CNT inició un proceso coactivo (JC-PIC-017240-2025) por el título de crédito 042233-PIC-2024 sin notificarle en su domicilio real, lo que derivó en retención de fondos y en su reporte como deudor con impedimento para cargos públicos. El tribunal da por probado que sí existió un contrato de servicios con CNT y que el local arrendado es comercial, no vivienda. La notificación se hizo por boletas en la dirección obtenida de DINARDAP y DIPSERVIS, tras no hallarlo en la dirección del contrato. Queda duda razonable sobre su domicilio real.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

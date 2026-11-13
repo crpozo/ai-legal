@@ -1,0 +1,50 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19694,
+    "tokensSalida": 2604
+  },
+  "salida": {
+    "numero": "17981202602846",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "321",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "40 (numerales 1 y 3, según la sentencia 001-16-PJO-CC transcrita)",
+          "42 (numerales 1, 3, 4 y 6)"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso No. 0530-10-JP)"
+    ],
+    "argumentacion": "El tribunal confirma la sentencia oral que rechazó la acción. Primero verifica si existe vulneración de derechos. Descarta la seguridad jurídica porque el proceso coactivo y sus normas son previas y vigentes, y la impugnación de providencias tiene vías ordinarias. Sobre la propiedad, afirma que la pretensión es patrimonial y que la vía constitucional no es la adecuada para corregir el valor a pagar. Sobre el debido proceso, concluye que se cumplió la norma. Luego, en el análisis de improcedencia, aplica los numerales 1, 3 y 4 del artículo 42 de la LOGJCC y dice que existen vías ordinarias expeditas para discutir la rectificación o recálculo de valores. Sobre el alegado abuso del derecho por segunda acción, el tribunal revisó el SATJE (causa 17296-2025-00093) y concluye que no es la misma pretensión, porque la primera impugnaba todo el proceso coactivo y la actual solo una providencia. Nota: el texto fija la providencia impugnada el 8 de junio de 2026 en los hechos, pero en los considerandos la denomina 8 de julio de 2026; el texto no aclara la diferencia.",
+    "pruebas": [
+      "Providencia de 8 de junio de 2026 (acto impugnado, según los hechos)",
+      "Proceso de ejecución coactiva No. JC-GADPP-2016-0001287",
+      "Revisión en SATJE de la causa 17296-2025-00093",
+      "Oficios y expedientes presentados en audiencia por los accionados"
+    ],
+    "motivacion": "La decisión se justifica en que no hay vulneración de derechos constitucionales, dado que la pretensión es de contenido patrimonial y ligada a la dimensión legal del derecho. Por eso el asunto debe tramitarse en la vía ordinaria o ante el superior jerárquico administrativo, conforme a los numerales 1, 3 y 4 del artículo 42 de la LOGJCC y a la sentencia 001-16-PJO-CC.",
+    "criterioResolucion": "Cuando la pretensión de la acción de protección es la corrección o recálculo de valores dentro de un proceso de ejecución coactiva, y no se demuestra vulneración de derechos constitucionales, la acción es improcedente porque la vía ordinaria o administrativa es la idónea.",
+    "citaTextual": "pretensión que NO implica vulneración a la dignidad humana, puesto que al ser un asunto exclusivamente económico no evidencia per se violaciones constitucionales",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Propiedad (art. 321 CRE)",
+      "Debido proceso en la garantía de cumplimiento de normas y derecho a la defensa"
+    ],
+    "fundamentosDeHecho": "El accionante, por sus derechos y como representante de la compañía Constructora y Mantenimiento Molina Camacho Cía. Ltda., impugna la providencia de 8 de junio de 2026 que negó la rectificación del título de crédito No. 0001287 dentro del proceso coactivo JC-GADPP-2016-0001287. Alega que la cuantía del título excede la liquidación de la Resolución 1311-DGCP-2014. El tribunal da por probado el trámite coactivo y la negativa de la rectificación, y no encuentra vulneración de derechos constitucionales.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

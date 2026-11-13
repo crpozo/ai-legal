@@ -1,0 +1,76 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31625,
+    "tokensSalida": 4438
+  },
+  "salida": {
+    "numero": "17204202600002",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66.26",
+          "76.3",
+          "76.7.l",
+          "82",
+          "86.5",
+          "88",
+          "169",
+          "173",
+          "226",
+          "321",
+          "323"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40.1",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 135-17-SEP-CC (caso 0198-14-EP)",
+      "Sentencia 1364-17-EP/23 (caso 1364-17-EP)",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 92-15-PN/21",
+      "Sentencia 110-21-IN/22 y acumulados"
+    ],
+    "argumentacion": "El tribunal de apelación analiza la sentencia de primera instancia que negó la acción y plantea como problema jurídico si existe violación del derecho de propiedad, del debido proceso (cumplimiento de normas, legalidad, motivación) y de la seguridad jurídica por la retención del vehículo, la sanción y las medidas cautelares del SENAE. Concluye que no se probó venta ni transferencia de dominio, que la conducta de uso ocasional por un tercero no está tipificada, que la resolución sancionatoria carece de motivación suficiente sobre la adecuación de la conducta y la proporcionalidad de la sanción, y que por ello se vulneraron los derechos invocados. Declara que la acción de protección es procedente porque existe una vulneración real de derechos y no un mero conflicto de legalidad.",
+    "pruebas": [
+      "Documentación agregada al proceso constitucional",
+      "Resolución SENAE-DDQ-2013-0938-RE de 11 de septiembre de 2013 (acto impugnado)",
+      "Resolución SENAE-DDQ-2014-0012-RE (desestimación del reclamo administrativo)",
+      "Auto de pago y actuaciones del procedimiento coactivo",
+      "Constancia de que no se demostró transferencia de dominio, venta ni alquiler del vehículo"
+    ],
+    "motivacion": "Justifica la decisión en el artículo 76.7.l de la Constitución sobre la motivación, en el artículo 76.3 sobre tipicidad y legalidad, en el artículo 82 sobre seguridad jurídica y en el artículo 66.26 y 321 sobre propiedad. Verifica que la conducta sancionada (uso ocasional por tercero) no está tipificada en la ley y que el acto administrativo no explica la adecuación de la conducta ni la proporcionalidad de la multa. Señala que la acción de protección se justifica cuando hay vulneración real y no existe otra vía eficaz para tutelar el derecho.",
+    "criterioResolucion": "Cuando la administración sanciona el uso ocasional de un vehículo importado por un tercero, sin que se pruebe transferencia de dominio, y esa conducta no está tipificada en la ley, se vulnera la seguridad jurídica y, junto con la falta de motivación, el debido proceso y el derecho de propiedad; la acción de protección es entonces procedente.",
+    "citaTextual": "Este Tribunal Adquem considera que, el Servicio Nacional de Aduana del Ecuador SENAE, vulnero el derecho a la seguridad jurídica del accionante, toda vez que al sancionar por el uso ocasional del vehículo por parte de un tercero, conducta que no está tipificada como infracción en la Ley, contrario el marco normativo predeterminado.",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho de propiedad (art. 66.26 y 321 CRE)",
+      "Debido proceso en la garantía de cumplimiento de normas y legalidad (art. 76.3 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante importó un vehículo Mercedes Benz con exoneración de tributos bajo el plan de retorno de migrantes. El 20 de agosto de 2012 el vehículo fue intervenido en el aeropuerto mientras lo conducía una tercera persona. El SENAE impuso mediante la Resolución SENAE-DDQ-2013-0938-RE una multa de USD 179.255, confirmada en la resolución de reclamo SENAE-DDQ-2014-0012-RE. La demanda ante el Tribunal Distrital de lo Contencioso Tributario fue archivada por falta de afianzamiento. Después se inició un procedimiento coactivo con bloqueo de cuentas y medidas cautelares. El tribunal da por probado que no hubo venta ni transferencia de dominio.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

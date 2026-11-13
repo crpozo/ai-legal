@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26140,
+    "tokensSalida": 1554
+  },
+  "salida": {
+    "numero": "17230202613002",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66.26",
+          "76.7.a",
+          "76.7.b",
+          "76.7.c",
+          "76.7.d",
+          "76.7.h",
+          "76.7.l",
+          "82",
+          "88",
+          "169",
+          "86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "66",
+          "315",
+          "316",
+          "317",
+          "319"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 1298-17-EP/21",
+      "Sentencia No. 1391-14-EP/20",
+      "Sentencia No. 3364-21-EP/25",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 135-17-SEP-CC",
+      "Sentencia No. 001-16-PJO-CC",
+      "Sentencia 016-13-SEP-CC",
+      "Sentencia 22-13-IN/20"
+    ],
+    "argumentacion": "El tribunal de apelación rechaza el recurso del SENAE y confirma la sentencia de primera instancia que aceptó la acción. Descarta nulidades procesales. Verifica que el SENAE no presentó la providencia de vinculación de la accionante ni la orden de retención, pese a requerimiento del juez de primera instancia. Concluye que la falta de acto notificado y motivado impedía acudir a la vía de excepciones a la coactiva, por lo que la vía ordinaria no era eficaz. Señala que la retención se fundó en consultas web sin levantamiento previo del velo societario, y que hubo falta de motivación fáctica y normativa. Declara la vulneración de seguridad jurídica, debido proceso (defensa y motivación) y propiedad.",
+    "pruebas": [
+      "Providencia SENAE-DDQ-2026-0191-PV de 2 de marzo de 2026 (no aportada)",
+      "Memorando SENAE-DJJQ-2026-0196-M de 23 de marzo de 2026",
+      "Documento SENAE-DSGQ-2026-5701-E de 7 de abril de 2026",
+      "Providencia SENAE-DDQ-2026-0430-PV de 6 de mayo de 2026",
+      "Expediente del proceso coactivo 003-2013 (incompleto)",
+      "Información de registro de accionistas de la Superintendencia de Compañías"
+    ],
+    "motivacion": "El tribunal sostiene que la ausencia del acto de vinculación y de la orden de retención impide conocer la obligación imputada y ejercer defensa, lo que convierte a la vía ordinaria en ineficaz. Además, la retención de fondos de un tercero accionista sin declaratoria judicial previa de levantamiento del velo societario vulnera la propiedad y la seguridad jurídica. La falta de una estructura mínima de motivación (normativa y fáctica) del acto impugnado completa la vulneración.",
+    "criterioResolucion": "Antes de dictar medidas cautelares contra bienes de socios o accionistas, terceros ajenos a la coactiva, debe preceder una declaratoria judicial ejecutoriada de levantamiento del velo societario; si el acto de vinculación no consta ni fue notificado, la vía ordinaria no es eficaz y procede la acción de protección.",
+    "citaTextual": "antes de dictar medidas cautelares contra los bienes de socios o accionistas, terceros ajenos a la coactiva, debe preceder una declaratoria judicial ejecutoriada de levantamiento del velo societario, que en el presente caso no ocurrió, vulnerando los derechos de la accionante",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la propiedad",
+      "Debido proceso en la garantía de defensa",
+      "Debido proceso en la garantía de motivación",
+      "Seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "El SENAE retuvo USD 23.872,74 de la cuenta de Inversiones Alfa C.A. en Produbanco dentro del proceso coactivo 003-2013, iniciado contra ICARO S.A., en el que la accionante fue vinculada como responsable por ser accionista. No consta en el expediente la providencia que dispuso la vinculación y la retención, pese al requerimiento del juez de primera instancia. La accionante no fue notificada del acto ni se le entregó la información solicitada.",
+    "esPonente": "si",
+    "votoSalvado": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 13870,
+    "tokensSalida": 2495
+  },
+  "salida": {
+    "numero": "17203202600536",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 82",
+          "Art. 76 num. 7 lit. l",
+          "Art. 66 num. 2",
+          "Art. 86 num. 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 42 num. 1",
+          "Art. 42 num. 3",
+          "Art. 42 num. 4",
+          "Art. 40"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "Disposiciones Transitorias primera y segunda"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 1158-17-EP/21"
+    ],
+    "argumentacion": "El tribunal verifica primero si hay vulneración de derechos. Sobre seguridad jurídica concluye que el BIESS actuó con normas previas y conocidas. Sobre motivación considera que el auto de adjudicación de 21 de enero de 2026 es suficientemente motivado conforme a la sentencia 1158-17-EP/21, por aplicar el procedimiento del Código de Procedimiento Civil según las disposiciones transitorias del COGEP. Sobre trámite propio afirma que no hay retroactividad. Sobre vivienda digna (el texto cita el art. 66 num. 2) señala que la deudora incumplió obligaciones hipotecarias. Al no encontrar vulneración, analiza la improcedencia del art. 42 y concluye que se encasilla en los numerales 1, 3 y 4, por existir otras vías judiciales ordinarias. Confirma la sentencia oral de primera instancia que rechazó la acción.",
+    "pruebas": [
+      "Auto de fojas 38 (inicio del proceso coactivo)",
+      "Auto de adjudicación de fojas 415 a 419",
+      "Cinco cuerpos del expediente coactivo aportados por la parte accionada"
+    ],
+    "motivacion": "Sin vulneración de derechos, la acción es improcedente por el art. 42 LOGJCC, numerales 1 (no hay violación de derechos), 3 (impugnación de legalidad sin violación de derechos) y 4 (existencia de vía judicial ordinaria adecuada y eficaz).",
+    "criterioResolucion": "El juez constitucional primero debe examinar si existe vulneración de derechos constitucionales; solo si no la encuentra analiza las causales de improcedencia del art. 42 LOGJCC, y si el asunto es de mera legalidad con vía judicial ordinaria idónea, la acción no procede.",
+    "citaTextual": "Este Tribunal, procedió a analizar en su orden si efectivamente existía alguna vulneración a los derechos constitucionales, para después de desechado tal hecho, proceder a analizar cada uno de los presupuestos de improcedencia de la acción",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de observancia del trámite propio de cada procedimiento (Art. 76 num. 3 CRE)",
+      "Debido proceso en la garantía de la motivación (Art. 76 num. 7 lit. l CRE)",
+      "Seguridad jurídica (Art. 82 CRE)",
+      "Derecho a la vivienda digna (Art. 30 CRE)"
+    ],
+    "fundamentosDeHecho": "El BIESS inició un juicio coactivo contra la accionante por una deuda hipotecaria; el primer auto de 25 de septiembre de 2017 aplicó el Código de Procedimiento Civil según las disposiciones transitorias del COGEP. El 21 de enero de 2026 la jueza de coactivas negó la nulidad, rechazó prescripción y caducidad y ordenó la adjudicación del inmueble. El texto no detalla más hechos probados.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

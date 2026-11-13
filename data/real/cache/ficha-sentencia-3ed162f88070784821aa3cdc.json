@@ -1,0 +1,78 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 26002,
+    "tokensSalida": 4075
+  },
+  "salida": {
+    "numero": "17460202406226",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "82",
+          "86 numeral 5",
+          "88",
+          "169",
+          "326 numeral 2"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4 numeral 8",
+          "18",
+          "24",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público (LOSEP)",
+        "articulos": [
+          "5 literal h",
+          "86",
+          "disposición transitoria undécima"
+        ]
+      },
+      {
+        "norma": "Reglamento de la LOSCCA",
+        "articulos": [
+          "11 literal d"
+        ]
+      },
+      {
+        "norma": "Resolución A 0067",
+        "articulos": [
+          "5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)"
+    ],
+    "argumentacion": "El tribunal de alzada acepta la apelación del Municipio de Quito y revoca la sentencia de primera instancia que había declarado procedente la acción. Plantea como problema jurídico si la falta de nombramiento definitivo a la accionante, declarada ganadora de un concurso, vulnera el trabajo (irrenunciabilidad e intangibilidad) y la seguridad jurídica. Constata que la accionante fue nombrada con acción de personal de libre nombramiento y remoción y que el municipio aplica la disposición transitoria undécima de la LOSEP mediante un concurso interno. Concluye que no hay limitación al derecho al trabajo ni violación de la seguridad jurídica. Finalmente, considera que el asunto es de naturaleza legal o administrativa, por lo que aplica las causales de improcedencia del artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Acción de personal 124-41 de 8 de octubre de 2008 (fs. 11), que otorga nombramiento de libre remoción",
+      "Resolución A 0067, artículo 5, que asigna el puesto de Especialista en Presupuesto como de libre nombramiento y remoción",
+      "Manifestación del legitimado pasivo sobre el concurso interno en curso en aplicación de la disposición transitoria undécima de la LOSEP",
+      "Documentación agregada por el municipio sobre la aplicación de normas previas y claras"
+    ],
+    "motivacion": "La improcedencia se funda en que no se verifica violación de derechos constitucionales: el municipio actúa con normas previas, claras y públicas aplicadas por autoridad competente, y no se acredita que la accionante sea de grupo de atención prioritaria ni trabajadora sustituta. Además, el conflicto laboral con el Estado corresponde, por regla general, a la vía contencioso-administrativa u otra vía judicial idónea, sin que se demuestre que sea ineficaz.",
+    "criterioResolucion": "La aplicación por la administración de la disposición transitoria undécima de la LOSEP, con normas previas, claras, públicas y aplicadas por autoridad competente, no vulnera la seguridad jurídica. Cuando el asunto es de legalidad o de un acto administrativo impugnable en vía judicial, la acción de protección es improcedente conforme al artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "citaTextual": "En consecuencia, este Tribunal Ad-quem, considera que luego de la revisión de las pruebas aportadas en el presente caso, se verifica que el Municipio del Distrito Metropolitano de Quito, al aplicar la disposición transitoria Undécima de la LOSEP, está actuando con normas previas, claras, públicas y en este caso también han sido aplicadas por las autoridades competentes",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho al trabajo en su componente de estabilidad, irrenunciabilidad e intangibilidad",
+      "Derecho a la seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La accionante ganó un concurso de oposición y méritos para Especialista en Presupuesto e ingresó el 13 de octubre de 2008. Se le otorgó nombramiento de libre nombramiento y remoción y no se le emitió nombramiento definitivo. El municipio pretende convocarla a un concurso interno conforme a la disposición transitoria undécima de la LOSEP. El tribunal considera que no se acredita la vulneración de derechos alegada.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

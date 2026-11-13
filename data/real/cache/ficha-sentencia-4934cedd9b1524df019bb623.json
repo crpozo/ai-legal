@@ -1,0 +1,89 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17270,
+    "tokensSalida": 1785
+  },
+  "salida": {
+    "numero": "17284202500704",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76 numeral 7 literales a), b), c) y h)",
+          "82",
+          "86 numeral 5",
+          "88",
+          "169"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "10 numeral 3",
+          "16",
+          "25 numeral 1",
+          "40 numerales 1, 2 y 3",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "8",
+          "9",
+          "23",
+          "25"
+        ]
+      },
+      {
+        "norma": "Código de Procedimiento Civil",
+        "articulos": [
+          "82",
+          "413",
+          "945",
+          "948",
+          "966 numeral 3"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "56 párrafo quinto",
+          "316"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 2034-13-EP/19",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 1298-17-EP/21",
+      "Corte Constitucional, sentencia 1391-14-EP/20",
+      "Corte Constitucional, sentencia 1797-18-EP/20",
+      "Corte Constitucional, sentencia 2791-17-EP/23",
+      "Corte Constitucional, sentencia 151-14-SEP-CC (caso 119-12-EP)",
+      "Corte Constitucional, sentencias 220-14-SIS-CC y 71-14-CN/19 citadas por el accionante"
+    ],
+    "argumentacion": "El tribunal de alzada afirma que el asunto no es materia de acción de protección, pero analiza igualmente si hubo vulneración. Examina el debido proceso (defensa) con base en la notificación por prensa y las gestiones de búsqueda de domicilio, concluyendo que se cumplieron los requisitos. Sobre seguridad jurídica, señala que el reclamo es un control de legalidad por forma, competencia de los jueces ordinarios. Finalmente concluye que no hay vulneración y que concurren causales de improcedencia del artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Pagaré con vencimientos sucesivos de 23 de febrero de 2012 (fs. 293)",
+      "Providencia de 30 de junio de 2021 de notificación al correo electrónico (fs. 400)",
+      "Certificación de la autoridad de Movilidad Humana sobre salida a Colombia y ausencia en registro consular (fs. 461)",
+      "Constancias de publicación en prensa, Diario Expreso, 16, 19 y 20 de agosto de 2024 (fs. 465 a 467)",
+      "Peticiones de información a instituciones públicas (fs. 363 a 365)"
+    ],
+    "motivacion": "Sostiene que no existe vulneración de los derechos alegados: la citación por prensa se realizó tras agotar la búsqueda de domicilio y cumple parámetros de la Corte Constitucional; las actuaciones fueron emitidas por autoridad competente; y la discusión sobre legalidad corresponde a la justicia ordinaria. Por ello, rechaza la apelación y confirma la sentencia que niega la acción por improcedencia.",
+    "criterioResolucion": "Cuando la discusión versa sobre la forma o legalidad de actuaciones dentro de un procedimiento coactivo, sin verificarse una real vulneración de derechos constitucionales, la acción de protección es improcedente y la controversia corresponde a la vía judicial ordinaria.",
+    "citaTextual": "Este Tribunal, considera que en el presente caso se ha verificado que de acuerdo al numeral 1 del artículo 42 de la Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional, no existen violaciones a los derechos constitucionales del accionante y que la pretensión, se encuentran incursas en la causal de improcedencia de la acción de protección",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de la defensa (art. 76.7 literales a, b, c y h de la Constitución)",
+      "Seguridad jurídica (art. 82 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "El accionante suscribió un pagaré el 23 de febrero de 2012 con el Banco del Pacífico, por USD 4.679,55. Tras el incumplimiento, el banco inició el procedimiento coactivo en 2015 y, según la resolución, notificó por boletas en un domicilio que el accionante alega erróneo, y en agosto de 2024 citó por prensa tras certificación de salida del país. El accionante alega no haber tenido conocimiento del proceso hasta 2025, cuando una institución financiera le informó de la retención de fondos. El tribunal da por probado que la citación por prensa se realizó tras búsquedas infructuosas de domicilio y que el accionante compareció al proceso el 9 de julio de 2025.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

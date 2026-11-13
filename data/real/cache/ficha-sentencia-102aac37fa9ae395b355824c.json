@@ -1,0 +1,112 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31712,
+    "tokensSalida": 4125
+  },
+  "salida": {
+    "numero": "17203202402281",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "88",
+          "82",
+          "33",
+          "35",
+          "75",
+          "76 numeral 7 literal c",
+          "76 numeral 7 literal l"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "14 inciso 3",
+          "16",
+          "18",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1 y 3",
+          "42 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "58",
+          "64"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP",
+        "articulos": [
+          "146 literal f"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Discapacidades",
+        "articulos": [
+          "48",
+          "51",
+          "53"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "25"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia 2006-18-EP/24",
+      "Corte Constitucional sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional sentencia 176-14-EP/19",
+      "Corte Constitucional sentencia 172-18-SEP-CC",
+      "Corte Constitucional sentencia 030-09-SEP-CC (caso 0100-09-EP)",
+      "Corte Constitucional sentencia 004-18-SEP-CC (caso 0664-14-EP)",
+      "Corte Constitucional sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional sentencia 102-13-SEP-CC (caso 0380-10-EP)",
+      "Corte Constitucional sentencia 1357-13-EP/20",
+      "Corte Constitucional sentencia 1101-20-EP/22",
+      "Corte Constitucional sentencia 1679-12-EP/20",
+      "Corte Constitucional sentencia 253-16-EP/21",
+      "Corte Constitucional sentencia 1329-12-EP/22",
+      "Corte Constitucional sentencia 2901-19-EP/23",
+      "Corte Constitucional sentencia 1178-19-JP/21",
+      "Corte Constitucional sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación reconoce que, en principio, debía analizar si hubo vulneración de derechos antes de examinar la vía adecuada. Sin embargo, aplica la excepción de la sentencia 2006-18-EP/24 (párrafos 42 y 43): la impugnación de la terminación de un contrato de servicios ocasionales es un conflicto laboral entre el Estado y un servidor público, que corresponde por regla general a la jurisdicción contencioso administrativo, salvo que comprometa notoria o gravemente la dignidad o autonomía del servidor o requiera respuesta urgente. Descarta esas excepciones: la alegación de gestación aparece recién en un amicus curiae, no se planteó en la demanda y, según las fechas, no constaba documentalmente al 31 de marzo de 2024. Concluye que concurren las causales de improcedencia de los numerales 1 y 3 del artículo 42 de la LOGJCC. Confirma la sentencia de primera instancia, que rechazó la acción por improcedente.",
+    "pruebas": [
+      "Contratos de servicios ocasionales y renovación (fs. 21 y anexos)",
+      "Memorando MIES-CGAF-2023-1929-M sobre vigencia del contrato",
+      "Aviso de salida del IESS (fs. 21), con fecha de afectación 31 de marzo de 2024",
+      "Oficio MDT-DGAP-2024-0045-Q del Ministerio de Trabajo",
+      "Historia clínica de la menor A.V.A.R.",
+      "Memorando MSP-HPBQ-CLI-GRAL-2024-0084-M de 17 de junio de 2024 (fs. 383)",
+      "Informe técnico del Ministerio de Salud Pública (fs. 387) y del área de Neurocirugía de 07/06/2024",
+      "Informe médico-ocupacional No. 0025 de 12 de marzo de 2024 (fs. 96 a 101)",
+      "Parte policial No. 2024041211142216004 (12 de abril de 2024)",
+      "Documento de gestación de 13 semanas presentado por amicus curiae (fs. 602), considerado extemporáneo y no alegado en la demanda"
+    ],
+    "motivacion": "La improcedencia se funda en que el asunto es de naturaleza laboral-administrativa (terminación de contrato ocasional por cumplimiento del plazo) y no compromete de forma notoria o grave la dignidad o autonomía de la servidora ni exige respuesta urgente. Además, la alegación de discapacidad o enfermedad catastrófica de la hija no quedó acreditada con la prueba del expediente, y la condición de gestación no fue alegada en la demanda ni documentada a la fecha de terminación.",
+    "criterioResolucion": "La impugnación de la terminación de un contrato de servicios ocasionales es, por regla general, asunto de la jurisdicción contencioso administrativo; la acción de protección solo procede como excepción si el caso compromete notoria o gravemente la dignidad o autonomía del servidor o requiere una respuesta urgente, y el juez debe analizar si se cumple esa excepción.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la motivación (art. 76 numeral 7 literal l de la Constitución)",
+      "Derecho al trabajo (art. 33 de la Constitución)",
+      "Derecho a la seguridad jurídica (art. 82 de la Constitución)",
+      "Atención prioritaria por doble vulnerabilidad (art. 35 de la Constitución y normas de discapacidades y salud)"
+    ],
+    "fundamentosDeHecho": "La accionante fue contratada por el MIES como servidora ocasional desde el 13 de febrero de 2023 y su contrato venció el 31 de marzo de 2024; el MIES dio por terminado el vínculo por cumplimiento del plazo. Afirmó que su hija padece craneosinostosis considerada catastrófica o rara, pero la prueba (historia clínica, informes del Ministerio de Salud y médico ocupacional) no acreditó discapacidad ni enfermedad catastrófica o rara. No se probó que la accionante fuera madre sustituta. Tampoco se acreditó gestación a la fecha de terminación.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

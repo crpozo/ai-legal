@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 27635,
+    "tokensSalida": 1565
+  },
+  "salida": {
+    "numero": "17230202507815",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "82",
+          "33",
+          "169",
+          "2.4",
+          "86.2",
+          "186",
+          "76.1",
+          "325",
+          "326"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "7",
+          "13",
+          "14",
+          "24",
+          "39",
+          "40",
+          "41"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "7",
+          "160.2",
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "256"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia No. 0334-16-SEP-CC, caso No. 0103-13-EP",
+      "Corte Constitucional, sentencia No. 345-17-SEP-CC",
+      "Corte Constitucional, sentencia No. 012-18-SEP-CC",
+      "Corte Constitucional, sentencia No. 146-14-SEP-CC",
+      "Corte Constitucional, sentencia Nro. 0001-10-JPO-CC (caso 999-09-JP)",
+      "Corte Constitucional, sentencia Nro. 0140-12-SEP-CC (caso 1739-10-EP)",
+      "Corte Constitucional, sentencia Nro. 055-11-SEP-CC (caso 0564-10-EP)"
+    ],
+    "argumentacion": "El tribunal confirma la competencia y validez procesal, y resume la naturaleza de la acción de protección como recurso excepcional para amparar derechos constitucionales. Examina seguridad jurídica y debido proceso en el cumplimiento de normas: concluye que la Fuerza Terrestre aplicó el Reglamento de Evaluación de la Condición Física y la Ley Orgánica de Personal y Disciplina, y que los reclamos sobre certificados médicos, notas y excepciones reglamentarias son de mera legalidad que requieren prueba y valoración. Sobre el derecho al trabajo, afirma que la disponibilidad se aplicó conforme a la normativa y que el análisis de los hechos no corresponde a la vía constitucional, siendo la vía idónea la contencioso-administrativa.",
+    "pruebas": [
+      "Certificados médicos del Hospital Inglés (16/11/2022 y 16/12/2022) y validaciones de la Dirección de Sanidad de la Fuerza Terrestre",
+      "Informes médicos del Hospital de Especialidades de las Fuerzas Armadas Nro. 10783 y 10860",
+      "Resoluciones administrativas 2023-080, 2023-317, 2024-087, 2024-254 y 2025-028",
+      "Resumen de notas del accionante y hoja de vida militar (referidos por las partes)"
+    ],
+    "motivacion": "Rechaza la apelación y confirma la sentencia de primera instancia por no acreditar vulneración de derechos constitucionales. Sostiene que los reclamos requieren producción y valoración probatoria propias de la vía de legalidad, por lo que no pueden resolverse en acción de protección.",
+    "criterioResolucion": "Los reclamos sobre valoración de certificados médicos, ponderación de notas y aplicación de excepciones reglamentarias en actos de desvinculación militar constituyen pretensiones de mera legalidad, que deben discutirse en la jurisdicción contencioso-administrativa y no en la acción de protección.",
+    "citaTextual": "la vía idónea y eficaz para discutir la validez de los actos administrativos sancionatorios o de desvinculación en el presente caso es la jurisdicción contencioso-administrativa, no pudiendo desnaturalizarse la acción de protección para convertirla en una instancia adicional de control de legalidad.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de cumplimiento de normas",
+      "Trabajo"
+    ],
+    "fundamentosDeHecho": "El accionante, soldado de la Fuerza Terrestre, sufrió una fractura de radio derecho e intervención quirúrgica en noviembre de 2022. Obtuvo notas inferiores a 17/20 en pruebas físicas, fue declarado no idóneo para el curso de perfeccionamiento (resolución de 25/08/2023), se le colocó en disponibilidad (2024) y luego en servicio pasivo (12/02/2025). El tribunal no fija hechos propios; sostiene que la entidad aplicó la normativa y que el accionante no alcanzó la nota mínima de 17/20.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

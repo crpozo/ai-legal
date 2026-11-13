@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 31738,
+    "tokensSalida": 1889
+  },
+  "salida": {
+    "numero": "17203202404420",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42 numerales 1, 3, 4 y 5",
+          "10 numerales 2 y 3"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11 numeral 2",
+          "33",
+          "66 numeral 4",
+          "76 numeral 7 literal l",
+          "82",
+          "88",
+          "169",
+          "325",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "5",
+          "17",
+          "22",
+          "24",
+          "83 literal h",
+          "86"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos (COGEP)",
+        "articulos": [
+          "253"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de la Procuraduría General del Estado",
+        "articulos": [
+          "6"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional sentencia No. 1214-18-EP/22",
+      "Corte Constitucional sentencia No. 1158-17-EP/21",
+      "Corte Constitucional sentencia No. 23-11-IS/19",
+      "Corte Constitucional sentencia No. 3-19-JP/20",
+      "Corte Constitucional sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional sentencia No. 54-17-IN/22",
+      "Corte Constitucional sentencia No. 246-15-SEP-CC (caso 1194-13-EP)",
+      "Corte Constitucional sentencia No. 1797-18-EP/20",
+      "Corte Constitucional sentencia No. 2006-18-EP/24"
+    ],
+    "argumentacion": "El tribunal de alzada confirma en sustancia la improcedencia: examina si hubo vulneración de igualdad y no discriminación (no hay prueba de trato diferenciado frente a servidores en igual situación), del derecho al trabajo (la accionante no acredita atención prioritaria ni derecho a estabilidad y la terminación obedece a causas legales), de la motivación (encuentra que el acto y el informe de control de asistencia sustentan la decisión) y de la seguridad jurídica (el nombramiento provisional no genera estabilidad conforme a la LOSEP). Concluye que el asunto es de mera legalidad y de competencia de la jurisdicción contencioso administrativa, aplicando el numeral 1, 3 y 4 del artículo 42 LOGJCC.",
+    "pruebas": [
+      "Correo institucional Zimbra de la gerente subrogante",
+      "Acción de personal No. UATH-1639-HEG",
+      "Memorando MSP-CZ9-HEG-2024-0002-M",
+      "Informe de control de asistencia UATH-HEG-400 de 7 de diciembre de 2023 (fs. 161 a 163)",
+      "Informes técnicos MSP-HEG-UATH-008-2024 y MSP-HEG-UATH-013-2024",
+      "Memorandos de la Dirección Administrativa Financiera y de la Dirección Médica sobre asistencia de la accionante"
+    ],
+    "motivacion": "La sentencia afirma que no se prueba discriminación ni vulneración del derecho al trabajo, que la motivación del acto es suficiente conforme a la jurisprudencia de la Corte Constitucional y que la seguridad jurídica no se vulneró. Subsidiariamente, señala que el reclamo es de legalidad y debe tramitarse en la vía contencioso administrativa, por lo que la acción de protección es improcedente.",
+    "criterioResolucion": "La acción de protección es improcedente cuando no se demuestra una vulneración directa de derechos constitucionales y el reclamo de terminación de un nombramiento provisional, al tratarse de un conflicto laboral con servidor público, corresponde en principio a la vía contencioso administrativa; el nombramiento provisional no genera derecho de estabilidad.",
+    "citaTextual": "Por lo expuesto, el Primer Tribunal de la Sala Especializada de lo Civil y Mercantil de la Corte Provincial de Justicia de Pichincha, ADMINISTRANDO JUSTICIA EN NOMBRE DEL PUEBLO SOBERANO DEL ECUADOR, Y POR AUTORIDAD DE LA CONSTITUCIÓN Y LAS LEYES DE LA REPÚBLICA, rechaza el recurso de apelación presentado por la legitimada activa KAREN MICHELLE CANCHINGRE PONCE y en consecuencia niega por improcedente, la acción de protección presentada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Debido proceso en la garantía de la motivación",
+      "Igualdad y no discriminación",
+      "Derecho al trabajo"
+    ],
+    "fundamentosDeHecho": "La accionante fue servidora con contrato ocasional desde 16 de abril de 2020 y nombramiento provisional desde 1 de noviembre de 2022 como médica general en el Hospital General Enrique Garcés. Su nombramiento terminó con efecto al 31 de diciembre de 2023 y se le notificó el 2 de enero de 2024. Existen informes de control de asistencia y de talento humano que señalan incumplimientos de horario por cursar un posgrado. El tribunal considera que no consta vulneración de derechos constitucionales.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

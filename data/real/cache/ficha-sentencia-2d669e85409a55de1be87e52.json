@@ -1,0 +1,55 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12333,
+    "tokensSalida": 2748
+  },
+  "salida": {
+    "numero": "17296202600037",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "35",
+          "44",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Código de la Niñez y Adolescencia",
+        "articulos": [
+          "11"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante No. 001-16-PJO-CC (caso 0530-10-JP), citada en la resolución",
+      "Sentencia No. 239-17-EP/22, citada en la resolución",
+      "Sentencia No. 889-20-JP/21, citada en la resolución"
+    ],
+    "argumentacion": "El tribunal analiza primero si existe vulneración de derechos constitucionales, como exige la sentencia 001-16-PJO-CC, antes de examinar la vía. Concluye que la retención por el proceso coactivo es válida y legal como regla general, pero resulta inconstitucional en el monto de la pensión alimenticia que se acredita en la cuenta del obligado. Esto afecta la atención prioritaria de la menor y su interés superior. Por ello rechaza el recurso de apelación de los legitimados pasivos y confirma la sentencia, modificándola o aclarándola en cuanto a los derechos vulnerados. Dispone medidas de reparación: revisar la retención sin tocar el monto de la pensión, restituir en 5 días lo retenido indebidamente y desbloquear la cuenta registrada en SUPA.",
+    "pruebas": [
+      "Causa de alimentos No. 17204-2018-03018 (foja 2)",
+      "Monto de la pensión alimenticia a enero de 2026: USD 129,64",
+      "Acreditaciones del sistema SUPA en la cuenta del Banco Procredit No. 0601011639551",
+      "Proceso coactivo No. DZ9-COBUAPC19-00000879 con auto de pago por USD 5.228,16 (foja 199)",
+      "Orden de retención en la cuenta de ahorros del Banco Procredit por USD 15,12 (foja 197)",
+      "Medidas de prohibición de enajenar y secuestro de dos vehículos"
+    ],
+    "motivacion": "Se apoya en el interés superior del niño (arts. 35 y 44 CRE, art. 11 CNA) y en la naturaleza inembargable de la pensión alimenticia. Sostiene que la deuda tributaria del padre no puede cobrarse con fondos destinados a la subsistencia de la menor, pero que la retención sí puede hacerse siempre que no se toque el monto de la pensión.",
+    "criterioResolucion": "La retención de cuentas dentro de un proceso coactivo es, por regla general, válida, pero es inconstitucional en el monto acreditado como pensión alimenticia a un menor; la retención debe ejecutarse sin considerar ni topar ese monto, y si se retuvo, debe restituirse.",
+    "citaTextual": "la retención debe realizarse SIN CONSIDERAR O SIN TOPAR el monto o montos que en la cuenta consten como acreditación de “pensión alimenticia”.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "No se enumeran de forma expresa en el texto; del planteamiento del accionante se desprende la afectación a la pensión alimenticia de su hija menor de edad por la retención de fondos"
+    ],
+    "fundamentosDeHecho": "El accionante ejerce la custodia de su hija menor de edad, quien recibe la pensión alimenticia (USD 129,64 a enero de 2026) en su cuenta del Banco Procredit, vía SUPA. El SRI tramita el proceso coactivo DZ9-COBUAPC19-00000879 contra el accionante, que no fue anulado, y ordenó la retención de fondos en esa cuenta por USD 15,12. Las pensiones quedaron retenidas, y el accionante alega desprotección económica de la menor desde el 12 de febrero de 2026.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

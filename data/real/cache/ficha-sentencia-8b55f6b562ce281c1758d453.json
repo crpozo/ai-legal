@@ -1,0 +1,71 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 16576,
+    "tokensSalida": 1621
+  },
+  "salida": {
+    "numero": "17113202500010",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "89",
+          "169",
+          "82",
+          "76 numeral 7 literal l",
+          "76.7",
+          "233",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "168",
+          "6",
+          "43",
+          "45"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Integral Penal",
+        "articulos": [
+          "466",
+          "604",
+          "528 numeral 2",
+          "594 numeral 3",
+          "593",
+          "595 numerales 4 y 5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia N°006-17-SCN-CC, caso N°0011-11-CN",
+      "Sentencia N°171-15-SEP-CC, caso N°0560-12-EP",
+      "Sentencia N°005-16-SEP-CC, caso N°1221-14-EP",
+      "Sentencia N°017-18-SEP-CC, caso N°513-16-EP",
+      "Opinión Consultiva OC-8/87 de la Corte Interamericana de Derechos Humanos",
+      "Caso Tibi vs Ecuador (Corte IDH, 7 de septiembre de 2004)"
+    ],
+    "argumentacion": "El tribunal confirma su competencia por tratarse de una orden de privación de libertad dictada en un proceso penal y valida la tramitación. Expone el marco constitucional y legal del hábeas corpus y transcribe el informe del juez accionado y el parte policial de notificación. Concluye que la accionante sí fue notificada conforme al parte policial (notificación presencial del 27 de octubre de 2023 en el domicilio que el policía consignó) y que la vinculación y la audiencia preparatoria de juicio no exigen la comparecencia de la persona procesada, bastando su defensor. Añade que el delito de delincuencia organizada no admite juicio en ausencia, por lo que, ante la prófuga, correspondía suspender la etapa de juicio y ordenar la localización y captura. Por ello, la privación de libertad se deriva de una orden de autoridad competente y no es ilegal, ilegítima ni arbitraria.",
+    "pruebas": [
+      "Parte policial de notificación (fs. 16 a 19 del expediente constitucional), suscrito por el Sgto. Edison Mayanquer Escobar",
+      "Informe del Juez accionado",
+      "Copias de la actuación judicial de legalización de aprehensión, auto de llamamiento a juicio y boleta de encarcelamiento (referidas en el informe)"
+    ],
+    "motivacion": "La decisión se justifica en que la notificación consta en el parte policial y en que la normativa procesal (COIP arts. 593, 595 y 604) no exige la presencia del procesado en la vinculación ni en la audiencia preparatoria de juicio. La orden de localización y captura emitida por autoridad competente sustenta la detención, por lo que no se configura ninguna de las causales de privación ilegal, arbitraria o ilegítima.",
+    "criterioResolucion": "Si la orden de privación de libertad deriva de una autoridad competente, en un proceso penal en el que la persona fue notificada según el parte policial, y la normativa procesal no exige su comparecencia en la vinculación o en la audiencia preparatoria, la detención no es ilegal, arbitraria ni ilegítima y el hábeas corpus se rechaza.",
+    "citaTextual": "Consecuentemente la privación de la libertad de la señorita Carmen Estefanía Guisamano Vernaza, no recae dentro de la ARBITRARIEDAD, NI ES ILEGAL NI TAMPOCO ES ILEGITMA, ya que la misma se debe al cumplimiento de una orden de localización y captura emitida por una autoridad competente",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Derecho a la defensa",
+      "Debido proceso",
+      "Libertad personal (no ser privado de libertad de forma ilegal, arbitraria o ilegítima)"
+    ],
+    "fundamentosDeHecho": "La accionante Ángela María Vernaza Palomino solicitó hábeas corpus a favor de su hija, Carmen Estefanía Guisamano Vernaza, detenida el 22 de octubre de 2024 en virtud de una boleta de encarcelamiento. Alegó que nunca fue notificada de la audiencia de vinculación y que fue declarada prófuga sin conocer el proceso. El tribunal da por probado, según el parte policial, que la notificación se practicó presencialmente el 27 de octubre de 2023 en el domicilio consignado, y que la detención obedece a una orden de localización y captura del juez accionado. Estos hechos son los que el tribunal toma como base para decidir.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

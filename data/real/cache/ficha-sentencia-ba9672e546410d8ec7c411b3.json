@@ -1,0 +1,65 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 10115,
+    "tokensSalida": 1303
+  },
+  "salida": {
+    "numero": "17203202403678",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "88",
+          "12",
+          "96.5",
+          "32",
+          "66.2",
+          "281.4",
+          "375.6",
+          "11.6"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "208.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "168.1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional, sentencia 0016-13-SEP-CC",
+      "Corte Constitucional, sentencia 376-17-EP/24",
+      "Resolución 1175-2006-RA del Tribunal Constitucional"
+    ],
+    "argumentacion": "El tribunal de apelación confirma que la acción de protección es procedente y que existe vulneración del derecho al agua, por la suspensión del servicio que afectó necesidades básicas de las accionantes, descartando la vulneración de seguridad jurídica y debido proceso. Luego separa la cuestión del pago de la deuda de 2008-2009, señalando que su recaudación no puede hacerse dentro de esta acción sin desnaturalizarla. Por ello revoca lo relativo a la difusión del fallo a herederos y a la liquidación y cobro dentro del proceso, y mantiene la prohibición de suspender el servicio por esas deudas, sin intereses sobre la deuda 2008-2009.",
+    "pruebas": [
+      "Órdenes de suspensión del servicio de agua potable (tres cuentas, emitidas el 02-07-2024)",
+      "Certificado de defunción de Juan José Alquinga Quinatoa",
+      "Resolución 1175-2006-RA del Tribunal Constitucional",
+      "Respuesta de la Jefatura de Cartera y Cobranzas de la EPMAPS sobre reconexión de cuentas",
+      "Informe de la EPMAPS sobre saldos de cuentas 2008-2009"
+    ],
+    "motivacion": "La suspensión del servicio de agua para necesidades básicas pone en peligro la subsistencia en condiciones de dignidad, lo que configura vulneración del derecho al agua en la dimensión de continuidad del servicio. Respecto de la deuda, el cobro de valores atrasados no es materia de la acción de protección y debe tramitarse por los mecanismos legales de cobro.",
+    "criterioResolucion": "La suspensión del servicio de agua potable por deudas atrasadas, cuando ese servicio satisface necesidades básicas, vulnera el derecho al agua; sin embargo, la recaudación de pagos atrasados no puede decidirse dentro de la acción de protección, sin perjuicio de los mecanismos de cobro previstos en la ley.",
+    "citaTextual": "en la dimensión de que el servicio no sea interrumpido, en perjuicio de la salud, la vida y la dignidad de las legitimadas activas",
+    "apelacion": "reforma",
+    "derechosInvocados": [
+      "Derecho al agua",
+      "Derecho al debido proceso",
+      "Derecho a la seguridad jurídica"
+    ],
+    "fundamentosDeHecho": "La EPMAPS suspendió el suministro de agua potable en domicilios de las accionantes por deudas de consumo de 2008-2009, período en que el agua de Tumbaco estaba contaminada con arsénico según la Resolución 1175 del Tribunal Constitucional. Las cuentas fueron reconectadas durante el trámite. Las accionantes sostienen que la deuda no es exigible por ese motivo. La sentencia de primera instancia aceptó parcialmente la demanda y dispuso notificar a herederos y re liquidar la deuda.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

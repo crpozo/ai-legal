@@ -1,0 +1,66 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 12330,
+    "tokensSalida": 2678
+  },
+  "salida": {
+    "numero": "17113202600030",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 89",
+          "Art. 89 inciso quinto",
+          "Art. 35",
+          "Art. 75",
+          "Art. 86.5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 43 numeral 1",
+          "Art. 44 numeral 1",
+          "Art. 45.2"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 209-15-JH/19 y acumulados (12 de noviembre de 2019)",
+      "Sentencia 365-18-JH/21 y acumulados",
+      "Sentencia 253-20-JH/22",
+      "STC 2663-2003-PHC (Tribunal Constitucional del Perú)",
+      "STC 02700-2006-PHC (Tribunal Constitucional del Perú)"
+    ],
+    "argumentacion": "El tribunal fija la naturaleza del hábeas corpus correctivo, que protege también derechos conexos a la libertad, y lo aplica al caso como garantía de la salud e integridad de una persona privada de libertad. Toma el reporte médico de ingreso y el certificado de discapacidad como base de la vulnerabilidad del accionante. Examina el informe del SNAI, que no justifica la atención de diálisis ni detalla la medicación, y la intervención del Ministerio de Salud, que no desvirtúa lo alegado porque los tratamientos citados son anteriores a la privación de libertad. Concluye que, desde la privación de libertad, se vulneró el derecho a la salud e integridad física. Ordena medidas correctivas de traslado para diálisis, suministro de medicación y seguimiento.",
+    "pruebas": [
+      "Reporte médico de ingreso de 20 de octubre de 2026",
+      "Certificado de discapacidad del 74% emitido por el Ministerio de Salud (folio 4)",
+      "Boleta de encarcelamiento (folio 22)",
+      "Informe del SNAI y su exposición en audiencia",
+      "Exposición del Ministerio de Salud y código de validación CV526-C079675-004",
+      "Encefalograma de 13 de agosto de 2026 (folio 559)"
+    ],
+    "motivacion": "La resolución sostiene que el accionante pertenece a grupos de atención prioritaria y que el Estado debe garantizar la atención médica de las personas privadas de libertad. Considera que los legitimados pasivos no desvirtuaron las acusaciones del accionante. Rechaza la inspección solicitada por no ser prueba relevante. Dispone las medidas en el numeral 21 de la decisión.",
+    "criterioResolucion": "Cuando una persona privada de libertad con enfermedad grave requiere tratamiento periódico y continuo, el juez de garantías debe disponer su acceso inmediato a los servicios de salud dentro del centro en condiciones adecuadas. Si esto no es posible, puede disponer atención en una institución de salud externa con coordinación del sistema de salud pública y resguardo de la fuerza pública. Las medidas alternativas a la privación de libertad son excepcionales.",
+    "citaTextual": "la regla general consiste en que la jueza o juez de garantías constitucionales disponga el inmediato acceso a los servicios de salud de la persona privada de libertad en el mismo centro de privación de libertad en condiciones apropiadas desde el punto de vista científico y médico",
+    "apelacion": "no_aplica",
+    "derechosInvocados": [
+      "Derecho a la salud",
+      "Derecho a la integridad personal o física",
+      "Derecho a la vida",
+      "Derecho a la libertad"
+    ],
+    "fundamentosDeHecho": "El accionante está privado de libertad desde el 20 de octubre de 2026 en el Centro de Privación de Libertad Pichincha No. 1 y padece insuficiencia renal terminal e insuficiencia cardíaca, con diálisis trisemanal y medicación diaria. El tribunal da por no justificado que el SNAI haya garantizado las sesiones de diálisis y la medicación prescrita, y que el Ministerio de Salud haya desvirtuado lo alegado. Consta el certificado de discapacidad del 74%.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

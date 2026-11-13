@@ -1,0 +1,81 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 49611,
+    "tokensSalida": 1483
+  },
+  "salida": {
+    "numero": "17571202500503",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42"
+        ]
+      },
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "169",
+          "82",
+          "11",
+          "66",
+          "76",
+          "88",
+          "160"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "7"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Personal y Disciplina de las Fuerzas Armadas",
+        "articulos": [
+          "142"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 001-16-PJO-CC",
+      "Sentencia No. 1894-10-JP/20",
+      "Sentencia No. 67-23-IN/24",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 2006-18-EP/24",
+      "Sentencia No. 224-23-JP/24",
+      "Sentencia No. 3374-22-EP/25",
+      "Sentencia No. 2901-19-EP-23",
+      "Sentencia No. 1956-22-EP-2022"
+    ],
+    "argumentacion": "El tribunal de alzada examina el problema jurídico sobre violación de igualdad, proyecto de vida, debido proceso (favorabilidad, legalidad, motivación) y seguridad jurídica por la baja del accionante. Concluye que el asunto no es propio de acción de protección, pero analiza el fondo: no hay trato discriminatorio comparable; el ascenso es expectativa legítima y no derecho adquirido; la inhabilidad del art. 142 se aplicó conforme a la ley vigente; la resolución está motivada; y la seguridad jurídica no se vulnera. Además aprecia cosa juzgada respecto de una acción de protección previa (Ambato) con mismos sujetos, hechos, motivo y materia, y encuadra la pretensión en causales de improcedencia del art. 42.",
+    "pruebas": [
+      "Resolución No. 024-COSFT-005 de 21/02/2024 (baja)",
+      "Oficios de 13/06/2023, 27/06/2023, 02/08/2023, 07/08/2023 y 28/08/2023 sobre listas de separación y disponibilidad",
+      "Hoja de vida del accionante con sanciones acumuladas",
+      "Acción de protección previa No. 18334-2023-07438 (Ambato)"
+    ],
+    "motivacion": "Se justifica el rechazo por inexistencia de vulneración de derechos constitucionales (igualdad, dignidad y proyecto de vida, debido proceso y seguridad jurídica), por la existencia de cosa juzgada y por improcedencia del art. 42 numerales 1, 3 y 4 de la LOGJCC, al tratarse de una pretensión de declaración de derecho al ascenso que corresponde a la vía ordinaria.",
+    "criterioResolucion": "El ascenso al inmediato grado superior es una expectativa legítima y no un derecho adquirido; la aplicación de inhabilidades previstas en la ley vigente a procesos de ascenso posteriores a su vigencia no constituye aplicación retroactiva, y las controversias sobre legalidad de actos administrativos militares corresponden a la vía ordinaria.",
+    "citaTextual": "El ascenso no constituye un derecho adquirido, sino una expectativa legítima que está supeditada al cumplimiento de los requisitos legales vigentes.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica",
+      "Irretroactividad de la ley",
+      "Igualdad formal, material y no discriminación",
+      "Proyecto de vida",
+      "Debido proceso en las garantías de favorabilidad, legalidad y motivación",
+      "Trabajo"
+    ],
+    "fundamentosDeHecho": "El accionante, militar (TCRN), fue dado de baja tras la Resolución 024-COSFT-005 (21/02/2024), luego de ser colocado en disponibilidad por la inhabilidad del art. 142 de la LOPDFA (2023) para el ascenso a coronel, por sanciones acumuladas. Alega que debía aplicarse la ley de 1991. El tribunal considera que existe una acción previa con identidad de sujetos, hechos, motivo y materia.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

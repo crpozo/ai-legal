@@ -1,0 +1,80 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19899,
+    "tokensSalida": 1470
+  },
+  "salida": {
+    "numero": "17T03202500011",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "75",
+          "76",
+          "82",
+          "86",
+          "88",
+          "169",
+          "426"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "40",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Tributario",
+        "articulos": [
+          "107",
+          "109",
+          "149",
+          "163"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos (COGEP)",
+        "articulos": [
+          "53",
+          "55",
+          "65"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 001-16-PJO-CC (caso No. 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso No. 1000-12-EP)",
+      "Sentencia No. 918-14-EP/20",
+      "Sentencia No. 1425-18-EP/23",
+      "Sentencia No. 1298-17-EP/21 (caso 1298-17-EP)",
+      "Sentencia No. 1797-18-EP/20"
+    ],
+    "argumentacion": "El tribunal de alzada sostiene que el asunto (anulación de un juicio coactivo por falta de citación) es de mera legalidad y no corresponde a la acción de protección. Aun así analiza tutela judicial efectiva, debido proceso (art. 76.1 y 76.7 a-c) y seguridad jurídica (art. 82). Concluye que no hubo vulneración: la accionante obtuvo copias certificadas el 5 de febrero de 2025 y la constancia de citación consta en el expediente. Finalmente aplica como causales de improcedencia los numerales 1, 3 y 4 del art. 42 LOGJCC y confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Constancia de citación dentro del procedimiento coactivo No. 2023-5000005343-AP (fs. 82, 86, 91 a 93)",
+      "Fotografía de la recepción de la notificación, con negativa de firma de la accionante",
+      "Copias certificadas del juicio coactivo entregadas el 5 de febrero de 2025",
+      "Informe técnico de emisión de títulos de crédito presentado por la EPMAPS en audiencia"
+    ],
+    "motivacion": "La improcedencia se funda en que no se verifica una real vulneración de derechos constitucionales y en que la discusión sobre la validez de la citación y de la ejecución coactiva es de legalidad, de competencia de los jueces ordinarios. Se invoca el art. 42 numerales 1, 3 y 4 LOGJCC.",
+    "criterioResolucion": "La acción de protección no procede cuando, verificada la actuación de la autoridad, no se demuestra una real vulneración de derechos constitucionales y lo que se discute es un asunto de mera legalidad (citación y trámite de un procedimiento coactivo) que tiene vía judicial ordinaria idónea y eficaz.",
+    "citaTextual": "no se puede confundir y utilizar a una garantía jurisdiccional como es la acción de protección, para reclamar circunstancias de mera legalidad que tienen su propio procedimiento para ser conocidos y tutelados por los Jueces Ordinarios",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Tutela judicial efectiva (art. 75 CRE)",
+      "Debido proceso en las garantías de cumplimiento de normas y derechos de las partes (art. 76.1 CRE)",
+      "Derecho a la defensa (art. 76.7 a, b, c CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "La EPMAPS inició un juicio coactivo No. 2023-5000005343-AP por deudas de agua potable y alcantarillado de la accionante. La accionante afirma no haber sido citada ni notificada, y que conoció el juicio el 5 de febrero de 2025 al obtener copias certificadas. El tribunal considera acreditada la constancia de citación y la negativa de la accionante a firmar la recepción; también que pudo acceder al expediente. El texto no fija con precisión la fecha de la notificación de la sentencia de primera instancia más allá de la indicada como lunes 24 de marzo de 2025.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

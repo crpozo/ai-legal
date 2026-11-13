@@ -1,0 +1,82 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 39268,
+    "tokensSalida": 3440
+  },
+  "salida": {
+    "numero": "17573202400262",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86.3",
+          "88",
+          "85",
+          "66.23",
+          "66.25",
+          "66.26",
+          "227"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "16",
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "686",
+          "687",
+          "688",
+          "689",
+          "691",
+          "692",
+          "695",
+          "696"
+        ]
+      },
+      {
+        "norma": "Resolución 018-DIR-2024-ANT (reforma al Reglamento de matriculación vehicular)",
+        "articulos": [
+          "65.5"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 001-16-PJO-CC",
+      "Sentencia 673-17-EP/23"
+    ],
+    "argumentacion": "El tribunal parte de que, por tratarse de una entidad pública, la carga de la prueba se invierte y se presumen ciertos los hechos de la demanda salvo prueba en contrario. Descarta que el caso encaje en las excepciones de manifiesta improcedencia de la Corte Constitucional y, por tanto, examina el fondo. Analiza la titularidad del vehículo y concluye, con base en el contrato de compraventa notariado y la entrega física del bien, que la accionante es dueña por tradición aunque no haya inscrito la matrícula. Luego examina el derecho a acceder a servicios públicos de calidad con los tres elementos de la sentencia 673-17-EP/23 y concluye que la ANT no buscó alternativas, respondió tarde y sin información útil, y pidió documentos adicionales no previstos en la norma. Con ello encuentra vulnerados el artículo 66.25 y, por conexión, el derecho de propiedad del artículo 66.26. Revoca la sentencia de primera instancia, que había negado la acción.",
+    "pruebas": [
+      "Contrato de compraventa de vehículos con reconocimiento de firmas, fojas 37 a 45, de 5 de julio de 2017 y notariado el 25 de julio de 2017",
+      "Certificado único vehicular y documento de revisión e identificación vehicular, fojas 19",
+      "Peticiones de la accionante de fojas 17, 18, 30, 31 y 32",
+      "Oficios de respuesta de la ANT, incluido el de fojas 33 y el de respuesta de 31 de octubre",
+      "Resolución 018-DIR-2024-ANT de 4 de julio de 2024, fojas 76 a 84",
+      "Certificado de improntas No 0440398"
+    ],
+    "motivacion": "La decisión se apoya en que la titularidad se acredita por tradición y título traslaticio, no por la matrícula, y en que la ANT incumplió los elementos de calidad, eficiencia, buen trato e información del derecho del artículo 66.25, lo que afectó la propiedad del artículo 66.26. Como reparación, ordena a la ANT reactivar el vehículo en un plazo no mayor a cinco días contados desde la entrega por la accionante de los documentos legales requeridos, entre ellos los contratos que demuestren la secuencia de la tradición. El texto no fija la fecha de inicio de ese plazo, que depende de la entrega de documentos que no consta en la resolución. La sentencia no se pronuncia sobre la reparación económica de 5.000 dólares solicitada en primera instancia. Además, el texto contiene inconsistencias de año (2023 y 2024) en algunas fechas de respuestas de la ANT.",
+    "criterioResolucion": "Cuando la entidad pública no ofrece alternativas para acceder al servicio, no informa con claridad los requisitos, responde tarde y exige documentos no previstos en la norma, se vulnera el derecho a acceder a servicios públicos de calidad (art. 66.25) y, por conexión, el derecho a la propiedad (art. 66.26). Quien adquirió el vehículo por tradición con título traslaticio es titular del dominio, aunque no conste inscrito en la matrícula.",
+    "citaTextual": "En resumen, la ANT vulneró el derecho de la accionante a acceder a servicios públicos de calidad al no prestar el servicio bajo los parámetros de calidad, eficiencia y con buen trato",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Derecho a la administración pública (art. 227 CRE)",
+      "Derecho a acceder a bienes y servicios públicos de calidad, con eficiencia, eficacia y buen trato, y a recibir información adecuada y veraz (art. 66.25 CRE)",
+      "Derecho a la propiedad privada (art. 66.26 CRE)",
+      "Derecho a dirigir quejas y peticiones y a recibir respuestas motivadas (art. 66.23 CRE)"
+    ],
+    "fundamentosDeHecho": "La accionante compró la motocicleta placa IK133P en 2017 mediante contrato notariado y recibió su entrega. El vehículo figura a nombre de otra persona y está bloqueado y dado de baja por la Resolución 2023-008. Presentó peticiones de reactivación entre febrero y abril de 2024 y recibió respuestas negativas o de falta de información por parte de la ANT. El tribunal da por probado que la ANT no atendió de forma oportuna ni con alternativas y que exigió requisitos adicionales.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

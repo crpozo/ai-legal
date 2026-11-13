@@ -1,0 +1,129 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 41059,
+    "tokensSalida": 2658
+  },
+  "salida": {
+    "numero": "17233202509434",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86 numeral 3",
+          "76 numeral 7 literales i) y l)",
+          "76 numeral 3",
+          "82",
+          "88",
+          "11 numeral 2",
+          "66 numeral 4",
+          "33",
+          "325",
+          "326 numeral 4",
+          "160",
+          "163",
+          "227",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 3 y 4",
+          "14",
+          "16",
+          "25 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público (COESCOP)",
+        "articulos": [
+          "121 numeral 19",
+          "120 numeral 19",
+          "48",
+          "101",
+          "117",
+          "118",
+          "134",
+          "137"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "229"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "326"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 1791-22-EP/25",
+      "Corte Constitucional, sentencia 1638-13-EP/19",
+      "Corte Constitucional, sentencia 1288-15-EP/22",
+      "Corte Constitucional, sentencia 1-21-EI/24",
+      "Corte Constitucional, sentencia 1391-14-P/20",
+      "Corte Constitucional, sentencia 124-12-EP/20",
+      "Corte Constitucional, sentencia 603.12.JP/19",
+      "Corte Constitucional, sentencia 1158-2017-EP/21",
+      "Corte Constitucional, sentencia 002-14-SIN-CC",
+      "Corte Constitucional, sentencia 019-16-SIN-CC",
+      "Corte Constitucional, sentencia 362-16-SEP-CC",
+      "Corte Constitucional, sentencia 137-13-SCN-CC",
+      "Corte Constitucional, sentencia 002-17-SIN-CC",
+      "Corte Constitucional, sentencia 26-18-IN/20",
+      "Corte Constitucional, sentencia 140-12-SEP-CC",
+      "Corte Constitucional, sentencia 001-16-PJO-CC",
+      "Corte Constitucional, sentencia 016-13-SEP-CC",
+      "Corte Constitucional, sentencia 041-13-SEP-CC",
+      "Corte Constitucional, sentencia 102-13-SEP-CC",
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 1178-19-JP/21",
+      "Corte Constitucional, sentencia 303-15-SEP-CC",
+      "Corte Constitucional, sentencia 1679-12-EP/20",
+      "Corte Constitucional, sentencia 1357-13-EP/20",
+      "Corte Constitucional, sentencia 1101-20-EP/22",
+      "Corte Constitucional, sentencia 253-16-EP/21",
+      "Corte Constitucional, sentencia 1329-12-EP/22",
+      "Corte Constitucional, sentencia 2901-19-EP/23",
+      "Corte Constitucional, sentencia 165-19-JP/21",
+      "Corte Constitucional, sentencia 461-19-JP/23 y acumulados",
+      "Corte Constitucional, sentencia 446-19-EP/24",
+      "Corte Constitucional, sentencia 1452-17-EP/24",
+      "Corte Constitucional, sentencia 1000-12-EP (016-13-SEP-CC)"
+    ],
+    "argumentacion": "El tribunal de apelación examina si la jueza de primera instancia motivó suficientemente su decisión de improcedencia. Concluye que sí, por cuanto la sentencia analizó cada derecho denunciado (seguridad jurídica, debido proceso en garantía de defensa, non bis in idem, trabajo, igualdad y no discriminación, motivación), valoró la prueba y aplicó normas y precedentes. Recuerda que, según la jurisprudencia citada, los jueces constitucionales deben verificar primero la vulneración alegada, salvo excepciones; el tribunal considera que el caso no encaja en las excepciones (asuntos que comprometan gravemente la dignidad o autonomía del servidor, discriminación evidente o urgencia), por lo que la discusión sobre actos administrativos sancionatorios corresponde a la vía contencioso-administrativa. Descarta la falta de motivación y la vulneración de seguridad jurídica con base en el principio de legalidad del artículo 76.3 CRE.",
+    "pruebas": [
+      "Denuncias de Melany Nicole Tituaña Paredes (foja 503) y de Juan Manuel Bacuy Taco (foja 1153)",
+      "Autos de inicio de los sumarios 2025-051-Z9-DMQ-DAGI-SA (fs. 511-515) y 2025-052-Z9-DMQ-DAI-SA (fs. 1169-1172)",
+      "Notificaciones de 3 de abril de 2025 (fs. 522) y 22 de abril de 2025 (fs. 1174)",
+      "Resoluciones administrativas de los sumarios y de los recursos de apelación ante el Ministerio del Interior",
+      "Expedientes de los sumarios administrativos"
+    ],
+    "motivacion": "La confirmación se apoya en que la sentencia de primera instancia sí contiene fundamentación normativa y fáctica suficiente; en que los sumarios constan notificados y el accionante ejerció su defensa en todas las fases; en que los dos sumarios derivan de denuncias distintas y hechos distintos, por lo que no hay doble juzgamiento; y en que la controversia sobre la legalidad de los actos administrativos debe ventilarse en la vía contencioso-administrativa (artículo 42 numerales 1 y 4 LOGJCC).",
+    "criterioResolucion": "La acción de protección es improcedente cuando, verificada la motivación de la sentencia de primera instancia, la pretensión se dirige a cuestionar la legalidad de actos administrativos sancionatorios que tienen vía judicial propia, sin que se acredite una vulneración de derechos constitucionales ni se configure una excepción jurisprudencial a la regla de subsidiariedad.",
+    "citaTextual": "Como se podrá constatar las causas acusadas por el legitimado activo no se adecuan a los supuestos establecidos por la Corte Constitucional para que el Juez dentro de una accion de proteccion proceda prima facie a analizar cada derecho constitucional denunciado como vulnerado por tales hechos, esto es, que el caso se refiera a asuntos que comprometan notoria o gravemente la dignidad o autonomía del servidor",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de defensa (art. 76.7 CRE)",
+      "Non bis in idem (art. 76.7.i CRE)",
+      "Motivación (art. 76.7.l CRE)",
+      "Derecho al trabajo (arts. 33 y 325 CRE)",
+      "Igualdad y no discriminación (arts. 11.2 y 66.4 CRE)",
+      "Honor y buen nombre"
+    ],
+    "fundamentosDeHecho": "El accionante, sargento segundo de Policía, fue destituido en dos sumarios administrativos iniciados por denuncias de dos personas distintas (31 de enero de 2025 y posteriores), por la falta grave del artículo 121 numeral 19 del COESCOP. Las resoluciones administrativas fueron notificadas al accionante en los sumarios y este presentó apelaciones que fueron negadas por el Ministerio del Interior. El tribunal da por establecido que los dos procesos se refieren a hechos distintos y que hubo notificación y ejercicio de defensa.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

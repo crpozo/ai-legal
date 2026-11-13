@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 34708,
+    "tokensSalida": 4090
+  },
+  "salida": {
+    "numero": "17203202504174",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "11.2",
+          "11.3",
+          "61.7",
+          "66.4",
+          "75",
+          "76.1",
+          "76.7 literal l",
+          "82",
+          "86.3",
+          "86.5",
+          "88",
+          "169",
+          "173",
+          "228"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42 numerales 1, 2, 3, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Servicio Público",
+        "articulos": [
+          "5 literal h",
+          "17",
+          "58",
+          "86"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "8",
+          "9",
+          "23",
+          "25",
+          "27"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Corte Constitucional, sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Corte Constitucional, sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencias 1357-13-EP/20, 1101-20-EP/22, 1679-12-EP/20, 253-16-EP/21, 1329-12-EP/22, 2901-19-EP/23, 1178-19-JP/21, 165-19-JP/21, 461-19-JP/23 y acumulados, 446-19-EP/24 y 1452-17-EP/24, citadas dentro de la sentencia 2006-18-EP/24",
+      "Corte Constitucional, sentencia 009-14-SEP-CC (caso 0526-11-EP)",
+      "Corte Constitucional, sentencia 057-15-SEP-CC (caso 0825-13-EP)"
+    ],
+    "argumentacion": "El tribunal confirma la decisión de primera instancia, que negó la acción de protección. Primero, señala que, en principio, correspondía analizar las vulneraciones alegadas antes de examinar la vía adecuada, conforme a la sentencia 001-16-PJO-CC. Luego identifica que la sentencia 2006-18-EP/24 admite excepciones, incluida la de actos administrativos sobre conflictos laborales entre el Estado y sus servidores, como la terminación de contratos de servicios ocasionales. Considera que el caso encaja en esa excepción, porque el accionante postuló a un contrato ocasional y no se acredita un compromiso notorio o grave de su dignidad o autonomía, ni discriminación evidente, ni urgencia. Agrega que la LOSEP (art. 58) permite la contratación ocasional de forma excepcional y discrecional, sin concurso de méritos y oposición, por lo que las razones de la universidad son asunto de legalidad y de la jurisdicción ordinaria. Concluye que la acción es improcedente por los numerales 1, 2 y 3 del art. 42 LOGJCC y la inadmite. La parte dispositiva dice rechazar la apelación y confirmar la sentencia que niega la demanda, pero el fundamento es la improcedencia sin análisis de fondo.",
+    "pruebas": [
+      "Constancia de postulación exitosa generada por el sistema (foja 32)",
+      "Lista de documentos y requisitos para la liquidación de haberes (foja 9)",
+      "Informe de fin de gestión entregado el 1 de agosto de 2025 (foja 11)",
+      "Correos electrónicos de 6 y 11 de agosto de 2025 y respuesta de la universidad (fojas 26 y 28)",
+      "Formato para aplicar al área académica",
+      "Informe sobre la gestión del proyecto FIASA, mencionado por la entidad accionada",
+      "Datos de postulación (998 postulantes y 211 preseleccionados) aportados en audiencia por la entidad accionada"
+    ],
+    "motivacion": "La improcedencia se funda en la subsidiariedad: el accionante no demostró que la vía ordinaria o contencioso-administrativa fuera inadecuada o ineficaz. El tribunal sostiene que el caso corresponde a un conflicto laboral sobre contratación ocasional, materia que la Corte Constitucional asigna por regla general a la jurisdicción ordinaria o contencioso-administrativa, y que no se acreditaron las excepciones que permitirían entrar al fondo. Además, el tribunal señala que la exigencia de motivación se aplica a actos que deciden o restringen derechos subjetivos, y que la universidad no emitió un acto expreso de exclusión sino que no preseleccionó al accionante dentro de un proceso masivo.",
+    "criterioResolucion": "En un conflicto sobre la selección o terminación de contratos de servicios ocasionales en el sector público, el caso corresponde por regla general a la jurisdicción contencioso-administrativa, por lo que la acción de protección es improcedente salvo que se comprometa notoriamente la dignidad o autonomía del servidor, exista discriminación evidente o se requiera respuesta urgente.",
+    "citaTextual": "cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la participación en la función pública (art. 61.7 CRE)",
+      "Derecho a la seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la garantía de observancia de las normas del procedimiento (art. 76.1 CRE)",
+      "Debido proceso en la garantía de motivación (art. 76.7 literal l CRE)",
+      "Igualdad formal (arts. 11.2 y 66.4 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante postuló el 24 de agosto de 2025 a una convocatoria de la universidad para docentes con contrato ocasional, sin impedimento para inscribirse. Antes había sido Director General de Investigación hasta el 31 de julio de 2025. Según el accionante, se le exigió verbalmente un paz y salvo que no constaba en la convocatoria y fue excluido. La universidad sostiene que el paz y salvo no fue requisito de postulación y que no superó la fase de preselección, de la que quedaron fuera la mayoría de postulantes. El tribunal no fija hechos probados concluyentes; decide sobre la base de la naturaleza del conflicto y de la inexistencia de excepciones que justifiquen entrar al fondo.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

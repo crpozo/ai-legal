@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 23672,
+    "tokensSalida": 3508
+  },
+  "salida": {
+    "numero": "17204202502911",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66 numeral 2",
+          "76 numeral 7 literales a), b), c), h) y k)",
+          "82",
+          "88",
+          "169",
+          "226",
+          "328",
+          "370",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "10",
+          "18",
+          "24",
+          "39",
+          "40"
+        ]
+      },
+      {
+        "norma": "Ley de Seguridad Social",
+        "articulos": [
+          "38",
+          "287",
+          "288",
+          "177"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 2034-13-EP/19 (caso 2034-13-EP)",
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 1298-17-EP/21 (caso 1298-17-EP)",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 67-23-IN/24 (caso 67-23-IN)"
+    ],
+    "argumentacion": "El tribunal de alzada revisa la apelación del legitimado pasivo contra la sentencia de primera instancia, que aceptó la acción y declaró vulnerada la tutela judicial efectiva, con medidas de reparación. Verifica la validez del proceso y el carácter de la acción de protección como vía idónea frente a la jurisdicción coactiva. Analiza tres problemas: vida digna (art. 66.2), debido proceso en la garantía de defensa (art. 76.7) y seguridad jurídica (art. 82). Sobre vida digna, concluye que la retención fue una medida legítima en un proceso coactivo, y no encuentra vulneración. Sobre defensa, considera que el accionante fue notificado del proceso coactivo según fs. 150 a 171, y no encuentra vulneración. Sobre seguridad jurídica, pero también respecto del art. 328, considera que el Director Provincial actuó sin la debida prolijidad al emitir retenciones generales dirigidas a la Superintendencia de Bancos que alcanzaban todas las cuentas del accionante, y que mantuvo congelado el patrimonio por ocho meses sin resolver oportunamente los recursos administrativos. Con ello confirma la sentencia. Nota: la sentencia de primera instancia se fundó en la tutela judicial efectiva, mientras que el tribunal de alzada razona sobre el art. 328 y el derecho a resolución oportuna; el texto no aclara expresamente esa diferencia.",
+    "pruebas": [
+      "Auto de 3 de junio de 2025 del ejecutor coactivo",
+      "Escrito de 1 de mayo de 2025 del accionante",
+      "Memorando IESS-CPCCP-2025-5742-M (fs. 248 a 252) sobre anulación de títulos y levantamiento de medidas",
+      "Oficio 0332-JC-IESS-DP-CPSA dirigido a la Superintendencia de Bancos (referido en el texto)",
+      "Fs. 82 (oficio a la Superintendencia de Bancos)",
+      "Fs. 150 a 171 (notificación del proceso coactivo)",
+      "Certificado de cumplimiento de obligaciones patronales de 7 de octubre de 2025 y resumen de obligaciones en mora",
+      "Certificaciones de la Comandancia de la Policía y roles de pago del accionante"
+    ],
+    "motivacion": "El tribunal confirma porque, aunque la potestad coactiva del IESS es legítima, las retenciones generales dirigidas a la Superintendencia de Bancos, que alcanzaron la totalidad de las cuentas del accionante y su remuneración, se dictaron sin la debida prolijidad, y el patrimonio permaneció congelado ocho meses sin despacho oportuno de los recursos administrativos. Esto configura afectación al art. 328 y al derecho a resolución oportuna. No acepta la violación de la defensa porque consta la notificación del proceso coactivo. Reconoce que parte de los títulos fue anulada y que las medidas asociadas fueron levantadas, sin que ello altere la conclusión sobre las retenciones impugnadas.",
+    "criterioResolucion": "La retención general de fondos ordenada por una autoridad coactiva que alcanza la totalidad de las cuentas del obligado, incluida la cuenta donde se acredita su remuneración, sin la debida prolijidad y mantenida por ocho meses sin despachar oportunamente los recursos administrativos, vulnera el art. 328 de la Constitución y el derecho a una resolución oportuna, aunque la potestad coactiva sea legítima.",
+    "citaTextual": "Este Tribunal Ad quem considera que, el legitimado pasivo Director Provincial de Pichincha del Instituto Ecuatoriano de Seguridad Social de Coactivas, al emitir disposiciones de retención de carácter general dirigidas a la Superintendencia de Bancos para bloquear la totalidad de las cuentas del sistema financiero a nombre del legitimado activo, actúo sin la debida prolijidad;",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Vida digna (art. 66.2 CRE)",
+      "Debido proceso en la garantía del derecho a la defensa (art. 76.7 CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El IESS, dentro de un procedimiento coactivo, dispuso medidas cautelares que terminaron en la retención de fondos de la cuenta de ahorros del accionante, donde su empleador deposita su remuneración. El accionante alegó falta de notificación previa y que sus haberes quedaron retenidos. El tribunal da por probada la notificación del proceso coactivo (fs. 150 a 171) y la retención de fondos durante ocho meses sin despacho oportuno de sus recursos. Consta que parte de los títulos de crédito fue anulada y que sus medidas fueron levantadas.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

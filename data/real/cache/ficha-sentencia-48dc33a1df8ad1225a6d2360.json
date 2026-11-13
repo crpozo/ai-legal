@@ -1,0 +1,80 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 21677,
+    "tokensSalida": 1650
+  },
+  "salida": {
+    "numero": "17203202405757",
+    "decision": "inadmite",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "86.3",
+          "86.5",
+          "88",
+          "82",
+          "76",
+          "66.15",
+          "66.26",
+          "33",
+          "319"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "21",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC, caso 1000-12-EP",
+      "Sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Sentencia 001-16-PJO-CC, caso 530-10-JP",
+      "Sentencia 102-13-SEP-CC, caso 0831-12-EP",
+      "Sentencia 016-13-SEP-CC, caso 0380-10-EP",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 17-18-IN/21",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24"
+    ],
+    "argumentacion": "El tribunal de apelación constata que la pretensión de reinscribir 91 registros sanitarios deriva del presunto incumplimiento de la sentencia previa 17957-2023-00158, cuya fase de ejecución se discute. Aplica la excepción de la sentencia 2006-18-EP/24 y concluye que el caso está dentro de supuestos de manifiesta improcedencia, por lo que no examina a fondo las vulneraciones alegadas. Estima que se trata de un asunto de legalidad y de ejecución que corresponde a la vía ordinaria, y que la acción no tiende a tutelar derechos sino a declarar derechos. Rechaza la apelación y confirma la sentencia de primera instancia.",
+    "pruebas": [
+      "Captura de pantalla del mensaje del sistema ECUAPASS",
+      "Oficios de ARCSA de 19 de octubre de 2023, 15 de noviembre de 2024, 22 de noviembre de 2024 y oficios 2024-5818 a 2024-7857",
+      "Acta de reunión de 14 de marzo de 2024 (F-C.6.03)",
+      "Resolución ARCSA-CGTC-2024-0006-R de 13 de marzo de 2024",
+      "Listado de registros sanitarios caducados"
+    ],
+    "motivacion": "La motivación se apoya en la sentencia 2006-18-EP/24 y en la jurisprudencia de la Corte Constitucional sobre manifiesta improcedencia y el artículo 42 LOGJCC, números 1, 3 y 4, para descartar la vía de la acción de protección sin análisis profundo de vulneración de derechos.",
+    "criterioResolucion": "Cuando la pretensión de la acción de protección deriva del presunto incumplimiento de una sentencia constitucional previa y se reduce a asuntos de legalidad o ejecución, sin real vulneración de derechos constitucionales, procede la inadmisión por manifiesta improcedencia (art. 42 LOGJCC), al encuadrar en las excepciones de la sentencia 2006-18-EP/24.",
+    "citaTextual": "Vale decir, el caso en conocimiento de este Tribunal de Alzada está dentro de las excepciones que ha establecido la Corte Constitucional en los que no se requiere que los suscritos jueces con competencia constitucional examinen en primer lugar si existieron o no vulneraciones de derechos alegadas por los accionantes",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso",
+      "Seguridad jurídica",
+      "Derecho al trabajo",
+      "Derecho a la propiedad privada",
+      "Derecho a ejercer actividades económicas lícitas"
+    ],
+    "fundamentosDeHecho": "GINSBERG ECUADOR S.A. y otras compañías representadas por el accionante tenían registros sanitarios suspendidos por resoluciones de ARCSA, parcialmente dejadas sin efecto por la sentencia 17957-2023-00158. Los registros caducaron mientras el sistema ECUAPASS impedía la reinscripción. ARCSA rechazó las peticiones de reinscripción en oficios de 2024, alegando improcedencia por la situación de liquidación de una de las compañías. El tribunal no constata la fecha de notificación de la sentencia previa ni la fecha exacta de caducidad de cada registro.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 30978,
+    "tokensSalida": 1614
+  },
+  "salida": {
+    "numero": "17295202600012",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "76",
+          "82",
+          "88",
+          "95",
+          "169",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "16",
+          "24",
+          "25",
+          "42 numeral 1"
+        ]
+      },
+      {
+        "norma": "Reglamento para la selección, conformación y funcionamiento de las comisiones ciudadanas de selección",
+        "articulos": [
+          "45",
+          "41 numeral 2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 1298-17-EP/21",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 1797-18-EP/20",
+      "Sentencia 50-17-IN/22",
+      "Sentencia 2034-13-EP/19",
+      "Sentencia 285-20-EP/24",
+      "Sentencia 41-21-IN/24"
+    ],
+    "argumentacion": "El tribunal inicia señalando que la controversia no sería materia de acción de protección, pero decide verificar la alegada vulneración. Revisa el derecho a la defensa: concluye que el accionante conocía el término de tres días para contestar, que tenía varios canales disponibles y que eligió la vía electrónica sin que se probara que el correo llegara al CPCCS, según el informe técnico de tecnologías que constata operatividad del servicio. Examina la motivación con los criterios de la Corte Constitucional y la considera suficiente, porque la resolución enuncia normas, cronología y la causal de descalificación. Sobre seguridad jurídica, señala que el proceso se rigió por reglas previas y que no se probó afectación a otros derechos. Sobre participación, indica que el derecho no es absoluto y que el accionante incumplió requisitos del concurso. Concluye que no hay vulneración y aplica el numeral 1 del artículo 42 de la LOGJCC.",
+    "pruebas": [
+      "Certificación de la notaría cuadragésima tercera del cantón Guayaquil sobre el envío de correos (materializaciones)",
+      "Memorando CPCCS-SG-2026-0162-M de la Secretaría General",
+      "Informe TICS-002-2026-CEI (informe técnico de tecnologías de la información)",
+      "Informe motivado sobre las impugnaciones ciudadanas aceptadas a trámite",
+      "Notificación al accionante de la resolución CPCCS-PLE-SG-034-E-2025-0356"
+    ],
+    "motivacion": "La decisión se justifica en que no se acreditó técnicamente que el correo con los descargos fuera enviado o recibido por el CPCCS, que el accionante tuvo conocimiento del término y eligió libremente el canal, que la resolución impugnada contiene motivación suficiente y que no se demostró vulneración de derechos constitucionales, por lo que la acción es improcedente.",
+    "criterioResolucion": "No hay vulneración de derechos constitucionales cuando el postulante no contesta la impugnación dentro del término reglamentario y no se acredita que sus descargos enviados por correo llegaran a la entidad; en tal caso la acción de protección es improcedente conforme al artículo 42 numeral 1 de la LOGJCC.",
+    "citaTextual": "no se ha logrado probar técnicamente que el correo electrónico con sus descargos fuera efectivamente enviado o recibido por el CPCCS.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Debido proceso en la garantía del derecho a la defensa (art. 76.7 CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Participación en asuntos de interés público (art. 95 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante fue inadmitido, luego admitido tras reconsideración, y posteriormente impugnado por ciudadanía por causal del art. 41 num. 2 del reglamento. Notificado el 24 de octubre de 2025, sostiene haber remitido descargos por correo el 29 de octubre de 2025 a varios correos institucionales. El CPCCS certificó que no consta recepción de correos desde su dirección en la ventanilla virtual, y el pleno lo descalificó el 10 de noviembre de 2025 (Resolución CPCCS-PLE-SG-034-E-2025-0356). El tribunal da por probado que no hubo contestación recibida por la entidad.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

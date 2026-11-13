@@ -1,0 +1,87 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25849,
+    "tokensSalida": 1864
+  },
+  "salida": {
+    "numero": "17297202402837",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86.3",
+          "88",
+          "11.2",
+          "86.5",
+          "Transitoria Séptima",
+          "83"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público",
+        "articulos": [
+          "81"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "52",
+          "171"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2006-18-EP/24 (13 de marzo de 2024)",
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24",
+      "Caso 0831-12-EP, sentencia 102-13-SEP-CC",
+      "Caso 0380-10-EP, sentencia 016-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal de apelación recuerda que, por regla general, el juez constitucional debe examinar primero si hubo vulneración de derechos y solo después la idoneidad de otra vía. Aplica la excepción de la sentencia 2006-18-EP/24 (párr. 42-43) sobre actos administrativos en conflictos laborales entre el Estado y servidores públicos, que corresponden por regla general a lo contencioso administrativo, salvo que comprometan notoria o gravemente la dignidad o autonomía del servidor, como en casos de evidente discriminación o situaciones urgentes. Considera que no hay evidente discriminación porque la accionante (secretaria) y los jueces titularizados no son comparables, y que la pretensión es el pago de remuneraciones, de naturaleza ordinaria. Concluye que la acción está incursa en las causales de improcedencia del art. 42, numerales 1, 3 y 4.",
+    "pruebas": [
+      "Contratos de servicios ocasionales 24-ADJ-NC-867/2011 y 1118-CJT-24-RN-2012 y su adendum",
+      "Acta resumen del Pleno del Consejo de la Judicatura de 20 de julio de 2010 (listado de elegibles)",
+      "Acta resumen 85-2012 de 4 de septiembre de 2012",
+      "Memorandos 5389-SP-DNP-CJ y 0971-S-CJ-GP-2010",
+      "Oficio 283-UP-DPSDT-2012 y memorando DP23-CJ-GN-2013-554 (citados en primera instancia)"
+    ],
+    "motivacion": "La improcedencia se funda en que la pretensión es de contenido económico (remuneraciones y beneficios sociales) y en que el conflicto laboral con un servidor de contrato ocasional corresponde a la vía contencioso administrativa o a la ordinaria, sin que se configure una excepción constitucional por discriminación evidente. Se rechaza la apelación y se confirma la sentencia de primera instancia.",
+    "criterioResolucion": "Los conflictos laborales entre el Estado y servidores públicos (como la terminación de contratos de servicios ocasionales) corresponden, por regla general, a la jurisdicción contencioso administrativa; la acción de protección solo procede si el caso compromete notoria o gravemente la dignidad o autonomía del servidor, como en evidente discriminación o casos urgentes, lo que no se verifica cuando la pretensión es el pago de remuneraciones.",
+    "citaTextual": "Esto implica un trato igualitario hacia los servidores públicos respecto de los empleados sujetos al Código del Trabajo o a la Ley Orgánica de Empresas Públicas, pues previamente, la Corte ha determinado que, por regla general, los conflictos laborales entre empleados y empleadores (sean estos de empresas públicas o privadas) corresponden a la jurisdicción ordinaria.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad y no discriminación",
+      "Seguridad jurídica",
+      "Derecho al trabajo",
+      "Principio de legalidad"
+    ],
+    "fundamentosDeHecho": "La accionante fue secretaria de juzgados adjuntos de Niñez y Adolescencia en Santo Domingo de los Tsáchilas bajo contratos de servicios ocasionales (2011 y 2012). Fue desvinculada el 31 de diciembre de 2012 mediante notificación de terminación del contrato. Según el tribunal, dos jueces adjuntos del mismo concurso fueron titularizados por resolución del Pleno de 4 de septiembre de 2012. La accionante reclama remuneraciones y beneficios desde 2013 hasta 2017. No consta en el texto la fecha de notificación de la sentencia de primera instancia.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

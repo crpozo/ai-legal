@@ -1,0 +1,84 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 14785,
+    "tokensSalida": 1655
+  },
+  "salida": {
+    "numero": "17297202500059",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 86",
+          "Art. 88",
+          "Art. 33",
+          "Art. 66 numeral 2",
+          "Art. 11 numeral 2",
+          "Art. 3",
+          "Art. 328"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 6",
+          "Art. 25 numeral 1",
+          "Art. 39 al 42",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42",
+          "Art. 24",
+          "Art. 18"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "Art. 208 numeral 1"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "Art. 274"
+        ]
+      },
+      {
+        "norma": "Código Civil",
+        "articulos": [
+          "Art. 1634 numeral 1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 045-11-SEP-CC",
+      "Sentencia No. 001-16-PJC-CC (caso 530-10-JP)",
+      "Sentencia No. 093-14-SEP-CC",
+      "Sentencia No. 1967-14-EP/20",
+      "Sentencia No. 016-13-SEP-CC",
+      "Sentencias Nos. 0831-12-EP, 102-13-SEP-CC, 0380-10-EP, 1000-12-EP"
+    ],
+    "argumentacion": "El tribunal recuerda que la acción de protección exige una vulneración real de derechos constitucionales y no procede para asuntos de mera legalidad. Examina por separado el derecho al trabajo, a la vida digna y a la propiedad. Concluye que no hay prueba de que el banco impidiera ejercer actividad laboral; que la retención deriva de un procedimiento coactivo con vías ordinarias (COA) y que no se demostró indigencia; y que la medida se dejó sin efecto y los valores embargados se reintegraron a la cuenta, por lo que no hay vulneración del derecho a la propiedad. Aplica la causal de improcedencia del artículo 42 LOGJCC.",
+    "pruebas": [
+      "Providencias del juzgado de coactivas de 16 de mayo, 21 de junio, 13 de septiembre y 23 de octubre de 2024, y 11 de diciembre de 2024 y 18 de febrero de 2025",
+      "Actas de embargo de valores (fs. 103 y 130)",
+      "Certificado de VEHICENTRO de 27 de agosto de 2024 (fs. 126)",
+      "Escrito de la accionante en el juicio coactivo (fs. 122)",
+      "Informe del Banco del Pacífico sobre la imposibilidad de identificar los rubros de sueldo"
+    ],
+    "motivacion": "La decisión se justifica por la ausencia de vulneración constitucional verificada: no hay prueba de afectación al trabajo, la retención es consecuencia legal de una obligación pecuniaria impaga, existe vía ordinaria idónea (COA y contencioso-administrativo), y los fondos fueron liberados y reintegrados. Por ello se confirma el fallo de primera instancia que declaró la improcedencia.",
+    "criterioResolucion": "La acción de protección no procede para resolver asuntos de mera legalidad. Sin verificación de una real vulneración de derechos constitucionales, y existiendo vías ordinarias idóneas como el procedimiento coactivo y el COA, procede la improcedencia; una medida cautelar de ejecución coactiva no vulnera por sí sola la dignidad ni la propiedad.",
+    "citaTextual": "Las juezas y jueces constitucionales, únicamente, cuando no encuentren vulneración de derechos constitucionales y lo señalen motivadamente en su sentencia, sobre la base de parámetros establecidos por la Corte Constitucional, podrán determinar que la justicia ordinaria es la vía idónea y eficaz para resolver el asunto controvertido",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo",
+      "Derecho a la propiedad",
+      "Derecho a una vida digna"
+    ],
+    "fundamentosDeHecho": "La accionante tenía una cuenta de ahorros en el Banco Pichincha sobre la que el juzgado de coactivas del Banco del Pacífico ordenó retención y embargos de 418 y 495 dólares por una deuda de tarjeta de crédito. Tras solicitud de la accionante, el 23 de octubre de 2024 se ordenó levantar la medida por el valor correspondiente a su sueldo. El 18 de febrero de 2025 se ordenó el reverso del embargo de 418 dólares y su reintegro a la cuenta. La accionante alega que no fue notificada y que se retuvieron fondos de su remuneración.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

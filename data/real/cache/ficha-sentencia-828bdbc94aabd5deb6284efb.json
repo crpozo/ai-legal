@@ -1,0 +1,94 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 22928,
+    "tokensSalida": 3452
+  },
+  "salida": {
+    "numero": "17203202400540",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "Art. 86 numeral 3",
+          "Art. 86 numeral 5",
+          "Art. 35",
+          "Art. 76 numeral 1",
+          "Art. 76 numeral 7 literales a), c), h) y l)",
+          "Art. 82",
+          "Art. 88",
+          "Art. 168 numeral 1",
+          "Art. 173",
+          "Art. 233"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "Art. 24",
+          "Art. 25 numeral 1",
+          "Art. 39",
+          "Art. 40",
+          "Art. 41",
+          "Art. 42 numerales 1 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de la Contraloría General del Estado",
+        "articulos": [
+          "Art. 53",
+          "Art. 58",
+          "Art. 59",
+          "Art. 60",
+          "Art. 61",
+          "Art. 62",
+          "Art. 63"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 001-16-PJO-CC (caso 530-10-JP)",
+      "Resolución 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 041-13-SEP-CC (caso 00470-12-EP)",
+      "Sentencia 008-13-SEP-CC",
+      "Sentencia 1391-14-EP/20",
+      "Sentencia 1184-12-EP/19",
+      "Sentencia 1158-17-EP/21",
+      "Sentencia 2006-18-EP/24",
+      "Sentencia 2901-19-EP/23",
+      "Sentencia 1178-19-JP/21",
+      "Sentencia 1357-13-EP/20",
+      "Sentencia 1101-20-EP/22",
+      "Sentencia 1679-12-EP/20",
+      "Sentencia 253-16-EP/21",
+      "Sentencia 1329-12-EP/22",
+      "Sentencia 165-19-JP/21",
+      "Sentencia 461-19-JP/23 y acumulados",
+      "Sentencia 446-19-EP/24",
+      "Sentencia 1452-17-EP/24",
+      "Corte Interamericana de Derechos Humanos, caso Favela Nova Brasília vs. Brasil (2017)"
+    ],
+    "argumentacion": "El tribunal de apelación parte de que, en principio, el juez constitucional debe examinar primero si hubo vulneración de derechos y luego si existe otra vía (sentencia 001-16-PJO-CC), pero reconoce excepciones (sentencia 2006-18-EP/24). Concluye que el caso no encaja en las excepciones: la accionante no es persona de atención prioritaria, no hay discriminación ni urgencia, y se trata de una controversia sobre valoración de descargos en un acto administrativo de la Contraloría. Afirma que la omisión de la Contraloría al no atender el oficio 001-LEDS-2023 es, a lo sumo, una desatención administrativa que no genera por sí misma vulneración constitucional. Señala que el ordenamiento prevé vías administrativas (recurso de revisión, arts. 60 a 63 LOGC) y contencioso-administrativas para impugnar la resolución 23947. Por ello aplica el art. 42 numerales 1 y 4 de la LOGJCC y revoca la sentencia de primera instancia, rechazando la acción.",
+    "pruebas": [
+      "Oficio 001-LEDS-2023 de 20 de septiembre de 2023, con fe de recepción de 21 de septiembre de 2023 (fojas 7 a 10)",
+      "Resolución 23947 de 29 de noviembre de 2023 (fojas 11 a 16 vuelta)",
+      "Oficio 09607 DNPR de 22 de agosto de 2023, notificado el 23 de agosto de 2023, con la predeterminación de responsabilidad civil culposa (glosa)",
+      "Informe de auditoría DPCPX-0007-2022 del GAD Municipal de Salcedo",
+      "Texto de la predeterminación en el oficio 001-LEDS-2023, en el que la accionante atiende las predeterminaciones civiles culposas"
+    ],
+    "motivacion": "El tribunal rechaza la acción porque, tras el análisis de improcedencia, no advierte un caso de justicia constitucional: la falta de atención al escrito de descargos se resuelve por la vía administrativa (revisión) o la contencioso-administrativa, que son adecuadas y eficaces. No analiza de fondo la motivación ni la defensa como vulneraciones constitucionales, sino que concluye que la pretensión debe tramitarse en esas vías.",
+    "criterioResolucion": "La desatención administrativa de descargos en un procedimiento de responsabilidad civil culposa de la Contraloría no genera por sí sola vulneración constitucional del derecho a la defensa; cuando existen vías administrativas y contencioso-administrativas adecuadas y eficaces, y no concurren las excepciones jurisprudenciales (grupos de atención prioritaria, discriminación o urgencia), la acción de protección es improcedente conforme al art. 42 numerales 1 y 4 LOGJCC.",
+    "citaTextual": "Pero dicha desatención no genera per se vulneración al derecho constitucional a la defensa que deba ser resuelto por la justicia constitucional única y prevalentemente, toda vez que precisamente el ordenamiento jurídico secundario prevé las vías en sede administrativa y judicial para ejercer acciones de impugnación",
+    "apelacion": "revoca",
+    "derechosInvocados": [
+      "Debido proceso en la garantía de la defensa (art. 76 num. 7 lit. a, c y h CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76 num. 7 lit. l CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Debido proceso en la aplicación de las normas (art. 76 num. 1 CRE)"
+    ],
+    "fundamentosDeHecho": "La Contraloría General del Estado predeterminó responsabilidad civil culposa a la accionante por USD 594,47 en la glosa 9607 (examen al GAD Municipal de Salcedo, periodo 2015-2021). La accionante afirma que presentó descargos mediante oficio 001-LEDS-2023 con fe de recepción de 21 de septiembre de 2023. La resolución 23947 de 29 de noviembre de 2023 confirmó la responsabilidad, señalando que no hubo contestación y resolviendo en rebeldía. El tribunal reconoce que el oficio sí fue recibido y que en él se atendió la predeterminación civil, pero que la Contraloría no lo consideró al resolver.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

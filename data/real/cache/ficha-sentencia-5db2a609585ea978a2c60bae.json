@@ -1,0 +1,101 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 46640,
+    "tokensSalida": 1692
+  },
+  "salida": {
+    "numero": "17283202400671",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "66 numeral 26",
+          "321",
+          "75",
+          "76 numerales 1 y 7 literales a), c) y k)",
+          "82",
+          "88",
+          "86 numeral 5",
+          "169",
+          "173",
+          "147",
+          "77 literal a)"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "8 numeral 2 literal c)",
+          "16",
+          "21",
+          "24",
+          "25 numeral 1",
+          "28",
+          "29",
+          "33",
+          "39",
+          "40 numerales 1 y 3",
+          "42 numerales 1, 4 y 5"
+        ]
+      },
+      {
+        "norma": "Código Orgánico General de Procesos",
+        "articulos": [
+          "300"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "31",
+          "217"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 2034-13-EP/19",
+      "Sentencia No. 176-14-EP/19",
+      "Sentencia No. 1159-12-P/19",
+      "Sentencia No. 293-17-SEP-CC (caso 068-16-EP)",
+      "Sentencia No. 041-13-SEP-CC (caso 0470-12-EP)",
+      "Sentencia No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia No. 135-17-SEP-CC (caso 0198-14-EP)",
+      "Sentencia No. 918-14-EP/20",
+      "Sentencia No. 185-14-SEP-CC",
+      "Sentencia No. 1391-14-EP/20",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia No. 165-19-JP",
+      "Sentencia No. 1178-19-JP",
+      "Sentencia No. 001-10-PJO-CC (caso 0999-09-JP)"
+    ],
+    "argumentacion": "El tribunal de alzada confirma que la acción de protección no es la vía para resolver la titularidad de un inmueble ni asuntos de mera legalidad sobre adjudicaciones. Revisa los derechos a propiedad, tutela judicial efectiva, debido proceso y seguridad jurídica, y concluye que el accionante no demostró ser propietario de los predios adjudicados, por lo que no hay vulneración. Aplica como causal de improcedencia el numeral 1 y el numeral 4 del artículo 42 de la LOGJCC, y niega la apelación rechazando la acción.",
+    "pruebas": [
+      "Certificado de gravámenes de 24 de abril de 2024",
+      "Escrituras e historial de dominio aportados por el accionante",
+      "Expediente administrativo MAG-005-22 y informe pericial documentológico Nro. 025",
+      "Memorando Nro. MAG-CGAF-DGDA-2024-1491-M",
+      "Resolución 4715 de la Subsecretaría de Tierras",
+      "Resolución GADDMQ-RPDMQ-DI-2023-0001-RE",
+      "Informe técnico GADDMQ-STHV-DMC-UAL-2022-0285-M",
+      "Procesos penal 17294-2017-00964 y demanda de prescripción adquisitiva"
+    ],
+    "motivacion": "El tribunal afirma que el accionante no justificó titularidad sobre los predios con títulos idóneos, que la disputa de dominio corresponde a la justicia ordinaria o contencioso-administrativa, y que la acción de protección no puede sustituir a las vías ordinarias. Señala que el reclamo de adjudicaciones es de legalidad, impugnable en sede judicial ordinaria.",
+    "criterioResolucion": "La acción de protección no procede cuando la pretensión es la declaración de titularidad de dominio sobre inmuebles o un asunto de mera legalidad impugnable en la vía ordinaria o contencioso-administrativa, y el accionante no demuestra la vulneración de un derecho constitucional preexistente.",
+    "citaTextual": "la acción de protección no constituye un mecanismo de superposición o reemplazo de las instancias judiciales ordinarias, pues ello ocasionaría el desconocimiento de la estructura jurisdiccional establecida por la Constitución.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Propiedad privada",
+      "Seguridad jurídica",
+      "Tutela judicial efectiva",
+      "Debido proceso en la garantía de cumplimiento de normas",
+      "Derecho a la defensa"
+    ],
+    "fundamentosDeHecho": "El accionante alega ser propietario de un lote de piedra en el flujo lávico Antisanilla (Pintag, Quito) y que el Ministerio de Agricultura adjudicó predios dentro de ese lote a varias personas. Tras la audiencia, el tribunal de alzada concluye que el accionante no acreditó titularidad de dominio sobre los predios adjudicados, y que el asunto es de legalidad y de titularidad, no constitucional.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

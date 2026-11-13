@@ -1,0 +1,80 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 19960,
+    "tokensSalida": 2841
+  },
+  "salida": {
+    "numero": "17297202400137",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "75",
+          "76.7.l",
+          "86",
+          "88",
+          "11.2",
+          "33",
+          "167",
+          "178.2",
+          "325"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "6",
+          "16",
+          "24",
+          "39",
+          "40",
+          "41.4.c",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "150",
+          "151",
+          "156",
+          "159",
+          "160.1.2",
+          "208",
+          "209"
+        ]
+      },
+      {
+        "norma": "Código del Trabajo",
+        "articulos": []
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, Sentencia No. 001-16-PJO-CC, caso No. 530-10-JP",
+      "Corte Constitucional, Sentencia No. 0831-12-EP",
+      "Corte Constitucional, Sentencia No. 102-13-SEP-CC, caso No. 0380-10-EP",
+      "Corte Constitucional, Sentencia No. 016-13-SEP-CC, caso No. 1000-12-EP",
+      "Corte Constitucional, Sentencia No. 61-19-IN/21, caso No. 61-19-IN"
+    ],
+    "argumentacion": "El tribunal confirma la negativa de primera instancia. Primero, verifica que el accionante no identifica un derecho constitucional vulnerado por la carta de 16 de enero de 2024, sino un daño grave, que es un efecto y no un derecho. Luego examina de oficio los dos derechos alegados en audiencia. Sobre igualdad y no discriminación, concluye que no hay trato desigual probado, porque la investigación recae sobre el cargo de Gerente de Operaciones. Sobre el derecho al trabajo, considera que la suspensión no implica terminación del contrato y que el conflicto es de naturaleza laboral, por lo que la vía ordinaria es la pertinente para exigir el cumplimiento contractual. Respecto de la entrega de documentos personales, señala que la acción de protección no es la vía adecuada.",
+    "pruebas": [
+      "Carta de 16 de enero de 2024 suscrita por Eduardo Zapater como presidente y representante legal de la empresa (fs. 1)",
+      "Correos electrónicos adjuntos a fs. 3 y 4, incluido el solicitud de devolución de documentos personales del 17 de enero de 2024",
+      "Correos del 16 de enero de 2024 entre las partes",
+      "Prueba actuada y exposiciones de las partes en audiencia"
+    ],
+    "motivacion": "La decisión se justifica en que no se probó la violación de los derechos invocados (igualdad y no discriminación, y derecho al trabajo), con base en la jurisprudencia de la Corte Constitucional sobre el análisis de fondo que debe hacer el juez constitucional, y en que los asuntos de naturaleza laboral y de entrega de documentos corresponden a la justicia ordinaria. Declara además que el proceso se sustanció sin vicios que afecten el debido proceso.",
+    "criterioResolucion": "Cuando el accionante no demuestra la vulneración de un derecho constitucional y el conflicto es de naturaleza laboral o de mera legalidad, la acción de protección no prospera y la vía adecuada es la ordinaria.",
+    "citaTextual": "el legitimado activo tiene la vía ordinaria para demandar el cumplimiento del contrato laboral que mantiene con la empresa accionada.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Igualdad y no discriminación (art. 11.2 de la Constitución)",
+      "Derecho al trabajo (art. 33 de la Constitución)"
+    ],
+    "fundamentosDeHecho": "El accionante, que era Gerente de Operaciones de CYD, fue notificado el 16 de enero de 2024 con la suspensión de su cargo con cargo a vacaciones, sin terminación de la relación contractual, y con prohibiciones de contacto con clientes, uso de recursos corporativos y acceso a las oficinas. No pudo retirar sus documentos y objetos personales y reclamó su devolución por correo el 16 y 17 de enero de 2024. El tribunal no encuentra probada una discriminación ni una afectación al derecho al trabajo.",
+    "esPonente": "no",
+    "votoSalvado": false
+  }
+}

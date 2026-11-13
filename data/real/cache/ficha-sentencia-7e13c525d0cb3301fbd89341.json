@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 17952,
+    "tokensSalida": 1477
+  },
+  "salida": {
+    "numero": "17282202402056",
+    "decision": "acepta_parcialmente",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "86 numeral 3",
+          "88",
+          "35",
+          "44",
+          "45",
+          "47",
+          "66 numeral 2",
+          "69 numerales 1, 4 y 5",
+          "82",
+          "86 numeral 5"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "25 numeral 1",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Código del Trabajo",
+        "articulos": [
+          "8"
+        ]
+      },
+      {
+        "norma": "Resolución 102-2023 del Pleno del Consejo de la Judicatura",
+        "articulos": [
+          "Art. 2"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Resolución 016-13-SEP-CC, caso 1000-12-EP",
+      "Sentencia 041-13-SEP-CC, caso 00470-12-EP",
+      "Sentencia 001-16-PJO-CC, caso 530-10-JP",
+      "Sentencia 282-13-JP/19",
+      "Sentencia 1229-14-EP/21",
+      "Sentencia 258-15-SEP-CC, caso 2184-11-EP",
+      "Caso 0831-12-EP, sentencia 102-13-SEP-CC, caso 0380-10-EP"
+    ],
+    "argumentacion": "El tribunal de alzada revisa si el particular accionado puede ser demandado en acción de protección, concluye que la relación laboral implica subordinación y admite la acción. Luego verifica con la documentación del expediente (cédula, informe médico del Hospital Carlos Andrade Marín de 26 de agosto de 2024) la condición de discapacidad visual y el riesgo para la salud del accionante por el clima costero. Con base en los artículos 47 constitucional y la Convención sobre los Derechos de las Personas con Discapacidad, concluye que el empleador no garantizó el derecho al trabajo en condiciones de igualdad y adhiere a la declaratoria de vulneración hecha por el juez a quo.",
+    "pruebas": [
+      "Cédula de ciudadanía del accionante (fs. 11)",
+      "Informe médico de la Dra. Nancy Jurado, Hospital Carlos Andrade Marín, de 26 de agosto de 2024 (fs. 1)",
+      "Documentación del expediente sobre la relación laboral"
+    ],
+    "motivacion": "La decisión se justifica en la verificación de la vulneración de derechos del accionante, al constatar la discapacidad y el informe médico, y en la subordinación laboral que legitima pasivamente a la empresa. La Corte de alzada se adhiere a la motivación del juez a quo sobre la vulneración del derecho a la atención prioritaria.",
+    "criterioResolucion": "Existe legitimación pasiva de un empleador privado en acción de protección por subordinación laboral, y la omisión del empleador de garantizar el trabajo en condiciones de igualdad a una persona con discapacidad, con pleno conocimiento de su condición, vulnera derechos constitucionales y procede la acción de protección.",
+    "citaTextual": "Derechos que no han sido garantizados por la legitimada pasiva, en el presente caso por Almacenes Tía, no obstante de tener pleno conocimiento de su condición especial del accionante, vulnerando por tal omisión los derechos fundamentales el ahora legitimado activo, por lo que bien hizo el Juez A quo en su fallo al declarar la vulneración de los derechos constitucionales invocados por el accionante, declaración a la que este Tribunal de Alzada se suma.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Atención prioritaria a personas con discapacidad (art. 35 CRE)",
+      "Interés superior del niño (art. 44 CRE)",
+      "Seguridad jurídica (art. 82 CRE)",
+      "Dignidad (art. 66 numeral 2 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante es una persona con discapacidad visual, trabajador de Almacenes Tía, que solicitó traslado de Quevedo a Quito por recomendación médica; el traslado no fue aprobado tras sus vacaciones. Sus hijos estudian en Quito. El tribunal constata la discapacidad y el informe médico que recomienda evitar clima cálido y subtropical.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 29458,
+    "tokensSalida": 1781
+  },
+  "salida": {
+    "numero": "17284202500297",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "33",
+          "76 numeral 7 literal l",
+          "82",
+          "86 numeral 5",
+          "88",
+          "169",
+          "229"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "4.8",
+          "24",
+          "39",
+          "40",
+          "42 numerales 1, 3 y 4"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica del Servicio Público (LOSEP)",
+        "articulos": [
+          "5 literal h",
+          "58",
+          "86",
+          "Disposición Transitoria Décima Cuarta"
+        ]
+      },
+      {
+        "norma": "Reglamento General a la LOSEP",
+        "articulos": [
+          "143",
+          "146"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia No. 1214-18-EP/22",
+      "Sentencia No. 246-15-SEP-CC (caso 1194-13-EP)",
+      "Sentencia No. 1158-17-EP/21",
+      "Sentencia No. 1797-18-EP/20",
+      "Sentencia vinculante No. 2006-18-EP",
+      "Sentencia vinculante No. 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia No. 016-13-SEP-CC (caso 1000-12-EP)",
+      "Sentencia 556-20-EP",
+      "Sentencia 105-21-EP",
+      "Caso 2024-23-JP"
+    ],
+    "argumentacion": "El tribunal de alzada confirma el análisis de improcedencia: primero reconoce la validez del proceso; luego examina si hubo vulneración del derecho al trabajo, concluyendo que la terminación se fundó en causas previstas en la ley; después revisa la motivación del memorando de terminación, concluyendo que existían sustento normativo y fáctico (cláusula décima cuarta del contrato y memorando MINEDUC-SASRE-2025-00116-M); finalmente rechaza la vulneración de seguridad jurídica por tratarse de mera legalidad y aplica la excepción de conflictos laborales con el Estado de la sentencia 2006-18-EP, invocando además el artículo 42 numerales 1, 3 y 4 de la LOGJCC.",
+    "pruebas": [
+      "Memorando MINEDUC-CGAF-2025-00422-M de 28 de febrero de 2025 (terminación del contrato)",
+      "Contrato de servicios ocasionales, cláusula décima cuarta",
+      "Memorando MINEDUC-SASRE-2025-00116-M",
+      "Memorando MINEDUC-CGAF-2025-00236-M de 7 de febrero de 2025 (validación de perfil)",
+      "Informes de la Dirección Nacional de Talento Humano (Mineduc-DNTH-2025-198 y el informe técnico de desvinculación)"
+    ],
+    "motivacion": "Se considera que la terminación fue dispuesta con base en el contrato y en los memorandos citados, que contienen normas y explicación de su aplicación; que no hubo vulneración de la motivación ni de la seguridad jurídica; y que la controversia es de mera legalidad, correspondiente a la jurisdicción contencioso administrativa.",
+    "criterioResolucion": "En conflictos laborales entre el Estado y sus servidores por terminación de contratos de servicios ocasionales, la acción de protección es improcedente por regla general, salvo que el caso comprometa notoria o gravemente la dignidad o autonomía del servidor (por ejemplo, discriminación evidente) o requiera respuesta urgente; la discusión de mera legalidad corresponde a la vía contencioso administrativa.",
+    "citaTextual": "42. Con este antecedente, esta Corte identifica una nueva excepción a partir del presente caso: cuando se impugnan actos administrativos sobre conflictos laborales entre el Estado y sus servidoras y servidores públicos, como por ejemplo, la terminación de contratos de servicios ocasionales, finalización de nombramientos provisionales, homologación salarial, supresión de partidas, liquidación, entre otras, el conocimiento del caso corresponde por regla general a la jurisdicción de lo contencioso administrativo.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho al trabajo (art. 33 CRE)",
+      "Debido proceso en la garantía de la motivación (art. 76.7.l CRE)",
+      "Seguridad jurídica (art. 82 CRE)"
+    ],
+    "fundamentosDeHecho": "El accionante prestó servicios al Ministerio de Educación mediante contratos de servicios ocasionales, en el cargo de Analista de Regulación de la Educación 1, desde el 1 de enero de 2019 hasta el 28 de febrero de 2025, fecha en que se le notificó la terminación anticipada del contrato mediante memorando MINEDUC-CGAF-2025-00422-M. La parte accionada sostuvo que la terminación se basó en la cláusula décima cuarta del contrato y en informes sobre cumplimiento de perfil. El tribunal da por probado el memorando de terminación y los antecedentes administrativos referidos; no se establece que el accionante fuera de grupo de atención prioritaria ni trabajador sustituto.",
+    "esPonente": "si",
+    "votoSalvado": false
+  }
+}

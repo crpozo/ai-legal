@@ -1,0 +1,79 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 43173,
+    "tokensSalida": 1615
+  },
+  "salida": {
+    "numero": "17250202500009",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "88",
+          "82",
+          "141",
+          "146",
+          "149",
+          "226",
+          "227",
+          "424",
+          "427",
+          "11.2",
+          "173"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "41.4",
+          "41.5",
+          "42.1",
+          "42.2",
+          "42.4",
+          "24",
+          "25"
+        ]
+      },
+      {
+        "norma": "Código Orgánico de la Función Judicial",
+        "articulos": [
+          "25",
+          "23",
+          "208.1"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Corte Constitucional, sentencia 122-22-JC/23",
+      "Corte Constitucional, sentencia 001-10-PJO-CC (caso 0999-09-JP)",
+      "Corte Constitucional, sentencia 001-16-PJO-CC (caso 0530-10-JP)",
+      "Corte Constitucional, sentencia 016-13-SEP-CC (caso 1000-2-EP)",
+      "Corte Constitucional, sentencia 0035-09-SEP-CC (caso 030-09-EP)",
+      "Corte Constitucional, sentencia 080-13-SEP-CC"
+    ],
+    "argumentacion": "El tribunal confirma la improcedencia de la acción. Sostiene que el artículo 149 de la Constitución deja a discreción del Presidente la asignación de funciones a la Vicepresidenta, sin funciones propias reglamentadas, por lo que no corresponde al juez constitucional evaluar la adecuación jerárquica de esas funciones. Sobre la ausencia temporal, afirma que la controversia es de legalidad de actos administrativos que gozan de presunción de legitimidad y que tienen vía contenciosa propia, y que la justicia constitucional no puede resolver conflictos políticos. Respecto de la discriminación no encuentra demostración de un trato diferenciado discriminatorio. Finalmente, constata que los actos impugnados se encuentran extinguidos sin que se haya demostrado daño susceptible de reparación.",
+    "pruebas": [
+      "Decretos Ejecutivos 27, 61, 490, 494 y 500 (y el 457 y 492 mencionados)",
+      "Oficio MDT-VSP-2023-0577-O / oficio MDT-BST-2023-577-O sobre régimen LOSE",
+      "Audio y acta de la audiencia oral (fs. 257 a 271 vuelta)",
+      "Sentencia escrita de primera instancia (fs. 279 a 294)",
+      "Grabaciones y videos presentados por las partes (no valorados en el texto como determinantes)"
+    ],
+    "motivacion": "Declara la improcedencia por: no existir vulneración directa de derechos constitucionales demostrada (art. 42.1 LOGJCC); extinción de los actos impugnados sin daños reparables (art. 42.2); y existencia de vía contenciosa administrativa adecuada y eficaz para impugnar los decretos, al tener presunción de legitimidad (art. 42.4 y art. 173 CRE). Confirma la sentencia de primera instancia.",
+    "criterioResolucion": "La asignación de funciones a la Vicepresidencia es facultad discrecional del Presidente (art. 149 CRE) y no es un conflicto de naturaleza constitucional; los actos administrativos con presunción de legitimidad deben impugnarse en la vía contenciosa; y la justicia constitucional no puede resolver disputas políticas ni sustituir la vía ordinaria cuando el asunto es de mera legalidad.",
+    "citaTextual": "La justicia constitucional no puede ser utilizada para resolver conflictos de naturaleza política, pues estos deben ser resueltos en la arena política y no trasladados a la esfera jurisdiccional.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derechos políticos",
+      "Seguridad jurídica (dimensión constitucional)",
+      "No discriminación",
+      "Dignidad humana"
+    ],
+    "fundamentosDeHecho": "La accionante, Vicepresidenta de la República, impugna decretos presidenciales que le asignaron funciones de embajadora y luego de consejera económica en Turquía (decretos 27, 61 y 490), y el Decreto 494 y el encargo del Decreto 500, que la declararon en ausencia temporal y designaron reemplazos. El tribunal da por probado que los decretos 27, 61, 490, 494 y 500 fueron emitidos, que el Decreto 457 fue derogado, y que los actos impugnados estaban extinguidos a la fecha de la apelación. No consta que la accionante haya viajado a Turquía. No se demostró que la vía contenciosa administrativa fuera inadecuada o ineficaz.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}

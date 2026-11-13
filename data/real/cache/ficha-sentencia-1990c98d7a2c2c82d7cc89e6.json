@@ -1,0 +1,73 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 49144,
+    "tokensSalida": 4423
+  },
+  "salida": {
+    "numero": "17240202500071",
+    "decision": "rechaza",
+    "normativa": [
+      {
+        "norma": "Constitución de la República del Ecuador",
+        "articulos": [
+          "82",
+          "88",
+          "86",
+          "436",
+          "226",
+          "264",
+          "240",
+          "266",
+          "101",
+          "61",
+          "95",
+          "75"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "24",
+          "39",
+          "40",
+          "42 numerales 1 y 3",
+          "74",
+          "75"
+        ]
+      },
+      {
+        "norma": "Código Orgánico Administrativo",
+        "articulos": [
+          "120",
+          "121",
+          "122",
+          "123"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia 1791-22-EP/25 de la Corte Constitucional (párr. 23, improcedencia desnaturalizante)"
+    ],
+    "argumentacion": "1) El tribunal de apelación analiza si la accionante vio vulnerados participación ciudadana, seguridad jurídica e igualdad. 2) Señala que la demanda no impugna directamente la ordenanza, pero sí actuaciones del procedimiento legislativo (Resolución de la Comisión de Uso de Suelo que ordenó reprocesar observaciones y reenviar el proyecto sin los informes solicitados). 3) Concluye que cuestionar los trámites de expedición de una norma es un control de constitucionalidad formal, que no corresponde a la acción de protección. 4) Indica que, a la fecha de la audiencia de primera instancia, la Ordenanza 104-2025 ya estaba vigente; anular la resolución implicaría retrotraer el procedimiento y afectar la vigencia de la norma, lo que invadiría competencias de la Corte Constitucional. 5) Considera que, aprobada la norma, la vía sería la acción pública de inconstitucionalidad. 6) Califica las actuaciones impugnadas como actos de simple administración (COA arts. 120 a 123), sin efectos directos sobre el administrado. 7) Concluye que no se verifica vulneración de derechos constitucionales que merezca resolución de fondo.",
+    "pruebas": [
+      "Ordenanza Metropolitana 104-2025, vigente desde el 31 de octubre de 2025 según la sentencia de primera instancia",
+      "Acta de la reunión de consenso de ciudadanos acreditados a la silla vacía del 7 de octubre de 2025",
+      "Memorando GAD-DMQ-SGSM-2025-3916-M (expediente de la ordenanza, 2.488 fojas)",
+      "Oficio GADDMQ-GSHOT-2024-2484-1 con el informe compilado de las secretarías",
+      "Informe IC-O-CUS-2025-001 de la Comisión de Uso de Suelo"
+    ],
+    "motivacion": "El tribunal fundamenta el rechazo en que los cargos cuestionan el procedimiento legislativo, que es materia de control de constitucionalidad formal y de la Corte Constitucional; que la acción de protección no es la vía para impugnar una ordenanza ni para retrotraer un procedimiento normativo ya concluido; y que los actos impugnados son actos de simple administración sin efectos jurídicos directos. Aplica el art. 42 numerales 1 y 3 LOGJCC. Confirma la sentencia de primera instancia, que había negado la acción.",
+    "criterioResolucion": "Los cuestionamientos a los trámites de expedición de una ordenanza (control formal del procedimiento legislativo) no son conocibles por acción de protección. Cuando la demanda impugna exclusivamente la constitucionalidad del procedimiento normativo, sin violación directa de derechos, procede la causal de improcedencia del art. 42 numerales 1 y 3 LOGJCC, y la vía es la acción pública de inconstitucionalidad ante la Corte Constitucional.",
+    "citaTextual": "los cuestionamientos a los trámites para la expedición de un cuerpo normativo no son susceptibles de ser conocidos por la acción de protección, pues implica un análisis propio del control de constitucionalidad formal del proceso de expedición de normas.",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Participación ciudadana",
+      "Seguridad jurídica",
+      "Igualdad y no discriminación (art. 66 numeral 4 CRE, alegado en la apelación)"
+    ],
+    "fundamentosDeHecho": "La accionante impugna la Resolución de la Comisión de Uso de Suelo del GADDMQ (sesión extraordinaria 025, numerada también como SGC-ORD-036-CUS-122-2024) que ordenó a la Secretaría de Hábitat reprocesar observaciones y reenviar el proyecto de reforma de la Ordenanza 001-2019 sobre licencias de publicidad exterior, sin incorporar informes de dependencias municipales, el expediente DEN-2023-0070 y una consultoría ciudadana. El tribunal considera acreditado que la Ordenanza 104-2025 se encontraba vigente a la fecha de la audiencia de primera instancia. Los números de resolución y sesión varían entre los documentos del expediente y no se han unificado en el texto.",
+    "esPonente": "si",
+    "votoSalvado": true
+  }
+}

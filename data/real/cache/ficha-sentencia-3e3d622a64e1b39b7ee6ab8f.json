@@ -1,0 +1,97 @@
+{
+  "modelo": "us.anthropic.claude-haiku-5-5",
+  "uso": {
+    "tokensEntrada": 25712,
+    "tokensSalida": 1519
+  },
+  "salida": {
+    "numero": "17204202402881",
+    "decision": "acepta",
+    "normativa": [
+      {
+        "norma": "Constitución de la República",
+        "articulos": [
+          "3",
+          "26",
+          "27",
+          "28",
+          "29",
+          "44",
+          "45",
+          "66",
+          "76",
+          "86",
+          "88"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Educación Intercultural",
+        "articulos": [
+          "2.2",
+          "2.3",
+          "4",
+          "4.1",
+          "6",
+          "7",
+          "63.1"
+        ]
+      },
+      {
+        "norma": "Ley Orgánica de Garantías Jurisdiccionales y Control Constitucional",
+        "articulos": [
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "norma": "Reglamento a la LOEI",
+        "articulos": [
+          "332"
+        ]
+      },
+      {
+        "norma": "Convención Americana sobre Derechos Humanos",
+        "articulos": [
+          "1.1",
+          "19"
+        ]
+      },
+      {
+        "norma": "Protocolo de San Salvador",
+        "articulos": [
+          "13"
+        ]
+      }
+    ],
+    "jurisprudencia": [
+      "Sentencia constitucional vinculante 001-16-PJO-CC (caso 0530-10-JP)",
+      "Sentencia 456-20-JP/21",
+      "Sentencia 1351-19-JP/22"
+    ],
+    "argumentacion": "El tribunal descarta vicios procesales y señala que la acción es procedente porque hay vulneración de derechos constitucionales (educación, protección frente a violencia, integridad, interés superior del niño) de un adolescente de grupo de atención prioritaria, por lo que no analiza formalmente la procedencia ni el carácter de mera legalidad. Concluye que la institución no adoptó medidas oportunas ni suficientes frente a la violencia sufrida y que el cambio de colegio, pedido por la madre, no exime de responsabilidad a la institución. Con base en la audiencia reservada y el informe de la Unidad Judicial, confirma la sentencia que acepta la acción.",
+    "pruebas": [
+      "Audiencia reservada con el adolescente y sus padres",
+      "Informe de la Oficina Técnica de la Unidad Judicial (fojas 380 a 386)",
+      "Evaluaciones psicopedagógicas y psicológicas del menor",
+      "Oficio de la madre a la Secretaría de Educación de 30 de octubre de 2023 (foja 81)"
+    ],
+    "motivacion": "La resolución justifica la confirmación en la falta de respuesta oportuna y eficiente de la institución ante los hechos de violencia, en el principio del interés superior del niño y en que el cambio de institución fue consecuencia de esa omisión, no un acto que libere a la institución de responsabilidad.",
+    "criterioResolucion": "Cuando se evidencia vulneración de derechos esenciales de un niño, niña o adolescente, perteneciente al grupo de atención prioritaria, la acción de protección es procedente y no es necesario el análisis formal de procedencia; la falta de medidas oportunas ante la violencia escolar vulnera el derecho a la educación, y el cambio de institución solicitado por los padres no exime de responsabilidad a la institución.",
+    "citaTextual": "Teniendo claro que la educación es un TODO, en este caso, sabiendo que el menor de edad, tiene un coeficiente superior, que merece atención prioritaria, que habría sido violentado por sus pares, la Institución educativa donde cursaba sus estudios, estaba en la obligación de actuar inmediatamente, adoptando todas las medidas necesarias e indispensables para salvaguardar su integridad física y emocional",
+    "apelacion": "confirma",
+    "derechosInvocados": [
+      "Derecho a la educación",
+      "Derecho a la protección de niñas, niños y adolescentes frente a la violencia",
+      "Derecho a una vida libre de violencia en el ámbito educativo",
+      "Derecho al debido proceso en el contexto educativo",
+      "Seguridad jurídica",
+      "Integridad personal",
+      "Proyecto de vida"
+    ],
+    "fundamentosDeHecho": "El adolescente C.M.T.C. sufrió dos episodios de violencia de pares en la Unidad Educativa Municipal Sebastián de Benalcázar (2021-2022 y 24 de octubre de 2023). Tras el segundo, la institución no adoptó medidas suficientes según el tribunal, la madre solicitó el traslado a otra institución y el menor fue trasladado. El tribunal da por probado que el cambio se hizo sin respuesta oportuna y eficiente de la institución. Los hechos de la violencia y la falta de medidas se toman del relato y de las pruebas, sin que el texto precise la fecha de notificación de la sentencia de primera instancia.",
+    "esPonente": "no_consta",
+    "votoSalvado": false
+  }
+}
