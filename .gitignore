@@ -6,3 +6,4 @@ data/real/raw/documentos/
 # Volcado intermedio de la captura; lo que se usa es raw/causa.json y raw/juez.json.
 data/real/raw/captura/
 node_modules.nosync/
+node_modules

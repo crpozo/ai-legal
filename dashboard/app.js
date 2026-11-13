@@ -47,7 +47,7 @@ function recorridoCausa({ causa }) {
       [4, "Haz clic en BUSCAR y supera el CAPTCHA", "Verificación CAPTCHA completada por el usuario; el agente continúa desde los resultados"],
     ] },
     { titulo: "2. Abrir el proceso y consultar su estado", pasos: [
-      [5, "Identifica la causa correcta entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (confianza ${esc(causa.seleccion.confianza)})`],
+      [5, "Identifica la causa correcta entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (certeza ${esc(causa.seleccion.confianza)})`],
       [6, "Abre los movimientos del proceso", `Carpeta abierta · ingreso ${fecha(e.fechaIngreso)} · ${esc(e.materia)} · ${esc(e.tipoAccion)}`],
       [7, "Ve a INFORMACIÓN DEL PROCESO", `${plural(acts.length, "actuación registrada", "actuaciones registradas")}`],
       [8, "Revisa las actuaciones, la más reciente primero", ATENCION.map(([cat, nombre]) => `${esc(nombre)}: <b>${cuenta(cat)}</b>`).join(" · ")],
@@ -267,7 +267,7 @@ function vistaCausa(datos) {
     <div class="panel" data-panel="carpetas" hidden>
       <div class="columnas">
         <div class="principal">
-        ${bloque("Carpeta elegida por la IA", `<p><b>${esc(e.dependencia)}</b></p><p><span class="etiqueta ${nivelConfianza}">confianza ${esc(causa.seleccion.confianza)}</span></p><p class="tenue">${esc(causa.seleccion.justificacion)}</p>
+        ${bloque("Carpeta elegida por la IA", `<p><b>${esc(e.dependencia)}</b></p><p><span class="etiqueta ${nivelConfianza}">Certeza de la elección: ${esc(causa.seleccion.confianza)}</span></p><p class="tenue">${{ alta: "La dependencia coincide con la que el estudio indicó.", media: "El estudio no indicó la dependencia; la IA eligió por actividad del expediente. Conviene confirmarla.", baja: "Los datos no alcanzan para decidir; debe confirmarla un abogado." }[causa.seleccion.confianza] ?? ""}</p><p class="tenue"><b>Por qué esta carpeta</b></p><p class="tenue">${esc(causa.seleccion.justificacion)}</p>
           ${causa.seleccion.otras.length ? `<details class="mas"><summary>Otras ${causa.seleccion.otras.length} carpetas con el mismo número</summary><ul class="filas">${causa.seleccion.otras.map((o) => { const i = causa.instancias.find((x) => x.id === o.instanciaId); return `<li><b>${esc(i?.dependencia ?? o.instanciaId)}</b>${i ? ` <span class="ref">${fecha(i.fechaIngreso)} · ${i.totalActuaciones} act.</span>` : ""}<br><span class="tenue">${esc(o.relacion)}</span></li>`; }).join("")}</ul></details>` : ""}`, { paso: "Paso 5" })}
         </div>
         <aside class="lateral">
