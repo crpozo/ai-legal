@@ -3,7 +3,7 @@
     "dataset": "real",
     "ficticio": false,
     "origen": "agentes",
-    "generadoEn": "2026-11-11T21:07:07.243Z"
+    "generadoEn": "2026-11-13T15:20:10.511Z"
   },
   "causa": {
     "fuente": {
@@ -11156,6 +11156,139 @@
       "documentosNoDisponibles": []
     }
   },
+  "fiscalia": {
+    "fuente": {
+      "portal": "Fiscalía General del Estado · Consulta de noticias del delito (SIAF)",
+      "url": "https://www.fiscalia.gob.ec/accesibilidad/consulta-de-noticias-del-delito/",
+      "capturadoEn": "2026-11-12",
+      "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documento del 12/11/2026). Dos noticias con detalle completo; de una tercera solo se ve el número. La identidad de terceros que figuran como sospechosos se reservó antes del análisis."
+    },
+    "consulta": {
+      "criterio": "Cédula (10 dígitos)",
+      "valor": "1711187763",
+      "persona": "Cruz Alvear Ángel Fabián"
+    },
+    "noticias": [
+      {
+        "numero": "170101824081287",
+        "detalleDisponible": true,
+        "lugar": "Pichincha - Quito",
+        "fecha": "2025-07-22",
+        "hora": "12:05:56",
+        "digitador": "Salgado Huaraca Melany Lizbeth",
+        "nroOficio": "SN",
+        "tipoIncidente": "Denuncia formal - escrita",
+        "delito": "Abuso de confianza",
+        "unidad": "Fiscalía de Soluciones Rápidas - Edi. - SUR - MENA - Dir. - Av. Mariscal Sucre S23-100 y Porto Bello - Telef. - 3102150",
+        "numFiscalia": "1",
+        "sujetos": [
+          {
+            "cedula": "1711187763",
+            "nombre": "Cruz Alvear Angel Fabian",
+            "estado": "Denunciante"
+          },
+          {
+            "nombre": "Persona 1 (identidad reservada)",
+            "estado": "Sospechoso"
+          }
+        ],
+        "vehiculos": []
+      },
+      {
+        "numero": "070101824060201",
+        "detalleDisponible": false,
+        "sujetos": [],
+        "vehiculos": []
+      },
+      {
+        "numero": "170101813031475",
+        "detalleDisponible": true,
+        "lugar": "Pichincha - Quito",
+        "fecha": "2013-03-09",
+        "hora": "03:03:36",
+        "digitador": "Castro Cardenas Victor Gustavo",
+        "nroOficio": "SN",
+        "tipoIncidente": "Denuncia formal - oral",
+        "delito": "Robo",
+        "unidad": "Fiscalía DACE - Edi. - NORTE - 9 de Octubre - Dir. - Calle 9 de Octubre N19-33 y Av. Patria - Telef. - 3995900",
+        "numFiscalia": "2",
+        "sujetos": [
+          {
+            "cedula": "1711187763",
+            "nombre": "Cruz Alvear Angel Fabian",
+            "estado": "Denunciante"
+          }
+        ],
+        "vehiculos": [
+          {
+            "marca": "Hyundai",
+            "modelo": "NA",
+            "placa": "PQG0285"
+          }
+        ]
+      }
+    ],
+    "reporte": {
+      "resumenEjecutivo": "La consulta por cédula 1711187763 (Cruz Alvear Ángel Fabián) arroja tres noticias del delito. En dos de ellas la persona figura como denunciante. La primera es la 170101824081287, del 22/07/2025 en Quito, por abuso de confianza, ante la Fiscalía de Soluciones Rápidas Sur, con un sospechoso de identidad reservada. La segunda es la 170101813031475, del 09/03/2013 en Quito, por robo, ante la Fiscalía DACE Norte, con un vehículo Hyundai de placa PQG0285 asociado. De la tercera, la 070101824060201, solo se conoce el número; no hay detalle disponible, por lo que se desconoce la calidad en que figura la persona, el delito y la unidad. Lo más relevante es consultar el detalle de esa noticia pendiente. También conviene confirmar el estado procesal de la denuncia de 2025, que es reciente. El registro no indica el estado ni el resultado de ninguna de las investigaciones.",
+      "noticias": [
+        {
+          "numero": "170101824081287",
+          "rolDeLaPersona": "denunciante",
+          "resumen": "Denuncia formal escrita registrada el 22/07/2025 a las 12:05:56 en Pichincha - Quito, por el delito de abuso de confianza. Unidad: Fiscalía de Soluciones Rápidas, edificio Sur - Mena (Av. Mariscal Sucre S23-100 y Porto Bello, telf. 3102150), Fiscalía n.º 1. Oficio: SN. Sujetos: Cruz Alvear Angel Fabian (cédula 1711187763), como denunciante, y una persona de identidad reservada, como sospechoso. No hay vehículos registrados.",
+          "queVerificar": "Confirmar en la Fiscalía n.º 1 de Soluciones Rápidas Sur el estado actual de la investigación previa y el fiscal a cargo. Verificar si se ha reconocido la denuncia, si hay diligencias pendientes y si el caso se encamina a una salida alternativa o a otro mecanismo propio de esa unidad. Confirmar también si el cliente puede o debe intervenir como víctima o acusador particular."
+        },
+        {
+          "numero": "070101824060201",
+          "rolDeLaPersona": "no_consta",
+          "resumen": "Noticia sin detalle disponible. Solo se conoce su número. No constan la fecha, el lugar, el delito, la unidad fiscal ni la calidad en que figura la persona consultada.",
+          "queVerificar": "Obtener el detalle completo de la noticia: calidad de la persona consultada, delito, fecha, lugar, unidad y fiscal asignado. Con ello se podrá determinar si requiere atención del estudio."
+        },
+        {
+          "numero": "170101813031475",
+          "rolDeLaPersona": "denunciante",
+          "resumen": "Denuncia formal oral registrada el 09/03/2013 a las 03:03:36 en Pichincha - Quito, por el delito de robo. Unidad: Fiscalía DACE, edificio Norte - 9 de Octubre (calle 9 de Octubre N19-33 y Av. Patria, telf. 3995900), Fiscalía n.º 2. Oficio: SN. El único sujeto registrado es Cruz Alvear Angel Fabian (cédula 1711187763), como denunciante. Tiene asociado un vehículo Hyundai, modelo NA, placa PQG0285. No consta ningún sospechoso identificado.",
+          "queVerificar": "Confirmar el estado de la causa (por ejemplo, si existe archivo u otra decisión). Verificar la relación del vehículo PQG0285 con los hechos y si sigue registrado con alguna novedad derivada de esta denuncia. Confirmar si el cliente tiene algún interés pendiente en el caso."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "alta",
+          "texto": "Noticia sin detalle disponible. Se desconoce la calidad en que figura el cliente (podría ser cualquiera, incluida la de sospechoso), el delito y la unidad. Debe consultarse antes de emitir cualquier criterio sobre los antecedentes del cliente.",
+          "numero": "070101824060201"
+        },
+        {
+          "nivel": "media",
+          "texto": "La denuncia por abuso de confianza es reciente (julio de 2025) y el cliente es el denunciante. El sospechoso aparece con identidad reservada. Conviene dar seguimiento para proteger los intereses del cliente como víctima.",
+          "numero": "170101824081287"
+        },
+        {
+          "nivel": "baja",
+          "texto": "La denuncia por robo es de 2013 y tiene asociado el vehículo PQG0285. No consta su estado. Conviene verificar si existe alguna novedad pendiente sobre el vehículo o el caso.",
+          "numero": "170101813031475"
+        },
+        {
+          "nivel": "baja",
+          "texto": "El nombre consta en el registro sin tildes («Angel Fabian»). Los números de cédula coinciden, pero conviene tenerlo presente en las búsquedas por nombre.",
+          "numero": "170101824081287"
+        }
+      ],
+      "proximosPasos": [
+        "Consultar el detalle de la noticia 070101824060201 en el sistema SIAF o en la unidad fiscal correspondiente.",
+        "Acudir o comunicarse con la Fiscalía n.º 1 de Soluciones Rápidas Sur (telf. 3102150) para conocer el estado de la noticia 170101824081287 y el fiscal a cargo.",
+        "Evaluar con el cliente su intervención como víctima o acusador particular en la noticia 170101824081287.",
+        "Solicitar a la Fiscalía DACE Norte (telf. 3995900) información sobre el estado de la noticia 170101813031475.",
+        "Verificar ante la autoridad de tránsito competente la situación del vehículo de placa PQG0285.",
+        "Revisar en el sistema de la Función Judicial (SATJE/e-SATJE) si alguna de estas noticias derivó en un proceso judicial."
+      ],
+      "limitaciones": [
+        "Una noticia del delito es un registro de denuncia: no indica el estado de la investigación, su resultado ni si existe un proceso judicial.",
+        "La noticia 070101824060201 no tiene detalle disponible, por lo que no se conoce su contenido.",
+        "No se conoce la identidad del sospechoso en la noticia 170101824081287, porque consta como reservada.",
+        "La consulta se limita a los registros asociados a la cédula indicada. Podría haber registros con datos de identificación distintos o incompletos que no aparecen.",
+        "No permite determinar plazos, prescripción ni actuaciones procesales posteriores a la denuncia."
+      ]
+    }
+  },
   "costos": {
     "porAgente": [
       {
@@ -11171,7 +11304,7 @@
         "agente": "analisis-actuaciones",
         "modelo": "us.anthropic.claude-haiku-5-5",
         "llamadas": 22,
-        "desdeCache": 3,
+        "desdeCache": 22,
         "tokensEntrada": 227670,
         "tokensSalida": 132831,
         "usd": 0.0892
@@ -11180,12 +11313,21 @@
         "agente": "reporte-causa",
         "modelo": "us.anthropic.claude-opus-5-5",
         "llamadas": 1,
-        "desdeCache": 0,
+        "desdeCache": 1,
         "tokensEntrada": 219227,
         "tokensSalida": 7631,
         "usd": 1.0295
+      },
+      {
+        "agente": "reporte-fiscalia",
+        "modelo": "us.anthropic.claude-opus-5-5",
+        "llamadas": 1,
+        "desdeCache": 0,
+        "tokensEntrada": 2259,
+        "tokensSalida": 2648,
+        "usd": 0.062
       }
     ],
-    "totalUsd": 1.1201
+    "totalUsd": 1.1821
   }
 }

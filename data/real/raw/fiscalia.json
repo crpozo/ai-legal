@@ -1,0 +1,73 @@
+{
+  "fuente": {
+    "portal": "Fiscalía General del Estado · Consulta de noticias del delito (SIAF)",
+    "url": "https://www.fiscalia.gob.ec/accesibilidad/consulta-de-noticias-del-delito/",
+    "capturadoEn": "2026-11-12",
+    "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documento del 12/11/2026). Dos noticias con detalle completo; de una tercera solo se ve el número. La identidad de terceros que figuran como sospechosos se reservó antes del análisis."
+  },
+  "consulta": {
+    "criterio": "Cédula (10 dígitos)",
+    "valor": "1711187763",
+    "persona": "Cruz Alvear Ángel Fabián"
+  },
+  "noticias": [
+    {
+      "numero": "170101824081287",
+      "detalleDisponible": true,
+      "lugar": "Pichincha - Quito",
+      "fecha": "2025-07-22",
+      "hora": "12:05:56",
+      "digitador": "Salgado Huaraca Melany Lizbeth",
+      "nroOficio": "SN",
+      "tipoIncidente": "Denuncia formal - escrita",
+      "delito": "Abuso de confianza",
+      "unidad": "Fiscalía de Soluciones Rápidas - Edi. - SUR - MENA - Dir. - Av. Mariscal Sucre S23-100 y Porto Bello - Telef. - 3102150",
+      "numFiscalia": "1",
+      "sujetos": [
+        {
+          "cedula": "1711187763",
+          "nombre": "Cruz Alvear Angel Fabian",
+          "estado": "Denunciante"
+        },
+        {
+          "nombre": "Persona 1 (identidad reservada)",
+          "estado": "Sospechoso"
+        }
+      ],
+      "vehiculos": []
+    },
+    {
+      "numero": "070101824060201",
+      "detalleDisponible": false,
+      "sujetos": [],
+      "vehiculos": []
+    },
+    {
+      "numero": "170101813031475",
+      "detalleDisponible": true,
+      "lugar": "Pichincha - Quito",
+      "fecha": "2013-03-09",
+      "hora": "03:03:36",
+      "digitador": "Castro Cardenas Victor Gustavo",
+      "nroOficio": "SN",
+      "tipoIncidente": "Denuncia formal - oral",
+      "delito": "Robo",
+      "unidad": "Fiscalía DACE - Edi. - NORTE - 9 de Octubre - Dir. - Calle 9 de Octubre N19-33 y Av. Patria - Telef. - 3995900",
+      "numFiscalia": "2",
+      "sujetos": [
+        {
+          "cedula": "1711187763",
+          "nombre": "Cruz Alvear Angel Fabian",
+          "estado": "Denunciante"
+        }
+      ],
+      "vehiculos": [
+        {
+          "marca": "Hyundai",
+          "modelo": "NA",
+          "placa": "PQG0285"
+        }
+      ]
+    }
+  ]
+}
