@@ -309,15 +309,15 @@
 
     /* Tarjeta animada de la portada: fuentes una a una → dashboard */
     .portada { background-color: #0A1228; }
-    .ht-marco { position: relative; width: 100%; max-width: 440px; justify-self: end; height: min(700px, calc(100svh - 77px - 72px)); min-height: 420px; }
+    .ht-marco { position: relative; width: 100%; max-width: 440px; justify-self: end; height: min(590px, calc(100svh - 77px - 72px)); min-height: 380px; }
     .ht-tarjeta { --k: 1; --tinta-ht: #0C1730; --tenue-ht: #5B6478; --azul-ht: #2D5BE0; --verde-ht: #1E9A5E;
-      position: absolute; top: 50%; left: 50%; width: 440px; height: 700px; box-sizing: border-box; padding: 24px; overflow: hidden;
+      position: absolute; top: 50%; left: 50%; width: 440px; height: 590px; box-sizing: border-box; padding: 24px; overflow: hidden;
       background: #fff; border-radius: 20px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); color: var(--tinta-ht);
       font-family: "Outfit", sans-serif; font-weight: 300; transform: translate(-50%, -50%) scale(var(--k)); cursor: pointer; text-align: left; }
     .ht-tarjeta.reinicio, .ht-tarjeta.reinicio * { transition: none !important; }
     .ht-sobre { font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--azul-ht); font-weight: 500; margin: 0; }
     .ht-titulo, .ht-caso, .ht-cifra strong { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; letter-spacing: 0; color: var(--tinta-ht); }
-    .ht-fuentes { height: 652px; margin-bottom: 24px; display: flex; flex-direction: column; justify-content: center; gap: 12px; overflow: hidden;
+    .ht-fuentes { height: 542px; margin-bottom: 24px; display: flex; flex-direction: column; justify-content: center; gap: 12px; overflow: hidden;
       transition: height .7s cubic-bezier(.3, .7, .2, 1), margin-bottom .7s cubic-bezier(.3, .7, .2, 1), opacity .5s; }
     .plegado .ht-fuentes { height: 0; margin-bottom: 0; opacity: 0; }
     .ht-titulo { font-size: 30px; line-height: 1.15; margin: 0 0 6px; }
@@ -363,7 +363,7 @@
     .ht-pie b { flex: none; background: #0C1730; color: #fff; border-radius: 99px; padding: 8px 14px; font-size: 12.5px; font-weight: 400; }
     .ht-entra { opacity: 0; transform: translateY(10px); transition: opacity .5s cubic-bezier(.2, .8, .2, 1), transform .5s cubic-bezier(.2, .8, .2, 1); }
     .ht-entra.dentro { opacity: 1; transform: none; }
-    @media (max-width: 960px) { .ht-marco { justify-self: center; height: auto; min-height: 0; aspect-ratio: 440 / 700; max-height: 700px; } }
+    @media (max-width: 960px) { .ht-marco { justify-self: center; height: auto; min-height: 0; aspect-ratio: 440 / 590; max-height: 590px; } }
   </style>
 </head>
 <body>
@@ -675,8 +675,8 @@
         for (const el of entradas) el.classList.toggle("dentro", t >= Number(el.dataset.t));
       };
 
-      // Escala la tarjeta (440×700) al espacio disponible sin deformarla.
-      const escalar = () => { const k = Math.min(1, marco.clientWidth / 440, marco.clientHeight / 700); tarjeta.style.setProperty("--k", k); };
+      // Escala la tarjeta (440×590) al espacio disponible sin deformarla.
+      const escalar = () => { const k = Math.min(1, marco.clientWidth / 440, marco.clientHeight / 590); tarjeta.style.setProperty("--k", k); };
       new ResizeObserver(escalar).observe(marco);
       escalar();
 
