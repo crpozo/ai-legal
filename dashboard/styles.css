@@ -520,3 +520,10 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 
 .login-arte::before { content: "AI Legal"; font-size: 24px; font-weight: 400; letter-spacing: -.01em; }
 .login-arte > small { display: none; }
+
+/* Login: video animado de fondo bajo el degradado azul */
+.login-arte { position: relative; overflow: hidden; isolation: isolate; }
+.login-arte .login-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.login-arte::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--degradado); opacity: .82; }
+.login-sello { display: inline-block; margin-bottom: 18px; padding: 6px 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 99px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; background: rgba(255, 255, 255, .1); backdrop-filter: blur(6px); }
+@media (prefers-reduced-motion: reduce) { .login-arte .login-video { display: none; } }
