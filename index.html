@@ -306,6 +306,64 @@
     footer.pie nav a { color: rgba(255, 255, 255, .88); text-decoration: none; }
     footer.pie nav a:hover { color: #fff; }
     @media (max-width: 640px) { footer.pie .ancho { flex-direction: column; align-items: flex-start; } footer.pie nav { gap: 20px; } }
+
+    /* Tarjeta animada de la portada: fuentes una a una → dashboard */
+    .portada { background-color: #0A1228; }
+    .ht-marco { position: relative; width: 100%; max-width: 440px; justify-self: end; height: min(700px, calc(100svh - 77px - 72px)); min-height: 420px; }
+    .ht-tarjeta { --k: 1; --tinta-ht: #0C1730; --tenue-ht: #5B6478; --azul-ht: #2D5BE0; --verde-ht: #1E9A5E;
+      position: absolute; top: 50%; left: 50%; width: 440px; height: 700px; box-sizing: border-box; padding: 24px; overflow: hidden;
+      background: #fff; border-radius: 20px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); color: var(--tinta-ht);
+      font-family: "Outfit", sans-serif; font-weight: 300; transform: translate(-50%, -50%) scale(var(--k)); cursor: pointer; text-align: left; }
+    .ht-tarjeta.reinicio, .ht-tarjeta.reinicio * { transition: none !important; }
+    .ht-sobre { font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--azul-ht); font-weight: 500; margin: 0; }
+    .ht-titulo, .ht-caso, .ht-cifra strong { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; letter-spacing: 0; color: var(--tinta-ht); }
+    .ht-fuentes { height: 652px; margin-bottom: 24px; display: flex; flex-direction: column; justify-content: center; gap: 12px; overflow: hidden;
+      transition: height .7s cubic-bezier(.3, .7, .2, 1), margin-bottom .7s cubic-bezier(.3, .7, .2, 1), opacity .5s; }
+    .plegado .ht-fuentes { height: 0; margin-bottom: 0; opacity: 0; }
+    .ht-titulo { font-size: 30px; line-height: 1.15; margin: 0 0 6px; }
+    .ht-fila { background: #F3F5FA; border-radius: 14px; padding: 16px 18px; display: grid; gap: 4px; opacity: .4; transform: translateY(6px); transition: opacity .4s cubic-bezier(.2, .8, .2, 1), transform .4s cubic-bezier(.2, .8, .2, 1); --c: var(--tenue-ht); }
+    .ht-fila.visible { opacity: 1; transform: none; }
+    .ht-fila[data-estado="activo"] { --c: var(--azul-ht); }
+    .ht-fila[data-estado="hecho"] { --c: var(--verde-ht); }
+    .ht-fila-cab { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+    .ht-fila-cab b { font-size: 15.5px; font-weight: 500; }
+    .ht-est { font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; color: var(--c); white-space: nowrap; }
+    .ht-fila p { margin: 0; font-size: 13px; color: var(--tenue-ht); }
+    .ht-pista { height: 3px; border-radius: 99px; background: #DDE1EA; overflow: hidden; margin-top: 8px; }
+    .ht-pista i, .ht-barra i { display: block; height: 100%; border-radius: 99px; transform-origin: left; transform: scaleX(0); }
+    .ht-pista i { background: var(--c); }
+    .ht-panel { display: grid; gap: 14px; }
+    .ht-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .ht-caso { font-size: 28px; line-height: 1.15; margin: 4px 0 2px; }
+    .ht-sub { margin: 0; font-size: 14px; color: var(--tenue-ht); }
+    .ht-pildora { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 99px; background: #E3EAFD; color: #1B3FB0; font-size: 12.5px; font-weight: 500; white-space: nowrap; transition: background .3s, color .3s; }
+    .ht-pildora i { width: 7px; height: 7px; border-radius: 50%; background: var(--azul-ht); transition: transform .3s; }
+    .ht-pildora.late i { transform: scale(1.6); }
+    .listo .ht-pildora { background: #E8F5EE; color: #14663F; }
+    .listo .ht-pildora i { background: var(--verde-ht); }
+    .ht-barra { height: 3px; border-radius: 99px; background: #E7E9F0; overflow: hidden; }
+    .ht-barra i { background: var(--azul-ht); transition: background .3s; }
+    .listo .ht-barra i { background: var(--verde-ht); }
+    .ht-linea { margin: -6px 0 0; font-size: 12.5px; color: var(--tenue-ht); }
+    .ht-cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; opacity: .3; transition: opacity .4s; }
+    .contando .ht-cifras { opacity: 1; }
+    .ht-cifra { background: #F3F5FA; border-radius: 14px; padding: 14px; display: grid; gap: 4px; }
+    .ht-cifra.prim { background: var(--azul-ht); }
+    .ht-cifra strong { font-size: 40px; line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
+    .ht-titulo, .ht-caso { font-variant-numeric: lining-nums; }
+    .ht-cifra.prim strong, .ht-cifra.prim span { color: #fff; }
+    .ht-cifra span { font-size: 12.5px; color: var(--tenue-ht); line-height: 1.25; }
+    .ht-dias { transition: opacity .4s; }
+    .ht-alertas { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .ht-alertas li { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: #F3F5FA; border-radius: 10px; padding: 11px 12px; border-left: 4px solid #C8372D; font-size: 14.5px; line-height: 1.35; }
+    .ht-alertas li.media { border-left-color: #C98A1B; }
+    .ht-alertas em { font-style: normal; font-size: 12px; font-weight: 500; padding: 2px 9px; border-radius: 99px; color: #A32A22; background: #FBE9E7; }
+    .ht-alertas li.media em { color: #855A0B; background: #FBF1DC; }
+    .ht-pie { display: flex; justify-content: space-between; align-items: center; gap: 10px; border: 1px solid #E7E9F0; border-radius: 14px; padding: 10px 10px 10px 14px; font-size: 13.5px; }
+    .ht-pie b { flex: none; background: #0C1730; color: #fff; border-radius: 99px; padding: 8px 14px; font-size: 12.5px; font-weight: 400; }
+    .ht-entra { opacity: 0; transform: translateY(10px); transition: opacity .5s cubic-bezier(.2, .8, .2, 1), transform .5s cubic-bezier(.2, .8, .2, 1); }
+    .ht-entra.dentro { opacity: 1; transform: none; }
+    @media (max-width: 960px) { .ht-marco { justify-self: center; height: auto; min-height: 0; aspect-ratio: 440 / 700; max-height: 700px; } }
   </style>
 </head>
 <body>
@@ -343,27 +401,36 @@
           </div>
         </div>
 
-        <div class="maqueta" id="maqueta" aria-label="Ejemplo de reporte de una causa">
-          <div class="maq-cab">
-            <div>
-              <p class="sobre">Proceso 17230-2020-11399</p>
-              <h3>Acción colusoria</h3>
-              <p class="maq-sub">Unidad Judicial Civil de Iñaquito, Quito</p>
+        <div class="ht-marco" id="ht-marco">
+        <div class="ht-tarjeta" id="ht-tarjeta" data-ciclo="12500" role="img" aria-label="Animación: el agente de IA consulta cuatro fuentes oficiales y arma el reporte del proceso 17230-2020-11399" title="Clic para reiniciar">
+          <div class="ht-fuentes">
+            <p class="ht-sobre">El agente consulta las fuentes</p>
+            <h3 class="ht-titulo">Proceso 17230-2020-11399</h3>
+            <div class="ht-fila" data-i="0" data-res="✓ 424 actuaciones"><div class="ht-fila-cab"><b>Función Judicial · E-SATJE</b><span class="ht-est">En cola</span></div><p>Carpetas, actuaciones y documentos</p><div class="ht-pista"><i></i></div></div>
+            <div class="ht-fila" data-i="1" data-res="✓ Revisada"><div class="ht-fila-cab"><b>Fiscalía General del Estado</b><span class="ht-est">En cola</span></div><p>Denuncias vinculadas a las partes</p><div class="ht-pista"><i></i></div></div>
+            <div class="ht-fila" data-i="2" data-res="✓ 190 resoluciones"><div class="ht-fila-cab"><b>Corte Provincial de Pichincha</b><span class="ht-est">En cola</span></div><p>Resoluciones de segunda instancia</p><div class="ht-pista"><i></i></div></div>
+            <div class="ht-fila" data-i="3" data-res="✓ 8 alertas"><div class="ht-fila-cab"><b>Análisis con IA</b><span class="ht-est">En cola</span></div><p>Riesgos, plazos y borradores</p><div class="ht-pista"><i></i></div></div>
+          </div>
+          <div class="ht-panel">
+            <div class="ht-cab">
+              <div><p class="ht-sobre">Proceso 17230-2020-11399</p><h3 class="ht-caso">Acción colusoria</h3><p class="ht-sub">Unidad Judicial Civil de Iñaquito, Quito</p></div>
+              <span class="ht-pildora"><i></i><span>Agente buscando…</span></span>
             </div>
-            <span class="maq-estado" id="maq-estado"><i></i><span>Agente IA leyendo el expediente…</span></span>
+            <div class="ht-barra"><i></i></div>
+            <p class="ht-linea">Reuniendo las fuentes…</p>
+            <div class="ht-cifras">
+              <div class="ht-cifra prim"><strong class="ht-act">0</strong><span>actuaciones leídas</span></div>
+              <div class="ht-cifra"><strong class="ht-ale">0</strong><span>alertas</span></div>
+              <div class="ht-cifra"><strong class="ht-dias">11 d</strong><span>mediana de despacho</span></div>
+            </div>
+            <ul class="ht-alertas">
+              <li class="ht-entra alta" data-t="5300"><span>La citación de dos demandados fue observada por cuarta vez.</span><em>alta</em></li>
+              <li class="ht-entra alta" data-t="5700"><span>El juez advirtió el archivo de la causa por falta de impulso.</span><em>alta</em></li>
+              <li class="ht-entra media" data-t="6100"><span>La reconvención espera a que todos estén citados.</span><em>media</em></li>
+            </ul>
+            <div class="ht-pie ht-entra" data-t="6700"><span>2 borradores de escrito y el reporte para el cliente</span><b>Listos para revisar</b></div>
           </div>
-          <div class="maq-barra" aria-hidden="true"><i></i></div>
-          <div class="maq-cifras">
-            <div><strong data-hasta="424">424</strong><span>actuaciones leídas</span></div>
-            <div><strong data-hasta="8">8</strong><span>alertas</span></div>
-            <div><strong data-hasta="11" data-sufijo=" d">11 d</strong><span>mediana de despacho</span></div>
-          </div>
-          <ul class="maq-alertas">
-            <li class="alta"><span>La citación de dos demandados fue observada por cuarta vez.</span><span class="chip alta">alta</span></li>
-            <li class="alta"><span>El juez advirtió el archivo de la causa por falta de impulso.</span><span class="chip alta">alta</span></li>
-            <li class="media"><span>La reconvención espera a que todos estén citados.</span><span class="chip media">media</span></li>
-          </ul>
-          <div class="maq-pie"><span>2 borradores de escrito y el reporte para el cliente</span><span class="chip">Listos para revisar</span></div>
+        </div>
         </div>
       </div>
     </div>
@@ -570,22 +637,64 @@
   </footer>
 
   <script>
-    // Tarjeta de la portada: las cifras cuentan hasta su valor y el estado pasa a "Reporte listo".
+    // Tarjeta de la portada: el agente consulta las fuentes una a una y arma el dashboard.
+    // Un único reloj (requestAnimationFrame) deriva cada valor del tiempo transcurrido.
     (() => {
-      const quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const estado = document.getElementById("maq-estado");
-      const listo = () => { estado.classList.add("listo"); estado.querySelector("span").textContent = "Reporte listo"; };
-      if (quieto) return listo();
-      const DURACION = 1700, inicio = performance.now() + 350;
-      const cifras = [...document.querySelectorAll("#maqueta [data-hasta]")];
-      for (const c of cifras) c.textContent = `0${c.dataset.sufijo ?? ""}`;
-      const paso = (ahora) => {
-        const t = Math.min(1, Math.max(0, (ahora - inicio) / DURACION)), suave = 1 - Math.pow(1 - t, 3);
-        for (const c of cifras) c.textContent = `${Math.round(Number(c.dataset.hasta) * suave)}${c.dataset.sufijo ?? ""}`;
-        if (t < 1) requestAnimationFrame(paso);
+      const tarjeta = document.getElementById("ht-tarjeta"), marco = document.getElementById("ht-marco");
+      if (!tarjeta) return;
+      const CICLO = Number(tarjeta.dataset.ciclo) || 12500;
+      const quieto = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const $ = (sel) => tarjeta.querySelector(sel);
+      const filas = [...tarjeta.querySelectorAll(".ht-fila")];
+      const entradas = [...tarjeta.querySelectorAll(".ht-entra")];
+      const pildora = $(".ht-pildora"), pildoraTxt = $(".ht-pildora span"), barra = $(".ht-barra i"), linea = $(".ht-linea");
+      const act = $(".ht-act"), ale = $(".ht-ale"), dias = $(".ht-dias");
+      const clamp = (x) => Math.min(1, Math.max(0, x)), suave = (x) => 1 - Math.pow(1 - x, 3);
+      const texto = (el, v) => { if (el.textContent !== v) el.textContent = v; };
+
+      const pintar = (t) => {
+        filas.forEach((f, i) => {
+          const ini = 500 + i * 900, p = clamp((t - ini) / 780);
+          f.classList.toggle("visible", t >= ini - 250);
+          const estado = p >= 1 ? "hecho" : t >= ini ? "activo" : "cola";
+          f.dataset.estado = estado;
+          texto(f.querySelector(".ht-est"), estado === "hecho" ? f.dataset.res : estado === "activo" ? "Consultando…" : "En cola");
+          f.querySelector(".ht-pista i").style.transform = `scaleX(${p})`;
+        });
+        tarjeta.classList.toggle("plegado", t >= 4400);
+        const c = suave(clamp((t - 4700) / 900)), listo = t >= 5600;
+        tarjeta.classList.toggle("contando", t >= 4700);
+        tarjeta.classList.toggle("listo", listo);
+        texto(act, String(Math.round(424 * c)));
+        texto(ale, String(Math.round(8 * c)));
+        barra.style.transform = `scaleX(${c})`;
+        dias.style.opacity = listo ? 1 : .15;
+        texto(pildoraTxt, listo ? "Reporte listo" : "Agente buscando…");
+        texto(linea, listo ? "Expediente completo · cada hallazgo enlaza a su fuente" : "Reuniendo las fuentes…");
+        pildora.classList.toggle("late", !listo && Math.floor(t / 300) % 2 === 1);
+        for (const el of entradas) el.classList.toggle("dentro", t >= Number(el.dataset.t));
       };
-      requestAnimationFrame(paso);
-      setTimeout(listo, 3000);
+
+      // Escala la tarjeta (440×700) al espacio disponible sin deformarla.
+      const escalar = () => { const k = Math.min(1, marco.clientWidth / 440, marco.clientHeight / 700); tarjeta.style.setProperty("--k", k); };
+      new ResizeObserver(escalar).observe(marco);
+      escalar();
+
+      if (quieto) { pintar(CICLO - 1); return; }
+      let inicio = performance.now(), previo = 0, id = 0;
+      const reiniciarSinTransicion = (t) => { tarjeta.classList.add("reinicio"); pintar(t); void tarjeta.offsetHeight; requestAnimationFrame(() => tarjeta.classList.remove("reinicio")); };
+      const cuadro = (ahora) => {
+        const t = (ahora - inicio) % CICLO;
+        if (t < previo) reiniciarSinTransicion(t); else pintar(t);
+        previo = t;
+        id = requestAnimationFrame(cuadro);
+      };
+      const arrancar = () => { cancelAnimationFrame(id); id = requestAnimationFrame(cuadro); };
+      const detener = () => cancelAnimationFrame(id);
+      tarjeta.addEventListener("click", () => { inicio = performance.now(); previo = Infinity; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? detener() : arrancar()));
+      addEventListener("pagehide", detener);
+      arrancar();
     })();
 
     // Planes: forma de pago.
