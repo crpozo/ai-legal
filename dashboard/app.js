@@ -1,4 +1,5 @@
 import { montarChat } from "./chat.js?v=tomos1";
+import { montarTutorial } from "./tutorial.js?v=1";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -174,6 +175,7 @@ function vistaBuscar(datos) {
     <section class="heroe">
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
       <p class="bajada">Tomos consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
+      <button type="button" class="como-empezar">¿Cómo empezar? Ver guía</button>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
@@ -785,6 +787,7 @@ $("#form-login").addEventListener("submit", async (ev) => {
   $("#login-clave").value = "";
   sesion.guardar(correo);
   aplicarSesion(correo);
+  document.dispatchEvent(new Event("tomos:sesion"));
   window.scrollTo(0, 0);
 });
 $("#salir").addEventListener("click", () => { sesion.guardar(null); aplicarSesion(null); });
@@ -822,7 +825,8 @@ if (!datos) {
     const caja = $("#progreso");
     if (!flujo) {
       caja.querySelector(".sin-resultado")?.remove();
-      caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre las causas y jueces en seguimiento. Verifica el número de proceso o el nombre.</p>`);
+      caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre las causas y jueces en seguimiento. En esta demo el buscador solo responde con los procesos ya cargados: <button type="button" class="enlace-procesos">ver procesos analizados →</button></p>`);
+      caja.querySelector(".enlace-procesos")?.addEventListener("click", () => abrir("seguimientos"));
       return;
     }
     caja.innerHTML = `<p class="sobre centro">${TITULOS[flujo]} · en curso</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
@@ -867,6 +871,9 @@ if (!datos) {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
       for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
       document.querySelector(".atajo")?.addEventListener("click", () => abrir("seguimientos"));
+      document.querySelector(".como-empezar")?.addEventListener("click", () => montarTutorial({ abrir, forzar: true }));
+      const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar") montarTutorial({ abrir }); }, 400);
+      if ($("#login").hidden) lanzar(); else document.addEventListener("tomos:sesion", lanzar, { once: true });
     }
     window.scrollTo(0, 0);
   };
