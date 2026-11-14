@@ -14,7 +14,7 @@ const raiz = (p) => (p.replace(/(aciones|acion|amente|mente|idades|idad|ados|ada
 const fichas = (texto) => plano(texto).split(/[^a-z0-9]+/).filter((p) => p.length > 2 && !VACIAS.has(p)).map(raiz).filter((p) => p.length > 2);
 
 const AMBITOS = {
-  causa: { nombre: "Causa", pistas: ["caus", "proces", "cit", "demand", "actor", "expedient", "actu", "plaz", "escrit", "reconven", "archiv"] },
+  causa: { nombre: "Proceso", pistas: ["caus", "proces", "cit", "demand", "actor", "expedient", "actu", "plaz", "escrit", "reconven", "archiv"] },
   juez: { nombre: "Juez", pistas: ["juez", "tribunal", "sala", "criteri", "resuelv", "resolu", "apel", "habea", "protec", "ponent", "arbitrar", "demor", "tard", "sentenci"] },
   fiscalia: { nombre: "Fiscalía", pistas: ["fiscal", "denunci", "delit", "notici", "sospech", "ndd", "robo", "abus"] },
 };
@@ -26,7 +26,7 @@ function construirBase(datos) {
   const nAct = (id) => String(id).replace(/^.*-(\d+)$/, "$1");
 
   if (datos.causa) {
-    const c = datos.causa, r = c.reporte, e = c.instancias.find((i) => i.id === c.seleccion.instanciaId), origen = `Causa ${c.numero}`;
+    const c = datos.causa, r = c.reporte, e = c.instancias.find((i) => i.id === c.seleccion.instanciaId), origen = `Proceso ${c.numero}`;
     agregar("causa", "Resumen del caso", r.resumenEjecutivo, "causa:resumen", { peso: 1.15, origen, clave: "resumen caso causa de que trata como va" });
     agregar("causa", "Etapa procesal", r.etapaProcesal, "causa:resumen", { origen, clave: "causa etapa fase procesal" });
     agregar("causa", "Estado actual", r.estadoActual, "causa:resumen", { origen, clave: "causa estado actual en que esta pendiente falta" });
@@ -106,7 +106,7 @@ function recuperar({ base, idf }, pregunta, vistaActual) {
 }
 
 const SUGERIDAS = {
-  causa: ["¿En qué estado está la causa?", "¿Qué demandados faltan por citar?", "¿Qué plazos están corriendo?", "¿Qué escrito conviene presentar ahora?"],
+  causa: ["¿En qué estado está el proceso?", "¿Qué demandados faltan por citar?", "¿Qué plazos están corriendo?", "¿Qué escrito conviene presentar ahora?"],
   juez: ["¿Cómo resuelve este juez las acciones de protección?", "¿Cuánto tarda en resolver?", "¿Ha cambiado de criterio?", "¿Cómo conviene plantear un caso ante él?"],
   fiscalia: ["¿Qué denuncias tiene esta persona?", "¿Qué hay que verificar en la Fiscalía?"],
 };
@@ -123,7 +123,7 @@ export function montarChat({ datos, abrir, vistaActual }) {
       <header><div><b>Tomos</b><small>Responde con tus análisis de casos</small></div><button type="button" id="chat-cerrar" aria-label="Cerrar chat">✕</button></header>
       <div id="chat-mensajes" aria-live="polite"></div>
       <div id="chat-sugeridas"></div>
-      <form id="chat-form"><input id="chat-q" type="text" autocomplete="off" placeholder="Pregunta sobre una causa, un juez o una persona…" aria-label="Tu pregunta"><button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg></button></form>
+      <form id="chat-form"><input id="chat-q" type="text" autocomplete="off" placeholder="Pregunta sobre un proceso o un juez…" aria-label="Tu pregunta"><button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg></button></form>
     </section>`;
   document.querySelector(".area").appendChild(raizEl);
   const $ = (s) => raizEl.querySelector(s);

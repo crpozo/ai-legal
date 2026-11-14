@@ -1,5 +1,5 @@
-import { montarChat } from "./chat.js?v=tomos1";
-import { montarTutorial } from "./tutorial.js?v=1";
+import { montarChat } from "./chat.js?v=tomos5";
+import { montarTutorial } from "./tutorial.js?v=2";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -22,7 +22,7 @@ const ATENCION = [
   ["citacion", "Citación", "Estado de la citación a las partes"],
   ["sentencia", "Sentencia", "Decisión judicial sobre el asunto"],
   ["convocatoria_audiencia", "Convocatoria a audiencia", "Fecha y hora de la diligencia"],
-  ["archivo", "Archivo de la causa", "Si existe una disposición de archivo"],
+  ["archivo", "Archivo del proceso", "Si existe una disposición de archivo"],
   ["recurso", "Recursos", "Apelaciones u otros recursos y su trámite"],
 ];
 
@@ -50,7 +50,7 @@ function recorridoCausa({ causa }) {
       [4, "Haz clic en BUSCAR y supera el CAPTCHA", "Verificación CAPTCHA completada por el usuario; el agente continúa desde los resultados"],
     ] },
     { titulo: "2. Abrir el proceso y consultar su estado", pasos: [
-      [5, "Identifica la causa correcta entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (certeza ${esc(causa.seleccion.confianza)})`],
+      [5, "Identifica el proceso correcto entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (certeza ${esc(causa.seleccion.confianza)})`],
       [6, "Abre los movimientos del proceso", `Carpeta abierta · ingreso ${fecha(e.fechaIngreso)} · ${esc(e.materia)} · ${esc(e.tipoAccion)}`],
       [7, "Ve a INFORMACIÓN DEL PROCESO", `${plural(acts.length, "actuación registrada", "actuaciones registradas")}`],
       [8, "Revisa las actuaciones, la más reciente primero", ATENCION.map(([cat, nombre]) => `${esc(nombre)}: <b>${cuenta(cat)}</b>`).join(" · ")],
@@ -109,7 +109,7 @@ function recorridoFiscalia({ fiscalia }) {
 }
 
 const RECORRIDOS = { causa: recorridoCausa, juez: recorridoJuez, fiscalia: recorridoFiscalia };
-const TITULOS = { causa: "Revisión y actualización de la causa", juez: "Historial de causas del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
+const TITULOS = { causa: "Revisión y actualización del proceso", juez: "Historial de procesos del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
 const pintarRecorrido = (fases, estado) => `<div class="recorrido">${fases.map((f) => `
   <div class="fase"><h4>${esc(f.titulo)}</h4><ol>${f.pasos.map(([n, que, resultado]) => `
     <li data-estado="${estado}"><span class="marca-paso" aria-hidden="true"></span><div><p><span class="num">Paso ${n}</span>${esc(que)}</p><p class="resultado">${resultado}</p></div></li>`).join("")}
@@ -140,7 +140,7 @@ function tarjetasSeguimiento(datos) {
   const filas = [];
   if (datos.causa) {
     const c = datos.causa, e = elegidaDe(c), ultima = c.actuaciones[0];
-    filas.push(["Causas judiciales", `<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
+    filas.push(["Procesos judiciales", `<button type="button" class="seguimiento" data-q="${esc(c.numero)}">
       <span class="seg-cab"><b>Función Judicial · ${esc(c.numero)}</b><span class="etiqueta alta">${plural(c.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</span>
       <span class="tenue">${esc(e.materia)} · ${esc(e.asunto)} · ${esc(e.dependencia)}</span>
@@ -173,7 +173,7 @@ function vistaBuscar(datos) {
   return `
     <div class="inicio">
     <section class="heroe">
-      <h1>¿Qué causa o qué juez quieres revisar?</h1>
+      <h1>¿Qué proceso o qué juez quieres revisar?</h1>
       <p class="bajada">Tomos consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <button type="button" class="como-empezar">¿Cómo empezar? Ver guía</button>
       <form id="form-buscar" role="search">
@@ -184,8 +184,8 @@ function vistaBuscar(datos) {
     <div id="progreso" aria-live="polite">
       <button type="button" class="atajo" data-ir="seguimientos"><span><b>Análisis de casos</b><small>${plural(filas.length, "análisis guardado", "análisis guardados")} con sus reportes y documentos</small></span><span aria-hidden="true">→</span></button>
       ${datos.causa ? `<div class="par">
-        ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Causa ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
-        ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Causa ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
+        ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Proceso ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
+        ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Proceso ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
       </div>` : ""}
     </div>
     </div>`;
@@ -664,7 +664,7 @@ const textoPlano = {
 function documentosDe(datos) {
   const docs = [];
   if (datos.causa) {
-    const c = datos.causa, origen = `Causa ${c.numero}`, f = datos.meta.generadoEn;
+    const c = datos.causa, origen = `Proceso ${c.numero}`, f = datos.meta.generadoEn;
     docs.push({ nombre: "Reporte integral del caso", tipo: "Reporte", origen, fecha: f, abrir: "causa:resumen", archivo: `${c.numero}-reporte-integral.txt`, texto: () => textoPlano.reporteCausa(datos) });
     docs.push({ nombre: `Alertas y plazos (${c.reporte.alertas.length} alertas)`, tipo: "Seguimiento", origen, fecha: f, abrir: "causa:seguimiento" });
     docs.push({ nombre: `Expediente analizado (${c.actuaciones.length} actuaciones)`, tipo: "Expediente", origen, fecha: f, abrir: "causa:expediente" });
@@ -708,7 +708,7 @@ function vistaSeguimientos(datos, ctx) {
       <button role="tab" data-panel="historial">Historial de búsquedas <span>${historial.length}</span></button>
     </nav>
 
-    <div class="panel" data-panel="registros">${["Causas judiciales", "Jueces", "Personas · Fiscalía"].filter((cat) => filas.some(([c]) => c === cat)).map((cat) => `<section class="bloque categoria"><header><h3>${cat}</h3><span class="ref">${filas.filter(([c]) => c === cat).length}</span></header>${filas.filter(([c]) => c === cat).map(([, h]) => h).join("")}</section>`).join("")}</div>
+    <div class="panel" data-panel="registros">${["Procesos judiciales", "Jueces", "Personas · Fiscalía"].filter((cat) => filas.some(([c]) => c === cat)).map((cat) => `<section class="bloque categoria"><header><h3>${cat}</h3><span class="ref">${filas.filter(([c]) => c === cat).length}</span></header>${filas.filter(([c]) => c === cat).map(([, h]) => h).join("")}</section>`).join("")}</div>
 
     <div class="panel" data-panel="documentos" hidden>
       <section class="bloque"><div class="tabla"><table class="docs">
@@ -750,7 +750,7 @@ const ICONOS = {
   fiscalia: '<path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/>',
   juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
 };
-const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Causa", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Análisis de casos", vistaSeguimientos]];
+const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Proceso", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Análisis de casos", vistaSeguimientos]];
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -825,7 +825,7 @@ if (!datos) {
     const caja = $("#progreso");
     if (!flujo) {
       caja.querySelector(".sin-resultado")?.remove();
-      caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre las causas y jueces en seguimiento. En esta demo el buscador solo responde con los procesos ya cargados: <button type="button" class="enlace-procesos">ver procesos analizados →</button></p>`);
+      caja.insertAdjacentHTML("afterbegin", `<p class="sin-resultado">No encontramos «${esc(consulta)}» entre los procesos y jueces en seguimiento. En esta demo el buscador solo responde con los procesos ya cargados: <button type="button" class="enlace-procesos">ver procesos analizados →</button></p>`);
       caja.querySelector(".enlace-procesos")?.addEventListener("click", () => abrir("seguimientos"));
       return;
     }
