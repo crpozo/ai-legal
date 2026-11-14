@@ -6,10 +6,10 @@
   <title>Tomos · Toda la justicia ecuatoriana en un solo lugar</title>
   <meta name="description" content="Tomos reúne con IA las fuentes judiciales del Ecuador en un solo lugar, cruza miles de actuaciones y te entrega insights que ninguna revisión manual alcanza: estado de tus causas, alertas, criterio de los jueces y escritos listos para revisar.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <meta name="theme-color" content="#e8e0d4">
+  <meta name="theme-color" content="#2563eb">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=GFS+Didot&family=Outfit:wght@200;300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=GFS+Didot&family=Outfit:wght@200;300;400;500;600&display=swap">
   <style>
     :root {
       --fondo: #fdfdfc; --panel: #ffffff; --hundido: #f5f7fb; --tinta: #0d1117; --tenue: #5f6876; --linea: #e6e8ec;
@@ -66,6 +66,20 @@
     .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .nota { font-size: 14px; color: var(--tenue); margin-top: 16px; }
 
+    /* Portada con video de fondo */
+    .portada { position: relative; overflow: hidden; background: #0a1630; color: #fff; }
+    .portada .fondo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .portada::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 18, 42, .93) 0%, rgba(8, 18, 42, .82) 48%, rgba(8, 18, 42, .5) 100%); }
+    .portada .ancho { position: relative; z-index: 1; }
+    .portada .sobre, .portada .subtitulo { color: #9cc4ff; }
+    .portada p.bajada, .portada .nota { color: rgba(255, 255, 255, .82); }
+    .portada .puntos li::before { background: rgba(156, 196, 255, .22); }
+    .portada .puntos li::after { border-color: #9cc4ff; }
+    .portada .boton:not(.primario) { background: transparent; border-color: rgba(255, 255, 255, .45); color: #fff; }
+    .portada .boton:not(.primario):hover { border-color: #fff; }
+    .portada .maqueta .sobre { color: var(--acento); }
+    @media (prefers-reduced-motion: reduce) { .portada .fondo { display: none; } .portada { background: #0a1630 url("https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280") center / cover; } }
+
     /* Tarjeta del reporte en la portada */
     .maqueta { background: var(--panel); color: var(--tinta); border-radius: 26px; padding: 26px; display: grid; gap: 16px; font-size: 15px; box-shadow: 0 40px 90px -30px rgba(3, 10, 30, .65); animation: maq-entra .8s cubic-bezier(.2, .8, .2, 1) both, maq-flota 7s ease-in-out 1.2s infinite; }
     .maq-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
@@ -77,7 +91,7 @@
     .maq-estado.listo { background: var(--baja-suave); color: var(--baja); }
     .maq-estado.listo i { animation: none; border: 0; background: currentColor; width: 8px; height: 8px; }
     .maq-barra { height: 3px; border-radius: 99px; background: var(--hundido); overflow: hidden; }
-    .maq-barra i { display: block; height: 100%; border-radius: 99px; background: var(--acento); transform-origin: left; animation: maq-llena 2s cubic-bezier(.3, .7, .2, 1) .3s both; }
+    .maq-barra i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #2563eb, #60a5fa); transform-origin: left; animation: maq-llena 2s cubic-bezier(.3, .7, .2, 1) .3s both; }
     .maq-cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
     .maq-cifras div { padding: 16px 18px; border-radius: 18px; background: var(--hundido); display: grid; gap: 6px; }
     .maq-cifras div:first-child { background: var(--degradado); color: #fff; }
@@ -251,143 +265,60 @@
     @media (max-width: 960px) { .pila { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 640px) { .pila { grid-template-columns: 1fr; } }
 
-
-    /* ===== Tema mediterráneo (referencia: beige, crema, azul marino, grecas) ===== */
-    :root, :root[data-theme] {
-      color-scheme: light;
-      --fondo: #e8e0d4; --panel: #f4efe7; --hundido: #ece5da; --tinta: #2b2620; --tenue: #6f665b; --linea: #d6cbbb;
-      --acento: #123f7a; --acento-suave: #dde3ea; --terracota: #b4553f; --oliva: #6b7a2e;
-      --degradado: linear-gradient(135deg, #123f7a, #1b4f8e);
-      --alta: #a63a2a; --alta-suave: #f3dfd8; --media: #8a6416; --media-suave: #f1e6cc; --baja: #4f6b2a; --baja-suave: #e4e8d3;
-    }
-    @media (prefers-color-scheme: dark) { :root {
-      --fondo: #e8e0d4; --panel: #f4efe7; --hundido: #ece5da; --tinta: #2b2620; --tenue: #6f665b; --linea: #d6cbbb; --acento: #123f7a; --acento-suave: #dde3ea;
-      --alta: #a63a2a; --alta-suave: #f3dfd8; --media: #8a6416; --media-suave: #f1e6cc; --baja: #4f6b2a; --baja-suave: #e4e8d3; } }
-    body { background: var(--fondo); font-weight: 300; }
-    h1, h2, h3 { font-family: var(--clasica); font-weight: 300; letter-spacing: -.005em; }
-    .sobre { font-family: var(--clasica); font-style: italic; text-transform: none; letter-spacing: 0; font-size: 20px; color: var(--terracota); }
-    section + section { border-top: 0; }
-    .boton { border-radius: 3px; background: transparent; border: 1px solid var(--acento); color: var(--acento); padding: 11px 24px; font-size: 15px; }
-    .boton.primario { background: var(--acento); color: #fff; border: 1px solid rgba(255,255,255,.55); box-shadow: 0 0 0 1px var(--acento); }
-    .boton.primario:hover { background: #0d3166; }
-    .boton.con-flechas { position: relative; margin: 0 64px; }
-    .boton.con-flechas::before, .boton.con-flechas::after { position: absolute; top: 50%; transform: translateY(-50%); color: var(--acento); font-size: 18px; letter-spacing: -2px; }
-    .boton.con-flechas::before { content: "←—"; right: calc(100% + 14px); }
-    .boton.con-flechas::after { content: "—→"; left: calc(100% + 14px); }
-
-    /* Barra centrada con emblema */
-    .barra { position: static; background: transparent; border: 0; backdrop-filter: none; }
-    .barra .ancho { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding-top: 22px; padding-bottom: 10px; }
-    .barra nav { display: flex; align-items: center; gap: 22px; font-size: 14.5px; }
-    .barra nav a:not(.boton) { text-decoration: none; color: var(--tenue); }
-    .barra nav a:not(.boton):hover { color: var(--acento); }
-    .barra .nav-izq a + a::before, .barra .nav-der a:not(.boton) + a:not(.boton)::before { content: "✦"; font-size: 7px; color: var(--tenue); margin-right: 22px; vertical-align: middle; }
-    .barra .nav-der { justify-content: flex-end; }
-    .barra .boton { padding: 8px 18px; font-size: 14px; }
-    .marca { margin: 0; }
-    .marca .emblema { width: 46px; height: 46px; fill: none; stroke: var(--acento); stroke-width: 1.6; stroke-linecap: round; }
-
-    /* Portada centrada */
-    .portada { padding: 28px 0 72px; background: transparent; color: var(--tinta); }
-    .portada .ancho { display: block; }
-    .portada-texto { text-align: center; }
-    .bienvenida { font-family: var(--clasica); font-size: 22px; color: var(--terracota); }
-    .portada h1.logotipo { font-family: var(--clasica); font-style: italic; font-weight: 400; font-size: clamp(84px, 13vh, 150px); line-height: .95; letter-spacing: -.02em; margin: 2px 0 10px; color: var(--tinta); }
-    .lema { font-family: var(--clasica); font-weight: 300; font-size: clamp(26px, 4.2vh, 40px); line-height: 1.2; max-width: 30ch; margin: 0 auto; text-wrap: balance; }
-    .portada .acciones { justify-content: center; margin-top: 28px; }
-    .enlace-sec { display: inline-block; margin-top: 14px; font-size: 14px; color: var(--tenue); }
-    .escena { position: relative; margin-top: clamp(32px, 6vh, 56px); }
-    .escena-media { position: relative; border-radius: 28px; overflow: hidden; aspect-ratio: 16 / 7.5; background: #2b2620 url("https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280") center / cover; }
-    .escena-media .fondo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-    .greca-esq { position: absolute; width: 170px; height: 170px; pointer-events: none; }
-    .greca-esq::before, .greca-esq::after { content: ""; position: absolute; background: currentColor;
-      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M1 1H19V19H1zM5 5H15V15H8V8H12' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3C/svg%3E") repeat left top / 24px 24px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M1 1H19V19H1zM5 5H15V15H8V8H12' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3C/svg%3E") repeat left top / 24px 24px; }
-    .greca-esq::before { left: 0; top: 0; width: 100%; height: 24px; }
-    .greca-esq::after { left: 0; top: 0; width: 24px; height: 100%; }
-    .greca-esq.sup { top: 22px; left: 22px; color: #9fb04a; }
-    .greca-esq.inf { bottom: 22px; right: 22px; color: rgba(255,255,255,.85); transform: rotate(180deg); }
-    .escena-tarjeta { position: relative; z-index: 2; width: min(520px, 46%); margin: -150px 0 0 36px; background: var(--panel); border-radius: 18px; padding: 30px 32px; box-shadow: 0 24px 60px -30px rgba(43,38,32,.45); }
-    .escena-tarjeta h2 { font-size: 34px; line-height: 1.1; margin-bottom: 12px; }
-    .escena-tarjeta p { color: var(--tenue); font-size: 15.5px; }
-    .escena .maqueta { position: absolute; right: 36px; bottom: -40px; width: min(470px, 44%); z-index: 2; background: var(--panel); border-radius: 18px; box-shadow: 0 30px 70px -30px rgba(43,38,32,.55); }
-    .maq-cifras div { background: var(--hundido); border-radius: 12px; }
-    .maq-pie .chip { background: var(--acento); color: #fff; }
-
-    /* Secciones */
-    .titulo { text-align: center; margin-left: auto; margin-right: auto; }
-    .titulo p:not(.sobre) { margin-left: auto; margin-right: auto; }
-    .rejilla { border: 0; gap: 18px; }
-    .funcion { border: 0; border-radius: 18px; background: var(--panel); }
-    .funcion svg { stroke: var(--acento); }
-    .funcion h3 { font-size: 26px; }
-    .cifras strong { background: none; color: var(--acento); -webkit-background-clip: initial; background-clip: initial; font-style: italic; font-weight: 300; }
-    .cifras div { border-left-color: var(--linea); }
-    .pila article { background: var(--acento); border-radius: 18px; }
-    .pila article::before { background: none; border: 1px solid rgba(255,255,255,.25); inset: 8px; border-radius: 12px; }
-    .pila-n { color: #c9d6a0; }
-    .meandro { color: var(--acento); opacity: .35; }
-    .plan.destacado { background: var(--panel); }
-    .popular { background: var(--terracota) !important; color: #fff !important; }
-    .etimologia .griego { color: var(--terracota); }
-
-    @media (max-width: 960px) {
-      .barra .ancho { grid-template-columns: auto 1fr; }
-      .barra .nav-izq { display: none; }
-      .barra .nav-der a:not(.boton) { display: none; }
-      .marca { justify-self: start; }
-      .escena-media { aspect-ratio: 4 / 3; }
-      .greca-esq { width: 96px; height: 96px; }
-      .greca-esq.sup { top: 14px; left: 14px; } .greca-esq.inf { bottom: 14px; right: 14px; }
-      .escena-tarjeta { width: auto; margin: -60px 16px 0; }
-      .escena .maqueta { position: relative; right: auto; bottom: auto; width: auto; margin: 20px 0 0; }
-      .boton.con-flechas { margin: 0 52px; }
+    /* Portada: todo dentro del primer viewport en escritorio */
+    @media (min-width: 961px) {
+      .portada { box-sizing: border-box; min-height: calc(100svh - 77px); height: calc(100svh - 77px); max-height: 900px; padding: clamp(20px, 4vh, 56px) 0 clamp(36px, 6vh, 64px); display: flex; align-items: center; }
+      .portada .ancho { width: 100%; gap: clamp(32px, 4vw, 64px); grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+      .portada h1 { font-size: clamp(34px, min(4.3vw, 7.4vh), 68px); margin: 0 0 clamp(10px, 1.6vh, 16px); }
+      .portada .subtitulo { font-size: clamp(17px, min(1.8vw, 3.1vh), 27px); margin-bottom: clamp(10px, 1.8vh, 18px); }
+      .portada p.bajada { font-size: clamp(15px, 2.5vh, 18.5px); line-height: 1.5; }
+      .portada .acciones { margin-top: clamp(16px, 3vh, 28px); }
+      .maqueta { padding: clamp(16px, 2.4vh, 24px); gap: clamp(8px, 1.4vh, 14px); font-size: 14px; }
+      .maq-cab h3 { font-size: clamp(18px, 2.4vh, 22px); }
+      .maq-cifras div { padding: clamp(10px, 1.6vh, 16px) 16px; }
+      .maq-cifras strong { font-size: clamp(26px, 4vh, 38px); }
+      .maq-alertas li { padding: clamp(7px, 1.1vh, 11px) 12px clamp(7px, 1.1vh, 11px) 0; line-height: 1.3; }
+      .maq-alertas li::before { margin: calc(-1 * clamp(7px, 1.1vh, 11px)) 0; }
+      .maq-pie { padding: 8px 8px 8px 14px; font-size: 13px; }
+      .portada .meandro-portada { bottom: clamp(8px, 1.6vh, 18px); }
     }
   </style>
 </head>
 <body>
   <header class="barra">
     <div class="ancho">
-      <nav class="nav-izq" aria-label="Secciones">
+      <a class="marca" href="#inicio" aria-label="Tomos, inicio">
+        <b class="nombre">Tomos</b>
+      </a>
+      <nav aria-label="Secciones">
         <a href="#funciones">Qué hace</a>
         <a href="#tecnologia">Tecnología</a>
         <a href="#como">Cómo funciona</a>
-      </nav>
-      <a class="marca" href="#inicio" aria-label="Tomos, inicio">
-        <svg class="emblema" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 10.5h26M9 13.5h22M12 13.5v17M17.3 13.5v17M22.7 13.5v17M28 13.5v17M9 30.5h22M7 33.5h26"/><circle cx="9" cy="9" r="2.6"/><circle cx="31" cy="9" r="2.6"/></svg>
-      </a>
-      <nav class="nav-der" aria-label="Más secciones">
         <a href="#jueces">Jueces</a>
         <a href="#planes">Planes</a>
         <a href="#preguntas">Preguntas</a>
-        <a class="boton primario" href="dashboard/?demo">Ver la demo</a>
       </nav>
+      <a class="boton primario" href="dashboard/?demo">Ver la demo</a>
     </div>
   </header>
 
   <main id="inicio">
     <div class="portada">
-      <div class="ancho portada-texto">
-        <p class="bienvenida">Bienvenido a</p>
-        <h1 class="logotipo">Tomos</h1>
-        <p class="lema">Toda la justicia ecuatoriana, automatizada con IA.</p>
-        <div class="acciones">
-          <a class="boton primario con-flechas" href="dashboard/?demo">Probar la demo</a>
-        </div>
-        <a class="enlace-sec" href="#planes">o mira los planes</a>
-      </div>
+      <video class="fondo" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" poster="https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280">
+        <source src="https://videos.pexels.com/video-files/8731388/8731388-hd_1280_720_25fps.mp4" type="video/mp4">
+      </video>
+      <span class="meandro meandro-portada" aria-hidden="true"></span>
       <div class="ancho">
-        <div class="escena">
-          <div class="escena-media">
-            <video class="fondo" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" poster="https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280">
-              <source src="https://videos.pexels.com/video-files/8731388/8731388-hd_1280_720_25fps.mp4" type="video/mp4">
-            </video>
-            <span class="greca-esq sup" aria-hidden="true"></span>
-            <span class="greca-esq inf" aria-hidden="true"></span>
+        <div>
+          <h1>Toda la justicia ecuatoriana, automatizada con IA.</h1>
+          <p class="subtitulo">Por primera vez, agentes de IA autónomos recorren las fuentes judiciales del Ecuador, las integran en una sola plataforma y te muestran lo que ningún humano alcanza a ver.</p>
+          <p class="bajada">Sin portales ni búsquedas manuales. Tomos automatiza la recolección en la Función Judicial, la Fiscalía y otras fuentes oficiales, procesa miles de actuaciones con modelos de lenguaje y te entrega insights únicos, cada uno con su fuente citada.</p>
+          <div class="acciones">
+            <a class="boton primario" href="dashboard/?demo">Probar la demo →</a>
+            <a class="boton" href="#planes">Ver planes</a>
           </div>
-          <div class="escena-tarjeta">
-            <h2>Agentes de IA que leen el sistema judicial por ti.</h2>
-            <p>Por primera vez, agentes autónomos recorren las fuentes judiciales del Ecuador, las integran en una sola plataforma y te muestran lo que ningún humano alcanza a ver. Tomos automatiza la Función Judicial, la Fiscalía y otras fuentes oficiales, y cada insight cita su fuente.</p>
-          </div>
+        </div>
+
         <div class="maqueta" id="maqueta" aria-label="Ejemplo de reporte de una causa">
           <div class="maq-cab">
             <div>
@@ -409,7 +340,6 @@
             <li class="media"><span>La reconvención espera a que todos estén citados.</span><span class="chip media">media</span></li>
           </ul>
           <div class="maq-pie"><span>2 borradores de escrito y el reporte para el cliente</span><span class="chip">Listos para revisar</span></div>
-        </div>
         </div>
       </div>
     </div>
