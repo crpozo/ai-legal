@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Legal · Agentes de IA para abogados</title>
-  <meta name="description" content="AI Legal revisa el portal de la Función Judicial y de la Fiscalía, lee cada actuación y te entrega el estado de tus causas, el criterio de los jueces y los escritos listos para revisar.">
+  <title>Tomos · Agentes de IA para abogados</title>
+  <meta name="description" content="Tomos automatiza el portal de la Función Judicial y de la Fiscalía, lee cada actuación y te entrega el estado de tus causas, el criterio de los jueces y los escritos listos para revisar.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="theme-color" content="#2563eb">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=GFS+Didot&family=Outfit:wght@200;300;400;500;600&display=swap">
   <style>
     :root {
       --fondo: #fdfdfc; --panel: #ffffff; --hundido: #f5f7fb; --tinta: #0d1117; --tenue: #5f6876; --linea: #e6e8ec;
@@ -231,13 +231,27 @@
       .juez dl div { padding: 16px; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    /* Toque griego: Tomos (τόμος, «volumen») */
+    :root { --clasica: "Cormorant Garamond", Georgia, serif; --inscripcion: "Cinzel", "Cormorant Garamond", serif; --griega: "GFS Didot", "Cormorant Garamond", serif; }
+    .meandro { display: block; height: 14px; color: var(--acento); background: currentColor; opacity: .55;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0 19H20M2 19V1H18V15H6V5H14V11H10' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left center / 14px 14px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0 19H20M2 19V1H18V15H6V5H14V11H10' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left center / 14px 14px; }
+    .griego { font-family: var(--griega); font-style: normal; letter-spacing: .02em; }
+    .marca b { font-family: var(--inscripcion); font-size: 24px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, .cierre h2, .portada h1 { font-family: var(--clasica); font-weight: 400; letter-spacing: -.01em; }
+    .portada h1 { font-size: clamp(42px, 4.6vw, 64px); line-height: 1.02; }
+    .sobre { font-family: var(--inscripcion); letter-spacing: .18em; }
+    .portada .meandro-portada { position: absolute; left: 0; right: 0; bottom: 18px; z-index: 1; color: #9cc4ff; opacity: .5; }
+    .etimologia { margin: 0 auto 28px; color: var(--tenue); font-family: var(--clasica); font-style: italic; font-size: 21px; }
+    .etimologia .griego { font-style: normal; color: var(--acento); font-size: 24px; }
+    .cierre .meandro { max-width: 280px; margin: 0 auto 36px; }
   </style>
 </head>
 <body>
   <header class="barra">
     <div class="ancho">
-      <a class="marca" href="#inicio" aria-label="AI Legal, inicio">
-        <b class="nombre"><span>AI</span> Legal</b>
+      <a class="marca" href="#inicio" aria-label="Tomos, inicio">
+        <b class="nombre">Tomos</b>
       </a>
       <nav aria-label="Secciones">
         <a href="#funciones">Qué hace</a>
@@ -255,12 +269,13 @@
       <video class="fondo" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" poster="https://images.pexels.com/videos/8731388/pexels-photo-8731388.jpeg?w=1280">
         <source src="https://videos.pexels.com/video-files/8731388/8731388-hd_1280_720_25fps.mp4" type="video/mp4">
       </video>
+      <span class="meandro meandro-portada" aria-hidden="true"></span>
       <div class="ancho">
         <div>
           <p class="sobre">Agentes de IA para abogados · Ecuador</p>
           <h1>Inteligencia judicial para estudios jurídicos.</h1>
           <p class="subtitulo">Seguimiento de procesos, análisis de jueces y redacción asistida, sobre fuentes oficiales.</p>
-          <p class="bajada">AI Legal lee el expediente completo en la Función Judicial y la Fiscalía, y entrega el estado del proceso con cada afirmación citada.</p>
+          <p class="bajada">Tomos lee el expediente completo en la Función Judicial y la Fiscalía, y entrega el estado del proceso con cada afirmación citada.</p>
           <ul class="puntos">
             <li>Estado, alertas y plazos de cada proceso</li>
             <li>Cómo decide cada juez, con sus propias resoluciones</li>
@@ -348,7 +363,7 @@
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg>
-            <h3>Pregunta a AI Legal</h3>
+            <h3>Pregunta a Tomos</h3>
             <p>Consulta en un chat lo que ya está analizado: quién falta por citar, cómo resuelve un juez, cuánto tarda. Cada respuesta te lleva a la fuente.</p>
           </article>
           <article class="funcion">
@@ -374,7 +389,7 @@
         </div>
         <ol class="pasos">
           <li><h3>Buscas</h3><p>Escribes el número de proceso, el nombre de una parte, el de un juez o una cédula.</p></li>
-          <li><h3>El agente recorre el portal</h3><p>Tú superas el CAPTCHA una vez. AI Legal sigue el flujo paso a paso: carpetas, actuaciones, resoluciones y documentos.</p></li>
+          <li><h3>El agente recorre el portal</h3><p>Tú superas el CAPTCHA una vez. Tomos sigue el flujo paso a paso: carpetas, actuaciones, resoluciones y documentos.</p></li>
           <li><h3>Recibes el análisis</h3><p>Reporte, alertas, plazos, escritos y el resumen para tu cliente, guardados en tu centro de documentación.</p></li>
         </ol>
       </div>
@@ -385,7 +400,7 @@
         <div>
           <p class="sobre">Historial del juez</p>
           <h2>Conoce cómo decide antes de plantear tu caso.</h2>
-          <p>En la demo, AI Legal leyó 190 resoluciones de un tribunal de la Corte Provincial de Pichincha en garantías constitucionales. Encontró el criterio con que resuelve cada tipo de acción, un cambio de criterio y pares de casos casi idénticos resueltos en sentidos opuestos.</p>
+          <p>En la demo, Tomos leyó 190 resoluciones de un tribunal de la Corte Provincial de Pichincha en garantías constitucionales. Encontró el criterio con que resuelve cada tipo de acción, un cambio de criterio y pares de casos casi idénticos resueltos en sentidos opuestos.</p>
           <a class="boton" href="dashboard/#juez">Ver el informe →</a>
         </div>
         <dl>
@@ -485,9 +500,9 @@
           <h2>Lo que un abogado pregunta primero.</h2>
         </div>
         <div>
-          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. AI Legal lee lo mismo que verías tú en el portal y guarda de dónde tomó cada dato.</p></details>
+          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. Tomos lee lo mismo que verías tú en el portal y guarda de dónde tomó cada dato.</p></details>
           <details><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
-          <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: AI Legal lo señala para que lo solicites a la dependencia.</p></details>
+          <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: Tomos lo señala para que lo solicites a la dependencia.</p></details>
           <details><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
         </div>
       </div>
@@ -495,6 +510,8 @@
 
     <section class="cierre">
       <div class="ancho">
+        <span class="meandro" aria-hidden="true"></span>
+        <p class="etimologia"><span class="griego" lang="el">τόμος</span> · del griego, «volumen». Cada causa, leída como un libro completo.</p>
         <h2>Mira lo que encuentra en un proceso real.</h2>
         <a class="boton primario" href="dashboard/?demo">Probar la demo →</a>
       </div>

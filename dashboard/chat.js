@@ -117,10 +117,10 @@ export function montarChat({ datos, abrir, vistaActual }) {
   const raizEl = document.createElement("div");
   raizEl.innerHTML = `
     <button type="button" id="chat-boton" aria-expanded="false" aria-controls="chat-panel">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg><span>Pregunta a AI Legal</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg><span>Pregunta a Tomos</span>
     </button>
-    <section id="chat-panel" role="dialog" aria-label="Chat con AI Legal" hidden>
-      <header><div><b>AI Legal</b><small>Responde con tus análisis de casos</small></div><button type="button" id="chat-cerrar" aria-label="Cerrar chat">✕</button></header>
+    <section id="chat-panel" role="dialog" aria-label="Chat con Tomos" hidden>
+      <header><div><b>Tomos</b><small>Responde con tus análisis de casos</small></div><button type="button" id="chat-cerrar" aria-label="Cerrar chat">✕</button></header>
       <div id="chat-mensajes" aria-live="polite"></div>
       <div id="chat-sugeridas"></div>
       <form id="chat-form"><input id="chat-q" type="text" autocomplete="off" placeholder="Pregunta sobre una causa, un juez o una persona…" aria-label="Tu pregunta"><button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg></button></form>

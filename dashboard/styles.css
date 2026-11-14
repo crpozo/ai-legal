@@ -507,10 +507,10 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 /* Las etiquetas "Paso N" del flujograma ya no se muestran. */
 .paso-ref { display: none; }
 
-/* Logo AI Legal: el SVG trae sus propios colores. */
+/* Logo Tomos: el SVG trae sus propios colores. */
 .login-arte .logo rect { fill: rgba(255, 255, 255, .18); }
 
-/* Marca AI Legal */
+/* Marca Tomos */
 .superior .marca { align-items: center; gap: 12px; }
 .superior .logo { width: 36px; height: 36px; stroke: none; }
 .marca .nombre { font-weight: 300; }
@@ -518,7 +518,7 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 .superior .marca small { align-self: center; margin-top: 4px; }
 .login-arte .logo { width: 52px; height: 52px; }
 
-.login-arte::before { content: "AI Legal"; font-size: 24px; font-weight: 400; letter-spacing: -.01em; }
+.login-arte::before { content: "τόμος · volumen"; font-family: "GFS Didot", "Cormorant Garamond", serif; font-size: 22px; font-weight: 400; letter-spacing: .04em; }
 .login-arte > small { display: none; }
 
 /* Login: video animado de fondo bajo el degradado azul */
@@ -527,3 +527,12 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 .login-arte::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--degradado); opacity: .82; }
 .login-sello { display: inline-block; margin-bottom: 18px; padding: 6px 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 99px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; background: rgba(255, 255, 255, .1); backdrop-filter: blur(6px); }
 @media (prefers-reduced-motion: reduce) { .login-arte .login-video { display: none; } }
+
+/* Toque griego: Tomos (τόμος, «volumen») */
+:root { --clasica: "Cormorant Garamond", Georgia, serif; --inscripcion: "Cinzel", "Cormorant Garamond", serif; --griega: "GFS Didot", "Cormorant Garamond", serif; }
+.meandro { display: block; height: 14px; color: var(--acento); background: currentColor; opacity: .55;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0 19H20M2 19V1H18V15H6V5H14V11H10' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left center / 14px 14px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0 19H20M2 19V1H18V15H6V5H14V11H10' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left center / 14px 14px; }
+.griego { font-family: var(--griega); font-style: normal; letter-spacing: .02em; }
+.marca .nombre { font-family: var(--inscripcion); font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
+.login-arte h2 { font-family: var(--inscripcion); font-weight: 400; letter-spacing: .12em; text-transform: uppercase; }
+.login-arte .login-meandro { position: absolute; left: 0; right: 0; bottom: 20px; color: #fff; opacity: .45; }

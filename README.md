@@ -1,4 +1,4 @@
-# AI Legal · Demo Estudio Jurídico Maya
+# Tomos · Demo Estudio Jurídico Maya
 
 Agentes de IA que siguen los dos flujos del documento "Demo Estudio Maya" sobre el portal E-SATJE de la Función Judicial del Ecuador, y un dashboard que muestra el resultado.
 

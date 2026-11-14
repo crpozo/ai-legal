@@ -1,4 +1,4 @@
-import { montarChat } from "./chat.js";
+import { montarChat } from "./chat.js?v=tomos1";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -173,7 +173,7 @@ function vistaBuscar(datos) {
     <div class="inicio">
     <section class="heroe">
       <h1>¿Qué causa o qué juez quieres revisar?</h1>
-      <p class="bajada">AI Legal consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
+      <p class="bajada">Tomos consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
