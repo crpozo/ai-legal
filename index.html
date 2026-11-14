@@ -335,8 +335,8 @@
       <div class="ancho">
         <div>
           <h1>Toda la justicia ecuatoriana, automatizada con IA.</h1>
-          <p class="subtitulo">Por primera vez, agentes de IA autónomos recorren las fuentes judiciales del Ecuador, las integran en una sola plataforma y te muestran lo que ningún humano alcanza a ver.</p>
-          <p class="bajada">Sin portales ni búsquedas manuales. Tomos automatiza la recolección en la Función Judicial, la Fiscalía y otras fuentes oficiales, procesa miles de actuaciones con modelos de lenguaje y te entrega insights únicos, cada uno con su fuente citada.</p>
+          <p class="subtitulo">Todas las fuentes judiciales del Ecuador, en una sola plataforma.</p>
+          <p class="bajada">Tomos automatiza la Función Judicial, la Fiscalía y otras fuentes oficiales, y cita la fuente de cada hallazgo.</p>
           <div class="acciones">
             <a class="boton primario" href="dashboard/?demo">Probar la demo →</a>
             <a class="boton" href="#planes">Ver planes</a>
@@ -487,12 +487,6 @@
             <button type="button" data-ciclo="anual" aria-pressed="true">Pago anual <span>Ahorra 20%</span></button>
             <button type="button" data-ciclo="mensual" aria-pressed="false">Pago mensual</button>
           </div>
-          <div class="puestos">
-            <span>Abogados</span>
-            <button type="button" data-paso="-1" aria-label="Quitar un abogado">–</button>
-            <output id="n-puestos" aria-live="polite">1</output>
-            <button type="button" data-paso="1" aria-label="Agregar un abogado">+</button>
-          </div>
         </div>
 
         <div class="planes">
@@ -534,7 +528,6 @@
             <a class="boton" href="dashboard/?demo">Probar la demo</a>
           </article>
         </div>
-        <p class="resumen-plan" id="resumen-plan" aria-live="polite"></p>
 
         <p class="extras">Precios en dólares, referenciales.</p>
       </div>
@@ -595,25 +588,19 @@
       setTimeout(listo, 3000);
     })();
 
-    // Planes: forma de pago y número de abogados.
+    // Planes: forma de pago.
     (() => {
-      const estado = { ciclo: "anual", puestos: 1 };
+      const estado = { ciclo: "anual" };
       const planes = [...document.querySelectorAll(".plan")];
-      const miles = (n) => n.toLocaleString("es-EC");
       const pintar = () => {
         for (const b of document.querySelectorAll(".conmutador button")) b.setAttribute("aria-pressed", String(b.dataset.ciclo === estado.ciclo));
-        document.getElementById("n-puestos").textContent = estado.puestos;
         for (const p of planes) {
           p.querySelector(".monto").textContent = p.dataset[estado.ciclo];
           const c = p.querySelector(".ciclo");
           if (c) c.textContent = estado.ciclo === "anual" ? "facturado anualmente" : "facturado cada mes";
         }
-        const pro = planes.find((p) => p.classList.contains("destacado"));
-        const precio = Number(pro.dataset[estado.ciclo]), total = precio * estado.puestos;
-        document.getElementById("resumen-plan").textContent = `Plan Profesional para ${estado.puestos} ${estado.puestos === 1 ? "abogado" : "abogados"}: $${miles(total)} al mes${estado.ciclo === "anual" ? ` ($${miles(total * 12)} al año)` : ""}, con ${miles(Number(pro.dataset.creditos) * estado.puestos)} créditos mensuales.`;
       };
       document.querySelector(".conmutador").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { estado.ciclo = b.dataset.ciclo; pintar(); } });
-      document.querySelector(".puestos").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { estado.puestos = Math.min(50, Math.max(1, estado.puestos + Number(b.dataset.paso))); pintar(); } });
       pintar();
     })();
   </script>
