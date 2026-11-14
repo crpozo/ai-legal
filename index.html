@@ -253,6 +253,17 @@
       background: linear-gradient(135deg, #1e40af, #3b82f6 55%, #60a5fa); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .cifras span { margin-top: 18px; font-size: 19px; max-width: 22ch; }
     @media (max-width: 960px) { .cifras { grid-template-columns: 1fr; gap: 40px; } .cifras div { border-left: 0; padding: 0; } }
+
+    /* Tecnología */
+    .pila { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .pila article { position: relative; padding: 30px 26px; border-radius: 20px; background: #0a1630; color: #fff; overflow: hidden; display: grid; gap: 10px; align-content: start; }
+    .pila article::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 80% at 100% 0%, rgba(96, 165, 250, .35), transparent 60%); pointer-events: none; }
+    .pila article > * { position: relative; }
+    .pila-n { font-family: var(--inscripcion); font-size: 14px; letter-spacing: .2em; color: #9cc4ff; }
+    .pila h3 { font-size: 24px; font-family: var(--clasica); font-weight: 500; }
+    .pila p { color: rgba(255, 255, 255, .78); font-size: 16px; }
+    @media (max-width: 960px) { .pila { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .pila { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -263,6 +274,7 @@
       </a>
       <nav aria-label="Secciones">
         <a href="#funciones">Qué hace</a>
+        <a href="#tecnologia">Tecnología</a>
         <a href="#como">Cómo funciona</a>
         <a href="#jueces">Jueces</a>
         <a href="#planes">Planes</a>
@@ -280,14 +292,9 @@
       <span class="meandro meandro-portada" aria-hidden="true"></span>
       <div class="ancho">
         <div>
-          <h1>Toda la justicia ecuatoriana, en un solo lugar.</h1>
-          <p class="subtitulo">Por primera vez, una IA reúne las fuentes judiciales del Ecuador, las cruza y te muestra lo que nadie alcanza a ver a mano.</p>
-          <p class="bajada">Deja de saltar entre portales desordenados. Tomos recolecta la Función Judicial, la Fiscalía y otras fuentes oficiales, integra miles de actuaciones y te entrega insights únicos, cada uno con su fuente citada.</p>
-          <ul class="puntos">
-            <li><b>Recupera horas cada semana:</b> todos tus procesos al día sin entrar a un solo portal</li>
-            <li><b>Anticípate:</b> alertas de plazos y riesgos antes de que se conviertan en problemas</li>
-            <li><b>Decide con ventaja:</b> patrones de cada juez y tribunal imposibles de detectar a mano</li>
-          </ul>
+          <h1>Toda la justicia ecuatoriana, automatizada con IA.</h1>
+          <p class="subtitulo">Por primera vez, agentes de IA autónomos recorren las fuentes judiciales del Ecuador, las integran en una sola plataforma y te muestran lo que ningún humano alcanza a ver.</p>
+          <p class="bajada">Sin portales ni búsquedas manuales. Tomos automatiza la recolección en la Función Judicial, la Fiscalía y otras fuentes oficiales, procesa miles de actuaciones con modelos de lenguaje y te entrega insights únicos, cada uno con su fuente citada.</p>
           <div class="acciones">
             <a class="boton primario" href="dashboard/?demo">Probar la demo →</a>
             <a class="boton" href="#planes">Ver planes</a>
@@ -301,7 +308,7 @@
               <h3>Acción colusoria</h3>
               <p class="maq-sub">Unidad Judicial Civil de Iñaquito, Quito</p>
             </div>
-            <span class="maq-estado" id="maq-estado"><i></i><span>Leyendo expediente…</span></span>
+            <span class="maq-estado" id="maq-estado"><i></i><span>Agente IA leyendo el expediente…</span></span>
           </div>
           <div class="maq-barra" aria-hidden="true"><i></i></div>
           <div class="maq-cifras">
@@ -322,9 +329,25 @@
     <section>
       <div class="ancho">
         <div class="cifras">
-          <div><strong>424</strong><span>actuaciones de un solo proceso leídas y clasificadas</span></div>
-          <div><strong>190</strong><span>resoluciones de un juez comparadas entre sí</span></div>
-          <div><strong>15</strong><span>pasos del portal que el agente recorre por ti</span></div>
+          <div><strong>424</strong><span>actuaciones de un solo proceso procesadas y clasificadas por IA</span></div>
+          <div><strong>190</strong><span>resoluciones de un juez analizadas y comparadas por el modelo</span></div>
+          <div><strong>15</strong><span>pasos del portal que el agente automatiza por ti</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologia">
+      <div class="ancho">
+        <div class="titulo">
+          <p class="sobre">Tecnología</p>
+          <h2>Un motor de IA para el caos judicial ecuatoriano.</h2>
+          <p>Sistemas dispersos, formatos distintos y miles de documentos sin estructura. Tomos los convierte en datos que se pueden consultar, cruzar y analizar.</p>
+        </div>
+        <div class="pila">
+          <article><span class="pila-n">01</span><h3>Agentes autónomos</h3><p>Navegan los portales judiciales paso a paso, como lo haría un abogado, sin intervención manual.</p></article>
+          <article><span class="pila-n">02</span><h3>Integración multifuente</h3><p>Unifica la Función Judicial, la Fiscalía y otras fuentes oficiales en un solo modelo de datos.</p></article>
+          <article><span class="pila-n">03</span><h3>Modelos de lenguaje</h3><p>Leen y clasifican cada actuación y resolución, y detectan patrones entre miles de documentos.</p></article>
+          <article><span class="pila-n">04</span><h3>IA explicable</h3><p>Cada insight enlaza a su fuente oficial. Nada es una caja negra: todo se puede verificar.</p></article>
         </div>
       </div>
     </section>
@@ -332,55 +355,55 @@
     <section id="funciones">
       <div class="ancho">
         <div class="titulo">
-          <p class="sobre">Qué hace</p>
-          <h2>El trabajo de revisar, hecho. El de decidir sigue siendo tuyo.</h2>
-          <p>Cada afirmación del reporte cita la actuación o la resolución que la sustenta, para que la verifiques en un clic.</p>
+          <p class="sobre">Plataforma</p>
+          <h2>Agentes de IA que automatizan el trabajo. Tú solo decides.</h2>
+          <p>Cada hallazgo que genera la IA cita la actuación o la resolución que lo sustenta: trazabilidad total, verificable en un clic.</p>
         </div>
         <div class="rejilla">
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/></svg>
-            <h3>Seguimiento de causas</h3>
-            <p>Elige la carpeta correcta entre varias instancias, lee el expediente completo y resume el estado, la etapa y la última actuación.</p>
+            <h3>Seguimiento automatizado</h3>
+            <p>El agente elige la carpeta correcta entre varias instancias, lee el expediente completo y resume el estado, la etapa y la última actuación.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/></svg>
-            <h3>Historial del juez</h3>
-            <p>Revisa todas sus resoluciones de segunda instancia: criterios reiterados, cambios de criterio, casos similares resueltos distinto y tiempos.</p>
+            <h3>Analítica de jueces con IA</h3>
+            <p>Procesa todas sus resoluciones de segunda instancia: criterios reiterados, cambios de criterio, casos similares resueltos distinto y tiempos.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/></svg>
-            <h3>Noticias del delito</h3>
-            <p>Organiza las denuncias de una persona en la Fiscalía: delito, unidad fiscal, sujetos y qué verificar en cada una.</p>
+            <h3>Integración con la Fiscalía</h3>
+            <p>Recolecta y organiza las denuncias de una persona en la Fiscalía: delito, unidad fiscal, sujetos y qué verificar en cada una.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a6 6 0 0 0-6 6v4l-1.5 3h15L18 14v-4a6 6 0 0 0-6-6z"/><path d="M10 20h4"/></svg>
-            <h3>Alertas y plazos</h3>
-            <p>Señala los riesgos del proceso y los términos que constan en el expediente. Si un plazo no puede calcularse con certeza, lo dice.</p>
+            <h3>Alertas inteligentes</h3>
+            <p>La IA señala los riesgos del proceso y los términos que constan en el expediente. Si un plazo no puede calcularse con certeza, lo dice.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19.5 6 15 16.5 4.5l3 3L9 18z"/><path d="m14.5 6.5 3 3"/></svg>
-            <h3>Borradores de escritos</h3>
-            <p>Propone el escrito que el estado del proceso justifica, con una recomendación legal de lo que debes confirmar antes de presentarlo.</p>
+            <h3>Escritos generados con IA</h3>
+            <p>Genera el escrito que el estado del proceso justifica, con una recomendación legal de lo que debes confirmar antes de presentarlo.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16v11H4z"/><path d="m4 7 8 6 8-6"/></svg>
-            <h3>Reporte para el cliente</h3>
+            <h3>Reportes automáticos</h3>
             <p>El mismo estado del caso, en lenguaje llano y listo para enviar. Tu cliente deja de preguntar cómo va su juicio.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z"/></svg>
-            <h3>Pregunta a Tomos</h3>
-            <p>Consulta en un chat lo que ya está analizado: quién falta por citar, cómo resuelve un juez, cuánto tarda. Cada respuesta te lleva a la fuente.</p>
+            <h3>Asistente conversacional</h3>
+            <p>Pregunta a Tomos en un chat con IA lo que ya está analizado: quién falta por citar, cómo resuelve un juez, cuánto tarda. Cada respuesta te lleva a la fuente.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h6l2 2h8v10H4z"/><path d="M8 13h8M8 16h5"/></svg>
-            <h3>Análisis de casos</h3>
-            <p>Todo lo que consultas queda guardado por categoría, con sus reportes y documentos para abrir o descargar.</p>
+            <h3>Base de conocimiento</h3>
+            <p>Todo lo que analiza la IA queda guardado por categoría, con sus reportes y documentos para abrir o descargar.</p>
           </article>
           <article class="funcion">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg>
-            <h3>Vigilancia diaria</h3>
-            <p>Un resumen cada mañana con lo que se movió en toda tu cartera y lo que requiere acción.</p>
+            <h3>Monitoreo autónomo</h3>
+            <p>Los agentes vigilan tu cartera y te envían un resumen cada mañana con lo que se movió en toda tu cartera y lo que requiere acción.</p>
             <span class="chip azul">Próximamente</span>
           </article>
         </div>
@@ -391,12 +414,12 @@
       <div class="ancho">
         <div class="titulo">
           <p class="sobre">Cómo funciona</p>
-          <h2>Tres pasos, los mismos que harías tú.</h2>
+          <h2>Tú buscas. Los agentes hacen el resto.</h2>
         </div>
         <ol class="pasos">
           <li><h3>Buscas</h3><p>Escribes el número de proceso, el nombre de una parte, el de un juez o una cédula.</p></li>
-          <li><h3>El agente recorre el portal</h3><p>Tú superas el CAPTCHA una vez. Tomos sigue el flujo paso a paso: carpetas, actuaciones, resoluciones y documentos.</p></li>
-          <li><h3>Recibes el análisis</h3><p>Reporte, alertas, plazos, escritos y el resumen para tu cliente, guardados en tu centro de documentación.</p></li>
+          <li><h3>El agente automatiza el portal</h3><p>Superas el CAPTCHA una vez y el agente de IA navega solo: carpetas, actuaciones, resoluciones y documentos.</p></li>
+          <li><h3>La IA analiza y entrega</h3><p>Modelos de lenguaje clasifican cada actuación y generan reporte, alertas, plazos, escritos y el resumen para tu cliente, guardados en tu centro de documentación.</p></li>
         </ol>
       </div>
     </section>
@@ -404,9 +427,9 @@
     <section class="juez" id="jueces">
       <div class="ancho">
         <div>
-          <p class="sobre">Historial del juez</p>
+          <p class="sobre">Analítica de jueces</p>
           <h2>Conoce cómo decide antes de plantear tu caso.</h2>
-          <p>En la demo, Tomos leyó 190 resoluciones de un tribunal de la Corte Provincial de Pichincha en garantías constitucionales. Encontró el criterio con que resuelve cada tipo de acción, un cambio de criterio y pares de casos casi idénticos resueltos en sentidos opuestos.</p>
+          <p>En la demo, la IA de Tomos procesó 190 resoluciones de un tribunal de la Corte Provincial de Pichincha en garantías constitucionales. Encontró el criterio con que resuelve cada tipo de acción, un cambio de criterio y pares de casos casi idénticos resueltos en sentidos opuestos.</p>
           <a class="boton" href="dashboard/#juez">Ver el informe →</a>
         </div>
         <dl>
@@ -506,7 +529,7 @@
           <h2>Lo que un abogado pregunta primero.</h2>
         </div>
         <div>
-          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. Tomos lee lo mismo que verías tú en el portal y guarda de dónde tomó cada dato.</p></details>
+          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. Tomos automatiza la consulta de lo mismo que verías tú en el portal y registra de dónde tomó cada dato.</p></details>
           <details><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
           <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: Tomos lo señala para que lo solicites a la dependencia.</p></details>
           <details><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
