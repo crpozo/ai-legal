@@ -108,8 +108,8 @@ function recorridoFiscalia({ fiscalia }) {
   ];
 }
 
-const RECORRIDOS = { causa: recorridoCausa, juez: recorridoJuez, fiscalia: recorridoFiscalia };
-const TITULOS = { causa: "Revisión y actualización del proceso", juez: "Historial de procesos del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
+const RECORRIDOS = { proceso: recorridoCausa, juez: recorridoJuez, fiscalia: recorridoFiscalia };
+const TITULOS = { proceso: "Revisión y actualización del proceso", juez: "Historial de procesos del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
 const pintarRecorrido = (fases, estado) => `<div class="recorrido">${fases.map((f) => `
   <div class="fase"><h4>${esc(f.titulo)}</h4><ol>${f.pasos.map(([n, que, resultado]) => `
     <li data-estado="${estado}"><span class="marca-paso" aria-hidden="true"></span><div><p><span class="num">Paso ${n}</span>${esc(que)}</p><p class="resultado">${resultado}</p></div></li>`).join("")}
@@ -124,8 +124,8 @@ function resolver(datos, consulta) {
   const contiene = (texto) => palabras.length > 0 && palabras.every((p) => plano(texto).includes(p));
   if (datos.causa) {
     const e = elegidaDe(datos.causa);
-    if (digitos(q).length >= 8 && digitos(q) === digitos(datos.causa.numero)) return "causa";
-    if (contiene([...e.actores, ...e.demandados].join(" "))) return "causa";
+    if (digitos(q).length >= 8 && digitos(q) === digitos(datos.causa.numero)) return "proceso";
+    if (contiene([...e.actores, ...e.demandados].join(" "))) return "proceso";
   }
   if (datos.juez && contiene(datos.juez.juez.nombre)) return "juez";
   if (datos.fiscalia) {
@@ -209,6 +209,7 @@ function vistaCausa(datos) {
   const nAct = (id) => String(id).replace(/^.*-(\d+)$/, "$1");
   const nivelConfianza = { alta: "baja", media: "media", baja: "alta" }[causa.seleccion.confianza] ?? "media";
   const html = `
+    <button type="button" class="volver-casos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Volver a Análisis de casos</button>
     <section class="portada">
       <div class="portada-izq">
         <p class="sobre">Proceso ${esc(causa.numero)}</p>
@@ -665,13 +666,13 @@ function documentosDe(datos) {
   const docs = [];
   if (datos.causa) {
     const c = datos.causa, origen = `Proceso ${c.numero}`, f = datos.meta.generadoEn;
-    docs.push({ nombre: "Reporte integral del caso", tipo: "Reporte", origen, fecha: f, abrir: "causa:resumen", archivo: `${c.numero}-reporte-integral.txt`, texto: () => textoPlano.reporteCausa(datos) });
-    docs.push({ nombre: `Alertas y plazos (${c.reporte.alertas.length} alertas)`, tipo: "Seguimiento", origen, fecha: f, abrir: "causa:seguimiento" });
-    docs.push({ nombre: `Expediente analizado (${c.actuaciones.length} actuaciones)`, tipo: "Expediente", origen, fecha: f, abrir: "causa:expediente" });
+    docs.push({ nombre: "Reporte integral del caso", tipo: "Reporte", origen, fecha: f, abrir: "proceso:resumen", archivo: `${c.numero}-reporte-integral.txt`, texto: () => textoPlano.reporteCausa(datos) });
+    docs.push({ nombre: `Alertas y plazos (${c.reporte.alertas.length} alertas)`, tipo: "Seguimiento", origen, fecha: f, abrir: "proceso:seguimiento" });
+    docs.push({ nombre: `Expediente analizado (${c.actuaciones.length} actuaciones)`, tipo: "Expediente", origen, fecha: f, abrir: "proceso:expediente" });
     if (c.extras) {
-      docs.push({ nombre: "Reporte para el cliente", tipo: "Correo", origen, fecha: f, abrir: "causa:cliente", archivo: `${c.numero}-reporte-cliente.txt`, texto: () => textoPlano.cliente(datos) });
-      c.extras.borradores.forEach((b, i) => docs.push({ nombre: b.titulo, tipo: "Borrador de escrito", origen, fecha: f, abrir: "causa:escritos", archivo: `${c.numero}-escrito-${i + 1}.txt`, texto: () => b.texto }));
-      docs.push({ nombre: `Preguntas sobre el expediente (${c.extras.preguntas.length})`, tipo: "Consulta", origen, fecha: f, abrir: "causa:preguntas" });
+      docs.push({ nombre: "Reporte para el cliente", tipo: "Correo", origen, fecha: f, abrir: "proceso:cliente", archivo: `${c.numero}-reporte-cliente.txt`, texto: () => textoPlano.cliente(datos) });
+      c.extras.borradores.forEach((b, i) => docs.push({ nombre: b.titulo, tipo: "Borrador de escrito", origen, fecha: f, abrir: "proceso:escritos", archivo: `${c.numero}-escrito-${i + 1}.txt`, texto: () => b.texto }));
+      docs.push({ nombre: `Preguntas sobre el expediente (${c.extras.preguntas.length})`, tipo: "Consulta", origen, fecha: f, abrir: "proceso:preguntas" });
     }
   }
   if (datos.fiscalia) {
@@ -746,11 +747,13 @@ function vistaSeguimientos(datos, ctx) {
 const ICONOS = {
   seguimientos: '<path d="M4 6.5h6l2 2h8v10H4z"/><path d="M8 13h8M8 16h5"/>',
   buscar: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
-  causa: '<path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/>',
+  proceso: '<path d="M6 3.5h8l4 4V20.5H6z"/><path d="M14 3.5v4h4M9 12h6M9 16h6"/>',
   fiscalia: '<path d="M12 3.5 5 6.5v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9v-5z"/><path d="m9.2 12 2 2 3.6-4"/>',
   juez: '<path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/>',
 };
-const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["causa", "Proceso", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Análisis de casos", vistaSeguimientos]];
+/* La vista del proceso se llama «proceso» en la URL y en la interfaz (#proceso); sus datos siguen en datos.causa. */
+const datosDe = (datos, id) => datos[id === "proceso" ? "causa" : id];
+const TODAS = [["buscar", "Buscar", (d) => ({ html: vistaBuscar(d) })], ["proceso", "Proceso", vistaCausa], ["juez", "Juez", vistaJuez], ["fiscalia", "Fiscalía", vistaFiscalia], ["seguimientos", "Análisis de casos", vistaSeguimientos]];
 
 async function cargar() {
   const pedido = new URLSearchParams(location.search).get("dataset");
@@ -804,13 +807,15 @@ if (!datos) {
 } else {
 
   // Causa y Juez aparecen cuando el agente ya los encontró (o si se llega por enlace directo).
-  const disponibles = TODAS.filter(([id]) => id === "buscar" || id === "seguimientos" || datos[id]);
+  const disponibles = TODAS.filter(([id]) => id === "buscar" || id === "seguimientos" || datosDe(datos, id));
   // Historial de búsquedas: se guarda en este navegador.
   const historial = {
     leer: () => { try { return JSON.parse(localStorage.getItem("ailegal-historial") ?? "[]"); } catch { return []; } },
     agregar: (consulta, flujo) => { try { localStorage.setItem("ailegal-historial", JSON.stringify([{ consulta, flujo, fecha: new Date().toISOString() }, ...historial.leer()].slice(0, 50))); } catch { /* sin almacenamiento */ } },
     borrar: () => { try { localStorage.removeItem("ailegal-historial"); } catch { /* sin almacenamiento */ } },
   };
+  // enlaces antiguos con #causa abren la vista del proceso
+  if (location.hash === "#causa") history.replaceState(null, "", "#proceso");
   const encontrados = new Set([location.hash.slice(1)]);
   let vistas = [];
   const pintarPestanas = () => {
@@ -868,6 +873,7 @@ if (!datos) {
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
     history.replaceState(null, "", `#${id}`);
     montar?.();
+    document.querySelector(".volver-casos")?.addEventListener("click", () => abrir("seguimientos"));
     chat?.refrescar();
     if (id === "buscar") {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });

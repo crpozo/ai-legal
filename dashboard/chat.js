@@ -14,7 +14,7 @@ const raiz = (p) => (p.replace(/(aciones|acion|amente|mente|idades|idad|ados|ada
 const fichas = (texto) => plano(texto).split(/[^a-z0-9]+/).filter((p) => p.length > 2 && !VACIAS.has(p)).map(raiz).filter((p) => p.length > 2);
 
 const AMBITOS = {
-  causa: { nombre: "Proceso", pistas: ["caus", "proces", "cit", "demand", "actor", "expedient", "actu", "plaz", "escrit", "reconven", "archiv"] },
+  proceso: { nombre: "Proceso", pistas: ["caus", "proces", "cit", "demand", "actor", "expedient", "actu", "plaz", "escrit", "reconven", "archiv"] },
   juez: { nombre: "Juez", pistas: ["juez", "tribunal", "sala", "criteri", "resuelv", "resolu", "apel", "habea", "protec", "ponent", "arbitrar", "demor", "tard", "sentenci"] },
   fiscalia: { nombre: "Fiscalía", pistas: ["fiscal", "denunci", "delit", "notici", "sospech", "ndd", "robo", "abus"] },
 };
@@ -27,24 +27,24 @@ function construirBase(datos) {
 
   if (datos.causa) {
     const c = datos.causa, r = c.reporte, e = c.instancias.find((i) => i.id === c.seleccion.instanciaId), origen = `Proceso ${c.numero}`;
-    agregar("causa", "Resumen del caso", r.resumenEjecutivo, "causa:resumen", { peso: 1.15, origen, clave: "resumen caso causa de que trata como va" });
-    agregar("causa", "Etapa procesal", r.etapaProcesal, "causa:resumen", { origen, clave: "causa etapa fase procesal" });
-    agregar("causa", "Estado actual", r.estadoActual, "causa:resumen", { origen, clave: "causa estado actual en que esta pendiente falta" });
-    agregar("causa", "Actuación más reciente", `${r.ultimaActuacion.resumen} ${r.ultimaActuacion.implicaciones}`, "causa:resumen", { origen, clave: "ultima actuacion reciente novedad ultimo movimiento" });
-    agregar("causa", "Partes del proceso", `Actores: ${e.actores.join("; ")}. Demandados: ${e.demandados.join("; ")}. Se tramita en ${e.dependencia}, ingresó el ${fecha(e.fechaIngreso)}. Materia ${e.materia}, ${e.tipoAccion}, ${e.asunto}.`, "causa:carpetas", { origen, clave: "partes actores demandados quienes juzgado dependencia donde tramita" });
-    agregar("causa", "Carpeta elegida", c.seleccion.justificacion, "causa:carpetas", { origen, clave: "carpeta instancia dependencia elegida" });
-    agregar("causa", "Próximos pasos", r.proximosPasos.map((p, i) => `${i + 1}. ${p}`).join("\n"), "causa:seguimiento", { origen, clave: "causa proximos pasos que hacer siguiente gestion recomendacion" });
-    for (const a of r.alertas) agregar("causa", `Alerta de nivel ${a.nivel}`, a.texto, "causa:seguimiento", { origen, clave: "alerta riesgo problema", ref: `actuación n.º ${nAct(a.actuacionId)}` });
-    for (const p of r.plazos) agregar("causa", "Plazo", `${p.descripcion} Fecha límite: ${p.fechaLimite}. ${p.base}`, "causa:seguimiento", { origen, clave: "plazo termino vence vencimiento audiencia fecha limite" });
-    for (const h of r.hitos) agregar("causa", `Hito del ${fecha(h.fecha)}`, h.hito, "causa:seguimiento", { origen, peso: 0.8, ref: `actuación n.º ${nAct(h.actuacionId)}` });
+    agregar("proceso", "Resumen del caso", r.resumenEjecutivo, "proceso:resumen", { peso: 1.15, origen, clave: "resumen caso causa de que trata como va" });
+    agregar("proceso", "Etapa procesal", r.etapaProcesal, "proceso:resumen", { origen, clave: "causa etapa fase procesal" });
+    agregar("proceso", "Estado actual", r.estadoActual, "proceso:resumen", { origen, clave: "causa estado actual en que esta pendiente falta" });
+    agregar("proceso", "Actuación más reciente", `${r.ultimaActuacion.resumen} ${r.ultimaActuacion.implicaciones}`, "proceso:resumen", { origen, clave: "ultima actuacion reciente novedad ultimo movimiento" });
+    agregar("proceso", "Partes del proceso", `Actores: ${e.actores.join("; ")}. Demandados: ${e.demandados.join("; ")}. Se tramita en ${e.dependencia}, ingresó el ${fecha(e.fechaIngreso)}. Materia ${e.materia}, ${e.tipoAccion}, ${e.asunto}.`, "proceso:carpetas", { origen, clave: "partes actores demandados quienes juzgado dependencia donde tramita" });
+    agregar("proceso", "Carpeta elegida", c.seleccion.justificacion, "proceso:carpetas", { origen, clave: "carpeta instancia dependencia elegida" });
+    agregar("proceso", "Próximos pasos", r.proximosPasos.map((p, i) => `${i + 1}. ${p}`).join("\n"), "proceso:seguimiento", { origen, clave: "causa proximos pasos que hacer siguiente gestion recomendacion" });
+    for (const a of r.alertas) agregar("proceso", `Alerta de nivel ${a.nivel}`, a.texto, "proceso:seguimiento", { origen, clave: "alerta riesgo problema", ref: `actuación n.º ${nAct(a.actuacionId)}` });
+    for (const p of r.plazos) agregar("proceso", "Plazo", `${p.descripcion} Fecha límite: ${p.fechaLimite}. ${p.base}`, "proceso:seguimiento", { origen, clave: "plazo termino vence vencimiento audiencia fecha limite" });
+    for (const h of r.hitos) agregar("proceso", `Hito del ${fecha(h.fecha)}`, h.hito, "proceso:seguimiento", { origen, peso: 0.8, ref: `actuación n.º ${nAct(h.actuacionId)}` });
     if (c.extras) {
-      for (const q of c.extras.preguntas) agregar("causa", q.pregunta, q.respuesta, "causa:preguntas", { origen, peso: 1.6, clave: q.pregunta, ref: q.actuacionIds.slice(0, 4).map((id) => `n.º ${nAct(id)}`).join(", ") });
+      for (const q of c.extras.preguntas) agregar("proceso", q.pregunta, q.respuesta, "proceso:preguntas", { origen, peso: 1.6, clave: q.pregunta, ref: q.actuacionIds.slice(0, 4).map((id) => `n.º ${nAct(id)}`).join(", ") });
       const d = c.extras.despacho;
-      agregar("causa", "Tiempo de despacho del juzgado", `El juzgado tarda una mediana de ${d.medianaDias} días entre un escrito y el siguiente auto o providencia; nueve de cada diez se despachan en ${d.p90Dias} días y el máximo observado es de ${d.maxDias}. Por año: ${d.porAnio.map((y) => `${y.anio}, ${y.medianaDias} días`).join("; ")}. Calculado sobre ${d.muestras} escritos de este expediente.`, "causa:resumen", { origen, clave: "cuanto tarda demora juzgado despacho tiempo dias" });
-      for (const b of c.extras.borradores) agregar("causa", `Borrador: ${b.titulo}`, b.porQueAhora, "causa:escritos", { origen, clave: "escrito borrador presentar redactar" });
-      agregar("causa", "Reporte para el cliente", c.extras.cliente.parrafos.join("\n\n"), "causa:cliente", { origen, peso: 0.7, clave: "cliente explicar informe sencillo" });
+      agregar("proceso", "Tiempo de despacho del juzgado", `El juzgado tarda una mediana de ${d.medianaDias} días entre un escrito y el siguiente auto o providencia; nueve de cada diez se despachan en ${d.p90Dias} días y el máximo observado es de ${d.maxDias}. Por año: ${d.porAnio.map((y) => `${y.anio}, ${y.medianaDias} días`).join("; ")}. Calculado sobre ${d.muestras} escritos de este expediente.`, "proceso:resumen", { origen, clave: "cuanto tarda demora juzgado despacho tiempo dias" });
+      for (const b of c.extras.borradores) agregar("proceso", `Borrador: ${b.titulo}`, b.porQueAhora, "proceso:escritos", { origen, clave: "escrito borrador presentar redactar" });
+      agregar("proceso", "Reporte para el cliente", c.extras.cliente.parrafos.join("\n\n"), "proceso:cliente", { origen, peso: 0.7, clave: "cliente explicar informe sencillo" });
     }
-    for (const a of c.actuaciones) agregar("causa", `${fecha(a.fecha)} · ${a.tipo}`, a.analisis.resumen + (a.analisis.requiereAccion ? ` Acción sugerida: ${a.analisis.accionSugerida}` : ""), "causa:expediente", { origen, peso: 0.55, ref: `actuación n.º ${nAct(a.id)}`, buscar: a.analisis.resumen.slice(0, 40) });
+    for (const a of c.actuaciones) agregar("proceso", `${fecha(a.fecha)} · ${a.tipo}`, a.analisis.resumen + (a.analisis.requiereAccion ? ` Acción sugerida: ${a.analisis.accionSugerida}` : ""), "proceso:expediente", { origen, peso: 0.55, ref: `actuación n.º ${nAct(a.id)}`, buscar: a.analisis.resumen.slice(0, 40) });
   }
 
   if (datos.juez) {
@@ -106,14 +106,16 @@ function recuperar({ base, idf }, pregunta, vistaActual) {
 }
 
 const SUGERIDAS = {
-  causa: ["¿En qué estado está el proceso?", "¿Qué demandados faltan por citar?", "¿Qué plazos están corriendo?", "¿Qué escrito conviene presentar ahora?"],
+  proceso: ["¿En qué estado está el proceso?", "¿Qué demandados faltan por citar?", "¿Qué plazos están corriendo?", "¿Qué escrito conviene presentar ahora?"],
   juez: ["¿Cómo resuelve este juez las acciones de protección?", "¿Cuánto tarda en resolver?", "¿Ha cambiado de criterio?", "¿Cómo conviene plantear un caso ante él?"],
   fiscalia: ["¿Qué denuncias tiene esta persona?", "¿Qué hay que verificar en la Fiscalía?"],
 };
 
 export function montarChat({ datos, abrir, vistaActual }) {
   const conocimiento = construirBase(datos);
-  const disponibles = Object.keys(AMBITOS).filter((a) => datos[a]);
+  // el ámbito «proceso» lee datos.causa
+  const datosDe = (a) => datos[a === "proceso" ? "causa" : a];
+  const disponibles = Object.keys(AMBITOS).filter((a) => datosDe(a));
   const raizEl = document.createElement("div");
   raizEl.innerHTML = `
     <button type="button" id="chat-boton" aria-expanded="false" aria-controls="chat-panel">
@@ -133,7 +135,7 @@ export function montarChat({ datos, abrir, vistaActual }) {
 
   const pintarSugeridas = () => {
     const v = vistaActual();
-    const lista = SUGERIDAS[v] && datos[v] ? SUGERIDAS[v] : disponibles.flatMap((a) => SUGERIDAS[a].slice(0, 2));
+    const lista = SUGERIDAS[v] && datosDe(v) ? SUGERIDAS[v] : disponibles.flatMap((a) => SUGERIDAS[a].slice(0, 2));
     $("#chat-sugeridas").innerHTML = lista.slice(0, 4).map((q) => `<button type="button" class="chip">${esc(q)}</button>`).join("");
   };
   const saludar = () => {
