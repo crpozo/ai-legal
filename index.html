@@ -282,6 +282,21 @@
       .maq-pie { padding: 8px 8px 8px 14px; font-size: 13px; }
       .portada .meandro-portada { bottom: clamp(8px, 1.6vh, 18px); }
     }
+
+    /* Responsive: la portada nunca desborda en pantallas angostas */
+    @media (max-width: 960px) {
+      .portada .ancho { grid-template-columns: minmax(0, 1fr); }
+      .portada h1 { white-space: normal; }
+    }
+    @media (max-width: 640px) {
+      .maq-cab { flex-wrap: wrap; }
+      .maq-estado { white-space: normal; }
+      .maq-pie { flex-wrap: wrap; }
+      .acciones .boton { flex: 1 1 auto; justify-content: center; }
+      .cifras strong { font-size: clamp(72px, 24vw, 120px); }
+      .pila article, .funcion { padding: 24px 20px; }
+      .tabla-creditos dl div { gap: 12px; }
+    }
   </style>
 </head>
 <body>
