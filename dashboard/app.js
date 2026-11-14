@@ -1,5 +1,5 @@
 import { montarChat } from "./chat.js?v=tomos6";
-import { montarTutorial } from "./tutorial.js?v=4";
+import { montarTutorial } from "./tutorial.js?v=6";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -874,7 +874,7 @@ if (!datos) {
       for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
       document.querySelector(".atajo")?.addEventListener("click", () => abrir("seguimientos"));
       document.querySelector(".como-empezar")?.addEventListener("click", () => montarTutorial({ abrir, forzar: true }));
-      const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar") { montarTutorial({ abrir, forzar: tutorialDemo }); tutorialDemo = false; } }, 400);
+      const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar" && !document.querySelector(".tutorial")) { montarTutorial({ abrir, forzar: tutorialDemo }); tutorialDemo = false; } }, 400);
       if ($("#login").hidden) lanzar(); else document.addEventListener("tomos:sesion", lanzar, { once: true });
     }
     window.scrollTo(0, 0);

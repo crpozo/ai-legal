@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=GFS+Didot&family=Outfit:wght@200;300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=tomos6">
+  <link rel="stylesheet" href="styles.css?v=tomos10">
 </head>
 <body>
   <div id="login" hidden>
@@ -32,6 +32,7 @@
       <label>Contraseña<input id="login-clave" type="password" autocomplete="current-password" placeholder="••••••••" required></label>
       <p id="login-error" role="alert"></p>
       <button type="submit">Ingresar</button>
+      <a class="volver-landing en-login" href="../">← Volver al sitio</a>
     </form>
   </div>
   <div class="area">
@@ -44,10 +45,11 @@
           <label class="campo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q-top" type="search" autocomplete="off" aria-label="Buscar proceso, parte o juez" placeholder="Buscar proceso, parte o juez…"></label>
           <button type="submit">Buscar</button>
         </form>
+        <a class="volver-landing" href="../">← Volver al sitio</a>
         <div class="usuario"><span id="usuario-inicial" aria-hidden="true">M</span><button type="button" id="salir">Salir</button></div>
       </header>
       <main id="contenido"><p class="vacio">Cargando…</p></main>
   </div>
-  <script type="module" src="app.js?v=tomos8"></script>
+  <script type="module" src="app.js?v=tomos10"></script>
 </body>
 </html>

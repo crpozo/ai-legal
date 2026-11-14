@@ -591,3 +591,13 @@ main > * { min-width: 0; }
 #chat-sugeridas .chip { flex: 0 1 auto; white-space: normal; text-align: left; line-height: 1.35; padding: 7px 12px; }
 
 .tomos { font-style: italic; text-transform: uppercase; letter-spacing: .04em; }
+
+.tut-acciones > span { display: inline-flex; gap: 8px; align-items: center; }
+.tut-atras { border: 1px solid var(--linea); background: var(--panel); color: var(--tinta); border-radius: 99px; padding: 9px 16px; cursor: pointer; }
+.tut-caja { transition: top .3s, left .3s, opacity .2s; }
+
+/* Enlace de regreso a la landing */
+.volver-landing { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--linea); border-radius: 99px; color: var(--tenue); text-decoration: none; font-size: 14px; white-space: nowrap; }
+.volver-landing:hover { color: var(--acento); border-color: var(--acento); }
+.volver-landing.en-login { justify-self: center; border: 0; height: auto; padding: 6px; }
+@media (max-width: 820px) { .superior .volver-landing { order: 2; height: 36px; padding: 0 12px; font-size: 13px; } }
