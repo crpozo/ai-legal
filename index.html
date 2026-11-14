@@ -389,6 +389,16 @@
     @media (max-width: 960px) { .ht-marco { height: auto; aspect-ratio: 440 / 480; max-height: 480px; } }
     .portada .meandro-portada.arriba { top: 18px; bottom: auto; }
     @media (min-width: 961px) { .portada .meandro-portada.arriba { top: clamp(8px, 1.6vh, 18px); } }
+    /* Soluciones a la medida */
+    .a-medida { padding: 72px 0 24px; }
+    .a-medida-caja { position: relative; overflow: hidden; background: #0A1228; color: #fff; border-radius: 28px; padding: clamp(36px, 6vw, 64px); text-align: center; display: grid; gap: 14px; justify-items: center; }
+    .a-medida-caja::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 80% at 85% 0%, rgba(59, 130, 246, .45), transparent 60%), radial-gradient(50% 70% at 0% 100%, rgba(30, 64, 175, .5), transparent 60%); pointer-events: none; }
+    .a-medida-caja > * { position: relative; }
+    .a-medida-caja .sobre { color: #9cc4ff; }
+    .a-medida-caja h2 { font-size: clamp(34px, 4.6vw, 56px); line-height: 1.05; max-width: 18ch; }
+    .a-medida-caja p:not(.sobre) { color: rgba(255, 255, 255, .82); font-size: 18.5px; max-width: 46ch; }
+    .a-medida + .cierre { border-top: 0; }
+    @media (max-width: 640px) { .a-medida { padding: 48px 0 8px; } .a-medida-caja { border-radius: 22px; } }
   </style>
 </head>
 <body>
@@ -636,6 +646,16 @@
           <details name="faq"><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
           <details name="faq"><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: <em class="tomos">Tomos</em> lo señala para que lo solicites a la dependencia.</p></details>
           <details name="faq"><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="a-medida" id="a-medida">
+      <div class="ancho">
+        <div class="a-medida-caja">
+          <p class="sobre">Soluciones a la medida</p>
+          <h2>¿No encuentras lo que necesitas?</h2>
+          <p>Automatizamos e implementamos IA en tus procesos legales y administrativos, a la medida de tu estudio o tu empresa.</p>
         </div>
       </div>
     </section>
