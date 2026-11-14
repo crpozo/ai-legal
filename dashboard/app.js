@@ -1,5 +1,5 @@
 import { montarChat } from "./chat.js?v=tomos6";
-import { montarTutorial } from "./tutorial.js?v=6";
+import { montarTutorial } from "./tutorial.js?v=7";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);

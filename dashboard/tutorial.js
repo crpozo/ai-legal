@@ -1,21 +1,13 @@
-/* Tutorial de la demo: recorre la plataforma y muestra los hallazgos más interesantes de los procesos ya analizados. */
+/* Tutorial de bienvenida: guía al usuario hacia los procesos ya analizados. */
 const CLAVE = "tomos-tutorial-v1";
 const visto = { leer: () => { try { return localStorage.getItem(CLAVE) === "1"; } catch { return false; } }, marcar: () => { try { localStorage.setItem(CLAVE, "1"); } catch { /* sin almacenamiento */ } } };
 const T = "<em class='tomos'>Tomos</em>";
 
-// Cada paso puede abrir una vista (y una pestaña interna) antes de resaltar su elemento.
+// Cada paso puede indicar la vista en la que está su elemento.
 const PASOS = [
-  { vista: "buscar", sel: ".atajo", titulo: "Empieza aquí", texto: `En esta demo ya hay procesos y jueces analizados por ${T}. Te mostramos lo más interesante en un minuto.` },
-  { vista: "buscar", sel: ".novedades", titulo: "Novedades del expediente", texto: "Las últimas actuaciones, ya leídas y clasificadas por la IA. El punto rojo marca las que requieren que hagas algo." },
-  { vista: "causa", panel: "resumen", sel: ".portada .cifras", titulo: "424 actuaciones leídas", texto: `Una acción colusoria que se tramita desde 2020. ${T} recorrió las 8 carpetas del proceso y leyó cada actuación, algo que a mano toma días.` },
-  { vista: "causa", panel: "resumen", sel: ".portada-der", titulo: "El proceso en un párrafo", texto: "El reporte integral resume etapa, estado y lo que falta, con cada afirmación enlazada a la actuación de donde sale." },
-  { vista: "causa", panel: "seguimiento", sel: '.panel[data-panel="seguimiento"] .alertas li', titulo: "Caso interesante: riesgo de archivo", texto: "La citación de dos demandados fue cuestionada otra vez y el juez ya advirtió el archivo por falta de impulso. La IA lo detectó y lo marcó como alerta alta." },
-  { vista: "causa", panel: "escritos", sel: '.panel[data-panel="escritos"] .bloque', titulo: "Escritos listos para revisar", texto: "Con base en el estado del proceso, la IA redactó 2 borradores, como insistir en el oficio a la Tenencia Política, con lo que debes confirmar antes de presentarlos." },
-  { vista: "causa", panel: "cliente", sel: '.panel[data-panel="cliente"] .bloque', titulo: "Reporte para tu cliente", texto: "El mismo análisis en lenguaje llano, listo para enviar. Tu cliente deja de preguntar cómo va su juicio." },
-  { vista: "juez", panel: "resumen", sel: ".portada .cifras", titulo: "Cómo decide un tribunal", texto: "190 resoluciones de garantías constitucionales en la Corte Provincial de Pichincha: solo 24% de las acciones prosperan y la mediana para resolver es de 99 días." },
-  { vista: "juez", panel: "resumen", sel: ".tesela", titulo: "Patrones que nadie ve a mano", texto: "Criterios que el tribunal repite, cambios de criterio en el tiempo y diferencias entre casos similares, cada uno con las resoluciones que lo prueban." },
-  { vista: "juez", panel: "criterios", sel: '.panel[data-panel="criterios"] .bloque:nth-child(3)', titulo: "Caso interesante: mismos hechos, distinto resultado", texto: "Pares de casos casi idénticos resueltos en sentidos opuestos. Es un argumento que puedes invocar al plantear tu caso." },
-  { sel: "#chat-boton", titulo: "Pregunta a Tomos", texto: `Consulta en un chat lo que ya está analizado: quién falta por citar, cómo resuelve el juez, qué plazos corren. El buscador está en modo demo y solo responde con estos procesos.`, final: true },
+  { vista: "buscar", sel: ".atajo", titulo: "Empieza aquí", texto: `Abre los procesos que ${T} ya analizó: estado del proceso, alertas, plazos, reportes y documentos.` },
+  { vista: "buscar", sel: ".novedades", titulo: "Novedades del expediente", texto: "Toca cualquier actuación para abrir el proceso completo y ver lo que encontró el agente." },
+  { vista: "buscar", sel: "#form-buscar", titulo: "Buscador en modo demo", texto: "En esta demo el buscador solo responde con los procesos ya cargados. Para ver resultados reales, entra a los procesos analizados.", final: true },
 ];
 
 const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
