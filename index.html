@@ -297,6 +297,15 @@
       .pila article, .funcion { padding: 24px 20px; }
       .tabla-creditos dl div { gap: 12px; }
     }
+
+    /* Pie de página */
+    footer.pie { background: #0a1630; color: #fff; border-top: 1px solid rgba(156, 196, 255, .18); padding: 30px 0; font-size: 15px; }
+    footer.pie .ancho { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .pie-marca { font-family: var(--inscripcion); font-size: 22px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; text-decoration: none; color: #fff; }
+    footer.pie nav { display: flex; gap: 28px; flex-wrap: wrap; }
+    footer.pie nav a { color: rgba(255, 255, 255, .78); text-decoration: none; }
+    footer.pie nav a:hover { color: #fff; }
+    @media (max-width: 640px) { footer.pie .ancho { flex-direction: column; align-items: flex-start; } footer.pie nav { gap: 20px; } }
   </style>
 </head>
 <body>
@@ -579,6 +588,17 @@
       </div>
     </section>
   </main>
+
+  <footer class="pie">
+    <div class="ancho">
+      <a class="pie-marca" href="#inicio" aria-label="Tomos, inicio">Tomos</a>
+      <nav aria-label="Pie de página">
+        <a href="#funciones">Qué hace</a>
+        <a href="#planes">Planes</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+    </div>
+  </footer>
 
   <script>
     // Tarjeta de la portada: las cifras cuentan hasta su valor y el estado pasa a "Reporte listo".
