@@ -589,3 +589,5 @@ main > * { min-width: 0; }
 /* Chat: las sugerencias se acomodan en varias líneas en lugar de salirse a la derecha */
 #chat-sugeridas { flex-wrap: wrap; overflow: visible; padding: 4px 16px 10px; }
 #chat-sugeridas .chip { flex: 0 1 auto; white-space: normal; text-align: left; line-height: 1.35; padding: 7px 12px; }
+
+.tomos { font-style: italic; text-transform: uppercase; letter-spacing: .04em; }

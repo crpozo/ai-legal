@@ -1,5 +1,5 @@
-import { montarChat } from "./chat.js?v=tomos5";
-import { montarTutorial } from "./tutorial.js?v=2";
+import { montarChat } from "./chat.js?v=tomos6";
+import { montarTutorial } from "./tutorial.js?v=3";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -174,7 +174,7 @@ function vistaBuscar(datos) {
     <div class="inicio">
     <section class="heroe">
       <h1>¿Qué proceso o qué juez quieres revisar?</h1>
-      <p class="bajada">Tomos consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
+      <p class="bajada"><em class="tomos">Tomos</em> consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <button type="button" class="como-empezar">¿Cómo empezar? Ver guía</button>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
