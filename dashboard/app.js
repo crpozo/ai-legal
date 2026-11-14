@@ -788,6 +788,9 @@ $("#form-login").addEventListener("submit", async (ev) => {
   window.scrollTo(0, 0);
 });
 $("#salir").addEventListener("click", () => { sesion.guardar(null); aplicarSesion(null); });
+// "Probar la demo" desde la landing (?demo) entra directo, sin pasar por el login.
+if (new URLSearchParams(location.search).has("demo") && !sesion.leer()) sesion.guardar("demo@ailegal.ec");
+if (location.search) history.replaceState(null, "", location.pathname + location.hash);
 aplicarSesion(sesion.leer());
 
 const datos = await cargar();
