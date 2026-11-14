@@ -367,6 +367,28 @@
     .tomos { font-style: italic; text-transform: uppercase; letter-spacing: .04em; }
     .cierre { padding: 56px 0; }
     .cierre .etimologia { margin-bottom: 22px; }
+    /* Tarjeta animada compacta */
+    .ht-tarjeta { height: 480px; padding: 20px; }
+    .ht-fuentes { height: 440px; margin-bottom: 20px; gap: 9px; }
+    .plegado .ht-fuentes { height: 0; margin-bottom: 0; }
+    .ht-titulo { font-size: 26px; margin-bottom: 2px; }
+    .ht-fila { padding: 12px 16px; gap: 2px; }
+    .ht-pista { margin-top: 6px; }
+    .ht-panel { gap: 10px; }
+    .ht-caso { font-size: 24px; margin: 2px 0 0; }
+    .ht-sub { font-size: 13px; }
+    .ht-linea { margin-top: -4px; font-size: 12px; }
+    .ht-cifra { padding: 10px 12px; gap: 2px; }
+    .ht-cifra strong { font-size: 32px; }
+    .ht-cifra span { font-size: 12px; }
+    .ht-alertas { gap: 6px; }
+    .ht-alertas li { padding: 8px 10px; font-size: 13.5px; line-height: 1.3; }
+    .ht-pie { padding: 8px 8px 8px 12px; font-size: 12.5px; }
+    .ht-pie b { padding: 7px 12px; font-size: 12px; }
+    .ht-marco { height: min(480px, calc(100svh - 77px - 72px)); min-height: 340px; }
+    @media (max-width: 960px) { .ht-marco { height: auto; aspect-ratio: 440 / 480; max-height: 480px; } }
+    .portada .meandro-portada.arriba { top: 18px; bottom: auto; }
+    @media (min-width: 961px) { .portada .meandro-portada.arriba { top: clamp(8px, 1.6vh, 18px); } }
   </style>
 </head>
 <body>
@@ -393,6 +415,7 @@
         <source src="https://videos.pexels.com/video-files/8731388/8731388-hd_1280_720_25fps.mp4" type="video/mp4">
       </video>
       <span class="meandro meandro-portada" aria-hidden="true"></span>
+      <span class="meandro meandro-portada arriba" aria-hidden="true"></span>
       <div class="ancho">
         <div>
           <h1>Toda la justicia ecuatoriana, automatizada con IA.</h1>
@@ -599,7 +622,6 @@
           </article>
         </div>
 
-        <p class="extras">Precios en dólares, referenciales.</p>
       </div>
     </section>
 
@@ -610,10 +632,10 @@
           <h2>Lo que un abogado pregunta primero.</h2>
         </div>
         <div>
-          <details open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. <em class="tomos">Tomos</em> automatiza la consulta de lo mismo que verías tú en el portal y registra de dónde tomó cada dato.</p></details>
-          <details><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
-          <details><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: <em class="tomos">Tomos</em> lo señala para que lo solicites a la dependencia.</p></details>
-          <details><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
+          <details name="faq" open><summary>¿De dónde salen los datos?</summary><p>De las consultas públicas de la Función Judicial (E-SATJE) y de la Fiscalía General del Estado. <em class="tomos">Tomos</em> automatiza la consulta de lo mismo que verías tú en el portal y registra de dónde tomó cada dato.</p></details>
+          <details name="faq"><summary>¿Puedo confiar en lo que dice el reporte?</summary><p>Es un apoyo para el abogado, no un reemplazo. Cada hallazgo cita la actuación o la resolución que lo sustenta para que lo verifiques, y cuando algo no consta en el expediente, el reporte lo dice en lugar de suponerlo.</p></details>
+          <details name="faq"><summary>¿Qué pasa si un documento no está en el portal?</summary><p>La digitalización del expediente depende de la Función Judicial y es progresiva. Que un documento no aparezca no significa que no exista: <em class="tomos">Tomos</em> lo señala para que lo solicites a la dependencia.</p></details>
+          <details name="faq"><summary>¿El informe de un juez lo describe a él o a su tribunal?</summary><p>En segunda instancia resuelve un tribunal de tres jueces. El informe distingue las resoluciones en que consta como ponente y lo advierte en sus limitaciones.</p></details>
         </div>
       </div>
     </section>
@@ -677,8 +699,8 @@
         for (const el of entradas) el.classList.toggle("dentro", t >= Number(el.dataset.t));
       };
 
-      // Escala la tarjeta (440×590) al espacio disponible sin deformarla.
-      const escalar = () => { const k = Math.min(1, marco.clientWidth / 440, marco.clientHeight / 590); tarjeta.style.setProperty("--k", k); };
+      // Escala la tarjeta (440×480) al espacio disponible sin deformarla.
+      const escalar = () => { const k = Math.min(1, marco.clientWidth / 440, marco.clientHeight / 480); tarjeta.style.setProperty("--k", k); };
       new ResizeObserver(escalar).observe(marco);
       escalar();
 
@@ -697,6 +719,12 @@
       document.addEventListener("visibilitychange", () => (document.hidden ? detener() : arrancar()));
       addEventListener("pagehide", detener);
       arrancar();
+    })();
+
+    // Preguntas: al abrir una, se cierran las demás (respaldo para navegadores sin details[name]).
+    (() => {
+      const items = [...document.querySelectorAll('details[name="faq"]')];
+      for (const d of items) d.addEventListener("toggle", () => { if (d.open) for (const o of items) if (o !== d && o.open) o.open = false; });
     })();
 
     // Planes: forma de pago.

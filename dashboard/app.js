@@ -1,5 +1,5 @@
 import { montarChat } from "./chat.js?v=tomos6";
-import { montarTutorial } from "./tutorial.js?v=3";
+import { montarTutorial } from "./tutorial.js?v=4";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -791,6 +791,8 @@ $("#form-login").addEventListener("submit", async (ev) => {
   window.scrollTo(0, 0);
 });
 $("#salir").addEventListener("click", () => { sesion.guardar(null); aplicarSesion(null); });
+// Al llegar desde "Probar la demo" (?demo) siempre se muestra el tutorial.
+let tutorialDemo = new URLSearchParams(location.search).has("demo");
 // "Probar la demo" desde la landing (?demo) entra directo, sin pasar por el login.
 if (new URLSearchParams(location.search).has("demo") && !sesion.leer()) sesion.guardar("demo@ailegal.ec");
 if (location.search) history.replaceState(null, "", location.pathname + location.hash);
@@ -872,7 +874,7 @@ if (!datos) {
       for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
       document.querySelector(".atajo")?.addEventListener("click", () => abrir("seguimientos"));
       document.querySelector(".como-empezar")?.addEventListener("click", () => montarTutorial({ abrir, forzar: true }));
-      const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar") montarTutorial({ abrir }); }, 400);
+      const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar") { montarTutorial({ abrir, forzar: tutorialDemo }); tutorialDemo = false; } }, 400);
       if ($("#login").hidden) lanzar(); else document.addEventListener("tomos:sesion", lanzar, { once: true });
     }
     window.scrollTo(0, 0);

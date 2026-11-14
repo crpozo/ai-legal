@@ -3,7 +3,7 @@ const CLAVE = "tomos-tutorial-v1";
 const visto = { leer: () => { try { return localStorage.getItem(CLAVE) === "1"; } catch { return false; } }, marcar: () => { try { localStorage.setItem(CLAVE, "1"); } catch { /* sin almacenamiento */ } } };
 
 const PASOS = [
-  { sel: ".atajo", titulo: "Empieza aquí", texto: "Abre los procesos que <em class="tomos">Tomos</em> ya analizó: estado del proceso, alertas, plazos, reportes y documentos." },
+  { sel: ".atajo", titulo: "Empieza aquí", texto: "Abre los procesos que <em class='tomos'>Tomos</em> ya analizó: estado del proceso, alertas, plazos, reportes y documentos." },
   { sel: ".novedades", titulo: "Novedades del expediente", texto: "Toca cualquier actuación para abrir el proceso completo y ver lo que encontró el agente." },
   { sel: "#form-buscar", titulo: "Buscador en modo demo", texto: "En esta demo el buscador solo responde con los procesos ya cargados. Para ver resultados reales, entra a los procesos analizados.", final: true },
 ];
