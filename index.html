@@ -245,6 +245,14 @@
     .etimologia { margin: 0 auto 28px; color: var(--tenue); font-family: var(--clasica); font-style: italic; font-size: 21px; }
     .etimologia .griego { font-style: normal; color: var(--acento); font-size: 24px; }
     .cierre .meandro { max-width: 280px; margin: 0 auto 36px; }
+
+    /* Cifras masivas */
+    .cifras { grid-template-columns: repeat(3, 1fr); }
+    .cifras div { padding: 8px 40px; }
+    .cifras strong { font-family: var(--clasica); font-weight: 400; font-size: clamp(88px, 12vw, 176px); line-height: .9; letter-spacing: -.04em;
+      background: linear-gradient(135deg, #1e40af, #3b82f6 55%, #60a5fa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .cifras span { margin-top: 18px; font-size: 19px; max-width: 22ch; }
+    @media (max-width: 960px) { .cifras { grid-template-columns: 1fr; gap: 40px; } .cifras div { border-left: 0; padding: 0; } }
   </style>
 </head>
 <body>
@@ -317,7 +325,6 @@
           <div><strong>424</strong><span>actuaciones de un solo proceso leídas y clasificadas</span></div>
           <div><strong>190</strong><span>resoluciones de un juez comparadas entre sí</span></div>
           <div><strong>15</strong><span>pasos del portal que el agente recorre por ti</span></div>
-          <div><strong>$1.73</strong><span>costó analizar ese expediente completo</span></div>
         </div>
       </div>
     </section>
