@@ -536,3 +536,49 @@ h5.sub { font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transfor
 .marca .nombre { font-family: var(--inscripcion); font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
 .login-arte h2 { font-family: var(--inscripcion); font-weight: 400; letter-spacing: .12em; text-transform: uppercase; }
 .login-arte .login-meandro { position: absolute; left: 0; right: 0; bottom: 20px; color: #fff; opacity: .45; }
+
+/* ===== Tema mediterráneo (igual que la landing) ===== */
+:root, :root[data-theme] {
+  color-scheme: light;
+  --borde: #d6cbbb; --fondo: #e8e0d4; --panel: #f4efe7; --hundido: #ece5da; --tinta: #2b2620; --tenue: #6f665b; --linea: #d6cbbb;
+  --acento: #123f7a; --acento-fuerte: #0d3166; --acento-suave: #dde3ea; --sobre-acento: #ffffff; --terracota: #b4553f; --oliva: #6b7a2e;
+  --degradado: linear-gradient(135deg, #123f7a, #1b4f8e);
+  --alta: #a63a2a; --alta-suave: #f3dfd8; --media: #8a6416; --media-suave: #f1e6cc; --baja: #4f6b2a; --baja-suave: #e4e8d3;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --borde: #d6cbbb; --fondo: #e8e0d4; --panel: #f4efe7; --hundido: #ece5da; --tinta: #2b2620; --tenue: #6f665b; --linea: #d6cbbb;
+  --acento: #123f7a; --acento-fuerte: #0d3166; --acento-suave: #dde3ea; --sobre-acento: #ffffff;
+  --alta: #a63a2a; --alta-suave: #f3dfd8; --media: #8a6416; --media-suave: #f1e6cc; --baja: #4f6b2a; --baja-suave: #e4e8d3; } }
+h1, h2, h3, h4 { font-family: var(--clasica); font-weight: 400; letter-spacing: 0; }
+.sobre { font-family: var(--clasica); font-style: italic; text-transform: none; letter-spacing: 0; font-size: 17px; color: var(--terracota); }
+.marca .emblema { width: 38px; height: 38px; fill: none; stroke: var(--acento); stroke-width: 1.6; stroke-linecap: round; }
+.marca .nombre { font-family: var(--clasica); font-style: italic; font-weight: 400; font-size: 30px; letter-spacing: 0; text-transform: none; color: var(--tinta); }
+.superior { border-bottom-color: var(--linea); }
+#pestanas button[aria-selected="true"], .chip[aria-pressed="true"], .acciones button:first-child, .acciones-fila button:first-child, .msj.yo { background: var(--acento); border-color: var(--acento); color: #fff; }
+#buscar-top button, #form-buscar button, #chat-form button, #chat-boton { background: var(--acento); box-shadow: 0 0 0 1px var(--fondo), 0 0 0 2px var(--acento); }
+#buscar-top button, #form-buscar button { border-radius: 3px; border: 1px solid rgba(255,255,255,.5); }
+#chat-boton { border-radius: 4px; }
+#chat-panel > header { background: var(--acento); }
+.tesela { background: var(--acento); }
+
+/* Login: imagen con grecas, como la referencia */
+#login { background: var(--fondo); }
+.login-arte { margin: 18px; border-radius: 28px; }
+.login-arte::after { background: linear-gradient(180deg, rgba(18,63,122,.25), rgba(18,63,122,.75)); opacity: 1; }
+.login-arte::before { font-family: var(--griega); }
+.login-arte h2 { font-family: var(--clasica); font-style: italic; font-weight: 400; letter-spacing: -.01em; text-transform: none; font-size: clamp(64px, 8vw, 112px); }
+.login-sello { border-radius: 3px; font-family: var(--clasica); font-style: italic; text-transform: none; letter-spacing: 0; font-size: 18px; }
+.greca-esq { position: absolute; width: 150px; height: 150px; pointer-events: none; z-index: 0; }
+.greca-esq::before, .greca-esq::after { content: ""; position: absolute; left: 0; top: 0; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M1 1H19V19H1zM5 5H15V15H8V8H12' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3C/svg%3E") repeat left top / 22px 22px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M1 1H19V19H1zM5 5H15V15H8V8H12' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3C/svg%3E") repeat left top / 22px 22px; }
+.greca-esq::before { width: 100%; height: 22px; }
+.greca-esq::after { width: 22px; height: 100%; }
+.login-arte .greca-esq.sup { top: 20px; right: 20px; color: #c3d07a; transform: scaleX(-1); }
+.login-arte .greca-esq.inf { bottom: 20px; right: 20px; color: rgba(255,255,255,.8); transform: rotate(180deg); }
+#form-login h1 { font-family: var(--clasica); font-weight: 300; font-size: 48px; }
+#form-login input { background: var(--panel); border-radius: 4px; }
+#form-login button { background: var(--acento); border-radius: 3px; border: 1px solid rgba(255,255,255,.5); box-shadow: 0 0 0 1px var(--fondo), 0 0 0 2px var(--acento); }
+@media (max-width: 860px) { .login-arte { margin: 12px; } .greca-esq { width: 88px; height: 88px; } }
+.bloque, .recorrido, .hoja, .atajo, .tesela { border-radius: 18px; overflow: hidden; }
+.bloque, .recorrido, .hoja, .atajo { border-color: transparent; box-shadow: 0 16px 40px -32px rgba(43,38,32,.5); }
+#form-buscar input, #q-top { border-radius: 4px; }
