@@ -3,7 +3,7 @@
     "portal": "Fiscalía General del Estado · Consulta de noticias del delito (SIAF)",
     "url": "https://www.fiscalia.gob.ec/accesibilidad/consulta-de-noticias-del-delito/",
     "capturadoEn": "2026-11-12",
-    "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documento del 12/11/2026). Dos noticias con detalle completo; de una tercera solo se ve el número. La identidad de terceros que figuran como sospechosos se reservó antes del análisis."
+    "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documentos del 12/11/2026 y del 15/11/2026). Las tres noticias tienen detalle completo. La identidad de terceros (denunciantes, sospechosos y testigos distintos de la persona consultada) se reservó antes del análisis."
   },
   "consulta": {
     "criterio": "Cédula (10 dígitos)",
@@ -38,8 +38,43 @@
     },
     {
       "numero": "070101824060201",
-      "detalleDisponible": false,
-      "sujetos": [],
+      "detalleDisponible": true,
+      "lugar": "El Oro - Machala",
+      "fecha": "2024-06-10",
+      "hora": "20:33:48",
+      "digitador": "Cedillo Procel Gina Elizabeth",
+      "nroOficio": "SN",
+      "tipoIncidente": "Denuncia formal - escrita",
+      "delito": "Abuso de confianza",
+      "unidad": "Fiscalía de Soluciones Rápidas - Edi. - ÚNICA - MACHALA - Dir. - Av. Rocafuerte entre Guayas y 9 de Mayo - Telef. - (07) 2966303",
+      "numFiscalia": "3",
+      "sujetos": [
+        {
+          "nombre": "Persona 2 (identidad reservada)",
+          "estado": "Denunciante"
+        },
+        {
+          "nombre": "Persona 3 (identidad reservada)",
+          "estado": "Sospechoso"
+        },
+        {
+          "cedula": "1711187763",
+          "nombre": "Cruz Alvear Angel Fabian",
+          "estado": "Sospechoso"
+        },
+        {
+          "nombre": "Persona 4 (identidad reservada)",
+          "estado": "Testigo"
+        },
+        {
+          "nombre": "Persona 5 (identidad reservada)",
+          "estado": "Testigo"
+        },
+        {
+          "nombre": "Persona 6 (identidad reservada)",
+          "estado": "Testigo no identificado"
+        }
+      ],
       "vehiculos": []
     },
     {

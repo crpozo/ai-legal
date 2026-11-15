@@ -100,6 +100,8 @@ li[data-estado="hecho"] .marca-paso::after { content: ""; position: absolute; le
 .portada-der header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .portada-der h2 { font-size: 26px; line-height: 1.2; }
 .meta { color: var(--tenue); font-size: 14.5px; }
+.meta.clave { color: var(--tinta); font-size: 15.5px; font-weight: 500; }
+.dato-clave { color: var(--acento-fuerte); font-size: 14.5px; font-weight: 600; letter-spacing: .01em; }
 .lectura { font-size: 16.5px; line-height: 1.65; text-wrap: pretty; }
 .cifras { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 26px; }
 .cifra { padding: 4px 22px 26px; border-left: 1px solid var(--linea); display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 10px; }

@@ -34,86 +34,16 @@ const ref = (id) => `<span class="ref">${esc(String(id).replace(/^.*-(\d+)$/, "A
 const procs = (ns) => `<span class="ref">${ns.map(esc).join(" · ")}</span>`;
 const elegidaDe = (causa) => causa.instancias.find((i) => i.id === causa.seleccion.instanciaId);
 
-/* ───────────── Recorrido del agente: los pasos del flujograma del estudio ───────────── */
+/* ───────────── Etapas de la búsqueda ───────────── */
 
-function recorridoCausa({ causa }) {
-  const e = elegidaDe(causa);
-  const acts = causa.actuaciones;
-  const cuenta = (cat) => acts.filter((a) => a.analisis.categoria === cat).length;
-  const conArchivos = acts.filter((a) => a.documentos.some((d) => d.disponible)).length;
-  const ultima = acts[0];
-  return [
-    { titulo: "1. Ingresar al sistema y localizar el proceso", pasos: [
-      [1, "Ingresa al portal de consulta de procesos", esc(causa.fuente.portal)],
-      [2, "Selecciona la búsqueda avanzada", "Formulario de búsqueda por criterios abierto"],
-      [3, "Identifica el proceso con los datos disponibles", `Número de proceso judicial: <b>${esc(causa.numero)}</b>`],
-      [4, "Haz clic en BUSCAR y supera el CAPTCHA", "Verificación CAPTCHA completada por el usuario; el agente continúa desde los resultados"],
-    ] },
-    { titulo: "2. Abrir el proceso y consultar su estado", pasos: [
-      [5, "Identifica el proceso correcto entre las carpetas", `${plural(causa.instancias.length, "carpeta", "carpetas")} con ese número. Elegida por dependencia judicial: <b>${esc(e.dependencia)}</b> (certeza ${esc(causa.seleccion.confianza)})`],
-      [6, "Abre los movimientos del proceso", `Carpeta abierta · ingreso ${fecha(e.fechaIngreso)} · ${esc(e.materia)} · ${esc(e.tipoAccion)}`],
-      [7, "Ve a INFORMACIÓN DEL PROCESO", `${plural(acts.length, "actuación registrada", "actuaciones registradas")}`],
-      [8, "Revisa las actuaciones, la más reciente primero", ATENCION.map(([cat, nombre]) => `${esc(nombre)}: <b>${cuenta(cat)}</b>`).join(" · ")],
-      [9, "Despliega el contenido de cada actuación", `${plural(acts.length, "actuación leída y resumida", "actuaciones leídas y resumidas")}`],
-      [10, "Abre «Ver archivos»", `${plural(conArchivos, "actuación tiene", "actuaciones tienen")} archivos en el portal`],
-    ] },
-    { titulo: "3. Revisar y descargar los documentos del expediente digital", pasos: [
-      [11, "Selecciona la actuación y busca el acceso al documento", "Disponibilidad registrada actuación por actuación"],
-      [12, "Abre el documento para verificar su contenido", "Contenido verificado contra el texto publicado en cada actuación"],
-      [13, "Descarga el documento si el portal lo permite", "Disponibilidad de descarga registrada. Lo que no está en el portal se solicita a la dependencia judicial"],
-    ] },
-    { titulo: "4. Revisar el estado actualizado del proceso", pasos: [
-      [14, "Revisa la actuación más reciente", `${fecha(ultima.fecha)} · ${esc(ultima.tipo)}`],
-      [15, "Genera el reporte integral del caso", `Reporte listo · ${plural(causa.reporte.alertas.length, "alerta", "alertas")} · ${plural(acts.filter((a) => a.analisis.requiereAccion).length, "actuación requiere", "actuaciones requieren")} acción`],
-    ] },
-  ];
-}
-
-function recorridoJuez({ juez }) {
-  const f = juez.filtros, n = juez.procesos.length, p = juez.patrones, t = juez.estadisticas.tiempos;
-  return [
-    { titulo: "1. Ingresar al sistema y precisar el juez y tipo de proceso", pasos: [
-      [1, "Ingresa al módulo de consulta por juez", esc(juez.fuente.url ?? juez.fuente.portal)],
-      [2, "Se abre «Procesos resueltos por juez» (E-SATJE 2020)", "Módulo abierto"],
-      [3, "Identifica los campos de búsqueda", "Identificación · Apellidos y nombres · Materia · Tipo de acción · Asunto o delito"],
-      [4, "Ingresa la información del juez", `<b>${esc(juez.juez.nombre)}</b>${f.materia ? ` · Materia: <b>${esc(f.materia)}</b>` : ""}${f.tipoAccion ? ` · Tipo de acción: <b>${esc(f.tipoAccion)}</b>` : ""}`],
-    ] },
-    { titulo: "2. Aplicar filtros para encontrar procesos específicos", pasos: [
-      [5, "Usa los filtros adicionales y define el período", f.desde && f.hasta ? `Del ${fecha(f.desde)} al ${fecha(f.hasta)}` : "Sin período"],
-    ] },
-    { titulo: "3. Revisar los resultados de los procesos resueltos", pasos: [
-      [7, "El sistema presenta los resultados tras superar el CAPTCHA", `Verificación CAPTCHA completada por el usuario · ${plural(n, "proceso", "procesos")} con resolución de segunda instancia`],
-      [8, "La IA revisa todos los procesos, solo en segunda instancia", `Carpeta de la Sala de la Corte Provincial abierta en cada proceso; leída la resolución final (${plural(n, "resolución", "resoluciones")})`],
-      [8, "Criterio, fundamentos de hecho y de derecho, y cambios de criterio", `${plural(p.criteriosReiterados.length, "criterio reiterado", "criterios reiterados")} · ${plural(p.cambiosDeInterpretacion.length, "cambio de criterio", "cambios de criterio")} · ${plural(p.diferenciasEntreCasosSimilares.length, "diferencia", "diferencias")} entre casos similares`],
-      [8, "Tiempo que tarda en resolver: promedio y anomalías", t ? `Promedio ${t.promedioDias} días · mediana ${t.medianaDias} · ${plural(t.anomalias.length, "anomalía", "anomalías")} sobre ${t.umbralAnomalia} días` : "Sin datos de tiempo"],
-    ] },
-  ];
-}
-
-function recorridoFiscalia({ fiscalia }) {
-  const n = fiscalia.noticias, conDetalle = n.filter((x) => x.detalleDisponible).length;
-  return [
-    { titulo: "1. Ingresar a la consulta de noticias del delito", pasos: [
-      [1, "Ingresa al enlace oficial de la Fiscalía", esc(fiscalia.fuente.url)],
-      [2, "Identifica los campos de búsqueda", "Noticia del delito · Cédula · RUC · Nombres y apellidos · Placa · Número de oficio"],
-    ] },
-    { titulo: "2. Buscar la noticia del delito", pasos: [
-      [3, "Selecciona el criterio y llena la información", `${esc(fiscalia.consulta.criterio)}: <b>${esc(fiscalia.consulta.valor)}</b>`],
-      [4, "Haz clic en BUSCAR DENUNCIA", `${plural(n.length, "denuncia desplegada", "denuncias desplegadas")}`],
-    ] },
-    { titulo: "3. Información que presenta el sistema", pasos: [
-      [5, "Selecciona cada registro y abre su detalle", `Detalle leído en ${conDetalle} de ${n.length}`],
-      [6, "Verifica los datos de cada noticia", "Número NDD · Provincia y cantón · Fecha · Hora · Delito · Número de oficio · Unidad fiscal · Sujetos involucrados"],
-    ] },
-  ];
-}
-
-const RECORRIDOS = { causa: recorridoCausa, juez: recorridoJuez, fiscalia: recorridoFiscalia };
+const ETAPAS = {
+  causa: ["Localizando el proceso", "Leyendo las actuaciones", "Identificando plazos y alertas", "Preparando el informe"],
+  juez: ["Localizando al juez", "Reuniendo sus resoluciones", "Comparando criterios y tiempos", "Preparando el informe"],
+  fiscalia: ["Consultando las noticias del delito", "Leyendo cada registro", "Identificando alertas", "Preparando el informe"],
+};
 const TITULOS = { causa: "Revisión y actualización del proceso", juez: "Historial de procesos del juez", fiscalia: "Revisión de noticias del delito · Fiscalía" };
-const pintarRecorrido = (fases, estado) => `<div class="recorrido">${fases.map((f) => `
-  <div class="fase"><h4>${esc(f.titulo)}</h4><ol>${f.pasos.map(([n, que, resultado]) => `
-    <li data-estado="${estado}"><span class="marca-paso" aria-hidden="true"></span><div><p><span class="num">Paso ${n}</span>${esc(que)}</p><p class="resultado">${resultado}</p></div></li>`).join("")}
-  </ol></div>`).join("")}</div>`;
+const pintarEtapas = (etapas) => `<div class="recorrido"><div class="fase"><ol>${etapas.map((que) => `
+  <li data-estado="pendiente"><span class="marca-paso" aria-hidden="true"></span><div><p>${esc(que)}</p></div></li>`).join("")}</ol></div></div>`;
 
 /* ───────────── Búsqueda ───────────── */
 
@@ -213,8 +143,8 @@ function vistaCausa(datos) {
       <div class="portada-izq">
         <p class="sobre">Proceso ${esc(causa.numero)}</p>
         <h1>${esc(corto(e.actores))} <i>c.</i> ${esc(corto(e.demandados))}</h1>
-        <p class="meta">${esc(e.materia)} · ${esc(e.tipoAccion)} · ${esc(e.asunto)} · ingreso ${fecha(e.fechaIngreso)}</p>
-        <p class="meta">${esc(e.dependencia)}</p>
+        <p class="meta clave">${esc(e.materia)} · ${esc(e.tipoAccion)} · ${esc(e.asunto)} · ingreso ${fecha(e.fechaIngreso)}</p>
+        <p class="meta clave">${esc(e.dependencia)}</p>
         <div class="cifras">
           ${cifra("Actuaciones leídas", acts.length)}
           ${cifra("Con acción sugerida, últimos 90 días", pendientes)}
@@ -235,7 +165,6 @@ function vistaCausa(datos) {
       <button role="tab" data-panel="escritos">Escritos <span>${x.borradores.length}</span></button>
       <button role="tab" data-panel="cliente">Para el cliente</button>` : ""}
       <button role="tab" data-panel="carpetas">Carpetas y documentos</button>
-      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
     </nav>
 
     <div class="panel" data-panel="resumen">
@@ -321,11 +250,6 @@ function vistaCausa(datos) {
         ${bloque("Partes", `<p class="tenue">Actores</p>${lista(e.actores)}<p class="tenue" style="margin-top:10px">Demandados</p>${lista(e.demandados)}`)}
         </aside>
       </div>
-    </div>
-
-    <div class="panel" data-panel="recorrido" hidden>
-      ${pintarRecorrido(recorridoCausa(datos), "hecho")}
-      <p class="descargo">Expediente de la Fiscalía (FGE): consulta pendiente de configurar el acceso al sistema de Fiscalía.</p>
     </div>`;
 
   const montar = () => {
@@ -447,7 +371,6 @@ function vistaJuez(datos) {
       ${t ? `<button role="tab" data-panel="tiempos">Tiempos y anomalías <span>${t.anomalias.length}</span></button>` : ""}
       <button role="tab" data-panel="resoluciones">Resoluciones <span>${procesos.length}</span></button>
       <button role="tab" data-panel="estrategia">Estrategia</button>
-      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
     </nav>
 
     <div class="panel" data-panel="resumen">
@@ -461,12 +384,12 @@ function vistaJuez(datos) {
         ${bloque("Cómo resuelve", `${barras(e.porDecision, (x) => DECISIONES[x.decision])}${e.porApelacion ? `<h5 class="sub">Frente a la sentencia de primera instancia</h5>${barras(e.porApelacion, (x) => APELACION[x.apelacion] ?? x.apelacion)}` : ""}`)}
         ${e.porAccion ? bloque("Por tipo de acción", `<ul class="atencion">${e.porAccion.map((a) => `<li><button type="button" data-accion="${esc(a.accion)}"><span><b>${esc(a.accion)}</b><small>${a.aceptadas} de ${a.n} prosperan · mediana ${a.medianaDias} días</small></span><strong>${a.n}</strong></button></li>`).join("")}</ul>`) : bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma))}
       </div>
-      ${p.criterioPorAccion?.length ? `<div class="par">${p.criterioPorAccion.map((c) => bloque(c.accion, `<p>${esc(c.criterio)}</p><dl class="pares"><dt>Fundamentos de derecho</dt><dd>${esc(c.fundamentosDeDerecho)}</dd><dt>Fundamentos de hecho</dt><dd>${esc(c.fundamentosDeHecho)}</dd></dl>${refs(c.procesos)}`, { paso: "Paso 8" })).join("")}</div>` : ""}
+      ${p.criterioPorAccion?.length ? `<div class="par">${p.criterioPorAccion.map((c) => bloque(c.accion, `<p>${esc(c.criterio)}</p><dl class="pares"><dt>Fundamentos de derecho</dt><dd>${esc(c.fundamentosDeDerecho)}</dd><dt>Fundamentos de hecho</dt><dd>${esc(c.fundamentosDeHecho)}</dd><dt>Concordancias en procesos</dt><dd>${refs(c.procesos)}</dd></dl>`, { paso: "Paso 8" })).join("")}</div>` : ""}
       ${e.porAccion ? bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma)) : ""}
     </div>
 
     <div class="panel" data-panel="criterios" hidden>
-      ${hallazgos("Criterios reiterados", p.criteriosReiterados, (c) => `<li><span class="etiqueta">solidez ${esc(c.solidez)}</span> ${esc(c.criterio)}<br>${refs(c.procesos)}</li>`, "La muestra no muestra criterios reiterados.")}
+      ${hallazgos("Criterios reiterados", p.criteriosReiterados, (c) => `<li>${esc(c.criterio)}<br>${refs(c.procesos)}</li>`, "La muestra no muestra criterios reiterados.")}
       ${hallazgos("Cambios de criterio", p.cambiosDeInterpretacion, (c) => `<li><b>${esc(c.tema)}</b><dl class="pares"><dt>Antes</dt><dd>${esc(c.antes)}</dd><dt>Después</dt><dd>${esc(c.despues)}</dd></dl>${refs(c.procesos)}</li>`, "No se detectaron cambios de criterio.")}
       ${hallazgos("Diferencias entre casos aparentemente similares", p.diferenciasEntreCasosSimilares, (d) => `<li>${esc(d.descripcion)}<p class="implica"><b>Uso estratégico.</b> ${esc(d.utilidadEstrategica)}</p>${refs(d.procesos)}</li>`, "No se detectaron diferencias.")}
       ${p.senalesDeArbitrariedad ? hallazgos("Señales de arbitrariedad", p.senalesDeArbitrariedad, (d) => `<li>${esc(d.descripcion)}<br>${refs(d.procesos)}</li>`, "Las resoluciones analizadas no muestran indicios concretos de arbitrariedad.") : ""}
@@ -494,10 +417,6 @@ function vistaJuez(datos) {
         ${bloque("Recomendaciones para litigar ante este juez", lista(p.recomendaciones))}
         ${bloque("Limitaciones del análisis", lista(p.limitaciones))}
       </div>
-    </div>
-
-    <div class="panel" data-panel="recorrido" hidden>
-      ${pintarRecorrido(recorridoJuez(datos), "hecho")}
     </div>`;
 
   const montar = () => {
@@ -518,7 +437,7 @@ function vistaJuez(datos) {
           <summary><time>${fecha(x.fechaResolucion)}</time><span class="etiqueta ${x.ficha.decision === "acepta" || x.ficha.decision === "acepta_parcialmente" ? "baja" : ""}">${esc(DECISIONES[x.ficha.decision])}</span><span class="titulo">${esc(x.asunto)} · ${esc(x.ficha.criterioResolucion)} <span class="ref">${esc(x.numero)}</span></span></summary>
           <div class="detalle">
             <p class="tenue">${esc(x.partes.split(/\s*Use los botones/)[0])}${x.primeraInstancia ? ` · Primera instancia: ${esc(x.primeraInstancia)}` : ""}</p>
-            <p class="tenue">${[x.resultadoPortal, x.ficha.apelacion ? APELACION[x.ficha.apelacion] : "", x.dias !== undefined ? `${x.dias} días en resolver` : "", x.ficha.esPonente === "si" ? "Juez ponente" : x.ficha.esPonente === "no" ? "No es ponente" : "", x.ficha.votoSalvado ? "Con voto salvado" : ""].filter(Boolean).map(esc).join(" · ")}</p>
+            <p class="dato-clave">${[x.resultadoPortal, x.ficha.apelacion ? APELACION[x.ficha.apelacion] : "", x.dias !== undefined ? `${x.dias} días en resolver` : "", x.ficha.esPonente === "si" ? "Juez ponente" : x.ficha.esPonente === "no" ? "No es ponente" : "", x.ficha.votoSalvado ? "Con voto salvado" : ""].filter(Boolean).map(esc).join(" · ")}</p>
             <div><h5>Resolución</h5><p>${esc(x.ficha.criterioResolucion)}</p><blockquote>«${esc(x.ficha.citaTextual)}»</blockquote></div>
             ${x.ficha.derechosInvocados?.length ? `<div><h5>Derechos invocados</h5>${lista(x.ficha.derechosInvocados)}</div>` : ""}
             ${x.ficha.fundamentosDeHecho ? `<div><h5>Fundamentos de hecho</h5><p>${esc(x.ficha.fundamentosDeHecho)}</p></div>` : ""}
@@ -582,7 +501,6 @@ function vistaFiscalia(datos) {
     <nav class="subtabs" role="tablist" aria-label="Secciones de la consulta">
       <button role="tab" data-panel="noticias" aria-selected="true">Noticias del delito <span>${f.noticias.length}</span></button>
       <button role="tab" data-panel="seguimiento">Alertas y próximos pasos <span>${r.alertas.length}</span></button>
-      <button role="tab" data-panel="recorrido">Recorrido del agente</button>
     </nav>
 
     <div class="panel" data-panel="noticias">
@@ -627,10 +545,6 @@ function vistaFiscalia(datos) {
         ${bloque("Próximos pasos", `<ol class="pasos-sugeridos">${r.proximosPasos.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>`)}
         ${bloque("Lo que esta consulta no permite saber", lista(r.limitaciones))}
       </div>
-    </div>
-
-    <div class="panel" data-panel="recorrido" hidden>
-      ${pintarRecorrido(recorridoFiscalia(datos), "hecho")}
     </div>`;
   const montar = () => {
     document.querySelector(".subtabs").addEventListener("click", (ev) => {
@@ -831,13 +745,13 @@ if (!datos) {
       caja.querySelector(".enlace-procesos")?.addEventListener("click", () => abrir("seguimientos"));
       return;
     }
-    caja.innerHTML = `<p class="sobre centro">${TITULOS[flujo]} · en curso</p>${pintarRecorrido(RECORRIDOS[flujo](datos), "pendiente")}`;
+    caja.innerHTML = `<p class="sobre centro">${TITULOS[flujo]} · en curso</p>${pintarEtapas(ETAPAS[flujo])}`;
     caja.scrollIntoView({ behavior: "smooth", block: "start" });
     const items = [...caja.querySelectorAll("li")];
     for (const [i, item] of items.entries()) {
       item.dataset.estado = "activo";
       item.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      await espera(420 + 180 * (i % 3));
+      await espera(900 + 250 * (i % 2));
       if (turno !== corrida || !item.isConnected) return;
       item.dataset.estado = "hecho";
     }
