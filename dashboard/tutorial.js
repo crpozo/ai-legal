@@ -5,7 +5,7 @@ const T = "<em class='tomos'>Tomos</em>";
 
 // Cada paso puede indicar la vista en la que está su elemento.
 const PASOS = [
-  { vista: "buscar", sel: ".atajo", titulo: "Empieza aquí", texto: `Abre los procesos que ${T} ya analizó: estado del proceso, alertas, plazos, reportes y documentos.` },
+  { vista: "buscar", sel: ".casos-inicio", titulo: "Empieza aquí", texto: `Abre los procesos que ${T} ya analizó: estado del proceso, alertas, plazos, reportes y documentos.` },
   { vista: "buscar", sel: ".novedades", titulo: "Novedades del expediente", texto: "Toca cualquier actuación para abrir el proceso completo y ver lo que encontró el agente." },
   { vista: "buscar", sel: "#form-buscar", titulo: "Buscador en modo demo", texto: "En esta demo el buscador solo responde con los procesos ya cargados. Para ver resultados reales, entra a los procesos analizados.", final: true },
 ];

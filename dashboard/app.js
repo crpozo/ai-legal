@@ -1,5 +1,5 @@
 import { montarChat } from "./chat.js?v=tomos6";
-import { montarTutorial } from "./tutorial.js?v=7";
+import { montarTutorial } from "./tutorial.js?v=8";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -101,7 +101,7 @@ function tarjetasSeguimiento(datos) {
 function vistaBuscar(datos) {
   const filas = tarjetasSeguimiento(datos);
   const casos = [
-    datos.causa && ["causa", "Proceso judicial", datos.causa.numero, `${plural(datos.causa.actuaciones.length, "actuación", "actuaciones")}, ${plural(datos.causa.reporte.alertas.length, "alerta", "alertas")}`],
+    datos.causa && ["causa", "Proceso judicial", datos.causa.numero, `${plural(datos.causa.actuaciones.length, "actuación", "actuaciones")} · ${plural(datos.causa.reporte.alertas.length, "alerta", "alertas")}`],
     datos.juez && ["juez", "Juez", datos.juez.juez.nombre, plural(datos.juez.procesos.length, "resolución analizada", "resoluciones analizadas")],
     datos.fiscalia && ["fiscalia", "Fiscalía", datos.fiscalia.consulta.persona ?? datos.fiscalia.consulta.valor, plural(datos.fiscalia.noticias.length, "noticia del delito", "noticias del delito")],
   ].filter(Boolean);
@@ -109,22 +109,25 @@ function vistaBuscar(datos) {
     <div class="inicio">
     <section class="heroe">
       <h1>¿Qué proceso o qué juez quieres revisar?</h1>
-      <p class="bajada"><em class="tomos">Tomos</em> consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
+      <p class="bajada"><em class="tomos">Tomos</em> lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
       </form>
-      <div class="accesos">
-        ${casos.length ? `<span>Ya analizados</span>${casos.map(([id, , nombre]) => `<button type="button" class="acceso" data-abrir="${id}">${esc(nombre)}</button>`).join("")}` : ""}
-        <button type="button" class="como-empezar">Ver la guía de inicio</button>
-      </div>
+      ${casos.length ? `<div class="accesos"><span>Ya analizados</span>${casos.map(([id, , nombre]) => `<button type="button" class="acceso" data-abrir="${id}">${esc(nombre)}</button>`).join("")}</div>` : ""}
     </section>
     <div id="progreso" aria-live="polite">
-      ${datos.causa ? `<div class="par">
-        ${bloque("Análisis de casos", `<ul class="filas">${casos.map(([id, tipo, nombre, detalle]) => `<li><button type="button" class="fila-caso" data-abrir="${id}"><small>${tipo}</small><b>${esc(nombre)}</b><span class="tenue">${esc(detalle)}</span></button></li>`).join("")}</ul><button type="button" class="atajo" data-ir="seguimientos">Ver los ${filas.length} análisis y sus documentos</button>`)}
-        ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Proceso ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
-        ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Proceso ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
-      </div>` : ""}
+      <div class="inicio-cols">
+        <section class="casos-inicio"><h2>Análisis de casos</h2>
+          <ul>${casos.map(([id, tipo, nombre, detalle]) => `<li><button type="button" class="fila-caso" data-abrir="${id}" title="${tipo}"><i aria-hidden="true">${tipo[0]}</i><span><b>${esc(nombre)}</b><small>${esc(detalle)}</small></span></button></li>`).join("")}</ul>
+        </section>
+        ${datos.causa ? `<section><h2>Novedades</h2>
+          <ul class="novedades">${datos.causa.actuaciones.slice(0, 3).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab">${fecha(a.fecha)} · ${esc(CATEGORIAS[a.analisis.categoria])}${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span class="nov-texto">${esc(a.analisis.resumen)}</span></button></li>`).join("")}</ul>
+        </section>
+        <section><h2>Plazos y audiencias</h2>
+          ${datos.causa.reporte.plazos.length ? `<ul class="plazos-inicio">${datos.causa.reporte.plazos.slice(0, 3).map((p) => { const cierta = /^\d{4}-/.test(p.fechaLimite), dias = p.descripcion.match(/(\d+)\s+días/); return `<li><span class="plazo-cab${cierta ? " cierta" : ""}">${cierta ? fecha(p.fechaLimite) : "Sin fecha cierta"}${dias ? ` · ${dias[1]} días` : ""}</span><span class="nov-texto">${esc(p.descripcion)}</span></li>`; }).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`}
+        </section>` : ""}
+      </div>
     </div>
     </div>`;
 }
