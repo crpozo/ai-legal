@@ -741,3 +741,7 @@ body[data-vista="buscar"], body[data-vista="buscar"] .area { background: var(--p
 .inicio .recorrido { max-width: 640px; margin: 0 auto; }
 @media (max-width: 900px) { .inicio-cols { grid-template-columns: 1fr; } .inicio .bajada { font-size: 15.5px; } }
 @media (max-width: 640px) { .inicio .heroe { border-radius: 0; padding-top: 28px; } .inicio #form-buscar button { min-height: 44px; } }
+
+/* Fondo blanco en toda la plataforma (tema claro) */
+:root { --fondo: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { --fondo: #0b111c; } }
