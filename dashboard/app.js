@@ -83,7 +83,7 @@ function tarjetasSeguimiento(datos) {
       <span class="seg-cab"><b>Fiscalía · Cédula ${esc(f.consulta.valor)}</b><span class="etiqueta ${f.reporte.alertas.length ? "alta" : ""}">${plural(f.reporte.alertas.length, "alerta", "alertas")}</span></span>
       <span class="seg-titulo">${esc(f.consulta.persona ?? f.consulta.valor)}</span>
       <span class="tenue">Noticias del delito · ${delitos.map(esc).join(" · ")}</span>
-      <span class="seg-pie"><span>${plural(f.noticias.length, "noticia del delito", "noticias del delito")}</span><span>${f.noticias.filter((x) => !x.detalleDisponible).length} con detalle pendiente</span></span>
+      <span class="seg-pie"><span>${plural(f.noticias.length, "noticia del delito", "noticias del delito")}</span>${f.noticias.some((x) => !x.detalleDisponible) ? `<span>${f.noticias.filter((x) => !x.detalleDisponible).length} con detalle pendiente</span>` : ""}</span>
     </button>`]);
   }
   if (datos.juez) {
@@ -100,20 +100,28 @@ function tarjetasSeguimiento(datos) {
 
 function vistaBuscar(datos) {
   const filas = tarjetasSeguimiento(datos);
+  const casos = [
+    datos.causa && ["causa", "Proceso judicial", datos.causa.numero, `${plural(datos.causa.actuaciones.length, "actuación", "actuaciones")}, ${plural(datos.causa.reporte.alertas.length, "alerta", "alertas")}`],
+    datos.juez && ["juez", "Juez", datos.juez.juez.nombre, plural(datos.juez.procesos.length, "resolución analizada", "resoluciones analizadas")],
+    datos.fiscalia && ["fiscalia", "Fiscalía", datos.fiscalia.consulta.persona ?? datos.fiscalia.consulta.valor, plural(datos.fiscalia.noticias.length, "noticia del delito", "noticias del delito")],
+  ].filter(Boolean);
   return `
     <div class="inicio">
     <section class="heroe">
       <h1>¿Qué proceso o qué juez quieres revisar?</h1>
       <p class="bajada"><em class="tomos">Tomos</em> consulta el portal, lee cada actuación del expediente y te entrega el estado actualizado del proceso.</p>
-      <button type="button" class="como-empezar">¿Cómo empezar? Ver guía</button>
       <form id="form-buscar" role="search">
         <input id="q" type="search" autocomplete="off" aria-label="Número de proceso, parte o juez" placeholder="Número de proceso, nombre de una parte o de un juez">
         <button type="submit">Buscar</button>
       </form>
+      <div class="accesos">
+        ${casos.length ? `<span>Ya analizados</span>${casos.map(([id, , nombre]) => `<button type="button" class="acceso" data-abrir="${id}">${esc(nombre)}</button>`).join("")}` : ""}
+        <button type="button" class="como-empezar">Ver la guía de inicio</button>
+      </div>
     </section>
     <div id="progreso" aria-live="polite">
-      <button type="button" class="atajo" data-ir="seguimientos"><span><b>Análisis de casos</b><small>${plural(filas.length, "análisis guardado", "análisis guardados")} con sus reportes y documentos</small></span><span aria-hidden="true">→</span></button>
       ${datos.causa ? `<div class="par">
+        ${bloque("Análisis de casos", `<ul class="filas">${casos.map(([id, tipo, nombre, detalle]) => `<li><button type="button" class="fila-caso" data-abrir="${id}"><small>${tipo}</small><b>${esc(nombre)}</b><span class="tenue">${esc(detalle)}</span></button></li>`).join("")}</ul><button type="button" class="atajo" data-ir="seguimientos">Ver los ${filas.length} análisis y sus documentos</button>`)}
         ${bloque("Novedades", `<ul class="filas novedades">${datos.causa.actuaciones.slice(0, 5).map((a) => `<li><button type="button" class="novedad" data-q="${esc(datos.causa.numero)}"><span class="nov-cab"><time>${fecha(a.fecha)}</time><span class="etiqueta">${esc(CATEGORIAS[a.analisis.categoria])}</span>${a.analisis.requiereAccion ? `<span class="punto" title="Requiere acción"></span>` : ""}</span><span>${esc(a.analisis.resumen)}</span><span class="ref">Proceso ${esc(datos.causa.numero)}</span></button></li>`).join("")}</ul>`)}
         ${bloque("Plazos y audiencias", datos.causa.reporte.plazos.length ? `<ul class="filas">${datos.causa.reporte.plazos.map((p) => `<li><span class="etiqueta ${/^\d{4}-/.test(p.fechaLimite) ? "alta" : "media"}">${/^\d{4}-/.test(p.fechaLimite) ? fecha(p.fechaLimite) : "Sin fecha cierta"}</span><p>${esc(p.descripcion)}</p><span class="ref">Proceso ${esc(datos.causa.numero)}</span></li>`).join("")}</ul>` : `<p class="tenue">No hay plazos en curso.</p>`)}
       </div>` : ""}
@@ -787,6 +795,7 @@ if (!datos) {
       $("#form-buscar").addEventListener("submit", (ev) => { ev.preventDefault(); const q = $("#q").value.trim(); if (q) buscar(q); });
       for (const b of document.querySelectorAll(".novedad")) b.addEventListener("click", () => abrir(resolver(datos, b.dataset.q), "expediente"));
       document.querySelector(".atajo")?.addEventListener("click", () => abrir("seguimientos"));
+      for (const b of document.querySelectorAll(".inicio [data-abrir]")) b.addEventListener("click", () => abrir(b.dataset.abrir));
       document.querySelector(".como-empezar")?.addEventListener("click", () => montarTutorial({ abrir, forzar: true }));
       const lanzar = () => setTimeout(() => { if (document.body.dataset.vista === "buscar" && !document.querySelector(".tutorial")) { montarTutorial({ abrir, forzar: tutorialDemo }); tutorialDemo = false; } }, 400);
       if ($("#login").hidden) lanzar(); else document.addEventListener("tomos:sesion", lanzar, { once: true });
