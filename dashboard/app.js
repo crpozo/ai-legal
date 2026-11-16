@@ -399,7 +399,7 @@ function vistaJuez(datos) {
           <div class="criterio-cuerpo">
             <div><h5>Cómo decide</h5><ul class="puntos">${c.criterio.split(/(?<=[a-záéíóúñ\)\d]{3}\.)\s+(?=[A-ZÁÉÍÓÚ])/).map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
             <div class="criterio-lado">
-              <div><h5>Fundamentos de derecho</h5><ul class="puntos">${c.fundamentosDeDerecho.split(/;\s+/).map((x) => `<li>${esc(x.replace(/\.$/, ""))}</li>`).join("")}</ul></div>
+              <div><h5>Fundamentos de derecho</h5><ul class="puntos">${c.fundamentosDeDerecho.split(/;\s+/).map((x) => `<li>${esc((x[0].toUpperCase() + x.slice(1)).replace(/\.$/, ""))}</li>`).join("")}</ul></div>
               <div><h5>Fundamentos de hecho</h5><p>${esc(c.fundamentosDeHecho)}</p></div>
             </div>
           </div>
