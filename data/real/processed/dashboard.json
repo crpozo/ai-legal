@@ -3,7 +3,7 @@
     "dataset": "real",
     "ficticio": false,
     "origen": "agentes",
-    "generadoEn": "2026-11-15T23:27:01.371Z"
+    "generadoEn": "2026-11-16T04:25:13.771Z"
   },
   "causa": {
     "fuente": {
@@ -28302,7 +28302,7 @@
       "portal": "Fiscalía General del Estado · Consulta de noticias del delito (SIAF)",
       "url": "https://www.fiscalia.gob.ec/accesibilidad/consulta-de-noticias-del-delito/",
       "capturadoEn": "2026-11-12",
-      "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documentos del 12/11/2026 y del 15/11/2026). Las tres noticias tienen detalle completo. La identidad de terceros (denunciantes, sospechosos y testigos distintos de la persona consultada) se reservó antes del análisis."
+      "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documentos del 12/11/2026 y del 15/11/2026). Las tres noticias tienen detalle completo, con los sujetos tal como constan en el portal."
     },
     "consulta": {
       "criterio": "Cédula (10 dígitos)",
@@ -28329,7 +28329,8 @@
             "estado": "Denunciante"
           },
           {
-            "nombre": "Persona 1 (identidad reservada)",
+            "cedula": "1710599455",
+            "nombre": "Alvarez Benitez Daniel Alejandro",
             "estado": "Sospechoso"
           }
         ],
@@ -28349,11 +28350,13 @@
         "numFiscalia": "3",
         "sujetos": [
           {
-            "nombre": "Persona 2 (identidad reservada)",
+            "cedula": "0701489320",
+            "nombre": "Zaruma Arias Elsa Piedad",
             "estado": "Denunciante"
           },
           {
-            "nombre": "Persona 3 (identidad reservada)",
+            "cedula": "1711154821",
+            "nombre": "Basantez Gaona Juan Carlos",
             "estado": "Sospechoso"
           },
           {
@@ -28362,15 +28365,17 @@
             "estado": "Sospechoso"
           },
           {
-            "nombre": "Persona 4 (identidad reservada)",
+            "cedula": "1704903457",
+            "nombre": "Eguez Lupera Edwin Carlos Mario",
             "estado": "Testigo"
           },
           {
-            "nombre": "Persona 5 (identidad reservada)",
+            "cedula": "0400899522",
+            "nombre": "Fuel Revelo Amanda Lucia",
             "estado": "Testigo"
           },
           {
-            "nombre": "Persona 6 (identidad reservada)",
+            "nombre": "Nayib Jimenez Martines",
             "estado": "Testigo no identificado"
           }
         ],
@@ -28405,65 +28410,63 @@
       }
     ],
     "reporte": {
-      "resumenEjecutivo": "La consulta por cédula 1711187763 (Cruz Alvear Ángel Fabián) en el SIAF de la Fiscalía General del Estado registra tres noticias del delito, todas con detalle disponible. En dos figura como denunciante: N.º 170101824081287 (Abuso de confianza, Quito, 22/07/2025, Fiscalía de Soluciones Rápidas SUR-MENA, Fiscalía 1) y N.º 170101813031475 (Robo, Quito, 09/03/2013, Fiscalía DACE Norte, Fiscalía 2, con un vehículo Hyundai placa PQG0285 asociado). En una figura como sospechoso: N.º 070101824060201 (Abuso de confianza, Machala, 10/06/2024, Fiscalía de Soluciones Rápidas Única Machala, Fiscalía 3), junto con otro sospechoso, un denunciante y tres testigos, todos de identidad reservada. Lo más relevante para el estudio es esta última noticia: la calidad de sospechoso no implica responsabilidad ni que exista proceso penal, pero exige verificar en la unidad fiscal la etapa de la investigación previa y si existen diligencias pendientes o convocatorias. El registro no informa el estado ni el resultado de ninguna de las tres noticias.",
+      "resumenEjecutivo": "La consulta por cédula 1711187763 (Cruz Alvear Ángel Fabián) en el SIAF arroja tres noticias del delito, todas con detalle disponible. En la Nº 070101824060201 (El Oro - Machala, 10/06/2024, abuso de confianza, Fiscalía de Soluciones Rápidas Nº 3) la persona figura como sospechoso, junto con Basantez Gaona Juan Carlos, por denuncia de Zaruma Arias Elsa Piedad, con dos testigos identificados y uno no identificado. Esta es la noticia más relevante para el estudio. La calidad de sospechoso no implica responsabilidad alguna, y el registro no informa el estado de la investigación. En las otras dos noticias figura como denunciante: la Nº 170101824081287 (Quito, 22/07/2025, abuso de confianza, contra Alvarez Benitez Daniel Alejandro) y la Nº 170101813031475 (Quito, 09/03/2013, robo, con un vehículo Hyundai de placa PQG0285 vinculado). Ninguna noticia indica estado procesal ni resultado.",
       "noticias": [
         {
           "numero": "170101824081287",
           "rolDeLaPersona": "denunciante",
-          "resumen": "Denuncia formal escrita por Abuso de confianza, registrada en Pichincha - Quito el 2025-07-22 a las 12:05:56. Unidad: Fiscalía de Soluciones Rápidas, edificio SUR - MENA (Av. Mariscal Sucre S23-100 y Porto Bello, teléf. 3102150), Fiscalía N.º 1. La persona consultada figura como denunciante; consta un sospechoso de identidad reservada. Oficio: SN. Sin vehículos asociados.",
-          "queVerificar": "Estado actual de la investigación previa, fiscal a cargo, diligencias ordenadas o pendientes (p. ej. reconocimiento de la denuncia, versiones, documentación de respaldo) y si el denunciante debe comparecer o aportar elementos. Confirmar la identidad del sospechoso y si existe posibilidad de mecanismos alternativos de solución."
+          "resumen": "Denuncia formal escrita por abuso de confianza registrada el 22/07/2025 a las 12:05:56 en Pichincha - Quito. Está asignada a la Fiscalía de Soluciones Rápidas Nº 1 (Edificio Sur - Mena, Av. Mariscal Sucre S23-100 y Porto Bello, telf. 3102150). La persona consultada figura como denunciante y Alvarez Benitez Daniel Alejandro (C.I. 1710599455) como sospechoso. No hay vehículos vinculados.",
+          "queVerificar": "Confirmar el estado de la investigación previa y el fiscal a cargo. Revisar si hubo reconocimiento de la denuncia, diligencias dispuestas, posibles salidas alternativas (conciliación, mediación) o archivo. Verificar si existe relación de hechos con la noticia Nº 070101824060201, también por abuso de confianza."
         },
         {
           "numero": "070101824060201",
           "rolDeLaPersona": "sospechoso",
-          "resumen": "Denuncia formal escrita por Abuso de confianza, registrada en El Oro - Machala el 2024-06-10 a las 20:33:48. Unidad: Fiscalía de Soluciones Rápidas, edificio ÚNICA - MACHALA (Av. Rocafuerte entre Guayas y 9 de Mayo, teléf. (07) 2966303), Fiscalía N.º 3. La persona consultada figura como sospechoso, junto con otro sospechoso de identidad reservada; constan un denunciante, dos testigos y un testigo no identificado, todos de identidad reservada. Oficio: SN. Sin vehículos asociados. Figurar como sospechoso no equivale a responsabilidad declarada.",
-          "queVerificar": "Estado de la investigación (investigación previa en curso, archivo solicitado o resuelto, formulación de cargos u otra situación), fiscal a cargo, si la persona ha sido notificada o convocada a rendir versión, existencia de medidas o diligencias que la afecten, hechos imputados y montos, identidad del denunciante y relación con la persona consultada, y posible vinculación con la noticia 170101824081287 (mismo tipo penal)."
+          "resumen": "Denuncia formal escrita por abuso de confianza registrada el 10/06/2024 a las 20:33:48 en El Oro - Machala. Está asignada a la Fiscalía de Soluciones Rápidas Nº 3 (Edificio Única - Machala, Av. Rocafuerte entre Guayas y 9 de Mayo, telf. (07) 2966303). La denunciante es Zaruma Arias Elsa Piedad (C.I. 0701489320). Figuran como sospechosos Basantez Gaona Juan Carlos (C.I. 1711154821) y la persona consultada. Constan como testigos Eguez Lupera Edwin Carlos Mario (C.I. 1704903457) y Fuel Revelo Amanda Lucía (C.I. 0400899522), además de un testigo no identificado registrado como Nayib Jimenez Martines. No hay vehículos vinculados.",
+          "queVerificar": "Confirmar el estado procesal: si sigue en investigación previa, si fue archivada o si se formularon cargos. Verificar si el consultado fue notificado o citado a rendir versión, y si tiene defensa designada. Obtener copia del expediente para conocer los hechos denunciados, el monto y las diligencias practicadas o pendientes. Revisar si existen medidas cautelares o de protección."
         },
         {
           "numero": "170101813031475",
           "rolDeLaPersona": "denunciante",
-          "resumen": "Denuncia formal oral por Robo, registrada en Pichincha - Quito el 2013-03-09 a las 03:03:36. Unidad: Fiscalía DACE, edificio NORTE - 9 de Octubre (Calle 9 de Octubre N19-33 y Av. Patria, teléf. 3995900), Fiscalía N.º 2. La persona consultada es el único sujeto registrado, en calidad de denunciante. Vehículo asociado: Hyundai, modelo NA, placa PQG0285. Oficio: SN.",
-          "queVerificar": "Si la investigación fue archivada o concluyó de otro modo, dada su antigüedad; relación del vehículo placa PQG0285 con los hechos (objeto del robo u otro) y si existe alguna alerta o reporte vigente sobre dicho vehículo que deba levantarse o actualizarse."
+          "resumen": "Denuncia formal oral por robo registrada el 09/03/2013 a las 03:03:36 en Pichincha - Quito. Está asignada a la Fiscalía DACE Nº 2 (Edificio Norte - 9 de Octubre, calle 9 de Octubre N19-33 y Av. Patria, telf. 3995900). La persona consultada es el único sujeto registrado, en calidad de denunciante. Hay un vehículo vinculado: Hyundai, modelo no registrado, placa PQG0285.",
+          "queVerificar": "Confirmar si la causa fue archivada, dada su antigüedad, y si hubo recuperación del vehículo. Verificar si la placa PQG0285 mantiene alguna alerta o reporte de robo vigente que deba levantarse."
         }
       ],
       "alertas": [
         {
           "nivel": "alta",
-          "texto": "La persona consultada figura como sospechoso en una denuncia por Abuso de confianza en Machala (2024). El registro no indica el estado de la investigación; debe verificarse si existen diligencias, convocatorias o actuaciones pendientes que requieran defensa técnica. Respetar la presunción de inocencia.",
+          "texto": "La persona consultada figura como sospechoso en una denuncia por abuso de confianza en Machala. No consta el estado de la investigación, por lo que debe verificarse de inmediato si hay diligencias, citaciones o medidas que requieran defensa técnica. La calidad de sospechoso no implica responsabilidad.",
           "numero": "070101824060201"
         },
         {
           "nivel": "media",
-          "texto": "Denuncia reciente (julio de 2025) presentada por la persona consultada por Abuso de confianza en Quito; puede requerir impulso o actuaciones del denunciante para no quedar inactiva.",
+          "texto": "El registro incluye un testigo no identificado (Nayib Jimenez Martines), lo que puede ser relevante para la estrategia de defensa.",
+          "numero": "070101824060201"
+        },
+        {
+          "nivel": "media",
+          "texto": "Hay una denuncia reciente (2025) presentada por el consultado por abuso de confianza. Conviene evaluar si existe conexión fáctica con la causa en la que figura como sospechoso.",
           "numero": "170101824081287"
         },
         {
-          "nivel": "media",
-          "texto": "Dos noticias por el mismo tipo penal (Abuso de confianza) en distintas ciudades y con roles opuestos; conviene descartar o confirmar si derivan de una misma relación o conflicto, por la posible incidencia de una en la otra.",
-          "numero": "070101824060201"
-        },
-        {
           "nivel": "baja",
-          "texto": "Denuncia por Robo de 2013 con vehículo asociado (placa PQG0285); verificar su estado final y si subsiste algún registro sobre el vehículo.",
+          "texto": "Hay una denuncia antigua por robo con un vehículo vinculado (placa PQG0285). Debe verificarse si persisten alertas sobre el vehículo.",
           "numero": "170101813031475"
         }
       ],
       "proximosPasos": [
-        "Acudir o comunicarse con la Fiscalía de Soluciones Rápidas Única Machala, Fiscalía N.º 3 (teléf. (07) 2966303), para revisar el expediente 070101824060201, identificar fiscal a cargo, estado procesal y diligencias pendientes.",
-        "Evaluar con el cliente la designación de abogado defensor en la noticia 070101824060201 y preparar, de ser el caso, su versión libre y voluntaria con documentación de respaldo.",
-        "Revisar el expediente 170101824081287 en la Fiscalía de Soluciones Rápidas SUR-MENA, Fiscalía N.º 1 (teléf. 3102150), y gestionar el impulso de la investigación como denunciante.",
-        "Consultar en la Fiscalía DACE Norte, Fiscalía N.º 2 (teléf. 3995900), el estado final de la noticia 170101813031475 y la situación del vehículo placa PQG0285.",
-        "Entrevistar al cliente sobre los hechos de ambas denuncias por Abuso de confianza para determinar si guardan relación entre sí.",
-        "Consultar el sistema de la Función Judicial (SATJE/e-SATJE) con la cédula para detectar si alguna noticia derivó en proceso judicial."
+        "Acudir o comunicarse con la Fiscalía de Soluciones Rápidas Nº 3 de Machala para revisar el expediente de la noticia Nº 070101824060201 y confirmar su estado procesal.",
+        "Acreditar defensa técnica del consultado en la noticia Nº 070101824060201 y preparar, de ser el caso, su versión libre y voluntaria.",
+        "Consultar el sistema SATJE de la Función Judicial para verificar si alguna de las noticias derivó en un proceso judicial.",
+        "Dar seguimiento ante la Fiscalía de Soluciones Rápidas Nº 1 de Quito a la denuncia Nº 170101824081287 presentada por el consultado.",
+        "Verificar ante la Fiscalía DACE el estado de la noticia Nº 170101813031475 y, ante la ANT o la Policía, la situación del vehículo de placa PQG0285.",
+        "Entrevistar al consultado sobre los hechos de las dos denuncias por abuso de confianza y su relación con los demás sujetos."
       ],
       "limitaciones": [
-        "El SIAF registra noticias del delito (denuncias); no informa la etapa de la investigación, decisiones fiscales, archivo, formulación de cargos ni resultado alguno.",
-        "No constan los hechos denunciados, montos ni el relato de las denuncias.",
-        "Las identidades de los demás sujetos (denunciantes, sospechosos y testigos) están reservadas.",
-        "No consta el fiscal a cargo ni si la persona ha sido notificada o ha comparecido.",
-        "La consulta se limita a registros asociados a la cédula indicada; podrían existir noticias registradas con otros datos de la persona o no indexadas por cédula.",
-        "No se informa si existen procesos judiciales derivados ni medidas cautelares.",
-        "La información refleja el momento en que se realizó la consulta y puede no estar actualizada."
+        "La consulta solo muestra registros de denuncia. No informa el estado de la investigación, actuaciones, archivo, formulación de cargos ni resultado.",
+        "No consta el relato de los hechos, los montos ni las pruebas de ninguna noticia.",
+        "No incluye procesos judiciales, medidas cautelares ni sentencias, que deben consultarse en otros sistemas.",
+        "La búsqueda fue por cédula. Podrían existir registros con datos incompletos o mal digitados que no aparezcan.",
+        "El nombre del fiscal asignado no consta; solo figura la unidad y el número de fiscalía."
       ]
     }
   },
@@ -28546,11 +28549,11 @@
         "modelo": "us.anthropic.claude-opus-5-5",
         "llamadas": 1,
         "desdeCache": 0,
-        "tokensEntrada": 2756,
-        "tokensSalida": 2752,
-        "usd": 0.0661
+        "tokensEntrada": 2833,
+        "tokensSalida": 2515,
+        "usd": 0.0616
       }
     ],
-    "totalUsd": 3.3825
+    "totalUsd": 3.378
   }
 }

@@ -3,7 +3,7 @@
     "portal": "Fiscalía General del Estado · Consulta de noticias del delito (SIAF)",
     "url": "https://www.fiscalia.gob.ec/accesibilidad/consulta-de-noticias-del-delito/",
     "capturadoEn": "2026-11-12",
-    "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documentos del 12/11/2026 y del 15/11/2026). Las tres noticias tienen detalle completo. La identidad de terceros (denunciantes, sospechosos y testigos distintos de la persona consultada) se reservó antes del análisis."
+    "metodo": "Transcripción de las capturas de pantalla de la consulta hecha por el estudio (documentos del 12/11/2026 y del 15/11/2026). Las tres noticias tienen detalle completo, con los sujetos tal como constan en el portal."
   },
   "consulta": {
     "criterio": "Cédula (10 dígitos)",
@@ -30,7 +30,8 @@
           "estado": "Denunciante"
         },
         {
-          "nombre": "Persona 1 (identidad reservada)",
+          "cedula": "1710599455",
+          "nombre": "Alvarez Benitez Daniel Alejandro",
           "estado": "Sospechoso"
         }
       ],
@@ -50,11 +51,13 @@
       "numFiscalia": "3",
       "sujetos": [
         {
-          "nombre": "Persona 2 (identidad reservada)",
+          "cedula": "0701489320",
+          "nombre": "Zaruma Arias Elsa Piedad",
           "estado": "Denunciante"
         },
         {
-          "nombre": "Persona 3 (identidad reservada)",
+          "cedula": "1711154821",
+          "nombre": "Basantez Gaona Juan Carlos",
           "estado": "Sospechoso"
         },
         {
@@ -63,15 +66,17 @@
           "estado": "Sospechoso"
         },
         {
-          "nombre": "Persona 4 (identidad reservada)",
+          "cedula": "1704903457",
+          "nombre": "Eguez Lupera Edwin Carlos Mario",
           "estado": "Testigo"
         },
         {
-          "nombre": "Persona 5 (identidad reservada)",
+          "cedula": "0400899522",
+          "nombre": "Fuel Revelo Amanda Lucia",
           "estado": "Testigo"
         },
         {
-          "nombre": "Persona 6 (identidad reservada)",
+          "nombre": "Nayib Jimenez Martines",
           "estado": "Testigo no identificado"
         }
       ],
