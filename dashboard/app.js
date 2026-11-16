@@ -802,14 +802,14 @@ if (!datos) {
   const ctx = { historial: historial.leer, borrarHistorial: historial.borrar, abrir };
 
   let chat = null;
-  const mostrar = (pedida) => {
+  const mostrar = (pedida, { apilar = true } = {}) => {
     const [id, , vista] = vistas.find(([v]) => v === pedida) ?? vistas[0];
     corrida++;
     const { html, montar } = vista(datos, ctx);
     $("#contenido").innerHTML = html;
     document.body.dataset.vista = id;
     for (const b of $("#pestanas").children) b.setAttribute("aria-selected", String(b.dataset.vista === id));
-    history.replaceState(null, "", `#${id}`);
+    if (location.hash !== `#${id}`) history[apilar ? "pushState" : "replaceState"](null, "", `#${id}`);
     montar?.();
     chat?.refrescar();
     if (id === "buscar") {
@@ -837,5 +837,11 @@ if (!datos) {
     $("#q-top").value = "";
     buscar(q);
   });
-  mostrar(vistas.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : "buscar");
+  mostrar(vistas.some(([v]) => v === location.hash.slice(1)) ? location.hash.slice(1) : "buscar", { apilar: false });
+  // La flecha de atrás del navegador vuelve a la pantalla anterior de la plataforma.
+  window.addEventListener("popstate", () => {
+    const id = location.hash.slice(1) || "buscar";
+    if (disponibles.some(([v]) => v === id)) { encontrados.add(id); pintarPestanas(); }
+    mostrar(id, { apilar: false });
+  });
 }
