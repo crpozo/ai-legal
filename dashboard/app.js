@@ -392,7 +392,19 @@ function vistaJuez(datos) {
         ${bloque("Cómo resuelve", `${barras(e.porDecision, (x) => DECISIONES[x.decision])}${e.porApelacion ? `<h5 class="sub">Frente a la sentencia de primera instancia</h5>${barras(e.porApelacion, (x) => APELACION[x.apelacion] ?? x.apelacion)}` : ""}`)}
         ${e.porAccion ? bloque("Por tipo de acción", `<ul class="atencion">${e.porAccion.map((a) => `<li><button type="button" data-accion="${esc(a.accion)}"><span><b>${esc(a.accion)}</b><small>${a.aceptadas} de ${a.n} prosperan · mediana ${a.medianaDias} días</small></span><strong>${a.n}</strong></button></li>`).join("")}</ul>`) : bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma))}
       </div>
-      ${p.criterioPorAccion?.length ? `<div class="par">${p.criterioPorAccion.map((c) => bloque(c.accion, `<p>${esc(c.criterio)}</p><dl class="pares"><dt>Fundamentos de derecho</dt><dd>${esc(c.fundamentosDeDerecho)}</dd><dt>Fundamentos de hecho</dt><dd>${esc(c.fundamentosDeHecho)}</dd><dt>Concordancias en procesos</dt><dd>${refs(c.procesos)}</dd></dl>`, { paso: "Paso 8" })).join("")}</div>` : ""}
+      ${p.criterioPorAccion?.length ? bloque("Criterio por tipo de acción", `
+        <div class="chips selector-accion" role="tablist">${p.criterioPorAccion.map((c, k) => { const st = e.porAccion?.find((a) => a.accion === c.accion); return `<button type="button" class="chip" role="tab" data-criterio="${k}" aria-pressed="${k === 0}">${esc(c.accion.replace(/^Acción de /, ""))}${st ? ` <span>${st.n}</span>` : ""}</button>`; }).join("")}</div>
+        ${p.criterioPorAccion.map((c, k) => { const st = e.porAccion?.find((a) => a.accion === c.accion); return `<div class="criterio-accion" data-criterio-panel="${k}"${k ? " hidden" : ""}>
+          <div class="criterio-cab"><h4>${esc(c.accion)}</h4>${st ? `<p class="tenue">${plural(st.n, "resolución", "resoluciones")}, ${st.aceptadas} ${st.aceptadas === 1 ? "prospera" : "prosperan"}, mediana de ${st.medianaDias} días en resolver</p>` : ""}</div>
+          <div class="criterio-cuerpo">
+            <div><h5>Cómo decide</h5><ul class="puntos">${c.criterio.split(/(?<=[a-záéíóúñ\)\d]{3}\.)\s+(?=[A-ZÁÉÍÓÚ])/).map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+            <div class="criterio-lado">
+              <div><h5>Fundamentos de derecho</h5><ul class="puntos">${c.fundamentosDeDerecho.split(/;\s+/).map((x) => `<li>${esc(x.replace(/\.$/, ""))}</li>`).join("")}</ul></div>
+              <div><h5>Fundamentos de hecho</h5><p>${esc(c.fundamentosDeHecho)}</p></div>
+            </div>
+          </div>
+          <div><h5>Concordancias en procesos</h5>${refs(c.procesos)}</div>
+        </div>`; }).join("")}`) : ""}
       ${e.porAccion ? bloque("Normativa más citada", barras(e.normasMasCitadas, (x) => x.norma)) : ""}
     </div>
 
@@ -462,6 +474,12 @@ function vistaJuez(datos) {
     $("#res-q").addEventListener("input", (ev) => { estado.q = ev.target.value; estado.numero = null; estado.n = 30; pintar(); });
     $("#contenido").addEventListener("click", (ev) => {
       const proc = ev.target.closest("[data-proc]"), chip = ev.target.closest("#res-chips .chip"), accion = ev.target.closest(".atencion [data-accion]"), tesela = ev.target.closest("[data-ir-panel]");
+      const sel = ev.target.closest("[data-criterio]");
+      if (sel) {
+        for (const b of sel.parentElement.children) b.setAttribute("aria-pressed", String(b === sel));
+        for (const d of document.querySelectorAll("[data-criterio-panel]")) d.hidden = d.dataset.criterioPanel !== sel.dataset.criterio;
+        return;
+      }
       if (proc) verProceso(proc.dataset.proc);
       else if (chip) {
         if (chip.dataset.quitar) estado.numero = null;

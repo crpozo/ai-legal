@@ -690,3 +690,17 @@ b, strong { font-weight: 600; }
 .cifra { flex-direction: column; justify-content: flex-start; }
 .cifra span { max-width: none; }
 @media (max-width: 640px) { .inicio #form-buscar button { padding: 0 18px; } .inicio #q { padding: 11px 14px; } }
+
+/* Juez: criterio por tipo de acción, una acción a la vez */
+.selector-accion { margin-bottom: 4px; }
+.selector-accion .chip { padding: 7px 16px; font-size: 14.5px; }
+.criterio-accion { display: grid; gap: 22px; padding-top: 18px; border-top: 1px solid var(--linea); }
+.criterio-accion h4 { font-size: 20px; }
+.criterio-accion h5 { font-size: 13px; font-weight: 500; color: var(--tenue); margin-bottom: 8px; }
+.criterio-cuerpo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px 44px; }
+.criterio-lado { display: grid; gap: 20px; align-content: start; background: var(--hundido); border-radius: var(--radio-chico); padding: 18px 20px; font-size: 14.5px; }
+.bloque ul.puntos { padding-left: 18px; display: grid; gap: 8px; }
+.puntos li { margin: 0; }
+.bloque .puntos li + li { margin-top: 0; }
+.puntos li::marker { color: var(--acento); }
+@media (max-width: 820px) { .criterio-cuerpo { grid-template-columns: 1fr; } }
